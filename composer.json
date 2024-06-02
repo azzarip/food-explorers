@@ -20,6 +20,7 @@
         "league/flysystem-aws-s3-v3": "*",
         "ralphjsmit/laravel-seo": "^1.4",
         "spatie/laravel-backup": "^8.4",
+        "spatie/laravel-google-fonts": "*",
         "spatie/laravel-sitemap": "^7.0"
     },
     "require-dev": {

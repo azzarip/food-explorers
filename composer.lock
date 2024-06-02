@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b8553941b12de1484aa4f34e2917afc1",
+    "content-hash": "eecf2349b590dd71b4091f5126ec2444",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -306,12 +306,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/azzarip/utilities.git",
-                "reference": "96f96b0f761905b9667133982c7d77217a1bbfe4"
+                "reference": "09e539a741cd446e1d054bbda107ec4219f157c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/azzarip/utilities/zipball/96f96b0f761905b9667133982c7d77217a1bbfe4",
-                "reference": "96f96b0f761905b9667133982c7d77217a1bbfe4",
+                "url": "https://api.github.com/repos/azzarip/utilities/zipball/09e539a741cd446e1d054bbda107ec4219f157c1",
+                "reference": "09e539a741cd446e1d054bbda107ec4219f157c1",
                 "shasum": ""
             },
             "require": {
@@ -367,7 +367,7 @@
                 "issues": "https://github.com/azzarip/utilities/issues",
                 "source": "https://github.com/azzarip/utilities/tree/main"
             },
-            "time": "2024-05-20T16:22:56+00:00"
+            "time": "2024-05-31T13:19:10+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",

@@ -1,4 +1,22 @@
 <?php
+
 return [
-    'base' => env('DOMAIN_BASE', 'domain.test'),
+
+    'base' => [
+        'url' => env('DOMAIN_BASE'),
+        'fonts' => [],
+        'name' => 'Food Explorers',
+    ],
+
+    'admin' => [
+        'url' => env('DOMAIN_ADMIN'),
+        'fonts' => [],
+        'name' => 'Admin - Food Explorers',
+    ],
+
+    'my' => [
+        'url' => env('DOMAIN_MY'),
+        'fonts' => [],
+        'name' => 'My - Food Explorers',
+    ],
 ];

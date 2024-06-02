@@ -12,7 +12,7 @@ return [
     /**
      * Use this setting to specify the site name that will be used in OpenGraph tags.
      */
-    'site_name' => null,
+    'site_name' => 'Food Explorers',
 
     /**
      * Use this setting to specify the path to the sitemap of your website. This exact path will outputted, so
@@ -23,7 +23,7 @@ return [
      * to the root domain and not relative to the current URL. The `spatie/laravel-sitemap` package
      * is a great package to generate sitemaps for your application.
      */
-    'sitemap' => null,
+    'sitemap' => '/sitemap.xml',
 
     /**
      * Use this setting to specify whether you want self-referencing `<link rel="canonical" href="$url">` tags to
@@ -59,7 +59,7 @@ return [
      *
      * You can use the following filetypes: ico, png, gif, jpeg, svg.
      */
-    'favicon' => null,
+    'favicon' => '/favicon.ico',
 
     'title' => [
         /**
@@ -109,7 +109,7 @@ return [
          * Use this setting to specify a fallback author, which will be used on places where you
          * don't have an author set via an associated ->seo model or via the ->getDynamicSEOData() method.
          */
-        'fallback' => null,
+        'fallback' => 'Marco Azzari',
     ],
 
     'twitter' => [
