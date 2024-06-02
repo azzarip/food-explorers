@@ -7,7 +7,7 @@ export default {
   "./resources/**/*.blade.php",
   "./resources/**/*.js",
   "./resources/**/*.vue",
-  "./vendor/azzarip/utilities/resources**/*.blade.php",
+  "./vendor/azzarip/utilities/resources/**/*.blade.php",
   ],
   theme: {
     extend: {
