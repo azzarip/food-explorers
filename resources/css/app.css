@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none !important;
+}
+
+.h1 {
+    @apply text-4xl font-semibold font-head;
+}
+
+.h2 {
+    @apply pt-8 mb-2 text-3xl font-head font-semibold;
+}
+.h3 {
+    @apply pt-8 mb-2 text-2xl font-head font-semibold;
+}
+.subtitle {
+    @apply text-2xl mt-3 leading-10 text-slate-800 font-head;
+}
+.text-y {
+    @apply space-y-3;
+}
+
+.inline-link {
+    @apply font-semibold underline cursor-pointer;
+}
+
+figcaption {
+    @apply mx-2 text-center;
+}
+
+.wrapper {
+    @apply max-w-3xl px-4 pt-4 mx-auto;
+}
+.article {
+    @apply text-y;
+}
+
+.article h2 {
+    @apply h2;
+}
+.article h3 {
+    @apply h3;
+}
+.article ul {
+    @apply list-disc list-inside text-y;
+}
+.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color: #ccc;
+    color: #999;
+    border: none;
+}
+
+.error-msg {
+    @apply text-red-600 text-sm;
+}
+
+.test {
+    @apply border-2 border-red-600;
+}
