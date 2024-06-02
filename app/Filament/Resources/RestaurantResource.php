@@ -35,7 +35,11 @@ class RestaurantResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('name')
+                TextColumn::make('name'),
+                TextColumn::make('meetups_count')
+                    ->sortable()
+                    ->counts('meetups'),
+
             ])
             ->filters([
                 //
