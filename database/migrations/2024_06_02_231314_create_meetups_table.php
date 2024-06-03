@@ -13,10 +13,12 @@ return new class extends Migration
     {
         Schema::create('meetups', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
             $table->foreignId('restaurant_id');
             $table->timestamp('scheduled_at');
             $table->tinyInteger('max_participants')->unsigned();
             $table->timestamps();
+
         });
     }
 
