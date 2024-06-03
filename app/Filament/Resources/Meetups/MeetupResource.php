@@ -28,6 +28,9 @@ class MeetupResource extends Resource
     {
         return $form
             ->schema([
+                TextInput::make('title')
+                    ->required()
+                    ->maxLength(255),
                 Select::make('restaurant_id')
                     ->label('Restaurant')
                     ->required()
@@ -51,6 +54,7 @@ class MeetupResource extends Resource
     {
         return $table
             ->columns([
+                TextColumn::make('title'),
                 TextColumn::make('restaurant.name'),
                 TextColumn::make('scheduled_at')
                     ->dateTime('j F Y,  H:m'),

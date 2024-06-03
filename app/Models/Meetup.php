@@ -25,6 +25,10 @@ class Meetup extends Model
     {
         return "{$this->title} @ {$this->restaurant->name} ({$this->scheduled_at->format('d/m/Y')})";
     }
+    public function getTitleDateAttribute(): string
+    {
+        return "{$this->title} - {$this->scheduled_at->format('d/m/Y')}";
+    }
 
     protected function casts(): array
     {

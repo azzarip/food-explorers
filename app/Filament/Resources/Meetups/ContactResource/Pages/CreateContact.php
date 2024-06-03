@@ -16,5 +16,4 @@ class CreateContact extends CreateRecord
     {
         return static::getResource()::getUrl('index');
     }
-
 }
