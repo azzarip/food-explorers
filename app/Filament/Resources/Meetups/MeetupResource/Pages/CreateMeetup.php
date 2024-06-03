@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Filament\Resources\MeetupResource\Pages;
+namespace App\Filament\Resources\Meetups\MeetupResource\Pages;
 
-use App\Filament\Resources\MeetupResource;
+use App\Filament\Resources\Meetups\MeetupResource;
 use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
 

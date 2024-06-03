@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Filament\Resources\RestaurantResource\Pages;
+namespace App\Filament\Resources\Meetups\RestaurantResource\Pages;
 
-use App\Filament\Resources\RestaurantResource;
+use App\Filament\Resources\Meetups\RestaurantResource;
 use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
 

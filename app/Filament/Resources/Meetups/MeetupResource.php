@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Resources;
+namespace App\Filament\Resources\Meetups;
 
 use Filament\Forms;
 use Filament\Tables;
@@ -14,9 +14,9 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
 use Filament\Forms\Components\DateTimePicker;
-use App\Filament\Resources\MeetupResource\Pages;
+use App\Filament\Resources\Meetups\MeetupResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\MeetupResource\RelationManagers;
+use App\Filament\Resources\Meetups\MeetupResource\RelationManagers;
 
 class MeetupResource extends Resource
 {

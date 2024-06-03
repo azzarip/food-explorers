@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Resources;
+namespace App\Filament\Resources\Meetups;
 
 use Filament\Forms;
 use Filament\Tables;
@@ -12,8 +12,8 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\RestaurantResource\Pages;
-use App\Filament\Resources\RestaurantResource\RelationManagers;
+use App\Filament\Resources\Meetups\RestaurantResource\Pages;
+use App\Filament\Resources\Meetups\RestaurantResource\RelationManagers;
 
 class RestaurantResource extends Resource
 {
