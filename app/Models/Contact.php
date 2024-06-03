@@ -15,4 +15,6 @@ class Contact extends BaseContact
     {
         return $this->belongsToMany(Meetup::class)->withTimestamps();
     }
+
+
 }

@@ -17,7 +17,9 @@ class RestaurantFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'name' => fake()->company(),
+            'google_maps_url' => fake()->url(),
+            'address' => fake()->address(),
         ];
     }
 }

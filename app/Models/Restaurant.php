@@ -18,4 +18,9 @@ class Restaurant extends Model
     {
         return $this->hasMany(Meetup::class);
     }
+
+    public function lastMeetup()
+    {
+        return $this->hasOne(Meetup::class)->latestOfMany('scheduled_at');
+    }
 }

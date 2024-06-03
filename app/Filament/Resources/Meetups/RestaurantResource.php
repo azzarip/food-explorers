@@ -35,12 +35,17 @@ class RestaurantResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('name'),
+                TextColumn::make('name')
+                    ->sortable(),
                 TextColumn::make('meetups_count')
                     ->sortable()
                     ->counts('meetups'),
+                TextColumn::make('lastMeetup.scheduled_at')
+                    ->dateTime('j F Y,  H:m')
+                    ->sortable()
 
-            ])
+
+            ])->defaultSort('lastMeetup.scheduled_at', 'desc')
             ->filters([
                 //
             ])
@@ -55,7 +60,7 @@ class RestaurantResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            RelationManagers\MeetupsRelationManager::class,
         ];
     }
 

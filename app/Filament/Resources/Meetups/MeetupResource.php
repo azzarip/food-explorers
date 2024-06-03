@@ -66,7 +66,7 @@ class MeetupResource extends Resource
                 //
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
+                Tables\Actions\ViewAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
@@ -78,7 +78,7 @@ class MeetupResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            RelationManagers\ContactsRelationManager::class,
         ];
     }
 
@@ -88,6 +88,7 @@ class MeetupResource extends Resource
             'index' => Pages\ListMeetups::route('/'),
             'create' => Pages\CreateMeetup::route('/create'),
             'edit' => Pages\EditMeetup::route('/{record}/edit'),
+            'view' => Pages\ViewMeetup::route('/{record}'),
         ];
     }
 }

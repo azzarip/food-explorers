@@ -69,8 +69,7 @@ class MeetupsRelationManager extends RelationManager
                 ActionGroup::make([
                     Tables\Actions\DetachAction::make()
                     ->label('Remove'),
-                ])
-              ,
+                ]),
             ])
             ->bulkActions([
                 // Tables\Actions\BulkActionGroup::make([
