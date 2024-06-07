@@ -1,0 +1,24 @@
+{
+	"name": "domains/my",
+	"description": "",
+	"type": "library",
+	"version": "1.0",
+	"license": "proprietary",
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"Domains\\My\\": "src/",
+			"Domains\\My\\Tests\\": "tests/",
+			"Domains\\My\\Database\\Factories\\": "database/factories/",
+			"Domains\\My\\Database\\Seeders\\": "database/seeders/"
+		}
+	},
+	"minimum-stability": "stable",
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Domains\\My\\Providers\\MyServiceProvider"
+			]
+		}
+	}
+}

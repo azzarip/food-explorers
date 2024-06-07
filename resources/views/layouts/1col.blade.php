@@ -1,7 +1,7 @@
-@extends('components.layouts.site')
+@extends('azzarip::base')
 
-@section('content')
-    <main class="text-xl flex-1 table max-md:px-2"> @yield('main') </main>
+@section('body')
+    <main class="flex-1 table text-xl max-md:px-2"> @yield('main') </main>
 @endsection
 
 

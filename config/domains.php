@@ -15,7 +15,7 @@ return [
     ],
 
     'my' => [
-        'url' => env('DOMAIN_MY'),
+        'url' => env('DOMAIN_MY', 'my.' . env('DOMAIN_BASE')),
         'fonts' => [],
         'name' => 'My - Food Explorers',
     ],
