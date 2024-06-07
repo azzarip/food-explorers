@@ -11,8 +11,10 @@
         "php": "^8.2",
         "azzarip/teavel": "main-dev",
         "azzarip/utilities": "main-dev",
+        "domains/my": "*",
         "filament/filament": "*",
         "guzzlehttp/guzzle": "^7.2",
+        "label84/laravel-tagmanager": "^1.4",
         "laravel/fortify": "^1.19",
         "laravel/framework": "^11",
         "laravel/sanctum": "^4.0",
@@ -70,5 +72,14 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "path",
+            "url": "domains/*",
+            "options": {
+                "symlink": true
+            }
+        }
+    ]
 }

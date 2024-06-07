@@ -37,6 +37,7 @@ class Kernel extends HttpKernel
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
             \Azzarip\Utilities\Http\Middleware\DomainKey::class,
+            \Label84\TagManager\Http\Middleware\TagManagerMiddleware::class,
         ],
 
         'api' => [
