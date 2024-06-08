@@ -1,7 +1,5 @@
-@extends('layouts.3col')
-
-
+@extends('layouts.1col')
 
 @section('main')
-<p>Paco Ricci</p>
+<div class="w-full h-screen test">Paco</div>
 @endsection
