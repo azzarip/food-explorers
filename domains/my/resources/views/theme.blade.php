@@ -77,7 +77,7 @@ if (width > 1040) { open = true; }"
             </div>
         </div>
 
-        <x-footer />
+        <x-footer class="hidden"/>
     </div>
 
 </div>

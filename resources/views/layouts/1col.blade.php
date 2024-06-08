@@ -1,7 +1,7 @@
 @extends('azzarip::base')
 
 @section('body')
-    <main class="flex-1 table w-full text-xl"> @yield('main') </main>
+    <main class="w-full h-full text-xl"> @yield('main') </main>
 @endsection
 
 
