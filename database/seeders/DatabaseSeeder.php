@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
+use App\Models\Event;
 use App\Models\Contact;
 use App\Models\Restaurant;
 use Illuminate\Database\Seeder;
@@ -17,10 +18,18 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         Restaurant::factory(3)->create();
-        ContactFactory::create(5);
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+
+        $c = Contact::create([
+            'first_name' => 'Paco',
+           // 'last_name' => 'Ricci',
+            'email' => 'paco@ricci.it',
+            'password' => bcrypt('pacoricci'),
+        ]);
+
+       Event::factory(10)->create();
+
+       foreach (Event::all() as $event) {
+           $event->contacts()->sync([$c->id]);
+       }
     }
 }

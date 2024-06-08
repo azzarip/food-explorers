@@ -13,7 +13,7 @@ class Meetup extends Model
 
     public function restaurant()
     {
-        return $this->belongsTo(Restaurant::class);
+        return $this->belongsTo(Restaurant::class, 'location_id');
     }
 
     public function contacts()
@@ -35,5 +35,15 @@ class Meetup extends Model
         return [
             'scheduled_at' => 'datetime',
         ];
+    }
+
+    protected $table = 'events'; // Point to the same table
+
+    // Override the default query to apply the scope
+    protected static function booted()
+    {
+        static::addGlobalScope('meetups', function ($builder) {
+            $builder->where('paid', false);
+        });
     }
 }

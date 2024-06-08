@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->id();
+            $table->string('uuid')->unique()->index();
+            $table->string('title');
+            $table->foreignId('location_id');
+            $table->timestamp('scheduled_at');
+            $table->tinyInteger('capacity')->unsigned();
             $table->timestamps();
         });
     }
