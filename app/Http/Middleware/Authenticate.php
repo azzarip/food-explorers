@@ -12,9 +12,6 @@ class Authenticate extends Middleware
      */
     protected function redirectTo(Request $request): ?string
     {
-        if ($request->getHost() == config('domains.admin.url')) {
-            return route('admin.login');
-        }
         return $request->expectsJson() ? null : route('login');
     }
 }

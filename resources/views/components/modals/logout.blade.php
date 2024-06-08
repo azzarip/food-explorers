@@ -1,11 +1,11 @@
-<div x-data="{logout: false}" x-cloak x-show="logout" @logout.window="logout = true" class="bg-black/50 fixed left-0 top-0 bottom-0 right-0 z-10 flex items-center justify-center">
+<div x-data="{logout: false}" x-cloak x-show="logout" @logout.window="logout = true" class="fixed top-0 bottom-0 left-0 right-0 z-10 flex items-center justify-center bg-black/50">
     <div x-show="logout" x-transition.scale.origin.right.50 @click.outside="logout = false"
-        class="bg-white rounded-lg w-2/3 md:w-1/4 fixed z-20 ">
-        <h2 class="text-center text-2xl py-5">Log out?</h2>
-        <form action="/logout" method="POST" class="text-lg flex justify-around py-5">
+        class="fixed z-20 w-2/3 bg-white rounded-lg md:w-1/4 ">
+        <p class="py-5 text-2xl text-center">Do you want to logout?</p>
+        <form action="/logout" method="POST" class="flex justify-around pt-2 pb-5 text-lg font-semibold">
             @csrf
-            <button class="h-full text-center w-[100px] border-2 border-black bg-black text-white" type=button @click="logout = false">Cancel</button>
-            <button class="h-full text-center w-[100px] border-2 border-black">Logout  <x-heroicon-s-x-mark class="text-red-500 inline w-5 h-6" /></button>
+            <button class="h-full px-4 py-1 text-center text-white bg-black border-2 border-black rounded-lg" type=button @click="logout = false">Cancel</button>
+            <button class="h-full px-4 py-1 text-center border-2 border-black rounded-lg">Logout  <x-heroicon-s-arrow-right-start-on-rectangle class="inline w-5 h-6 mb-1 text-red-500" /></button>
         </form>
     </div>
 </div>

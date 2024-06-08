@@ -9,7 +9,7 @@ return [
     ],
 
     'admin' => [
-        'url' => env('DOMAIN_ADMIN'),
+        'url' => env('DOMAIN_ADMIN', 'admin.' . env('DOMAIN_BASE')),
         'fonts' => [],
         'name' => 'Admin - Food Explorers',
     ],

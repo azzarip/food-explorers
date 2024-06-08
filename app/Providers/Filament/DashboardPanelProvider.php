@@ -33,6 +33,7 @@ class DashboardPanelProvider extends PanelProvider
             ])
             ->domain(config('domains.admin.url'))
             ->authGuard('admin')
+            ->login()
             ->discoverResources(in: app_path('Filament/Dashboard/Resources'), for: 'App\\Filament\\Dashboard\\Resources')
             ->discoverPages(in: app_path('Filament/Dashboard/Pages'), for: 'App\\Filament\\Dashboard\\Pages')
             ->pages([])

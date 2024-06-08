@@ -8,6 +8,7 @@ export default {
   "./resources/**/*.js",
   "./resources/**/*.vue",
   "./vendor/azzarip/utilities/resources/**/*.blade.php",
+  "./domains/**/resources/views/*.blade.php",
   ],
   theme: {
     extend: {

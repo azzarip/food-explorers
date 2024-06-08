@@ -1,15 +1,82 @@
-<div class="table-row float-none w-full">
-    <div class="table-cell w-1/5 align-top shadow-lg max-lg:hidden 2xl:w-1/6">
-        <ul class="mx-4 mt-5 border-b">
-            <p class="pl-1 mb-2">Hallo,  {{ auth()->user()->name }}!</p>
-            <li><a href="/home" class="block py-2 px-4 hover:bg-slate-100 border-t {{ request()->path() === 'home' ? 'font-semibold' : ''}}">
-                <x-heroicon-s-home class="inline w-5 h-5 mb-1 mr-1" /> Home</a></li>
+<div x-data="{showMenu: false}">
+<div id="menuButton" class="fixed top-0 left-0 p-4 lg:hidden">
+    <x-heroicon-o-bars-3   class="w-8 h-8 text-gray-900 cursor pointer"
+        @click="showMenu = true" x-show="!showMenu"
+    />
+    <x-heroicon-o-x-mark   class="w-8 h-8 text-white cursor pointer"
+    @click="showMenu = false" x-show="showMenu" x-cloak
+    />
+</div>
 
+<div class="static w-full min-h-screen lg:flex lg:flex-col">
+<div class="fixed top-0 z-20 lg:flex lg:flex-1">
+<div class="flex flex-col justify-between font-semibold text-white bg-gray-900 shadow-xl shadow-gray-900 w-80"
+    x-show="showMenu"
+    x-transition:enter="transition duration-500"
+    x-transition:enter-start="transform -translate-x-full"
+    x-transition:enter-end="transform translate-x-0"
+    x-transition:leave="transition duration-500"
+    x-transition:leave-start="transform translate-x-0"
+    x-transition:leave-end="transform -translate-x-full"
+>
+    <div>
+    <div class="h-40"></div>
+    <p class="hidden my-2 ml-8 lg:block">Hi {{ auth()->user()->first_name }},</p>
+    <nav>
+        <ul>
+            <li>
+                <a class="block w-full py-3 pl-4 border-green-600 {{ request()->path() == '/' ? 'bg-gray-700 border-l-green-600 border-l-4' : 'hover:bg-gray-800' }}" href="/">Home</a>
+            </li>
+            <li>
+                <a class="block w-full py-3 pl-4 border-green-600 {{ request()->path() == 'events' ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}" href="/events">Events</a>
+            </li>
         </ul>
+    </nav>
+    </div>
+    <div x-data="{ userInfo: false }">
+        <div class="lg:hidden">
+            <hr class="mt-1 mb-2">
+            <div class="">
+
+            </div>
+            <p class="px-2 mb-4">{{ auth()->user()->full_name }}
+                <span class="font-normal">{{ auth()->user()->email }} </span></p>
+            <button class="w-full px-1 pt-1 ml-1 text-left hover:bg-gray-200" @click="$dispatch('logout')">
+                <x-heroicon-o-arrow-right-start-on-rectangle class="inline w-5 mb-1" /> Logout
+            </button>
+
+        </div>
+        <div class="relative w-full py-4"
+        @mouseleave="userInfo = false">
+            <div @click="userInfo = !userInfo" class="items-center justify-center hidden w-12 h-12 mx-auto text-center text-gray-900 bg-gray-200 border-2 border-green-600 rounded-full cursor-pointer lg:flex ">
+                <p class="mx-auto my-auto">{{ substr(auth()->user()->first_name, 0, 1) }}{{ substr(auth()->user()->last_name, 0, 1) }}</p>
+            </div>
+            <div
+            x-show="userInfo"
+            @click.away="userInfo = false"
+            class="absolute mb-5 ml-5 bottom-1/2 left-1/2 w-52">
+                <div class="p-4 text-black bg-white rounded-lg shadow-xl ">
+                    <p>{{ auth()->user()->full_name }}</p>
+                    <p class="font-normal">{{ auth()->user()->email }}</p>
+                    <hr class="mt-1 mb-2">
+                    <button class="w-full px-1 pt-1 text-left rounded-lg hover:bg-gray-200" @click="$dispatch('logout')">
+                        <x-heroicon-o-arrow-right-start-on-rectangle class="inline w-5 mb-1" /> Logout
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="items-center justify-center table-cell w-3/5 lg:p-10">
-        @yield('slot')
-    </div>
 
+</div>
+
+
+<div class="flex-1">
+    {{ $slot }}
+</div>
+</div>
+<x-footer />
+</div>
+
+<x-modals.logout />
 </div>
