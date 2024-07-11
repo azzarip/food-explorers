@@ -6,7 +6,7 @@ namespace Database\Seeders;
 
 use App\Models\Event;
 use App\Models\Contact;
-use App\Models\Restaurant;
+use App\Models\Location;
 use Illuminate\Database\Seeder;
 use Azzarip\Teavel\Database\Factories\ContactFactory;
 
@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        Restaurant::factory(3)->create();
+        Location::factory(3)->create();
 
         $c = Contact::create([
             'first_name' => 'Paco',

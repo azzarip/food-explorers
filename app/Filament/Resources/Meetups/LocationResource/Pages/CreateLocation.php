@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\Meetups\RestaurantResource\Pages;
+namespace App\Filament\Resources\Meetups\LocationResource\Pages;
 
-use App\Filament\Resources\Meetups\RestaurantResource;
+use App\Filament\Resources\Meetups\LocationResource;
 use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
 
-class CreateRestaurant extends CreateRecord
+class CreateLocation extends CreateRecord
 {
-    protected static string $resource = RestaurantResource::class;
+    protected static string $resource = LocationResource::class;
 
     protected static bool $canCreateAnother = false;
 

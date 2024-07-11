@@ -6,7 +6,7 @@ use Filament\Forms;
 use Filament\Tables;
 use App\Models\Meetup;
 use Filament\Forms\Form;
-use App\Models\Restaurant;
+use App\Models\Location;
 use Filament\Tables\Table;
 use Filament\Forms\Components\Select;
 use Filament\Tables\Columns\TextColumn;
@@ -36,7 +36,7 @@ class MeetupsRelationManager extends RelationManager
             ->recordTitleAttribute('title')
             ->columns([
                 TextColumn::make('title'),
-                TextColumn::make('restaurant.name'),
+                TextColumn::make('location.name'),
                 TextColumn::make('scheduled_at')
                     ->dateTime('j F Y'),
             ])
@@ -49,14 +49,14 @@ class MeetupsRelationManager extends RelationManager
                 ->modalHeading('Find Meetup')
 
                 ->form([
-                    Select::make('restaurant')
+                    Select::make('location')
                     ->required()
-                    ->options(Restaurant::all()->pluck('name', 'id'))
+                    ->options(Location::all()->pluck('name', 'id'))
                     ->live(),
                     Select::make('meetup')
                     ->required()
                     ->options(fn (\Filament\Forms\Get $get) => Meetup::query()
-                        ->where('restaurant_id', $get('restaurant'))
+                        ->where('location_id', $get('location'))
                         ->whereDoesntHave('contacts', function ($query) {
                             $query->where('contact_id', $this->ownerRecord->id);
                         })->get()->pluck('title_date', 'id'))

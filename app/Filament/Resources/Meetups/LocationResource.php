@@ -5,19 +5,19 @@ namespace App\Filament\Resources\Meetups;
 use Filament\Forms;
 use Filament\Tables;
 use Filament\Forms\Form;
-use App\Models\Restaurant;
+use App\Models\Location;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\Meetups\RestaurantResource\Pages;
-use App\Filament\Resources\Meetups\RestaurantResource\RelationManagers;
+use App\Filament\Resources\Meetups\LocationResource\Pages;
+use App\Filament\Resources\Meetups\LocationResource\RelationManagers;
 
-class RestaurantResource extends Resource
+class LocationResource extends Resource
 {
-    protected static ?string $model = Restaurant::class;
+    protected static ?string $model = Location::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-building-storefront';
 
@@ -67,9 +67,9 @@ class RestaurantResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListRestaurants::route('/'),
-            'create' => Pages\CreateRestaurant::route('/create'),
-            'edit' => Pages\EditRestaurant::route('/{record}/edit'),
+            'index' => Pages\ListLocations::route('/'),
+            'create' => Pages\CreateLocation::route('/create'),
+            'edit' => Pages\EditLocation::route('/{record}/edit'),
         ];
     }
 }

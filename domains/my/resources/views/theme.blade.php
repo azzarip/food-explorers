@@ -1,10 +1,7 @@
 <div x-data="{ open: false }" x-init="width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 if (width > 1040) { open = true; }"
     @resize.window="width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    console.log('width = ' + screen.width);
     if (width > 1040) { open = true;}">
-
-
     <div id="menuButton" class="fixed top-0 left-0 z-50 p-4 lg:hidden">
         <x-heroicon-o-bars-3 class="w-8 h-8 text-gray-900 cursor-pointer" @click="open = true" x-show="!open" />
         <x-heroicon-o-x-mark class="w-8 h-8 text-white cursor-pointer" @click="open = false" x-show="open" x-cloak />
@@ -19,8 +16,11 @@ if (width > 1040) { open = true; }"
                 x-transition:leave="transition duration-300" x-transition:leave-start="transform translate-x-0"
                 x-transition:leave-end="transform -translate-x-full">
                 <div id="top">
-                    <div class="h-40"></div>
-                    <p class="hidden my-2 ml-8 lg:block">Hi {{ auth()->user()->first_name }},</p>
+                    <div class="w-24 p-1 mx-auto mt-4 mb-2 bg-white border-4 border-green-900 rounded-full lg:border-[6px] lg:w-32">
+                        <img src="{{ image('logo_sm.webp') }}" alt="Logo Food Explorers" class="mx-auto">
+                    </div>
+                    <p class="text-center">Food Explorers</p>
+                    <p class="hidden my-2 ml-8 lg:block"> <span class="font-normal">Hi</span> {{ auth()->user()->first_name }},</p>
                     <nav>
                         <ul>
                             <li>

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Resources\Meetups\RestaurantResource\RelationManagers;
+namespace App\Filament\Resources\Meetups\LocationResource\RelationManagers;
 
 use Filament\Forms;
 use Filament\Forms\Form;

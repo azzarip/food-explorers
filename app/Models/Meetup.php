@@ -11,9 +11,9 @@ class Meetup extends Model
 
     protected $guarded = [];
 
-    public function restaurant()
+    public function location()
     {
-        return $this->belongsTo(Restaurant::class, 'location_id');
+        return $this->belongsTo(Location::class, 'location_id');
     }
 
     public function contacts()
@@ -23,7 +23,7 @@ class Meetup extends Model
 
     public function getFullTitleAttribute(): string
     {
-        return "{$this->title} @ {$this->restaurant->name} ({$this->scheduled_at->format('d/m/Y')})";
+        return "{$this->title} @ {$this->location->name} ({$this->scheduled_at->format('d/m/Y')})";
     }
     public function getTitleDateAttribute(): string
     {

@@ -6,7 +6,7 @@ use Filament\Forms;
 use Filament\Tables;
 use App\Models\Meetup;
 use Filament\Forms\Form;
-use App\Models\Restaurant;
+use App\Models\Location;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
 use Filament\Forms\Components\Select;
@@ -31,10 +31,10 @@ class MeetupResource extends Resource
                 TextInput::make('title')
                     ->required()
                     ->maxLength(255),
-                Select::make('restaurant_id')
-                    ->label('Restaurant')
+                Select::make('location_id')
+                    ->label('Location')
                     ->required()
-                    ->options(Restaurant::all()->pluck('name', 'id'))
+                    ->options(Location::all()->pluck('name', 'id'))
                     ->searchable(),
                 DateTimePicker::make('scheduled_at')
                     ->native(false)
@@ -55,7 +55,7 @@ class MeetupResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('title'),
-                TextColumn::make('restaurant.name'),
+                TextColumn::make('location.name'),
                 TextColumn::make('scheduled_at')
                     ->dateTime('j F Y,  H:m'),
                 TextColumn::make('max_participants'),

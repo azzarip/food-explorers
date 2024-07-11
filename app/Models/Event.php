@@ -2,19 +2,18 @@
 
 namespace App\Models;
 
-use App\Models\Restaurant;
+use App\Models\Location;
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Event extends Model
 {
     use HasFactory;
 
-    public function restaurant()
+    public function location()
     {
-        return $this->belongsTo(Restaurant::class, 'location_id');
+        return $this->belongsTo(Location::class, 'location_id');
     }
 
     public function contacts()
