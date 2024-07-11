@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Location;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Meetup extends Model
 {
@@ -13,7 +14,7 @@ class Meetup extends Model
 
     public function location()
     {
-        return $this->belongsTo(Location::class, 'location_id');
+        return $this->belongsTo(Location::class);
     }
 
     public function contacts()
@@ -35,15 +36,5 @@ class Meetup extends Model
         return [
             'scheduled_at' => 'datetime',
         ];
-    }
-
-    protected $table = 'events'; // Point to the same table
-
-    // Override the default query to apply the scope
-    protected static function booted()
-    {
-        static::addGlobalScope('meetups', function ($builder) {
-            $builder->where('paid', false);
-        });
     }
 }

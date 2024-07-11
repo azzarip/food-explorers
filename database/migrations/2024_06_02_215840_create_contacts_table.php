@@ -26,7 +26,7 @@ return new class extends Migration
             $table->foreignId('billing_id')->nullable();
             $table->rememberToken();
             $table->timestamps();
-            $table->string('full_name')->virtualAs('first_name || \' \' || last_name');
+            $table->string('full_name')->virtualAs('concat(first_name, \' \', last_name)');
         });
     }
 

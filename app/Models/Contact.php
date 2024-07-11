@@ -2,23 +2,19 @@
 
 namespace App\Models;
 
-use App\Models\Event;
+use App\Models\Meetup;
+use Illuminate\Auth\Authenticatable;
 use Azzarip\Teavel\Models\Contact as BaseContact;
+use Illuminate\Foundation\Auth\Access\Authorizable;
 
 class Contact extends BaseContact
 {
+    protected $guarded = [];
 
-    public function events()
+    public function meetups()
     {
-        return $this->belongsToMany(Event::class)->withTimestamps();
+        return $this->belongsToMany(Meetup::class)->withTimestamps();
     }
 
-    public function pastEvents()
-    {
-        return $this->belongsToMany(Event::class)
-                    ->where('scheduled_at', '<', now()->startOfDay())
-                    ->orderBy('scheduled_at', 'DESC')
-                    ->withTimestamps();
-    }
 
 }

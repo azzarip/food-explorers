@@ -10,7 +10,7 @@ if (width > 1040) { open = true; }"
     <div id="screen" class="flex flex-col justify-between w-full min-h-screen">
         <div id="page" class="flex flex-1 w-full">
             <div id="sidebar"
-                class="z-20 flex flex-col justify-between font-semibold text-white bg-gray-900 shadow-xl shadow-gray-900 w-80"
+                class="flex flex-col justify-between font-semibold text-white bg-gray-900 shadow-xl shadow-gray-900 w-80"
                 x-show="open" x-transition:enter="transition duration-300"
                 x-transition:enter-start="transform -translate-x-full" x-transition:enter-end="transform translate-x-0"
                 x-transition:leave="transition duration-300" x-transition:leave-start="transform translate-x-0"

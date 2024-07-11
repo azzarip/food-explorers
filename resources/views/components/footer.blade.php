@@ -1,4 +1,4 @@
-<footer {{ $attributes }}>
+<footer>
     <div class="px-2 py-2 bg-black font-lato">
         <div class="flex flex-col mb-3 text-center text-white gap-y-3 md:flex-row justify-evenly">
             <a href="mailto:info@foodexplorers.ch"> <x-heroicon-s-envelope class="inline w-5 h-5"/> info@foodexplorers.ch</a>

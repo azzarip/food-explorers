@@ -11,11 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('contact_event', function (Blueprint $table) {
-            $table->foreignId('contact_id')->constrained()->onDelete('cascade');
-            $table->foreignId('event_id')->constrained()->onDelete('cascade');
+        Schema::create('meetups', function (Blueprint $table) {
+            $table->id();
+            $table->string('title');
+            $table->foreignId('restaurant_id');
+            $table->timestamp('scheduled_at');
+            $table->tinyInteger('max_participants')->unsigned();
             $table->timestamps();
-            $table->primary(['contact_id', 'event_id']);
+
         });
     }
 
@@ -24,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('contact_event');
+        Schema::dropIfExists('meetups');
     }
 };
