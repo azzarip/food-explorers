@@ -2,14 +2,16 @@
 
 namespace App\Models;
 
+use App\Models\Event;
 use App\Models\Location;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Meetup extends Model
+class Meetup extends Event
 {
     use HasFactory;
 
+    protected $table = 'events';
     protected $guarded = [];
 
     public function location()
@@ -37,4 +39,15 @@ class Meetup extends Model
             'scheduled_at' => 'datetime',
         ];
     }
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::addGlobalScope('type_id', function (Builder $builder) {
+            $builder->where('type_id', 1);
+        });
+    }
+
+
 }

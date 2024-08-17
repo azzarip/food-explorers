@@ -11,13 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('contact_meetup', function (Blueprint $table) {
+        Schema::create('contact_event', function (Blueprint $table) {
             $table->foreignId('contact_id')->constrained()->onDelete('cascade');
-            $table->foreignId('meetup_id')->constrained()->onDelete('cascade');
-            // $table->boolean('confirmed')->default(false);
-            // $table->boolean('checked-in')->default(false);
+            $table->foreignId('event_id')->constrained()->onDelete('cascade');
             $table->timestamps();
-            $table->primary(['contact_id', 'meetup_id']);
+            $table->primary(['contact_id', 'event_id']);
         });
     }
 

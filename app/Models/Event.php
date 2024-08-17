@@ -33,7 +33,7 @@ class Event extends Model
     protected function casts(): array
     {
         return [
-            'scheduled_at' => 'datetime:Y-m-d',
+            'scheduled_at' => 'datetime',
         ];
     }
 

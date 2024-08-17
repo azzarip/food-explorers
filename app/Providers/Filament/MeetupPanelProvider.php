@@ -24,14 +24,14 @@ class MeetupPanelProvider extends PanelProvider
     {
         return $panel
             ->id('meetup')
-            ->path('meetups')
+
             ->domain(config('domains.admin.url'))
             ->login()
             ->authGuard('admin')
             ->colors([
-                'primary' => Color::Amber,
+                'primary' => Color::Red,
             ])
-            ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
+            ->discoverResources(in: app_path('Filament/Resources/Meetups'), for: 'App\\Filament\\Resources\\Meetups')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
                 Pages\Dashboard::class,
