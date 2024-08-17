@@ -62,3 +62,24 @@ figcaption {
 .test {
     @apply border-2 border-red-600;
 }
+
+.button-34 {
+    background: #16a34a;
+    border-radius: 999px;
+    box-shadow: #16a34a 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    word-break: break-word;
+    border: 0;
+  }
+  .button-34:hover {
+    background: #84cc16; /* Equivalent to bg-lime-500 in Tailwind CSS */
+}

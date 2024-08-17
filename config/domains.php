@@ -3,19 +3,19 @@
 return [
 
     'base' => [
-        'url' => env('DOMAIN_BASE'),
+        'url' => 'www.' . env('DOMAIN_BASE'),
         'fonts' => [],
         'name' => 'Food Explorers',
     ],
 
     'admin' => [
-        'url' => env('DOMAIN_ADMIN', 'admin.' . env('DOMAIN_BASE')),
+        'url' => 'admin.' . env('DOMAIN_BASE'),
         'fonts' => [],
         'name' => 'Admin - Food Explorers',
     ],
 
     'my' => [
-        'url' => env('DOMAIN_MY', 'my.' . env('DOMAIN_BASE')),
+        'url' => 'my.' . env('DOMAIN_BASE'),
         'fonts' => [],
         'name' => 'My - Food Explorers',
     ],
