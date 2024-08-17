@@ -9,7 +9,7 @@
 @endphp
 
 @section('main')
-<div class="max-w-3xl mx-auto bg-white rounded-md">
+<div class="max-w-3xl mx-auto bg-white border-green-600 rounded-2xl border-y-8">
     <div class="py-10 mt-10">
     <h1 class="text-4xl text-center text-black">Food Explorers <br> <span class="text-3xl">Login</span></h1>
     <form action="{{ route('login') }}" method="POST" >
@@ -21,7 +21,7 @@
             type="email"
             id="email"
             name="email"
-            class="w-full p-3 border border-gray-400 rounded-md hover:border-green-600 focus:border-green-600 focus:border-4"
+            class="w-full p-3 border border-gray-400 rounded-md hover:border-green-600 focus:border-green-600"
             placeholder="Your email"
             required
             aria-label="Email"

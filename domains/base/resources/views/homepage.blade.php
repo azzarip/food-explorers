@@ -9,5 +9,12 @@
 @endphp
 
 @section('main')
-
+@guest
+  <p>{{ auth()->check() }}</p>
+@else
+<p>{{ auth()->user()->first_name }}</p>
+<form action="/logout" method="post">
+    <button>LOGOUT</button>@csrf
+</form>
+@endguest
 @endsection

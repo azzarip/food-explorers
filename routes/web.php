@@ -1,7 +1,8 @@
 <?php
 
-use App\Filament\Dashboard\Pages\Dashboard;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LogoutController;
+use App\Filament\Dashboard\Pages\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/loggo', function () {
-    auth('admin')->login(\App\Models\User::first(), true);
-    return redirect(Dashboard::getUrl());
-});
+Route::post('/logout', LogoutController::class);

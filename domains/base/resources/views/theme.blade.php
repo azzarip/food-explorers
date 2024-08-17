@@ -27,7 +27,11 @@
             </li>
         @endforeach
         <li class="rounded-md ">
-            <a href="/login" class="px-4 py-2 button-34">Login</a>
+            @auth
+                <a href="{{ durl('/', 'my', [], false) }}" class="px-4 py-2 button-34">{{ auth()->user()->first_name }}</a>
+            @else
+                <a href="/login" class="px-4 py-2 button-34">Login</a>
+            @endauth
         </li>
     </ul>
 @endsection

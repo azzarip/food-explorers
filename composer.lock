@@ -1805,22 +1805,13 @@
             "dist": {
                 "type": "path",
                 "url": "domains/base",
-                "reference": "f0bccbcef808488cbaf8dab8f2df08f56ec09108"
+                "reference": "c953dd0fb7938955705bb5e4e3200e22d5a7dc05"
             },
             "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Domains\\Base\\Providers\\BaseServiceProvider"
-                    ]
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Domains\\Base\\": "src/",
-                    "Domains\\Base\\Tests\\": "tests/",
-                    "Domains\\Base\\Database\\Factories\\": "database/factories/",
-                    "Domains\\Base\\Database\\Seeders\\": "database/seeders/"
+                    "Domains\\Base\\Tests\\": "tests/"
                 }
             },
             "license": [
