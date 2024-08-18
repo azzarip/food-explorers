@@ -1,4 +1,4 @@
-<div x-data="{logout: true}" x-cloak x-show="logout" @logout.window="logout = true" class="fixed top-0 bottom-0 left-0 right-0 z-10 flex items-center justify-center w-full bg-black/50">
+<div x-data="{logout: false}" x-cloak x-show="logout" @logout.window="logout = true" class="fixed top-0 bottom-0 left-0 right-0 z-10 flex items-center justify-center w-full bg-black/50">
     <div x-show="logout" x-transition.scale.origin.right.50 @click.outside="logout = false"
         class="fixed z-20 w-4/5 max-w-lg bg-white rounded-lg lg:w-2/3">
         <p class="py-5 text-2xl text-center">Do you really want to logout?</p>

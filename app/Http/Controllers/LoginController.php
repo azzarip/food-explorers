@@ -16,18 +16,22 @@ class LoginController extends Controller
     public function __invoke(LoginRequest $request)
     {
         $request->validated();
-
         $contact = Contact::findEmail($request['email']);
 
         if(!$contact || !$contact->is_registered) {
             return back()->withErrors(['user' => 'User not registered']);
         }
-        if ($contact && Hash::check($request['password'], $contact->password)) {
-            Auth::login($contact, true);
-        } else {
+
+        if (! Hash::check($request['password'], $contact->password)) {
             return back()->withErrors(['email' => 'Invalid credentials']);
         }
 
+        $request->session()->regenerate();
+        Auth::login($contact, true);
+
+        if (session()->has('url.intended')) {
+            return redirect(session('url.intended'));
+        }
         return redirect('/');
     }
 }
