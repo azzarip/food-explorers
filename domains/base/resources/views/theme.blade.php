@@ -28,9 +28,9 @@
         @endforeach
         <li class="rounded-md ">
             @auth
-                <a href="{{ durl('/', 'my', [], false) }}" class="px-4 py-2 button-34">{{ auth()->user()->first_name }}</a>
+                <a href="{{ durl('/', 'my', [], false) }}" class="px-4 py-2 big-button">{{ auth()->user()->first_name }}</a>
             @else
-                <a href="/login" class="px-4 py-2 button-34">Login</a>
+                <a href="/login" class="px-4 py-2 big-button">Login</a>
             @endauth
         </li>
     </ul>

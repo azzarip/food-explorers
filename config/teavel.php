@@ -7,7 +7,7 @@ return [
  * The views that will be loaded to handle authentication and password reset logic.
  */
 'auth_views' => [
-    'login' => 'base::login',
+    'login' => 'auth.login',
     'register' => '',
     'password_request_form' => 'auth.password-request',
     'password_request_success' => 'auth.password-success',

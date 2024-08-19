@@ -7,12 +7,15 @@ export default {
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
         "./resources/**/*.vue",
-        "./vendor/azzarip/utilities/resources/**/*.blade.php",
+        "./vendor/azzarip/utilities/resources/views/**/*.blade.php",
         "./domains/**/resources/views/**/*.blade.php",
     ],
     theme: {
         extend: {
             colors: {
+                primary: {
+                    DEFAULT: '#16a34a'
+                },
                 background: {
                     DEFAULT: '#051F29',
                 }
