@@ -41,9 +41,19 @@
    @foreach ($items as $label => $path)
         <li class="p-3 text-xl border-b group hover:bg-slate-200">
             <a href="{{ $path }}"
-                class="block w-full h-full {{ request()->path() === $path ? 'font-semibold' : '' }}">{{ $label }}</a>
+                class="block w-full h-full {{ request()->path() === $path ? 'font-semibold' : '' }}">{{ $label }}
+            </a>
         </li>
     @endforeach
-
+        <li class="p-3 text-xl border-y border-t-black group hover:bg-slate-200">
+            <a href="/login"
+                class="block w-full h-full {{ request()->path() === '/login' ? 'font-semibold' : '' }}">Login
+            </a>
+        </li>
+        <li class="p-3 text-xl border-b group hover:bg-slate-200">
+            <a href="/register"
+                class="block w-full h-full {{ request()->path() === '/register' ? 'font-semibold' : '' }}">Become a Restaurant Explorer
+            </a>
+        </li>
 </ul>
 @endsection

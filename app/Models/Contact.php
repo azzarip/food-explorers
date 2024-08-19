@@ -3,9 +3,7 @@
 namespace App\Models;
 
 use App\Models\Meetup;
-use Illuminate\Auth\Authenticatable;
 use Azzarip\Teavel\Models\Contact as BaseContact;
-use Illuminate\Foundation\Auth\Access\Authorizable;
 
 class Contact extends BaseContact
 {
@@ -15,6 +13,5 @@ class Contact extends BaseContact
     {
         return $this->belongsToMany(Meetup::class)->withTimestamps();
     }
-
 
 }
