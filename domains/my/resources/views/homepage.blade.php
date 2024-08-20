@@ -1,4 +1,4 @@
-@extends('layouts.1col')
+@extends('azzarip::layouts.1col')
 
 @section('main')
 
