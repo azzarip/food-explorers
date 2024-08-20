@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LogoutController;
-use App\Filament\Dashboard\Pages\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +16,3 @@ use App\Filament\Dashboard\Pages\Dashboard;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::post('/logout', LogoutController::class);

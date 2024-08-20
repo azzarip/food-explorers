@@ -8,9 +8,8 @@ return [
  */
 'auth_views' => [
     'login' => 'auth.login',
-    'register' => '',
-    'password_request_form' => 'auth.password-request',
-    'password_request_success' => 'auth.password-success',
-    'password_reset_form' => 'base::pwd-modify',
+    'password_request' => 'auth.password-request',
+    'password_success' => 'auth.password-success',
+    'password_reset' => 'auth.password-reset',
 ],
 ];
