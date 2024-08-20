@@ -10,10 +10,10 @@
 
 @section('main')
 @guest
-  <p>{{ auth()->check() }}</p>
+  <p>{{ auth()->check() ? 'Paco Ricci' : 'Nino Falini' }}</p>
 @else
 <p>{{ auth()->user()->first_name }}</p>
-<form action="/logout" method="post">
+<form action="{{ route('logout') }}" method="post">
     <button>LOGOUT</button>@csrf
 </form>
 @endguest

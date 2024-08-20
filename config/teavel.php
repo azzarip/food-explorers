@@ -2,6 +2,7 @@
 
 return [
 
+    'domain' => config('domains.base.url'),
 /**
  * Auth Views
  * The views that will be loaded to handle authentication and password reset logic.

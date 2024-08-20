@@ -230,12 +230,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/azzarip/teavel.git",
-                "reference": "799473244f4cfea551ce37a186f612de3b26d7fb"
+                "reference": "d914673460521cd7fe2c37352a93644aaa8a42eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/azzarip/teavel/zipball/799473244f4cfea551ce37a186f612de3b26d7fb",
-                "reference": "799473244f4cfea551ce37a186f612de3b26d7fb",
+                "url": "https://api.github.com/repos/azzarip/teavel/zipball/d914673460521cd7fe2c37352a93644aaa8a42eb",
+                "reference": "d914673460521cd7fe2c37352a93644aaa8a42eb",
                 "shasum": ""
             },
             "require": {
@@ -307,7 +307,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-08-20T14:14:46+00:00"
+            "time": "2024-08-20T16:34:59+00:00"
         },
         {
             "name": "azzarip/utilities",
@@ -3294,16 +3294,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v11.20.0",
+            "version": "v11.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "3cd7593dd9b67002fc416b46616f4d4d1da3e571"
+                "reference": "9d9d36708d56665b12185493f684abce38ad2d30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/3cd7593dd9b67002fc416b46616f4d4d1da3e571",
-                "reference": "3cd7593dd9b67002fc416b46616f4d4d1da3e571",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/9d9d36708d56665b12185493f684abce38ad2d30",
+                "reference": "9d9d36708d56665b12185493f684abce38ad2d30",
                 "shasum": ""
             },
             "require": {
@@ -3496,20 +3496,20 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2024-08-06T14:39:21+00:00"
+            "time": "2024-08-20T15:00:52+00:00"
         },
         {
             "name": "laravel/prompts",
-            "version": "v0.1.24",
+            "version": "v0.1.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/prompts.git",
-                "reference": "409b0b4305273472f3754826e68f4edbd0150149"
+                "reference": "7b4029a84c37cb2725fc7f011586e2997040bc95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/prompts/zipball/409b0b4305273472f3754826e68f4edbd0150149",
-                "reference": "409b0b4305273472f3754826e68f4edbd0150149",
+                "url": "https://api.github.com/repos/laravel/prompts/zipball/7b4029a84c37cb2725fc7f011586e2997040bc95",
+                "reference": "7b4029a84c37cb2725fc7f011586e2997040bc95",
                 "shasum": ""
             },
             "require": {
@@ -3552,9 +3552,9 @@
             "description": "Add beautiful and user-friendly forms to your command-line applications.",
             "support": {
                 "issues": "https://github.com/laravel/prompts/issues",
-                "source": "https://github.com/laravel/prompts/tree/v0.1.24"
+                "source": "https://github.com/laravel/prompts/tree/v0.1.25"
             },
-            "time": "2024-06-17T13:58:22+00:00"
+            "time": "2024-08-12T22:06:33+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -6686,16 +6686,16 @@
         },
         {
             "name": "spatie/browsershot",
-            "version": "4.2.0",
+            "version": "4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/browsershot.git",
-                "reference": "dbc8c71d34a57f5054812caedd40ca5ad3ba8135"
+                "reference": "6fc6c0c7c9c720d2d0429c853c7b573bf51e58d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/browsershot/zipball/dbc8c71d34a57f5054812caedd40ca5ad3ba8135",
-                "reference": "dbc8c71d34a57f5054812caedd40ca5ad3ba8135",
+                "url": "https://api.github.com/repos/spatie/browsershot/zipball/6fc6c0c7c9c720d2d0429c853c7b573bf51e58d2",
+                "reference": "6fc6c0c7c9c720d2d0429c853c7b573bf51e58d2",
                 "shasum": ""
             },
             "require": {
@@ -6741,7 +6741,7 @@
                 "webpage"
             ],
             "support": {
-                "source": "https://github.com/spatie/browsershot/tree/4.2.0"
+                "source": "https://github.com/spatie/browsershot/tree/4.2.1"
             },
             "funding": [
                 {
@@ -6749,7 +6749,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-08-20T09:29:27+00:00"
+            "time": "2024-08-20T15:23:47+00:00"
         },
         {
             "name": "spatie/color",
