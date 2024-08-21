@@ -12,7 +12,8 @@
 @section('content')
 <div class="pt-4 pb-8 lg:pt-10">
     <p class="text-4xl leading-normal text-center text-black">Food Explorers</p>
-    <x-teavel::auth.login />
+
+    <x-forms::login />
 
     <div class="mt-8">
         <p class="mb-1 text-xl">Are you new and want to be part of the community?</p>

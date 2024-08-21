@@ -11,6 +11,6 @@
 
 @section('content')
 <div class="my-4">
-    <x-teavel::auth.password-success />
+    <x-forms::password-success />
 </div>
 @endsection

@@ -128,16 +128,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.320.3",
+            "version": "3.320.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "afe137e61b0b536c93a71ce3bb3cdac2e92ae789"
+                "reference": "e6af3e760864d43a30d8b7deb4f9dc6a49a5f66a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/afe137e61b0b536c93a71ce3bb3cdac2e92ae789",
-                "reference": "afe137e61b0b536c93a71ce3bb3cdac2e92ae789",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e6af3e760864d43a30d8b7deb4f9dc6a49a5f66a",
+                "reference": "e6af3e760864d43a30d8b7deb4f9dc6a49a5f66a",
                 "shasum": ""
             },
             "require": {
@@ -220,9 +220,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.320.3"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.320.4"
             },
-            "time": "2024-08-19T18:05:46+00:00"
+            "time": "2024-08-20T18:20:32+00:00"
         },
         {
             "name": "azzarip/teavel",
@@ -230,12 +230,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/azzarip/teavel.git",
-                "reference": "d914673460521cd7fe2c37352a93644aaa8a42eb"
+                "reference": "f800fa3c577e8fc8eb81ee4e15f0f28e15c12bdc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/azzarip/teavel/zipball/d914673460521cd7fe2c37352a93644aaa8a42eb",
-                "reference": "d914673460521cd7fe2c37352a93644aaa8a42eb",
+                "url": "https://api.github.com/repos/azzarip/teavel/zipball/f800fa3c577e8fc8eb81ee4e15f0f28e15c12bdc",
+                "reference": "f800fa3c577e8fc8eb81ee4e15f0f28e15c12bdc",
                 "shasum": ""
             },
             "require": {
@@ -307,7 +307,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-08-20T16:34:59+00:00"
+            "time": "2024-08-21T13:33:08+00:00"
         },
         {
             "name": "azzarip/utilities",
@@ -315,12 +315,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/azzarip/utilities.git",
-                "reference": "190fe20f65bccddfc90c286a6588d67be4560dfe"
+                "reference": "c1ccef0a33e6a45adbf9ba700b7d1c81bc13b9ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/azzarip/utilities/zipball/190fe20f65bccddfc90c286a6588d67be4560dfe",
-                "reference": "190fe20f65bccddfc90c286a6588d67be4560dfe",
+                "url": "https://api.github.com/repos/azzarip/utilities/zipball/c1ccef0a33e6a45adbf9ba700b7d1c81bc13b9ac",
+                "reference": "c1ccef0a33e6a45adbf9ba700b7d1c81bc13b9ac",
                 "shasum": ""
             },
             "require": {
@@ -377,7 +377,7 @@
                 "issues": "https://github.com/azzarip/utilities/issues",
                 "source": "https://github.com/azzarip/utilities/tree/main"
             },
-            "time": "2024-08-20T07:06:56+00:00"
+            "time": "2024-08-21T15:06:57+00:00"
         },
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -1984,7 +1984,7 @@
         },
         {
             "name": "filament/actions",
-            "version": "v3.2.105",
+            "version": "v3.2.106",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/actions.git",
@@ -2037,7 +2037,7 @@
         },
         {
             "name": "filament/filament",
-            "version": "v3.2.105",
+            "version": "v3.2.106",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/panels.git",
@@ -2102,7 +2102,7 @@
         },
         {
             "name": "filament/forms",
-            "version": "v3.2.105",
+            "version": "v3.2.106",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/forms.git",
@@ -2158,7 +2158,7 @@
         },
         {
             "name": "filament/infolists",
-            "version": "v3.2.105",
+            "version": "v3.2.106",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/infolists.git",
@@ -2209,7 +2209,7 @@
         },
         {
             "name": "filament/notifications",
-            "version": "v3.2.105",
+            "version": "v3.2.106",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/notifications.git",
@@ -2261,16 +2261,16 @@
         },
         {
             "name": "filament/support",
-            "version": "v3.2.105",
+            "version": "v3.2.106",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/support.git",
-                "reference": "544e521a310b1b4e7783d8ad1781ef7b1915232a"
+                "reference": "7cded440dee149f86f5d157164bc57e4e18f6842"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/support/zipball/544e521a310b1b4e7783d8ad1781ef7b1915232a",
-                "reference": "544e521a310b1b4e7783d8ad1781ef7b1915232a",
+                "url": "https://api.github.com/repos/filamentphp/support/zipball/7cded440dee149f86f5d157164bc57e4e18f6842",
+                "reference": "7cded440dee149f86f5d157164bc57e4e18f6842",
                 "shasum": ""
             },
             "require": {
@@ -2316,20 +2316,20 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2024-08-20T12:51:40+00:00"
+            "time": "2024-08-21T06:07:30+00:00"
         },
         {
             "name": "filament/tables",
-            "version": "v3.2.105",
+            "version": "v3.2.106",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/tables.git",
-                "reference": "d801f70146d07fbf3cbbb9d9c09d8daf0ff530b5"
+                "reference": "1d256833bfc5fc67276c1f0fb44e364dfb0f4ef1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/tables/zipball/d801f70146d07fbf3cbbb9d9c09d8daf0ff530b5",
-                "reference": "d801f70146d07fbf3cbbb9d9c09d8daf0ff530b5",
+                "url": "https://api.github.com/repos/filamentphp/tables/zipball/1d256833bfc5fc67276c1f0fb44e364dfb0f4ef1",
+                "reference": "1d256833bfc5fc67276c1f0fb44e364dfb0f4ef1",
                 "shasum": ""
             },
             "require": {
@@ -2368,11 +2368,11 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2024-08-20T08:32:55+00:00"
+            "time": "2024-08-21T06:07:26+00:00"
         },
         {
             "name": "filament/widgets",
-            "version": "v3.2.105",
+            "version": "v3.2.106",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/widgets.git",
@@ -5806,16 +5806,16 @@
         },
         {
             "name": "psr/log",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001"
+                "reference": "79dff0b268932c640297f5208d6298f71855c03e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/fe5ea303b0887d5caefd3d431c3e61ad47037001",
-                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/79dff0b268932c640297f5208d6298f71855c03e",
+                "reference": "79dff0b268932c640297f5208d6298f71855c03e",
                 "shasum": ""
             },
             "require": {
@@ -5850,9 +5850,9 @@
                 "psr-3"
             ],
             "support": {
-                "source": "https://github.com/php-fig/log/tree/3.0.0"
+                "source": "https://github.com/php-fig/log/tree/3.0.1"
             },
-            "time": "2021-07-14T16:46:02+00:00"
+            "time": "2024-08-21T13:31:24+00:00"
         },
         {
             "name": "psr/simple-cache",
@@ -11418,21 +11418,21 @@
         },
         {
             "name": "pestphp/pest",
-            "version": "v2.35.0",
+            "version": "v2.35.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pestphp/pest.git",
-                "reference": "d0ff2c8ec294b7aa7fcb0f3ddc4fdec864234646"
+                "reference": "b13acb630df52c06123588d321823c31fc685545"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pestphp/pest/zipball/d0ff2c8ec294b7aa7fcb0f3ddc4fdec864234646",
-                "reference": "d0ff2c8ec294b7aa7fcb0f3ddc4fdec864234646",
+                "url": "https://api.github.com/repos/pestphp/pest/zipball/b13acb630df52c06123588d321823c31fc685545",
+                "reference": "b13acb630df52c06123588d321823c31fc685545",
                 "shasum": ""
             },
             "require": {
                 "brianium/paratest": "^7.3.1",
-                "nunomaduro/collision": "^7.10.0|^8.3.0",
+                "nunomaduro/collision": "^7.10.0|^8.4.0",
                 "nunomaduro/termwind": "^1.15.1|^2.0.1",
                 "pestphp/pest-plugin": "^2.1.1",
                 "pestphp/pest-plugin-arch": "^2.7.0",
@@ -11510,7 +11510,7 @@
             ],
             "support": {
                 "issues": "https://github.com/pestphp/pest/issues",
-                "source": "https://github.com/pestphp/pest/tree/v2.35.0"
+                "source": "https://github.com/pestphp/pest/tree/v2.35.1"
             },
             "funding": [
                 {
@@ -11522,7 +11522,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-08-02T10:57:29+00:00"
+            "time": "2024-08-20T21:41:50+00:00"
         },
         {
             "name": "pestphp/pest-plugin",

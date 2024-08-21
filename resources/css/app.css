@@ -63,6 +63,7 @@ figcaption {
     @apply border-2 border-red-600;
 }
 
+.form-button,
 .big-button {
     background: #16a34a;
     border-radius: 999px;
@@ -86,4 +87,12 @@ figcaption {
 
 .iti {
     width: 100%;
+}
+
+.input-text {
+    @apply w-full p-2 border border-gray-400 rounded-md hover:border-primary focus:border-primary;
+}
+
+.form-button {
+    @apply block w-full max-w-lg py-3 mx-auto text-2xl;
 }

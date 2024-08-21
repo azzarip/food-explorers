@@ -9,6 +9,6 @@
 
 @section('content')
 <div class="pt-4 pb-8 lg:pt-10">
-   <x-teavel::auth.password-reset />
+   <x-forms::password-reset />
 </div>
 @endsection

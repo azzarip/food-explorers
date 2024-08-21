@@ -24,7 +24,7 @@ class RegisterController extends Controller
         {
             return redirect(route('login'))
                 ->withInput($request->only('email'))
-                ->withErrors(['user' => 'User already registered. Please login or reset the password.']);
+                ->withErrors(['user' => 'not_registered']);
         }
 
         Auth::login($contact, true);

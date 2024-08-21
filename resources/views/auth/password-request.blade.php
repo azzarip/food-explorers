@@ -9,7 +9,8 @@
 
 @section('content')
 <div class="pt-4 pb-8 lg:pt-10">
-    <x-teavel::auth.password-request />
+
+    <x-forms::password-request />
 
     <div class="mt-8">
         <p class="mb-1 text-xl">Are you new and want to be part of the community?</p>
