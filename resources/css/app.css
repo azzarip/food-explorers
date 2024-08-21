@@ -83,3 +83,7 @@ figcaption {
   .big-button:hover {
     background: #4ade80; /* Equivalent to bg-lime-500 in Tailwind CSS */
 }
+
+.iti {
+    width: 100%;
+}

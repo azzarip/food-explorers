@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,4 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('/register', 'auth.register')->name('register');
+Route::middleware('guest')->group(function () {
+    Route::view('/register', 'auth.register')->name('register');
+
+    Route::middleware('throttle:5')->post('/register', RegisterController::class);
+});
+
