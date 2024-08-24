@@ -24,10 +24,10 @@ class RegisterController extends Controller
         {
             return redirect(route('login'))
                 ->withInput($request->only('email'))
-                ->withErrors(['user' => 'not_registered']);
+                ->withErrors(['user' => 'already_registered']);
         }
 
         Auth::login($contact, true);
-        return redirect(route('my'));
+        return redirect(session('intended.url'));
     }
 }

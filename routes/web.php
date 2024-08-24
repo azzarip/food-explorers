@@ -24,3 +24,7 @@ Route::middleware('guest')->group(function () {
     Route::middleware('throttle:5')->post('/register', RegisterController::class);
 });
 
+Route::get('test', function () {
+    $d = new Azzarip\Teavel\Mail\Mailables\PasswordRegisterMail();
+    dd($d->toContact(\App\Models\Contact::first()));
+});
