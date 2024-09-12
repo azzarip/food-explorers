@@ -14,7 +14,7 @@
         <div>
             <h1 class="mb-2 text-3xl leading-normal text-center text-black">Become a member</h1>
 
-            <x-forms::base :action="route('register')" button="I want to become a member of the Food Explorers!">
+            <x-forms::base :action="route('register')" button="I want to become a Food Explorer!">
                 @csrf
                 <div class="space-y-4">
                     @error('user')
