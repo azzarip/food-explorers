@@ -1,14 +1,20 @@
+@props(['nav' => true])
+
 <div x-data="{ open: false }" x-init="width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 if (width > 1040) { open = true; }"
     @resize.window="width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     if (width > 1040) { open = true;}">
+
+    @if($nav)
     <div id="menuButton" class="fixed top-0 left-0 z-50 p-4 lg:hidden">
         <x-heroicon-o-bars-3 class="w-8 h-8 text-gray-900 cursor-pointer" @click="open = true" x-show="!open" />
         <x-heroicon-o-x-mark class="w-8 h-8 text-white cursor-pointer" @click="open = false" x-show="open" x-cloak />
     </div>
+    @endif
 
     <div id="screen" class="flex flex-col justify-between w-full min-h-screen">
         <div id="page" class="flex flex-1 w-full">
+            @if($nav)
             <div id="sidebar"
                 class="flex flex-col justify-between font-semibold text-white bg-gray-900 shadow-xl shadow-gray-900 w-80"
                 x-show="open" x-transition:enter="transition duration-300"
@@ -30,6 +36,10 @@ if (width > 1040) { open = true; }"
                             <li>
                                 <a class="block w-full py-3 pl-4 border-green-600 {{ request()->path() == 'events' ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
                                     href="/events">Events</a>
+                            </li>
+                            <li>
+                                <a class="block w-full py-3 pl-4 border-green-600 {{ request()->path() == 'events' ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
+                                    href="/options">Options</a>
                             </li>
                         </ul>
                     </nav>
@@ -71,7 +81,7 @@ if (width > 1040) { open = true; }"
                     </div>
                 </div>
             </div>
-
+            @endif
             <div class="z-0 w-full max-md:absolute max-md:start-0 lg:flex-1">
                 {{ $slot }}
             </div>

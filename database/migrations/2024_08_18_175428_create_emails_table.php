@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('uuid')->unique()->index();
             $table->string('automation');
             $table->foreignId('sequence_id')->nullable();
-            $table->foreign('file_id')->references('id')->on('email_files')->onDelete('cascade');
             $table->foreign('sequence_id')->references('id')->on('sequences')->onDelete('cascade');
             $table->timestamps();
         });
