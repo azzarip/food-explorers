@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    dd(request()->header('Accept-Language'));
 });
 
 Route::middleware('guest')->group(function () {
@@ -24,6 +24,4 @@ Route::middleware('guest')->group(function () {
     Route::middleware('throttle:5')->post('/register', RegisterController::class);
 });
 
-Route::get('/swap-language', function () {
 
-});

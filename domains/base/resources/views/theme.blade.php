@@ -1,4 +1,4 @@
-@extends('azzarip::layout')
+@extends('azzarip::menu')
 
 @php
     $items = [
