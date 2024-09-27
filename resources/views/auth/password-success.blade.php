@@ -11,6 +11,6 @@
 
 @section('content')
 <div class="my-4">
-    <x-forms::password-success />
+    <x-forms::password-.uccess />
 </div>
 @endsection
