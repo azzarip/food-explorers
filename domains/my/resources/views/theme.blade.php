@@ -92,5 +92,5 @@ if (width > 1040) { open = true; }"
 
 </div>
 
-<x-modals.logout />
+<x-modals::logout />
 </div>
