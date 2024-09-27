@@ -10,7 +10,7 @@ Route::group([
     'middleware' => 'web'
 ], function () {
     Route::view('/en', 'base::homepage');
-    Route::get('/', fn () => abort(404));
+    Route::get('/', fn () => 'Website under construction');
 
 
     Route::get('/yu-an-omakase', function () {
