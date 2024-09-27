@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    dd(request()->header('Accept-Language'));
+    abort(404);
 });
 
 Route::middleware('guest')->group(function () {
