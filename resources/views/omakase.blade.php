@@ -123,7 +123,7 @@
         <p> 3. You want to join but you can't.</p>
         <p> 4. We will all go together except you.</p>
         <p> 5. You will end up alone, with a cold pizza from the delivery.</p>
-        <p class="font-semibold">This is what you want really?</p>
+        <p class="font-semibold">This is what you really want?</p>
         <p>A cold pizza at home alone, while all of us are at the restaurant to taste a japanese omakase in the best restaurant of Zurich?</p>
         <p class="font-serif text-2xl italic">... see?</p>
         <a href="#booking" class="block px-2 py-2 text-2xl font-semibold text-center"> Book now, or you get cold pizza! </a>
