@@ -36,7 +36,7 @@ class Kernel extends HttpKernel
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
-            \Azzarip\Utilities\Http\Middleware\DomainKey::class,
+            \Azzarip\Client\Http\Middleware\DomainKey::class,
             \Label84\TagManager\Http\Middleware\TagManagerMiddleware::class,
         ],
 
