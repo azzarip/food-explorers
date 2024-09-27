@@ -151,7 +151,7 @@
         <a href="/twint" class="block p-4 mx-auto text-xl big-button">Book with Twint</a>
         <p class="mx-auto my-6 font-semibold">or</p>
         <div class="mx-auto">
-            <a href="" class="block p-4 text-xl big-button">Book with Credit Cart</a>
+            <a href="https://book.stripe.com/8wM7ttfIT37r6BicMM" rel="nofollow noopener" target="_blank" class="block p-4 text-xl big-button">Book with Credit Cart</a>
             <p class="text-center">(+2.70 fee)</p>
         </div>
     </div>

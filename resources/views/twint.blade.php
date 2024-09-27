@@ -32,7 +32,7 @@
 <p class="my-4 text-3xl font-semibold text-center">Price: 74.- per Person.</p>
 
     <p class="my-6">In case of any problems feel free to contact me via Whatsapp, Meetup, Mail (marco.azzari@foodexplorers.ch) or any other means.</p>
-    <p class="my-6">If you don't feel like using your phone, you can pay by card here: <a href="" class="inline-link">Book with Credit Cart</a> (+2.70 fees)</p>
+    <p class="my-6">If you don't feel like using your phone, you can pay by card here: <a href="https://book.stripe.com/8wM7ttfIT37r6BicMM" rel="nofollow noopener" target="_blank" class="inline-link">Book with Credit Cart</a> (+2.70 fees)</p>
     <h3 class="block mt-6 text-xl font-semibold lg:mt-24">The Fine Print Just to Be Totally Clear</h3>
     <ul class="pt-2 mb-4 space-y-4 list-inside">
         <li>All prices are in Swiss Francs and include the MwSt.</li>
