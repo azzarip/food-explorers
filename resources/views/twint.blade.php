@@ -30,6 +30,9 @@
     </div>
 </div>
 <p class="my-4 text-3xl font-semibold text-center">Price: 74.- per Person.</p>
+<div class="p-4 my-8 text-xl text-center bg-red-100 border-2 border-red-800 rounded-lg">
+    <p>Only less than 10 seats are available! </p>
+ </div>
 
     <p class="my-6">In case of any problems feel free to contact me via Whatsapp, Meetup, Mail (marco.azzari@foodexplorers.ch) or any other means.</p>
     <p class="my-6">If you don't feel like using your phone, you can pay by card here: <a href="https://book.stripe.com/8wM7ttfIT37r6BicMM" rel="nofollow noopener" target="_blank" class="inline-link">Book with Credit Cart</a> (+2.70 fees)</p>

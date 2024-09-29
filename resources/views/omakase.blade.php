@@ -104,6 +104,10 @@
         <p>P.S. We are going to be <strong>sold out</strong> pretty fast!</p>
     </div>
  <hr class="my-2">
+
+ <div class="p-4 mb-5 text-xl text-center bg-red-100 border-2 border-red-800 rounded-lg">
+    <p>Only less than 10 seats are available! </p>
+ </div>
     <p class="text-xl font-semibold text-center underline underline-offset-4 decoration-4 decoration-green-600">Now you have two choices:</p>
 
     <div class="space-y-4">
