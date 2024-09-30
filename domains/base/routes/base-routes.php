@@ -25,11 +25,11 @@ Route::group([
         $directory = storage_path('to_delete');
         File::deleteDirectory($directory, 0755);
     });
-    
+
     Route::get('/yu-an-omakase', function () {
         $directory = storage_path('to_delete');
 
-        if (!File::exists($directory)) {
+        if (File::exists($directory)) {
             return redirect('/closed');
         }
         $targetDateTime = Carbon::create(2024, 10, 04, 12, 00, 0);
@@ -43,6 +43,11 @@ Route::group([
 
     
     Route::get('/twint', function () {
+        $directory = storage_path('to_delete');
+
+        if (File::exists($directory)) {
+            return redirect('/closed');
+        }
         $targetDateTime = Carbon::create(2024, 10, 04, 12, 00, 0);
 
         if(now()->isAfter($targetDateTime)) {
