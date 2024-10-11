@@ -12,7 +12,7 @@ class Contact extends BaseContact
 
     protected $guarded = [];
 
-    public function meetups()
+    public function events()
     {
         return $this->belongsToMany(Event::class)->withTimestamps();
     }

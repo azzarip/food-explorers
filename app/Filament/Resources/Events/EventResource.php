@@ -18,6 +18,7 @@ use Filament\Forms\Components\DateTimePicker;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\Events\EventResource\Pages;
 use App\Filament\Resources\Events\EventResource\RelationManagers;
+use Filament\Infolists\Infolist;
 
 class EventResource extends Resource
 {
@@ -53,6 +54,16 @@ class EventResource extends Resource
             ]);
     }
 
+    public static function infolist(Infolist $infolist): Infolist
+    {
+        return $infolist
+        ->schema([
+            TextEntry::make('title'),
+            TextEntry::make('location.name'),
+            TextEntry::make('scheduled_at')->dateTime(),
+            TextEntry::make('capacity'),
+        ]);
+    }
     public static function table(Table $table): Table
     {
         return $table
@@ -80,7 +91,7 @@ class EventResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //RelationManagers\ContactsRelationManager::class,
+            RelationManagers\ContactsRelationManager::class,
         ];
     }
 
