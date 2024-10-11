@@ -2,11 +2,22 @@
 
 namespace App\Filament\Pages;
 
-use Filament\Pages\Page;
+use Azzarip\Utilities\Filament\Widgets\AdminButton;
+use Filament\Pages\Dashboard as Page;
 
 class Dashboard extends Page
 {
-    protected static ?string $navigationIcon = 'heroicon-o-document-text';
+    protected static ?string $navigationIcon = 'heroicon-o-home';
 
-    protected static string $view = 'filament.pages.dashboard';
+    public function getHeaderWidgets(): array
+    {
+        return [
+            AdminButton::make([
+                'path' => '/events',
+                'name' => 'Events',
+                'primary' => '#b45309',
+                'icon' => 'heroicon-o-calendar-days',
+            ]),
+        ];
+    }
 }

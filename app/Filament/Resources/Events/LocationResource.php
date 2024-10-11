@@ -1,25 +1,30 @@
 <?php
 
-namespace App\Filament\Resources\Meetups;
+namespace App\Filament\Resources\Events;
 
 use Filament\Forms;
 use Filament\Tables;
-use Filament\Forms\Form;
 use App\Models\Location;
+use Filament\Forms\Form;
 use Filament\Tables\Table;
+use Filament\Infolists\Infolist;
 use Filament\Resources\Resource;
+use Illuminate\Support\HtmlString;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
+use Filament\Infolists\Components\TextEntry;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\Meetups\LocationResource\Pages;
-use App\Filament\Resources\Meetups\LocationResource\RelationManagers;
+use App\Filament\Resources\Events\LocationResource\Pages;
+use App\Filament\Resources\Events\LocationResource\RelationManagers;
 
 class LocationResource extends Resource
 {
     protected static ?string $model = Location::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-building-storefront';
+    protected static ?string $navigationGroup = 'Events';
+
 
     public static function form(Form $form): Form
     {
@@ -31,26 +36,36 @@ class LocationResource extends Resource
             ]);
     }
 
+
+    public static function infolist(Infolist $infolist): Infolist
+    {
+        return $infolist
+            ->schema([
+                TextEntry::make('name'),
+                TextEntry::make('google_maps_url')
+                ->url(fn ($state): string => $state)
+                ->openUrlInNewTab(),
+                TextEntry::make('address'),
+            ]);
+    }
+
     public static function table(Table $table): Table
     {
         return $table
             ->columns([
                 TextColumn::make('name')
                     ->sortable(),
-                TextColumn::make('meetups_count')
-                    ->sortable()
-                    ->counts('meetups'),
-                TextColumn::make('lastMeetup.scheduled_at')
-                    ->dateTime('j F Y,  H:m')
-                    ->sortable()
-
-
-            ])->defaultSort('lastMeetup.scheduled_at', 'desc')
+                TextColumn::make('google_maps_url')
+                ->label('GMaps')
+                ->url(fn ($state): string => $state)
+                ->openUrlInNewTab(),
+                TextColumn::make('address')
+            ])//->defaultSort('lastEvent.scheduled_at', 'desc')
             ->filters([
                 //
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
+                Tables\Actions\ViewAction::make(),
             ])
             ->bulkActions([
             //
@@ -60,7 +75,7 @@ class LocationResource extends Resource
     public static function getRelations(): array
     {
         return [
-            RelationManagers\MeetupsRelationManager::class,
+            //RelationManagers\EventsRelationManager::class,
         ];
     }
 
@@ -68,6 +83,7 @@ class LocationResource extends Resource
     {
         return [
             'index' => Pages\ListLocations::route('/'),
+            'view' => Pages\ViewLocation::route('/{record}'),
             'create' => Pages\CreateLocation::route('/create'),
             'edit' => Pages\EditLocation::route('/{record}/edit'),
         ];

@@ -2,8 +2,7 @@
 
 namespace App\Providers\Filament;
 
-use App\Filament\Dashboard\Widgets\Event;
-use App\Filament\Dashboard\Widgets\Paco;
+use Azzarip\Utilities\Http\Middleware\English;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
@@ -34,10 +33,10 @@ class AdminPanelProvider extends PanelProvider
             ->domain(config('domains.admin.url'))
             ->authGuard('admin')
             ->login()
-            ->discoverResources(in: app_path('Filament/Dashboard/Resources'), for: 'App\\Filament\\Dashboard\\Resources')
-            ->discoverPages(in: app_path('Filament/Dashboard/Pages'), for: 'App\\Filament\\Dashboard\\Pages')
+            ->discoverResources(in: app_path('Filament//Resources'), for: 'App\\Filament\\Resources')
+            ->discoverPages(in: app_path('Filament//Pages'), for: 'App\\Filament\\Pages')
             ->pages([])
-            ->discoverWidgets(in: app_path('Filament/Dashboard/Widgets'), for: 'App\\Filament\\Dashboard\\Widgets')
+            ->discoverWidgets(in: app_path('Filament//Widgets'), for: 'App\\Filament\\Widgets')
             ->widgets([])
             ->middleware([
                 EncryptCookies::class,
@@ -49,6 +48,7 @@ class AdminPanelProvider extends PanelProvider
                 SubstituteBindings::class,
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,
+                English::class,
             ])
             ->authMiddleware([
                 Authenticate::class,
