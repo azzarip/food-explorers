@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\Meetups\MeetupResource\Pages;
+namespace App\Filament\Resources\Events\EventResource\Pages;
 
-use App\Filament\Resources\Meetups\MeetupResource;
+use App\Filament\Resources\Events\EventResource;
 use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
 
-class CreateMeetup extends CreateRecord
+class CreateEvent extends CreateRecord
 {
-    protected static string $resource = MeetupResource::class;
+    protected static string $resource = EventResource::class;
 
     protected static bool $canCreateAnother = false;
 

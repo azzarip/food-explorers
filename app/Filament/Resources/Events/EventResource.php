@@ -1,28 +1,31 @@
 <?php
 
-namespace App\Filament\Resources\Meetups;
+namespace App\Filament\Resources\Events;
 
 use Filament\Forms;
 use Filament\Tables;
-use App\Models\Meetup;
-use Filament\Forms\Form;
+use App\Models\Event;
 use App\Models\Location;
+use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
 use Filament\Forms\Components\Select;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
+use Filament\Infolists\Components\TextEntry;
 use Filament\Forms\Components\DateTimePicker;
-use App\Filament\Resources\Meetups\MeetupResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\Meetups\MeetupResource\RelationManagers;
+use App\Filament\Resources\Events\EventResource\Pages;
+use App\Filament\Resources\Events\EventResource\RelationManagers;
 
-class MeetupResource extends Resource
+class EventResource extends Resource
 {
-    protected static ?string $model = Meetup::class;
+    protected static ?string $model = Event::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-calendar';
+    protected static ?string $navigationGroup = 'Events';
+    protected static ?string $navigationLabel = 'Event Dates';
 
     public static function form(Form $form): Form
     {
@@ -40,13 +43,13 @@ class MeetupResource extends Resource
                     ->native(false)
                     ->required()
                     ->seconds(false),
-                TextInput::make('max_participants')
+                TextInput::make('capacity')
                     ->integer()
                     ->required()
                     ->step(1)
                     ->minValue(1)
                     ->maxValue(255)
-                    ->default(6),
+                    ->default(8),
             ]);
     }
 
@@ -58,7 +61,7 @@ class MeetupResource extends Resource
                 TextColumn::make('location.name'),
                 TextColumn::make('scheduled_at')
                     ->dateTime('j F Y,  H:m'),
-                TextColumn::make('max_participants'),
+                TextColumn::make('capacity'),
 
 
             ])
@@ -67,28 +70,27 @@ class MeetupResource extends Resource
             ])
             ->actions([
                 Tables\Actions\ViewAction::make(),
+                Tables\Actions\EditAction::make(),
             ])
             ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
-                ]),
+
             ]);
     }
 
     public static function getRelations(): array
     {
         return [
-            RelationManagers\ContactsRelationManager::class,
+            //RelationManagers\ContactsRelationManager::class,
         ];
     }
 
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListMeetups::route('/'),
-            'create' => Pages\CreateMeetup::route('/create'),
-            'edit' => Pages\EditMeetup::route('/{record}/edit'),
-            'view' => Pages\ViewMeetup::route('/{record}'),
+            'index' => Pages\ListEvents::route('/'),
+            'create' => Pages\CreateEvent::route('/create'),
+            'edit' => Pages\EditEvent::route('/{record}/edit'),
+            'view' => Pages\ViewEvent::route('/{record}'),
         ];
     }
 }
