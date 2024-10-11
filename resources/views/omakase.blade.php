@@ -166,8 +166,8 @@
         <li>Spots are assigned on a first-come, first-served basis. They may terminate before the deadline.</li>
         <li>The <strong>deadline</strong> for the booking, cancellations and reimbursement is:</li>
         <li class="text-xl font-semibold text-center">Friday 04 October 2024 12:00pm (noon), Zurich Time</li>
-        <li>To cancel, write a message via Whatsapp (preferably), or Meetup, the timestamp of the message is the reference. I will twint you back the total amount or cancel the credit cart payment.</li>
-        <li class="font-semibold">Changing the RSVP on Meetup will not be considered, since I do not get notified. Please write me.</li>
+        <li>To cancel, write a message via Whatsapp (preferably), or Event, the timestamp of the message is the reference. I will twint you back the total amount or cancel the credit cart payment.</li>
+        <li class="font-semibold">Changing the RSVP on Event will not be considered, since I do not get notified. Please write me.</li>
         <li>Any later from that date, no reimbursement will be issued, and the transaction will be considered final.</li>
         <li>The participation is not nominative, in case you cannot join, you can give your place to someone else. (You have to find that person.)</li>
         <li>In case of cancellation of the dinner from my side, a full 100% reimbursement will be issued.</li>
