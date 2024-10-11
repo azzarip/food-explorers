@@ -4,13 +4,16 @@ namespace App\Filament\Resources\Events;
 
 use Filament\Forms;
 use Filament\Tables;
+use App\Models\Contact;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
-use App\Models\Contact;
+use Filament\Infolists\Infolist;
 use Filament\Resources\Resource;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
+use Filament\Infolists\Components\IconEntry;
+use Filament\Infolists\Components\TextEntry;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\Events\ContactResource\Pages;
 use App\Filament\Resources\Events\ContactResource\RelationManagers;
@@ -34,6 +37,19 @@ class ContactResource extends Resource
             ]);
     }
 
+    public static function infolist(Infolist $infolist): Infolist
+    {
+        return $infolist->schema([
+            TextEntry::make('first_name'),
+            TextEntry::make('last_name'),
+            TextEntry::make('email'),
+            TextEntry::make('phone'),
+            TextEntry::make('meetup_id'),
+            IconEntry::make('is_registered')->boolean(),
+
+        ]);
+    }
+    
     public static function table(Table $table): Table
     {
         return $table
