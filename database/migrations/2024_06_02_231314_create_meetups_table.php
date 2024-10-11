@@ -20,7 +20,6 @@ return new class extends Migration
             $table->foreignId('type_id')->default(1);
             $table->tinyInteger('capacity')->unsigned();
             $table->timestamps();
-
         });
     }
 
