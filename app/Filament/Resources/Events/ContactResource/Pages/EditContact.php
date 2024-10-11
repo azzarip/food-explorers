@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Filament\Resources\Meetups\ContactResource\Pages;
+namespace App\Filament\Resources\Events\ContactResource\Pages;
 
-use App\Filament\Resources\Meetups\ContactResource;
+use App\Filament\Resources\Events\ContactResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 

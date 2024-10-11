@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Resources\Meetups;
+namespace App\Filament\Resources\Events;
 
 use Filament\Forms;
 use Filament\Tables;
@@ -12,21 +12,23 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\Meetups\ContactResource\Pages;
-use App\Filament\Resources\Meetups\ContactResource\RelationManagers;
+use App\Filament\Resources\Events\ContactResource\Pages;
+use App\Filament\Resources\Events\ContactResource\RelationManagers;
 
 class ContactResource extends Resource
 {
     protected static ?string $model = Contact::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-user-group';
-
+    protected static ?string $navigationGroup = 'Events';
+    protected static ?string $navigationLabel = 'Partipants';
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
                 TextInput::make('first_name')->required(),
                 TextInput::make('last_name'),
+                TextInput::make('email'),
                 TextInput::make('phone')->required(),
                 TextInput::make('meetup_id'),
             ]);
@@ -38,9 +40,6 @@ class ContactResource extends Resource
             ->columns([
                 TextColumn::make('full_name'),
                 TextColumn::make('phone'),
-                TextColumn::make('meetups_count')
-                    ->label('Meetups')
-                    ->counts('meetups')
             ])
 
             ->filters([
@@ -48,18 +47,17 @@ class ContactResource extends Resource
             ])
             ->actions([
                 Tables\Actions\ViewAction::make(),
+                Tables\Actions\EditAction::make(),
             ])
             ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
-                ]),
+
             ]);
     }
 
     public static function getRelations(): array
     {
         return [
-            RelationManagers\MeetupsRelationManager::class,
+            RelationManagers\EventsRelationManager::class,
         ];
     }
 

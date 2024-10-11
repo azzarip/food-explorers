@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use App\Communicable;
-use App\Models\Meetup;
+use App\Models\Event;
 use Azzarip\Teavel\Models\Contact as BaseContact;
 
 class Contact extends BaseContact
@@ -14,7 +14,7 @@ class Contact extends BaseContact
 
     public function meetups()
     {
-        return $this->belongsToMany(Meetup::class)->withTimestamps();
+        return $this->belongsToMany(Event::class)->withTimestamps();
     }
 
 }
