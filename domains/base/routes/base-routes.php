@@ -14,49 +14,6 @@ Route::group([
     Route::get('/', fn () => 'Website under construction');
 
 
-    Route::get('/start', function () {
-        $directory = storage_path('to_delete');
-        File::makeDirectory($directory, 0755, true);
-
-        return 'ok';
-    });
-
-    Route::get('/stop', function () {
-        $directory = storage_path('to_delete');
-        File::deleteDirectory($directory, 0755);
-    });
-
-    Route::get('/yu-an-omakase', function () {
-        $directory = storage_path('to_delete');
-
-        if (File::exists($directory)) {
-            return redirect('/closed');
-        }
-        $targetDateTime = Carbon::create(2024, 10, 04, 12, 00, 0);
-
-        if(now()->isAfter($targetDateTime)) {
-            return redirect('/closed');
-        }
-
-        return view('omakase');
-    });
-
-    
-    Route::get('/twint', function () {
-        $directory = storage_path('to_delete');
-
-        if (File::exists($directory)) {
-            return redirect('/closed');
-        }
-        $targetDateTime = Carbon::create(2024, 10, 04, 12, 00, 0);
-
-        if(now()->isAfter($targetDateTime)) {
-            return redirect('/closed');
-        }
-
-        return view('twint');
-    });
-
-
-    Route::view('closed', 'closed');
+    Route::view('/yu-an-omakase', 'closed');
+    Route::view('/closed', 'closed');
 });
