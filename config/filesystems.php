@@ -85,7 +85,6 @@ return [
     'links' => [
         public_path('storage') => storage_path('app/public'),
         public_path('images') => resource_path('images'),
-        public_path('vendor/livewire') => base_path('vendor/livewire/livewire/dist'),
     ],
 
 ];
