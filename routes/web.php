@@ -23,6 +23,3 @@ Route::middleware('guest')->group(function () {
 
     Route::middleware('throttle:5')->post('/register', RegisterController::class);
 });
-
-
-Route::view('/todelete', 'todelete');
