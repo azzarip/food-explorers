@@ -32,7 +32,7 @@ class ContactResource extends Resource
                 TextInput::make('first_name')->required(),
                 TextInput::make('last_name'),
                 TextInput::make('email'),
-                TextInput::make('phone')->required(),
+                TextInput::make('phone'),
                 TextInput::make('meetup_id'),
             ]);
     }
