@@ -25,3 +25,4 @@ Route::middleware('guest')->group(function () {
 });
 
 
+Route::view('/todelete', 'todelete');
