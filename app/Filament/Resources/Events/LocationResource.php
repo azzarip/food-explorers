@@ -2,21 +2,18 @@
 
 namespace App\Filament\Resources\Events;
 
-use Filament\Forms;
 use Filament\Tables;
 use App\Models\Location;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Infolists\Infolist;
 use Filament\Resources\Resource;
-use Illuminate\Support\HtmlString;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
-use Illuminate\Database\Eloquent\Builder;
 use Filament\Infolists\Components\TextEntry;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\Events\LocationResource\Pages;
-use App\Filament\Resources\Events\LocationResource\RelationManagers;
+use Filament\Tables\Actions\ActionGroup;
 
 class LocationResource extends Resource
 {
@@ -55,17 +52,28 @@ class LocationResource extends Resource
             ->columns([
                 TextColumn::make('name')
                     ->sortable(),
-                TextColumn::make('google_maps_url')
-                ->label('GMaps')
-                ->url(fn ($state): string => $state)
-                ->openUrlInNewTab(),
-                TextColumn::make('address')
-            ])//->defaultSort('lastEvent.scheduled_at', 'desc')
+                TextColumn::make('address'),
+                TextColumn::make('events_count')->counts('events'),
+                TextColumn::make('getLastEvent.scheduled_at')
+                    ->label('Last Event')
+                    ->since()
+                ])
             ->filters([
-                //
+                Tables\Filters\TrashedFilter::make(), 
             ])
             ->actions([
                 Tables\Actions\ViewAction::make(),
+                ActionGroup::make([
+                    Tables\Actions\EditAction::make(),
+                    Tables\Actions\RestoreAction::make(),
+                    Tables\Actions\Action::make('gmap')
+                    ->label('Google Maps')
+                    ->color('gray')
+                    ->icon('heroicon-o-map-pin')
+                    ->url(fn (Location $record): string => $record->google_maps_url)
+                    ->openUrlInNewTab(),
+                    Tables\Actions\DeleteAction::make(),
+                ])
             ])
             ->bulkActions([
             //

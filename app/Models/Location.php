@@ -14,12 +14,12 @@ class Location extends Model
 
     protected $guarded = [];
 
-    public function meetups()
+    public function events()
     {
         return $this->hasMany(Event::class);
     }
 
-    public function lastEvent()
+    public function getLastEvent()
     {
         return $this->hasOne(Event::class)->latestOfMany('scheduled_at');
     }
