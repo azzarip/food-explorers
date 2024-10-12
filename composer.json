@@ -22,6 +22,7 @@
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.8",
         "league/flysystem-aws-s3-v3": "*",
+        "livewire/livewire": "*",
         "ralphjsmit/laravel-seo": "^1.4",
         "spatie/laravel-backup": "^8.4",
         "spatie/laravel-google-fonts": "*",
