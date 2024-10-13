@@ -14,9 +14,10 @@ class MyController
     {
         $contact = Auth::user();
 
-        if( ! $contact->has_set_locale) {
+        if( ! $contact->has_locale) {
             return view('my::questions.locale');
         }
+        
         return view('my::homepage');
     }
 }

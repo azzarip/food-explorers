@@ -2,13 +2,13 @@
 
 namespace App\Models;
 
-use App\Communicable;
+use App\HasLocale;
 use App\Models\Event;
 use Azzarip\Teavel\Models\Contact as BaseContact;
 
 class Contact extends BaseContact
 {
-    use Communicable;
+    use HasLocale;
 
     protected $guarded = [];
 
