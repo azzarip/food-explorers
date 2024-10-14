@@ -14,7 +14,7 @@ Route::group([
     Route::get('/', MyController::class)->name('my');
     Route::view('/events', 'my::events');
     Route::view('/options', 'my::options.index');
-    Route::view('/options/language', view: 'my::options.language');
+    Route::view('/options/language', 'my::options.language');
 
 
     Route::post('/set-language', SetLanguageController::class)->name('set-language')->middleware('auth');
