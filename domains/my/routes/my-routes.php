@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Domains\My\Http\Controllers\MyController;
-use Domains\My\Http\Controllers\LanguageController;
+use Domains\My\Http\Controllers\SetLanguageController;
 
 
 
@@ -13,8 +13,9 @@ Route::group([
 
     Route::get('/', MyController::class)->name('my');
     Route::view('/events', 'my::events');
-    Route::view('/options', 'my::options');
+    Route::view('/options', 'my::options.index');
+    Route::view('/options/language', view: 'my::options.language');
 
 
-    Route::post('/set-language', LanguageController::class)->name('set-language')->middleware('auth');
+    Route::post('/set-language', SetLanguageController::class)->name('set-language')->middleware('auth');
 });

@@ -1,6 +1,12 @@
 {
-    "Which languages do you confortably speak?": "Welche Sprache beherrschst du fliessend?",
+    "Which languages do you confortably speak?": "In welchen Sprachen möchtest du an den Events teilnehmen?",
     "Please select a language": "Bitte wählen Sie eine Sprache",
     "Languages": "Sprachen",
-    "Continue": "Weiter"
+    "Continue": "Weiter",
+    "Options": "Einstellungen",
+    "Logout": "Abmelden",
+    "Modify": "Ändern",
+    "Modify Password": "Password Ändern",
+    "Save": "Speichern",
+    "Main Language": "Haupt Sprache"
 }

@@ -16,7 +16,7 @@ if (width > 1040) { open = true; }"
         <div id="page" class="flex flex-1 w-full">
             @if($nav)
             <div id="sidebar"
-                class="flex flex-col justify-between font-semibold text-white bg-gray-900 shadow-xl shadow-gray-900 w-80"
+                class="z-40 flex flex-col justify-between font-semibold text-white bg-gray-900 shadow-xl shadow-gray-900 w-80"
                 x-show="open" x-transition:enter="transition duration-300"
                 x-transition:enter-start="transform -translate-x-full" x-transition:enter-end="transform translate-x-0"
                 x-transition:leave="transition duration-300" x-transition:leave-start="transform translate-x-0"
@@ -38,8 +38,8 @@ if (width > 1040) { open = true; }"
                                     href="/events">Events</a>
                             </li>
                             <li>
-                                <a class="block w-full py-3 pl-4 border-green-600 {{ request()->path() == 'events' ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
-                                    href="/options">Options</a>
+                                <a class="block w-full py-3 pl-4 border-green-600 {{ str_starts_with(request()->path(), 'options') ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
+                                    href="/options">@lang('Options')</a>
                             </li>
                         </ul>
                     </nav>
@@ -74,7 +74,7 @@ if (width > 1040) { open = true; }"
                                 <hr class="mt-1 mb-2">
                                 <button class="w-full px-1 pt-1 text-left rounded-lg hover:bg-gray-200"
                                     @click="$dispatch('logout')">
-                                    <x-heroicon-o-arrow-right-start-on-rectangle class="inline w-5 mb-1" /> Logout
+                                    <x-heroicon-o-arrow-right-start-on-rectangle class="inline w-5 mb-1" /> @lang('Logout')
                                 </button>
                             </div>
                         </div>

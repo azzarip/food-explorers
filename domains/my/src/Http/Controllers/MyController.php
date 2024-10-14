@@ -15,7 +15,7 @@ class MyController
         $contact = Auth::user();
 
         if( ! $contact->has_locale) {
-            return view('my::questions.locale');
+            return view('my::questions.choose-language');
         }
         
         return view('my::homepage');
