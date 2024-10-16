@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Domains\My\Http\Controllers\MyController;
+use Domains\My\Http\Controllers\QuestionController;
 use Domains\My\Http\Controllers\SetLanguageController;
 
 
@@ -17,5 +18,7 @@ Route::group([
     Route::view('/options/language', 'my::options.language');
 
 
+
     Route::post('/set-language', SetLanguageController::class)->name('set-language')->middleware('auth');
+    Route::post('/question/services', QuestionController::class);
 });

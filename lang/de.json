@@ -1,5 +1,5 @@
 {
-    "Which languages do you confortably speak?": "In welchen Sprachen möchtest du an den Events teilnehmen?",
+    "Which languages do you want to attend events in?": "In welchen Sprachen möchtest du an den Events teilnehmen?",
     "Please select a language": "Bitte wählen Sie eine Sprache",
     "Languages": "Sprachen",
     "Continue": "Weiter",
@@ -8,5 +8,8 @@
     "Modify": "Ändern",
     "Modify Password": "Password Ändern",
     "Save": "Speichern",
-    "Main Language": "Haupt Sprache"
+    "Main Language": "Haupt Sprache",
+    "You can change your settings anytime in the profile menu": "Du kannst deine Einstellungen jederzeit im Profilmenü ändern",
+    "Please choose at least one option": "Bitte wähle mindestens eine Option aus",
+    "Hi": "Hallo"
 }

@@ -1,10 +1,11 @@
-@extends('azzarip::base', ['bg' => 'bg-gray-900', 'nav' => false ])
+@extends('my::layouts.question')
 
-@section('body')
+@section('question')
 <div class="absolute top-0 right-0 p-2 text-right text-white">
     <p> <small>&#x25BC;</small> {{ strtoupper(app()->getLocale()) }}</p>
 </div>
-<h1 class="mt-4 text-2xl text-center text-white font-head">@lang('Which languages can you comfortably speak?')</h1>
+
+<h1 class="mt-4 text-2xl text-center text-white font-head">@lang('Which languages do you want to attend events in?')</h1>
 <div class="flex max-w-sm gap-5 px-5 mx-auto mt-4 md:flex-col" x-data="
     {en: {{ app()->getLocale() == 'en' ? 'true' : 'false' }}, de:  {{ app()->getLocale() == 'de' ? 'true' : 'false' }}}">
 

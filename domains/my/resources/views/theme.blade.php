@@ -25,21 +25,24 @@ if (width > 1040) { open = true; }"
                     <div class="w-24 p-1 mx-auto mt-4 mb-2 bg-white border-4 border-green-900 rounded-full lg:border-[6px] lg:w-32">
                         <img src="{{ image('logo_sm.webp') }}" alt="Logo Food Explorers" class="mx-auto">
                     </div>
-                    <p class="text-center">Food Explorers</p>
-                    <p class="hidden my-2 ml-8 lg:block"> <span class="font-normal">Hi</span> {{ auth()->user()->first_name }},</p>
+                    <p class="mb-2 text-center">Food Explorers</p>
+                    
                     <nav>
                         <ul>
                             <li>
                                 <a class="block w-full py-3 pl-4 border-green-600 {{ request()->path() == '/' ? 'bg-gray-700 border-l-green-600 border-l-4' : 'hover:bg-gray-800' }}"
-                                    href="/">Home</a>
+                                    href="/">
+                                    <x-heroicon-o-home class="inline w-6 h-6 mr-1"/> Home</a>
                             </li>
                             <li>
                                 <a class="block w-full py-3 pl-4 border-green-600 {{ request()->path() == 'events' ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
-                                    href="/events">Events</a>
+                                    href="/events">
+                                    <x-heroicon-o-calendar-days class="inline w-6 h-6 mr-2"/>Events</a>
                             </li>
                             <li>
                                 <a class="block w-full py-3 pl-4 border-green-600 {{ str_starts_with(request()->path(), 'options') ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
-                                    href="/options">@lang('Options')</a>
+                                    href="/options">
+                                    <x-heroicon-o-cog-8-tooth class="inline w-6 h-6 mr-2"/>@lang('Options')</a>
                             </li>
                         </ul>
                     </nav>

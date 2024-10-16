@@ -18,6 +18,9 @@ class MyController
             return view('my::questions.choose-language');
         }
         
+        if( ! $contact->hasTag('question.service')) {
+            return view('my::questions.choose-services');
+        }
         return view('my::homepage');
     }
 }
