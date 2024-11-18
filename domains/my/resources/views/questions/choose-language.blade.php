@@ -1,6 +1,8 @@
 @extends('my::layouts.question')
 
 @section('question')
+<div class="lg:h-20"></div>
+
 <div class="absolute top-0 right-0 p-2 text-right text-white">
     <p> <small>&#x25BC;</small> {{ strtoupper(app()->getLocale()) }}</p>
 </div>
