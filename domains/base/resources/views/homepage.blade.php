@@ -25,18 +25,14 @@
       
       <div class="h-24 lg:h-24"></div>
 
-      <div class="grid gap-5 px-2 text-2xl lg:grid-cols-2 lg:text-3xl">
-        <div class="pt-2 pb-2 text-center text-white bg-transparent border-2 border-white rounded-full cursor-pointer hover:text-black hover:bg-white" onclick="scrollToElement('start')">
-          Read More <x-heroicon-o-chevron-down class="inline w-6 h-6" />
-
-
+      <div class="flex flex-col items-center gap-3 px-2 text-2xl lg:gap-5 lg:flex-row">
+        <div class="w-full py-2 mx-auto text-center text-white bg-transparent border-2 border-white rounded-full cursor-pointer srounded-full lg:pt-2 h-fit lg:w-1/4 hover:text-black hover:bg-white" onclick="scrollToElement('start')">
+        Read More <x-heroicon-o-chevron-down class="inline w-6 h-6" />
         </div>
         <x-button :link="auth()->check() ? route('my') : '/register'">
           Become a Food Explorer
         </x-button>
       </div>
-
-
       </div>
   </div>
 </section>
