@@ -82,7 +82,7 @@ figcaption {
     border: 0;
   }
   .big-button:hover {
-    background: #4ade80; /* Equivalent to bg-lime-500 in Tailwind CSS */
+    background: #22c55e; /* Equivalent to bg-lime-500 in Tailwind CSS */
 }
 .big-button:disabled {
     background: #052e16;
@@ -101,5 +101,5 @@ figcaption {
 }
 
 .form-button {
-    @apply block w-full max-w-lg py-3 mx-auto text-2xl;
+    @apply block w-full max-w-lg mt-4 mb-2 py-3 mx-auto text-2xl;
 }
