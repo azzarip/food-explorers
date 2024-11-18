@@ -34,6 +34,12 @@ trait HasLocale
         return null;
     }
 
+    public function preferredLocale()
+    {
+        return $this->locale;
+    }
+
+
     public function getHasLocaleAttribute(): bool
     {
         return (bool) $this->locale;
