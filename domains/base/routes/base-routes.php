@@ -11,7 +11,8 @@ Route::group([
     'middleware' => 'web'
 ], function () {
     Route::view('/en', 'base::homepage');
-    Route::get('/', fn () => 'Website under construction');
+    Route::view('/', 'base::homepage');
+    //Route::get('/', fn (): string => 'Website under construction');
 
 
     Route::view('/yu-an-omakase', 'closed');

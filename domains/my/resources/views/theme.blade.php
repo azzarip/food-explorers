@@ -39,11 +39,6 @@ if (width > 1040) { open = true; }"
                                     href="/events">
                                     <x-heroicon-o-calendar-days class="inline w-6 h-6 mr-2"/>Events</a>
                             </li>
-                            <li>
-                                <a class="block w-full py-3 pl-4 border-green-600 {{ str_starts_with(request()->path(), 'options') ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
-                                    href="/options">
-                                    <x-heroicon-o-cog-8-tooth class="inline w-6 h-6 mr-2"/>@lang('Options')</a>
-                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -74,6 +69,10 @@ if (width > 1040) { open = true; }"
                             <div class="p-4 text-black bg-white rounded-lg shadow-xl ">
                                 <p>{{ auth()->user()->full_name }}</p>
                                 <p class="font-normal">{{ auth()->user()->email }}</p>
+                                <hr class="mt-1 mb-2">
+                                <a class="block w-full py-1 pl-1 rounded-lg hover:bg-gray-200"
+                                    href="/options">
+                                    <x-heroicon-o-cog-8-tooth class="inline w-6 h-6 mr-2"/>@lang('Options')</a>
                                 <hr class="mt-1 mb-2">
                                 <button class="w-full px-1 pt-1 text-left rounded-lg hover:bg-gray-200"
                                     @click="$dispatch('logout')">

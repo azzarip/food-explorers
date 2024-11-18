@@ -5,15 +5,14 @@
         'Homepage' => '/',
 
     ];
-    $headerClass = 'bg-background text-white';
+    $headerClass = 'bg-black text-white';
 @endphp
 
 
 @section('header')
-<div class="flex flex-row justify-between px-2 mx-auto my-2">
+<div class="flex flex-row justify-between px-2 mx-auto my-1">
     <a href="/" class="relative z-20 flex flex-col items-center mx-auto lg:mx-2">
-        <p class="text-4xl">Food Explorers</p>
-        <p>#1 Foodies Community in Zurich</p>
+        <img src="{{ image('logo_sm.webp') }}" alt="Food Explorers Logo" width="65" height="60">
     </a>
 </div>
 @endsection
