@@ -71,11 +71,13 @@ class EventResource extends Resource
                 TextColumn::make('title'),
                 TextColumn::make('location.name'),
                 TextColumn::make('scheduled_at')
+                    ->sortable()
                     ->dateTime('j F Y,  H:m'),
-                TextColumn::make('capacity'),
-
-
-            ])
+                TextColumn::make('participants')
+                    ->getStateUsing( function (\Illuminate\Database\Eloquent\Model $record){
+                        return $record->participants()->count() . ' / ' . $record->capacity;
+                 })
+            ])->defaultSort('scheduled_at', 'desc')
             ->filters([
                 //
             ])

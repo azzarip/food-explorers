@@ -21,6 +21,10 @@ class Event extends Model
         return $this->belongsToMany(Contact::class)->withTimestamps();
     }
 
+    public function participants() {
+        return $this->belongsToMany(Contact::class);
+    }
+
     protected static function booted()
     {
         parent::booted();
