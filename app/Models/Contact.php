@@ -18,4 +18,11 @@ class Contact extends BaseContact implements HasLocalePreference
         return $this->belongsToMany(Event::class)->withTimestamps();
     }
 
+    public function lastEvent()
+    {
+        return $this->belongsToMany(Event::class)
+        ->orderBy('scheduled_at', 'desc')
+        ->limit(1);
+    }
+
 }

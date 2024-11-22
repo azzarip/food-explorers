@@ -24,7 +24,7 @@ class ContactResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-user-group';
     protected static ?string $navigationGroup = 'Events';
-    protected static ?string $navigationLabel = 'Partipants';
+    protected static ?string $navigationLabel = 'Participants';
     public static function form(Form $form): Form
     {
         return $form
@@ -56,8 +56,13 @@ class ContactResource extends Resource
             ->columns([
                 TextColumn::make('full_name'),
                 TextColumn::make('phone'),
-            ])
-
+                TextColumn::make('events_count')->counts('events')
+                    ->sortable(),
+                TextColumn::make('lastEvent.scheduled_at')
+                ->label('Last Event')
+                ->since()
+                ->sortable(),
+         ])->defaultSort('events_count', 'desc')
             ->filters([
                 //
             ])

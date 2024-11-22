@@ -19,8 +19,8 @@ class Location extends Model
         return $this->hasMany(Event::class);
     }
 
-    public function LastEvent()
+    public function lastEvent()
     {
-        return $this->hasOne(Event::class)->latestOfMany('scheduled_at');
+        return $this->belongsToMany(Event::class)->latestOfMany('scheduled_at');
     }
 }
