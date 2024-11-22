@@ -53,11 +53,13 @@ class LocationResource extends Resource
                 TextColumn::make('name')
                     ->sortable(),
                 TextColumn::make('address'),
-                TextColumn::make('events_count')->counts('events'),
-                TextColumn::make('getLastEvent.scheduled_at')
+                TextColumn::make('events_count')->counts('events')
+                    ->sortable(),
+                TextColumn::make('LastEvent.scheduled_at')
                     ->label('Last Event')
                     ->since()
-                ])
+                    ->sortable(),
+                ])->defaultSort('LastEvent.scheduled_at', 'desc')
             ->filters([
                 Tables\Filters\TrashedFilter::make(), 
             ])
