@@ -5,7 +5,7 @@
     <div>
         <p class="mt-4 ml-8 text-2xl font-semibold font-head">@lang('Hi') {{ auth()->user()->first_name }}!</p>
         <hr class="w-1/2 my-2">
-        <div class="grid grid-cols-2 px-4 py-4 border rounded-lg">
+        <div class="grid grid-cols-2 px-4 py-4 rounded-lg">
             <div>
                 <p>Your level is:</p>
                 <p class="my-2 text-3xl font-semibold font-head">ROOKIE</p>
