@@ -1,5 +1,6 @@
 <?php
 
+use Domains\Base\Http\Controllers\MilanoController;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
@@ -15,6 +16,9 @@ Route::group([
     //Route::get('/', fn (): string => 'Website under construction');
 
 
+    Route::view('/milano', 'base::milano');
+    Route::post('/milano', MilanoController::class);
+    Route::view('/ty/milano', 'base::milano-ty');
     Route::view('/yu-an-omakase', 'closed');
     Route::view('/closed', 'closed');
 });

@@ -2,6 +2,8 @@
 
 return [
 
+    'check_phone' => true,
+
     'domain' => config('domains.base.url'),
 /**
  * Auth Views
