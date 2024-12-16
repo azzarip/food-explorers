@@ -218,14 +218,14 @@
     <section id="booking" class="px-4 py-4 mt-4 mb-10 bg-white border-2 border-green-700 rounded-lg">
         <h2 class="py-2 text-2xl font-semibold text-center">Fill the form with your details and you will be the first being informed.</h2>
         <div class="max-w-sm mx-auto">
-            <x-forms::full-contact action="/milano" button="I would like to be part of Milano Meraviglia and be informed when the full plan is ready" />
+            <x-forms::full-contact action="/milano" button="I would like to be in the waitlist for when the event is ready" />
         </div>
     </section>
 
     <p class="mt-12 font-semibold">P.S.</p>
-    <p>If there is something you want to suggest, something you don't like or something we can add.</p>
+    <p>If there is something you want to suggest, something you don't like or something we can add, please let me know!</p>
     <p>I really value your opinion, write me a message or an email.</p>
-    <p>At the end, I am organizing all of this for you, not for myself only.</p>
+    <p>At the end, I am organizing all of this for you.</p>
 
     <div class="mt-12"></div>
 </article>
