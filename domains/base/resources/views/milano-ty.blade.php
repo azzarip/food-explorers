@@ -19,7 +19,7 @@
 </div>
 <article class="wrapper text-y">
     <h1 class="font-serif text-4xl font-semibold text-center">Milano Meraviglia</h1>
-    <p class="px-4 py-2 mx-auto mt-4 text-3xl font-semibold text-center text-amber-700 w-fit">Friday 25 - Sunday 27 April 2025 </p>
+    <p class="px-4 py-2 mx-auto mt-4 text-3xl font-semibold text-center text-amber-700 w-fit">Friday 4 - Sunday 6 April 2025 </p>
     <p>Thank you it means a lot!</p>
     <p>You will soon receive more information about this trip!</p>
     <p>Enjoy your Christmas and see you on January!</p>

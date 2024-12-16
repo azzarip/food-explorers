@@ -19,7 +19,7 @@
 </div>
 <article class="max-w-3xl mx-auto">
     <h1 class="font-serif text-4xl font-semibold text-center">Milano Meraviglia</h1>
-    <p class="px-4 py-2 mx-auto mt-4 text-3xl font-semibold text-center text-amber-700 w-fit">Friday 25 - Sunday 27 April 2025 </p>
+    <p class="px-4 py-2 mx-auto mt-4 text-3xl font-semibold text-center text-amber-700 w-fit">Friday 4 - Sunday 6 April 2025 </p>
     <p class="mt-2 text-xl font-semibold text-center font-head">This is my <span class="text-red-800">SPECIAL INVITE</span> to come with me and other Food Explorers to Milan, for a weekend of incredible Food, amazing drinks and unforgettable memories</p>
     <img src="https://media.istockphoto.com/id/1059724614/photo/milan-cathedral-on-sunrise-italy.jpg?s=612x612&w=0&k=20&c=w7dD72xvRNz8SF1bwxNFkgBLzy6QNqXFzgry5WCWsXY=" alt="Milano Picture" class="mx-auto mt-4 rounded-lg shadow-lg">
     
