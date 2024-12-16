@@ -58,7 +58,7 @@
 
     <div class="py-2 bg-red-100 rounded-lg">
     <h3 class="my-6 font-serif text-2xl text-center ">Milano Classics (Day 1)</h3>
-    <ul class="pl-4 space-y-4">
+    <ul class="space-y-4 ">
         <p>Cucina Meneghina refers to the traditional cuisine of Milan, the capital of the Lombardy region in northern Italy. The term "Meneghina" derives from the Milanese dialect and is often used to describe something distinctly Milanese.</p>
 
         <p>There are a lot, and I mean a lot of Italian Restaurants in Milan... </p>
@@ -82,9 +82,9 @@
     </ul>
     </div>
 
-    <div class="py-2 my-8 rounded-lg bg-amber-100">    
+    <div class="px-2 py-2 my-8 rounded-lg bg-amber-100">    
     <h3 class="my-6 font-serif text-2xl text-center">Luxury Life (Day 2)</h3>
-    <ul class="pl-4 space-y-4">
+    <ul class="space-y-4 ">
         <p>We will start the day around 11 a.m.</p>
         <p>You can sleep through, or wake up early and visit the city by yourself.</p>
         
@@ -124,9 +124,9 @@
     <img src="https://flawless.life/wp-content/uploads/2016/07/radio-rooftop-bar-me-milan-ristorante.jpg" alt="" class="mx-auto rounded-lg shadow-lg ">
     </div>
 
-    <div class="py-2 bg-green-100 rounded-lg">
+    <div class="px-2 py-2 bg-green-100 rounded-lg">
     <h3 class="my-6 font-serif text-2xl text-center">Arrivederci Italia (Day 3)</h3>
-    <ul class="pl-4 space-y-4">
+    <ul class="space-y-4 ">
     <img src="" alt="">
         <li><strong>Free Time and Checkout</strong>
         <p>I will leave you the morning to relax and enjoy the last hours in the city</p>
@@ -204,7 +204,7 @@
     <p class="text-xl font-semibold text-center underline underline-offset-4 decoration-4 decoration-green-600">Now you have two choices:</p>
 
     <div class="px-4 space-y-4">
-        <a href="#booking" class="block mt-4 text-xl font-semibold text-center underline"> > Book now your seat! < </a>
+        <a href="#booking" class="block mt-4 text-xl font-semibold text-center underline"> > Prereserve your seat! < </a>
         <p>Be the first to receive the offer when it is ready.</p>
         <p>And enjoy a dream weekend in Milan, that is uniquely crafted for you as foodie to enjoy.</p>
 
@@ -220,6 +220,7 @@
         <div class="max-w-sm mx-auto">
             <x-forms::full-contact action="/milano" button="I would like to be in the waitlist for when the event is ready" />
         </div>
+        <p class="pt-2 my-4">It is not binding, nor you have to pay. You will be informed before everyone else.</p>
     </section>
 
     <p class="mt-12 font-semibold">P.S.</p>

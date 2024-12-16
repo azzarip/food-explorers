@@ -18,6 +18,7 @@ class MilanoController
         $contact = Contact::get($data);
 
         $contact->tag('Interested Milano Meraviglia');
+        $contact->allowMarketing();
         
         return redirect('/ty/milano');
     }
