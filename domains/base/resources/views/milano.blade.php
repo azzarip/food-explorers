@@ -186,10 +186,10 @@
 
     <div class="px-4 rounded-lg pb-42">
         <h2 class="my-6 font-serif text-2xl text-center">Dress Code</h2>
-        <p>Compared to Zurich where the dress codes are more lax, in Milan how you dress matters.</p>
-        <p>You will see extremely elegant people walking in the city center, and in the restaurant we will visit.</p>
+        <p>Compared to Zurich where the dress codes are more lax.</p>
+        <p>You will see extremely elegant people walking in the city center, and in the restaurants we will visit.</p>
         <p>Some restaurant in the list, even ask directly for a "casual elegant" dress code.</p>
-        <p>So, if you have that dress in the wardrobe, you never have the occasion to wear, maybe this weekend is for you!</p>
+        <p>Don't stress it too much, but if you have that dress in the wardrobe, you never have the occasion to wear, maybe this weekend is for you!</p>
     </div>
 
     <div class="px-4 mt-6">
