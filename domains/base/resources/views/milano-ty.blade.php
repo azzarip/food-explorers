@@ -3,7 +3,7 @@
 @php
     $seo = new SEO(
         title: 'Food Explorers - Milano Adventure',
-        description: 'Milano Adventure 25. April 2025. Places are limited, book now.',
+        description: 'Milano Adventure 4. April 2025. Places are limited, book now.',
         robots: 'noindex, nofollow',
     );
 @endphp

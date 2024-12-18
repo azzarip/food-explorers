@@ -3,7 +3,7 @@
 @php
     $seo = new SEO(
         title: 'Food Explorers - Milano Adventure',
-        description: 'Milano Adventure 25. April 2025. Places are limited, book now.',
+        description: 'Milano Adventure 4. April 2025. Places are limited, book now.',
         robots: 'noindex, nofollow',
     );
 @endphp
@@ -29,7 +29,7 @@
         <p>If you are new or you have been here for many years, you know I take great care in giving the best experiences to my guests.</p>
         <p>And I have been cooking up this project for many months.</p>
         <p>Therefore let me get straight to point...</p>
-        <p class="font-semibold">I am organizing a special weekend from Friday 25 to Sunday 27 April in Milano.</p>
+        <p class="font-semibold">I am organizing a special weekend from Friday 4 to Sunday 6 April in Milano.</p>
         <p>During this weekend I will pick the best and most interesting food experiences of Milano.</p>
         <p>I called this adventure:</p>
         <p class="text-2xl font-semibold text-center">Milano Meraviglia</p>
