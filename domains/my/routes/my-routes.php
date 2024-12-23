@@ -19,6 +19,7 @@ Route::group([
 
 
     Route::view('/options', 'my::options.index');
+    Route::view('/options/password', 'my::options.password');
     Route::view('/options/language', 'my::options.language');
 
 

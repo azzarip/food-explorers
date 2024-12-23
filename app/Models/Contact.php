@@ -25,4 +25,9 @@ class Contact extends BaseContact implements HasLocalePreference
         ->limit(1);
     }
 
+    public function getPoints()
+    {
+        return $this->events()->count();
+    }
+
 }
