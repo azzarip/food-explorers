@@ -16,7 +16,7 @@
     <h3 class="text-xl font-semibold">{{ $event->title }}</h3>
     <p>{{ $event->scheduled_at->format('j. F Y') }}</p>
 
-    <p class="mt-4"><x-heroicon-o-map-pin class="inline w-5 h-5 mb-1"/>{{  $event->location->name }} 
+    <p class="mt-4"><x-heroicon-o-map-pin class="inline w-5 h-5 mb-1 mr-1"/>{{  $event->location->name }} 
         (<a href="{{ $event->location->google_maps_url }}" target="_blank" rel="noreferrer" class="font-semibold">Maps <x-heroicon-o-arrow-top-right-on-square class="inline w-4 h-4 mb-1"/></a>)</p>
 </div>
 @endforeach
