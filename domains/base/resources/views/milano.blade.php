@@ -200,7 +200,7 @@
         <p>So you can simply relax and enjoy the city.</p>
     </div>
 
-    <div class="h-14"></div>
+    {{-- <div class="h-14"></div>
     <p class="text-xl font-semibold text-center underline underline-offset-4 decoration-4 decoration-green-600">Now you have two choices:</p>
 
     <div class="px-4 space-y-4">
@@ -213,20 +213,17 @@
         </p>
 
         <p>And let other people enjoy the weekend...</p>
-    </div>
+    </div> --}}
 
-    <section id="booking" class="px-4 py-4 mt-4 mb-10 bg-white border-2 border-green-700 rounded-lg">
+    {{-- <section id="booking" class="px-4 py-4 mt-4 mb-10 bg-white border-2 border-green-700 rounded-lg">
         <h2 class="py-2 text-2xl font-semibold text-center">Fill the form with your details and you will be the first being informed.</h2>
         <div class="max-w-sm mx-auto">
             <x-forms::full-contact action="/milano" button="I would like to be in the waitlist for when the event is ready" />
         </div>
         <p class="pt-2 my-4">It is not binding, nor you have to pay. You will be informed before everyone else.</p>
-    </section>
+    </section> --}}
 
-    <p class="mt-12 font-semibold">P.S.</p>
-    <p>If there is something you want to suggest, something you don't like or something we can add, please let me know!</p>
-    <p>I really value your opinion, write me a message or an email.</p>
-    <p>At the end, I am organizing all of this for you.</p>
+    <p class="mt-4 text-4xl text-center">BOOKINGS ARE CLOSED</p>
 
     <div class="mt-12"></div>
 </article>
