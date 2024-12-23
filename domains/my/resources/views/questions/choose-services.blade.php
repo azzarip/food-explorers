@@ -32,7 +32,7 @@
 
     <input type="hidden" :value="bar ? 1 : 0" name="bar" />
     <input type="hidden" :value="1" name="restaurant" />
-    <button  class="big-button form-button" x-bind:disabled="bar == null">
+    <button  class="std-button form-button" x-bind:disabled="bar == null">
         @lang('Continue') <x-heroicon-o-arrow-right class="inline w-6 mb-1 aspect-auto" />
     </button>
     </x-forms::base>

@@ -20,7 +20,7 @@
                     @error('user')
                     <p class="px-2 py-1 text-black rounded-xl" style="background-color: #fca5a5;"><x-heroicon-o-exclamation-triangle
                         style="display: inline; width: 24px; height: 24px;" />
-                        @lang("teavel:auth.$message")</p>
+                        @lang("teavel::auth.$message")</p>
                     @enderror
 
                     <x-forms::field.first_name />

@@ -14,6 +14,7 @@ Route::group([
 
     Route::get('/', MyController::class)->name('my');
     Route::view('/events', 'my::events');
+    Route::view('/achievements', 'my::achievements');
     Route::view('/options', 'my::options.index');
     Route::view('/options/language', 'my::options.language');
 

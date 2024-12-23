@@ -92,7 +92,7 @@ figcaption {
 }
 
 .std-button {
-    background: rgb(234, 179, 8);
+    background: linear-gradient(217deg, #facc15, #d97706);
     display: block;
     font-size: 1.25rem;
     width: 100%;

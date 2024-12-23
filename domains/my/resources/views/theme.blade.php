@@ -22,22 +22,29 @@ if (width > 1040) { open = true; }"
                 x-transition:leave="transition duration-300" x-transition:leave-start="transform translate-x-0"
                 x-transition:leave-end="transform -translate-x-full">
                 <div id="top">
-                    <div class="w-24 p-1 mx-auto mt-4 mb-2 bg-white border-4 border-green-900 rounded-full lg:border-[6px] lg:w-32">
-                        <img src="{{ image('logo_sm.webp') }}" alt="Logo Food Explorers" class="mx-auto">
+                    <div class="inset-0 w-24 p-1 mx-auto mt-6 rounded-full bg-gradient-to-tr from-yellow-400 via-yellow-500 to-yellow-700 lg:w-32 aspect-square">
+                        <div class="w-full h-full p-1 mx-auto bg-white rounded-full">
+                            <img src="{{ image('logo_sm.webp') }}" alt="Logo Food Explorers" class="mx-auto">
+                        </div>
                     </div>
-                    <p class="mb-2 text-center">Food Explorers</p>
+                    <p class="my-2 text-center lg:text-2xl">Food Explorers</p>
                     
                     <nav>
                         <ul>
                             <li>
-                                <a class="block w-full py-3 pl-4 border-green-600 {{ request()->path() == '/' ? 'bg-gray-700 border-l-green-600 border-l-4' : 'hover:bg-gray-800' }}"
+                                <a class="block w-full py-3 pl-4 border-yellow-500 {{ request()->path() == '/' ? 'bg-gray-700 border-l-yellow-500 border-l-4' : 'hover:bg-gray-800' }}"
                                     href="/">
                                     <x-heroicon-o-home class="inline w-6 h-6 mr-1"/> Home</a>
                             </li>
                             <li>
-                                <a class="block w-full py-3 pl-4 border-green-600 {{ request()->path() == 'events' ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
+                                <a class="block w-full py-3 pl-4 border-yellow-500 {{ request()->path() == 'events' ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
                                     href="/events">
                                     <x-heroicon-o-calendar-days class="inline w-6 h-6 mr-2"/>Events</a>
+                            </li>
+                            <li>
+                                <a class="block w-full py-3 pl-4 border-yellow-500 {{ request()->path() == 'achievements' ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
+                                    href="/achievements">
+                                    <x-heroicon-o-star class="inline w-6 h-6 mb-1 mr-2"/>Achievements</a>
                             </li>
                         </ul>
                     </nav>
@@ -59,7 +66,7 @@ if (width > 1040) { open = true; }"
                     </div>
                     <div class="relative w-full py-4" @mouseleave="userInfo = false">
                         <div @click="userInfo = !userInfo"
-                            class="items-center justify-center hidden w-12 h-12 mx-auto text-center text-gray-900 bg-gray-200 border-2 border-green-600 rounded-full cursor-pointer lg:flex ">
+                            class="items-center justify-center hidden w-12 h-12 mx-auto text-center text-gray-900 bg-gray-200 border-2 border-yellow-500 rounded-full cursor-pointer lg:flex ">
                             <p class="mx-auto my-auto">
                                 {{ substr(auth()->user()->first_name, 0, 1) }}{{ substr(auth()->user()->last_name, 0, 1) }}
                             </p>

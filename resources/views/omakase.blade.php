@@ -152,10 +152,10 @@
     <h2 class="pt-6 mb-4 font-serif text-2xl font-semibold" id="booking">How to book?</h2>
     <p class="mb-6">Follow the instructions in one of these two methods.</p>
     <div class="flex flex-col items-start justify-around w-full mt-4 lg:flex-row">
-        <a href="/twint" class="block p-4 mx-auto text-xl big-button">Book with Twint</a>
+        <a href="/twint" class="block p-4 mx-auto text-xl std-button">Book with Twint</a>
         <p class="mx-auto my-6 font-semibold">or</p>
         <div class="mx-auto">
-            <a href="https://book.stripe.com/8wM7ttfIT37r6BicMM" rel="nofollow noopener" target="_blank" class="block p-4 text-xl big-button">Book with Credit Cart</a>
+            <a href="https://book.stripe.com/8wM7ttfIT37r6BicMM" rel="nofollow noopener" target="_blank" class="block p-4 text-xl std-button">Book with Credit Cart</a>
             <p class="text-center">(+2.70 fee)</p>
         </div>
     </div>

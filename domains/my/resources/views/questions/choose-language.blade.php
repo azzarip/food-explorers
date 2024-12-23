@@ -3,9 +3,9 @@
 @section('question')
 <div class="lg:h-20"></div>
 
-<div class="absolute top-0 right-0 p-2 text-right text-white">
+{{-- <div class="absolute top-0 right-0 p-2 text-right text-white">
     <p> <small>&#x25BC;</small> {{ strtoupper(app()->getLocale()) }}</p>
-</div>
+</div> --}}
 
 <h1 class="mt-4 text-2xl text-center text-white font-head">@lang('Which languages do you want to attend events in?')</h1>
 <div class="flex max-w-sm gap-5 px-5 mx-auto mt-4 md:flex-col" x-data="
@@ -34,7 +34,7 @@
 
     <input type="hidden" :value="en ? 1 : 0" name="en" />
     <input type="hidden" :value="de ? 1 : 0" name="de" />
-    <button  class="big-button form-button" x-bind:disabled="!en && !de">
+    <button  class="std-button" x-bind:disabled="!en && !de">
         @lang('Continue') <x-heroicon-o-arrow-right class="inline w-6 mb-1 aspect-auto" />
     </button>
     </x-forms::base>

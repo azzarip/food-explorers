@@ -18,11 +18,11 @@
 @endsection
 
 @section('big-menu')
-    <ul class="flex items-center justify-start mt-3 mr-3 text-xl font-bold align-bottom space-x-9">
+    <ul class="flex items-center justify-start mt-3 mb-1 mr-3 text-xl font-bold align-bottom space-x-9">
         @foreach ($items as $label => $path)
             <li>
                 <a href="{{ $path }}"
-                    class="p-2 font-medium rounded-md hover:bg-amber-500/30">{{ $label }}</a>
+                    class="p-2 font-medium rounded-full hover:bg-amber-500/30">{{ $label }}</a>
             </li>
         @endforeach
         @guest
@@ -30,7 +30,7 @@
                 <a href="/register" class="px-4 py-2 std-button">Become a Food Explorer</a>
             </li>
             <li>
-                <a href="/login" class="px-4 py-2 font-medium rounded-md hover:bg-amber-500/30">Login</a>
+                <a href="/login" class="px-4 py-2 font-medium rounded-full hover:bg-amber-500/30">Login</a>
             </li>
         @endguest
 

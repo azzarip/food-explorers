@@ -42,7 +42,7 @@ $en = auth()->user()->speaks('en');
     
     <input type="hidden" :value="en ? 1 : 0" name="en" />
     <input type="hidden" :value="de ? 1 : 0" name="de" />
-    <button  class="big-button form-button" x-bind:disabled="!en && !de">
+    <button  class="std-button form-button" x-bind:disabled="!en && !de">
         @lang('Save') <x-heroicon-o-arrow-right class="inline w-6 mb-1 aspect-auto" />
     </button>
 </x-forms::base>
