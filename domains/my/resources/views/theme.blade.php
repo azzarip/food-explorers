@@ -37,7 +37,7 @@ if (width > 1040) { open = true; }"
                                     <x-heroicon-o-home class="inline w-6 h-6 mr-1"/> Home</a>
                             </li>
                             <li>
-                                <a class="block w-full py-3 pl-4 border-yellow-500 {{ request()->path() == 'events' ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
+                                <a class="block w-full py-3 pl-4 border-yellow-500 {{ str_starts_with(request()->path(), 'events') ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
                                     href="/events">
                                     <x-heroicon-o-calendar-days class="inline w-6 h-6 mr-2"/>Events</a>
                             </li>
