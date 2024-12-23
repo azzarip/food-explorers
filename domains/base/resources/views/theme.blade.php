@@ -22,21 +22,21 @@
         @foreach ($items as $label => $path)
             <li>
                 <a href="{{ $path }}"
-                    class="p-2 font-medium rounded-md hover:bg-emerald-500/30">{{ $label }}</a>
+                    class="p-2 font-medium rounded-md hover:bg-amber-500/30">{{ $label }}</a>
             </li>
         @endforeach
         @guest
             <li>
-                <a href="/register" class="px-4 py-2 big-button">Become a Food Explorer</a>
+                <a href="/register" class="px-4 py-2 std-button">Become a Food Explorer</a>
             </li>
             <li>
-                <a href="/login" class="px-4 py-2 font-medium rounded-md hover:bg-emerald-500/30">Login</a>
+                <a href="/login" class="px-4 py-2 font-medium rounded-md hover:bg-amber-500/30">Login</a>
             </li>
         @endguest
 
         @auth
         <li class="rounded-md" x-data="{'logout': false}">
-            <a href="{{ durl('/', 'my', [], false) }}" class="px-4 py-2 big-button"><x-heroicon-o-user class="inline w-6 pr-1 mb-1 aspect-auto"/>{{ auth()->user()->first_name }}</a>
+            <a href="{{ durl('/', 'my', [], false) }}" class="px-4 py-2 std-button"><x-heroicon-o-user class="inline w-6 pr-1 mb-1 aspect-auto"/>{{ auth()->user()->first_name }}</a>
         </li>
         @endauth
     </ul>
