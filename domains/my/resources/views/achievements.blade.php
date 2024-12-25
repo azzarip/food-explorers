@@ -41,13 +41,37 @@
     </div>
 
 
+    <section x-show="open == 'restaurants'" class="max-w-lg py-6 mx-auto mt-6 space-y-8 max-lg:px-2">
+        
+        <x-my::restaurant-achievement 
+            title="Pizza Tasting"
+            key='napule'
+            :active=false
+            line='Napulé, Meilen'
+        /> 
+
+        <x-my::restaurant-achievement 
+            title="Omakase"
+            key='yu-an'
+            :active=false
+            line='A culinary journey of Japan, through artfully crafted dishes that bring flavors and traditions to life.'
+        /> 
+
+        <x-my::restaurant-achievement 
+        title="1001 Nights"
+        key='1001-nights'
+        :active=false
+        line='Dive into a magical ambiance that transports you straight to the heart of the Middle East.'
+        /> 
+
+    </section>
+
     <section x-show="open == 'bars'" x-cloak>
         <p class="mt-12 text-2xl italic text-center">Coming Soon</p>
     </section>
 
-    <section x-show="open == 'adventures'" x-cloak>
+    <section x-show="open == 'adventures'" x-cloak class="max-w-lg py-6 mx-auto max-lg:px-2">
     @php($a = false)
-    <div class="max-w-lg py-6 mx-auto max-lg:px-2">
         <div class="flex items-center gap-4 py-4 pl-4 border-2 rounded-lg {{ $a ? ' border-yellow-700  shadow-lg bg-gradient-to-br from-yellow-300 via-yellow-400 to-yellow-500' : ''}}">
             <div class="relative w-[140px] aspect-square">
                 <img src="@image('achievements\adventure.webp')" alt="Adventure Achievement" width="120px" height="120px" class="absolute object-contain inset-0 {{ $a ? '' : 'bw' }} w-full h-full">
@@ -55,15 +79,14 @@
             </div>
             <div>
                 @if($a)
-                <p class="font-semibold max-lg:text-sm text-serif text-amber-800"><x-heroicon-s-star class="inline w-4 mb-1 aspect-square" /> EXPLORED <x-heroicon-s-star class="inline w-4 mb-1 aspect-square" /></p>
+                <p class="font-semibold max-lg:text-sm text-serif text-amber-800"><x-heroicon-s-sparkles class="inline w-4 mb-1 aspect-square" /> EXPLORED <x-heroicon-s-sparkles class="inline w-4 mb-1 aspect-square" /></p>
                 @else
-                <p class="font-semibold max-lg:text-sm text-serif text-slate-800"><x-heroicon-s-lock-closed class="inline w-4 mb-1 aspect-square" /> UNCHARTED</p>
+                <p class="p-1 ml-auto mr-2 font-semibold rounded-lg w-fit max-lg:text-sm text-serif bg-stone-200 text-slate-800"><x-heroicon-s-lock-closed class="inline w-4 mb-1 aspect-square" /> UNCHARTED</p>
                 @endif
                 <p class="text-2xl font-semibold lg:text-3xl font-head">Milano Meraviglia</p>
                 <p class="italic max-lg:text-sm text-md">Exploring Milan’s Cuisine, Hidden Treasures, and Luxury Life.</p>
             </div>
         </div>
-    </div>
     </section>
 </div>
 @endsection

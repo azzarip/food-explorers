@@ -6,7 +6,7 @@ if (width > 1040) { open = true; }"
     if (width > 1040) { open = true;}">
 
     @if ($nav)
-        <div id="menuButton" class="fixed top-0 left-0 z-50 p-4 lg:hidden">
+        <div id="menuButton" class="absolute top-0 left-0 z-50 p-4 lg:hidden">
             <x-heroicon-o-bars-3 class="w-8 h-8 text-gray-900 cursor-pointer" @click="open = true" x-show="!open" />
             <x-heroicon-o-x-mark class="w-8 h-8 text-white cursor-pointer" @click="open = false" x-show="open" x-cloak />
         </div>
