@@ -6,10 +6,9 @@
 <p class="mt-4 ml-12 text-2xl font-semibold font-head">@lang('Hi') {{ auth()->user()->first_name }}!</p>
 <div class="grid gap-5 mx-4 lg:grid-cols-2">
     <div class="px-4 pt-4">
-        <p class="mb-1 text-2xl font-semibold text-center"><x-heroicon-o-bell class="inline w-6 h-6 mb-1"/> @lang('Your next events'):</p>
+        <p class="mb-1 text-2xl font-semibold text-center"><x-heroicon-o-bell class="inline w-6 h-6 mb-1"/> @lang('Your next event'):</p>
         <hr>
-        <p class="mt-4 italic text-center">@lang('No events available').<br>
-        <p class="mt-2 italic text-center">@lang('Future events will be showcased here')</p>
+        <p class="mt-4 italic text-center">@lang('No upcoming events').<br>
         </p>
     </div>
     <div>
