@@ -8,6 +8,7 @@
 </div> --}}
 
 <h1 class="mt-4 text-2xl text-center text-white font-head">@lang('Which languages do you want to attend events in?')</h1>
+<p class="mt-2 text-center text-white font-head">@lang("Select one or both")</p>
 <div class="flex max-w-sm gap-5 px-5 mx-auto mt-4 md:flex-col" x-data="
     {en: {{ app()->getLocale() == 'en' ? 'true' : 'false' }}, de:  {{ app()->getLocale() == 'de' ? 'true' : 'false' }}}">
 

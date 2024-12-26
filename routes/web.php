@@ -20,6 +20,7 @@ Route::get('/', function () {
 
 Route::middleware('guest')->group(function () {
     Route::view('/register', 'auth.register')->name('register');
+    Route::view('/profile/complete', 'auth.simple-register')->name('simple-register');
 
     Route::middleware('throttle:5')->post('/register', RegisterController::class);
 });

@@ -42,7 +42,7 @@
         </div>
     </div>
 
-@if($points >= 1)
+
     <section x-show="open == 'restaurants'" class="max-w-lg py-6 mx-auto mt-6 space-y-8 max-lg:px-2">
         
         <x-my::achievements.restaurant
@@ -72,20 +72,17 @@
     <section x-show="open == 'bars'" x-cloak>
         <p class="mt-12 text-2xl italic text-center">Coming Soon</p>
     </section>
-
     <section x-show="open == 'adventures'" x-cloak class="max-w-xl py-6 mx-auto max-lg:px-2">
-
+        
         <x-my::achievements.adventure
             title="Milano Meraviglia"
             key='milano'
             :active="in_array('Milano Meraviglia', $achievements)"
+            :unlocked="$points>=1"
             line='Exploring Milan’s Cuisine, Hidden Treasures, and Luxury Life.'
         /> 
 
     </section>
 
-@else
-<p class="mt-12 text-2xl text-center">Reach at least 1 point to gain access to the achievements!</p>
-@endif
 </div>
 @endsection

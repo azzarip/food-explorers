@@ -6,7 +6,7 @@
     <x-heroicon-o-arrow-left class="inline w-4 h-4 mb-1" />back to Upcoming Events</a>
 <h1 class="mt-2 text-2xl font-semibold text-center lg:text-4xl lg:mt-4">Past Events</h1>
 
-@if (empty($events))
+@if($events->isEmpty())
     <p class="my-4 italic text-center">@lang('No events available')</p>
 @endif
 

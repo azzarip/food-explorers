@@ -117,7 +117,7 @@ if (width > 1040) { open = true; }"
             </div>
         </div>
 
-        <x-footer class="" />
+        <x-footer class="" :flag=true />
     </div>
 
 </div>
