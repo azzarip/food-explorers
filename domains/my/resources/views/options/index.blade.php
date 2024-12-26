@@ -11,7 +11,7 @@
     <h1 class="mb-8 text-3xl font-semibold text-center font-head">@lang('Options')</h1>
 
     <div class="w-full mt-4 max-lg:px-8">
-        <div class="flex items-center justify-between py-2 lg:py-4 border-y">
+        {{-- <div class="flex items-center justify-between py-2 lg:py-4 border-y">
             <div class="w-1/2 pl-2 lg:w-3/4">
                 <p>@lang('Languages'):                   
                     {{ $en && $de && ($locale == 'de') ? 'Deutsch (Hauptsprache), English' : '' }}
@@ -24,7 +24,7 @@
             <div class="">
                 <a href="/options/language" class="w-full text-right text-blue-800 cursor-pointer hover:underline">@lang('Modify')</a>
             </div>
-        </div>
+        </div> --}}
 
         <div class="flex items-center justify-between py-2 border-b lg:py-4">
             <div class="w-1/2 pl-2 lg:w-3/4">
