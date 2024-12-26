@@ -33,20 +33,38 @@ if (width > 1040) { open = true; }"
 
                         <nav>
                             <ul>
+                                @php($selectedHome = request()->path() == '/')
                                 <li>
-                                    <a class="block w-full py-3 pl-4 border-yellow-500 {{ request()->path() == '/' ? 'bg-gray-700 border-l-yellow-500 border-l-4' : 'hover:bg-gray-800' }}"
+                                    <a class="block w-full py-3 pl-4 border-yellow-500 {{ $selectedHome ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
                                         href="/">
-                                        <x-heroicon-o-home class="inline w-6 h-6 mr-1" /> Home</a>
+                                        @if($selectedHome)
+                                        <x-heroicon-s-home class="inline w-6 h-6 mr-1" />
+                                        @else
+                                        <x-heroicon-o-home class="inline w-6 h-6 mr-1" />
+                                        @endif
+                                        Home</a>
                                 </li>
+                                @php($selectedEvents = str_starts_with(request()->path(), 'events'))
                                 <li>
-                                    <a class="block w-full py-3 pl-4 border-yellow-500 {{ str_starts_with(request()->path(), 'events') ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
+                                    <a class="block w-full py-3 pl-4 border-yellow-500 {{ $selectedEvents ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
                                         href="/events">
-                                        <x-heroicon-o-calendar-days class="inline w-6 h-6 mr-2" />Events</a>
+                                        @if($selectedEvents)
+                                        <x-heroicon-s-calendar-days class="inline w-6 h-6 mr-1" />
+                                        @else
+                                        <x-heroicon-o-calendar-days class="inline w-6 h-6 mr-1" />
+                                        @endif
+                                        Events</a>
                                 </li>
+                                @php($selectedAchievements = request()->path() == 'achievements')
                                 <li>
-                                    <a class="block w-full py-3 pl-4 border-yellow-500 {{ request()->path() == 'achievements' ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
+                                    <a class="block w-full py-3 pl-4 border-yellow-500 {{ $selectedAchievements ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
                                         href="/achievements">
-                                        <x-heroicon-o-star class="inline w-6 h-6 mb-1 mr-2" />Achievements</a>
+                                        @if($selectedAchievements)
+                                        <x-heroicon-s-star class="inline w-6 h-6 mr-1" />
+                                        @else
+                                        <x-heroicon-o-star class="inline w-6 h-6 mr-1" />
+                                        @endif
+                                        Achievements</a>
                                 </li>
                             </ul>
                         </nav>

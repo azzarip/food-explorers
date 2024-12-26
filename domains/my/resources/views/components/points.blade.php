@@ -1,4 +1,4 @@
-@php($points = auth()->user()->getPoints())
+@props(['points'])
 
 <div class="p-1 rounded-lg bg-gradient-to-tr from-yellow-500 via-yellow-400 to-yellow-700">
     <div class="px-4 pt-4 pb-2 bg-white rounded-md">
