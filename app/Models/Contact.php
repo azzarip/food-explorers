@@ -4,6 +4,8 @@ namespace App\Models;
 
 use App\HasLocale;
 use App\Models\Event;
+use Azzarip\Teavel\Models\Tag;
+use Azzarip\Teavel\Models\TagCategory;
 use Azzarip\Teavel\Models\Contact as BaseContact;
 use Illuminate\Contracts\Translation\HasLocalePreference;
 
@@ -28,6 +30,16 @@ class Contact extends BaseContact implements HasLocalePreference
     public function getPoints()
     {
         return $this->events()->count();
+    }
+
+    public function getAchievements(): array
+    {
+        $cat = TagCategory::name('Achievements');
+        $tags = $this->tags()
+            ->where('category_id', $cat->id)
+            ->pluck('name')
+            ->toArray();
+        return $tags;
     }
 
 }

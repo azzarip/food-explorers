@@ -4,6 +4,7 @@
             <a href="mailto:marco.azzari@foodexplorers.ch"> <x-heroicon-s-envelope class="inline w-5 h-5"/> marco.azzari@foodexplorers.ch</a>
 
         </div>
+
         <p class="text-center text-slate-300">Please report to me any bug or glitch of this website.</p>
         {{-- <div class="text-center text-white"> &copy; 2022-{{ date('Y') }} Pizza Azzari | Knüslistrasse 8, 8004 Zürich <span class="hidden md:inline">|</span><br class="md:hidden"> <a href="/privacy-policy" class="text-blue-500 underline">Privacy Policy</a> | <a href="/cookie-policy" class="text-blue-500 underline">Cookie Policy</a> --}}
         </div>

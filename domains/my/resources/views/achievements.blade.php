@@ -1,6 +1,7 @@
 @extends('azzarip::layouts.1col')
 
-@php($points = auth()->user()->getPoints()/4)
+@php($points = auth()->user()->getPoints())
+@php($achievements = auth()->user()->getAchievements())
 
 @section('main')
     <style>
@@ -47,21 +48,21 @@
         <x-my::achievements.restaurant
             title="Pizza Tasting"
             key='Napule'
-            :active=true
+            :active="in_array('Napule Pizza Tasting', $achievements)"
             line='Napulé, Meilen'
         /> 
 
         <x-my::achievements.restaurant
             title="Omakase"
             key='yu-an'
-            :active=false
+            :active="in_array('Yu-An Omakase', $achievements)"
             line='A culinary journey of Japan, through artfully crafted dishes that bring flavors and traditions to life.'
         /> 
 
         <x-my::achievements.restaurant
             title="1001 Nights"
             key='1001-nights'
-            :active=false
+            :active="in_array('1001 Nights', $achievements)"
             :unlocked="$points>=4"
             line='Dive into a magical ambiance that transports you straight to the heart of the Middle East.'
         /> 
@@ -77,7 +78,7 @@
         <x-my::achievements.adventure
             title="Milano Meraviglia"
             key='milano'
-            :active=false
+            :active="in_array('Milano Meraviglia', $achievements)"
             line='Exploring Milan’s Cuisine, Hidden Treasures, and Luxury Life.'
         /> 
 
