@@ -47,7 +47,7 @@
         
         <x-my::achievements.restaurant
             title="Pizza Tasting"
-            key='Napule'
+            key='napule'
             :active="in_array('Napule Pizza Tasting', $achievements)"
             line='Napulé, Meilen'
         /> 
