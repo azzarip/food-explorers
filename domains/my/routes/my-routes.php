@@ -4,8 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Domains\My\Http\Controllers\MyController;
 use Domains\My\Http\Controllers\QuestionController;
 use Domains\My\Http\Controllers\SetLanguageController;
-
-
+use Domains\My\Http\Controllers\SuggestController;
 
 Route::group([
     'domain' => config('domains.my.url'),
@@ -16,6 +15,8 @@ Route::group([
     Route::view('/events', 'my::events');
     Route::view('/events/past', 'my::past-events');
     Route::view('/achievements', 'my::achievements');
+    Route::view('/suggest', 'my::suggest');
+    Route::post('/suggest', SuggestController::class);
 
 
     Route::view('/options', 'my::options.index');

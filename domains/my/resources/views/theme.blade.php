@@ -66,6 +66,18 @@ if (width > 1040) { open = true; }"
                                         @endif
                                         Achievements</a>
                                 </li>
+
+                                @php($selectedSuggest = request()->path() == 'suggest')
+                                <li>
+                                    <a class="block w-full py-3 pl-4 border-yellow-500 {{ $selectedSuggest ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
+                                        href="/suggest">
+                                        @if($selectedSuggest)
+                                        <x-heroicon-s-light-bulb class="inline w-6 h-6 mr-1" />
+                                        @else
+                                        <x-heroicon-o-light-bulb class="inline w-6 h-6 mr-1" />
+                                        @endif
+                                        Suggest an Event</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
