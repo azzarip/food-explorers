@@ -13,13 +13,14 @@ class SuggestController
      */
     public function __invoke(Request $request)
     {
-        $text = $request->validate([
-            'text' => 'required|string'
-            ])['text'];
+        $request->validate([
+            'name' => 'required|string'
+        ]);
+        $data = $request->only(['event_type', 'name', 'url', 'text']);
         $authId = auth()->user()->id;
 
         Suggest::create([
-            'text' => $text,
+            'text' => implode("\n", $data),
             'contact_id' => $authId,
         ]);
 
