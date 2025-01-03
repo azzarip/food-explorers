@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Azzarip\Teavel\Models\Contact;
 use Illuminate\Support\Facades\Auth;
 use Azzarip\Teavel\Exceptions\RegistrationException;
@@ -28,6 +27,7 @@ class RegisterController extends Controller
         }
 
         Auth::login($contact, true);
-        return redirect(session('intended.url'));
+        
+        return redirect(route('my'));
     }
 }

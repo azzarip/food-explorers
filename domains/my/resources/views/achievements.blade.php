@@ -23,22 +23,22 @@
         x-bind:class="open === 'restaurants' ? 'border-b-white border-yellow-600' : 'border-b-yellow-600'"
         @click = "open = 'restaurants'"
         >
-            <h2 class="text-xl font-semibold text-center lg:mt-4 lg:text-2xl">Food & Restaurants</h2>
+            <h2 class="text-sm font-semibold text-center md:text-xl lg:mt-4 lg:text-2xl">Food & Restaurants</h2>
         </div>
 
         <div class="h-20 py-2 border rounded-lg rounded-b-none cursor-pointer lg:h-20"
         x-bind:class="open === 'bars' ? 'border-b-white border-yellow-600' : 'border-b-yellow-600'"
         @click = "open = 'bars'"
         >
-            <h2 class="text-xl font-semibold text-center lg:mt-4 lg:text-2xl">Bars & Drinks</h2>
+            <h2 class="text-sm font-semibold text-center md:text-xl lg:mt-4 lg:text-2xl">Bars & Drinks</h2>
         </div>
 
         <div class="h-20 py-2 border rounded-lg rounded-b-none cursor-pointer lg:h-20"
         x-bind:class="open === 'adventures' ? 'border-b-white border-yellow-600' : 'border-b-yellow-600'"
         @click = "open = 'adventures'"
         >
-            <h2 class="text-xl font-semibold text-center lg:mt-2 lg:text-2xl">Adventures</h2>
-            <p class="text-sm text-center lg:text-md">around the World</p>
+            <h2 class="text-sm font-semibold text-center md:text-xl lg:mt-4 lg:text-2xl">Adventures</h2>
+            <p class="text-xs text-center lg:text-md">around the World</p>
         </div>
     </div>
 

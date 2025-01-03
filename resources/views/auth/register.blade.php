@@ -12,7 +12,8 @@
     <div class="pt-4 pb-8 lg:pt-10">
         <p class="text-4xl leading-normal text-center text-black">Food Explorers</p>
         <div>
-            <h1 class="mb-2 text-3xl leading-normal text-center text-black">Become a member <br> <span class="text-2xl"> totally free!</span></h1>
+            <h1 class="mb-2 text-3xl leading-normal text-center text-black">Become a member <br> 
+            <span class="text-xl italic font-semibold"><x-heroicon-s-sparkles class="inline w-6 h-6 mb-1 text-amber-600"/> TOTALLY FREE <x-heroicon-s-sparkles class="inline w-6 h-6 mb-1 text-amber-600"/></span></h1>
 
             <x-forms::base :action="route('register')" button="I want to become a Food Explorer!">
                 @csrf
