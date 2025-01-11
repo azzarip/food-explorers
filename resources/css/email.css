@@ -1,10 +1,10 @@
 .button-blue,
 .button-primary {
-    background-color: black;
-    border-bottom: 8px solid black;
-    border-left: 18px solid black;
-    border-right: 18px solid black;
-    border-top: 8px solid black;
+    background-color: #14532d;
+    border-bottom: 8px solid #14532d;
+    border-left: 18px solid #14532d;
+    border-right: 18px solid #14532d;
+    border-top: 8px solid #14532d;
 }
 
 .button-green,
