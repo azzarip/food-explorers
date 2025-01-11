@@ -1,5 +1,7 @@
 <?php
 
+use App\Teavel\Sequences\MilanoAnnouncement;
+use Azzarip\Teavel\Models\Sequence;
 use Illuminate\Foundation\Inspiring;
 use Illuminate\Support\Facades\Artisan;
 
@@ -14,6 +16,6 @@ use Illuminate\Support\Facades\Artisan;
 |
 */
 
-Artisan::command('inspire', function () {
-    $this->comment(Inspiring::quote());
-})->purpose('Display an inspiring quote');
+Artisan::command('test:sequence', function () {
+    Sequence::name(MilanoAnnouncement::class)->start(\App\Models\Contact::find(1));
+})->purpose('Test milano sequence');
