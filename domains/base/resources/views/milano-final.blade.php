@@ -9,278 +9,452 @@
 @endphp
 
 @section('main')
-<div class="flex flex-row items-center justify-between lg:items-start">
-<div class="flex flex-row items-center justify-start w-fit">
-    <div class="w-24 p-1 mx-auto mt-4 mb-2 rounded-full lg:w-32">
-        <img src="{{ image('logo_sm.webp') }}" alt="Logo Food Explorers" class="mx-auto">
-    </div>
-    <p class="font-serif text-2xl font-semibold lg:text-4xl">Food Explorers</p>
-</div>
-</div>
-<article class="max-w-3xl mx-auto">
-    <h1 class="font-serif text-4xl font-semibold text-center">Milano Meraviglia</h1>
-    <p class="px-4 py-2 mx-auto mt-4 text-3xl font-semibold text-center text-amber-700 w-fit">Friday 4 - Sunday 6 April 2025 </p>
-    <p class="mt-2 text-xl font-semibold text-center font-head">This is my <span class="text-red-800">SPECIAL INVITE</span> to come with me and other Food Explorers to Milan, for a weekend of incredible Food, amazing drinks and unforgettable memories</p>
-    <img src="https://media.istockphoto.com/id/1059724614/photo/milan-cathedral-on-sunrise-italy.jpg?s=612x612&w=0&k=20&c=w7dD72xvRNz8SF1bwxNFkgBLzy6QNqXFzgry5WCWsXY=" alt="Milano Picture" class="mx-auto mt-4 rounded-lg shadow-lg">
-    
-    <div class="mt-24 space-y-4">
-        <p class="font-serif text-3xl font-semibold">Dear Food Explorer,</p>
-        <p>If you are reading these words, it means you care and like the events I have been organizing in the past years.</p>
-        <p>If you are new or you have been here for many years, you know I take great care in giving the best experiences to my guests.</p>
-        <p>And I have been cooking up this project for many months.</p>
-        <p>Therefore let me get straight to point...</p>
-        <p class="font-semibold">I am organizing a special weekend from Friday 4 to Sunday 6 April in Milano.</p>
-        <p>During this weekend I will pick the best and most interesting food experiences of Milano.</p>
-        <p>I called this adventure:</p>
-        <p class="text-2xl font-semibold text-center">Milano Meraviglia</p>
-        <p>It means Marvelous Milan, I prefer the Italian title, as my ziel with this weekend is to show you, how Italians live and enjoy food.</p>
-        <p><i>Dolce Vita</i> or <i>Bella Vita</i> as many people call it.</p>
-        <p>I want to show you the real lifestyle of Milano, not the weird renditions of Zurich restaurants.</p>
-        <p>Each day we will do different things and visit restaurants and bars, while in the mean time we will explore the city and its hidden gems.</p>
-        <p>It will be my greatest care in <span class="bg-amber-300/50">organizing the most delightful holiday a foodie like you can aspire for</span>.</p>
-
-    </div>
-    
-    <div class="space-y-4">
-    <h2 class="my-6 font-serif text-2xl font-semibold text-center">The Plan</h2>
-    <p>We will arrive on Friday around 12pm, we put down our luggages in the hotel and we head to the first restaurant.</p>
-    <p>Transportation from and to Zurich will be your only responsability. From when you reach the Hotel, I will be there taking care of you.</p>
-    <p>Many don't know, but the most famous food trend in Milano is probably sushi!</p>
-    <p>But, I will avoid Japanese restaurants for this trip, even though there are amazing places in Milan!</p>
-    <p>To help myself organize better the different days and what to do I split the three days into three different themes:</p>
-    <ul class="text-2xl font-semibold list-disc list-inside font-head">
-        <li>Day 1: <span class="text-red-700">Milano Classics</span></li>
-        <li>Day 2: <span class="text-amber-600">Luxury Life</li>
-        <li>Day 3: <span class="text-green-800">Arrivederci Italia</span></li>
-    </ul>
-    </div>
-    <h2 class="my-6 font-serif text-2xl font-semibold text-center">3 Day Menu</h2>
-
-    <div class="py-2 bg-red-100 rounded-lg">
-    <h3 class="my-6 font-serif text-2xl text-center ">Milano Classics (Day 1)</h3>
-    <ul class="space-y-4 ">
-        <p>Cucina Meneghina refers to the traditional cuisine of Milan, the capital of the Lombardy region in northern Italy. The term "Meneghina" derives from the Milanese dialect and is often used to describe something distinctly Milanese.</p>
-
-        <p>There are a lot, and I mean a lot of Italian Restaurants in Milan... </p>
-        <p>But just a few offer <strong>Cucina Meneghina</strong>. I have selected and tasted a few of the most important, and I will make you try the original cuisine from Milano.</p>
-        <p>We will taste <em>Risotto Milanese</em> and other really typical dishes.</p>
-        <p> I will bring you to one of the most ancient and most reknown restaurant of the city. With the true italian flavors.</p>
-
-        <img src="https://www.yesmilano.it/sites/default/files/styles/testata_full/public/articolo/copertina/483/1866/risotto_DP_1280x560.jpg?itok=Jy7Snv9h" alt="Risotto Alla Milanese" class="rounded-lg shadow-lg">
-        <li><strong>Tour of the city center</strong>  
-            <br>From the restaurant we will head back to the city center. We will walk by the Castello Sforzesco, la Scala (the Opera House), and finally arriving al Duomo.</li>
-            <p>We will visit the main Cathedral and </p>
-        <li><strong>Aperitivo</strong>  
-                <p>After some well deserved free time for the dinner to a bar.</p>
-                <br>As every good italian welcomes the Weekend, we will end up in the evening to a cozy bar to have a glass of wine and a small bite. 
-                <p>This is what we call aperitivo, but not just chips and olives, but different tasty treats from bakeries, cold cuts and other stuff.</p>
-            </li>
-        <img src="https://static2-living.corriereobjects.it/wp-content/uploads/2024/07/sachi-milano-terrace-666b55e8625b3.jpg?v=1719945175" alt="Aperitivo" class="rounded-lg shadow-lg">
-        <li><strong>Optional: Rooftop Bar</strong>
-            <br>For the ones who still have energy we can enjoy a cocktail with the sun setting above the city and the cathedral.
-        </li>
-    </ul>
-    </div>
-
-    <div class="px-2 py-2 my-8 rounded-lg bg-amber-100">    
-    <h3 class="my-6 font-serif text-2xl text-center">Luxury Life (Day 2)</h3>
-    <ul class="space-y-4 ">
-        <p>We will start the day around 11 a.m.</p>
-        <p>You can sleep through, or wake up early and visit the city by yourself.</p>
-        
-        <li><strong>Piazza Gae Aulenti</strong>
-        We start our tour in the signature square Piazza Gae Aulenti, where the "Vertial Gardens", the famous skyscrapers are and we will move towards <i>Corso Como</i> where are all the foodie spots.
-        And walk along the most central and lively streets of Milano.
-        </li>
-        <img src="https://living.corriere.it/wp-content/uploads/2020/10/bosco-verticale-milano-012_cBoeri-Studio_ph.Dimitar-Harizanov_Vertical-Forest_DSC8302.jpg" class="mx-auto rounded-lg shadow-xl lg:w-1/2">
-        <p>These part of the town is full of different </p>
-
-        <li><strong>Free Time</strong>       
-        <p>You will have the afternoon free.</p>
-        </li>
-
-
-        <li>
-            <strong>Fish Dinner</strong>
-            <br>Many do not know, but Milano has the best fish and seafood selection of all Italy. 
-            <br>All the fished products converge to the Milano Fish Market, therefore in the city you can find the best and freshest selection. 
-            <strong>I will bring you to taste the most characteristic italian dishes.</strong>
-            Italians prefer seafood and shrimps above fish. Most of the menus revolve around seafood more than fish.
-            There are some food especially the pasta with Astice (Lobster) has become over the year one of the staples of Italian High End Sea Cuisine.
-            <img src="https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2021/07/08/490b92922df3407cb5b91d3122a43579_Pavillon-Ledoyen.jpg" alt="" class="w-3/4 mx-auto my-2 rounded-lg">
-            <p>Trust me I know what I am talking about, the restaurants I am picking from are in the top tier of Milan.</p>
-            <p>If you are thinking:</p>
-            <p class="my-2 text-2xl italic text-center">I tried the lobster but...</p>
-            <p>You haven't tried it in these restaurants, trust me.</p>
-
-            <p class="mt-4 text-2xl">P.S.</p>
-            <p>You are not forced to eat something you don't want, in most of the restaurant I will choose the menu, if you don't like something, we can swap a dish without too much stress.</p>
-        </li>
-        <li><strong>Optional: Rooftop Bar</strong>
-            <br>We can enjoy a cocktail with the sun setting above the city.
-            There are multiple terraces around the city center, where we can enjoy our after dinner time. 
-        </li>
-    </ul>
-    <img src="https://flawless.life/wp-content/uploads/2016/07/radio-rooftop-bar-me-milan-ristorante.jpg" alt="" class="mx-auto rounded-lg shadow-lg ">
-    </div>
-
-    <div class="px-2 py-2 bg-green-100 rounded-lg">
-    <h3 class="my-6 font-serif text-2xl text-center">Arrivederci Italia (Day 3)</h3>
-    <ul class="space-y-4 ">
-    <img src="" alt="">
-        <li><strong>Free Time and Checkout</strong>
-        <p>I will leave you the morning to relax and enjoy the last hours in the city</p>
-        <p>Usually checkouts are around 11-12pm, but we will have an hotel with the luggage deposit. So you can free your room and visit the city for the last day.</p>
-        
-        <li>
-        <strong>One last special lunch</strong>
-        <p>As the last stop, before the final goodbyes I will bring you to a very well known Chef of Italy. </p>
-        <p>I will not reveal is name, because I want to leave some mystery.. </p>
-        <p>He cooks the purest italian cuisine and he is quite a trend setter.</p>
-        </li>
-        <img src="https://pbs.twimg.com/profile_images/978526727604387840/WcWvDE6W_400x400.jpg" class="w-1/2 mx-auto rounded-full shadow-lg lg:w-1/4 ">
-
-        <li>
-        <strong>Goodbye</strong>
-        <p>After the lunch we will say goodbye and you are free to remain in Milan or travel back home.</p>
-        </li>
-    </li>
-    </ul>
-    </div>
-
-    <h3 class="my-6 font-serif text-2xl text-center">Free time!</h3>
-    <p>There will be a lot of free time for you to explore the city on your own.</p>
-    <p>I outlined a plan for these days, but apart from lunch and dinners you have all the free time for yourself to explore the city and visit what you like the most.</p>
-    <p class="font-semibold">Do not worry, you are not stuck with me for 3 days straight.</p>
-    <p>Also time is "dilated" in Italy. You will have lunch later and dinner later than in Switzerland.</p>
-    <p>You will find you can do more during the morning and afternoon!</p>
-    <p>You will have breakfast included in the hotel.</p>
-
-    <p class="my-4 text-2xl text-center">The plan in the details may change but overall this is the outline</p>
-    
-    <div class="px-4 pb-4 bg-blue-100 border-4 rounded-lg border-sky-700">
-        <h3 class="my-6 font-serif text-xl text-center">Drinks are not included.</h3>
-        <p>I will make a package with the hotel, the restaurants, some other threats and other important food stops.</p>
-        <p>I will leave the drinks out, to make it fairer for people who don't drink alcohol or drink just a bit.</p>
-    </div>
-    
-    <div class="px-4 rounded-lg">
-        <h2 class="my-6 font-serif text-2xl text-center">Hotel</h2>
-        <p>To have the greatest experience in Milan we will sleep in one of the hotel of the city center.</p>
-        <p>It will be a ⭐⭐⭐⭐ (4-star) Hotel, so I can assure you are well threated and well rested.</p>
-        <p>Also we will be close to the Main Station, the Big Financial District of Milan and the city center.</p>
-        <p>Everything by walking distance.</p>
-        <p>The hotel is not yet decided, but will be in that zone of the city.</p>
-        <p>Breakfast will be included.</p>
-    </div>
-
-
-
-    <div class="px-4 rounded-lg pb-42">
-        <h2 class="my-6 font-serif text-2xl text-center">Transportation</h2>
-        <p>You will have to take care of the transportation from Zurich to Milan and back.</p>
-        <p>My suggestion is the train, but also Flixbus or the Car are vailable alternatives.</p>
-        <p>In the city, we will move around by public transport. I will provide you with a ticket for the 3 days.</p>
-    </div>
-
-
-    <div class="px-4 rounded-lg pb-42">
-        <h2 class="my-6 font-serif text-2xl text-center">Dress Code</h2>
-        <p>Compared to Zurich where the dress codes are more lax.</p>
-        <p>You will see extremely elegant people walking in the city center, and in the restaurants we will visit.</p>
-        <p>Some restaurant in the list, even ask directly for a "casual elegant" dress code.</p>
-        <p>Don't stress it too much, but if you have that dress in the wardrobe, you never have the occasion to wear, maybe this weekend is for you!</p>
-    </div>
-
-    <div class="px-4 mt-6 text-y">
-        <h2 class="mt-6 mb-4 font-serif text-2xl font-semibold">Here is my offer for you</h2>
-        <p>If you had to organize all of this by yourself, without considering the time spent, it will cost you more than 1'100 CHF.</p>
-        <p>The final price for you with all the things we discussed will be:</p>
-        <p class="text-center">
-            <span class="font-serif text-4xl text-red-900 line-through">1'165.</span> <br class="lg:hidden">
-            <span class="font-serif text-6xl text-green-900">CHF 997.-</span>
-        </p>
-        <p>You will have the hotel, the restaurants, the transportation inside the city and also some foodie stops and the visit to the Milan Cathedral and its rooftops.</p>
-        <p class="font-semibold">So you can simply relax and enjoy your holiday.</p>
-        
-    </div>
-    <div class="p-8 mx-auto my-4 space-y-4 border-2 rounded space-y w-fit">
-        <p class="font-serif text-4xl text-center">ATTENTION!</p>
-        <p class="text-xl text-center">Places are limited to 12.</p>
-        <p class="font-serif text-3xl font-semibold text-center">First Come, First Serve</p>
-    </div>
-
-    {{-- <div class="h-14"></div>
-    <p class="text-xl font-semibold text-center underline underline-offset-4 decoration-4 decoration-green-600">Now you have two choices:</p>
-
-    <div class="px-4 space-y-4">
-        <a href="#booking" class="block mt-4 text-xl font-semibold text-center underline"> > Prereserve your seat! < </a>
-        <p>Be the first to receive the offer when it is ready.</p>
-        <p>And enjoy a dream weekend in Milan, that is uniquely crafted for you as foodie to enjoy.</p>
-
-        <p>
-            or wait...
-        </p>
-
-        <p>And let other people enjoy the weekend...</p>
-    </div> --}}
-
-    {{-- <section id="booking" class="px-4 py-4 mt-4 mb-10 bg-white border-2 border-green-700 rounded-lg">
-        <h2 class="py-2 text-2xl font-semibold text-center">Fill the form with your details and you will be the first being informed.</h2>
-        <div class="max-w-sm mx-auto">
-            <x-forms::full-contact action="/milano" button="I would like to be in the waitlist for when the event is ready" />
+    <div class="flex flex-row items-center justify-between lg:items-start">
+        <div class="flex flex-row items-center justify-start w-fit">
+            <div class="w-24 p-1 mx-auto mt-4 mb-2 rounded-full lg:w-32">
+                <img src="{{ image('logo_sm.webp') }}" alt="Logo Food Explorers" class="mx-auto">
+            </div>
+            <p class="font-serif text-2xl font-semibold lg:text-4xl">Food Explorers</p>
         </div>
-        <p class="pt-2 my-4">It is not binding, nor you have to pay. You will be informed before everyone else.</p>
-    </section> --}}
+    </div>
+    <article class="max-w-3xl mx-auto">
+        <h1 class="font-serif text-4xl font-semibold text-center">Milano Meraviglia</h1>
+        <p class="px-4 py-2 mx-auto mt-4 text-3xl font-semibold text-center text-amber-700 w-fit">Friday 4 - Sunday 6 April
+            2025 </p>
+        <p class="mt-2 text-xl font-semibold text-center font-head">This is my <span class="text-red-800">SPECIAL
+                INVITE</span> to come with me and other Food Explorers to Milan, for a weekend of incredible Food, amazing
+            drinks and unforgettable memories</p>
+        <img src="https://media.istockphoto.com/id/1059724614/photo/milan-cathedral-on-sunrise-italy.jpg?s=612x612&w=0&k=20&c=w7dD72xvRNz8SF1bwxNFkgBLzy6QNqXFzgry5WCWsXY="
+            alt="Milano Picture" class="mx-auto mt-4 rounded-lg shadow-lg">
 
-{{-- <div class="text-y">
-    <h2 class="h2">How to Reach Milano</h2>
-    <p>My suggestion is to take the <strong>train</strong> from Zurich HB direct to Milano Centrale.</p>
-    <img src="@image('sbb-milano.png')" alt="Train Milano SBB">
-    <p>The train that leaves at 8:33 is perfect, since it arrives at 11:50, you have time to go to the Hotel to drop your luggage.</p>
-    <p>At 13:00 we have our reservation in the restaurant close to the Hotel.</p>
-    <p class="font-semibold">Book the train right now, since seats are often limited during the weekend.</p>
+        <div class="mt-24 space-y-4">
+            <p class="font-serif text-3xl font-semibold">Dear Food Explorer,</p>
 
-    <h3 class="h3">For the return ticket</h3>
-    <p>The last lunch will be longer, it will surely last a couple of hours, so we should be done around 15-15:30.</p>
-    <p>My advice, unless you want to run from the restaurant to the station, is to take a train around 4pm.</p>
-    <p class="font-semibold">Pay attention as not all trains stop in STAZIONE CENTRALE.</p>
-    <p>Other trains stop in other stations as Milano Lambrate, which are a bit further away.</p>
+            <p>If you are reading these words, it means you care and like the events I have been organizing in the past
+                years.</p>
+            <p>And I have been cooking up this project for many months.</p>
+            <p>Therefore let me get straight to point...</p>
+            <p class="font-semibold">I am organizing a special weekend from Friday 4 to Sunday 6 April in Milano.</p>
+            <p>During this weekend I will pick the best and most interesting food experiences of Milano.</p>
+            <p>I called this adventure:</p>
+            <p class="text-2xl font-semibold text-center">Milano Meraviglia</p>
+            <p>It means Marvelous Milan, I prefer the Italian title, as my ziel with this weekend is to show you, how
+                Italians live and enjoy food.</p>
+            <p><i>Dolce Vita</i> or <i>Bella Vita</i> as many people call it.</p>
+            <p>Our adventure will focus on three exceptional restaurants carefully chosen to showcase the best of Milano’s
+                finest food scene.</p>
+            <p>Each day we will try different things, visit restaurants and bars, while in the mean time we will explore
+                the city and its hidden gems.</p>
+            <p>It will be my greatest care in <span class="bg-amber-300/50">organizing the most delightful holiday a foodie
+                    like you can aspire for</span>.</p>
+            <p>In this page you will find the program and <strong>at the end of the page there is how to book</strong>
+                ensuring you fully enjoy your adventure!</p>
+            <p>A warm greeting and hope to see you in Milan!</p>
 
-    <h3 class="h3">If there is no direct train available</h3>
-    <p>If there is no direct train to Milano, you can take any IC train to Lugano and every hour there is a interregional train that goes from Lugano to Milano Centrale.</p>
-    <p>Due to the Gotthard traffic during the weekend, I discourage to use the car or buses.</p>
-</div> --}}
+            <button onclick="scrollToElement('offer')"
+                class="w-full p-4 mx-auto text-4xl font-semibold text-white border-2 border-green-800 rounded-lg shadow-lg from-green-600 to-green-900 text-serif bg-gradient-to-b hover:to-green-500">
+                I want to book my place for Milano! <x-heroicon-o-arrow-right class="inline w-8 h-8 mb-1" />
+            </button>
+
+        </div>
+
+        <div class="space-y-4">
+            <h2 class="my-6 font-serif text-2xl font-semibold text-center">The Plan</h2>
+            <p>We will arrive on Friday for 12:30, we put down our luggages in the hotel and we head to the first                 restaurant.</p>
+            <p><strong>Your only responability is</strong> to come to Milan on Friday on time. From when you reach the Hotel, I will be there taking care of you.</p>
+            <p>Many don't know, but the most famous food trend in Milano is probably sushi!</p>
+            <p>But, I will avoid Japanese restaurants for this trip, even though there are amazing places in Milan!</p>
+            <p>I’ve chosen to organize our three days around three distinct themes, which are:</p>
+            <ul class="text-2xl font-semibold list-disc list-inside font-head">
+                <li>Day 1: <span class="text-red-700">Milano Classics</span></li>
+                <li>Day 2: <span class="text-yellow-500">Luxury Life</li>
+                <li>Day 3: <span class="text-green-800">Grand Finale</span></li>
+            </ul>
+        </div>
+        <h2 class="my-6 font-serif text-2xl font-semibold text-center">The Menus and Activities</h2>
+
+        <div class="p-2 rounded-lg bg-red-50">
+            <h3 class="my-6 font-serif text-2xl text-center ">Milano Classics (Day 1)</h3>
+            <div class="space-y-4 ">
+                <p>We will start the day at 12:30 at the Hotel.</p>
+                <p>From there we walk towards the quartiere <strong>Garibaldi</strong> where today lies the food zone of
+                    Milano.</p>
+
+                <h4 class="font-serif text-2xl text-center">Cucina Meneghina</h4>
+                <p>Cucina Meneghina refers to the traditional cuisine of Milan, the capital of the Lombardy region in
+                    northern Italy. The term "Meneghina" derives from the Milanese dialect and is often used to describe
+                    something distinctly Milanese.</p>
+                <p>This cuisine is the most varied in Italy, shaped by its rich history and its neighbors. </p>
+                <p>After some antipasti to warm us up we will try the Risotto alla Milanese.</p>
+                <p>We will taste <em>Risotto Milanese</em> and other really typical dishes.</p>
+                <p> I will bring you to one of the most ancient and most reknown restaurant of the city. With the true
+                    italian flavors.</p>
+
+                <img src="https://cdn.chefincamicia.com/images/d72fbbccd9fe64c3a14f85d225a046f4.1920.jpg"
+                    alt="Risotto Alla Milanese" class="rounded-lg shadow-lg">
+                <p>But don’t be mistaken: <strong>risotto isn’t just “rice with cheese”</strong>.</p>
+                <p> It’s a specific variety of rice, cooked al dente, creating a <strong>creamy texture</strong> when
+                    combined with butter and cheese. </p>
+                <p>A good risotto has a <strong>velvety smooth texture</strong>, where the grains of rice are still
+                    distinct, adding both flavor and texture to the dish.</p>
+                <p>The risotto is <strong>infused with saffron</strong>, which not only imparts a rich flavor but also gives
+                    the dish its iconic golden hue.</p>
+                <p>Today, Risotto alla Milanese has become the <strong>culinary symbol of Milan</strong>.</p>
+                <p>As with any popular dish, Risotto alla Milanese has its share of imitations. In Milan, you’ll often find
+                    overpriced yellow rice passed off as the real thing. </p>
+                <p>But do not worry, I carefully selected each restaurant we go, so I can ensure you have the best
+                    experience and the most iconic and unaltered food.</p>
+
+                <h4 class="font-serif text-xl">Ossobuco alla Milanese</h4>
+                <p> The rice is served with a piece of veal Meat called Ossobuco, on the side of the risotto. </p>
+                <p>If you tried the Ossobuco outside of Italy, you haven't tried the real thing, nor anything that comes
+                    close. </p>
+                <p>You'll experience this dish as it should be: rich, savory, and perfectly complementing the creamy
+                    risotto.</p>
+                <p>Ossobuco literally means "<i>bone with a hole</i>", referring to a specific cut of veal, with the bone
+                    marrow at its center.
+                </p>
+                <p>This tender, flavorful cut is almost always paired with Risotto, creating the perfect combination of
+                    textures and tastes.</p>
+
+                <img src="https://www.carnegenuina.it/cdn/shop/articles/8237371411_2fe18e45dc_o_3744x.jpg?v=1695215056"
+                    alt="Ossobuco Alla Milanese" class="rounded-lg shadow-lg">
+
+                <div class="p-2 mx-auto bg-white rounded-lg lg:p-4">
+                    <p class="my-4 font-serif text-2xl font-semibold text-center"> Milano Classics</p>
+                    <p class="my-4 font-serif text-2xl font-semibold text-center">Menu</p>
+                    <div class="max-w-lg pl-4 mx-auto my-1 text-y">
+                        <p class="font-serif text-lg font-semibold">Antipasti</p>
+                        <p>Tagliere di salumi e formaggi <br> <i>Cured Meats and Cheese Platter </i> </p>
+                        <p>Sottaceti lombardi <br> <i>Lombard Pickled Vegetables </i> </p>
+                        <p>Slinzega valtellinese <br> <i>Valtellina Cold cuts </i> </p>
+                        <p>Parmigiana di melanzane <br> <i>Eggplant Parmigiana </i> </p>
+                    </div>
+                    <div class="max-w-lg pl-4 mx-auto my-8 text-lg text-y">
+                        <p class="mt-2 font-serif text-xl font-semibold">Piatto Principale</p>
+                        <p>Risotto alla Milanese</p>
+                        <p>Ossobuco alla Milanese</p>
+                    </div>
+                    <p>The appetizers may be subject to changes with equivalent dishes, depending on availability.</p>
+                </div>
+
+
+                <p>After the lunch, we will move towards the city center. </p>
+                <p>We will explore <b> Piazza del duomo</b> (in the front cover), <b>Galleria Umberto I </b>and <b>Teatro
+                        della Scala</b> the opera house of Milano.</p>
+                <p>Before meeting again for dinner I will bring you to a <b>secret food spot</b>:</p>
+
+                <div class="flex gap-5 p-4 text-white bg-black rounded-lg">
+                    <div
+                        class="flex-shrink-0 hidden w-24 h-24 font-black text-center text-black bg-white rounded-full text-8xl sm:block">
+                        ?
+                    </div>
+                    <div>
+                        <p class="font-serif text-3xl font-semibold">Secret Food Spot</p>
+                        <p>Behind the bustling traffic of Piazza del Duomo lies a historic bakery, established in the
+                            mid-1800s, renowned for its single, iconic product—a beloved mid-afternoon snack loved and hated
+                            by
+                            the people of Milan.</p>
+                    </div>
+                </div>
+
+
+                <p>We will meet again before dinner to immerse ourselves in the delightful Milanese tradition of
+                    <b>Apericena</b>.
+                </p>
+                <p>This unique Italian dining concept beautifully combines the essence of an aperitivo (a pre-dinner drink
+                    with light snacks, aperitif or apero) with the satisfying elements of a light dinner (cena). </p>
+                <p><b>Apericena</b> is more than just a meal—it’s a relaxed and social experience, typically enjoyed in the
+                    early evening. In April, with the sun setting around 8 PM, this is the perfect time to unwind and savor
+                    the flavors of Milan while basking in the warm glow of twilight. </p>
+                <p>To make the experience truly special, <b>we’ll enjoy our apericena on a stunning rooftop terrace</b>,
+                    offering breathtaking views of Milan’s skyline. </p>
+                <img src="https://ih-hotels.com/images/ambasciatori/suneleven/ih-hotels-milano-ambasciatori-terrazza-bar.jpg"
+                    alt="Rooftop bar" class="mx-auto rounded-lg shadow-lg">
+                <p>It’s the ideal setting to indulge in delicious food, refreshing drinks, and great company, all while
+                    soaking in the enchanting atmosphere of this iconic city. </p>
+                <h4 class="font-serif text-xl">Want something more?</h4>
+
+                <p>Milano is a city that never truly sleeps— or better sleeps later than Zurich! It’s still lively until 2
+                    am, especially on weekends.</p>
+                <p>While many of the rooftop terraces close around 10 or 11 pm, <b> the day doesn’t have to end there</b>.
+                </p>
+                <p>
+                    If you’re up for it, we can continue the night by heading to a trendy mixology bar or an exclusive
+                    venue.</p>
+                <p>I will leave this option totally open, but I will ask around if you are interested in some “after-dinner”
+                    activities.
+                </p>
+
+
+            </div>
+        </div>
+
+        <button onclick="scrollToElement('offer')"
+            class="w-full p-4 mx-auto my-8 text-4xl font-semibold text-white border-2 border-green-800 rounded-lg shadow-lg from-green-600 to-green-900 text-serif bg-gradient-to-b ">
+            I’d like to reserve my spot for Milano! <x-heroicon-o-arrow-right class="inline w-8 h-8 mb-1" />
+        </button>
+
+        <hr>
+        <div class="px-2 py-2 my-4 text-y">
+            <h2 class="text-3xl font-semibold font-head">Where is the name of the Restaurant?</h2>
+            <p> You might have noticed that I’ve intentionally left out the names of the restaurants for this trip. </p>
+            <p><strong> That’s no accident!</strong> I’ve spent weeks carefully planning every detail of this weekend, from
+                the locations to the menus, and I consider this work my personal “intellectual property.”</p>
+            <p><strong> If you join me in Milan</strong>, you’ll receive the full list of locations before we depart, don’t
+                worry, all the links, the specific menus and so on.</p>
+            <p><strong>If you do not come</strong>, I am sorry, but I prefer to keep the itinerary private—it’s part of what
+                makes this adventure so special.
+            <p>That said, you already have the menus, so you know exactly what we’ll be enjoying. </p>
+            <p>The food won’t be a surprise, the menus are in these pages. But the settings, the ambiance, and the stories
+                behind these hidden gems will add a whole new layer to the experience.</p>
+            <p>Rest assured, I’ve poured my heart, soul, and organizational expertise into crafting this adventure. </p>
+            <p><strong>Trust me</strong>: every moment has been designed to surprise and delight you. This is your chance to
+                experience Milan in a way few foodies ever do. </p>
+            <p class="py-2 text-xl font-semibold text-center">You will not be disappointed! </p>
+
+
+        </div>
+        <hr>
+        <div class="px-2 py-2 my-8 rounded-lg bg-amber-100">
+            <h3 class="my-6 font-serif text-2xl text-center">Luxury Life (Day 2)</h3>
+            <div class="space-y-4 ">
+                <p>We will start the day around 11 a.m.</p>
+                <p>So you are night owl you can sleep through, or if you are an early bird, you can wake up early and visit the city by yourself!</p>
+                <p>We walk through <strong>Brera</strong> and <strong>Castello Sforzesco</strong>. Located on the west side of the city center, this is the most “<em>bohemienne</em>” zone of Milano.</p>
+                <p>During the spring days, Milano has fresh winds blowing between the buildings, and sun naturally lightens up the streets of this marvelous city.</p>
+                
+                <img src="https://www.maart.mi.it/wp-content/uploads/2021/05/BRERA.jpg"
+                    class="mx-auto rounded-lg shadow-xl">
+
+                <h4 class="font-serif text-xl">Saturday Lunch</h4>
+                <p>You know how much I am a Pizza Lover. In Milan we have one of the most famous Pizzerie in Italy.</p>
+                <p>We have been to Napulé, which for me it is 9 stars out of ten. Here we will try a Pizza that is <strong> 11 stars out of 10</strong>.</p>
+                <p>The work they do with the toppings is incredible.</p>
+                <p>Their Margherita with yellow tomatoes is absolutely out of this world!</p>
+                <p>It is one of the best pizzas I have tried, really simple yet amazing. </p>
+                <p class="font-semibold">It is a foodie stop you cannot miss.</p>
+                <img src="https://www.identitagolose.it/public/images/xmedium/dazero-pizza-fino.jpg" alt="Pizza Da Zero" class="mx-auto rounded-lg shadow-xl lg:w-1/2">
+
+                <h4 class="font-serif text-xl">The Most Iconic View</h4>
+                <p>After the lunch I have booked the terraces of the Duomo. </p>
+                <p>We will enter inside the church first, to visit the the building and later we will move on the terraces. </p>
+                <img src="https://www.duomomilano.it/wp-content/uploads/2024/01/terrazze-duomo-di-milano.jpg" alt="Duomo Terrace" class="mx-auto rounded-lg shadow-xl">
+                <p>The view on the terraces is quite unique, and you can see the whole city center walking below you.</p>
+                <p>After the visit to the Duomo, we will have one last bite at a really famous coffee and pastry shop.</p>
+
+                <div class="flex gap-5 p-4 text-white bg-black rounded-lg">
+                    <div
+                        class="flex-shrink-0 hidden w-24 h-24 font-black text-center text-black bg-white rounded-full text-8xl sm:block">
+                        ?
+                    </div>
+                    <div>
+                        <p class="font-serif text-3xl font-semibold">Secret Food Spot</p>
+                        <p>Located within the iconic Galleria, right next to its stunning dome, is a famous pastry shop. From the balconies overlooking the Galleria, we can enjoy a selection of delicious pastries and the lively atmosphere.</p>
+                    </div>
+                </div>
+                <p>After this last stop, you are free to remain to this Caffé and chill there or you can visit Milano.</p>
+                
+                <h4 class="font-serif text-xl">The Fish Where There Is No Sea</h4>
+                <p>When you think of Milan, the iconic cathedral, and towering skyscrapers might spring to mind. </p>
+                <p>Yet, many are unaware that, <strong>Milan boasts Italy's largest and best-supplied fish market</strong>, located just a couple of kilometers from the city center. </p>
+                <p>Each day at the market opens its door at 4 am, and these <strong>treasures of the sea</strong> are ready for the restaurant owners and chefs to bring to their cuisine and start the day.</p>
+                <p>The fish that arrives in Milan undergoes rigorous quality control. Veterinarians and laboratories are on-site to ensure that every product meets the highest standards.</p>
+                <p class="font-semibold">Milan’s culinary scene is unparalleled, and its fish cuisine is no exception.</p>
+                <p> <strong>The city attracts the best chefs</strong>, hospitality and culinary talent in Italy. Over the years, this has fostered a vibrant seafood tradition, even in a city so far away from the coast.</p>
+                <p>The combination of exceptional ingredients and world-class chefs has elevated Milan’s fish cuisine to new heights. </p>
+                <p>Milan offers seafood experiences that rival and even outclass those of coastal towns.</p>
+                <p>That’s why, during our weekend, I’m selecting one of the finest restaurants for one of our dinners, so we can end the day with delicious, exquisite food.</p>
+                <h4 class="font-serif text-xl">Italian Tradition</h4>
+                <p>In Italy, it’s customary to start with small dishes of raw, cold, and hot appetizers—bite-sized, much like Spanish tapas—before moving on to a main course such as pasta. </p>
+                <p>I will make you try different typical entries of the Italian tradition, from the Rossi di Mazara, the most delicious shrimp of the Mediterrenean, the Octopus and other delicacies.</p>
+                <p>One dish I highly recommend is <strong>Pasta con l’Astice, the European lobster</strong>. </p>
+                <p>Lobster demand the freshest ingredients to truly shine. In Milan, thanks to the meticulous sourcing at the fish market, you can be assured of unparalleled quality—fresh, never frozen.</p>
+                <p>The finest restaurants, take the time to present a perfectly prepared lobster, with the shell opened and the meat beautifully displayed—so you can enjoy the dish without the struggle or mess of handling the shell.</p>
+                <p><strong>This is no simple pasta with shrimps</strong>. There is no fish or shellfish that matches the complexity of flavors and aroma found in this dish.</p>
+
+                <div class="p-2 mx-auto bg-white rounded-lg lg:p-4">
+                    <p class="my-4 font-serif text-2xl font-semibold text-center"> Sea Dinner</p>
+                    <p class="my-4 font-serif text-2xl font-semibold text-center">Menu</p>
+                    <div class="max-w-lg pl-4 mx-auto my-1 text-y">
+                        <p class="font-serif text-lg font-semibold">Antipasti</p>
+                        <p>Carpaccio <br> <i>Fish Carpaccio</i> </p>
+                        <p>Rossi di Mazara <br> <i>Mazara's red shrimp </i> </p>
+                        <p>Polpo alla Luciana <br> <i>Octupus salad</i> </p>
+                        <p>Capesante grigliate <br> <i>Grilled scallops </i> </p>
+                    </div>
+                    <div class="max-w-lg pl-4 mx-auto my-8 text-lg text-y">
+                        <p class="mt-2 font-serif text-xl font-semibold">Piatto Principale</p>
+                        <p>Tagliolini all'astice <em>Pasta with European Lobster</em></p>
+                    </div>
+                    <p>This menu is <strong>completely unconfirmed</strong>. The chef and the restaurant work only with seasonal ingredients. This draft menu will give you an idea of what we will taste, but the dishes may change due to availability. Some items are still missing from the menu, as the spring menu is not yet ready. The carbonara will be there for sure.</p>
+                </div>
+
+        </div>
+        </div>
+
+        <div class="px-4 mb-4 text-y">
+            
+            <h3 class="my-2 text-3xl font-semibold text-center">Drinks are not included</h3>
+
+            <p>All the menus you see here, or any possible variation will be included in the package. </p>
+            <p> As a general indication, if I order it, I pay for it, if you order it, you pay for it.</p>
+            <p> I will pay for the water and the coperto. In Italy, each restaurant has a “service fee” called coperto.</p>
+            <p> All drinks, desserts and additions to the menu, will be on your side, if you want them.</p>
+            <h4 class="text-2xl font-semibold">Is it possible to make changes in the menu?</h4>
+            <p>Yes and no. Most of these menu are agreed or are being agreed with the restaurant, and they are making a
+                special package for us.</p>
+            <p>If you any allergies or strong dislikes, let me know in advance, we can sort something out together.</p>
+            <p>E.g. you don’t eat shrimps and don’t want pasta with astice, let me know and we can change that dish. </p>
+            <p>Most of antipasti will be shared among the group, therefore those cannot be changed. </p>
+            <p>The primo piatto, a pasta or rice main dish, will not be shared. If you tell me in advance, we can get you
+                something different. </p>
+        </div>
+
+        <button onclick="scrollToElement('offer')"
+        class="w-full p-4 mx-auto my-8 text-4xl font-semibold text-white border-2 border-green-800 rounded-lg shadow-lg from-green-600 to-green-900 text-serif bg-gradient-to-b ">
+        I want to book it! <x-heroicon-o-arrow-right class="inline w-8 h-8 mb-1" />
+    </button>
+
+        <div class="px-2 py-2 rounded-lg bg-green-50">
+            <h3 class="my-6 font-serif text-2xl text-center">Grand Finale (Day 3)</h3>
+            <div class="space-y-4">
+                <p>We’ll begin the day around 11:00 am, taking it easy after the eventful experiences of the past two days. With the hotel's checkout conveniently set for 11:00 am.</p>
+                <p>Today is designed to be a <strong> more relaxed day</strong>, offering us the chance to savor Milan’s charm one last time. </p>
+                <p>We can head out of the Hotel for a last stroll through the streets of Milano, and maybe enjoy a last espresso at a café.</p>
+                <p>Or if we want to stop to some shop or boutique for some last shopping before departure.</p>
+                <p>We will pass through <em>Corso Como</em>, the foodie center of Milano, where all the famous restaurants are. </p>
+                <img src="https://www.in-lombardia.it/sites/default/files/focus/images/771/955/id388_corso-como_milano_01_flickr_angelocesare.jpg" alt="Corso Como" class="mx-auto rounded-lg shadow-lg">
+                        
+                <p>Our walk will gradually lead us toward our <strong> final culinary stop</strong>.</p>
+                <p>Now, it's time to unveil the <em>pièce de résistance</em>: the grand finale for Sunday lunch.</p>
+                <p>The restaurant we'll visit is not just a venue; it's a restaurant yes, but the real gem of this place is not simply the food, it is the whole experience that the chef and his team tailor for you.</p>
+                <p> This won't be just "another Italian restaurant."</p>
+                <p>It opened last year and, even before they opened the doors, they had already gathered 9000 reservations.</p>
+                
+                <h4 class="font-serif text-2xl font-semibold">The Chef: A Culinary Innovator</h4>
+                <p>This chef is not simply another chef or culinary artist, there are many.</p>
+                <p>His charisma and enthusiasm will undoubtedly leave an impression, just as his food will.</p>
+                <p>I will try to introduce you to him in person during our dinner.</p>
+                <p>His passion is contagious, and his storytelling adds a whole new dimension to dining. </p>
+                <p class="font-semibold">He doesn't just serve dishes; he presents stories, sometimes even cooking directly at the table for his guests.</p>
+
+                <img src="https://cdn.prod.website-files.com/654117a226e863ccfb523b1d/65b153a290cdda4ce37f918c_Gallery%201.jpg" alt="Tiramisu" class="mx-auto rounded-lg shadow-lg">
+
+                <h4 class="font-serif text-2xl font-semibold">A Seasonal Symphony</h4>
+                <p>The restaurant prides itself on using only the finest seasonal ingredients.</p>
+                <p>This ensures every dish bursts with freshness and flavor.</p>
+                <p>While the exact menu won't be finalized March, when the spring is fully on, I can still guarantee a culinary journey that's worth the anticipation.</p>
+                <p>For starters, we'll share a selection of antipasti showcasing the best of the season: chrunchy artichokes, asparagus, and other spring delicacies that promise to surprise your palate.</p>
+
+                <img src="https://lh3.googleusercontent.com/p/AF1QipP9IVfRNBWz01PLn1tH_RkAgVYobhjG73q2TB6u=s1360-w1360-h1020" alt="Dish" class="mx-auto rounded-lg shadow-lg">
+                <h4 class="font-serif text-2xl font-semibold">The Star of the Show</h4>
+                <p>In central Italy, pasta is the undisputed king of the table, and the chef's take on carbonara is legendary.</p>
+                <p>Forget everything you think you know about this dish.
+                </p>
+                <p>This isn't the overdone version you might associate with cheap imitations. This is the <strong>real deal—crafted with precision, passion, and skills</strong>.
+                </p>
+                <p>Yes, carbonara has been the subject of many jokes and memes, but trust me: when done right, <strong>it's pure magic</strong>. For once in your life, you'll taste a carbonara that sets the gold standard.
+                </p>
+                <p>If you think something like: "<em>I don't like pasta with bacon...</em>" this is not what carbonara is...
+                </p>
+                <p>A real carbonara is the cross point between a good cured meat (guanciale), with a fine ripe sheep cheese and the strength of egg yolks.Carbonara is not pasta with bacon, it is a magical interplay between these 3 ingredients.
+                </p>
+                <p>This restaurant remains is a <strong>great celebration of Italian contemporary cuisine</strong>. A lot of restaurants claim to merge tradition and innovation, few achieve it as seamlessly as this chef and his team.
+                </p>
+
+
+                <div class="p-2 mx-auto bg-white rounded-lg lg:p-4">
+                            <p class="my-4 font-serif text-2xl font-semibold text-center"> Grand Finale</p>
+                            <p class="my-4 font-serif text-2xl font-semibold text-center">Menu</p>
+                            <div class="max-w-lg pl-4 mx-auto my-1 text-y">
+                                <p class="font-serif text-lg font-semibold">Antipasti</p>
+                                <p>Pizza Croccante con Puntarelle <br> <i>Chrunchy Pizza with Chicory</i> </p>
+                                <p>Carciofi alla Giudia <br> <i>Chrunchy Artichokes </i> </p>
+                                <p class="select-none blur">Slinzega valtellinese <br> <i>Valtellina Cold cuts </i> </p>
+                                <p class="select-none blur">Parmigiana di melanzane <br> <i>Eggplant Parmigiana </i> </p>
+                            </div>
+                            <div class="max-w-lg pl-4 mx-auto my-8 text-lg text-y">
+                                <p class="mt-2 font-serif text-xl font-semibold">Piatto Principale</p>
+                                <p class="select-none blur">Risotto alla Milanese</p>
+                                <p>Carbonara <em>The Real One</em></p>
+                            </div>
+                            <p>This menu is <strong>completely unconfirmed</strong>. The chef and the restaurant work only with seasonal ingredients. This draft menu will give you an idea of what we will taste, but the dishes may change due to availability. Some items are still missing from the menu, as the spring menu is not yet ready. The carbonara will be there for sure.</p>
+                        </div>
+                
+
+                    <h4 class="text-2xl font-semibold">Goodbye Italia</h4>
+                    <p>After our final lunch together, we’ll wrap up around 15:30, bringing our Milan adventure to an end.</p>
+                    <p>We will say goodbye and maybe shot one last picture together.</p>
+                    <p>Whether you choose to linger a bit longer in the city — perhaps with one last espresso or a stroll through the streets — or head straight back to Zurich…</p>
+                    <p class="font-semibold">I hope Milan stays with you, not just as a place you visited, but as an unforgettable foodie adventure.</p>
+                    
+            </div>
+        </div>
+
+        <div class="px-4 mt-6 text-y" id="offer">
+            <h2 class="mt-6 mb-4 font-serif text-2xl font-semibold">Here is my offer for you</h2>
+            <p>Everything we've discussed so far will be yours for...</p>
+            <p class="text-center">
+                <span class="font-serif text-6xl text-green-900">CHF 987.-</span>
+            </p>
+            <p>At this price you have:</p>
+            <ul class="list-disc list-inside text-y">
+
+                <li>
+                    One weekend in a ⭐⭐⭐⭐ Hotel in Milano City Center
+                </li>
+                <li>
+                You will savor 3 exquisite dining experiences at handpicked  restaurants to give you a true taste of Milan's finest cuisine
+                </li>
+                <li>
+                Hidden culinary gems and local favorites that will make your foodie heart sing, and leave you savoring every moment of this unforgettable weekend…
+                </li>
+            </ul>
+                <p class="font-serif text-2xl font-semibold">But the most important thing is…               </p>
+                <p><strong>You don’t have to worry about anything</strong>, except arriving in Milan on time on Friday.</p>
+                <p>All of this for barely 330 CHF per day. </p>
+
+        </div>
+        <div class="p-4 mx-auto my-4 space-y-4 rounded space-y w-fit">
+            <p class="font-serif text-4xl text-center">ATTENTION!</p>
+            <p class="text-3xl text-center">Limited spots available.</p>
+            <p class="font-semibold text-center">I don’t have enough rooms for everyone who signed up.            </p>
+            <p class="font-serif text-2xl font-semibold text-center lg:text-3xl">First Come, First Serve</p>
+            <p>The first to contact me will be the first to be able to reserve their seats. </p>
+        </div>
+
+        <div class="px-10 py-8 border-2 border-blue-600 rounded-lg text-y bg-blue-50">
+            <h2 class="pb-4 text-3xl font-semibold text-center font-head">How to Book</h2>
+            <p class="text-2xl font-semibold">Contact me via Whatsapp: <span class="text-xl italic">"Hey, I would like to join Milano!"</span></p>
+
+            <a href="https://wa.me/41787131882?text=Hi%2C%20I%20would%20like%20to%20join%20the%20trip%20to%20Milano!"
+                class="block px-10 py-5 mx-auto text-2xl text-center text-white bg-green-500 rounded-full hover:bg-green-600"
+                target="_blank">
+                <img src="https://www.svgrepo.com/show/106976/whatsapp.svg" alt="Whatsapp logo"
+                    class="inline w-10 h-10 mb-1 fill-white" style="filter: invert(1);">
+                Contact me on WhatsApp
+            </a>
+            <p class="text-center text-slate-800">(This button will open my chat)</p>
+            <p>Before I finalize the booking, I will contact you to ask you some questions to fine tune your experience.</p>
+            <p>The first to contact me, will be the first to be recontacted.</p>
+        </div>
 
 
 
-<div class="px-10 py-8 border-2 border-green-600 rounded-lg text-y bg-green-50">
-    <h2 class="pb-4 text-3xl font-semibold text-center font-head">How to Book</h2>
-    <p class="font-semibold">Contact me via whatsapp and I will call you back.</p>
-
-    <a href="https://wa.me/41787131882?text=Hi%2C%20I%20would%20like%20to%20join%20the%20trip%20to%20Milano!" 
-    class="block px-10 py-5 mx-auto text-2xl text-center text-white bg-green-500 rounded-full hover:bg-green-600" 
-    target="_blank">
-    <img src="https://www.svgrepo.com/show/106976/whatsapp.svg" alt="Whatsapp logo" class="inline w-10 h-10 mb-1 fill-white" style="filter: invert(1);">
-     Contact me on WhatsApp
- </a>
- <p class="text-center text-slate-800">(This button will open my chat)</p>
-    <p>Before I finalize the booking, I will ask you some questions to fine tune your experience.</p>
-    <p>You can transfer me the amount via Twint, if you don't have it we go via bank transfer.</p>
-    <p>The first to contact me, will get the seat first.</p>
-</div>
-
-<div class="text-y">
-    <h2 class="h2">What if I cannot come?</h2>
-    <p>From the day of the booking you have 14 days to think about it.</p>
-    <p>If you, for any reason, want to cancel the trip: just send me a text message, and I will send you back all the money.</p>
-    <p>No questions asked.</p>
-    <p>After the 14 days I will confirm the restaurants and the hotel. I will transfer the money and no refunds will be accepted.</p>
-    <p>However, in case you have a sudden change of plan you can find someone who can take your place.</p>
-</div>
-    <div class="mt-12"></div>
-</article>
-
-
-
+        <div class="text-y">
+            <p class="mt-4 font-semibold">Bookings close on 31/01/2025, or earlier if all rooms are taken. </p>
+            <p>You have seen how fast my meetups get booked out.</p>
+            <p>Delaying your decision means risking missing out on this exclusive experience.</p>
+            <h2 class="h2">What if I cannot come?</h2>
+            <p>From the day of the booking you have 14 days to think about it.</p>
+            <p>If you, for any reason, want to cancel the trip: just send me a text message, and I will send you back all
+                the money.</p>
+            <p>No questions asked.</p>
+            <p>After the 14 days I will confirm the restaurants and the hotel. I will transfer the money and no refunds will
+                be accepted.</p>
+            <p>However, in case you have a sudden change of plan you can find someone who can take your place.</p>
+        </div>
+        <div class="mt-12"></div>
+    </article>
 @endsection
