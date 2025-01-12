@@ -73,8 +73,8 @@
         </div>
         <h2 class="my-6 font-serif text-2xl font-semibold text-center">The Menus and Activities</h2>
 
-        <div class="p-2 rounded-lg bg-red-50">
-            <h3 class="my-6 font-serif text-2xl text-center ">Milano Classics (Day 1)</h3>
+        <div class="p-2 bg-red-100 rounded-lg">
+            <h3 class="my-6 font-serif text-3xl text-center ">Milano Classics (Day 1)</h3>
             <div class="space-y-4 ">
                 <p>We will start the day at 12:30 at the Hotel.</p>
                 <p>From there we walk towards the quartiere <strong>Garibaldi</strong> where today lies the food zone of
@@ -217,7 +217,7 @@
         </div>
         <hr>
         <div class="px-2 py-2 my-8 rounded-lg bg-amber-100">
-            <h3 class="my-6 font-serif text-2xl text-center">Luxury Life (Day 2)</h3>
+            <h3 class="my-6 font-serif text-3xl text-center">Luxury Life (Day 2)</h3>
             <div class="space-y-4 ">
                 <p>We will start the day around 11 a.m.</p>
                 <p>So you are night owl you can sleep through, or if you are an early bird, you can wake up early and visit the city by yourself!</p>
@@ -316,8 +316,8 @@
         I want to book it! <x-heroicon-o-arrow-right class="inline w-8 h-8 mb-1" />
     </button>
 
-        <div class="px-2 py-2 rounded-lg bg-green-50">
-            <h3 class="my-6 font-serif text-2xl text-center">Grand Finale (Day 3)</h3>
+        <div class="px-2 py-2 bg-green-100 rounded-lg">
+            <h3 class="my-6 font-serif text-3xl text-center">Grand Finale (Day 3)</h3>
             <div class="space-y-4">
                 <p>We’ll begin the day around 11:00 am, taking it easy after the eventful experiences of the past two days. With the hotel's checkout conveniently set for 11:00 am.</p>
                 <p>Today is designed to be a <strong> more relaxed day</strong>, offering us the chance to savor Milan’s charm one last time. </p>
@@ -453,7 +453,6 @@
             <p>No questions asked.</p>
             <p>After the 14 days I will confirm the restaurants and the hotel. I will transfer the money and no refunds will
                 be accepted.</p>
-            <p>However, in case you have a sudden change of plan you can find someone who can take your place.</p>
         </div>
         <div class="mt-12"></div>
     </article>

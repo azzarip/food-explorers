@@ -6,16 +6,16 @@ subject: "[Milano Meraviglia] Your Foodie Adventure Awaits!"
 
 Dear {{ contact.first_name }},
 
-Finally the Milano program is out! 
+The wait is over — our Milano trip is here!
 
-{% include 'button' with { 'text': 'Here to the Final Program and Booking', 'action': '/click', 'style': 'primary' } %}
+With just one click, you'll uncover the full program and find easy booking instructions waiting for you at the end of the page.
 
-**Important**: Spaces are limited, and many of you have expressed interest. 
+{% include 'button' with { 'text': 'Explore the Program & Book Now', 'action': '/click', 'style': 'primary' } %}
 
-To keep things fair, bookings will be on a first-come, first-served basis. 
+**Important**: Spaces are limited, and many of you have already shown interest. Rooms are allocated on a first-come, first-served basis—don’t miss out!
 
-I will remain available for questions and doubts.
+I’m here for any questions or doubts you may have. Just hit reply or write me!
 
-Hope to see you there,
+Looking forward to seeing you in the Marvelous Milano,
 
 Marco
