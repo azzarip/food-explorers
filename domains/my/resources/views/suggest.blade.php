@@ -4,8 +4,8 @@
 <div class="max-w-lg mx-auto mb-4 text-y">
 <h1 class="mt-4 text-2xl font-semibold text-center lg:text-4xl lg:mt-12">Suggest an Event</h1>
 <p class="">In this page, you can suggest a restaurant, bar, location or any other related event.</p>
-<p class="">When this event is organized, you'll be the first to know and get added before anyone else.</p>
-<p>You can suggest an event per day.</p>
+<p class="">When this event is organized, you'll be the first to know and get added <strong>before anyone else</strong>.</p>
+<p>You can submit <strong> a suggestion per day</strong>.</p>
 </div>
 @if(cache('suggest.' . auth()->user()->id))
 <div class="max-w-md py-3 mx-auto my-8 text-center border rounded-lg text-y">
@@ -25,7 +25,7 @@
         </div>
         <div>
             <label for="name" class="block">Name:</label>
-            <input type="text" class="input-text" name="name" laceholder="" required>
+            <input type="text" class="input-text" name="name" placeholder="" required>
         </div>
         <div>
             <label for="url" class="block">URL of the website or Google Maps:</label>
