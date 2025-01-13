@@ -5,7 +5,7 @@
         'Homepage' => '/',
 
     ];
-    $headerClass = 'bg-black text-white';
+    $headerClass = 'bg-none absolute top-0 w-full text-white';
 @endphp
 
 
