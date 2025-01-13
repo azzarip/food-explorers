@@ -10,7 +10,7 @@ class MilanoAnnouncement extends SequenceAutomation
 {
     public function start()
     {
-        return Wait::until('11.01.2025 19:00')
+        return Wait::until('15.01.2025 19:07')
             ->then('sendAnnouncement')
             ->precise();
     }

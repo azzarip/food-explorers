@@ -17,5 +17,8 @@ use Illuminate\Support\Facades\Artisan;
 */
 
 Artisan::command('test:sequence', function () {
-    Sequence::name(MilanoAnnouncement::class)->start(\App\Models\Contact::find(1));
+    $contacts = Azzarip\Teavel\Models\Tag::name('Interested Milano Meraviglia')->contacts;
+    foreach ($contacts as $contact) {
+        Sequence::name(MilanoAnnouncement::class)->start($contact);
+    }
 })->purpose('Test milano sequence');
