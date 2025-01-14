@@ -22,7 +22,7 @@
       <div class="max-w-2xl mx-auto">
         <p class="font-serif text-xl italic text-center text-white md:text-2xl lg:my-16 lg:text-3xl">"Find Foodie Friends and Savor Delicious Adventures Together!"</p>
             </div>
-      <div class="grid items-center w-full grid-cols-1 gap-3 px-2 mx-auto text-2xl lg:mt-24 lg:w-1/2 lg:grid-cols-2 lg:gap-5">
+      <div class="grid items-center w-full grid-cols-1 gap-3 px-2 mx-auto text-2xl max-md:pb-4 lg:mt-24 lg:w-1/2 lg:grid-cols-2 lg:gap-5">
           <div class="w-full max-w-lg py-2 mx-auto text-center bg-transparent border-2 rounded-full cursor-pointer text-amber-200 border-amber-400 srounded-full lg:pt-2 h-fit hover:text-black hover:bg-amber-100/90"
               onclick="scrollToElement('start')">
               <p>Read More <x-heroicon-o-chevron-down class="inline w-6 h-6" /></p>

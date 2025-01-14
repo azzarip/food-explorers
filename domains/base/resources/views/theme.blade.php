@@ -5,7 +5,8 @@
         'Homepage' => '/',
 
     ];
-    $headerClass = 'bg-none absolute top-0 w-full text-white';
+    $headerClass = request()->path() == '/' ? 'bg-none absolute top-0' : '';
+    $headerClass .= " w-full text-white";
 @endphp
 
 
@@ -45,7 +46,7 @@
 @section('small-menu')
 <ul class="text-black">
    @foreach ($items as $label => $path)
-        <li class="p-3 text-xl border-b group hover:bg-slate-200">
+        <li class="p-3 text-xl border-y group hover:bg-slate-200">
             <a href="{{ $path }}"
                 class="block w-full h-full {{ request()->path() === $path ? 'font-semibold' : '' }}">{{ $label }}
             </a>
@@ -56,7 +57,7 @@
                 class="block w-full h-full {{ request()->path() === '/login' ? 'font-semibold' : '' }}">Login
             </a>
         </li>
-        <li class="p-3 text-xl border-b group hover:bg-slate-200">
+        <li class="p-3 text-xl border-b border-b-black group hover:bg-slate-200">
             <a href="/register"
                 class="block w-full h-full {{ request()->path() === '/register' ? 'font-semibold' : '' }}">Become a Restaurant Explorer
             </a>
