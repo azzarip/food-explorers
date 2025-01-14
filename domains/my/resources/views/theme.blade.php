@@ -26,7 +26,8 @@ if (width > 1040) { open = true; }"
                         <div
                             class="inset-0 w-24 p-1 mx-auto mt-6 rounded-full bg-gradient-to-tr from-yellow-400 via-yellow-500 to-yellow-700 lg:w-32 aspect-square">
                             <div class="w-full h-full p-1 mx-auto bg-white rounded-full">
-                                <img src="{{ image('logo_sm.webp') }}" alt="Logo Food Explorers" class="mx-auto">
+                                <a href="{{ durl('/', 'base') }}">
+                                <img src="{{ image('logo_sm.webp') }}" alt="Logo Food Explorers" class="mx-auto"></a>
                             </div>
                         </div>
                         <p class="my-2 text-center lg:text-2xl">Food Explorers</p>

@@ -29,7 +29,12 @@
           </div>
           <div class="max-w-lg mx-auto text-2xl text-center std-button">
               <a href="{{ auth()->check() ? route('my') : route('register') }}" class="block p-1 text-2xl">
-                  Become a Food Explorer
+                @guest
+                  Become a Food Explorer  
+                @else
+                Enter the Private Area
+                @endguest  
+                
               </a>
           </div>
       </div>
