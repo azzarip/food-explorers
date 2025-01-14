@@ -16,7 +16,7 @@
         <h1 class="flex flex-col items-center max-w-4xl gap-5 mx-auto lg:flex-row">
             <img src="@image('logotype.webp')" alt="Food Explorers">
         </h1>
-        <p class="my-4 font-serif text-2xl font-black text-center md:text-3xl lg:text-5xl text-amber-200/80">  Foodie Community <br class="max-lg:hidden"> Nr. <span class="text-3xl lg:text-6xl">1</span> in Zurich</p>
+        <p class="my-4 font-serif text-2xl font-black text-center md:text-3xl lg:text-5xl text-amber-200/80"> Nr. <span class="text-3xl lg:text-6xl">1</span> Foodie Community <br class="max-lg:hidden">  in Zurich</p>
       </div>
 
       <div class="max-w-2xl mx-auto">
@@ -47,12 +47,12 @@
         <p>Sure, it’s a beautiful city with its lakes and mountains, but when it comes to the food scene… doesn’t it sometimes feel a little underwhelming?</p>
         <p>Too often, it’s <strong>overpriced menus</strong> with average food—and those truly exceptional places? <strong>They’re practically hidden</strong>.</p>        
         <p>Even finding a great restaurant can feel like an uphill battle.</p>
-        <p>Sure, Zurich has good places to eat, but how do you find the <strong>hidden gems</strong>—those incredible spots that serve food so delicious it makes your heart sing?</p>
-        <p>The places that aren’t just about the meal but about the <strong>experience</strong>, the <strong>memories</strong>, and the stories you’ll tell afterward?</p>
         <p>If you <strong>just moved to Zurich</strong>, probably you are scared of the high prices and the disappointing quality level...</p>
         <p>If you are a <strong>seasoned Zurich inhabitant</strong>, you may be stuck going with your friends and colleagues always to the same places...</p>
+        <p>Sure, Zurich has good places to eat, but how do you find the <strong class="text-purple-700">hidden gems</strong>—those incredible spots that serve food so delicious it makes your heart sing?</p>
+        <p>The places that aren’t just about the meal but about the <strong>experience</strong>, the <strong>memories</strong>, and the stories you’ll tell afterward?</p>
         <hr>
-        <p class="py-6 text-2xl font-semibold text-center ">What if Zurich’s food scene wasn’t a disappointment, but a <span class="font-black">treasure map</span> waiting to be explored?</p>
+        <p class="py-6 text-2xl font-semibold text-center ">What if Zurich’s food scene wasn’t a disappointment, but a <span class="font-black text-amber-900">treasure map</span> waiting to be explored?</p>
         <hr>
         <p>But here’s the thing: <strong>Zurich does have incredible restaurants</strong>. </p>
         <p><strong>They exist!</strong> But they don’t make themselves easy to find</p>

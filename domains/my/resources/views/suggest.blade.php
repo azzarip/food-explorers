@@ -3,6 +3,7 @@
 @section('main')
 <div class="max-w-lg mx-auto mb-4 text-y">
 <h1 class="mt-4 text-2xl font-semibold text-center lg:text-4xl lg:mt-12">Suggest an Event</h1>
+@if(auth()->user()->getPoints() >= 1)
 <p class="">In this page, you can suggest a restaurant, bar, location or any other related event.</p>
 <p class="">When this event is organized, you'll be the first to know and get added <strong>before anyone else</strong>.</p>
 <p>You can submit <strong> a suggestion per day</strong>.</p>
@@ -39,5 +40,8 @@
     </x-forms::base>
 </div>
 @endif
-
+@else
+<p>You can start suggesting restaurants and events once you’ve attended one of ours!</p>
+<p>Join a future event to <strong>unlock this feature</strong> and share your ideas with the community!</p>
+@endif
 @endsection

@@ -55,7 +55,7 @@ if (width > 1040) { open = true; }"
                                         @endif
                                         Events</a>
                                 </li>
-                                @php($selectedAchievements = request()->path() == 'achievements')
+                                @php($selectedAchievements = str_starts_with(request()->path(), 'achievements'))
                                 <li>
                                     <a class="block w-full py-3 pl-4 border-yellow-500 {{ $selectedAchievements ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
                                         href="/achievements">

@@ -12,11 +12,11 @@
     </style>
 
     <h1 class="mt-4 text-2xl font-semibold text-center lg:text-4xl lg:mt-12">Achievements</h1>
-
+    
     <div class="max-w-2xl p-1 mx-auto mt-4">
         <x-my::points :$points />
     </div>
-
+    <p class="px-2 py-1 mx-auto mt-4 text-xl text-center rounded-lg bg-slate-100 font-head w-fit hover:bg-slate-200"> <a href="/achievements/instructions" class="hover:underline">What are achievements?<x-heroicon-o-arrow-right class="inline w-6 h-6 mb-1 ml-2" /></a></p>
 <div x-data="{'open': 'restaurants'}" class="mb-12">
     <div class="grid grid-cols-3 mt-8 min-w-md lg:px-12 lg:mt-18">
         <div class="h-20 py-2 border rounded-lg rounded-b-none cursor-pointer lg:h-20"

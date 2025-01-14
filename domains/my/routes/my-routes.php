@@ -14,7 +14,7 @@ Route::group([
     Route::get('/', MyController::class)->name('my');
     Route::view('/events', 'my::events');
     Route::view('/events/past', 'my::past-events');
-    Route::view('/achievements', 'my::achievements');
+    
     Route::view('/suggest', 'my::suggest');
     Route::post('/suggest', SuggestController::class);
 
@@ -23,7 +23,8 @@ Route::group([
     Route::view('/options/password', 'my::options.password');
     Route::view('/options/language', 'my::options.language');
 
-
+    Route::view('/achievements', 'my::achievements');
+    Route::view('/achievements/instructions', 'my::achievement-instructions');
 
     Route::post('/set-language', SetLanguageController::class)->name('set-language')->middleware('auth');
     Route::post('/question/services', QuestionController::class);
