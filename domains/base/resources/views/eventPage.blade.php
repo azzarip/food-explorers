@@ -41,7 +41,7 @@ Details
 @auth
     <div class="px-2">
         @foreach ($event->participants as $participant)
-        <div class="py-2 mt-4 space-y-4">
+        <div class="py-2 mt-2">
             <p class="w-full p-2 pl-4 font-serif font-semibold border rounded shadow-md">{{ $participant->first_name }}</p>
         </div>    
         @endforeach
