@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ParticipationController;
 use Illuminate\Support\Facades\Route;
 use Domains\My\Http\Controllers\MyController;
 use Domains\My\Http\Controllers\QuestionController;
@@ -28,4 +29,7 @@ Route::group([
 
     Route::post('/set-language', SetLanguageController::class)->name('set-language')->middleware('auth');
     Route::post('/question/services', QuestionController::class);
+
+
+    Route::delete('/event/{event}', [ParticipationController::class, 'delete'])->name('participation.cancel');
 });

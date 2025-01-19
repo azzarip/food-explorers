@@ -15,10 +15,12 @@ if($nextEvent) {
 <div class="grid gap-5 mx-4 lg:grid-cols-2">
     <div class="pt-4 lg:px-4">
         <p class="mb-1 text-2xl font-semibold text-center"><x-heroicon-o-bell class="inline w-6 h-6 mb-1"/> @lang('Your next event'):</p>
-        
+        <hr>
         @if($nextEvent)
+
+        
         <div class="relative px-4 pt-2 pb-3 mt-4 border rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold">{{ $nextEvent->title }}</h3>
+            <h3 class="text-xl font-semibold"><a href="{{ route('eventPage', ['eventPage' => $nextEvent->eventPage->id]) }}" class="hover:underline">{{ $nextEvent->title }}</a></h3>
             <p class="flex flex-col gap-2 my-2 lg:f2lex-row">
                 <span><x-heroicon-o-calendar-days class="inline w-6 h-6 mb-1 mr-1" />{{ $nextEvent->scheduled_at->format('j. F Y') }}
                     @if(! $sameDay) <span class="ml-4 text-slate-700">({{ $text }})</span> @endif
@@ -29,8 +31,11 @@ if($nextEvent) {
                 
             </p>
             <div class="absolute top-0 right-0 flex p-1 m-2" x-data="{'show': false}" @click.outside="show = false">
-                <div x-cloak x-show=show class="p-1 bg-white border rounded cursor-pointer hover:bg-slate-200"  >
-                    <p @click="$dispatch('cancel')"><x-heroicon-o-trash class="inline w-4 h-4 mb-1 text-red-800"  /> Cancel Participation</p>
+                <div x-cloak x-show=show class="bg-white border rounded cursor-pointer "  >
+                    @if($nextEvent->eventPage)
+                    <p @click="show = false;" class="p-1 hover:bg-slate-200"><a href="{{ route('eventPage', ['eventPage' => $nextEvent->eventPage->id]) }}"><x-heroicon-o-eye class="inline w-4 h-4 mb-1"  /> View Event</a></p>
+                    @endif
+                    <p @click="show = false; $dispatch('cancel');" class="p-1 hover:bg-slate-200"><x-heroicon-o-trash class="inline w-4 h-4 mb-1 text-red-800"  /> Cancel</p>
                     
                 </div>
                 <div  :class="{'bg-slate-200': show}" class="w-6 h-6 rounded cursor-pointer hover:bg-slate-300" @click="show = !show">
@@ -51,7 +56,6 @@ if($nextEvent) {
  
         </div>
         @else
-        <hr>
         <p class="mt-4 italic text-center">@lang('No upcoming events').<br>
         @endif
         </p>
@@ -67,20 +71,8 @@ if($nextEvent) {
 
 @endsection
 
-@push('scripts')
-<div x-data="{show: false}" x-cloak x-show="show" @cancel.window="show = true" class="fixed top-0 bottom-0 left-0 right-0 z-50 flex items-center justify-center bg-black/50">
-    <div x-show=show x-transition.scale.origin.right.50 @click.outside="show = false"
-        class="fixed z-50 w-full max-w-sm p-4 mx-4 bg-white rounded-lg">
-            <p class="text-2xl font-semibold text-center font-head">Are you sure you want to cancel your participation in this event?</p>
+@if($nextEvent)
 
-            <div class="flex justify-around mt-10">
-                <button class="w-1/4 min-w-[100px] py-2 text-2xl border-2 border-black rounded-lg hover:bg-black hover:text-white" @click="show = false" type="button">
-                    No
-                </button>
-                <button class="w-1/4 min-w-[100px] py-2 text-2xl border-2 border-black rounded-lg hover:bg-black hover:text-white bg-red-100" type="button">
-                    <x-heroicon-o-trash class="inline w-8 h-8 text-red-800" /> Yes
-                </button>
-            </div>
-    </div>
-</div>
-@endpush
+<x-modals.cancelParticipation :event_id="$nextEvent->id" />
+
+@endif

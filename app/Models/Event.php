@@ -23,7 +23,9 @@ class Event extends Model
     }
 
     public function participants() {
-        return $this->belongsToMany(Contact::class);
+        return $this->belongsToMany(Contact::class)
+            ->wherePivotNull('deleted_at')
+            ->wherePivotNull('queue');
     }
 
     protected static function booted()

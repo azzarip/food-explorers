@@ -15,15 +15,28 @@ class EventPageController
     {
         $event = $eventPage->event;
         $location = $event->location;
-        $currentParticipants = $event->participants()->count();
+        $participants = $event->participants;
+        $currentParticipants = $participants->count();
 
-        Session::put('url.intended', $request->fullUrl());
+        if(auth()->check()) {
+            $currentUser = auth()->user();
+            $isUserParticipating = $participants->contains(function ($participant) use ($currentUser) {
+                return $participant->id === $currentUser->id; // Checking by ID or another unique identifier
+            });
+            
+        } else {
+            Session::put('url.intended', $request->fullUrl());
+        }
+
+
 
         return view('base::eventPage', [
             'eventPage' => $eventPage,
             'event' => $event,
             'location' => $location,
             'currentParticipants' => $currentParticipants,
+            'participants' => $participants,
+            'isUserParticipating' => $isUserParticipating,
         ]);
     }
 }

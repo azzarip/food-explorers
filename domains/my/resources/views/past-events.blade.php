@@ -1,6 +1,6 @@
 @extends('azzarip::layouts.1col')
 
-@php($events = auth()->user()->events()->orderByDesc('scheduled_at')->simplePaginate(10))
+@php($events = auth()->user()->events()->orderByDesc('scheduled_at')->wherePivotNull('deleted_at')->simplePaginate(10))
 @section('main')
 <a class="block p-2 mt-3 ml-12 mr-4 text-right rounded-lg lg:ml-8 w-fit hover:bg-slate-300 bg-slate-200" href="/events">
     <x-heroicon-o-arrow-left class="inline w-4 h-4 mb-1" />back to Upcoming Events</a>

@@ -3,7 +3,7 @@
 @section('main')
 <article class="mb-10 wrapper">
 <h1 class="mt-4 font-serif text-2xl font-semibold lg:text-3xl">{{ $event->title }} @ {{ $location->name }}</h1>
-<div class="max-w-lg p-4 mx-4 my-4 space-y-4 border-y">
+<div class="max-w-lg p-1 mx-4 my-4 space-y-4 lg:p-4 border-y">
     <p>
         <x-heroicon-o-clock class="inline w-6 h-6 mr-4 text-gray-400" />
         <span class="mb-2 font-serif text-sm">{{ $event->scheduled_at->translatedFormat('l, F j, Y g:i A') }}</span>
@@ -42,21 +42,32 @@ Details
     <div class="px-2">
         @foreach ($event->participants as $participant)
         <div class="py-2 mt-2">
-            <p class="w-full p-2 pl-4 font-serif font-semibold border rounded shadow-md">{{ $participant->first_name }}</p>
+            <p class="w-full p-2 pl-4 font-serif font-semibold border rounded shadow-md @if($participant->id == auth()->user()->id) bg-yellow-50 @endif">{{ $participant->first_name }} 
+                @if($participant->id == auth()->user()->id) <span>(You)</span> <span class="float-right pt-1 pr-1 font-sans text-sm font-normal text-red-800 hover:cursor-pointer hover:underline" x-data="" @click="$dispatch('cancel');"><x-heroicon-o-x-mark class="inline w-4 h-4 mb-1 text-red-800" /> Cancel</span>@endif 
+            </p>
         </div>    
         @endforeach
         <hr class="my-8">
-        @if($currentParticipants < $event->capacity)
-            <div class="max-w-sm mx-auto">
+
+        <div class="max-w-sm mx-auto">
+        @if($isUserParticipating)
+
+        <button x-data='' class="block w-full p-2 pt-3 font-semibold text-center bg-green-200 border border-black rounded-md cursor-pointer hover:bg-black hover:text-white" type="submit" @click="$dispatch('cancel');">
+            <x-heroicon-s-check-circle class="inline w-6 h-6 mb-1 text-green-900" />
+            Attending</button>
+
+                
+        @elseif($currentParticipants < $event->capacity)
                 <x-forms::base button="Reserve your place" />
-            </div>
         @else
-            <div class="max-w-sm mx-auto">
                 <x-forms::base button="Join the Queue" />
+                @endif
             </div>
-        @endif
+        <hr class="my-8">
     </div>
 @endauth
 </article>
 
 @endsection
+
+<x-modals.cancelParticipation :event_id="$event->id" />

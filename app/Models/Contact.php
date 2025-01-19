@@ -20,10 +20,19 @@ class Contact extends BaseContact implements HasLocalePreference
         return $this->belongsToMany(Event::class)->withTimestamps();
     }
 
+    public function participatedEvents()
+    {
+        return $this->belongsToMany(Event::class)
+            ->wherePivotNull('deleted_at')
+            ->wherePivotNull('queue')
+            ->withTimestamps();
+    }
+
     public function lastEvent()
     {
         return $this->belongsToMany(Event::class)
         ->where('scheduled_at', '<=', now()->startOfDay())
+        ->wherePivotNull('deleted_at')
         ->orderBy('scheduled_at', 'desc')
         ->limit(1);
     }
@@ -32,13 +41,14 @@ class Contact extends BaseContact implements HasLocalePreference
     {
         return $this->belongsToMany(Event::class)
         ->where('scheduled_at', '>=', now()->startOfDay())
+        ->wherePivotNull('deleted_at')
         ->orderBy('scheduled_at', 'asc')
         ->first();
     }
 
     public function getPoints()
     {
-        return $this->events()->count();
+        return $this->participatedEvents()->count();
     }
 
     public function getAchievements(): array
