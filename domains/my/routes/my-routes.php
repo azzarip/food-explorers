@@ -32,4 +32,5 @@ Route::group([
 
 
     Route::delete('/event/{event}', [ParticipationController::class, 'delete'])->name('participation.cancel');
+    Route::post('/event/{event}', [ParticipationController::class, 'store'])->name('participation.add');
 });

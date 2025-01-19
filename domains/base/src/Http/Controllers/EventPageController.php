@@ -4,6 +4,7 @@ namespace Domains\Base\Http\Controllers;
 
 use App\Models\EventPage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 
 class EventPageController
@@ -19,11 +20,11 @@ class EventPageController
         $currentParticipants = $participants->count();
 
         if(auth()->check()) {
-            $currentUser = auth()->user();
-            $isUserParticipating = $participants->contains(function ($participant) use ($currentUser) {
-                return $participant->id === $currentUser->id; // Checking by ID or another unique identifier
-            });
-            
+            $pivot = DB::table('contact_event')
+            ->where('event_id', $event->id)
+            ->where('contact_id', auth()->user()->id)
+            ->whereNull('deleted_at')
+            ->first();
         } else {
             Session::put('url.intended', $request->fullUrl());
         }
@@ -36,7 +37,7 @@ class EventPageController
             'location' => $location,
             'currentParticipants' => $currentParticipants,
             'participants' => $participants,
-            'isUserParticipating' => $isUserParticipating,
+            'userParticipation' => $pivot ?? null,
         ]);
     }
 }
