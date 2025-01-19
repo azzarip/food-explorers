@@ -6,6 +6,7 @@ use App\Models\Location;
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Event extends Model
 {
@@ -39,6 +40,16 @@ class Event extends Model
         return [
             'scheduled_at' => 'datetime',
         ];
+    }
+
+    public function eventPage(): HasOne
+    {
+        return $this->hasOne(EventPage::class);
+    }
+
+    public function scopeNext($query)
+    {
+        return $query->where('scheduled_at', '>', now()->startOfDay());
     }
 
 

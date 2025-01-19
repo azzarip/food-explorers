@@ -1,5 +1,6 @@
 <?php
 
+use Domains\Base\Http\Controllers\EventPageController;
 use Domains\Base\Http\Controllers\MilanoController;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\File;
@@ -15,6 +16,8 @@ Route::group([
     Route::view('/', 'base::homepage');
     //Route::get('/', fn (): string => 'Website under construction');
 
+
+    Route::get('/event/{id}', EventPageController::class)->name('eventPage');
 
     Route::view('/milano', 'base::milano');
     Route::view('/milano-final', 'base::milano-final');
