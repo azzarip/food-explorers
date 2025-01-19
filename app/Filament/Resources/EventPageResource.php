@@ -55,8 +55,8 @@ class EventPageResource extends Resource
                 TextColumn::make('event.scheduled_at')
                     ->dateTime('d/m/Y h:i'),
                 TextColumn::make('link')
-                    ->default(fn ($record): string => route('eventPage', ['id' => $record->id]))
-                    ->url(fn ($record): string => route('eventPage', ['id' => $record->id])),
+                    ->default(fn ($record): string => route('eventPage', ['eventPage' => $record->id]))
+                    ->url(fn ($record): string => route('eventPage', ['eventPage' => $record->id])),
             ])
             ->filters([
                 //

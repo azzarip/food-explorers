@@ -38,6 +38,9 @@ figcaption {
     @apply text-y;
 }
 
+.article a {
+    @apply underline text-blue-700;
+}
 .article h2 {
     @apply h2;
 }

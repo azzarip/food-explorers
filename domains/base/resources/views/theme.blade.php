@@ -5,15 +5,18 @@
         'Homepage' => '/',
 
     ];
-    $headerClass = request()->path() == '/' ? 'bg-none absolute top-0' : '';
+    $headerClass = request()->path() == '/' ? 'bg-none absolute top-0' : 'bg-black';
     $headerClass .= " w-full text-white";
 @endphp
 
 
 @section('header')
 <div class="flex flex-row justify-between px-2 mx-auto my-1">
-    <a href="/" class="relative z-20 flex flex-col items-center mx-auto lg:mx-2">
+    <a href="/" class="relative z-20 flex items-center mx-auto lg:mx-2">
         <img src="{{ image('logo_sm.webp') }}" alt="Food Explorers Logo" width="65" height="60">
+        @if (request()->path() != '/')
+            <span class="font-serif text-2xl text-white">Food Explorers</span>
+        @endif
     </a>
 </div>
 @endsection

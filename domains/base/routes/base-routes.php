@@ -17,7 +17,7 @@ Route::group([
     //Route::get('/', fn (): string => 'Website under construction');
 
 
-    Route::get('/event/{id}', EventPageController::class)->name('eventPage');
+    Route::get('/event/{eventPage}', EventPageController::class)->name('eventPage');
 
     Route::view('/milano', 'base::milano');
     Route::view('/milano-final', 'base::milano-final');
