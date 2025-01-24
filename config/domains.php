@@ -19,4 +19,10 @@ return [
         'fonts' => [],
         'name' => 'My - Food Explorers',
     ],
+    
+    'book' => [
+        'url' => 'book.' . env('DOMAIN_BASE'),
+        'fonts' => [],
+        'name' => 'Book - Food Explorers',
+    ],
 ];

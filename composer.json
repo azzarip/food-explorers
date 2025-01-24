@@ -13,6 +13,7 @@
         "azzarip/teavel": "main-dev",
         "azzarip/utilities": "main-dev",
         "domains/base": "*",
+        "domains/book": "*",
         "domains/my": "*",
         "filament/filament": "*",
         "guzzlehttp/guzzle": "^7.2",
