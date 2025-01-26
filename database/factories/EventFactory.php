@@ -19,7 +19,7 @@ class EventFactory extends Factory
         return [
             'title' => fake()->words(3,true),
             'location_id' => 1,
-            'scheduled_at' => now(),
+            'scheduled_at' => now()->addYear(),
             'capacity' => 8,
         ];
     }

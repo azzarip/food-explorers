@@ -54,5 +54,4 @@ class Event extends Model
         return $query->where('scheduled_at', '>', now()->startOfDay());
     }
 
-
 }
