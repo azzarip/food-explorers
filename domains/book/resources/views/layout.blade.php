@@ -1,17 +1,13 @@
 @extends('azzarip::base')
 
-@push('head')
-    <script src="https://js.stripe.com/v3/"></script>
-@endpush
-
 @php
-    // $stripe = new \Stripe\StripeClient(config('services.stripe.secret'));
+    $stripe = new \Stripe\StripeClient(config('services.stripe.secret'));
 
-    // $paymentIntent = $stripe->paymentIntents->create([
-    //     'amount' => 7400,
-    //     'currency' => 'chf',
-    //     'automatic_payment_methods' => ['enabled' => true],
-    // ]);
+    $paymentIntent = $stripe->paymentIntents->create([
+        'amount' => 7400,
+        'currency' => 'chf',
+        'automatic_payment_methods' => ['enabled' => true],
+    ]);
 @endphp
 
 @section('body')
@@ -60,7 +56,8 @@
 
                     @auth
                     <h2 class="text-2xl font-bold text-center font-trajan">Reserve your seat</h2>
-                        <x-book::payment />
+
+                        <x-book::payment :clientSecret="$paymentIntent->client_secret" />
                     @endauth
                 </div>
 
@@ -71,59 +68,4 @@
         </div>
     </main>
 @endsection
-{{-- 
-@push('scripts')
-    <script>
-        const stripe = Stripe('{{ config('services.stripe.key') }}');
-        elements = stripe.elements({
-            clientSecret: "{{ $paymentIntent->client_secret }}",
-            appearance: {
-                theme: 'stripe',
-                variables: {
-                    colorPrimary: '#d97706',
-                    //     colorBackground: '#f7f7f7', // Background color for fields
-                    //     colorText: '#333333', // Text color
-                    //     colorDanger: '#ff5252', // Error color
-                    //     fontFamily: 'sans-serif', // Custom font family
-                    //     borderRadius: '8px', // Adjust the border radius
-                    // },
-                    // rules: {
-                    //     '.Input': {
-                    //         border: '1px solid #cccccc', // Input field border style
-                    //         padding: '10px', // Input field padding
-                    //     },
-                    //     '.Label': {
-                    //         marginBottom: '4px', // Label spacing
-                    //     },
-                },
-            },
-        });
-        const paymentElement = elements.create('payment', {
-            paymentMethodOrder: ['twint', 'card', 'apple_pay', 'google_pay']
-        });
-        paymentElement.mount('#payment-element');
 
-        // const form = document.querySelector('#payment-form');
-        // form.addEventListener('submit', async (event) => {
-        //     event.preventDefault();
-
-        //     // Confirm the payment
-        //     const { error, paymentIntent } = await stripe.confirmCardPayment(clientSecret, {
-        //         payment_method: {
-        //             card: cardElement,
-        //             billing_details: {
-        //                 name: document.querySelector('#name').value,
-        //             },
-        //         },
-        //     });
-
-        //     if (error) {
-        //         // Handle payment errors
-        //         console.error(error.message);
-        //     } else if (paymentIntent && paymentIntent.status === 'succeeded') {
-        //         // Payment succeeded
-        //         console.log('Payment successful!');
-        //     }
-        // });
-    </script>
-@endpush --}}
