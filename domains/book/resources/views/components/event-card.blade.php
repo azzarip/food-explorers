@@ -17,11 +17,13 @@
         (<a href="{{ $event->location->google_maps_url }}" class="inline-link" rel=“noreferrer”>Maps</a>)</p>
     <p class="font-semibold"><x-heroicon-s-users class="inline w-6 h-6 text-green-700" /> 
           {{ $event->going }} Going 
+    @auth
         @if($event->available == 0)
             (<span class="font-semibold text-red-900">SOLD-OUT</span>)
         @else
         / {{ $event->available }} Left
         @endif
+    @endauth
         </p>
     <p class="mt-4 font-serif text-2xl font-bold"><small class="font-sans">CHF</small> {{ $offer->price }} </p>
 </div>

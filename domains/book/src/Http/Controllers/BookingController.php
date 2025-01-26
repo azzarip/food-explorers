@@ -26,13 +26,15 @@ class BookingController
             return view('book::pages.expired');
         }
 
+        if(Auth::guest()) {
+            return view('book::pages.auth');
+        }
+
         if($event->available == 0) {
             return view('book::pages.sold-out');
         }
 
 
-        if(Auth::guest()) {
-            return view('book::rum-tasting');
-        }
+
     }
 }

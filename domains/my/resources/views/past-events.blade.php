@@ -7,7 +7,7 @@
 <h1 class="mt-2 text-2xl font-semibold text-center lg:text-4xl lg:mt-4">Past Events</h1>
 
 @if($events->isEmpty())
-    <p class="my-4 italic text-center">@lang('No events available')</p>
+    <p class="my-4 italic text-center">@lang('No events available').</p>
 @endif
 
 <div class="max-w-sm px-2 pb-12 mx-auto mt-4 space-y-4">

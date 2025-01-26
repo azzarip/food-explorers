@@ -12,16 +12,7 @@
 
 
                 <div class="bg-white max-lg:px-2 max-lg:mt-2">
-                    {{-- @guest
-                        <div class="max-w-sm mx-auto">
-                            @if (request()->query('v') == 'login')
-                                <x-book::auth.login />
-                            @else
-                                <x-book::auth.register />
-                            @endif
-                        </div>
-                    @endguest
-
+                        {{-- 
                     @auth
                     <h2 class="text-2xl font-bold text-center font-trajan">Reserve your seat</h2>
 
