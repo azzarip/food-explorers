@@ -6,11 +6,12 @@
         description: 'Rum Tasting on the 22. February 2025. Places are limited, book now.',
         robots: 'noindex, nofollow',
     );
+    $slug = 'rum-tasting'
 @endphp
 
 @section('main')
 
-<article class="mt-4 wrapper">
+<article class="mt-2 lg:mt-4 wrapper">
     <p class="font-serif text-3xl font-semibold text-center lg:text-4xl">Discover the Secrets of the World’s Most Exotic Spirit</p>
     <p class="my-4 text-2xl font-bold text-center lg:text-3xl text-amber-800">Saturday 22. February 2025, 18:00</p>
     <div class="w-4/5 mx-auto">
@@ -18,14 +19,14 @@
     </div>
     <p class="mt-4 mb-6 text-xl text-center lg:text-2xl">Join us for an <strong>Exclusive Rum Tasting Experience</strong> Designed to Discover Rare Flavors, Hidden Stories, and a New Passion for Rum!</p>
     <div class="w-4/5 mx-auto my-4">
-        <x-button link='#offer'>I want to book my spot!</x-button>
+        <x-button :link='durl("/{$slug}", "book")'>I want to book my spot!</x-button>
     </div>
     <hr>
 
 <div class="mt-4 text-y lg:text-xl">
         <p class="font-serif text-2xl font-semibold">Dear Foodie,</p>
 
-        <p>If you are a passionate of distillated, this is an event you cannot miss.</p>
+        <p>If you are a passionate of distillates, this is an event you cannot miss.</p>
         <p>Together, we will </p>
 
 
@@ -46,21 +47,29 @@
         <p>Rum has been traditionally attached to Pirates.</p>
         <p>Jack Sparrow in the famous film series, was always asking or drinking rum.</p>
         <p>The infamous "<strong>grog</strong>" (a mix of rum, water, lime, and sugar) became a staple for sailors to combat scurvy and keep water supplies drinkable.</p>
-        <p>The romanticization of the figure of the pirates through movies in popular culture has led Rum to be a symbol of the Caribbean and of this chapter of the history.</p>
+        <p>The romanticization of the figure of the pirates through movies in popular culture made Rum a symbol of the Caribbean.</p>
         <p>There are many brand, like Captain Morgan that strongly attach their visuals to this legacy.</p>
 
-        <h3 class="font-serif text-xl font-semibold">Rum is not anymore just a  Pirate's drink</h3>
+        <h3 class="font-serif text-xl font-semibold text-center">Rum is not anymore pirate drink</h3>
+        <div class="p-4 border-2 rounded-lg border-amber-700">
+            <p class="font-serif text-xl font-semibold">Today's rum has become a symbol of elegance, finess </p>
+
+        </div>
+        <p>Modern rums compete in complexity of flavors with the best whiskeys and wines.</p>
+        <p><strong>Contrary to Whiskey</strong>, Rum preserves the caramel notes of sugar cane, and has a much lighter wood flavors from barrells.</p>
+        <p>Making it much more enjoyable, and easy drinking spirit compared to the scotish or irish liquers.</p>
+        <p></p>
         <p>The purpose of this Rum Tasting is to make you discover new flavors, new tastes and maybe a new spirit</p>
         <p>A lot of people associate Rum to the supermakret quality one.</p>
         <p>A "shotter" liquer just used to make teenagers drunk at a cheap price.</p>
 
-        <h2 class="font-serif text-2xl font-semibold text-center">There are three types of Rum</h2>
+        <h2 class="font-serif text-2xl font-semibold text-center">There are three main types of Rum</h2>
         <p>In the rum world, each bottle belongs to one of these three types:</p>
         <div class="mx-auto space-y-4 max-w-96">
             <div class="py-4 text-xl font-bold text-center text-black border-2 border-black rounded">
-                SHOTTERS
+                SHOTTERS  
             </div>
-            <div class="py-4 text-xl font-bold text-center text-black rounded" style="background: linear-gradient(200deg, #66e4bc, #3faf8c)">
+            <div class="py-4 text-xl font-bold text-center text-black rounded" style="background: linear-gradient(200deg, #66e4bc, #0c7a31)">
                 MIXERS
             </div>
             <div class="py-4 text-xl font-bold text-center text-black rounded" style="background: linear-gradient(200deg, #facc15, #d97706);">
@@ -71,7 +80,7 @@
 
         <p>As the name suggests:</p>
         <ul class="space-y-2 list-disc list-inside">
-            <li><strong>Shotters</strong>: The shotters are really bad products, with a lot of off-flavors and bad aromas, really difficult to drink, therefore you can only shot them. An example is the typical Rum sold in supermarkets. You should <span class="font-bold text-red-800">AVOID</span> them completely.</li>
+            <li><strong>Shotters</strong>: The shotters are usually really bad distillates, with a lot of off-flavors and bad aromas, extremely difficult to drink, therefore you can only shot them. Hence the name. An example is the typical Rum sold in supermarkets. You should <span class="font-bold text-red-800">AVOID</span> them completely.</li>
             <li><strong>Mixers</strong>: Mixers belong that category of liquers are designed for making delicious cocktails.</li>
             <li><strong>Sippers</strong>: Are the most complex and elegant distillates. They are not ideal for cocktails as they are usually really dominant in flavors, and are best drank together.</li>
         </ul>
@@ -85,21 +94,6 @@
 
 </div>
 </article>
-
-<div class="fixed bottom-0 left-0 w-full border-t bg-slate-50">
-    <div class="grid grid-cols-2 wrapper">
-        <div>
-            <p>Saturday, 22 Feb - 19:00</p>
-            <p class="my-1 font-bold">Explore Rum</p>
-            <p><x-heroicon-s-check-circle class="inline w-6 h-6 mb-1 text-green-600" /> 6 people are going</p>
-        </div>
-
-        <div class="py-2">
-            <x-button :link="durl('/rum-tasting', 'book')" class="">Reserve </x-button>            
-        </div>
-
-    </div>
-</div>
 
 
 @endsection

@@ -34,13 +34,13 @@ class LinkEventOffer extends Command implements PromptsForMissingInput
         $slug = $this->argument('slug');
 
         if($this->isBadSlug($slug)) {
-            $this->fail('Wrong Slug format');
+            $this->fail('Wrong Slug format. Please retry.');
         }
 
         $eventId = $this->argument('eventId');
 
         if($this->isNotInt($eventId)) {
-            $this->fail('Wrong Event Id format');
+            $this->fail('Wrong Event Id format. Please retry.');
         }
         
         $eventId = (int) $eventId;
@@ -81,11 +81,11 @@ class LinkEventOffer extends Command implements PromptsForMissingInput
 
     protected function validateEvent($event) {
         if(empty($event)) {
-            $this->fail('Event does not exist');
+            $this->fail('Event does not exist. Please retry.');
         }
 
         if($event->scheduled_at->isPast()) {
-            $this->fail('Event is in the past');
+            $this->fail('Event is in the past. Please retry.');
         }
     }
 }

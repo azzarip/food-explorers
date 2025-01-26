@@ -12,6 +12,9 @@ class Event extends Model
 {
     use HasFactory;
 
+    public int $going;
+    public int $available;
+
     public function location()
     {
         return $this->belongsTo(Location::class, 'location_id');
@@ -26,6 +29,23 @@ class Event extends Model
         return $this->belongsToMany(Contact::class)
             ->wherePivotNull('deleted_at')
             ->wherePivotNull('queue');
+    }
+
+    public function getParticipantsCount(): int 
+    {
+        return $this->participants()->count();
+    }
+
+    public function getAvailableCount(): int 
+    {
+        $value = $this->capacity - $this->participants()->count();
+        return $value >= 0 ? $value : 0;
+    }
+
+    public function loadData(){
+        $this->going = $this->getParticipantsCount();
+        $this->available = $this->getAvailableCount();
+        return $this;
     }
 
     protected static function booted()
@@ -52,6 +72,11 @@ class Event extends Model
     public function scopeNext($query)
     {
         return $query->where('scheduled_at', '>', now()->startOfDay());
+    }
+
+    public function getFinishedAtAttribute()
+    {
+        return $this->scheduled_at->addMinutes(150);
     }
 
 }

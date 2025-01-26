@@ -1,7 +1,8 @@
 <?php
 
-use Azzarip\Teavel\Http\Middleware\IntendedRedirect;
 use Illuminate\Support\Facades\Route;
+use Azzarip\Teavel\Http\Middleware\IntendedRedirect;
+use Domains\Book\Http\Controllers\BookingController;
 
 Route::group([
     'domain' => config('domains.book.url'),
@@ -11,6 +12,7 @@ Route::group([
 
     Route::middleware(IntendedRedirect::class)->group(function () {
         
-       Route::view('/rum-tasting', 'book::rum-tasting');
+       Route::get('/{offer}', BookingController::class);
+       //Route::view('/rum-tasting', 'book::rum-tasting');
     });
 });
