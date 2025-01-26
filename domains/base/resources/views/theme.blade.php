@@ -15,7 +15,7 @@
     <a href="/" class="relative z-20 flex items-center mx-auto lg:mx-2">
         <img src="{{ image('logo_sm.webp') }}" alt="Food Explorers Logo" width="65" height="60">
         @if (request()->path() != '/')
-            <span class="text-2xl text-yellow-500/80 font-trajan">Food Explorers</span>
+            <span class="text-2xl lg:text-4xl text-yellow-200/80 font-trajan">Food Explorers</span>
         @endif
     </a>
 </div>

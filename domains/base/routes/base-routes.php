@@ -24,5 +24,6 @@ Route::group([
     Route::post('/milano', MilanoController::class);
     Route::view('/ty/milano', 'base::milano-ty');
     Route::view('/yu-an-omakase', 'closed');
+    Route::view('/rum-tasting', 'events.rumtasting');
     Route::view('/closed', 'closed');
 });

@@ -1,5 +1,6 @@
 <?php
 
+use Azzarip\Teavel\Http\Middleware\IntendedRedirect;
 use Illuminate\Support\Facades\Route;
 
 Route::group([
@@ -8,4 +9,8 @@ Route::group([
 ], function () {
     Route::view('/', 'book::homepage');
 
+    Route::middleware(IntendedRedirect::class)->group(function () {
+        
+       Route::view('/rum-tasting', 'book::rum-tasting');
+    });
 });
