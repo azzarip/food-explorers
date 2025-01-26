@@ -17,4 +17,5 @@
         <p class="font-serif text-2xl font-bold"><small class="font-sans">CHF</small> 49.- <small class="font-sans">per Person</small> </p>
     </div>
 </div>
+<p><x-heroicon-o-map-pin class="inline w-6 h-6 mb-1"/> Klein16, Kleinstrasse 16</p>
 @endsection

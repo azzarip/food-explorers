@@ -4,7 +4,7 @@
         <div class="mx-auto my-4 w-fit">
     
             <div class="flex flex-row items-center" x-data="{ menu: false }">
-                <img src="@image('logo_sm.webp')" alt="Food Explorers logo" class="mx-1 mb-1 w-14 lg:w-20 aspect-square">
+                <img src="@image('logo_sm.webp')" alt="Food Explorers logo" class="w-16 mx-1 mb-1 lg:w-20 aspect-square">
                 <span class="pb-2 ml-3 text-4xl font-semibold text-center font-trajan lg:text-5xl">Food Explorers</span>
                 @auth
                     <div class="relative">
