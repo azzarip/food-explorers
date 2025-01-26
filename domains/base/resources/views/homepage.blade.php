@@ -14,9 +14,10 @@
 
       <div>
         <h1 class="flex flex-col items-center max-w-4xl gap-5 mx-auto lg:flex-row">
-            <img src="@image('logotype.webp')" alt="Food Explorers">
+            <img src="@image('logotype_gold.webp')" alt="Food Explorers">
         </h1>
-        <p class="my-4 font-serif text-2xl font-black text-center md:text-3xl lg:text-5xl text-amber-200/80"> Nr. <span class="text-3xl lg:text-6xl">1</span> Foodie Community <br class="max-lg:hidden">  in Zurich</p>
+        <hr class="w-4/5 mx-auto mt-4 bg-amber-500">
+        <p class="my-4 font-serif text-2xl font-bold text-center md:text-3xl lg:text-5xl text-amber-200/80"> Nr. <span class="text-3xl lg:text-6xl">1</span> Foodie Community <br class="max-lg:hidden">  in Zurich</p>
       </div>
 
       <div class="max-w-2xl mx-auto">
