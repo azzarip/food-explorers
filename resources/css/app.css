@@ -95,7 +95,7 @@ figcaption {
 }
 
 .std-button {
-    background: linear-gradient(217deg, #facc15, #d97706);
+    background: linear-gradient(200deg, #facc15, #d97706);
     display: block;
     font-size: 1.25rem;
     width: 100%;
@@ -140,3 +140,18 @@ figcaption {
     @apply block w-full max-w-lg mt-4 mb-2 py-3 mx-auto text-2xl;
 }
 
+
+@font-face {
+    font-family: 'trajan';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/TrajanPro-Regular.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'trajan';
+    font-style: normal;
+    font-weight: bold;
+    src: , url('../fonts/TrajanPro-Bold.woff') format('woff');
+}

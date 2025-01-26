@@ -27,6 +27,7 @@ export default {
                 'sans': ['lato', 'lato', ...defaultTheme.fontFamily.sans],
                 'text': ['gabarito', 'lato', ...defaultTheme.fontFamily.sans],
                 'serif': ['merriweather', ...defaultTheme.fontFamily.serif],
+                'trajan': ['trajan', ...defaultTheme.fontFamily.serif],
             },
         },
     },

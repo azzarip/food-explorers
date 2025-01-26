@@ -11,7 +11,7 @@
 
 @section('content')
 <div class="pt-4 pb-8 lg:pt-10">
-    <p class="text-4xl leading-normal text-center text-black">Food Explorers</p>
+    <p class="text-4xl leading-normal text-center text-black font-trajan">Food Explorers</p>
 
     <x-forms::login />
 

@@ -15,7 +15,7 @@
     <a href="/" class="relative z-20 flex items-center mx-auto lg:mx-2">
         <img src="{{ image('logo_sm.webp') }}" alt="Food Explorers Logo" width="65" height="60">
         @if (request()->path() != '/')
-            <span class="font-serif text-2xl text-white">Food Explorers</span>
+            <span class="text-2xl text-yellow-500/80 font-trajan">Food Explorers</span>
         @endif
     </a>
 </div>
@@ -57,7 +57,7 @@
     @endforeach
     @guest
         
-    <li class="p-3 text-xl border-y border-t-black group hover:bg-slate-200">
+    <li class="p-3 text-xl border-b group hover:bg-slate-200">
         <a href="/login"
         class="block w-full h-full {{ request()->path() === '/login' ? 'font-semibold' : '' }}">Login
     </a>
