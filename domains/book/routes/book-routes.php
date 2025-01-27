@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Domains\Book\Http\Controllers\ReturnController;
 use Azzarip\Teavel\Http\Middleware\IntendedRedirect;
 use Domains\Book\Http\Controllers\BookingController;
 
@@ -11,8 +12,8 @@ Route::group([
     Route::view('/', 'book::homepage');
 
     Route::middleware(IntendedRedirect::class)->group(function () {
-        
        Route::get('/{offer}', BookingController::class);
-       //Route::view('/rum-tasting', 'book::rum-tasting');
     });
+
+    Route::middleware('auth')->get('/{offer}/return', ReturnController::class);
 });

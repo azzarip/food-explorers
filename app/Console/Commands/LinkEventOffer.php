@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Models\Event;
+use App\Models\Offer;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
@@ -48,9 +49,15 @@ class LinkEventOffer extends Command implements PromptsForMissingInput
         
         $this->validateEvent($event);
 
-        $cacheDuration = abs($event->scheduled_at->diffInSeconds(now())) + 86400;
+        
+        $offer = Offer::where('slug', $slug)->first();
 
-        Cache::put("event:{$slug}", $eventId, $cacheDuration);
+        if(empty($offer)) {
+            $this->fail('No offer found with slug: ' . $slug);
+        }
+        
+        $offer->update(['event_id' => $event->id]);
+        
 
         $this->info("Link Succesful");
         $this->line("Offer Page '{$slug}' with Event:");

@@ -5,6 +5,8 @@ return [
     'check_phone' => true,
 
     'domain' => config('domains.base.url'),
+    
+    'offer_domain_key' => 'book',
 /**
  * Auth Views
  * The views that will be loaded to handle authentication and password reset logic.

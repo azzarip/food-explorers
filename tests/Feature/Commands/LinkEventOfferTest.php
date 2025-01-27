@@ -1,21 +1,35 @@
 <?php
 
 use App\Models\Event;
+use App\Models\Offer;
 use Illuminate\Support\Facades\Cache;
 
-it('asks and store value in the cache', function() {
+it('asks and store value in db', function() {
     Event::factory()->create([
         'scheduled_at' => now()->addYear()
     ]);
+    
+    Offer::create([
+        'class' => 'test',
+        'type_id' => 1,
+        'slug' => 'test'
+    ]);
+    
     $this->artisan('link:event')
         ->expectsQuestion('Please provide the offer slug', 'test')
         ->expectsQuestion('Please provide the Event Id', '1')
         ->assertSuccessful();
 
-    expect(Cache::get('event:test'))->toBe(1);
+    expect(Offer::first()->event_id)->toBe(1);
 });
 
 it('asks for correct slug', function() {
+    Offer::create([
+        'class' => 'test',
+        'type_id' => 1,
+        'slug' => 'test'
+    ]);
+
     $this->artisan('link:event')
         ->expectsQuestion('Please provide the offer slug', 'test test')
         ->expectsQuestion('Please provide the Event Id', '1')

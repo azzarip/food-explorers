@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('offers', function (Blueprint $table) {
             $table->id();
             $table->string('slug');
+            $table->foreignId('event_id')->nullable();
             $table->string('class');
             $table->tinyInteger('type_id');
             $table->timestamps();

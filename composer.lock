@@ -309,12 +309,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/azzarip/teavel.git",
-                "reference": "e01aaa4ff08ec0ebf5069b24d362ee3fe783bcad"
+                "reference": "94c8f533041ae23eaa735e3cac4b841192524f99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/azzarip/teavel/zipball/e01aaa4ff08ec0ebf5069b24d362ee3fe783bcad",
-                "reference": "e01aaa4ff08ec0ebf5069b24d362ee3fe783bcad",
+                "url": "https://api.github.com/repos/azzarip/teavel/zipball/94c8f533041ae23eaa735e3cac4b841192524f99",
+                "reference": "94c8f533041ae23eaa735e3cac4b841192524f99",
                 "shasum": ""
             },
             "require": {
@@ -325,6 +325,7 @@
                 "propaganistas/laravel-phone": "^5.3",
                 "spatie/laravel-package-tools": "^1.15.0",
                 "spatie/yaml-front-matter": "^2.0",
+                "stripe/stripe-php": "^16.4",
                 "twig/twig": "^3.11"
             },
             "require-dev": {
@@ -388,7 +389,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-01-26T16:46:53+00:00"
+            "time": "2025-01-27T08:51:21+00:00"
         },
         {
             "name": "azzarip/utilities",

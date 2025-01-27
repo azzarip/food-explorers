@@ -12,7 +12,7 @@
 
     </div>
 </div>
-<div class="pl-4 mt-2 space-y-2">
+<div class="pl-4 mt-2 space-y-2 w-fit">
     <p><x-heroicon-s-map-pin class="inline w-6 h-6 mb-1 text-amber-800/50"/> {{ $event->location->name }}, {{ $event->location->address }} 
         (<a href="{{ $event->location->google_maps_url }}" class="inline-link" rel=“noreferrer”>Maps</a>)</p>
     <p class="font-semibold"><x-heroicon-s-users class="inline w-6 h-6 text-green-700" /> 
