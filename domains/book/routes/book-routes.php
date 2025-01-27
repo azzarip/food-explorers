@@ -15,5 +15,5 @@ Route::group([
        Route::get('/{offer}', BookingController::class);
     });
 
-    Route::middleware('auth')->get('/{offer}/return', ReturnController::class);
+    Route::get('/{offer}/return', ReturnController::class);
 });

@@ -61,4 +61,8 @@ class Contact extends BaseContact implements HasLocalePreference
         return $tags;
     }
 
+    public function getDisplayNameAttribute() {
+        return $this->first_name;
+    }
+
 }

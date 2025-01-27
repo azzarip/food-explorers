@@ -2,6 +2,15 @@
 
 @section('second_column')
     <h2 class="text-2xl font-bold text-center font-trajan">Reserve your seat</h2>
+
+    @error('payment')
+        <p class="p-1 my-2 bg-red-100 rounded">
+            <x-heroicon-o-exclamation-triangle class="inline w-4 h-4 text-red-900" />
+            {{ $message }}
+        </p>
+    @enderror
+
+
     <div class="max-w-md mx-auto">
         <p class="my-2">Choose a payment method:</p>
         <form action="" id="payment-form" class="space-y-4">
@@ -40,7 +49,6 @@
     
             form.addEventListener('submit', async (event) => {
                 event.preventDefault();
-                console.log(typeof elements);
     
                 const result = await stripe.confirmPayment({
                     elements,
@@ -48,9 +56,7 @@
                         return_url: '{{ $return_url }}',
                     },
                 }).then(function(result) {
-                    if (result.error) {
-                        console.log(result.error);
-                    }
+                    if (result.error) {   }
                 });
             });
         </script>

@@ -4,6 +4,7 @@ namespace Domains\Book\Http\Controllers;
 
 use App\Models\Offer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ReturnController
 {
@@ -14,8 +15,23 @@ class ReturnController
     {
         $redirect_status = $request->query('redirect_status');
 
-        if(empty('redirect_status') === null) {
+        if(Auth::guest()) {
             return redirect($offer->url);
         }
+
+        if($redirect_status == 'failed') {
+            return redirect($offer->url)->withErrors([
+                'payment' => 'Payment failed. Please try again, or change payment method.',
+            ])->withInput(['agb' => true]);
+        }
+        
+        if($redirect_status == 'succeeded') {
+            return view('book::pages.success', [
+                'offer' => $offer,
+                'event' => $offer->event->loadData()
+            ]);
+        }
+
+        return redirect($offer->url);
     }
 }

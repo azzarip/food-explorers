@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Offers\Event;
+namespace App\Offers\Events;
 
 use App\Teavel\Sequences\Events\InterestedRumTasting;
 use Azzarip\Utilities\CHF\CHF;

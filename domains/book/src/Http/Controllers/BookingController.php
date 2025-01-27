@@ -15,7 +15,7 @@ class BookingController
      */
     public function __invoke(Request $request, Offer $offer)
     {
-        $event = $offer->getEvent();
+        $event = $offer->event;
         $event->loadData();
 
         View::share([
