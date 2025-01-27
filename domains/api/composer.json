@@ -1,0 +1,22 @@
+{
+	"name": "domains/api",
+	"description": "",
+	"type": "library",
+	"version": "1.0",
+	"license": "proprietary",
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"Domains\\Api\\": "src/",
+			"Domains\\Api\\Tests\\": "tests/"
+		}
+	},
+	"minimum-stability": "stable",
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Domains\\Api\\Providers\\ApiServiceProvider"
+			]
+		}
+	}
+}

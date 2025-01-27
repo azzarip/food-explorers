@@ -12,6 +12,7 @@
         "azzarip/client": "main-dev",
         "azzarip/teavel": "main-dev",
         "azzarip/utilities": "main-dev",
+        "domains/api": "*",
         "domains/base": "*",
         "domains/book": "*",
         "domains/my": "*",
