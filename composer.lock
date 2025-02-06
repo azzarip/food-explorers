@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3f501f646dc5bbaf19b747e18f4cd6ba",
+    "content-hash": "c95770a5aef95b2b1960a46061e301c0",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -128,16 +128,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.338.1",
+            "version": "3.338.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "20f57e432a4696054598921e24734834ed034f5e"
+                "reference": "7a52364e053d74363f9976dfb4473bace5b7790e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/20f57e432a4696054598921e24734834ed034f5e",
-                "reference": "20f57e432a4696054598921e24734834ed034f5e",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/7a52364e053d74363f9976dfb4473bace5b7790e",
+                "reference": "7a52364e053d74363f9976dfb4473bace5b7790e",
                 "shasum": ""
             },
             "require": {
@@ -220,9 +220,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.338.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.338.2"
             },
-            "time": "2025-01-23T19:07:00+00:00"
+            "time": "2025-01-24T19:09:22+00:00"
         },
         {
             "name": "azzarip/client",
@@ -1872,6 +1872,36 @@
                 }
             ],
             "time": "2024-02-05T11:56:58+00:00"
+        },
+        {
+            "name": "domains/api",
+            "version": "1.0",
+            "dist": {
+                "type": "path",
+                "url": "domains/api",
+                "reference": "a37d10e080c05ed2fcd2d177f0122e2cac71e4b4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Domains\\Api\\Providers\\ApiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Domains\\Api\\": "src/",
+                    "Domains\\Api\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "domains/base",
@@ -7628,16 +7658,16 @@
         },
         {
             "name": "spatie/laravel-sitemap",
-            "version": "7.3.2",
+            "version": "7.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-sitemap.git",
-                "reference": "f32822abf94f29c886154f7dbfc6b5763f0de970"
+                "reference": "9423e3bb82d9e83fa8969a2a30dcea309d802e7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-sitemap/zipball/f32822abf94f29c886154f7dbfc6b5763f0de970",
-                "reference": "f32822abf94f29c886154f7dbfc6b5763f0de970",
+                "url": "https://api.github.com/repos/spatie/laravel-sitemap/zipball/9423e3bb82d9e83fa8969a2a30dcea309d802e7e",
+                "reference": "9423e3bb82d9e83fa8969a2a30dcea309d802e7e",
                 "shasum": ""
             },
             "require": {
@@ -7689,7 +7719,7 @@
                 "spatie"
             ],
             "support": {
-                "source": "https://github.com/spatie/laravel-sitemap/tree/7.3.2"
+                "source": "https://github.com/spatie/laravel-sitemap/tree/7.3.3"
             },
             "funding": [
                 {
@@ -7697,27 +7727,27 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-01-13T11:33:06+00:00"
+            "time": "2025-01-27T09:44:53+00:00"
         },
         {
             "name": "spatie/robots-txt",
-            "version": "2.2.3",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/robots-txt.git",
-                "reference": "31763e5ca23fb0efa6dc6b700beb5ebfeab89432"
+                "reference": "acc7f4438813989d0427624f7901232084916170"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/robots-txt/zipball/31763e5ca23fb0efa6dc6b700beb5ebfeab89432",
-                "reference": "31763e5ca23fb0efa6dc6b700beb5ebfeab89432",
+                "url": "https://api.github.com/repos/spatie/robots-txt/zipball/acc7f4438813989d0427624f7901232084916170",
+                "reference": "acc7f4438813989d0427624f7901232084916170",
                 "shasum": ""
             },
             "require": {
                 "php": "^8.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.0|^10.0"
+                "phpunit/phpunit": "^11.5.2"
             },
             "type": "library",
             "autoload": {
@@ -7745,7 +7775,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/robots-txt/issues",
-                "source": "https://github.com/spatie/robots-txt/tree/2.2.3"
+                "source": "https://github.com/spatie/robots-txt/tree/2.3.0"
             },
             "funding": [
                 {
@@ -7757,7 +7787,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-10-22T08:17:03+00:00"
+            "time": "2025-01-27T10:15:34+00:00"
         },
         {
             "name": "spatie/temporary-directory",
@@ -11221,16 +11251,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.16.0",
+            "version": "2.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "befcdc0e5dce67252aa6322d82424be928214fa2"
+                "reference": "075bc0c26631110584175de6523ab3f1652eb28e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/befcdc0e5dce67252aa6322d82424be928214fa2",
-                "reference": "befcdc0e5dce67252aa6322d82424be928214fa2",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/075bc0c26631110584175de6523ab3f1652eb28e",
+                "reference": "075bc0c26631110584175de6523ab3f1652eb28e",
                 "shasum": ""
             },
             "require": {
@@ -11280,7 +11310,7 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.16.0"
+                "source": "https://github.com/filp/whoops/tree/2.17.0"
             },
             "funding": [
                 {
@@ -11288,7 +11318,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-09-25T12:00:00+00:00"
+            "time": "2025-01-25T12:00:00+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
