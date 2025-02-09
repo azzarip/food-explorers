@@ -25,5 +25,6 @@ Route::group([
     Route::view('/ty/milano', 'base::milano-ty');
     Route::view('/yu-an-omakase', 'closed');
     Route::view('/rum-tasting', 'events.rumtasting');
+    Route::view('/exploring-malaysia', 'events.exploring-malaysia');
     Route::view('/closed', 'closed');
 });
