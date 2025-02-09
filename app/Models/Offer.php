@@ -12,4 +12,8 @@ class Offer extends BaseOffer
     {
         return $this->belongsTo(Event::class);
     }
+
+    public function getReimbursementTimestamp() {
+        return $this->event->scheduled_at->subDays($this->class::DAYS_TO_REIMBURSE)->setTime(13, 0, 0);
+    }
 }

@@ -18,6 +18,12 @@ class Dashboard extends Page
                 'primary' => '#b45309',
                 'icon' => 'heroicon-o-calendar-days',
             ]),
+            AdminButton::make([
+                'path' => '/offer',
+                'name' => 'Offers',
+                'primary' => '#166534',
+                'icon' => 'heroicon-o-currency-dollar',
+            ]),
         ];
     }
 }
