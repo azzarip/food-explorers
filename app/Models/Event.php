@@ -4,9 +4,10 @@ namespace App\Models;
 
 use App\Models\Location;
 use Illuminate\Support\Str;
+use Illuminate\Support\Carbon;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Event extends Model
 {
@@ -61,7 +62,16 @@ class Event extends Model
     {
         return [
             'scheduled_at' => 'datetime',
+            'event_type' => \App\EventType::class
         ];
+    }
+
+    protected function getEndedAtAttribute($value) {
+        if(empty($value)) {
+            $hours = $this->event_type->hoursToEnd();
+            return $this->scheduled_at->addHours($hours);
+        }
+        return Carbon::parse($value);
     }
 
     public function eventPage(): HasOne
@@ -74,9 +84,19 @@ class Event extends Model
         return $query->where('scheduled_at', '>', now()->startOfDay());
     }
 
+    
     public function getFinishedAtAttribute()
     {
         return $this->scheduled_at->addMinutes(150);
+    }
+
+    public function getTypeAttribute(): string
+    {
+        if(empty($this->event_type)) {
+            return "Unlisted Event";
+        }
+
+        return $this->event_type->name;
     }
 
 }

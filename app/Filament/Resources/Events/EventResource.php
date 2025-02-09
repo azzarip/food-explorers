@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\Events;
 
+use App\EventType;
 use Filament\Forms;
 use Filament\Tables;
 use App\Models\Event;
@@ -26,7 +27,7 @@ class EventResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-calendar';
     protected static ?string $navigationGroup = 'Events';
-    protected static ?string $navigationLabel = 'Event Dates';
+    protected static ?string $navigationLabel = 'Events';
 
     public static function form(Form $form): Form
     {
@@ -35,6 +36,17 @@ class EventResource extends Resource
                 TextInput::make('title')
                     ->required()
                     ->maxLength(255),
+                TextInput::make('capacity')
+                    ->integer()
+                    ->required()
+                    ->step(1)
+                    ->minValue(1)
+                    ->maxValue(255)
+                    ->default(8),
+                Select::make('event_type_id')
+                    ->nullable()
+                    ->placeholder('Unlisted Event')
+                    ->options(EventType::class),
                 Select::make('location_id')
                     ->label('Location')
                     ->required()
@@ -44,13 +56,11 @@ class EventResource extends Resource
                     ->native(false)
                     ->required()
                     ->seconds(false),
-                TextInput::make('capacity')
-                    ->integer()
-                    ->required()
-                    ->step(1)
-                    ->minValue(1)
-                    ->maxValue(255)
-                    ->default(8),
+                DateTimePicker::make('ended_at')
+                    ->native(false)
+                    ->seconds(false),
+
+
             ]);
     }
 
@@ -59,9 +69,11 @@ class EventResource extends Resource
         return $infolist
         ->schema([
             TextEntry::make('title'),
+            TextEntry::make('type'),
             TextEntry::make('location.name'),
-            TextEntry::make('scheduled_at')->dateTime(),
             TextEntry::make('capacity'),
+            TextEntry::make('scheduled_at')->dateTime(),
+            TextEntry::make('ended_at')->dateTime(),
         ]);
     }
     public static function table(Table $table): Table
