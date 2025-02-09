@@ -12,11 +12,11 @@ class MyController
      */
     public function __invoke(Request $request)
     {
-        $contact = Auth::user();
+        //$contact = Auth::user();
 
-        if( ! $contact->has_locale) {
-            return view('my::questions.choose-language');
-        }
+        // if( ! $contact->has_locale) {
+        //     return view('my::questions.choose-language');
+        // }
         
         return view('my::homepage');
     }

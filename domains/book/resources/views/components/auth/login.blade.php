@@ -1,5 +1,4 @@
 
-<h2 class="text-2xl font-bold text-center font-trajan">Log in to complete your reservation</h2>
 <x-forms::login />
 
 <div class="mt-8">

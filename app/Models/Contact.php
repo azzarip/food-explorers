@@ -28,6 +28,13 @@ class Contact extends BaseContact implements HasLocalePreference
             ->withTimestamps();
     }
 
+    public function isGoingTo(Event $event): bool
+    {
+        return $this->events()
+                ->where('event_id', $event->id)
+                ->whereNull('deleted_at')
+                ->exists();
+    }
     public function lastEvent()
     {
         return $this->belongsToMany(Event::class)

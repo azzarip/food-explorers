@@ -43,6 +43,11 @@ class Event extends Model
         return $value >= 0 ? $value : 0;
     }
 
+    public function getIsSoldOutAttribute(): bool 
+    {
+        return $this->available == 0;
+    }
+
     public function loadData(){
         $this->going = $this->getParticipantsCount();
         $this->available = $this->getAvailableCount();
@@ -62,17 +67,11 @@ class Event extends Model
     {
         return [
             'scheduled_at' => 'datetime',
+            'ended_at' => 'datetime',
             'event_type' => \App\EventType::class
         ];
     }
 
-    protected function getEndedAtAttribute($value) {
-        if(empty($value)) {
-            $hours = $this->event_type->hoursToEnd();
-            return $this->scheduled_at->addHours($hours);
-        }
-        return Carbon::parse($value);
-    }
 
     public function eventPage(): HasOne
     {
@@ -87,15 +86,15 @@ class Event extends Model
     
     public function getFinishedAtAttribute()
     {
-        return $this->scheduled_at->addMinutes(150);
+        if(empty($this->ended_at)) {
+            $hours = $this->event_type->hoursToEnd();
+            return $this->scheduled_at->addHours($hours);
+        } 
+        return $this->ended_at;
     }
 
     public function getTypeAttribute(): string
     {
-        if(empty($this->event_type)) {
-            return "Unlisted Event";
-        }
-
         return $this->event_type->name;
     }
 

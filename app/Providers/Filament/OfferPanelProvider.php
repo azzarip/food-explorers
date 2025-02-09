@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use Azzarip\Utilities\Filament\Items\BackMain;
 use Azzarip\Utilities\Http\Middleware\AdminConfig;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
@@ -36,6 +37,9 @@ class OfferPanelProvider extends PanelProvider
             ->discoverPages(in: app_path('Filament/Offer/Pages'), for: 'App\\Filament\\Offer\\Pages')
             ->pages([
                 Pages\Dashboard::class,
+            ])
+            ->navigationItems([
+                BackMain::make(),
             ])
             ->discoverWidgets(in: app_path('Filament/Offer/Widgets'), for: 'App\\Filament\\Offer\\Widgets')
             ->middleware([

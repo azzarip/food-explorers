@@ -33,9 +33,13 @@ class BookingController
 
         $contact = Auth::user();
 
+        if($contact->isGoingTo($event)) {
+            return view('book::pages.success');
+        }
+
         ($offer->getInterestedGoal())::startSequence($contact);
 
-        if($event->available == 0) {
+        if($event->isSoldOut) {
             return view('book::pages.sold-out');
         }
 
@@ -50,7 +54,7 @@ class BookingController
             'currency' => 'chf',          
             'customer' => $contact->stripe_id,
             "automatic_payment_methods" => ["enabled" => true],
-            'description' => $offer->title . ' ' . $event->scheduled_at->format('d/m/Y'),
+            'description' => $offer->title . ' Event Ticket ' . $event->scheduled_at->format('d/m/Y'),
             'metadata' => [
                 'slug' => $offer->slug,
                 'contact_id' => $contact->id,

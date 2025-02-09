@@ -1,6 +1,5 @@
 
-<h2 class="text-2xl font-bold text-center font-trajan">Register to complete your reservation</h2>
-<x-forms::base :action="route('register')" button="Next: Final Details!">
+<x-forms::base :action="route('register')" button="Proceed to Booking">
         @csrf
         @error('user')
         <p class="px-2 py-1 text-black rounded-xl" style="background-color: #fca5a5;"><x-heroicon-o-exclamation-triangle

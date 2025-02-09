@@ -43,6 +43,6 @@
 @else
 <p>You can start suggesting restaurants and events once you’ve attended one of ours!</p>
 <p>Join a future event to <strong>unlock this feature</strong> and share your ideas with the community!</p>
-<a href="/events" class="block w-4/5 max-w-md mx-auto text-center std-button">Check current events!</a>
+<a href="/events" class="block w-4/5 max-w-md mx-auto text-center std-button">Check upcoming events!</a>
 @endif
 @endsection
