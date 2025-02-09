@@ -18,7 +18,7 @@
     <div class="mt-8">
         <p class="mb-1 text-xl">Are you new and want to be part of the community?</p>
         <a href="/register"
-            class="block w-full max-w-lg py-3 mx-auto text-2xl text-center border-4 border-yellow-500 rounded-full hover:bg-yellow-500 hover:text-white">
+            class="block w-full max-w-lg py-3 mx-auto text-xl text-center border-4 border-yellow-500 rounded-full hover:bg-yellow-500 hover:text-white">
             Become a Food Explorer <x-heroicon-o-arrow-right class="inline w-6 mb-1 aspect-auto" />
         </a>
     </div>

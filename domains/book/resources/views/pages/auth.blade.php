@@ -14,17 +14,17 @@
 
     @if (request()->query('v') == 'login')
         @if($event->isSoldOut)
-            <h2 class="text-2xl font-bold text-center font-trajan">Log in to join the waitlist</h2>
+            <h2 class="text-xl font-bold text-center lg:text-2xl font-trajan">Log in to join the waitlist</h2>
         @else
-            <h2 class="text-2xl font-bold text-center font-trajan">Log in to complete your reservation</h2>
+            <h2 class="text-xl font-bold text-center lg:text-2xl font-trajan">Log in to complete your reservation</h2>
         @endif
         
         <x-book::auth.login />
     @else
         @if($event->isSoldOut)
-            <h2 class="text-2xl font-bold text-center font-trajan">Register to join the waitlist</h2>
+            <h2 class="text-xl font-bold text-center lg:text-2xl font-trajan">Register to join the waitlist</h2>
         @else
-            <h2 class="text-2xl font-bold text-center font-trajan">Register to complete your reservation</h2>
+            <h2 class="text-xl font-bold text-center lg:text-2xl font-trajan">Register to complete your reservation</h2>
         @endif
 
         <x-book::auth.register />
