@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('title');
             $table->foreignId('location_id');
             $table->timestamp('scheduled_at');
-            $table->unsignedTinyInteger('event_type')->nullable();
+            $table->unsignedTinyInteger('event_type')->default(0);
             $table->tinyInteger('capacity')->unsigned();
             $table->timestamps();
         });

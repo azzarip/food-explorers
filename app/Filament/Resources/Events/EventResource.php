@@ -44,8 +44,8 @@ class EventResource extends Resource
                     ->maxValue(255)
                     ->default(8),
                 Select::make('event_type')
-                    ->nullable()
-                    ->placeholder('Unlisted Event')
+                    ->required()
+                    ->default(0)
                     ->options(EventType::class),
                 Select::make('location_id')
                     ->label('Location')
@@ -82,6 +82,7 @@ class EventResource extends Resource
             ->columns([
                 TextColumn::make('title'),
                 TextColumn::make('location.name'),
+                TextColumn::make('type'),
                 TextColumn::make('scheduled_at')
                     ->sortable()
                     ->dateTime('j F Y,  H:m'),
