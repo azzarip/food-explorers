@@ -43,7 +43,7 @@ class EventResource extends Resource
                     ->minValue(1)
                     ->maxValue(255)
                     ->default(8),
-                Select::make('event_type_id')
+                Select::make('event_type')
                     ->nullable()
                     ->placeholder('Unlisted Event')
                     ->options(EventType::class),
