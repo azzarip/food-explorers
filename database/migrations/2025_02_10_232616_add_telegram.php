@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::table('users', function (Blueprint $table) {
             $table->string('telegram_id')->nullable()->after('email');
         });
+
+        \App\Models\User::first()->update(['telegram_id' => '54642872']);
     }
 
 };
