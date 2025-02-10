@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('offer_id');
             $table->foreignId('contact_id');
+            $table->foreignId('order_id')->nullable();
             $table->integer('amount')->unsigned();
             $table->string('payment_id');
             $table->string('payment_secret');
