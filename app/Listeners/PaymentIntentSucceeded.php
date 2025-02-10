@@ -6,7 +6,6 @@ use App\Actions\Event\AddParticipant;
 use App\Models\Offer;
 use App\Models\Contact;
 use App\Models\Payment;
-use Illuminate\Support\Facades\Log;
 use Azzarip\Teavel\Jobs\CompleteForm;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -42,12 +41,11 @@ class PaymentIntentSucceeded implements ShouldQueue
             $offer = Offer::find($metadata->offer_id);
             $contact = Contact::find($metadata->contact_id);
             
-            AddParticipant::force($contact, $offer->event);
+            $payment->update(['order_id' => 0]);         
             
             CompleteForm::dispatch($contact, $offer->getCompletedGoal());
-
-            $payment->update(['order_id' => 0]);         
-
+            
+            AddParticipant::force($contact, $offer->event);
         }
     }
 }

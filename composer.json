@@ -20,6 +20,7 @@
         "guzzlehttp/guzzle": "^7.2",
         "jenssegers/agent": "^2.6",
         "label84/laravel-tagmanager": "^1.4",
+        "laravel-notification-channels/telegram": "^5.0",
         "laravel/framework": "^11",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.8",

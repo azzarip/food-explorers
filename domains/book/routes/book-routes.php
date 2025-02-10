@@ -16,4 +16,5 @@ Route::group([
     });
 
     Route::get('/{offer}/return', ReturnController::class);
+
 });

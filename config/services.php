@@ -37,4 +37,7 @@ return [
         'signature' => env('STRIPE_WEBHOOK_SIGNATURE'),
     ],
 
+    'telegram-bot-api' => [
+        'token' => env('TELEGRAM_BOT_TOKEN'),
+    ],
 ];
