@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('offers', function (Blueprint $table) {
             $table->id();
-            $table->string('slug');
+            $table->string('slug')->nullable();
             $table->foreignId('event_id')->nullable();
             $table->string('class');
             $table->tinyInteger('type_id');

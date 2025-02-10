@@ -1,5 +1,6 @@
 <?php
 
+use Domains\Api\Http\Controllers\SoldOutController;
 use Illuminate\Support\Facades\Route;
 use Domains\Api\Http\Controllers\StripeController;
 
@@ -10,4 +11,6 @@ Route::group([
     
     Route::post('/stripe', StripeController::class); 
 
+
+    Route::get('/offer/{offer}/soldout', SoldOutController::class);
 });

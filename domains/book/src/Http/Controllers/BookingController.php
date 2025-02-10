@@ -2,6 +2,7 @@
 
 namespace Domains\Book\Http\Controllers;
 
+use App\Actions\Stripe\OfferPayment;
 use App\Models\Offer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -43,27 +44,10 @@ class BookingController
             return view('book::pages.sold-out');
         }
 
-        if(empty($contact->stripe_id)) {
-            CreateStripeContact::create($contact);
-        }
-
-        $stripe = new \Stripe\StripeClient(config('services.stripe.secret'));
-
-        $response = $stripe->paymentIntents->create([
-            'amount' => $offer->price->int,
-            'currency' => 'chf',          
-            'customer' => $contact->stripe_id,
-            "automatic_payment_methods" => ["enabled" => true],
-            'description' => $offer->title . ' Event Ticket ' . $event->scheduled_at->format('d/m/Y'),
-            'metadata' => [
-                'slug' => $offer->slug,
-                'contact_id' => $contact->id,
-            ]
-        ]);
-
+        $payment = OfferPayment::get($offer);
 
         return view('book::pages.payment', [
-            'clientSecret' => $response->client_secret,
+            'clientSecret' => $payment->payment_secret,
             'return_url' => $request->url() . '/return',
         ]);
 
