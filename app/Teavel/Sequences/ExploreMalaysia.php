@@ -10,5 +10,6 @@ class ExploreMalaysia extends SequenceAutomation
     public function start()
     {
         $this->tag('Going Explore Malaysia');
+        $this->detag('Interested Explore Malaysia');
     }
 }

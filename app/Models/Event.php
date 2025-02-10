@@ -95,7 +95,7 @@ class Event extends Model
 
     public function getTypeAttribute(): string
     {
-        return $this->event_type->name;
+        return $this->event_type->name ?? 'null';
     }
 
 }

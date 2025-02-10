@@ -12,10 +12,10 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Azzarip\Teavel\Events\StripeWebhookReceived;
 
-class PaymentIntentSucceeded //implements ShouldQueue
+class PaymentIntentSucceeded implements ShouldQueue
 {
 
-    //use InteractsWithQueue;
+    use InteractsWithQueue;
     /**
      * Create the event listener.
      */
@@ -46,9 +46,7 @@ class PaymentIntentSucceeded //implements ShouldQueue
             
             CompleteForm::dispatch($contact, $offer->getCompletedGoal());
 
-
-            $payment->update(['order_id' => 0]);
-            
+            $payment->update(['order_id' => 0]);         
 
         }
     }
