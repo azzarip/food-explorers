@@ -12,7 +12,7 @@ class SoldOutController
      */
     public function __invoke(Request $request, Offer $offer)
     {
-        $event = $offer->event->loadData();
+        $event = $offer->event_with_data;
 
         return response()->json(['sold_out' => $event->isSoldOut]);
     }

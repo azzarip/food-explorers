@@ -17,10 +17,10 @@ class OfferPayment {
             CreateStripeContact::create($contact);
         }
 
-        $payment = Payment::firstWhere([
-            'contact_id' => $contact->id,
-            'offer_id' => $offer->id,
-        ]);
+        $payment = Payment::where('contact_id', $contact->id)
+            ->where('offer_id', $offer->id)
+            ->where('created_at', '>=', now()->subDays(7))
+            ->first();
 
         if($payment) {
             return $payment;

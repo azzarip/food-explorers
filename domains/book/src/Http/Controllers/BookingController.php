@@ -4,10 +4,10 @@ namespace Domains\Book\Http\Controllers;
 
 use App\Actions\Stripe\OfferPayment;
 use App\Models\Offer;
+use Azzarip\Teavel\Actions\Forms\InterestForm;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\View;
-use Azzarip\Teavel\Actions\Stripe\CreateStripeContact;
 
 class BookingController
 {
@@ -16,8 +16,7 @@ class BookingController
      */
     public function __invoke(Request $request, Offer $offer)
     {
-        $event = $offer->event;
-        $event->loadData();
+        $event = $offer->eventWithData;
 
         View::share([
             'event' => $event,
@@ -38,7 +37,7 @@ class BookingController
             return view('book::pages.success');
         }
 
-        ($offer->getInterestedGoal())::startSequence($contact);
+        InterestForm::achieve($offer->getInterestedGoal(), $offer->slug);
 
         if($event->isSoldOut) {
             return view('book::pages.sold-out');
@@ -50,8 +49,6 @@ class BookingController
             'clientSecret' => $payment->payment_secret,
             'return_url' => $request->url() . '/return',
         ]);
-
-
 
     }
 }
