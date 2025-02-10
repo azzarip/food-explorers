@@ -25,6 +25,36 @@
     </div>
 @endsection
     
-    @push('head')
-        @vite(['resources/js/stripe.js'])
-    @endpush
+@push('head')
+    @vite(['resources/js/stripe.js'])
+@endpush
+
+@push('scripts')
+<script>
+async function returnSoldOutState() {
+    try {
+        const response = await fetch('http://api.foodexplorers.test/offer/explore-malaysia/soldout');
+        if (response.ok) {
+            const data = await response.json();
+            return data.sold_out;
+        } else {
+            console.error('API request failed with status:', response.status);
+            return true;
+        }
+    } catch (error) {
+        console.error('Error during fetch:', error);
+        return true;
+    }
+}
+async function checkSoldOutState() {
+    const soldOut = await returnSoldOutState();
+    if (soldOut) {
+        location.reload();
+    }
+}
+setInterval(checkSoldOutState, 15000);
+setInterval(function () {
+    location.reload();
+}, 600000);
+</script>
+@endpush
