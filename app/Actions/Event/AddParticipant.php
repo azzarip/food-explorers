@@ -8,7 +8,7 @@ use Azzarip\Teavel\Models\Contact;
 use Illuminate\Support\Facades\DB;
 use App\Exceptions\EventExpiredException;
 
-class AddForceParticipant {
+class AddParticipant {
 
     public static function force(Contact $contact, Event $event)
     {
@@ -27,4 +27,5 @@ class AddForceParticipant {
 
         return true;
     }
+
 }

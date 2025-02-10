@@ -9,8 +9,5 @@ Route::group([
     'middleware' => 'api',
 ], function () {
     
-    Route::post('/stripe', StripeController::class); 
-
-
     Route::get('/offer/{offer}/soldout', SoldOutController::class);
 });

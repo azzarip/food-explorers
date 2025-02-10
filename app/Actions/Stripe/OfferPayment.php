@@ -20,6 +20,7 @@ class OfferPayment {
         $payment = Payment::where('contact_id', $contact->id)
             ->where('offer_id', $offer->id)
             ->where('created_at', '>=', now()->subDays(7))
+            ->whereNull('order_id')
             ->first();
 
         if($payment) {
@@ -37,6 +38,7 @@ class OfferPayment {
             'metadata' => [
                 'offer_id' => $offer->id,
                 'contact_id' => $contact->id,
+                'offer_variation' => 0,
             ]
         ]);
 
