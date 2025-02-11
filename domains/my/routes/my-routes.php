@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ParticipationController;
+use Domains\My\Http\Controllers\EventController;
 use Illuminate\Support\Facades\Route;
 use Domains\My\Http\Controllers\MyController;
 use Domains\My\Http\Controllers\QuestionController;
@@ -13,7 +14,8 @@ Route::group([
 ],function () {
 
     Route::get('/', MyController::class)->name('my');
-    Route::view('/events', 'my::events');
+    
+    Route::get('/events', EventController::class);
     Route::view('/events/past', 'my::past-events');
     
     Route::view('/suggest', 'my::suggest');
