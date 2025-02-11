@@ -16,7 +16,7 @@
     <div class="pb-2 mx-auto w-fit">
     <a 
     href="https://www.google.com/calendar/render?action=TEMPLATE&text={{ urlencode($event->title) }}&dates={{ $event->scheduled_at->format('Ymd\THis\Z') }}/{{ $event->finished_at->format('Ymd\THis\Z') }}&details={{ urlencode("Event organized by Food Explorers. Access your private area here: $myUrl") }}&location={{ urlencode($event->location->address) }}"
-    target="_blank"
+    target="_blank" rel="noopener noreferrer"
     class="flex items-center px-2 text-center border rounded align-center w-fit hover:bg-slate-200"
     >
     <img border="0" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/1200px-Google_Calendar_icon_%282020%29.svg.png" 

@@ -24,3 +24,10 @@ Route::middleware('guest')->group(function () {
 
     Route::middleware('throttle:5')->post('/register', RegisterController::class);
 });
+
+
+Route::get('/paco', function() {
+    \App\Mail\EventJoinedMail::to(\App\Models\Contact::first())
+    ->event(\App\Models\Event::find(6))
+    ->send();
+});

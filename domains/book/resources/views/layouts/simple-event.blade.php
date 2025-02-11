@@ -11,8 +11,7 @@
 <div class="mt-2 text-y max-lg:px-2" x-show="open" x-cloak>
     <h3 class="font-semibold">Terms and Conditions</h3>
     <p>
-        You can cancel your participation and receive a 100% reimbursement until {{ $event->scheduled_at->subDays(8)->format('j/m/Y') }} at
-        13:00. No refunds will be granted afterwards.
+        You can cancel your participation and receive a 100% reimbursement until {{ $offer->getReimbursementTimestamp()->format('j/m/Y \a\t H:i') }}. No refunds will be granted afterwards.
     </p>
     <p>Tickets are not nominal and can be transferred to someone else.</p>
 </div>
