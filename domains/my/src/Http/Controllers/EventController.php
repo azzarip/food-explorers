@@ -11,12 +11,23 @@ class EventController
     /**
      * Handle the incoming request.
      */
-    public function __invoke(Request $request)
+    public function index(Request $request)
     {
         $events = Event::next()->get();
         return view('my::events', [
             'events' => $events,
             'contact' => Auth::user(),
         ]);
+    }
+
+    public function show(Request $request, Event $event) 
+    {
+        if($event->scheduled_at->endOfDay()->isPast()) {
+            return abort(404);
+        }
+        return view('my::event', [
+            'event' => $event,
+            'contact' => Auth::user(),
+        ]);    
     }
 }

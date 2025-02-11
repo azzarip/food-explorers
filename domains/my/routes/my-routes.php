@@ -15,7 +15,8 @@ Route::group([
 
     Route::get('/', MyController::class)->name('my');
     
-    Route::get('/events', EventController::class);
+    Route::get('/events', [EventController::class, 'index']);
+    Route::get('/event/{event}', [EventController::class, 'show']);
     Route::view('/events/past', 'my::past-events');
     
     Route::view('/suggest', 'my::suggest');

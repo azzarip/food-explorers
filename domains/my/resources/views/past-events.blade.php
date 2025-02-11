@@ -1,6 +1,6 @@
 @extends('azzarip::layouts.1col')
 
-@php($events = auth()->user()->events()->orderByDesc('scheduled_at')->wherePivotNull('deleted_at')->simplePaginate(10))
+@php($events = auth()->user()->participatedEvents()->simplePaginate(10))
 @section('main')
 <a class="block p-2 mt-3 ml-12 mr-4 text-right rounded-lg lg:ml-8 w-fit hover:bg-slate-300 bg-slate-200" href="/events">
     <x-heroicon-o-arrow-left class="inline w-4 h-4 mb-1" />back to Upcoming Events</a>
@@ -16,10 +16,9 @@
             <h3 class="text-xl font-semibold">{{ $event->title }}</h3>
             <p>{{ $event->scheduled_at->format('j. F Y') }}</p>
 
-            <p class="mt-4"><x-heroicon-o-map-pin class="inline w-5 h-5 mb-1 mr-1" />{{ $event->location->name }}
-                (<a href="{{ $event->location->google_maps_url }}" target="_blank" rel="noreferrer"
-                    class="font-semibold">Maps <x-heroicon-o-arrow-top-right-on-square
-                        class="inline w-4 h-4 mb-1" /></a>)
+            <p class="mt-4"><a href="{{ $event->location->google_maps_url }}" target="_blank" rel="noreferrer noopener"> <x-heroicon-o-map-pin class="inline w-5 h-5 mb-1 mr-1" />{{ $event->location->name }}
+                (<span class="font-semibold">Maps <x-heroicon-o-arrow-top-right-on-square
+                        class="inline w-4 h-4 mb-1" /></span>)</a>
             </p>
         </div>
     @endforeach

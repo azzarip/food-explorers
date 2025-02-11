@@ -5,6 +5,7 @@ namespace App\Models;
 use App\HasLocale;
 use App\Models\Event;
 use Azzarip\Teavel\Models\Tag;
+use Illuminate\Support\Facades\Cache;
 use Azzarip\Teavel\Models\TagCategory;
 use Azzarip\Teavel\Models\Contact as BaseContact;
 use Illuminate\Contracts\Translation\HasLocalePreference;
@@ -23,6 +24,7 @@ class Contact extends BaseContact implements HasLocalePreference
     public function participatedEvents()
     {
         return $this->belongsToMany(Event::class)
+            ->where('scheduled_at', '<', now()->startOfDay())
             ->wherePivotNull('deleted_at')
             ->wherePivotNull('queue')
             ->withTimestamps();
@@ -55,7 +57,9 @@ class Contact extends BaseContact implements HasLocalePreference
 
     public function getPoints()
     {
-        return $this->participatedEvents()->count();
+        return Cache::remember("points.{$this->id}", now()->endOfDay(), function () {
+            return $this->participatedEvents()->count();
+        });
     }
 
     public function getAchievements(): array
