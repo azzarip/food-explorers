@@ -36,13 +36,18 @@ class PaymentIntentSucceeded implements ShouldQueue
                 'payment_id' => $stripeEvent->data->object->id,
                 'payment_secret' => $stripeEvent->data->object->client_secret,
             ]);
-            $payment->update(['order_id' => 0]);    
-
+            
             $metadata = $stripeEvent->data->object->metadata;
 
             $offer = Offer::find($metadata->offer_id);
             $contact = Contact::find($metadata->contact_id);
             
+            $payment->update([
+                'order_id' => 0,
+                'event_id' => $offer->event_id,
+            ]);    
+
+
             AddParticipant::force($contact, $offer->event);
 
             CompleteForm::dispatch($contact, $offer->getCompletedGoal());

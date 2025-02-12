@@ -33,7 +33,7 @@
 <script>
 async function returnSoldOutState() {
     try {
-        const response = await fetch('http://api.foodexplorers.test/offer/explore-malaysia/soldout');
+        const response = await fetch('{{ durl("/offer/{$offer->slug}/soldout", "api") }}');
         if (response.ok) {
             const data = await response.json();
             return data.sold_out;

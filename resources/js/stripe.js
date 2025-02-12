@@ -22,12 +22,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         },
     });
 
-    const paymentElement = elements.create('payment', {
+    var paymentElement = elements.create('payment', {
         paymentMethodOrder: ['twint', 'card', 'apple_pay', 'google_pay']
     });
     paymentElement.mount('#payment-element');
 
     const form = document.getElementById('payment-form');
+    const submitButton = form.querySelector('button[type="submit"]');
 
     paymentElement.on('change', (event) => {
         form.scrollIntoView({
@@ -38,13 +39,23 @@ document.addEventListener("DOMContentLoaded", async () => {
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
 
+        submitButton.disabled = true;
+        const originalText = submitButton.innerHTML;
+        submitButton.textContent = 'Loading...';
+        form.style.pointerEvents = 'none';
+
         const result = await stripe.confirmPayment({
             elements,
             confirmParams: {
                 return_url: returnUrl,
             },
         }).then(function (result) {
-            if (result.error) { }
+            if (result.error) {
+                submitButton.disabled = false;
+                submitButton.innerHTML = originalText;
+                form.style.pointerEvents = 'none';
+                console.error(result.error.message);
+            }
         });
     });
 
