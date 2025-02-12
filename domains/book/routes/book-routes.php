@@ -15,6 +15,6 @@ Route::group([
        Route::get('/{offer}', BookingController::class);
     });
 
-    Route::get('/{offer}/return', ReturnController::class);
+    Route::get('/{offer}/confirm', ReturnController::class);
 
 });

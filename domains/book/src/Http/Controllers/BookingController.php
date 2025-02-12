@@ -47,7 +47,7 @@ class BookingController
 
         return view('book::pages.payment', [
             'clientSecret' => $payment->payment_secret,
-            'return_url' => $request->url() . '/return',
+            'return_url' => $request->url() . '/confirm',
         ]);
 
     }
