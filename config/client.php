@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'cookie-consent' => false,
+    'cookie-consent' => true,
 
     'call' => [
         'username' => env('APP_NAME'),
