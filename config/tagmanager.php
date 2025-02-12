@@ -6,7 +6,7 @@ return [
      *
      * The GTM ID has the following format: GTM-XXXXXXX
      */
-    'id' => env('GOOGLE_TAG_MANAGER_ID', ''),
+    'id' => env('GOOGLE_TAG_MANAGER_ID', 'GTM-KL2FC7Z'),
 
     /*
      * Enable or disable the GTM script in your views.
