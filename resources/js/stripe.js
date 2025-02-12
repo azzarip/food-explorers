@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             if (result.error) {
                 submitButton.disabled = false;
                 submitButton.innerHTML = originalText;
-                form.style.pointerEvents = 'none';
+                form.style.pointerEvents = 'auto';
                 console.error(result.error.message);
             }
         });
