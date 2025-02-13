@@ -25,6 +25,11 @@ Route::group([
     Route::view('/ty/milano', 'base::milano-ty');
     Route::view('/yu-an-omakase', 'closed');
     Route::view('/rum-tasting', 'events.rumtasting');
-    Route::view('/exploring-malaysia', 'events.exploring-malaysia');
-    Route::view('/closed', 'closed');
+    Route::view('/explore-malaysia', 'events.exploring-malaysia');
+    Route::get('/explore-malaysia-milano', function () {
+        if(\Carbon\Carbon::parse('15 February 2025 17:00')->isPast()) {
+            return redirect('/explore-malaysia');
+        }
+        return view('events.exploring-malaysia-milano');
+    });
 });
