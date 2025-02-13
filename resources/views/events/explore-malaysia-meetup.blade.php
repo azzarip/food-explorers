@@ -2,9 +2,10 @@
 
 @php
     $seo = new SEO(
-        title: 'Explore Malaysia - Food Explorers',
-        description: 'Exploring Malaysia is a Malay Tasting Dinner at the Restaurant A Fatt in on the 5. March 2025. Places are limited, book now.',
-    ); 
+        title: 'Exploring Malaysia - Food Explorers',
+        description: 'Malay Tasting Menu at Afatt on the 5. March 2025. Places are limited, book now.',
+        robots: 'noindex, nofollow',
+    );
 @endphp
 
 @section('main')
@@ -25,8 +26,7 @@
     <p class="mt-2 mb-4 text-2xl text-center font-trajan">Wednesday 5. March 2025, 19:00</p>
 
     <img src="@image('explore-malaysia.webp')" alt="Explore Malaysia Banner" class="rounded-lg shadow-md">
-    <p class="max-w-xl mx-auto mt-4 font-serif text-2xl font-semibold text-center lg:text-3xl">A <span class="text-amber-800">culinary journey</span>  through authentic flavors at <span class="text-red-800">A Fatt</span></p>
-    <p class="italic text-center">Limmatstrasse 189, 8005 Zürich</p>
+    <p class="max-w-xl mx-auto mt-4 font-serif text-2xl font-semibold text-center lg:text-3xl">A <span class="text-amber-800">culinary journey</span>  through authentic flavors at <span class="text-red-800">a fatt</span></p>
 
     <div class="mt-4 space-y-4">
         <p><strong>Explore Malaysia</strong> is an your chance to dive into the rich and diverse flavors of Malaysia.</p> 
@@ -53,6 +53,7 @@
     </ul>
     <h3 class="my-6 font-serif text-2xl">Main Dishes</h3>
     <ul class="pl-4 space-y-4">
+
         <li><strong>Sin Yuk (Crispy Pork Belly)<span class="ml-2 text-red-800"> 蒜香燒肉</span> </strong>
             <p> Succulent slices of pork are slow-roasted until tender and caramelized. Crunchy outside with a softer meat inside.</p>
         </li>
@@ -90,9 +91,7 @@
         <p>You will order directly at the restaurant what you want to drink, and <strong>pay for it at the checkout</strong>.</p>
     </div>
     
-    <div class="max-w-lg mx-auto">
-        <x-button :link="durl('/explore-malaysia', 'book')" > Reserve now your seat! </x-button>
-    </div>
+    <x-button :link="durl('/explore-malaysia', 'book')" > Reserve now your seat! </x-button>
     <h2 class="mt-12 mb-4 font-serif text-2xl font-semibold">How is the dinner organized?</h2>
     <div class="mt-6 space-y-4">
         <p>The dinner is served in  <strong>authentic  Chinese style</strong> where all the dishes are served in trays in the center of the table.</p>
@@ -102,18 +101,7 @@
         <p>Drinks, beers, and water are not included. But you can order them and pay for it at the check out.</p>
     </div>
         <img src="https://cdn.i-scmp.com/sites/default/files/styles/1020x680/public/d8/images/canvas/2024/10/21/cbd16316-01fe-4fce-9605-74396af0bac6_930eaeb7.jpg?itok=XUQgmjCJ&v=1729485365" alt="Chinese Dinner" class="my-4 rounded drop-shadow-lg">
-    
-        <h2 class="mt-12 mb-4 font-serif text-2xl font-semibold">Who are we?</h2>
     <div class="mt-6 space-y-4">
-        <p>We are <strong>Food Explorers</strong>, we are a community of Foodies really active in Zurich and surroundings.</p>
-        <p>My name is Marco. And I am the chief organizer of this Foodie Community!</p>
-        <p>We organize weekly events in Zurich: food and drinks related!</p>
-        <p>The idea behind this group is to strong make <strong>foodie friends</strong> with people in Zurich.</p>
-        <p>Usually we organize weekly meetups in restaurant and bars, in a more relaxed atmosphere.</p>
-        <p>Sometimes we organize more <strong>special dinners</strong>, like this one at <strong>A Fatt</strong>.</p>
-        <p>Our meetup group counts more than <strong>1'600 members</strong> and keeps growing (<a href="https://www.meetup.com/zurich-restaurant-explorers/" class="text-blue-800 underline" target="_blank" rel="noopener noreferrer">Check our Meetup group</a> )</p>
-    
-        <div class="mt-6 space-y-4">
         <h2 class="mt-6 mb-4 font-serif text-2xl font-semibold">How much does it costs?</h2>
         <p>If you go to the restaurant with 4 people to taste all of the previously shown menu you will pay almost 75.- Francs per person.</p>
         <p>You will have this menu, only for that night at:</p>
@@ -123,15 +111,39 @@
         </p>
         <p>62.- Francs per person, for all that magic you have seen above!</p>
         <p>The offer is valid until all seats are reserved!</p>
+        @if(\Carbon\Carbon::parse('2/19/25 15:00')->isPast())
+        <p>This is the time left before I publish to Meetup, act now or <strong>all the seats are going to be taken</strong>:</p>
+        <div class="flex mx-auto my-4 text-center gap-x-4 w-fit">
+            <div class="flex flex-col items-center">
+                <div class="flex items-center justify-center w-16 h-16 text-2xl font-bold border-2 border-blue-800 rounded-full lg:w-24 lg:h-24"
+                    id="days">00</div>
+                <p>Days</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="flex items-center justify-center w-16 h-16 text-2xl font-bold border-2 border-green-800 rounded-full lg:w-24 lg:h-24"
+                    id="hours">00</div>
+                <p>Hours</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="flex items-center justify-center w-16 h-16 text-2xl font-bold border-2 border-yellow-800 rounded-full lg:w-24 lg:h-24"
+                id="minutes">00</div>
+                <p>Minutes</p>
+            </div>
+            <div class="flex flex-col items-center">
+            <div class="flex items-center justify-center w-16 h-16 text-2xl font-bold border-2 border-red-800 rounded-full lg:w-24 lg:h-24"
+                id="seconds">00</div>
+                <p>Seconds</p>
+            </div>
+        </div>
+        <p>When the timer reaches zero, I am going to publish this event on Meetup.</p>
+        @endif
         <p>We are going to be <strong>sold out</strong> pretty fast!</p>
     </div>
  <hr class="my-2">
     <p class="text-xl font-semibold text-center underline underline-offset-4 decoration-4 decoration-green-600">Now you have two choices:</p>
 
     <div class="space-y-4">
-        <div class="max-w-lg mx-auto">
-            <x-button :link="durl('/explore-malaysia', 'book')" > Book now your seat for <small>CHF</small> 62! </x-button>
-        </div>
+        <x-button :link="durl('/exploring-malaysia', 'book')"> Book now your seat </x-button>
         <p>Join the greatest group of foodies and share one of the <strong>most amazing Malay dinner</strong> in Zurich.</p>
         <p><span class="">Enjoy a delightful night, as a <strong>real food explorer</strong></span>, and taste different Malaysian dishes in a pure & authentic style.</p>
         <p>Meet other foodies, meet new people, laugh, drink, eat, smile!</p>
@@ -149,9 +161,7 @@
         <p class="font-semibold">This is what you really want?</p>
         <p>A cold pizza at home alone, while all of us are at the restaurant to taste a japanese omakase in the best restaurant of Zurich?</p>
         <p class="font-serif text-2xl italic">... see?</p>
-        <div class="max-w-lg mx-auto">
-            <x-button :link="durl('/explore-malaysia', 'book')" > Book now your seat! </x-button>
-        </div>
+        <x-button :link="durl('/exploring-malaysia', 'book')"> Book now your seat </x-button>
         <p>Or you get a cold pizza!</p>
     </div>
 

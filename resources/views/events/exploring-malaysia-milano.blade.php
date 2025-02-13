@@ -4,6 +4,7 @@
     $seo = new SEO(
         title: 'Explore Malaysia - Food Explorers',
         description: 'Malay Tasting Menu at Afatt on the 5. March 2025. Places are limited, book now.',
+        robots: 'noindex, nofollow',
     );
 @endphp
 
@@ -25,11 +26,12 @@
         <p class="mt-2 mb-4 text-2xl text-center font-trajan">Wednesday 5. March 2025, 19:00</p>
 
         <img src="@image('explore-malaysia.webp')" alt="Explore Malaysia Banner" class="rounded-lg shadow-md">
-        <p class="max-w-xl mx-auto mt-4 mb-4 font-serif text-2xl font-semibold text-center lg:text-3xl">A <span
-                class="text-amber-800">culinary journey</span> through authentic flavors at <span class="text-red-800">a
-                fatt</span></p>
+        <p class="max-w-xl mx-auto mt-4 font-serif text-2xl font-semibold text-center lg:text-3xl">A <span
+                class="text-amber-800">culinary journey</span> through authentic flavors at <span class="text-red-800">A
+                Fatt</span></p>
+            <p class="italic text-center">Limmatstrasse 189, 8005 Zürich</p>
 
-        <div class="space-y-4">
+        <div class="mt-4 space-y-4">
             <p><strong>Explore Malaysia</strong> is an your chance to dive into the rich and diverse flavors of Malaysia.
             </p>
             <p>On <strong>Wednesday 5. March</strong>, the team at <strong class="text-red-800">A Fatt</strong> restaurant
@@ -156,10 +158,10 @@
         <p class="mb-2">And you will lose this opportunity! </p>
         <div class="p-4 space-y-2 border-2 border-green-800 rounded shadow-sm">
             <h3 class="text-2xl font-semibold text-center">To reserve your place</h3>
-            <p>Just twint me the amount of 57.- and I will block you a place.</p>
+            <p>Just <strong>twint me</strong> the amount of 57.- and I will block you a place.</p>
             <p>That's it!</p>
             <p>My number is 078 713 18 82, just for double checking.</p>
-            <p>If you <strong>don't have twint</strong>, just get in touch, I will send you my bank details.</p>
+            <p>If you <strong>don't have twint</strong>, just write me, I will send you my bank details.</p>
         </div>
 
         <h2 class="pt-6 mb-4 font-serif text-2xl font-semibold">FAQ</h2>
