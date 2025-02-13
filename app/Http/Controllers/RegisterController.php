@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Azzarip\Teavel\Models\Contact;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
+use App\Notifications\TelegramNotification;
+use NotificationChannels\Telegram\TelegramMessage;
 use Azzarip\Teavel\Exceptions\RegistrationException;
 use Azzarip\Teavel\Http\Requests\FullRegistrationRequest;
 
@@ -27,6 +30,8 @@ class RegisterController extends Controller
                 ->withErrors(['user' => 'already_registered']);
         }
 
+        User::first()->notify(new TelegramNotification('New Registration', $contact));
+        
         Auth::login($contact, true);
         
         if(Session::has('url.intended')) {
