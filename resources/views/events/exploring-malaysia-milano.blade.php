@@ -10,22 +10,22 @@
 @section('main')
     <div class="flex flex-row items-center justify-between -mt-4 lg:items-start">
         <div class="flex flex-row items-center justify-start w-fit">
-            <div class="w-16 sm:w-24 p-1 mx-auto mt-4 mb-2 rounded-full lg:w-fit lg:flex lg:items-center">
-                <img src="{{ image('logo_sm.webp') }}" alt="Logo Food Explorers" class="mx-auto w-24">
+            <div class="w-16 p-1 mx-auto mt-4 mb-2 rounded-full sm:w-24 lg:w-fit lg:flex lg:items-center">
+                <img src="{{ image('logo_sm.webp') }}" alt="Logo Food Explorers" class="w-24 mx-auto">
                 <span class="text-2xl text-center text-amber-800 lg:text-4xl font-trajan">Food Explorers</span>
             </div>
         </div>
-        <div class="float-right mt-2 w-16 md:w-28 lg:mr-12">
+        <div class="float-right w-16 mt-2 md:w-28 lg:mr-12">
             <img src="@image('afatt.webp')" alt="A Fatt Logo">
             <p class="font-serif text-3xl font-bold text-center text-red-800">a fatt</p>
         </div>
     </div>
     <article class="max-w-3xl mx-auto">
         <h1 class="my-4 font-serif text-4xl font-bold text-center lg:text-5xl">Explore Malaysia</h1>
-        <p class="mt-2 text-2xl text-center font-trajan mb-4">Wednesday 5. March 2025, 19:00</p>
+        <p class="mt-2 mb-4 text-2xl text-center font-trajan">Wednesday 5. March 2025, 19:00</p>
 
         <img src="@image('explore-malaysia.webp')" alt="Explore Malaysia Banner" class="rounded-lg shadow-md">
-        <p class="font-serif text-2xl lg:text-3xl font-semibold text-center mt-4 mx-auto max-w-xl mb-4">A <span
+        <p class="max-w-xl mx-auto mt-4 mb-4 font-serif text-2xl font-semibold text-center lg:text-3xl">A <span
                 class="text-amber-800">culinary journey</span> through authentic flavors at <span class="text-red-800">a
                 fatt</span></p>
 
@@ -37,7 +37,7 @@
                 traditional and modern Malaysian dishes, from savory sauce, curries to delicious pork belly and roasted
                 duck.</p>
             <p><strong>A Fatt</strong>, located near Limmatplatz, is considered by many the best Malaysian restaurants in
-                Zurich, with <strong>4.7 <x-heroicon-s-star class="text-amber-600 w-6 h-6 inline" /> on Google
+                Zurich, with <strong>4.7 <x-heroicon-s-star class="inline w-6 h-6 text-amber-600" /> on Google
                     Maps</strong>.</p>
             <p>The restaurant’s follows a <strong>Authentic Chinese Style</strong> where a range of dishes are shared
                 together, in a style similar to a Tavolata. </p>
@@ -52,53 +52,46 @@
         </div>
 
 
-        <h2 class="my-6 font-serif text-2xl lg:text-3xl font-semibold text-center">Menu</h2>
+        <h2 class="my-6 font-serif text-2xl font-semibold text-center lg:text-3xl">Menu</h2>
 
         <h3 class="my-6 font-serif text-2xl">Starters</h3>
         <ul class="pl-4 space-y-4">
-            <li><strong>Char Kuey <span class="ml-2 text-red-800">炒蘿蔔糕</span></strong>
-                <br>This is the traditional Malay radish cake. Crispy on the outside, soft and delicate inside—these
-                wok-fried radish cakes are infused with aromatic garlic, umami-rich soy sauce, and a hint of smoky wok hei.
-            </li>
-            <li><strong>Achar <span class="ml-2 text-red-800">來西亞泡菜</span></strong>
-                <br>The Malaysian-style pickles, a mix of crunchy cucumbers, carrots, and cabbage, soaked in a tangy,
-                slightly spicy turmeric-infused sauce.
-            </li>
-            <li><strong>Fu Pi Juan <span class="ml-2 text-red-800"> 腐卷娟</span></strong>
-                <br>Golden-brown tofu skin rolls encasing a juicy and flavorful filling of finely chicken and shimpss.
-            </li>
+            <li><strong>Char Kuey <span class="ml-2 text-red-800">炒蘿蔔糕</span></strong>  
+                <br>This is the traditional Malay radish cake. Crispy on the outside, soft and delicate inside—these wok-fried radish cakes are infused with aromatic garlic, umami-rich soy sauce, and a hint of smoky wok hei.</li>
+            <li><strong>Achar <span class="ml-2 text-red-800">來西亞泡菜</span></strong>  
+                <br>The Malaysian-style pickles, a mix of crunchy cucumbers, carrots, and cabbage, soaked in a tangy, slightly spicy turmeric-infused sauce.</li>
+            <li><strong>Fu Pi Juan <span class="ml-2 text-red-800"> 腐卷娟</span></strong>  
+                <br>Golden-brown tofu skin rolls encasing a juicy and flavorful filling of finely chicken and shimpss.</li>
         </ul>
         <h3 class="my-6 font-serif text-2xl">Main Dishes</h3>
         <ul class="pl-4 space-y-4">
-            <li><strong>Homemade Eggtofu <span class="ml-2 text-red-800">椒鹽蛋豆腐 </span> </strong>
-                <p> It is a crispy, golden delight with a silky, custard-like center. Lightly battered and fried to
-                    perfection, it's tossed in fragrant garlic, fiery chili, and Sichuan pepper for an irresistible kick.
-                </p>
-            </li>
+    
             <li><strong>Sin Yuk (Crispy Pork Belly)<span class="ml-2 text-red-800"> 蒜香燒肉</span> </strong>
-                <p> Succulent slices of pork are slow-roasted until tender and caramelized. Crunchy outside with a softer
-                    meat inside.</p>
+                <p> Succulent slices of pork are slow-roasted until tender and caramelized. Crunchy outside with a softer meat inside.</p>
             </li>
             <li><strong>Char Siu (BBQ Pork)<span class="ml-2 text-red-800">叉燒</span> </strong>
-                <p>Pork marinated in a rich blend of soy sauce, honey, hoisin, and aromatic spices, then roasted. A true
-                    chinese BBQ classic.</p>
+                <p>Pork marinated in a rich blend of soy sauce, honey, hoisin, and aromatic spices, then roasted. A true chinese BBQ classic.</p>
             </li>
             <li><strong>Kam Hiong Chicken<span class="ml-2 text-red-800">金香雞 </span> </strong>
-                <p>Juicy chicken pieces are stir-fried, with a blend of soy sauce, sambala and onions. Every bite is a
-                    fragrant explosion of wok-fried goodness</p>
+                <p>Juicy chicken pieces are stir-fried, with a blend of soy sauce, sambala and onions. Every bite is a fragrant explosion of wok-fried goodness</p>
             </li>
             <li><strong>Sambal Prawns<span class="ml-2 text-red-800"> 叁峇蝦 </span> </strong>
-                <p>Juicy prawns smothered in a rich, fiery sambal sauce, bursting with bold flavors of garlic and a hint of
-                    sweetness. Served hot in a satay sauce.</p>
+                <p>Juicy prawns smothered in a rich, fiery sambal sauce, bursting with bold flavors of garlic and a hint of sweetness. Served hot in a satay sauce.</p>
             </li>
             <li><strong>Roasted Duck<span class="ml-2 text-red-800"> 隻烤鴨 </span> </strong>
                 <p>A crispy, golden-brown duck, roasted to perfection, with tender, juicy meat inside.</p>
             </li>
+            </ul>
+            <h3 class="my-6 font-serif text-2xl">Sides</h3>
+            <ul class="pl-4 space-y-4">
+            <li><strong>Homemade Eggtofu <span class="ml-2 text-red-800">椒鹽蛋豆腐        </span> </strong>
+                <p> It is a crispy, golden tofu bites with a silky and soft center. They are tossed in fragrant sauces for an irresistible kick.</p>
+            </li>
             <li><strong>Stir fried vegetables<span class="ml-2 text-red-800"> 炒什錦蔬菜 </span> </strong>
                 <p>Fresh, crunchy vegetables stir-fried together, a nice side dish to balance the more savory mains.</p>
             </li>
-
-            <p>All the dishes will be accompanied by rice, inlcuded in the menu.</p>
+            
+            <p>All the dishes will be accompanied by rice, included in the menu.</p>
         </ul>
 
         <h3 class="my-6 font-serif text-2xl">Dessert</h3>
@@ -136,24 +129,24 @@
             <p>Afterwards I will publish this offer to the whole group and the price will increase, and you will fight with
                 everyone else for the remaining seats.</p>
         </div>
-        <div class="flex gap-x-4 text-center my-4 mx-auto w-fit">
+        <div class="flex mx-auto my-4 text-center gap-x-4 w-fit">
             <div class="flex flex-col items-center">
-                <div class="w-16 lg:w-24 h-16 lg:h-24 flex items-center justify-center border-2 border-blue-800  text-2xl font-bold rounded-full"
+                <div class="flex items-center justify-center w-16 h-16 text-2xl font-bold border-2 border-blue-800 rounded-full lg:w-24 lg:h-24"
                     id="days">00</div>
                 <p>Days</p>
             </div>
             <div class="flex flex-col items-center">
-                <div class="w-16 lg:w-24 h-16 lg:h-24 flex items-center justify-center border-2 border-green-800  text-2xl font-bold rounded-full"
+                <div class="flex items-center justify-center w-16 h-16 text-2xl font-bold border-2 border-green-800 rounded-full lg:w-24 lg:h-24"
                     id="hours">00</div>
                 <p>Hours</p>
             </div>
             <div class="flex flex-col items-center">
-                <div class="w-16 lg:w-24 h-16 lg:h-24 flex items-center justify-center border-2 border-yellow-800  text-2xl font-bold rounded-full"
+                <div class="flex items-center justify-center w-16 h-16 text-2xl font-bold border-2 border-yellow-800 rounded-full lg:w-24 lg:h-24"
                 id="minutes">00</div>
                 <p>Minutes</p>
             </div>
             <div class="flex flex-col items-center">
-            <div class="w-16 lg:w-24 h-16 lg:h-24 flex items-center justify-center border-2 border-red-800  text-2xl font-bold rounded-full"
+            <div class="flex items-center justify-center w-16 h-16 text-2xl font-bold border-2 border-red-800 rounded-full lg:w-24 lg:h-24"
                 id="seconds">00</div>
                 <p>Seconds</p>
             </div>
@@ -161,11 +154,12 @@
 
 
         <p class="mb-2">And you will lose this opportunity! </p>
-        <div class="p-4 border-2 border-green-800 rounded shadow-sm space-y-2">
+        <div class="p-4 space-y-2 border-2 border-green-800 rounded shadow-sm">
             <h3 class="text-2xl font-semibold text-center">To reserve your place</h3>
             <p>Just twint me the amount of 57.- and I will block you a place.</p>
             <p>That's it!</p>
             <p>My number is 078 713 18 82, just for double checking.</p>
+            <p>If you <strong>don't have twint</strong>, just get in touch, I will send you my bank details.</p>
         </div>
 
         <h2 class="pt-6 mb-4 font-serif text-2xl font-semibold">FAQ</h2>
