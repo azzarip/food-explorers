@@ -95,8 +95,8 @@
     <h2 class="mt-12 mb-4 font-serif text-2xl font-semibold">How is the dinner organized?</h2>
     <div class="mt-6 space-y-4">
         <p>The dinner is served in  <strong>authentic  Chinese style</strong> where all the dishes are served in trays in the center of the table.</p>
-        <p>Instead of receiving a single main dish, each guest is given a bowl of rice and an empty plate.</p>
-        <p>Throughout the evening, all the dishes will come in various rounds out of the kitchen giving you the opportunity to try a wide selection of the menu.</p>
+        <p>Instead of receiving a single main dish, to each guest is given a bowl of rice and an empty plate.</p>
+        <p>Throughout the evening, all the dishes will come in various rounds out of the kitchen giving you the opportunity to try the wide selection of the menu.</p>
         <p>All the dishes will be <strong>shared</strong> among the guests, you can eat what you want out of the shared dishes.</p>
         <p>Drinks, beers, and water are not included. But you can order them and pay for it at the check out.</p>
     </div>
@@ -106,13 +106,12 @@
         <p>If you go to the restaurant with 4 people to taste all of the previously shown menu you will pay almost 75.- Francs per person.</p>
         <p>You will have this menu, only for that night at:</p>
         <p class="text-center">
-            <span class="font-serif text-4xl text-red-900 line-through">75.</span>
             <span class="font-serif text-6xl text-green-900">62.-</span>
         </p>
         <p>62.- Francs per person, for all that magic you have seen above!</p>
         <p>The offer is valid until all seats are reserved!</p>
         @if(\Carbon\Carbon::parse('2/19/25 15:00')->isPast())
-        <p>This is the time left before I publish to Meetup, act now or <strong>all the seats are going to be taken</strong>:</p>
+        <p>This is the time left before I publish this event on Meetup, act now or <strong>all the seats are going to be taken</strong>:</p>
         <div class="flex mx-auto my-4 text-center gap-x-4 w-fit">
             <div class="flex flex-col items-center">
                 <div class="flex items-center justify-center w-16 h-16 text-2xl font-bold border-2 border-blue-800 rounded-full lg:w-24 lg:h-24"
