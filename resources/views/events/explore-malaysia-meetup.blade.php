@@ -4,6 +4,7 @@
     $seo = new SEO(
         title: 'Exploring Malaysia - Food Explorers',
         description: 'Malay Tasting Menu at Afatt on the 5. March 2025. Places are limited, book now.',
+        image: image($offer->slug . '.webp'),
         robots: 'noindex, nofollow',
     );
 @endphp

@@ -16,10 +16,14 @@
         (<a href="{{ $event->location->google_maps_url }}" class="inline-link" rel=“noreferrer”>Maps</a>)</p>
         </p>
 
-    <p class="font-semibold"><x-heroicon-s-user-group class="inline w-6 h-6 mb-1 text-amber-800/50"/> {{ $event->going }} Going</p>
+    @if($event->going >= 5)
+    <p class="font-semibold"><x-heroicon-s-users class="inline w-6 h-6 mb-1 text-amber-800/50"/> {{ $event->going }} Going</p>
+    @endif
+
     @if ($event->available <= 12)
         <p class="font-semibold text-red-900">Less than 10 seats available!</p>
     @endif
+    
     @if($event->isSoldOut)
         <p><x-heroicon-s-user-group class="inline w-6 h-6 mb-1 text-amber-800/50"/> {{ $event->capacity }} Going <span class="ml-3 text-xl font-semibold text-red-900 font-trajan">(SOLD-OUT)</span></p>
     @endif

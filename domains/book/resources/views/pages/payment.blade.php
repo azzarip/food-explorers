@@ -21,17 +21,13 @@
                 data-return-url="{{ $return_url }}"
             >
         </div>
-        <p class="mt-1 text-slate-400 text-xs text-center"><x-heroicon-s-lock-closed class="inline w-3 h-3 mb-1"/>  SSL-encrypted connection       </p>
+        <p class="mt-1 text-xs text-center text-slate-400"><x-heroicon-s-lock-closed class="inline w-3 h-3 mb-1"/>  SSL-encrypted connection       </p>
         </div>
             <x-forms.agb />
             <x-button type="submit">Reserve your seat</x-button>
         </form>
     </div>
 @endsection
-    
-@push('head')
-    @vite(['resources/js/stripe.js'])
-@endpush
 
 @push('scripts')
 <script>
@@ -61,4 +57,8 @@ setInterval(function () {
     location.reload();
 }, 600000);
 </script>
+@endpush
+    
+@push('head')
+    @vite(['resources/js/stripe.js'])
 @endpush

@@ -26,10 +26,7 @@ class ReturnController
         }
         
         if($redirect_status == 'succeeded') {
-            return view('book::pages.success', [
-                'offer' => $offer,
-                'event' => $offer->event->loadData()
-            ]);
+            return redirect($offer->url . '/success');
         }
 
         return redirect($offer->url);
