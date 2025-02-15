@@ -182,46 +182,7 @@
     <p>In case of cancellation of the event from our side, a full 100% reimbursement will be issued.</p>
     
     <div class="h-12"></div>
+    <x-button :link="durl('/explore-malaysia', 'book')" > Reserve now your seat! </x-button>
 </article>
 
-
-
 @endsection
-
-
-
-@push('scripts')
-    <script>
-        function startCountdown(targetDate) {
-            function updateCountdown() {
-                const now = new Date().getTime();
-                const timeLeft = targetDate - now;
-
-                if (timeLeft < 0) {
-                    clearInterval(interval);
-                    document.getElementById("days").innerText = "00";
-                    document.getElementById("hours").innerText = "00";
-                    document.getElementById("minutes").innerText = "00";
-                    document.getElementById("seconds").innerText = "00";
-                    return;
-                }
-
-                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-                document.getElementById("days").innerText = String(days).padStart(2, '0');
-                document.getElementById("hours").innerText = String(hours).padStart(2, '0');
-                document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
-                document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
-            }
-
-            updateCountdown();
-            const interval = setInterval(updateCountdown, 1000);
-        }
-
-        const targetDate = new Date('2025-02-19T15:00:00Z').getTime();
-        startCountdown(targetDate);
-    </script>
-@endpush

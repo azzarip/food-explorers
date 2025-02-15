@@ -190,7 +190,7 @@
     <p>Any later from that date, no reimbursement will be issued, and the payment will be considered final.</p>
     <p>The participation is not nominative, in case you cannot join, you can give your place to someone else. (You have to find that person.)</p>
     <p>In case of cancellation of the event from our side, a full 100% reimbursement will be issued.</p>
-    
+    <x-button :link="durl('/explore-malaysia', 'book')" > Book your seat now! </x-button>
     <div class="h-12"></div>
 </article>
 
