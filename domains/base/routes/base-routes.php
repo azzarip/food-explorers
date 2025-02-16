@@ -22,7 +22,7 @@ Route::group([
     Route::view('/yu-an-omakase', 'closed');
     Route::view('/rum-tasting', 'events.rumtasting');
 
-    Route::view('/explore-malaysia', 'events.exploring-malaysia');
+    Route::view('/explore-malaysia', 'events.explore-malaysia');
 
     Route::view('/explore-malaysia/m', 'events.explore-malaysia-meetup');
 });
