@@ -9,7 +9,7 @@ Route::group([
     'domain' => config('domains.book.url'),
     'middleware' => 'web',
 ], function () {
-    Route::view('/', 'book::homepage');
+    Route::redirect('/', durl('/', 'base'), 301);
 
     Route::middleware(IntendedRedirect::class)->group(function () {
        Route::get('/{offer}', BookingController::class);

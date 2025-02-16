@@ -24,10 +24,5 @@ Route::group([
 
     Route::view('/explore-malaysia', 'events.exploring-malaysia');
 
-    Route::get('/explore-malaysia/m', function () {
-        if(\Carbon\Carbon::parse('16 February 2025 15:00')->isPast()) {
-            return view('events.explore-malaysia-meetup');
-        }
-        return view('events.exploring-malaysia-milano');
-    });
+    Route::view('/explore-malaysia/m', 'events.explore-malaysia-meetup');
 });

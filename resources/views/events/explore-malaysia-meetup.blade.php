@@ -4,7 +4,7 @@
     $seo = new SEO(
         title: 'Exploring Malaysia - Food Explorers',
         description: 'Malay Tasting Menu at Afatt on the 5. March 2025. Places are limited, book now.',
-        image: image($offer->slug . '.webp'),
+        image: image('explore-malaysia.webp'),
         robots: 'noindex, nofollow',
     );
 @endphp
@@ -28,17 +28,20 @@
 
     <img src="@image('explore-malaysia.webp')" alt="Explore Malaysia Banner" class="rounded-lg shadow-md">
     <p class="max-w-xl mx-auto mt-4 font-serif text-2xl font-semibold text-center lg:text-3xl">A <span class="text-amber-800">culinary journey</span>  through authentic flavors at <span class="text-red-800">a fatt</span></p>
-
+    <p class="italic text-center">Limmatstrasse 189, 8005 Zürich</p>
     <div class="mt-4 space-y-4">
         <p><strong>Explore Malaysia</strong> is an your chance to dive into the rich and diverse flavors of Malaysia.</p> 
-        <p>On <strong>Wednesday 5. March</strong>, the team at <strong class="text-red-800">A Fatt</strong> restaurant will welcome us for an <strong>unforgettable dining experience</strong>, where we'll explore a variety of traditional and modern Malaysian dishes, from savory sauce, curries to delicious pork belly and roasted duck.</p> 
+        <p>On <strong>Wednesday 5. March</strong>, the team at <strong class="text-red-800">A Fatt</strong> restaurant, Zürich’s most beloved Malaysian restaurant, will welcome us for an <strong>unforgettable dining experience</strong></p> 
+        <p>It will be a <strong>one-time-only feast</strong> featuring the bold and diverse flavors of that part of Asia.</p>
         <p><strong>A Fatt</strong>, located near Limmatplatz, is considered by many the best Malaysian restaurants in Zurich, with <strong>4.7 <x-heroicon-s-star class="inline w-6 h-6 text-amber-600"/> on Google Maps</strong>.</p> 
         <p>The restaurant’s follows a <strong>Authentic Chinese Style</strong> where a range of dishes are shared together, in a style similar to a Tavolata. </p>
         <p>You will <strong class="text-amber-900">share and savor</strong> the incredible diversity of Malaysian cuisine.</p> 
+        <p><x-heroicon-s-star class="inline w-6 h-6 text-yellow-500"/>If you’ve joined me for a Japanese Omakase before, this will have a similar style—where we share and enjoy a variety of dishes together. <x-heroicon-s-star class="inline w-6 h-6 text-yellow-500"/> </p>
+        <p>Plates are passed around, <strong>flavors are explored together</strong>, and every meal becomes a social event.</p>
         <p>This is a popular style of eating in Malaysia, where meals are meant to be shared with friends. </p>
         <p>It’s a truly social way to dine, and you’ll get to <strong>enjoy a wide variety of dishes</strong> that showcase the <strong>fragrant flavors of Malaysia</strong>.</p> 
         <p>To ensure an <strong>authentic experience</strong>, we have worked closely with the chef to craft a special menu that highlights the most traditional and beloved Malaysian dishes.        </p>
-        <p>Now, let’s take a closer look at what awaits you:</p>
+        <p>Now, let’s take a closer look at what awaits you...</p>
     </div>
     
     <h2 class="my-6 font-serif text-2xl font-semibold text-center lg:text-3xl">Menu</h2>
@@ -92,50 +95,54 @@
         <p>You will order directly at the restaurant what you want to drink, and <strong>pay for it at the checkout</strong>.</p>
     </div>
     
-    <x-button :link="durl('/explore-malaysia', 'book')" > Reserve now your seat! </x-button>
+    <div class="max-w-lg mx-auto">
+        <x-button :link="durl('/explore-malaysia', 'book')" > Reserve now your seat! </x-button>
+    </div>
     <h2 class="mt-12 mb-4 font-serif text-2xl font-semibold">How is the dinner organized?</h2>
     <div class="mt-6 space-y-4">
         <p>The dinner is served in  <strong>authentic  Chinese style</strong> where all the dishes are served in trays in the center of the table.</p>
         <p>Instead of receiving a single main dish, to each guest is given a bowl of rice and an empty plate.</p>
         <p>Throughout the evening, all the dishes will come in various rounds out of the kitchen giving you the opportunity to try the wide selection of the menu.</p>
-        <p>All the dishes will be <strong>shared</strong> among the guests, you can eat what you want out of the shared dishes.</p>
+        <p>All the dishes will be <strong>shared</strong> among the guests, you can eat what you want.</p>
         <p>Drinks, beers, and water are not included. But you can order them and pay for it at the check out.</p>
     </div>
         <img src="https://cdn.i-scmp.com/sites/default/files/styles/1020x680/public/d8/images/canvas/2024/10/21/cbd16316-01fe-4fce-9605-74396af0bac6_930eaeb7.jpg?itok=XUQgmjCJ&v=1729485365" alt="Chinese Dinner" class="my-4 rounded drop-shadow-lg">
     <div class="mt-6 space-y-4">
         <h2 class="mt-6 mb-4 font-serif text-2xl font-semibold">How much does it costs?</h2>
-        <p>If you go to the restaurant with 4 people to taste all of the previously shown menu you will pay almost 75.- Francs per person.</p>
-        <p>You will have this menu, only for that night at:</p>
+        <p>If you went to a restaurant with four people to taste everything on this exclusive menu, you’d pay nearly 75 CHF per person.</p>
+        <p>But for this <strong>one-night-only experience</strong>experience, you’re getting it for just:</p>
+
         <p class="text-center">
             <span class="font-serif text-6xl text-green-900">62.-</span>
         </p>
-        <p>62.- Francs per person, for all that magic you have seen above!</p>
-        <p>The offer is valid until all seats are reserved!</p>
-        @if(\Carbon\Carbon::parse('2/19/25 15:00')->isPast())
-        <p>This is the time left before I publish this event on Meetup, act now or <strong>all the seats are going to be taken</strong>:</p>
+        <p>That’s right—only 62 CHF for everything you’ve seen above!</p>
+        <p class="text-2xl font-semibold text-center">The offer is valid until all seats are reserved!</p>
+        @if(\Carbon\Carbon::parse('2025-02-19T14:00:00Z')->isFuture())
+        <p><strong>You are going to have priority before posting on Meetup</strong>.</p>
+        <p>This is the time left before I publish this event, act now or <strong>all the seats are going to be taken</strong>:</p>
         <div class="flex mx-auto my-4 text-center gap-x-4 w-fit">
             <div class="flex flex-col items-center">
-                <div class="flex items-center justify-center w-16 h-16 text-2xl font-bold border-2 border-blue-800 rounded-full lg:w-24 lg:h-24"
+                <div class="flex items-center justify-center w-12 h-12 text-2xl font-bold border-2 rounded-full bg-blue-200/50 lg:w-16 lg:h-16"
                     id="days">00</div>
                 <p>Days</p>
             </div>
             <div class="flex flex-col items-center">
-                <div class="flex items-center justify-center w-16 h-16 text-2xl font-bold border-2 border-green-800 rounded-full lg:w-24 lg:h-24"
+                <div class="flex items-center justify-center w-12 h-12 text-2xl font-bold border-2 rounded-full bg-green-200/50 lg:w-16 lg:h-16"
                     id="hours">00</div>
                 <p>Hours</p>
             </div>
             <div class="flex flex-col items-center">
-                <div class="flex items-center justify-center w-16 h-16 text-2xl font-bold border-2 border-yellow-800 rounded-full lg:w-24 lg:h-24"
+                <div class="flex items-center justify-center w-12 h-12 text-2xl font-bold border-2 rounded-full bg-yellow-200/50 lg:w-16 lg:h-16"
                 id="minutes">00</div>
                 <p>Minutes</p>
             </div>
             <div class="flex flex-col items-center">
-            <div class="flex items-center justify-center w-16 h-16 text-2xl font-bold border-2 border-red-800 rounded-full lg:w-24 lg:h-24"
+            <div class="flex items-center justify-center w-12 h-12 text-2xl font-bold border-2 rounded-full bg-red-200/50 lg:w-16 lg:h-16"
                 id="seconds">00</div>
                 <p>Seconds</p>
             </div>
         </div>
-        <p>When the timer reaches zero, I am going to publish this event on Meetup.</p>
+        <p>When the timer reaches zero, <strong>first come, first served</strong> — and you’ll probably miss out.</p>
         @endif
         <p>We are going to be <strong>sold out</strong> pretty fast!</p>
     </div>
@@ -143,7 +150,9 @@
     <p class="text-xl font-semibold text-center underline underline-offset-4 decoration-4 decoration-green-600">Now you have two choices:</p>
 
     <div class="space-y-4">
-        <x-button :link="durl('/exploring-malaysia', 'book')"> Book now your seat </x-button>
+        <div class="max-w-lg mx-auto">
+            <x-button :link="durl('/explore-malaysia', 'book')"> Book now your seat </x-button>
+        </div>
         <p>Join the greatest group of foodies and share one of the <strong>most amazing Malay dinner</strong> in Zurich.</p>
         <p><span class="">Enjoy a delightful night, as a <strong>real food explorer</strong></span>, and taste different Malaysian dishes in a pure & authentic style.</p>
         <p>Meet other foodies, meet new people, laugh, drink, eat, smile!</p>
@@ -152,8 +161,8 @@
     <div class="mt-8 space-y-4">
         <p class="font-semibold text-center text-red-900">Or you can wait and say:</p>
         <p class="font-serif text-2xl italic text-center">...I'll do it later...</p>
-        <p>This is what is going to happen:</p>
-        <p> 1. You "think I'm going to do that later..."</p>
+        <p>This is the <strong>Wait & Regret</strong> option</p>
+        <p> 1. You think "I'm going to do that later..."</p>
         <p> 2. Places run out.</p>
         <p> 3. You want to join but you can't.</p>
         <p class="font-semibold"> 4. We will all go together except you.</p>
@@ -161,7 +170,9 @@
         <p class="font-semibold">This is what you really want?</p>
         <p>A cold pizza at home alone, while all of us are at the restaurant to taste a japanese omakase in the best restaurant of Zurich?</p>
         <p class="font-serif text-2xl italic">... see?</p>
-        <x-button :link="durl('/exploring-malaysia', 'book')"> Book now your seat </x-button>
+        <div class="max-w-lg mx-auto">
+            <x-button :link="durl('/explore-malaysia', 'book')"> Book now your seat </x-button>
+        </div>
         <p>Or you get a cold pizza!</p>
     </div>
 
@@ -191,7 +202,9 @@
     <p>Any later from that date, no reimbursement will be issued, and the payment will be considered final.</p>
     <p>The participation is not nominative, in case you cannot join, you can give your place to someone else. (You have to find that person.)</p>
     <p>In case of cancellation of the event from our side, a full 100% reimbursement will be issued.</p>
-    <x-button :link="durl('/explore-malaysia', 'book')" > Book your seat now! </x-button>
+    <div class="max-w-lg mx-auto">
+        <x-button :link="durl('/explore-malaysia', 'book')"> Book now your seat </x-button>
+    </div>
     <div class="h-12"></div>
 </article>
 
@@ -232,7 +245,7 @@
             const interval = setInterval(updateCountdown, 1000);
         }
 
-        const targetDate = new Date('2025-02-19T15:00:00Z').getTime();
+        const targetDate = new Date('2025-02-19T14:00:00Z').getTime();
         startCountdown(targetDate);
     </script>
 @endpush

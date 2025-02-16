@@ -23,7 +23,7 @@ class BookingController
             'offer' => $offer,
         ]);
 
-        if(!$event->scheduled_at->isPast()) {
+        if($event->scheduled_at->isPast()) {
             return view('book::pages.expired');
         }
 
