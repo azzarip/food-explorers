@@ -19,7 +19,7 @@ $event = $offer->eventWithData;
 
     <div class="pb-2 mx-auto w-fit">
     <a 
-    href="https://www.google.com/calendar/render?action=TEMPLATE&text={{ urlencode($event->title) }}&dates={{ $event->scheduled_at->format('Ymd\THis\Z') }}/{{ $event->finished_at->format('Ymd\THis\Z') }}&details={{ urlencode("Event organized by Food Explorers. Access your private area here: $myUrl") }}&location={{ urlencode($event->location->address) }}"
+    href="https://www.google.com/calendar/render?action=TEMPLATE&text={{ urlencode($event->title) }}&dates={{ $event->scheduled_at->setTimezone('UTC')->format('Ymd\THis\Z') }}/{{ $event->finished_at->setTimezone('UTC')->format('Ymd\THis\Z') }}&details={{ urlencode("Event organized by Food Explorers. Access your private area here: $myUrl") }}&location={{ urlencode($event->location->address) }}"
     target="_blank" rel="noopener noreferrer"
     class="flex items-center px-2 text-center border rounded align-center w-fit hover:bg-slate-200"
     >
