@@ -21,7 +21,7 @@
     @endif
 
     @if ($event->available <= 12)
-        <p class="font-semibold text-red-900">Less than 10 seats available!</p>
+        <p class="font-semibold text-red-900">Last seats available!</p>
     @endif
     
     @if($event->isSoldOut)
