@@ -198,8 +198,12 @@
     <p>The participation is not nominative, in case you cannot join, you can give your place to someone else. (You have to find that person.)</p>
     <p>In case of cancellation of the event from our side, a full 100% reimbursement will be issued.</p>
     
+
+
+    <div class="max-w-lg mx-auto">
+        <x-button :link="durl('/explore-malaysia', 'book')" > Reserve now your seat! </x-button>
+    </div>
     <div class="h-12"></div>
-    <x-button :link="durl('/explore-malaysia', 'book')" > Reserve now your seat! </x-button>
 </article>
 
 @endsection

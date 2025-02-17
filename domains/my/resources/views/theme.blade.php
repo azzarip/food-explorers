@@ -45,9 +45,9 @@ if (width > 1040) { open = true; }"
                                         @endif
                                         Home</a>
                                 </li>
-                                @php($selectedEvents = str_starts_with(request()->path(), 'events'))
+                                @php($selectedEvents = str_starts_with(request()->path(), 'event'))
                                 <li>
-                                    <a class="block w-full py-3 pl-4 border-amber-600  {{ $selectedEvents ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
+                                    <a class="block w-full py-3 pl-4 border-yellow-400/80  {{ $selectedEvents ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
                                         href="/events">
                                         @if($selectedEvents)
                                         <x-heroicon-s-calendar-days class="inline w-6 h-6 mr-1" />
@@ -58,7 +58,7 @@ if (width > 1040) { open = true; }"
                                 </li>
                                 @php($selectedAchievements = str_starts_with(request()->path(), 'achievements'))
                                 <li>
-                                    <a class="block w-full py-3 pl-4 border-amber-600 {{ $selectedAchievements ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
+                                    <a class="block w-full py-3 pl-4 border-yellow-400/80 {{ $selectedAchievements ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
                                         href="/achievements">
                                         @if($selectedAchievements)
                                         <x-heroicon-s-star class="inline w-6 h-6 mr-1" />
@@ -70,7 +70,7 @@ if (width > 1040) { open = true; }"
 
                                 @php($selectedSuggest = request()->path() == 'suggest')
                                 <li>
-                                    <a class="block w-full py-3 pl-4 border-amber-500  {{ $selectedSuggest ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
+                                    <a class="block w-full py-3 pl-4 border-yellow-400/80  {{ $selectedSuggest ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
                                         href="/suggest">
                                         @if($selectedSuggest)
                                         <x-heroicon-s-light-bulb class="inline w-6 h-6 mr-1" />

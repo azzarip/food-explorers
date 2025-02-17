@@ -13,7 +13,7 @@ $nextEvent = $contact->getNextEvent();
         <p class="mb-1 text-2xl font-semibold text-center"><x-heroicon-o-bell class="inline w-6 h-6 mb-1"/> @lang('Your next event'):</p>
         <hr>
         @if($nextEvent)
-            <x-my::event-card :event='$nextEvent' />
+            <x-my::event-card :event='$nextEvent' :going=true />
             <p class="mt-2 text-right"><a href="/events" class="underline">See other events </a> &rightarrow;</p>
         @else
         <p class="mt-4 italic text-center">You're not signed up for any events yet. <br>
