@@ -32,6 +32,7 @@ class EventController
         if($event->scheduled_at->endOfDay()->isPast()) {
             return abort(404);
         }
+        
         return view('my::event', [
             'event' => $event,
             'contact' => Auth::user(),
