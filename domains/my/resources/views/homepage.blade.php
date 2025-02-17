@@ -21,7 +21,7 @@ $nextEvent = $contact->getNextEvent();
         @endif
         </p>
     </div>
-    <div>
+    <div class="mb-4">
         <x-my::points :$points> 
             <a class="block mt-1 text-right hover:underline" href="/achievements">See Achievements <x-heroicon-o-arrow-right class="inline w-4 h-4 mb-1"/></a>
         </x-my::points>

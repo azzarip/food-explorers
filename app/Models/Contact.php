@@ -25,6 +25,7 @@ class Contact extends BaseContact implements HasLocalePreference
     {
         return $this->belongsToMany(Event::class)
             ->where('scheduled_at', '<', now()->startOfDay())
+            ->orderByDesc('scheduled_at')
             ->wherePivotNull('deleted_at')
             ->wherePivotNull('queue')
             ->withTimestamps();

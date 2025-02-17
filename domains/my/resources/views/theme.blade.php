@@ -36,7 +36,7 @@ if (width > 1040) { open = true; }"
                             <ul>
                                 @php($selectedHome = request()->path() == '/')
                                 <li>
-                                    <a class="block w-full py-3 pl-4 border-amber-600 {{ $selectedHome ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
+                                    <a class="block w-full py-3 pl-4 border-yellow-400/80 {{ $selectedHome ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
                                         href="/">
                                         @if($selectedHome)
                                         <x-heroicon-s-home class="inline w-6 h-6 mr-1" />
