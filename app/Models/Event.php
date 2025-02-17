@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use App\EventType;
+use App\Models\Offer;
 use App\Models\Location;
 use Illuminate\Support\Str;
 use Illuminate\Support\Carbon;
@@ -98,4 +100,15 @@ class Event extends Model
         return $this->event_type->name ?? 'null';
     }
 
+    public function getSlugAttribute(): ?string
+    {
+        return match($this->event_type) {
+            EventType::Menu => $this->offer?->slug,
+            default => null,
+        };
+    }
+    public function offer()
+    {
+        return $this->hasOne(Offer::class);
+    }
 }

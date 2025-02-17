@@ -21,10 +21,19 @@
                 <br> <span class="text-sm lg:text-lg ml-7 text-slate-600">{{ $event->location->address }}</span>
         </p>
         <div class="w-1/2 max-w-[150px] ml-auto mt-2 md:mt-auto">
+        @if($event->status == 'going')
             <div class="flex items-center w-full font-semibold bg-green-100 rounded-full cursor-pointer font-head hover:bg-green-300 group">
                 <x-heroicon-o-check class="inline w-8 h-8 p-2 bg-green-300 rounded-full lg:w-10 lg:h-10 group-hover:bg-green-600" />
                 <p class="px-4 text-center text-md md:text-xl font-head">Going</p>
             </div>
+        @else        
+            
+            @if($event->type == 'Menu') <a href="{{ durl( $event->slug, 'base') }}">@endif
+            <div class="flex items-center w-full font-semibold rounded-full cursor-pointer bg-slate-100 font-head hover:bg-amber-300 group">
+                <p class="px-4 mx-auto text-center text-md md:text-xl font-head">Explore</p>
+                <x-heroicon-o-arrow-right class="inline w-8 h-8 p-2 rounded-full bg-slate-300 lg:w-10 lg:h-10 group-hover:bg-amber-400" />
+            </div>@if($event->type == 'Menu') </a>@endif
+        @endif
         </div>
     </div>
 </div>

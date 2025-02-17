@@ -13,10 +13,17 @@ class EventController
      */
     public function index(Request $request)
     {
-        $events = Event::next()->get();
+        $nextEvents = Event::next()->get();
+        $contact = Auth::user();
+
+        $shownEvents = $nextEvents->filter(function ($event) use ($contact) {
+            $status = $contact->isGoingTo($event);
+            $event->status = $status ? 'going' : null;
+            return $contact->isGoingTo($event) || $event->event_type == \App\EventType::Menu;
+        });
         return view('my::events', [
-            'events' => $events,
-            'contact' => Auth::user(),
+            'events' => $shownEvents,
+            'contact' => $contact,
         ]);
     }
 

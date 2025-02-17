@@ -3,7 +3,7 @@
 @php
     $seo = new SEO(
         title: 'Food Explorers - Rum Tasting',
-        description: 'Rum Tasting on the 22. February 2025. Places are limited, book now.',
+        description: 'Rum Tasting on the 29. March 2025. Places are limited, book now.',
         robots: 'noindex, nofollow',
     );
     $slug = 'rum-tasting'
@@ -12,25 +12,32 @@
 @section('main')
 
 <article class="mt-2 lg:mt-4 wrapper">
-    <p class="font-serif text-3xl font-semibold text-center lg:text-4xl">Discover the Secrets of the World’s Most Exotic Spirit</p>
-    <p class="my-4 text-2xl font-bold text-center lg:text-3xl text-amber-800">Saturday 22. February 2025, 18:00</p>
+    <p class="mb-4 text-5xl text-center font-trajan">Rum Expedition</p>
+    <p class="font-serif text-3xl font-semibold text-center lg:text-4xl">A Cruise Through the <span class="text-amber-900">Spirits</span> of the Caribbean</p>
     <div class="w-4/5 mx-auto">
         <img src="@image('rum-tasting.webp')" alt="Rum Tasting Banner" class="my-4 rounded shadow-lg lg:block">
     </div>
+    <p>Get ready to set sail on a  <strong>flavorful voyage</strong> through the Caribbean, where we’ll explore the rich, diverse <strong>world of rum</strong>—from the smooth and mellow to the bold and fiery.</p>
     <p class="mt-4 mb-6 text-xl text-center lg:text-2xl">Join us for an <strong>Exclusive Rum Tasting Experience</strong> Designed to Discover Rare Flavors, Hidden Stories, and a New Passion for Rum!</p>
+    <p class="my-4 text-2xl font-bold text-center lg:text-3xl text-amber-800">Saturday 29. March 2025, 19:30</p>
+
     <div class="w-4/5 mx-auto my-4">
         <x-button :link='durl("/{$slug}", "book")'>I want to book my spot!</x-button>
     </div>
     <hr>
 
 <div class="mt-4 text-y lg:text-xl">
-        <p class="font-serif text-2xl font-semibold">Dear Foodie,</p>
+        <p class="font-serif text-2xl font-semibold">Dear Spirit Lover,</p>
 
-        <p>If you are a passionate of distillates, this is an event you cannot miss.</p>
-        <p>Together, we will </p>
+<p>On the 29th of March, we embark on our <strong>Rum Expedition</strong>, an evening dedicated to discovering the fascinating heritage and craftsmanship behind the Caribbean’s most iconic spirit. </p>
+<p>We’ll taste a curated lineup of rums, each with its own story, flavor profile, and tropical soul.</p>
 
+</p>
+<p>For one night only, we will transform our venue into a seafaring hideout, where you and your fellow explorers will set sail on a legendary <strong>Rum Expedition</strong> — but no passport required! </p>
+<p>You will have a chance to step on board and experience the thrill of traveling through the Antilles — without ever leaving Zürich.</p>
+<p>This is not  just another tasting—this is a fully immersive experience where every sip takes you deeper into the history, mystery, and mastery of the Caribbean’s most famous spirit.</p>
 
-        <h2 class="font-serif text-2xl font-semibold text-center">What is Rum really?</h2>
+<h2 class="font-serif text-2xl font-semibold text-center">What is Rum really?</h2>
         <p>Maybe you know, but Rum is nothing else that the <strong>distilled spirit</strong> produced from the fermented juice of sugar cane or its byproducts.</p>
         <p>What is interesting about Rum is not simply the really humble origin of its raw materials. </p>
         <p>But rather, the impressive story, and sensory voyage that Rum brings with, t </p>
