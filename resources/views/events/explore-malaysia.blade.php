@@ -26,19 +26,29 @@
     <p class="mt-2 mb-4 text-2xl text-center font-trajan">Wednesday 5. March 2025, 19:00</p>
 
     <img src="@image('explore-malaysia.webp')" alt="Explore Malaysia Banner" class="rounded-lg shadow-md">
-    <p class="max-w-xl mx-auto mt-4 font-serif text-2xl font-semibold text-center lg:text-3xl">A <span class="text-amber-800">culinary journey</span>  through authentic flavors at <span class="text-red-800">A Fatt</span></p>
+    <p class="max-w-xl mx-auto mt-4 font-serif text-2xl font-semibold text-center lg:text-3xl">A <span class="text-amber-800">culinary journey</span>  through authentic flavors at <span class="text-red-800">a fatt</span></p>
     <p class="italic text-center">Limmatstrasse 189, 8005 Zürich</p>
-
     <div class="mt-4 space-y-4">
-        <p><strong>Explore Malaysia</strong> is an your chance to dive into the rich and diverse flavors of Malaysia.</p> 
-        <p>On <strong>Wednesday 5. March</strong>, the team at <strong class="text-red-800">A Fatt</strong> restaurant will welcome us for an <strong>unforgettable dining experience</strong>, where we'll explore a variety of traditional and modern Malaysian dishes, from savory sauce, curries to delicious pork belly and roasted duck.</p> 
+        <p>Picture yourself in a bustling night market in <strong>Kuala Lumpur</strong>.</p>
+        <p>The air is filled with the <strong>aromatic blend of sizzling woks, smoky barbecued meats, and fragrant spices</strong>.</p> 
+        <p>Laughter and chatter fill the air as diners gather around shared tables, swapping stories over mouthwatering dishes.</p>
+    
+        <p>On <strong>Wednesday 5. March</strong>, the <strong class="text-red-800">A Fatt</strong> restaurant will transform into your gateway <strong>to Malaysia</strong>, offering an <strong>exclusive feast</strong> designed to take your taste buds on a journey through its vibrant flavors.</p> 
+        
+        <p class="text-2xl text-center text-bold">Zürich’s most beloved Malaysian restaurant, will welcome us for an <strong>unforgettable dining experience</strong></p> 
+        <p>It will be a <strong>one-time-only feast</strong> featuring the bold and diverse flavors of the South East Asia.</p>
         <p><strong>A Fatt</strong>, located near Limmatplatz, is considered by many the best Malaysian restaurants in Zurich, with <strong>4.7 <x-heroicon-s-star class="inline w-6 h-6 text-amber-600"/> on Google Maps</strong>.</p> 
         <p>The restaurant’s follows a <strong>Authentic Chinese Style</strong> where a range of dishes are shared together, in a style similar to a Tavolata. </p>
+
+        <p>This isn't just a dinner, it's a  <strong>shared adventure</strong>. In true Malaysian fashion.</p>
+        <p>Our tables will be filled with plates to be passed around,  <strong class="text-amber-900">bringing food lovers together</strong> and making new friends over a this experience.</p>
         <p>You will <strong class="text-amber-900">share and savor</strong> the incredible diversity of Malaysian cuisine.</p> 
+        <p><x-heroicon-s-star class="inline w-6 h-6 text-yellow-500"/>If you’ve joined me for a Japanese Omakase before, this will have a similar style—where we share and enjoy a variety of dishes together. <x-heroicon-s-star class="inline w-6 h-6 text-yellow-500"/> </p>
+        <p>Plates are passed around, <strong>flavors are explored together</strong>, and every meal becomes a social event.</p>
         <p>This is a popular style of eating in Malaysia, where meals are meant to be shared with friends. </p>
         <p>It’s a truly social way to dine, and you’ll get to <strong>enjoy a wide variety of dishes</strong> that showcase the <strong>fragrant flavors of Malaysia</strong>.</p> 
         <p>To ensure an <strong>authentic experience</strong>, we have worked closely with the chef to craft a special menu that highlights the most traditional and beloved Malaysian dishes.        </p>
-        <p>Now, let’s take a closer look at what awaits you:</p>
+        <p>Now, let’s take a closer look at what awaits you...</p>
     </div>
     
     <h2 class="my-6 font-serif text-2xl font-semibold text-center lg:text-3xl">Menu</h2>
@@ -48,14 +58,15 @@
         <li><strong>Char Kuey <span class="ml-2 text-red-800">炒蘿蔔糕</span></strong>  
             <br>This is the traditional Malay radish cake. Crispy on the outside, soft and delicate inside—these wok-fried radish cakes are infused with aromatic garlic, umami-rich soy sauce, and a hint of smoky wok hei.</li>
         <li><strong>Achar <span class="ml-2 text-red-800">來西亞泡菜</span></strong>  
-            <br>The Malaysian-style pickles, a mix of crunchy cucumbers, carrots, and cabbage, soaked in a tangy, slightly spicy turmeric-infused sauce.</li>
+            <br>Vibrant, golden-hued pickles offer a crisp, refreshing crunch, balancing sweet, sour, and spicy flavors in perfect harmony.</li>
         <li><strong>Fu Pi Juan <span class="ml-2 text-red-800"> 腐卷娟</span></strong>  
             <br>Golden-brown tofu skin rolls encasing a juicy and flavorful filling of finely chicken and shimpss.</li>
     </ul>
     <h3 class="my-6 font-serif text-2xl">Main Dishes</h3>
     <ul class="pl-4 space-y-4">
+
         <li><strong>Sin Yuk (Crispy Pork Belly)<span class="ml-2 text-red-800"> 蒜香燒肉</span> </strong>
-            <p> Succulent slices of pork are slow-roasted until tender and caramelized. Crunchy outside with a softer meat inside.</p>
+            <p>Succulent slices of pork are slow-roasted until tender and caramelized. Crunchy outside with a softer meat inside.</p>
         </li>
         <li><strong>Char Siu (BBQ Pork)<span class="ml-2 text-red-800">叉燒</span> </strong>
             <p>Pork marinated in a rich blend of soy sauce, honey, hoisin, and aromatic spices, then roasted. A true chinese BBQ classic.</p>
@@ -94,36 +105,41 @@
     <div class="max-w-lg mx-auto">
         <x-button :link="durl('/explore-malaysia', 'book')" > Reserve now your seat! </x-button>
     </div>
+    <p class="text-2xl font-semibold text-center">🔥 Limited Seats. One Night Only. 🔥</p>
+    <p class="mt-4">Our last special dinner event sold out in less than 48 hours. This is your only chance to enjoy this exclusive menu at this special price.    </p>
+
+    
+    <h2 class="mt-12 mb-4 font-serif text-2xl font-semibold">Who are we?</h2>
+    <div class="mt-6 space-y-4">
+        <p>🌍 <strong>Welcome to Food Explorers!</strong> 🍽️</p>
+        <p>We are a passionate community of food lovers, bringing together fellow foodies in Zurich and beyond to share unforgettable dining experiences.</p>
+        <p>👋 My name is Marco, and I’m the chief organizer of this wonderful foodie community! </p>
+        <p>Each week, we curate exciting events centered around great food and drinks, creating the perfect setting to connect with like-minded people.</p>
+        <p>Our goal? To bring food lovers together and turn shared meals into lasting <strong>foodie friendships</strong>.</p>
+        <p>🍷 From casual restaurant meetups to <strong>special dining experiences</strong> like this one at <strong>A Fatt</strong>, we explore the best culinary spots in town.</p>
+        <p>Our community is growing fast, with more than <strong>1,600 members</strong> and counting! <a href="https://www.meetup.com/zurich-restaurant-explorers/" class="text-blue-800 underline" target="_blank" rel="noopener noreferrer">Join us on Meetup</a> and be part of the adventure!</p>
+        
     <h2 class="mt-12 mb-4 font-serif text-2xl font-semibold">How is the dinner organized?</h2>
     <div class="mt-6 space-y-4">
-        <p>The dinner is served in  <strong>authentic  Chinese style</strong> where all the dishes are served in trays in the center of the table.</p>
-        <p>Instead of receiving a single main dish, to each guest is given a bowl of rice and an empty plate.</p>
-        <p>Throughout the evening, all the dishes will come in various rounds out of the kitchen giving you the opportunity to try a wide selection of the menu.</p>
-        <p>All the dishes will be <strong>shared</strong> among the guests, you can eat what you want out of the shared dishes.</p>
-        <p>Drinks, beers, and water are not included. But you can order them and pay for it at the check out.</p>
+        <p>✨ <strong>A Feast Meant to Be Shared</strong> ✨</p>
+        <p>Step into the warm, welcoming spirit of <strong>authentic Malay dining</strong>, where every meal is a celebration. Instead of individual plates, a stunning array of trays will be placed at the center of the table, inviting you to share, savor, and explore together.</p>
+        <p>Each guest will receive a bowl of fragrant rice and an empty plate—ready to be filled with an ever-changing selection of flavors as the kitchen sends out dish after dish in a dynamic, multi-course experience.</p>
+        <p><strong>Pass, taste, and enjoy</strong>—this is more than just dinner; it’s a chance to connect over incredible food, making new foodie friends along the way.</p>
+        <p>🥂 <strong>Thirsty?</strong> Drinks, beers, and water are available for order at the restaurant and can be paid for separately at checkout.</p>
     </div>
         <img src="https://cdn.i-scmp.com/sites/default/files/styles/1020x680/public/d8/images/canvas/2024/10/21/cbd16316-01fe-4fce-9605-74396af0bac6_930eaeb7.jpg?itok=XUQgmjCJ&v=1729485365" alt="Chinese Dinner" class="my-4 rounded drop-shadow-lg">
-    
-        <h2 class="mt-12 mb-4 font-serif text-2xl font-semibold">Who are we?</h2>
     <div class="mt-6 space-y-4">
-        <p>We are <strong>Food Explorers</strong>, we are a community of Foodies really active in Zurich and surroundings.</p>
-        <p>My name is Marco. And I am the chief organizer of this Foodie Community!</p>
-        <p>We organize weekly events in Zurich: food and drinks related!</p>
-        <p>The idea behind this group is to strong make <strong>foodie friends</strong> with people in Zurich.</p>
-        <p>Usually we organize weekly meetups in restaurant and bars, in a more relaxed atmosphere.</p>
-        <p>Sometimes we organize more <strong>special dinners</strong>, like this one at <strong>A Fatt</strong>.</p>
-        <p>Our meetup group counts more than <strong>1'600 members</strong> and keeps growing (<a href="https://www.meetup.com/zurich-restaurant-explorers/" class="text-blue-800 underline" target="_blank" rel="noopener noreferrer">Check our Meetup group</a> )</p>
-    
-        <div class="mt-6 space-y-4">
         <h2 class="mt-6 mb-4 font-serif text-2xl font-semibold">How much does it costs?</h2>
-        <p>If you go to the restaurant with 4 people to taste all of the previously shown menu you will pay almost 75.- Francs per person.</p>
-        <p>You will have this menu, only for that night at:</p>
-        <p class="text-center">
-            <span class="font-serif text-6xl text-green-900">62.-</span>
-        </p>
-        <p>62.- Francs per person, for all that magic you have seen above!</p>
-        <p>The offer is valid until all seats are reserved!</p>
-        <p>We are going to be <strong>sold out</strong> pretty fast!</p>
+        <p>If you went to a restaurant with four people to taste everything on this exclusive menu, you’d pay nearly 75 CHF per person.</p>
+        <p>But for this <strong>one-night-only experience</strong>, you’re getting it for just:</p>
+
+        <div class="text-center">
+            <p class="font-semibold font-trajan">Exclusive One-Night-Only Menu</p>
+            <p class="font-serif text-6xl text-green-900">62.-</p>
+        </div>
+        <p>That’s right—only 62 CHF for everything you’ve seen above!</p>
+        <p class="text-2xl font-semibold text-center">The offer is valid until all seats are reserved!</p>
+        <p class="text-center">🚀 Last few Spots available. Grab yours now!</p>
     </div>
  <hr class="my-2">
     <p class="text-xl font-semibold text-center underline underline-offset-4 decoration-4 decoration-green-600">Now you have two choices:</p>
