@@ -11,8 +11,8 @@ class WelcomeSequence extends SequenceAutomation
 {
     public function start()
     {
-        $this->owner->notify(new TelegramNotification('*New Registration*', $this->contact));
-        if($this->contact->getPoints() == 0)  {
+        $this->owner->notify(new TelegramNotification('🖊 *New Registration*', $this->contact));
+        if($this->contact->participatedEvents()->count() < 1)  {
             $this->email(WelcomeEmail::class);
             $this->tag('Rookie');
         }

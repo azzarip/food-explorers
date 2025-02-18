@@ -12,6 +12,6 @@ class WelcomeEmail extends EmailAutomation
     protected $utm_content = '';
 
     public function click() {
-        return url(durl('/events', 'my')->url(), $this->getUtms());
+        return durl('/events', 'my', $this->getUtms())->url();
     }
 }

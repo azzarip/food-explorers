@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Azzarip\Teavel\Models\Contact;
+use App\Models\Contact;
 use Illuminate\Support\Facades\Auth;
 use Azzarip\Teavel\Jobs\CompleteForm;
 use Illuminate\Support\Facades\Session;
@@ -30,7 +30,7 @@ class RegisterController extends Controller
         }
 
         CompleteForm::dispatchAfterResponse($contact, Registration::class);
-        
+
         Auth::login($contact, true);
         
         if(Session::has('url.intended')) {

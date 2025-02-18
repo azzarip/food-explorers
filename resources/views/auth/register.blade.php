@@ -10,7 +10,7 @@
 
 @section('content')
     <div class="pt-4 pb-8 lg:pt-10">
-        <p class="text-2xl text-yellow-700 lg:text-4xl font-trajan">Food Explorers</p>
+        <p class="text-2xl text-center text-yellow-700 lg:text-4xl font-trajan">Food Explorers</p>
         <div>
             <h1 class="mb-2 text-3xl leading-normal text-center text-black">Become a member <br> 
             <span class="text-xl italic font-semibold"><x-heroicon-s-sparkles class="inline w-6 h-6 mb-1 text-amber-600"/> TOTALLY FREE <x-heroicon-s-sparkles class="inline w-6 h-6 mb-1 text-amber-600"/></span></h1>
