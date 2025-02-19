@@ -26,7 +26,9 @@ Hotel Windsor Milano
 
 *Via Galileo Galilei, 2* ([Maps](https://maps.app.goo.gl/jHuiKxqagAaiZRvb6))
 
-Metro Stop: Repubblica
+🕓 12:30
+
+Yellow Metro Stop: Repubblica
 
 ### First Restaurant
 
@@ -42,7 +44,7 @@ SunEleven Rooftop Bar
 
 *P.za Cesare Beccaria* ([Maps](https://maps.app.goo.gl/vHkAN7ZeArYJRsmn8))
 
-🕓 19:20
+🕓 19:15
 
 ---
 
