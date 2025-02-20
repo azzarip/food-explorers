@@ -29,5 +29,5 @@ Route::middleware('guest')->group(function () {
 
 Route::get('telegram-test', function () {
     App\Models\User::first()->notify(new TelegramNotification('Test'));
-    return 'Ok!';
+    return 'Message Queued, if not working check the queue.';
 });
