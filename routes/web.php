@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\RegisterController;
+use App\Notifications\TelegramNotification;
 use Illuminate\Support\Facades\Route;
+use NotificationChannels\Telegram\TelegramBase;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,4 +25,9 @@ Route::middleware('guest')->group(function () {
     Route::view('/profile/complete', 'auth.simple-register')->name('simple-register');
 
     Route::middleware('throttle:5')->post('/register', RegisterController::class);
+});
+
+Route::get('telegram-test', function () {
+    App\Models\User::first()->notify(new TelegramNotification('Test'));
+    return 'Ok!';
 });
