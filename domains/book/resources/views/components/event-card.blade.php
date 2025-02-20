@@ -20,7 +20,9 @@
     <p class="font-semibold"><x-heroicon-s-users class="inline w-6 h-6 mb-1 text-amber-800/50"/> {{ $event->going }} Going</p>
     @endif
 
-    @if ($event->available <= 3)
+    @if ($event->available == 1)
+    <p class="font-semibold text-red-900">Only 1 seat available!</p>
+    @elseif ($event->available <= 3)
         <p class="font-semibold text-red-900">Only {{ $event->available }} seats available!</p>
     @elseif($event->available <= 12)
         <p class="font-semibold text-red-900">Last seats available!</p>
