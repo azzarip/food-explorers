@@ -15,23 +15,18 @@ class QuestionController
     {
         $contact = Auth::user();
       
-        $options = array_keys(array_filter(array_map(function($value) {
-            return (bool) (int) $value;
-        }, $request->only('restaurant', 'bar'))));
+        $options = array_map(fn($value) => (bool) $value, $request->only('Food', 'Drinks', 'Adventures'));
         
         
-        if ( ! array_filter($options)) {
-            throw ValidationException::withMessages(['invalid_selection' => trans('Please choose at least one option')]);
+        foreach($options as $tag => $flag) {
+            if($flag) {
+                $contact->tag($tag);
+            } else {
+                $contact->detag($tag);
+            }
         }
 
-        $contact->tag('question.service');
-        if (in_array('bar', $options)) {
-            $contact->tag('Spirit Sailor');
-        } 
-
-        if (in_array('restaurant', $options)) {
-            $contact->tag('Food Explorer');
-        } 
+        $contact->tag('Question - Event Types');
 
         return to_route('my');
     }

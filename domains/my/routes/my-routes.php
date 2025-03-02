@@ -31,7 +31,7 @@ Route::group([
     Route::view('/achievements/instructions', 'my::achievement-instructions');
 
     Route::post('/set-language', SetLanguageController::class)->name('set-language')->middleware('auth');
-    Route::post('/question/services', QuestionController::class);
+    Route::post('/question/event-type', QuestionController::class);
 
 
     Route::delete('/event/{event}', [ParticipationController::class, 'delete'])->name('participation.cancel');

@@ -12,11 +12,12 @@ class MyController
      */
     public function __invoke(Request $request)
     {
-        //$contact = Auth::user();
+        $contact = Auth::user();
 
-        // if( ! $contact->has_locale) {
-        //     return view('my::questions.choose-language');
-        // }
+        if($contact->hasNotTag('Question - Event Types')) {
+            $types = $contact->hasTags(['Food', 'Drinks', 'Adventures']);
+            return view('my::questions.event-types', $types);
+        }
         
         return view('my::homepage');
     }
