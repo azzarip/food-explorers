@@ -21,7 +21,7 @@
     @endif
 
     @if ($event->available <= 0)
-        <span class="text-xl font-semibold text-red-900 font-trajan">SOLD-OUT</span>
+        <p class="text-xl font-semibold text-red-900 font-trajan">SOLD-OUT</p>
     @elseif ($event->available == 1)
         <p class="font-semibold text-red-900">Only 1 seat available!</p>
     @elseif ($event->available <= 3)
