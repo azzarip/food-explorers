@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\EventType;
 use App\Models\Offer;
+use App\Models\Review;
 use App\Models\Location;
 use Illuminate\Support\Str;
 use Illuminate\Support\Carbon;
@@ -110,5 +111,13 @@ class Event extends Model
     public function offer()
     {
         return $this->hasOne(Offer::class);
+    }
+
+    public function reviewers()
+    {
+        return $this->belongsToMany(Contact::class, 'reviews')
+                    ->using(Review::class) 
+                    ->with(['rating', 'data'])
+                    ->withTimestamps();
     }
 }

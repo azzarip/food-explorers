@@ -43,14 +43,13 @@
     </div>
 
 
-    <section x-show="open == 'restaurants'" class="max-w-lg py-6 mx-auto mt-6 space-y-8 max-lg:px-2">
-        
+    <section x-show="open == 'restaurants'" class="max-w-xl py-6 mx-auto mt-6 space-y-8 max-lg:px-2">
 
         <x-my::achievements.restaurant
             title="Explore Malaysia"
             key='afatt'
             :active="in_array('Explore Malaysia', $achievements)"
-            description="A gastronomic journey that brings the vibrant flavors of Malaysia to Zurich. This one-night-only feast will immerse you in the rich culinary traditions of Southeast Asia."
+            description="A gastronomic journey that brings the vibrant flavors of Malaysia to Zurich. This feast will immerse you in the rich culinary traditions of Southeast Asia."
         /> 
         
         <x-my::achievements.restaurant

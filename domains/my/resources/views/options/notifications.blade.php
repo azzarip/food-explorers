@@ -43,7 +43,7 @@
                     <input type="checkbox" name="Adventures" value="true" @checked($types['Adventures'])>
                     <span class="slider"></span>
                 </label>
-                <span class="ml-2 text-xl font-semibold">Adventures</span>
+                <span class="ml-2 text-xl font-semibold">Adventures around the world</span>
             </div>
             <button class="std-button">
                 @lang('Save') <x-heroicon-o-arrow-right class="inline w-6 mb-1 aspect-auto" />

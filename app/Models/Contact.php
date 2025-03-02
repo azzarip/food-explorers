@@ -77,4 +77,12 @@ class Contact extends BaseContact implements HasLocalePreference
         return $this->first_name;
     }
 
+    public function reviewed()
+    {
+        return $this->belongsToMany(Event::class, 'reviews')
+                    ->using(Review::class) 
+                    ->with(['rating', 'data'])
+                    ->withTimestamps();
+    }
+
 }
