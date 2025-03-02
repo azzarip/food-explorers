@@ -26,6 +26,7 @@ Route::group([
     Route::view('/options', 'my::options.index');
     Route::view('/options/password', 'my::options.password');
     Route::view('/options/language', 'my::options.language');
+    Route::view('/options/notifications', 'my::options.notifications');
 
     Route::view('/achievements', 'my::achievements');
     Route::view('/achievements/instructions', 'my::achievement-instructions');

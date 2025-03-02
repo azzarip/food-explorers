@@ -17,7 +17,6 @@ class QuestionController
       
         $options = array_map(fn($value) => (bool) $value, $request->only('Food', 'Drinks', 'Adventures'));
         
-        
         foreach($options as $tag => $flag) {
             if($flag) {
                 $contact->tag($tag);
@@ -28,6 +27,6 @@ class QuestionController
 
         $contact->tag('Question - Event Types');
 
-        return to_route('my');
+        return redirect()->back()->with('saved', true);
     }
 }

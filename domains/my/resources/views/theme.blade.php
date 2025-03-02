@@ -17,7 +17,7 @@ if (width > 1040) { open = true; }"
             @if ($nav)
                 <div id="sidebar"
                     class="z-40 flex flex-col justify-between font-semibold text-white bg-gray-900 shadow-xl max-md:absolute max-md:min-h-screen shadow-gray-900 w-80"
-                    x-show="open" x-transition:enter="transition duration-300"
+                    x-show="open" x-transition:enter="transition duration-300" x-cloak
                     x-transition:enter-start="transform -translate-x-full"
                     x-transition:enter-end="transform translate-x-0" x-transition:leave="transition duration-300"
                     x-transition:leave-start="transform translate-x-0"
@@ -79,6 +79,17 @@ if (width > 1040) { open = true; }"
                                         @endif
                                         Suggest an Event</a>
                                 </li>
+                                @php($selectedOptions = request()->path() == 'options')
+                                <li>
+                                    <a class="block w-full py-3 pl-4 border-yellow-400/80  {{ $selectedOptions ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
+                                        href="/suggest">
+                                        @if($selectedOptions)
+                                        <x-heroicon-s-cog-8-tooth class="inline w-6 h-6 mr-1" />
+                                        @else
+                                        <x-heroicon-o-cog-8-tooth class="inline w-6 h-6 mr-1" />
+                                        @endif
+                                        Options</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -110,9 +121,6 @@ if (width > 1040) { open = true; }"
                                 <div class="p-4 text-black bg-white rounded-lg shadow-xl ">
                                     <p>{{ auth()->user()->full_name }}</p>
                                     <p class="font-normal">{{ auth()->user()->email }}</p>
-                                    <hr class="mt-1 mb-2">
-                                    <a class="block w-full py-1 pl-1 rounded-lg hover:bg-gray-200" href="/options">
-                                        <x-heroicon-o-cog-8-tooth class="inline w-6 h-6 mr-2" />@lang('Options')</a>
                                     <hr class="mt-1 mb-2">
                                     <button class="w-full px-1 pt-1 text-left rounded-lg hover:bg-gray-200"
                                         @click="$dispatch('logout')">
