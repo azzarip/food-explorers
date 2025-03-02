@@ -45,18 +45,26 @@
 
     <section x-show="open == 'restaurants'" class="max-w-lg py-6 mx-auto mt-6 space-y-8 max-lg:px-2">
         
+
+        <x-my::achievements.restaurant
+            title="Explore Malaysia"
+            key='afatt'
+            :active="in_array('Explore Malaysia', $achievements)"
+            description="A gastronomic journey that brings the vibrant flavors of Malaysia to Zurich. This one-night-only feast will immerse you in the rich culinary traditions of Southeast Asia."
+        /> 
+        
         <x-my::achievements.restaurant
             title="Pizza Tasting"
             key='napule'
             :active="in_array('Napule Pizza Tasting', $achievements)"
-            line='Napulé, Meilen'
+            description='Napulé, Meilen'
         /> 
 
         <x-my::achievements.restaurant
             title="Omakase"
             key='yu-an'
             :active="in_array('Yu-An Omakase', $achievements)"
-            line='A culinary journey of Japan, through artfully crafted dishes that bring flavors and traditions to life.'
+            description='A culinary journey of Japan, through artfully crafted dishes that bring flavors and traditions to life.'
         /> 
 
         <x-my::achievements.restaurant
@@ -64,7 +72,7 @@
             key='1001-nights'
             :active="in_array('1001 Nights', $achievements)"
             :unlocked="$points>=4"
-            line='Dive into a magical ambiance that transports you straight to the heart of the Middle East.'
+            description='Dive into a magical ambiance that transports you straight to the heart of the Middle East.'
         /> 
 
     </section>
@@ -79,7 +87,7 @@
             key='milano'
             :active="in_array('Milano Meraviglia', $achievements)"
             :unlocked="$points>=1"
-            line='Exploring Milan’s Cuisine, Hidden Treasures, and Luxury Life.'
+            description='Exploring Milan’s Cuisine, Hidden Treasures, and Luxury Life.'
         /> 
 
     </section>

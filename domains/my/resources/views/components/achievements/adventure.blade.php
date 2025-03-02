@@ -1,4 +1,4 @@
-@props(['title', 'line', 'active' => false, 'key', 'unlocked' => true])
+@props(['title', 'description', 'active' => false, 'key', 'unlocked' => true])
 
 <div class="flex items-start gap-4 py-4 pl-4 border-2 rounded-lg {{ $active ? ' border-yellow-700  shadow-lg bg-gradient-to-br from-yellow-200 via-yellow-300 to-yellow-400' : ''}}">
     <div class="relative w-[140px] aspect-square">
@@ -14,6 +14,6 @@
         <p class="float-right p-1 ml-auto mr-2 text-sm font-semibold text-gray-700 rounded-md lg:mr-4 w-fit bg-stone-200 text-serif"><x-heroicon-s-lock-closed class="inline w-4 mb-1 ml-1 aspect-square" /> LOCKED</p>
         @endif
         <p class="mb-1 text-2xl font-semibold lg:text-3xl font-head">{{ $title }}</p>
-        <p class="italic max-lg:text-sm text-md @if(!$unlocked) select-none blur-sm @endif">{{ $line }}</p>
+        <p class="italic max-lg:text-sm text-md @if(!$unlocked) select-none blur-sm @endif">{{ $description }}</p>
     </div>
 </div>
