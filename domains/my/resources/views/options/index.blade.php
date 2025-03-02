@@ -1,11 +1,5 @@
 @extends('azzarip::layouts.1col')
 
-@php
-    $de = auth()->user()->speaks('de');
-    $en = auth()->user()->speaks('en');
-    $locale = app()->getLocale();
-@endphp
-
 @section('main')
 <div class="max-w-3xl mx-auto mt-4 max-lg:px-2">
     <h1 class="mb-8 text-3xl font-semibold text-center font-head">@lang('Options')</h1>

@@ -80,6 +80,8 @@
     <section x-show="open == 'bars'" x-cloak>
         <p class="mt-12 text-2xl italic text-center">Coming Soon</p>
     </section>
+
+    
     <section x-show="open == 'adventures'" x-cloak class="max-w-xl py-6 mx-auto max-lg:px-2">
         
         <x-my::achievements.adventure

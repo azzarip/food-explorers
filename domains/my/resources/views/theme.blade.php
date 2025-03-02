@@ -82,7 +82,7 @@ if (width > 1040) { open = true; }"
                                 @php($selectedOptions = request()->path() == 'options')
                                 <li>
                                     <a class="block w-full py-3 pl-4 border-yellow-400/80  {{ $selectedOptions ? 'bg-gray-700 border-l-4' : 'hover:bg-gray-800' }}"
-                                        href="/suggest">
+                                        href="/options">
                                         @if($selectedOptions)
                                         <x-heroicon-s-cog-8-tooth class="inline w-6 h-6 mr-1" />
                                         @else
