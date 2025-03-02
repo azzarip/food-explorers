@@ -20,16 +20,15 @@
     <p class="font-semibold"><x-heroicon-s-users class="inline w-6 h-6 mb-1 text-amber-800/50"/> {{ $event->going }} Going</p>
     @endif
 
-    @if ($event->available == 1)
-    <p class="font-semibold text-red-900">Only 1 seat available!</p>
+    @if ($event->available <= 0)
+        <span class="ml-3 text-xl font-semibold text-red-900 font-trajan">SOLD-OUT</span>
+    @elseif ($event->available == 1)
+        <p class="font-semibold text-red-900">Only 1 seat available!</p>
     @elseif ($event->available <= 3)
         <p class="font-semibold text-red-900">Only {{ $event->available }} seats available!</p>
     @elseif($event->available <= 12)
         <p class="font-semibold text-red-900">Last seats available!</p>
     @endif
     
-    @if($event->isSoldOut)
-        <p><x-heroicon-s-user-group class="inline w-6 h-6 mb-1 text-amber-800/50"/> {{ $event->capacity }} Going <span class="ml-3 text-xl font-semibold text-red-900 font-trajan">(SOLD-OUT)</span></p>
-    @endif
     <p class="mt-4 font-serif text-2xl font-bold"><small class="font-sans">CHF</small> {{ $offer->price }} </p>
 </div>
