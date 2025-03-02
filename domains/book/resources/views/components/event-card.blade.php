@@ -13,14 +13,14 @@
 </div>
 <div class="pl-4 mt-2 space-y-2 w-fit">
     <p><x-heroicon-s-map-pin class="inline w-6 h-6 mb-1 text-amber-800/50"/> {{ $event->location->name }}, {{ $event->location->address }} 
-        (<a href="{{ $event->location->google_maps_url }}" class="inline-link" rel=“noreferrer”>Maps</a>)</p>
+        (<a href="{{ $event->location->google_maps_url }}" class="inline-link" rel=“noreferrer”>Maps<x-heroicon-o-arrow-top-right-on-square class="inline w-4 h-4 mb-1 ml-1" /></a>)</p>
         </p>
 
     @if($event->going >= 5)
     <p class="font-semibold"><x-heroicon-s-users class="inline w-6 h-6 mb-1 text-amber-800/50"/> {{ $event->going }} Going</p>
     @endif
 
-    @if ($event->available <= 0)
+    @if ($event->is_sold_out)
         <p class="text-xl font-semibold text-red-900 font-trajan">SOLD-OUT</p>
     @elseif ($event->available == 1)
         <p class="font-semibold text-red-900">Only 1 seat available!</p>
