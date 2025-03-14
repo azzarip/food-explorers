@@ -3,7 +3,6 @@
 use App\Http\Controllers\RegisterController;
 use App\Notifications\TelegramNotification;
 use Illuminate\Support\Facades\Route;
-use NotificationChannels\Telegram\TelegramBase;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,9 +15,6 @@ use NotificationChannels\Telegram\TelegramBase;
 |
 */
 
-Route::get('/', function () {
-    abort(404);
-});
 
 Route::middleware('guest')->group(function () {
     Route::view('/register', 'auth.register')->name('register');

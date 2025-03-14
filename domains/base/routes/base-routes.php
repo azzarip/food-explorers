@@ -22,6 +22,7 @@ Route::group([
     Route::view('/rum-expedition', 'events.rumtasting');
 
     Route::view('/explore-malaysia', 'events.explore-malaysia');
+    Route::view('/goodbye-dapur', 'events.goodbye-dapur');
 
     Route::view('/explore-malaysia/m', 'events.explore-malaysia-meetup');
 
