@@ -71,7 +71,8 @@ class Event extends Model
         return [
             'scheduled_at' => 'datetime',
             'ended_at' => 'datetime',
-            'event_type' => \App\EventType::class
+            'event_type' => \App\EventType::class,
+            'public_type' => \App\EventPublic::class,
         ];
     }
 
@@ -99,6 +100,11 @@ class Event extends Model
     public function getTypeAttribute(): string
     {
         return $this->event_type->name ?? 'null';
+    }
+
+    public function getPublicAttribute(): string
+    {
+        return $this->event_type->name ?? 'Unlisted';
     }
 
     public function getSlugAttribute(): ?string

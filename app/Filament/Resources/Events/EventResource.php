@@ -4,11 +4,13 @@ namespace App\Filament\Resources\Events;
 
 use App\EventType;
 use Filament\Forms;
+use App\EventPublic;
 use Filament\Tables;
 use App\Models\Event;
 use App\Models\Location;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
+use Filament\Infolists\Infolist;
 use Filament\Resources\Resource;
 use Filament\Forms\Components\Select;
 use Filament\Tables\Columns\TextColumn;
@@ -19,7 +21,6 @@ use Filament\Forms\Components\DateTimePicker;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\Events\EventResource\Pages;
 use App\Filament\Resources\Events\EventResource\RelationManagers;
-use Filament\Infolists\Infolist;
 
 class EventResource extends Resource
 {
@@ -47,6 +48,10 @@ class EventResource extends Resource
                     ->required()
                     ->default(0)
                     ->options(EventType::class),
+                Select::make('public_type')
+                    ->default(null)
+                    ->placeholder('Unlisted')
+                    ->options(EventPublic::class),
                 Select::make('location_id')
                     ->label('Location')
                     ->required()
@@ -69,8 +74,9 @@ class EventResource extends Resource
         return $infolist
         ->schema([
             TextEntry::make('title'),
-            TextEntry::make('type'),
             TextEntry::make('location.name'),
+            TextEntry::make('type'),
+            TextEntry::make('public'),
             TextEntry::make('capacity'),
             TextEntry::make('scheduled_at')->dateTime(),
             TextEntry::make('ended_at')->dateTime(),
