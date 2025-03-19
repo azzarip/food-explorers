@@ -67,7 +67,7 @@
             <p>I’ve chosen to organize our three days around three distinct themes, which are:</p>
             <ul class="text-2xl font-semibold list-disc list-inside font-head">
                 <li>Day 1: <span class="text-red-700">Milano Classics</span></li>
-                <li>Day 2: <span class="text-yellow-500">Luxury Life</li>
+                <li>Day 2: <span class="space-y-3ellow-500">Luxury Life</li>
                 <li>Day 3: <span class="text-green-800">Grand Finale</span></li>
             </ul>
         </div>
@@ -123,14 +123,14 @@
                 <div class="p-2 mx-auto bg-white rounded-lg lg:p-4">
                     <p class="my-4 font-serif text-2xl font-semibold text-center"> Milano Classics</p>
                     <p class="my-4 font-serif text-2xl font-semibold text-center">Menu</p>
-                    <div class="max-w-lg pl-4 mx-auto my-1 text-y">
+                    <div class="max-w-lg pl-4 mx-auto my-1 space-y-3">
                         <p class="font-serif text-lg font-semibold">Antipasti</p>
                         <p>Tagliere di salumi e formaggi <br> <i>Cured Meats and Cheese Platter </i> </p>
                         <p>Sottaceti lombardi <br> <i>Lombard Pickled Vegetables </i> </p>
                         <p>Slinzega valtellinese <br> <i>Valtellina Cold cuts </i> </p>
                         <p>Parmigiana di melanzane <br> <i>Eggplant Parmigiana </i> </p>
                     </div>
-                    <div class="max-w-lg pl-4 mx-auto my-8 text-lg text-y">
+                    <div class="max-w-lg pl-4 mx-auto my-8 text-lg space-y-3">
                         <p class="mt-2 font-serif text-xl font-semibold">Piatto Principale</p>
                         <p>Risotto alla Milanese</p>
                         <p>Ossobuco alla Milanese</p>
@@ -196,7 +196,7 @@
         </button>
 
         <hr>
-        <div class="px-2 py-2 my-4 text-y">
+        <div class="px-2 py-2 my-4 space-y-3">
             <h2 class="text-3xl font-semibold font-head">Where is the name of the Restaurant?</h2>
             <p> You might have noticed that I’ve intentionally left out the names of the restaurants for this trip. </p>
             <p><strong> That’s no accident!</strong> I’ve spent weeks carefully planning every detail of this weekend, from
@@ -276,14 +276,14 @@
                 <div class="p-2 mx-auto bg-white rounded-lg lg:p-4">
                     <p class="my-4 font-serif text-2xl font-semibold text-center"> Sea Dinner</p>
                     <p class="my-4 font-serif text-2xl font-semibold text-center">Menu</p>
-                    <div class="max-w-lg pl-4 mx-auto my-1 text-y">
+                    <div class="max-w-lg pl-4 mx-auto my-1 space-y-3">
                         <p class="font-serif text-lg font-semibold">Antipasti</p>
                         <p>Carpaccio <br> <i>Fish Carpaccio</i> </p>
                         <p>Rossi di Mazara <br> <i>Mazara's red shrimp </i> </p>
                         <p>Polpo alla Luciana <br> <i>Octupus salad</i> </p>
                         <p>Capesante grigliate <br> <i>Grilled scallops </i> </p>
                     </div>
-                    <div class="max-w-lg pl-4 mx-auto my-8 text-lg text-y">
+                    <div class="max-w-lg pl-4 mx-auto my-8 text-lg space-y-3">
                         <p class="mt-2 font-serif text-xl font-semibold">Piatto Principale</p>
                         <p>Tagliolini all'astice <em>Pasta with European Lobster</em></p>
                     </div>
@@ -293,7 +293,7 @@
         </div>
         </div>
 
-        <div class="px-4 mb-4 text-y">
+        <div class="px-4 mb-4 space-y-3">
             
             <h3 class="my-2 text-3xl font-semibold text-center">Drinks are not included</h3>
 
@@ -367,14 +367,14 @@
                 <div class="p-2 mx-auto bg-white rounded-lg lg:p-4">
                             <p class="my-4 font-serif text-2xl font-semibold text-center"> Grand Finale</p>
                             <p class="my-4 font-serif text-2xl font-semibold text-center">Menu</p>
-                            <div class="max-w-lg pl-4 mx-auto my-1 text-y">
+                            <div class="max-w-lg pl-4 mx-auto my-1 space-y-3">
                                 <p class="font-serif text-lg font-semibold">Antipasti</p>
                                 <p>Pizza Croccante con Puntarelle <br> <i>Chrunchy Pizza with Chicory</i> </p>
                                 <p>Carciofi alla Giudia <br> <i>Chrunchy Artichokes </i> </p>
                                 <p class="select-none blur-sm">Slinzega valtellinese <br> <i>Valtellina Cold cuts </i> </p>
                                 <p class="select-none blur-sm">Parmigiana di melanzane <br> <i>Eggplant Parmigiana </i> </p>
                             </div>
-                            <div class="max-w-lg pl-4 mx-auto my-8 text-lg text-y">
+                            <div class="max-w-lg pl-4 mx-auto my-8 text-lg space-y-3">
                                 <p class="mt-2 font-serif text-xl font-semibold">Piatto Principale</p>
                                 <p class="select-none blur-sm">Risotto alla Milanese</p>
                                 <p>Carbonara <em>The Real One</em></p>
@@ -392,14 +392,14 @@
             </div>
         </div>
 
-        <div class="px-4 mt-6 text-y" id="offer">
+        <div class="px-4 mt-6 space-y-3" id="offer">
             <h2 class="mt-6 mb-4 font-serif text-2xl font-semibold">Here is my offer for you</h2>
             <p>Everything we've discussed so far will be yours for...</p>
             <p class="text-center">
                 <span class="font-serif text-6xl text-green-900">CHF 987.-</span>
             </p>
             <p>At this price you have:</p>
-            <ul class="list-disc list-inside text-y">
+            <ul class="list-disc list-inside space-y-3">
 
                 <li>
                     One weekend in a ⭐⭐⭐⭐ Hotel in Milano City Center
@@ -424,7 +424,7 @@
             <p>The first to contact me will be the first to be able to reserve their seats. </p>
         </div>
 
-        <div class="px-10 py-8 border-2 border-blue-600 rounded-lg text-y bg-blue-50">
+        <div class="px-10 py-8 border-2 border-blue-600 rounded-lg space-y-3 bg-blue-50">
             <h2 class="pb-4 text-3xl font-semibold text-center font-head">How to Book</h2>
             <p class="text-2xl font-semibold">Contact me via Whatsapp: <span class="text-xl italic">"Hey, I would like to join Milano!"</span></p>
 
@@ -442,7 +442,7 @@
 
 
 
-        <div class="text-y">
+        <div class="space-y-3">
             <p class="mt-4 font-semibold">Bookings close on 31/01/2025, or earlier if all rooms are taken. </p>
             <p>You have seen how fast my meetups get booked out.</p>
             <p>Delaying your decision means risking missing out on this exclusive experience.</p>

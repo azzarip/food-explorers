@@ -1,7 +1,7 @@
 @extends('azzarip::layouts.1col')
 
 @section('main')
-<div class="max-w-lg mx-auto mb-4 text-y">
+<div class="max-w-lg mx-auto mb-4 space-y-3">
 <h1 class="mt-4 text-2xl font-semibold text-center lg:text-4xl lg:mt-12">Suggest an Event</h1>
 @if(auth()->user()->getPoints() >= 1)
 <p class="">In this page, you can suggest a restaurant, bar, location or any other related event.</p>
@@ -9,7 +9,7 @@
 <p>You can submit <strong> a suggestion per day</strong>.</p>
 </div>
 @if(cache('suggest.' . auth()->user()->id))
-<div class="max-w-md py-3 mx-auto my-8 text-center border rounded-lg text-y">
+<div class="max-w-md py-3 mx-auto my-8 text-center border rounded-lg space-y-3">
     <p class="font-semibold">Thank you for your suggestion</p>
     <p class="italic">You can suggest another event tomorrow!</p>
 </div>

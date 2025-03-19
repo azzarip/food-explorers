@@ -1,7 +1,7 @@
 @extends('book::layouts.simple-event')
 
 @section('second_column')
-<div class="text-y">
+<div class="space-y-3">
     <h2 class="text-2xl font-bold text-center lg:text-3xl font-trajan">This Event Has Ended</h2>
     <p>Thank you for your interest in this event!</p>
     <p>Unfortunately, this event has already taken place.</p>

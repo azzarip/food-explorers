@@ -6,7 +6,7 @@
         <img src="@image('achievements/yu-an.webp')" alt="Yu An" class="rounded-md drop-shadow-md">
     </div>
 
-    <div class="text-y">
+    <div class="space-y-3">
         <h1 class="text-3xl font-bold">Yu An Omakase</h1>
         <p class="text-xl font-bold text-amber-800">05 May 2025 - 19:00</p>
         <p class="font-semibold"><x-heroicon-s-users class="inline w-6 h-6 text-slate-400" /> 12/36 Going</p>

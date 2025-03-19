@@ -26,7 +26,7 @@
         <h2 class="mt-4 font-serif text-xl font-semibold">
             Details
         </h2>
-        <div class="px-2 py-4 text-y article">
+        <div class="px-2 py-4 space-y-3 article">
             {!! Str::markdown($eventPage->description) !!}
         </div>
 

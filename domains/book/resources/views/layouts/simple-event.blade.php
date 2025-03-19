@@ -16,7 +16,7 @@ $seo = new SEO(
 
 <hr class="max-w-sm mx-auto mt-4 max-lg:hidden lg:my-4">
 
-<div class="mt-2 text-y max-lg:px-2" x-show="open" x-cloak>
+<div class="mt-2 space-y-3 max-lg:px-2" x-show="open" x-cloak>
     <h3 class="font-semibold">Terms and Conditions</h3>
     <p>
         You can cancel your participation and receive a 100% reimbursement until {{ $offer->getReimbursementTimestamp()->format('j/m/Y \a\t H:i') }}. No refunds will be granted afterwards.

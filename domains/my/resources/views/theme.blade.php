@@ -30,7 +30,7 @@ if (width > 1040) { open = true; }"
                                 <img src="{{ image('logo_sm.webp') }}" alt="Logo Food Explorers" class="mx-auto"></a>
                             </div>
                         </div>
-                        <p class="pb-2 my-2 text-3xl text-center text-yellow-400/80 font-trajan">food explorers</p>
+                        <p class="pb-2 my-2 text-3xl text-center space-y-3ellow-400/80 font-trajan">food explorers</p>
 
                         <nav>
                             <ul>

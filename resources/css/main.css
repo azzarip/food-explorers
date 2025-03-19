@@ -1,0 +1,134 @@
+.h1 {
+    @apply text-4xl font-semibold font-head;
+}
+
+.h2 {
+    @apply font-head;
+    font-weight: 600;
+    padding-top: 32px;
+    marginb-bottom: 8px;
+    font-size: 30px;
+    line-height: 1.2;
+}
+.h3 {
+    @apply pt-8 mb-2 text-3xl font-head font-semibold;
+}
+.subtitle {
+    @apply text-2xl mt-3 leading-10 text-slate-800 font-head;
+}
+
+
+.inline-link {
+    @apply font-semibold underline cursor-pointer;
+}
+
+figcaption {
+    @apply mx-2 text-center;
+}
+
+.wrapper {
+    @apply max-w-3xl px-4 pt-4 mx-auto;
+}
+.article {
+    @apply space-y-3;
+}
+
+.article a {
+    @apply underline text-blue-700;
+}
+
+.article ul {
+    @apply list-disc list-inside space-y-3;
+}
+.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color: #ccc;
+    color: #999;
+    border: none;
+}
+
+.error-msg {
+    @apply text-red-600 text-sm;
+}
+
+.test {
+    border-width: 2px;
+    border-color: #dc2626;
+    border-style: solid;
+}
+
+.big-button {
+    background: #16a34a;
+    border-radius: 20px;
+    box-shadow: #16a34a 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    word-break: break-word;
+    border: 0;
+  }
+  .big-button:hover {
+    background: #22c55e; /* Equivalent to bg-lime-500 in Tailwind CSS */
+}
+.big-button:disabled {
+    background: #052e16;
+    cursor: not-allowed;
+    opacity: 0.5;
+    box-shadow: none;
+    text-color: black;
+}
+
+.std-button {
+    background: linear-gradient(200deg, #facc15, #d97706);
+    display: block;
+    font-size: 1.25rem;
+    width: 100%;
+    border-radius: 999px;
+    box-shadow: rgb(234, 179, 8) 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: black;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    word-break: break-word;
+    border: 0;
+
+}
+.std-button:hover {
+    background: rgb(250, 204, 21);
+}
+.std-button:disabled {
+    background: #f7b600;
+    cursor: not-allowed;
+    opacity: 0.5;
+    box-shadow: none;
+    text-color: black;
+}
+
+.iti {
+    width: 100%;
+}
+
+.input-text {
+    @apply w-full p-2 border border-gray-400 rounded-md hover:border-primary focus:border-primary;
+}
+
+.form-button {
+    @apply block w-full max-w-lg mt-4 mb-2 py-3 mx-auto text-2xl;
+}
+

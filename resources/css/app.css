@@ -1,3 +1,5 @@
+@import "./fonts.css";
+@import "./main.css";
 @import 'tailwindcss';
 
 @plugin '@tailwindcss/typography';
@@ -6,7 +8,6 @@
 @source '../../vendor/azzarip/client/resources/views/**/*.blade.php';
 @source '../../vendor/azzarip/teavel/resources/views/**/*.blade.php';
 
-@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --color-primary: #16a34a;
@@ -28,14 +29,6 @@
     trajan, ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
 }
 
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
 @layer base {
   *,
   ::after,
@@ -50,152 +43,3 @@
     display: none !important;
 }
 
-.h1 {
-    @apply text-4xl font-semibold font-head;
-}
-
-.h2 {
-    @apply pt-8 mb-2 text-3xl font-head font-semibold;
-}
-.h3 {
-    @apply pt-8 mb-2 text-2xl font-head font-semibold;
-}
-.subtitle {
-    @apply text-2xl mt-3 leading-10 text-slate-800 font-head;
-}
-.text-y {
-    @apply space-y-3;
-}
-
-.inline-link {
-    @apply font-semibold underline cursor-pointer;
-}
-
-figcaption {
-    @apply mx-2 text-center;
-}
-
-.wrapper {
-    @apply max-w-3xl px-4 pt-4 mx-auto;
-}
-.article {
-    @apply text-y;
-}
-
-.article a {
-    @apply underline text-blue-700;
-}
-.article h2 {
-    @apply h2;
-}
-.article h3 {
-    @apply h3;
-}
-.article ul {
-    @apply list-disc list-inside text-y;
-}
-.disabled {
-    cursor: not-allowed;
-    pointer-events: none;
-    background-color: #ccc;
-    color: #999;
-    border: none;
-}
-
-.error-msg {
-    @apply text-red-600 text-sm;
-}
-
-.test {
-    @apply border-2 border-red-600;
-}
-
-.big-button {
-    background: #16a34a;
-    border-radius: 20px;
-    box-shadow: #16a34a 0 10px 20px -10px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-weight: 700;
-    line-height: 24px;
-    opacity: 1;
-    outline: 0 solid transparent;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    word-break: break-word;
-    border: 0;
-  }
-  .big-button:hover {
-    background: #22c55e; /* Equivalent to bg-lime-500 in Tailwind CSS */
-}
-.big-button:disabled {
-    background: #052e16;
-    cursor: not-allowed;
-    opacity: 0.5;
-    box-shadow: none;
-    text-color: black;
-}
-
-.std-button {
-    background: linear-gradient(200deg, #facc15, #d97706);
-    display: block;
-    font-size: 1.25rem;
-    width: 100%;
-    border-radius: 999px;
-    box-shadow: rgb(234, 179, 8) 0 10px 20px -10px;
-    box-sizing: border-box;
-    color: black;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    cursor: pointer;
-    font-weight: 700;
-    line-height: 24px;
-    opacity: 1;
-    outline: 0 solid transparent;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    word-break: break-word;
-    border: 0;
-
-}
-.std-button:hover {
-    background: rgb(250, 204, 21);
-}
-.std-button:disabled {
-    background: #f7b600;
-    cursor: not-allowed;
-    opacity: 0.5;
-    box-shadow: none;
-    text-color: black;
-}
-
-.iti {
-    width: 100%;
-}
-
-.input-text {
-    @apply w-full p-2 border border-gray-400 rounded-md hover:border-primary focus:border-primary;
-}
-
-.form-button {
-    @apply block w-full max-w-lg mt-4 mb-2 py-3 mx-auto text-2xl;
-}
-
-
-@font-face {
-    font-family: 'trajan';
-    font-style: normal;
-    font-weight: normal;
-    src: local('../fonts/TrajanPro-Regular.woff') format('woff');
-}
-    
-
-@font-face {
-    font-family: 'trajan';
-    font-style: normal;
-    font-weight: bold;
-    src: , url('../fonts/TrajanPro-Bold.woff') format('woff');
-}

@@ -7,7 +7,7 @@ $event = $offer->eventWithData;
 @endphp 
 
 @section('second_column')
-<div class="text-y">
+<div class="space-y-3">
     <h2 class="text-2xl font-bold text-center lg:text-3xl font-trajan">
     <x-heroicon-s-check-circle class="inline w-10 h-10 mb-1 text-green-800" /> Confirmed</h2>
     

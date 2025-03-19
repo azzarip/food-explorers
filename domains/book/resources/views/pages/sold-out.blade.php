@@ -1,7 +1,7 @@
 @extends('book::layouts.simple-event')
 
 @section('second_column')
-<div class="mt-4 text-y">
+<div class="mt-4 space-y-3">
     <h2 class="text-3xl font-bold text-center lg:text-4xl font-trajan">This Event is <br>
     <p class="text-4xl font-semibold text-red-900 lg:text-5xl">SOLD-OUT</p></h2>
     

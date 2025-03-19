@@ -44,7 +44,7 @@
         <p>This isn't just a dinner, it's a  <strong>shared adventure</strong>. In true Malaysian fashion.</p>
         <p>Our tables will be filled with plates to be passed around,  <strong class="text-amber-900">bringing food lovers together</strong> and making new friends over a this experience.</p>
         <p>You will <strong class="text-amber-900">share and savor</strong> the incredible diversity of Malaysian cuisine.</p> 
-        <p><x-heroicon-s-star class="inline w-6 h-6 text-yellow-500"/>If you’ve joined me for a Japanese Omakase before, this will have a similar style—where we share and enjoy a variety of dishes together. <x-heroicon-s-star class="inline w-6 h-6 text-yellow-500"/> </p>
+        <p><x-heroicon-s-star class="inline w-6 h-6 space-y-3ellow-500"/>If you’ve joined me for a Japanese Omakase before, this will have a similar style—where we share and enjoy a variety of dishes together. <x-heroicon-s-star class="inline w-6 h-6 space-y-3ellow-500"/> </p>
         <p>Plates are passed around, <strong>flavors are explored together</strong>, and every meal becomes a social event.</p>
         <p>This is a popular style of eating in Malaysia, where meals are meant to be shared with friends. </p>
         <p>It’s a truly social way to dine, and you’ll get to <strong>enjoy a wide variety of dishes</strong> that showcase the <strong>fragrant flavors of Malaysia</strong>.</p> 

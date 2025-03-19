@@ -5,7 +5,7 @@
         <div class="flex flex-col lg:flex-row">
             <div class="lg:w-2/3">
                 <p>Your level is:</p>
-                <p class="my-2 text-3xl text-yellow-700 font-trajan">
+                <p class="my-2 text-3xl space-y-3ellow-700 font-trajan">
                     @if ($points == 0)
                         ROOKIE
                     @elseif($points < 4)

@@ -14,7 +14,7 @@
 
       <div>
         <h1 class="flex flex-col items-center max-w-4xl gap-5 mx-auto lg:flex-row">
-            <img src="@image('logotype_gold.webp')" alt="Food Explorers">
+            <img src="@image('logotype.webp')" alt="Food Explorers">
         </h1>
         <hr class="w-4/5 mx-auto mt-4 bg-amber-500">
         <p class="my-4 font-serif text-2xl font-bold text-center md:text-3xl lg:text-5xl text-amber-200/80"> Nr. <span class="text-3xl lg:text-6xl">1</span> Foodie Community <br class="max-lg:hidden">  in Zurich</p>
@@ -80,7 +80,7 @@
 
         <h2 class="h2">How does it work?</h2>
         <p>It is pretty simple!</p>
-        <ol class="list-inside text-y">
+        <ol class="list-inside space-y-3">
           <li>
             <p class="font-semibold">1. Become a Food Explorer</p>
             <p><a href="{{ route('register') }}" class="inline-link">Click here to register</a>. It is <span class="text-xl italic font-semibold"><x-heroicon-s-sparkles class="inline w-6 h-6 mb-1 text-amber-600"/> TOTALLY FREE! <x-heroicon-s-sparkles class="inline w-6 h-6 mb-1 text-amber-600"/></span></p>

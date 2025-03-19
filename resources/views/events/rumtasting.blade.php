@@ -24,7 +24,7 @@
         <x-button :link='durl("/rum-expedition", "book")'>I want to book my spot!</x-button>
     </div>
 
-<div class="mt-8 text-y lg:text-xl">
+<div class="mt-8 space-y-3 lg:text-xl">
         <p class="font-serif text-2xl font-semibold">Dear Spirit Lover,</p>
 
 <p>On the 29th of March, we embark on our <strong>Rum Expedition</strong>, an evening dedicated to discovering the fascinating heritage and craftsmanship behind the Caribbean’s most iconic spirit. </p>
