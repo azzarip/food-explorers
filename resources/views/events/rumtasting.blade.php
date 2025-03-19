@@ -15,7 +15,7 @@
     <p class="mb-4 text-4xl text-center lg:text-5xl font-trajan">Rum Expedition</p>
     <p class="font-serif text-xl font-semibold text-center md:text-3xl lg:text-4xl">A <span class="text-orange-700">Cruise</span> Through the <span class="text-cyan-700">Spirits</span> of the <span class="text-green-700">Caribbean</span></p>
     <div class="mx-auto lg:w-4/5">
-        <img src="@image('rum-expedition.webp')" alt="Rum Tasting Banner" class="my-4 rounded shadow-lg lg:block">
+        <img src="@image('rum-expedition.webp')" alt="Rum Tasting Banner" class="my-4 rounded-sm shadow-lg lg:block">
     </div>
     <p class="mt-4 mb-6 text-center md:text-xl lg:text-2xl">Join us for an <strong>Exclusive Rum Tasting Experience</strong> designed to Discover new Flavors, Hidden Stories, and a New Passion for Rum!</p>
     <p class="my-4 text-2xl font-bold text-center lg:text-3xl text-amber-800">Saturday 29. March 2025, 19:30</p>
@@ -35,7 +35,7 @@
 <h2 class="font-serif text-2xl font-semibold text-center">A Journey through the Caribbean Islands</h2>
 <p>Exploring rum means diving into centuries of history and craftsmanship, each bottle offering a glimpse into the cultures and traditions of the islands.</p>
 <div>
-    <img src="@image('caribbean-map.webp')" alt="Caribbean Map" class="rounded"> 
+    <img src="@image('caribbean-map.webp')" alt="Caribbean Map" class="rounded-sm"> 
 </div>
 <p>What is interesting about Rum is not simply the really humble origin. </p>
 <p>But rather, the impressive story, and sensory voyage that Rum brings.</p>
@@ -43,17 +43,17 @@
 <p>In the past centuries, the producers of cane sugar started fermenting the left-over from the production and obtained the first proto-rums.</p>
 <p>This is why Rum is such a famous product in the Caribbean Islands, even though is produced all over the world.</p>
 <p>So these Islands are not only known for the wonderful beaches, but also for their spirit production.</p>
-<img src="https://www.princess.com/content/dam/princess-headless/shorex/ports/bridgetown-barbados-sunset.jpg" alt="Caribbean Beaches" class="rounded shadow-md">
+<img src="https://www.princess.com/content/dam/princess-headless/shorex/ports/bridgetown-barbados-sunset.jpg" alt="Caribbean Beaches" class="rounded-sm shadow-md">
 <hr class="my-4">
 <h3 class="pt-4 pb-2 font-serif text-2xl font-semibold text-center lg:text-3xl">We will visit <span class="text-blue-800">three Islands</span> together</h3>
 <h4 class="font-serif text-2xl font-semibold">Barbados</h4>
-<img src="https://www.sandals.com/blog/content/images/2020/04/Barbados-Holetown.jpg" alt="Barbados Town" class="float-left max-w-xs rounded shadow-md md:mr-2">
+<img src="https://www.sandals.com/blog/content/images/2020/04/Barbados-Holetown.jpg" alt="Barbados Town" class="float-left max-w-xs rounded-sm shadow-md md:mr-2">
 <p>The Barbados Island are considered by many the historians the birthplace of Rum.</p>
 <p>Today, Barbadian rum (or Bajan rum) remains a symbol of the island’s rich heritage, enjoyed neat, in classic cocktails, or as part of lively Caribbean celebrations</p>
 <p class="font-semibold">Barbados rum is known for their fruity character and the smooth, well-balanced profile, often featuring notes of vanilla, caramel, and oak from aging</p>
 <p>Each sip of these rums transport you straight to the sunny beaches of the island.</p>
 <h4 class="font-serif text-2xl font-semibold">Jamaica</h4>
-<img src="https://www.sandals.com/blog/content/images/2020/01/White-River-Rafting-Jamaica.jpg" alt="Jamaica Wilderness" class="float-right max-w-xs rounded shadow-md md:ml-2">
+<img src="https://www.sandals.com/blog/content/images/2020/01/White-River-Rafting-Jamaica.jpg" alt="Jamaica Wilderness" class="float-right max-w-xs rounded-sm shadow-md md:ml-2">
 <p>Jamaica is a land of vibrant culture, wild landscapes, and some of the world’s most distinctive rums. </p>
 <p>The island is famous for its bold, full-bodied spirits, often crafted using pot still distillation to create rich, complex flavors.</p>
 <p class="font-semibold">The art of Jamaican rum, known for its deep notes of tropical fruit, molasses, and spice.</p>
@@ -61,7 +61,7 @@
 
 
 <h4 class="font-serif text-2xl font-semibold">Martinique</h4>
-<img src="https://www.villa-prestige-antilles.com/wp-content/uploads/2023/06/martinique-antilles-voyage-1-1.jpg" class="float-left max-w-xs rounded shadow-md md:mr-2">
+<img src="https://www.villa-prestige-antilles.com/wp-content/uploads/2023/06/martinique-antilles-voyage-1-1.jpg" class="float-left max-w-xs rounded-sm shadow-md md:mr-2">
 <p>Martinique may not be as widely known but it is home to some of the most exquisite and unique rums in the world.</p>
 <p>With French origins, it's rum-making tradition dating back to the 17th century, the island’s rums are crafted using a technique coming from the Cognac distillates.</p>
 <p class="font-semibold">This gives Martinique rum a distinctive, grassy, and herbaceous character, with flavors of fresh sugarcane, citrus, and delicate spices.</p>
@@ -88,9 +88,9 @@
     <p class="font-serif text-2xl font-semibold text-center">Rum Categories </p>
     <p class="font-semibold">Rum can now be categorized into three distinct types:</p>
     <ul class="space-y-4 list-inside">
-        <li class="p-4 border-2 border-orange-800 rounded"><strong class="text-2xl text-orange-800">SHOTTERS</strong>: The shotters are usually really bad distillates, with a lot of off-flavors and bad aromas, extremely difficult to drink, therefore you can only shot them. Hence the name. An example is the typical Rum sold in supermarkets. You should <span class="font-bold text-red-800">AVOID</span> them completely.</li>
-        <li class="p-4 border-2 border-green-800 rounded"><strong class="text-2xl text-green-800">MIXERS</strong>: Mixers belong that category of liquers are designed for making delicious cocktails.</li>
-        <li class="p-4 border-2 border-[#C8A311] rounded"><strong class="text-2xl text-[#C8A311]">SIPPERS</strong>: Complex, elegant, and full of character, these rums are best enjoyed on their own, allowing you to savor the depth and richness of their flavors.</li>
+        <li class="p-4 border-2 border-orange-800 rounded-sm"><strong class="text-2xl text-orange-800">SHOTTERS</strong>: The shotters are usually really bad distillates, with a lot of off-flavors and bad aromas, extremely difficult to drink, therefore you can only shot them. Hence the name. An example is the typical Rum sold in supermarkets. You should <span class="font-bold text-red-800">AVOID</span> them completely.</li>
+        <li class="p-4 border-2 border-green-800 rounded-sm"><strong class="text-2xl text-green-800">MIXERS</strong>: Mixers belong that category of liquers are designed for making delicious cocktails.</li>
+        <li class="p-4 border-2 border-[#C8A311] rounded-sm"><strong class="text-2xl text-[#C8A311]">SIPPERS</strong>: Complex, elegant, and full of character, these rums are best enjoyed on their own, allowing you to savor the depth and richness of their flavors.</li>
     </ul>
     <p>In this tasting, we’ll <strong>skip the first category</strong> altogether and focus on the higher-quality rums—those that embody the true craftsmanship of rum-making and offer an experience worth savoring.</p>
     <p>Get ready to discover the elegance of modern rum!</p>
@@ -111,7 +111,7 @@
     <h2 class="text-3xl font-bold text-center font-trajan">Rum Expedition</h2>
         <p class="my-4 text-xl font-semibold text-center md:text-2xl lg:text-3xl text-amber-800">Saturday 29. March 2025, 19:30</p>
         <p class="font-serif text-3xl font-bold text-center text-green-800"><small class="text-lg">CHF</small> 57.-</p>
-        <img src="@image('rum-expedition.webp')" alt="Rum Tasting" class="px-4 rounded">
+        <img src="@image('rum-expedition.webp')" alt="Rum Tasting" class="px-4 rounded-sm">
         <div class="mx-auto my-4 lg:w-4/5">
             <x-button :link='durl("/rum-expedition", "book")'>I want to book my spot!</x-button>
         </div>

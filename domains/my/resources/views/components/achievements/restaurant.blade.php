@@ -1,6 +1,6 @@
 @props(['title', 'description', 'active' => false, 'key', 'unlocked' => true])
 
-<div class="py-2 rounded-lg {{ $active ? 'bg-gradient-to-br from-yellow-50 via-yellow-100 to-yellow-300 border border-yellow-800' : 'bg-stone-100' }}">
+<div class="py-2 rounded-lg {{ $active ? 'bg-linear-to-br from-yellow-50 via-yellow-100 to-yellow-300 border border-yellow-800' : 'bg-stone-100' }}">
 
     <div class="flex flex-col items-center gap-4 sm:items-start md:flex-row">
         <div class="relative min-w-[80px] aspect-square py-2 ml-4 h-full my-auto">
@@ -20,7 +20,7 @@
             
             <h3 class="mb-1 text-2xl font-semibold text-center sm:text-left font-head">{{ $title }}</h3>
             
-            <p class="italic max-sm:px-2 @if(! $unlocked)  select-none blur-sm @endif">{{ $description }}</p>
+            <p class="italic max-sm:px-2 @if(! $unlocked)  select-none blur-xs @endif">{{ $description }}</p>
         </div>
     </div>
 

@@ -4,7 +4,7 @@
     <h2 class="text-2xl font-bold text-center font-trajan">Reserve your seat</h2>
 
     @error('payment')
-        <p class="p-1 my-2 bg-red-100 rounded">
+        <p class="p-1 my-2 bg-red-100 rounded-sm">
             <x-heroicon-o-exclamation-triangle class="inline w-4 h-4 text-red-900" />
             {{ $message }}
         </p>

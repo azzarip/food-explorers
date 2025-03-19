@@ -67,12 +67,12 @@
 
             <div>
               <p>What did you enjoy the most about the experience? Share any thoughts or highlight!</p>
-              <textarea name="positive" id="positive" rows="3" class="w-full p-1 mt-2 border rounded" placeholder="(Optional)"></textarea>
+              <textarea name="positive" id="positive" rows="3" class="w-full p-1 mt-2 border rounded-sm" placeholder="(Optional)"></textarea>
             </div>
 
             <div>
               <p>Where could we improve? Any feedback?</p>
-              <textarea name="negative" id="negative" rows="3" class="w-full p-1 mt-2 border rounded" placeholder="(Optional)"></textarea>
+              <textarea name="negative" id="negative" rows="3" class="w-full p-1 mt-2 border rounded-sm" placeholder="(Optional)"></textarea>
             </div>
           </div>
                 <x-button>

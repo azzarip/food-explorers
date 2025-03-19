@@ -46,7 +46,7 @@
                 @foreach ($event->participants as $participant)
                     <div class="py-2 mt-2">
                         <p
-                            class="w-full p-2 pl-4 font-serif font-semibold border rounded shadow-md @if ($participant->id == auth()->user()->id) bg-yellow-50 @endif">
+                            class="w-full p-2 pl-4 font-serif font-semibold border rounded-sm shadow-md @if ($participant->id == auth()->user()->id) bg-yellow-50 @endif">
                             {{ $participant->first_name }}
                             @if ($participant->id == auth()->user()->id)
                                 <span>(You)</span> <span

@@ -1,6 +1,6 @@
 @props(['points'])
 
-<div class="p-1 rounded-lg bg-gradient-to-tr from-yellow-500 via-yellow-400 to-yellow-700">
+<div class="p-1 rounded-lg bg-linear-to-tr from-yellow-500 via-yellow-400 to-yellow-700">
     <div class="px-4 pt-4 pb-2 bg-white rounded-md">
         <div class="flex flex-col lg:flex-row">
             <div class="lg:w-2/3">

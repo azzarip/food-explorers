@@ -115,7 +115,7 @@
         <p class="text-2xl font-semibold text-center">The offer is valid until all seats are reserved!</p>
     </div>
  
-    <div class="p-2 mt-4 border border-dashed rounded border-amber-800">
+    <div class="p-2 mt-4 border border-dashed rounded-sm border-amber-800">
         <h2 class="mt-2 mb-4 font-serif text-2xl font-semibold text-center">How to book?</h2>
         <p class="text-2xl text-center">Just TWINT me the <strong>85.-</strong> at +41 78 713 18 82 (Marco), and send me a whatsapp to notify me. </p>
     </div>

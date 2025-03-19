@@ -18,7 +18,7 @@
     <div class="space-y-4">
     @if($event->slug)
     <a href="{{ durl($event->slug, 'base') }}" class="block">
-        <p class="w-full py-2 mx-auto text-center border-2 border-black rounded lg:w-4/5 hover:bg-amber-400/40">
+        <p class="w-full py-2 mx-auto text-center border-2 border-black rounded-sm lg:w-4/5 hover:bg-amber-400/40">
             <x-heroicon-o-magnifying-glass class="inline w-6 h-6 mb-1" />
             View Event Page
         </p>
@@ -26,7 +26,7 @@
     @endif
     @if($event->event_type == \App\EventType::Menu && ! $contact->isGoingTo($event))
     <a href="{{ durl($event->slug, 'book') }}" class="block">
-        <p class="w-full py-2 mx-auto text-center border-2 border-black rounded lg:w-4/5 hover:bg-amber-400/40">
+        <p class="w-full py-2 mx-auto text-center border-2 border-black rounded-sm lg:w-4/5 hover:bg-amber-400/40">
             <x-heroicon-o-pencil class="inline w-6 h-6 mb-1" />
             Reserve your Place
         </p>

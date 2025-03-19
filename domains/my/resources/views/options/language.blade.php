@@ -15,7 +15,7 @@ $en = auth()->user()->speaks('en');
 
 <div class="grid w-full grid-cols-2 mt-4 max-lg:px-8 gap-x-5">
     <label for="local" class="block py-3 text-2xl font-semibold text-right">Main Language:</label>
-    <select id="local" name="local" class="w-32 py-2 text-xl border-2 border-black rounded-md shadow-sm"
+    <select id="local" name="local" class="w-32 py-2 text-xl border-2 border-black rounded-md shadow-xs"
         x-model="selected" @change="if (selected != '{{ app()->getLocale() }}')"
     >
         <option value="en">English</option>

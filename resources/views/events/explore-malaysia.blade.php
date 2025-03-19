@@ -127,7 +127,7 @@
         <p><strong>Pass, taste, and enjoy</strong>—this is more than just dinner; it’s a chance to connect over incredible food, making new foodie friends along the way.</p>
         <p>🥂 <strong>Thirsty?</strong> Drinks, beers, and water are available for order at the restaurant and can be paid for separately at checkout.</p>
     </div>
-        <img src="https://cdn.i-scmp.com/sites/default/files/styles/1020x680/public/d8/images/canvas/2024/10/21/cbd16316-01fe-4fce-9605-74396af0bac6_930eaeb7.jpg?itok=XUQgmjCJ&v=1729485365" alt="Chinese Dinner" class="my-4 rounded drop-shadow-lg">
+        <img src="https://cdn.i-scmp.com/sites/default/files/styles/1020x680/public/d8/images/canvas/2024/10/21/cbd16316-01fe-4fce-9605-74396af0bac6_930eaeb7.jpg?itok=XUQgmjCJ&v=1729485365" alt="Chinese Dinner" class="my-4 rounded-sm drop-shadow-lg">
     <div class="mt-6 space-y-4">
         <h2 class="mt-6 mb-4 font-serif text-2xl font-semibold">How much does it costs?</h2>
         <p>If you went to a restaurant with four people to taste everything on this exclusive menu, you’d pay nearly 75 CHF per person.</p>

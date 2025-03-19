@@ -13,7 +13,7 @@
             Back</a>
 
         @if(session('saved'))
-            <div class="pt-3 pb-2 text-center bg-green-100 border-2 border-green-900 rounded">
+            <div class="pt-3 pb-2 text-center bg-green-100 border-2 border-green-900 rounded-sm">
                 <x-heroicon-s-check-circle class="inline w-6 h-6 mb-1 text-green-800" /> Your changes have been saved!
             </div>
         @endif

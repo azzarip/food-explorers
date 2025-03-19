@@ -52,7 +52,7 @@
             <p>A warm greeting and hope to see you in Milan!</p>
 
             <button onclick="scrollToElement('offer')"
-                class="w-full p-4 mx-auto text-4xl font-semibold text-white border-2 border-green-800 rounded-lg shadow-lg from-green-600 to-green-900 text-serif bg-gradient-to-b hover:to-green-500">
+                class="w-full p-4 mx-auto text-4xl font-semibold text-white border-2 border-green-800 rounded-lg shadow-lg from-green-600 to-green-900 text-serif bg-linear-to-b hover:to-green-500">
                 I want to book my place for Milano! <x-heroicon-o-arrow-right class="inline w-8 h-8 mb-1" />
             </button>
 
@@ -146,7 +146,7 @@
 
                 <div class="flex gap-5 p-4 text-white bg-black rounded-lg">
                     <div
-                        class="flex-shrink-0 hidden w-24 h-24 font-black text-center text-black bg-white rounded-full text-8xl sm:block">
+                        class="shrink-0 hidden w-24 h-24 font-black text-center text-black bg-white rounded-full text-8xl sm:block">
                         ?
                     </div>
                     <div>
@@ -191,7 +191,7 @@
         </div>
 
         <button onclick="scrollToElement('offer')"
-            class="w-full p-4 mx-auto my-8 text-4xl font-semibold text-white border-2 border-green-800 rounded-lg shadow-lg from-green-600 to-green-900 text-serif bg-gradient-to-b ">
+            class="w-full p-4 mx-auto my-8 text-4xl font-semibold text-white border-2 border-green-800 rounded-lg shadow-lg from-green-600 to-green-900 text-serif bg-linear-to-b ">
             I’d like to reserve my spot for Milano! <x-heroicon-o-arrow-right class="inline w-8 h-8 mb-1" />
         </button>
 
@@ -245,7 +245,7 @@
 
                 <div class="flex gap-5 p-4 text-white bg-black rounded-lg">
                     <div
-                        class="flex-shrink-0 hidden w-24 h-24 font-black text-center text-black bg-white rounded-full text-8xl sm:block">
+                        class="shrink-0 hidden w-24 h-24 font-black text-center text-black bg-white rounded-full text-8xl sm:block">
                         ?
                     </div>
                     <div>
@@ -312,7 +312,7 @@
         </div>
 
         <button onclick="scrollToElement('offer')"
-        class="w-full p-4 mx-auto my-8 text-4xl font-semibold text-white border-2 border-green-800 rounded-lg shadow-lg from-green-600 to-green-900 text-serif bg-gradient-to-b ">
+        class="w-full p-4 mx-auto my-8 text-4xl font-semibold text-white border-2 border-green-800 rounded-lg shadow-lg from-green-600 to-green-900 text-serif bg-linear-to-b ">
         I want to book it! <x-heroicon-o-arrow-right class="inline w-8 h-8 mb-1" />
     </button>
 
@@ -371,12 +371,12 @@
                                 <p class="font-serif text-lg font-semibold">Antipasti</p>
                                 <p>Pizza Croccante con Puntarelle <br> <i>Chrunchy Pizza with Chicory</i> </p>
                                 <p>Carciofi alla Giudia <br> <i>Chrunchy Artichokes </i> </p>
-                                <p class="select-none blur">Slinzega valtellinese <br> <i>Valtellina Cold cuts </i> </p>
-                                <p class="select-none blur">Parmigiana di melanzane <br> <i>Eggplant Parmigiana </i> </p>
+                                <p class="select-none blur-sm">Slinzega valtellinese <br> <i>Valtellina Cold cuts </i> </p>
+                                <p class="select-none blur-sm">Parmigiana di melanzane <br> <i>Eggplant Parmigiana </i> </p>
                             </div>
                             <div class="max-w-lg pl-4 mx-auto my-8 text-lg text-y">
                                 <p class="mt-2 font-serif text-xl font-semibold">Piatto Principale</p>
-                                <p class="select-none blur">Risotto alla Milanese</p>
+                                <p class="select-none blur-sm">Risotto alla Milanese</p>
                                 <p>Carbonara <em>The Real One</em></p>
                             </div>
                             <p>This menu is <strong>completely unconfirmed</strong>. The chef and the restaurant work only with seasonal ingredients. This draft menu will give you an idea of what we will taste, but the dishes may change due to availability. Some items are still missing from the menu, as the spring menu is not yet ready. The carbonara will be there for sure.</p>
@@ -416,7 +416,7 @@
                 <p>All of this for barely 330 CHF per day. </p>
 
         </div>
-        <div class="p-4 mx-auto my-4 space-y-4 rounded space-y w-fit">
+        <div class="p-4 mx-auto my-4 space-y-4 rounded-sm space-y w-fit">
             <p class="font-serif text-4xl text-center">ATTENTION!</p>
             <p class="text-3xl text-center">Limited spots available.</p>
             <p class="font-semibold text-center">I don’t have enough rooms for everyone who signed up.            </p>
