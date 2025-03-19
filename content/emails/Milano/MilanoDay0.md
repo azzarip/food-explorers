@@ -6,35 +6,33 @@ Ciao {{ contact.first_name }},
 
 The weekend we’ve all been waiting for is coming soon! 
 
-We can’t wait to dive into this incredible experience with you!
+I can’t wait to dive into this incredible experience with you!
+
+I am writing this email to just recap the first day.
 
 ## We will **meet at the Hotel** 
 
 At 12:30 we will meet at the Hotel, ready to walk towards the first restaurant. 
 
-You can reach the hotel via Metro from the Main Station.
+You can reach the hotel via Metro from Stazione Centrale (Main Station).
+
+The Stazione Centrale is like a labirinth the first time you pass through there, built on multiple levels.
 
 ### The Metro in Stazione Centrale is underground!
 
-So when you get out of the train, you are on the top floor.
-
-Just walk down in the main Hall, and follow the **Metro C** signs, **direction San Donato**.
-
-Metro Line: Yellow
-
-Metro Stop: Repubblica
+You can follow Google to bring you safely to destination.
 
 **Hotel Windsor Milano**
 
 *Via Galileo Galilei, 2* ([Maps](https://maps.app.goo.gl/jHuiKxqagAaiZRvb6))
 
----
-
 ## What to Bring (Minimal Version)
 
 Quick check list so you do not forget anything:
 
-✅ Your IDs (for EU/Swiss Citizens) or Passport
+✅ Your ID or Passport
+
+✅ The Public Transport Ticket (The orange one I gave you)
 
 ✅ Walking shoes for the day activities.
 
@@ -46,6 +44,9 @@ Quick check list so you do not forget anything:
 
 ✅ Credit Card for Shopping 🛍️
 
-I'm really looking forward for this trip see you soon! 
+
+I'm really looking forward for this trip! 
+
+See you tomorrow! :) 
 
 Marco

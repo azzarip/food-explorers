@@ -1,10 +1,10 @@
 ---
-subject: Benvenuti a Milano – The Food Adventure Begins!
+subject: Good Morning from Milano!
 ---
 
-# Welcome to Milano
+# Buongiorno
 
-Good morning,
+Good morning!
 
 I hope you slept well! 
 
@@ -16,14 +16,13 @@ We will **meet at the Hotel** at 11:00, ready to walk and we will take the tram 
 
 For lunch we go to out for Pizza and in the early afternoon we will be visiting the dome and its terraces. 
 
-After the visit, you are free until dinner at 20:00. The restaurant is next to the hotel, so we will meet at the hotel.
+After the visit, you are free to do your visits or shopping until dinner at 20:00. The restaurant is next to the hotel, so we will meet at the hotel.
 
 ---
 
-
 ### Pizzeria
 
-Pizzeria da Zero, 
+Pizzeria da Zero
 
 *Via dell'Orso, 4* ([Maps](https://maps.app.goo.gl/1jGSN6BxAnzmMJWMA))
 
@@ -36,13 +35,12 @@ Visit of the Duomo and its terraces
 
 *Pizza del Duomo* ([Maps](https://maps.app.goo.gl/hCRPS9K5cr6LabMa8))
 
-🕓 15:15
+🕓 15:00
 
----
-
-For the dinner, we **meet again at the Hotel** at 20:00, the restaurant is 1 minute walk.
 
 ### Dinner
+
+For the dinner, we **meet again at the Hotel** at 20:00, the restaurant is 1 minute walk.
 
 Imbarco 10 
 

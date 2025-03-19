@@ -1,5 +1,5 @@
 ---
-subject: Benvenuti a Milano – The Food Adventure Begins!
+subject: Milano Meraviglia - The Food Adventure Begins!
 ---
 
 # Welcome to Milano
@@ -28,9 +28,9 @@ Hotel Windsor Milano
 
 🕓 12:30
 
-Yellow Metro Stop: Repubblica
+Yellow Metro Stop: Repubblica 🟡
 
-### First Restaurant
+### Lunch
 
 Antica Trattoria della Pesa 
 
@@ -46,7 +46,21 @@ SunEleven Rooftop Bar
 
 🕓 19:15
 
----
+--- 
+
+## How to reach the Hotel
+
+The main station of Milano is quite confusing. Trains arrive on the top floor. 
+
+After you get out there are escalators to reach the ground floor. 
+
+**To reach the metro**, you just follow the big red M signs, there is another set of escalators, just outside the main building that bring you to the metro stops.
+
+Metro arrive every 5 minutes, just follow the yellow line 🟡 **direction S. Donato**.
+
+The first stop is the hotel stop: Repubblica. The hotel is just around the block.
+
+Just write me in case you need any help!
 
 Enjoy your travel and see you soon, 🚆✈️🍽️
 
