@@ -13,6 +13,10 @@ class ViewEvent extends ViewRecord
     protected function getHeaderActions(): array
     {
         return [
+            Actions\Action::make('email')
+            ->icon('heroicon-m-envelope')
+            ->color('info')
+            ->url(fn ($record): string => '/event-broadcast?event_id=' . $record->id),
             Actions\EditAction::make(),
         ];
     }

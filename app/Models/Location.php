@@ -23,4 +23,9 @@ class Location extends Model
     {
         return $this->hasOne(Event::class)->latestOfMany('scheduled_at');
     }
+
+    public function getNameAddressAttribute(): string 
+    {
+        return $this->name . ', ' . $this->address;
+    }
 }

@@ -16,6 +16,8 @@ use Filament\Resources\RelationManagers\RelationManager;
 
 class ContactsRelationManager extends RelationManager
 {
+    protected static ?string $label = 'Participants';
+    protected static ?string $title = 'Participants';
     protected static string $relationship = 'contacts';
 
     public function form(Form $form): Form
@@ -39,8 +41,8 @@ class ContactsRelationManager extends RelationManager
             ])
             ->headerActions([
                 Tables\Actions\AttachAction::make('add_contact')
-                    ->label('Add Contact')
-                    ->modalHeading('Add Contact')
+                    ->label('Add Participant')
+                    ->modalHeading('Add Participant')
                     ->recordSelectSearchColumns(['first_name', 'last_name', 'email'])
                     ->button()->color('primary')
                     ->recordTitle(function ($record) {

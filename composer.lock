@@ -308,12 +308,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/azzarip/teavel.git",
-                "reference": "19fe186a0ec5deeff95b2022dca5acd910975c4e"
+                "reference": "9e9a9eac16f0aa3d7073de01ca87869d705e5ea3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/azzarip/teavel/zipball/19fe186a0ec5deeff95b2022dca5acd910975c4e",
-                "reference": "19fe186a0ec5deeff95b2022dca5acd910975c4e",
+                "url": "https://api.github.com/repos/azzarip/teavel/zipball/9e9a9eac16f0aa3d7073de01ca87869d705e5ea3",
+                "reference": "9e9a9eac16f0aa3d7073de01ca87869d705e5ea3",
                 "shasum": ""
             },
             "require": {
@@ -389,7 +389,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-19T10:14:22+00:00"
+            "time": "2025-03-20T22:42:55+00:00"
         },
         {
             "name": "azzarip/utilities",

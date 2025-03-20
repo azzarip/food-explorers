@@ -80,7 +80,7 @@
 
         <h2 class="h2">How does it work?</h2>
         <p>It is pretty simple!</p>
-        <ol class="list-inside space-y-3">
+        <ol class="space-y-3 list-inside">
           <li>
             <p class="font-semibold">1. Become a Food Explorer</p>
             <p><a href="{{ route('register') }}" class="inline-link">Click here to register</a>. It is <span class="text-xl italic font-semibold"><x-heroicon-s-sparkles class="inline w-6 h-6 mb-1 text-amber-600"/> TOTALLY FREE! <x-heroicon-s-sparkles class="inline w-6 h-6 mb-1 text-amber-600"/></span></p>

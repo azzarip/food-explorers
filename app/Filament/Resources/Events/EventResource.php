@@ -25,8 +25,8 @@ use App\Filament\Resources\Events\EventResource\RelationManagers;
 class EventResource extends Resource
 {
     protected static ?string $model = Event::class;
-
-    protected static ?string $navigationIcon = 'heroicon-o-calendar';
+    protected static ?int $navigationSort = -99;
+    protected static ?string $navigationIcon = 'heroicon-o-calendar-days';
     protected static ?string $navigationGroup = 'Events';
     protected static ?string $navigationLabel = 'Events';
 
@@ -74,10 +74,12 @@ class EventResource extends Resource
         return $infolist
         ->schema([
             TextEntry::make('title'),
-            TextEntry::make('location.name'),
+            TextEntry::make('location.name_address'),
             TextEntry::make('type'),
             TextEntry::make('public'),
-            TextEntry::make('capacity'),
+            TextEntry::make('capacity')->getStateUsing( function ($record){
+                return $record->participants()->count() . ' / ' . $record->capacity;
+         }),
             TextEntry::make('scheduled_at')->dateTime(),
             TextEntry::make('ended_at')->dateTime(),
         ]);
@@ -93,7 +95,7 @@ class EventResource extends Resource
                     ->sortable()
                     ->dateTime('j F Y,  H:m'),
                 TextColumn::make('participants')
-                    ->getStateUsing( function (\Illuminate\Database\Eloquent\Model $record){
+                    ->getStateUsing( function ($record){
                         return $record->participants()->count() . ' / ' . $record->capacity;
                  })
             ])->defaultSort('scheduled_at', 'desc')
