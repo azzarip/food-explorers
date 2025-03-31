@@ -8,13 +8,7 @@
         robots: 'noindex, nofollow',
     );
 @endphp
-@push('head')
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
-@endpush
+
 @section('main')
     <article class="max-w-2xl mx-auto">
         <div class="max-lg:px-2 mt-2">
