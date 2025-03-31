@@ -18,12 +18,10 @@
 </div>
 </div>
 <article class="wrapper space-y-3">
-    <h1 class="font-serif text-4xl font-semibold text-center">Milano Meraviglia</h1>
-    <p class="px-4 py-2 mx-auto mt-4 text-3xl font-semibold text-center text-amber-700 w-fit">Friday 4 - Sunday 6 April 2025 </p>
-    <p>Thank you it means a lot!</p>
-    <p>You will soon receive more information about this trip!</p>
-    <p>Enjoy your Christmas and see you on January!</p>
-    <p>I will send you a couple emails every now and then to keep you informed about the additions or modifications to the plan until is ready!</p>
+    <h1 class="font-serif text-4xl font-semibold text-center text-blue-500">Petit Paris</h1>
+    <p class="px-4 py-2 mx-auto mt-4 text-3xl font-semibold text-center text-amber-700 w-fit">Friday 3 - Sunday 5 October 2025 </p>
+    <p>Thank you it means a lot to me!</p>
+    p
     <p class="font-semibold text-right">Marco</p>
 
 </article>

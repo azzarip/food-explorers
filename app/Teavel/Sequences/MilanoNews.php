@@ -10,7 +10,7 @@ class MilanoNews extends SequenceAutomation
 {
     public function start()
     {
-        return Wait::until('4/2/2025 15:00')
+        return Wait::until('02.04.2025 15:00')
             ->then('day0')
             ->precise();
     }
@@ -18,7 +18,7 @@ class MilanoNews extends SequenceAutomation
     public function day0()
     {
         $this->email(Milano\MilanoDay0::class);
-        return Wait::until('4/4/2025 8:30')
+        return Wait::until('04.04.2025 8:30')
             ->then('day1')
             ->precise();
     }
@@ -26,7 +26,7 @@ class MilanoNews extends SequenceAutomation
     public function day1()
     {
         $this->email(Milano\MilanoDay1::class);
-        return Wait::until('4/5/2025 8:30')
+        return Wait::until('05.04.2025 8:30')
             ->then('day2')
             ->precise();
     }
@@ -34,7 +34,7 @@ class MilanoNews extends SequenceAutomation
     public function day2()
     {
         $this->email(Milano\MilanoDay2::class);
-        return Wait::until('4/6/2025 8:30')
+        return Wait::until('05.04.2025 8:30')
             ->then('day3')
             ->precise();
     }

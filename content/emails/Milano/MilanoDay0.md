@@ -32,7 +32,7 @@ Quick check list so you do not forget anything:
 
 ✅ Your ID or Passport
 
-✅ The Public Transport Ticket (The orange one I gave you)
+✅ The Public Transport Ticket (The orange card I gave you)
 
 ✅ Walking shoes for the day activities.
 
