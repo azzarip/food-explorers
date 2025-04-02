@@ -36,7 +36,7 @@ class Milano2Paris extends SequenceAutomation
         return Wait::carbon("09.04.2025 18:00")->then('day3');
     }
 
-    public function day2()
+    public function day3()
     {
         //Wednesday
         $this->email(Paris\Bistronomie::class);
