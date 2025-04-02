@@ -2,9 +2,10 @@
 
 namespace App\Teavel\Sequences;
 
-use Azzarip\Teavel\Automations\Wait;
 use App\Teavel\Emails\Milano;
+use Azzarip\Teavel\Automations\Wait;
 use Azzarip\Teavel\Automations\SequenceAutomation;
+use App\Teavel\Sequences\Adventures\Paris\Milano2Paris;
 
 class MilanoNews extends SequenceAutomation
 {
@@ -42,16 +43,15 @@ class MilanoNews extends SequenceAutomation
     public function day3()
     {
         $this->email(Milano\MilanoDay3::class);
-        return Wait::until('4/6/2025 16:30')
+        return Wait::until('06.04.2025 17:30')
             ->then('review')
             ->precise();
     }
 
     public function review()
     {
-        $this->email( Milano\MilanoDay3::class);
-        return Wait::until('4/6/2025 16:00')
-            ->then('review')
-            ->precise();
+        // add review email
+        $this->startSequence(Milano2Paris::class)
+
     }
 }

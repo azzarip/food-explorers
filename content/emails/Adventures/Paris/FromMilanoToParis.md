@@ -10,7 +10,7 @@ Right now, you’re on the train back to Zürich, and soon, your daily routine w
 
 Monday meetings, email, zoom calls... The same office, the same tasks, the same routine. 
 
-But as you sip your coffee and scroll through your inbox, let your mind drift for a moment—back to the lively streets of Milano, the flavors of our shared meals, the laughter, the discoveries.
+But as you sitting on the train and scrolling through your inbox, let your mind drift for a moment—back to the lively streets of Milano, the flavors of our shared meals, the laughter, the discoveries.
 
 Because who says adventure has to end just because the weekend is over?
 

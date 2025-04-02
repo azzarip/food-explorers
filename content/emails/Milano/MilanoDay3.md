@@ -16,6 +16,20 @@ We will **meet at the Hotel** at 12:15, ready to walk towards the last restauran
 
 After the lunch, you will be free to go back to the Hotel, do the last shopping or head straight back to Zurich.
 
+
+## Highlights 
+
+Today I want to keep it more relaxed. 
+
+Our restaurant for today is the restaurant of Max Mariola.
+
+Chef Max Mariola is an really famous and renowned culinary expert who has gained widespread recognition in recent years. 
+
+Known for his exceptional cooking skills, innovative recipes, and charismatic presence, he has captivated food lovers with exclusive dining experiences.
+
+The restaurant opened last years and went fully booked for months.
+
+
 ---
 
 ### Lunch

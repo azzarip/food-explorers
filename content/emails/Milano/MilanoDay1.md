@@ -10,11 +10,25 @@ The weekend we’ve all been waiting for is finally here!
 
 Whether you're on a train, a plane, or already strolling through the streets of Milan, get ready for an **unforgettable culinary experience**.
 
-We will **meet at the Hotel** around 12:30, ready to walk towards the first restaurant. 
+We will **meet at the Hotel** at 12:30, ready to walk towards the first restaurant. 
 
 The room maybe not ready yet, since the **check-in starts at 14:00**, but the Hotel will keep your luggages there in their lockers.
 
 The **rooms are booked with your name**, so just tell the concierge your name and they will have the room ready for you.
+
+## Today's Highlights
+
+Today is the "Tradition" day! Our first stop for Lunch will be **Antica Trattoria della Pesa**. 
+
+One of the oldest restaurants of Milano, open since 1880, still managed by the same family since their opening.
+
+You will taste the flavors of the _Cucina Meneghina_, the traditional cuisine of Milano.
+
+With its strong flavors, and the most typical **Risotto alla Milanese**.
+
+For **dinner**, the SunEleven Rooftop Bar will open its terrace for us. 
+
+We will have an apero on the rooftop with the sun going down the skyline of Milano!
 
 ---
 
