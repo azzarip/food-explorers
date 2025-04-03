@@ -50,7 +50,7 @@ class MilanoNews extends SequenceAutomation
 
     public function review()
     {
-        // add review email
+        $this->email(Milano\Review::class);
         $this->startSequence(Milano2Paris::class);
 
     }

@@ -87,3 +87,7 @@ Don't let this adventure wait.
 Have a nice trip home,
 
 Marco
+
+--- 
+
+If you are not interested at all, you can just [click here](/cancel) to stop receiveing future emails about Paris.
