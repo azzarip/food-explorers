@@ -34,7 +34,7 @@ The restaurant opened last years and went fully booked for months.
 
 ### Lunch
 
-Max Mariola Restaurant
+**Max Mariola Restaurant**
 
 *Via S. Marco, 26* ([Maps](https://maps.app.goo.gl/CRkejcvGsfxX4jR56))
 

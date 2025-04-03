@@ -30,7 +30,7 @@ To end the day in style, at 20:00, **Imbarco 10** will welcome us with an exquis
 
 ### Pizzeria
 
-Pizzeria da Zero
+**Pizzeria da Zero**
 
 *Via dell'Orso, 4* ([Maps](https://maps.app.goo.gl/1jGSN6BxAnzmMJWMA))
 
@@ -50,7 +50,7 @@ Visit of the Duomo and its terraces
 
 For the dinner, we **meet again at the Hotel** at 20:00, the restaurant is 1 minute walk.
 
-Imbarco 10 
+**Imbarco 10**
 
 *Via Marco Polo, 10* ([Maps](https://maps.app.goo.gl/w2s4LuZvr9UteNVq8))
 

@@ -36,7 +36,7 @@ Here are some useful **Google Maps links** for our first day in case you get los
 
 ### Hotel
 
-Hotel Windsor Milano 
+**Hotel Windsor Milano**
 
 *Via Galileo Galilei, 2* ([Maps](https://maps.app.goo.gl/jHuiKxqagAaiZRvb6))
 
@@ -46,7 +46,7 @@ Yellow Metro Stop: Repubblica 🟡
 
 ### Lunch
 
-Antica Trattoria della Pesa 
+**Antica Trattoria della Pesa**
 
 *Viale Pasubio, 10* ([Maps](https://maps.app.goo.gl/w2codHtSCutLf5tUA))
 
@@ -54,7 +54,7 @@ Antica Trattoria della Pesa
 
 ### Dinner
 
-SunEleven Rooftop Bar 
+**SunEleven Rooftop Bar**
 
 *P.za Cesare Beccaria* ([Maps](https://maps.app.goo.gl/vHkAN7ZeArYJRsmn8))
 
