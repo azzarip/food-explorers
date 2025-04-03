@@ -33,8 +33,14 @@ class ContactsRelationManager extends RelationManager
                 ->label('Add Contact')
                 ->modalHeading('Add Contact')
                 ->recordSelectSearchColumns(['first_name', 'last_name', 'email'])
+                ->preloadRecordSelect()
                 ->button()
                 ->color('info')
+                ->action(function ($livewire, array $data) {
+                    $livewire->ownerRecord->contacts()->attach($data['recordId'], [
+                        'execute_at' => now(),
+                    ]);
+                })
                 ->recordTitle(function ($record) {
                     return $record->name_email;
                 }),

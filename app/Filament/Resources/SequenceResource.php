@@ -64,8 +64,8 @@ class SequenceResource extends Resource
     {
         return [
             'index' => Pages\ListSequences::route('/'),
-            'view' => Pages\ViewSequence::route('/{record}'),
             'create' => Pages\CreateSequence::route('/create'),
+            'view' => Pages\ViewSequence::route('/{record}'),
             'edit' => Pages\EditSequence::route('/{record}/edit'),
         ];
     }
