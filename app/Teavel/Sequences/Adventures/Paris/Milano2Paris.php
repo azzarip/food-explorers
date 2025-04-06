@@ -10,7 +10,8 @@ class Milano2Paris extends SequenceAutomation
 {
     public function start()
     {
-        return Wait::until('06.04.2025 18:00')
+        $this->tag('Interested Petit Paris');
+        return Wait::until('07.04.2025 18:00')
             ->then('day0')
             ->precise();
     }
@@ -19,7 +20,7 @@ class Milano2Paris extends SequenceAutomation
     {
         //Sunday
         $this->email(Paris\FromMilanoToParis::class);
-        return Wait::until("07.04.2025 17:30")->then('day1');
+        return Wait::for("24 hours")->then('day1');
     }
 
     public function day1()
