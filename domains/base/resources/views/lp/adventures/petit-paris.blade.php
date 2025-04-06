@@ -39,59 +39,80 @@
                     like you can aspire for</span>.</p>
             <p class="font-bold">In this webpage you will find: </p>
             <ul class="space-y-3 text-xl list-disc list-inside">
-                <li><strong>Why Petit Paris?</strong> <br> The story and inspiration behind Parisian Bistrots (<a href="#why" class="inline-link">Go →</a>)</li>
-                <li><strong>Our Adventure</strong><br> The plan and itinerary for our weekend together. (<a href="#plan" class="inline-link">Go →</a>)</li>
-                <li><strong>How to Book</strong> <br> How to reserve your seat! (<a href="#offer" class="inline-link">Go →</a>)</li>
+                <li><strong>Why Petit Paris?</strong> <br> The story and inspiration behind Parisian Bistrots (<a
+                        href="#why" class="inline-link">Go →</a>)</li>
+                <li><strong>Our Adventure</strong><br> The plan and itinerary for our weekend together. (<a href="#plan"
+                        class="inline-link">Go →</a>)</li>
+                <li><strong>How to Book</strong> <br> How to reserve your seat! (<a href="#offer" class="inline-link">Go
+                        →</a>)</li>
             </ul>
             <p>So, brush up your french dictionary as in October we go to Paris!</p>
         </div>
 
         <div class="space-y-4 pt-2" id="why">
             <h2 class="my-6 font-serif text-2xl lg:text-3xl font-semibold text-center">Why Petit Paris?</h2>
-            <p>Imagine strolling down cobblestone streets, where the scent of freshly baked croissants drifts through the air, and the warm glow of the vintage streets guides your way.</p>
+            <p>Imagine strolling down cobblestone streets, where the scent of freshly baked croissants drifts through the
+                air, and the warm glow of the vintage streets guides your way.</p>
 
-            <p>The sound of a lively accordion echoes from a charming café, and just ahead, a hidden bistrot awaits—where the secrets of French cuisine unfold like magic.</p>
+            <p>The sound of a lively accordion echoes from a charming café, and just ahead, a hidden bistrot awaits—where
+                the secrets of French cuisine unfold like magic.</p>
 
-            <p>Welcome to <span class="font-serif font-semibold">Petit Paris</span>, a foodie adventure through parisian bistrots,
+            <p>Welcome to <span class="font-serif font-semibold">Petit Paris</span>, a foodie adventure through parisian
+                bistrots,
                 where you don’t just visit Paris: you live it, taste it, and feel its
                 romantic soul through every dish.</p>
 
-            <p>Each day we’ll savor a variety of dishes, with <strong> unforgettable restaurants</strong> and visit <strong>hidden bars</strong>, and discover local food treasures,
+            <p>Each day we’ll savor a variety of dishes, with <strong> unforgettable restaurants</strong> and visit
+                <strong>hidden bars</strong>, and discover local food treasures,
                 all while uncovering the city’s most enchanting hidden gems.</p>
 
-            <p>This isn't just a weekend trip—it's a Parisian fairy tale for food lovers, a culinary adventure where every moment is sprinkled with delicious and unforgettable flavors.</p>
+            <p>This isn't just a weekend trip — it's a Parisian fairy tale for food lovers, a culinary adventure where every
+                moment is sprinkled with delicious and unforgettable flavors.</p>
 
-            <p>A once-in-a-lifetime experience, an adventure only <strong>a true foodie like you</strong> could dream of.</p>
+            <p>A once-in-a-lifetime experience, an adventure only <strong>a true foodie like you</strong> could dream of.
+            </p>
 
             <p>Paris is the European capital of Food, and I say as an Italian! </p>
 
-            <p>Every city in Europe has its own incredible cuisine, each with its own traditions and flavors. But we all have to admit: no place has romanticized its connection to food, wine, and love quite like Paris.</p>
+            <p>Every city in Europe has its own incredible cuisine, each with its own traditions and flavors. But we all
+                have to admit: no place has romanticized its connection to food, wine, and love quite like Paris.</p>
 
-            <p><span class="font-semibold font-serif text-blue-800">Petit Paris</span> is more than just a trip: it’s an <strong>adventure through the soul of French cuisine</strong>, carefully crafted to bring you to some of the
+            <p><span class="font-semibold font-serif text-blue-800">Petit Paris</span> is more than just a trip: it’s an
+                <strong>adventure through the soul of French cuisine</strong>, carefully crafted to bring you to some of the
                 most exceptional bistrots and hidden food gems in the city</p>
-  
-            <p class="border-2 border-blue-700 rounded-lg p-4 font-semibold text-xl"><span class="font-semibold font-serif text-blue-800">Petit Paris</span> will be our adventure focused on visiting exceptional restaurants carefully chosen to showcase the best of Paris’s finest food scene.</p>  
-                
-            <p>Each restaurant and stop has been handpicked to showcase the very best of Paris’s rich and diverse food scene, giving you a chance to experience its flavors in a way few ever do.</p>
-            <p class="font-semibold">Your only <span class="text-amber-800">responsibility</span>? Arrive in Paris on time on Friday.</p>
 
-            <p>From the moment you arrive at the hotel, I’ll take care of everything—so you can fully enjoy this unforgettable culinary journey without any worries.</p>
+            <p class="border-2 border-blue-700 rounded-lg p-4 font-semibold text-xl"><span
+                    class="font-semibold font-serif text-blue-800">Petit Paris</span> will be our adventure focused on
+                visiting exceptional restaurants carefully chosen to showcase the best of Paris’s finest food scene.</p>
 
-            <p>This food adventure to Paris will be your chance to discover the French Cuisine as you never had the chance before!</p>
+            <p>Each restaurant and stop has been handpicked to showcase the very best of Paris’s rich and diverse food
+                scene, giving you a chance to experience its flavors in a way few ever do.</p>
+            <p class="font-semibold">Your only <span class="text-amber-800">responsibility</span>? Arrive in Paris on time
+                on Friday.</p>
 
-            <p class="font-serif text-xl text-center"> The word "<strong>petit</strong> " means “<em>little</em>” in French.</p>
+            <p>From the moment you arrive at the hotel, I’ll take care of everything—so you can fully enjoy this
+                unforgettable culinary journey without any worries.</p>
+
+            <p>This food adventure to Paris will be your chance to discover the French Cuisine as you never had the chance
+                before!</p>
+
+            <p class="font-serif text-xl text-center"> The word "<strong>petit</strong> " means “<em>little</em>” in French.
+            </p>
 
             <p>France, and especially Paris has been the capital of Haute Cuisine.</p>
 
-            <p>The term "<strong>haute cuisine</strong>" doesn't just refer to high-end restaurants but also to the entire experience: refined techniques, artful presentations, and
-            meticulously structured meals served in exclusive, aristocratic settings.</p>
+            <p>The term "<strong>haute cuisine</strong>" doesn't just refer to high-end restaurants but also to the entire
+                experience: refined techniques, artful presentations, and
+                meticulously structured meals served in exclusive, aristocratic settings.</p>
 
             <p>Today, this style of dining has been pushed to the extreme by Michelin-starred restaurants.</p>
 
-            <p>In Paris, it’s easy to find places where a <strong>single meal costs hundreds of euros</strong>, lasts five hours, and unfolds in an atmosphere of utmost
+            <p>In Paris, it’s easy to find places where a <strong>single meal costs hundreds of euros</strong>, lasts five
+                hours, and unfolds in an atmosphere of utmost
                 formality. But that’s not the Paris I love.</p>
 
-            <p>I called this adventure Petit Paris because I want to help you discover the “smaller” cuisine—less aristocratic, but no less delicious or
+            <p>I called this adventure Petit Paris because I want to help you discover the “smaller” cuisine—less
+                aristocratic, but no less delicious or
                 important.</p>
 
             <h2 class="my-6 font-serif text-2xl font-semibold text-center">The Cuisine of Bistrots</h2>
@@ -100,13 +121,16 @@
 
             <p>But let's explore together: what is a Bistrot?</p>
 
-            <p>The word <em>Bistrot</em> is used all over Europe to indicate a <strong>small restaurant  with a few seats, in a cozy setting</strong>.</p>
+            <p>The word <em>Bistrot</em> is used all over Europe to indicate a <strong>small restaurant with a few seats, in
+                    a cozy setting</strong>.</p>
 
             <p>Is it the same in Paris? Yes, but is also something more.</p>
 
-            <p>In France, a bistrot is where people come together to share a  meal, a conversation, and a moment of their day.</p>
+            <p>In France, a bistrot is where people come together to share a meal, a conversation, and a moment of their
+                day.</p>
 
-            <p class="p-4 text-xl border-2 border-amber-700 rounded-lg"><strong>It’s not about fine dining or extravagant dishes;</strong> it’s about simplicity,
+            <p class="p-4 text-xl border-2 border-amber-700 rounded-lg"><strong>It’s not about aristocratic dining or
+                    extravagant dishes;</strong> it’s about simplicity,
                 quality, and atmosphere. A true bistrot is warm, unpretentious, and
                 deeply rooted in daily life.</p>
 
@@ -114,132 +138,143 @@
                 low hum of conversations, and the occasional laughter from a nearby
                 table.</p>
 
-            <p><strong>Regulars greet the owner by name</strong>, and the waiters move effortlessly between tables closely packed between each other.</p>
+            <p><strong>Regulars greet the owner by name</strong>, and the waiters move effortlessly between tables closely
+                packed between each other.</p>
 
-            <p>Old wooden furniture, small chair and some white tableclothes are the only decorations. Maybe opened bottles of wine collected through the years…</p>
+            <p>Old wooden furniture, small chair and some white tableclothes are the only decorations. Maybe opened bottles
+                of wine collected through the years…</p>
 
             <p class="font-semibold">What matters most is that the food is simple, flavorful, and deeply satisfying</p>
 
             <p>The menu is often handwritten on a chalkboard, changing daily based on what’s fresh and in season.</p>
 
-            <p>In Paris, a bistrot is a place where life happens. It’s where friends catch up over a glass of wine, where colleagues take a long lunch, and where strangers sit side by side at small wooden tables, exchanging a polite
+            <p>In Paris, a bistrot is a place where life happens. It’s where friends catch up over a glass of wine, where
+                colleagues take a long lunch, and where strangers sit side by side at small wooden tables, exchanging a
+                polite
                 bonjour before focusing on their meal.</p>
 
-                <p> <strong> A bistrot is not designed to impress</strong>; it’s
-                    designed to make you feel at home, whether you’re a local or a
-                    visitor.</p>
+            <p> <strong> A bistrot is not designed to impress</strong>; it’s
+                designed to make you feel at home, whether you’re a local or a
+                visitor.</p>
 
-                    <p> And once you’ve experienced it, you’ll understand why the
-                        French cherish it so much</p>
+            <p> And once you’ve experienced it, you’ll understand why the
+                French cherish it so much</p>
 
-                <p>That is also why I called this trip Petit Paris, I will bring you <strong>into the
+            <p>That is also why I called this trip Petit Paris, I will bring you <strong>into the
                     heart of the city</strong>, not just as a tourist, but to experience the more
-                    daily life and daily food of Paris like the Parisians do.</p>
-            
-                    <h2 class="my-6 font-serif text-2xl font-semibold text-center">Bistrot Menus</h2>
+                daily life and daily food of Paris like the Parisians do.</p>
+
+            <h2 class="my-6 font-serif text-2xl font-semibold text-center">Bistrot Menus</h2>
 
 
-                    <p class="font-semibold">A bistrot menu is not a book with endless pages of choices.</p>
+            <p class="font-semibold">A bistrot menu is not a book with endless pages of choices.</p>
 
-                    <p>Often it does not even exist in printed version. A bistrot embraces 
-                        spontaneity and freshness, crafting dishes based on what’s best at the
-                        market that day.</p>
+            <p>Often it does not even exist in printed version. A bistrot embraces
+                spontaneity and freshness, crafting dishes based on what’s best at the
+                market that day.</p>
 
-                    <p>A traditional French bistrot meal follows a simple structure: Entrée, Plat, and Dessert.</p>
-                 
-                    <h3 class="font-serif font-semibold text-center">Entrée</h3>
-                    <p>The entrée is the starter, usually something light but full of character.</p>
-                    <p>Not to be confused with the American "Entrée" which means main course.</p>
-                    <p></p>
+            <p>A traditional French bistrot meal follows a simple structure: Entrée, Plat, and Dessert.</p>
 
-                    <h3 class="font-serif font-semibold text-center">Plat</h3>
-                    <p>Then comes the plat, the main course, where the heart of the bistrot’s
-                        cooking shines.</p>
-                    <p> Here you get your meat, your fish or whatever else you ordered.</p>
+            <h3 class="font-serif font-semibold text-center p-4 bg-amber-300/20">Entrée</h3>
+            <p>The entrée is the starter, usually something light but full of character.</p>
+            <p>Not to be confused with the American "Entrée" which means main course.</p>
+            <p></p>
 
-
-                    <h3 class="font-serif font-semibold text-center">Dessert</h3>
-                    <p>Finally, the dessert, which the French treat with just as much respect
-                        as the rest of the meal. .</p>
-                    <p> Usually bistrot won’t serve extravagant, modern creations—desserts here are classics, perfected over
-                        generations.</p>
-                    
-                    <p class="font-serif font-semibold text-2xl text-center p-4 border-2 border-red-800 rounded-lg">
-                        Desserts are included!
-                    </p>
-
-                    <p>Not only they are included, but they are mandatory. If you don’t
-                        have dessert in Paris, I am ashamed of you.</p>
-
-                    <p>So in each of the restaurant you will get these three dishes, you will
-                        choose your own preferred dish from the menu that the restaurant will
-                        hand in that day.</p>
-
-                    <h2  class="my-6 font-serif text-2xl font-semibold text-center underline decoration-4  decoration-blue-700">There are no Menus</h2>
-                    <p>This trip is all about exploring the most characteristics Bistrots of Paris.</p>
-                    <p>And as you might know, a Bistrot is a really small restaurant, <strong>their menu
-                        changes frequently - sometimes weekly, if not daily</strong>.</p>
-                    <p>That is the beauty of these places: fresh ingredient, new recipes that
-                        reflect the season and the chef ’s inspiration for the day.</p>
-                    
-                    <p class="font-semibold">Because of this, there’s no fixed menu for our trip.</p>
-                    
-                    <p>However, to give you a sense of what to expect, I’ve included some
-                        past menus from these bistrots, along with a few photos I found
-                        online.</p>
-
-                    <p>These will give you an idea of their style, philosophy, and signature
-                        dishes, but the exact menu we’ll enjoy might be different.</p>
-                    
-                    <p>That’s part of the <span class="font-semibold text-green-900">adventure</span>!</p>
-                    
-                    <p>Rather than focusing on a set list of
-                        dishes, <strong>I’ve carefully selected each bistrot based on its quality,
-                        atmosphere, and culinary creativity</strong>.</p>
-
-                    <p>In each of the Bistrot, you will have included the three dishes they
-                        offer, the combination of Entrée, Plat, and Dessert for one person.</p>
-                    
-                    <p>So, while I can’t hand you a precise menu in advance, the restaurants
-                        have told me they are usually really open to do changes and adapt to
-                        your dietary style.</p>
-
-                    <p>You will always find a fish dish, a meat dish and a vegetarian (often with cheese) dish.</p>
-                    
+            <h3 class="font-serif font-semibold text-center p-4 bg-red-300/20">Plat</h3>
+            <p>Then comes the plat, the main course, where the heart of the bistrot’s
+                cooking shines.</p>
+            <p> Here you get your meat, your fish or whatever else you ordered.</p>
 
 
-                <h2 class="pt-6 font-trajan text-3xl lg:text-4xl font-semibold text-center" id="plan">The Plan</h2>
-                <p>In this weekend, <strong>we will explore three different bistrots</strong>, each carefully selected to showcase the heart
-                    and soul of Parisian cuisine.</p>
-                <p>Along the way, we’ll also visit some special food stops that will surprise and delight you, from hidden patisseries to bustling streets foods filled with local treasures.</p>
-                <p>We will arrive on Friday for 12:00, we put down our luggages in the hotel and we head to the first restaurant.</p>
+            <h3 class="font-serif font-semibold text-center p-4 bg-cyan-500/20">Dessert</h3>
+            <p>Finally, the dessert, which the French treat with just as much respect
+                as the rest of the meal. .</p>
+            <p> Usually bistrot won’t serve extravagant, modern creations—desserts here are classics, perfected over
+                generations.</p>
+
+            <p class="font-serif font-semibold text-2xl text-center p-4 border-2 border-red-800 rounded-lg">
+                Desserts are included!
+            </p>
+
+            <p>Not only they are included, but they are mandatory. If you don’t
+                have dessert in Paris, I am ashamed of you.</p>
+
+            <p>So in each of the restaurant you will get these three dishes, you will
+                choose your own preferred dish from the menu that the restaurant will
+                hand in that day.</p>
+
+            <h2 class="my-6 font-serif text-2xl font-semibold text-center underline decoration-4  decoration-blue-700">There
+                are no Menus</h2>
+            <p>This trip is all about exploring the most characteristics Bistrots of Paris.</p>
+            <p>And as you might know, a Bistrot is a really small restaurant, <strong>their menu
+                    changes frequently - sometimes weekly, if not daily</strong>.</p>
+            <p>That is the beauty of these places: fresh ingredient, new recipes that
+                reflect the season and the chef ’s inspiration for the day.</p>
+
+            <p class="font-semibold">Because of this, there’s no fixed menu for our trip.</p>
+
+            <p>However, to give you a sense of what to expect, I’ve included some
+                past menus from these bistrots, along with a few photos I found
+                online.</p>
+
+            <p>These will give you an idea of their style, philosophy, and signature
+                dishes, but the exact menu we’ll enjoy might be different.</p>
+
+            <p>That’s part of the <span class="font-semibold text-green-900">adventure</span>!</p>
+
+            <p>Rather than focusing on a set list of
+                dishes, <strong>I’ve carefully selected each bistrot based on its quality,
+                    atmosphere, and culinary creativity</strong>.</p>
+
+            <p>In each of the Bistrot, you will have included the three dishes they
+                offer, the combination of Entrée, Plat, and Dessert for one person.</p>
+
+            <p>So, while I can’t hand you a precise menu in advance, the restaurants
+                have told me they are usually really open to do changes and adapt to
+                your dietary style.</p>
+
+            <p>You will always find a fish dish, a meat dish and a vegetarian (often with cheese) dish.</p>
+
+
+
+            <h2 class="pt-6 font-trajan text-3xl lg:text-4xl font-semibold text-center" id="plan">The Plan</h2>
+            <p>In this weekend, <strong>we will explore three different bistrots</strong>, each carefully selected to
+                showcase the heart
+                and soul of Parisian cuisine.</p>
+            <p>Along the way, we’ll also visit some special food stops that will surprise and delight you, from hidden
+                patisseries to bustling streets foods filled with local treasures.</p>
+            <p>We will arrive on Friday for 12:00, we put down our luggages in the hotel and we head to the first
+                restaurant.</p>
             <p><strong>Your only responability is</strong> to come to Paris on Friday on time. From when you reach the
                 Hotel, I will be there taking care of you.</p>
             <p>I have designed each day around its own theme, creating a journey that
                 not only highlights the diversity of Parisian dining but also helps
                 us navigate and fully immerse ourselves in this <strong> french culinary
-                adventure together</strong>.</p>
+                    adventure together</strong>.</p>
             <p>I’ve chosen to organize our three days around three distinct themes, which are:</p>
             <ul class="text-2xl font-semibold list-disc list-inside font-head">
                 <li>Day 1: <span class="text-red-700">Paris Tradition</span><br>
-                <p class="font-normal text-lg">Step back in time as we take you to one of most iconic bistrot, where
-                    classic French flavors reign supreme.</p></li>
+                    <p class="font-normal text-lg">Step back in time as we take you to one of most iconic bistrot, where
+                        classic French flavors reign supreme.</p>
+                </li>
                 <li>Day 2: <span class="text-cyan-800">Modern Marvels</span> <br>
                     <p class="font-normal text-lg">Experience the new wave of Parisian cuisine, where bold chefs
-                    reinvent tradition with a touch of modernity</p>
+                        reinvent tradition with a touch of modernity</p>
 
                 </li>
                 <li>Day 3: <span class="text-pink-700">Hidden Gem</span><br>
-                <p class="font-normal text-lg">On Sunday something special awaits for you: a Bistrot? Maybe… I will
-                    bring you to a restaurant known only to locals, where the chef, a oneof-a-kind person, will lead us through unmarked territory…</p></li>
+                    <p class="font-normal text-lg">On Sunday something special awaits for you: a Bistrot? Maybe… I will
+                        bring you to a restaurant known only to locals, where the chef, a oneof-a-kind person, will lead us
+                        through unmarked territory…</p>
+                </li>
             </ul>
         </div>
 
-        <div class="p-2  rounded-lg">
-            <h3 class=" font-serif text-3xl text-center ">Paris Tradition </h3>
+        {{-- <div class="p-2 mt-12 rounded-lg">
+            <h3 class=" font-serif text-3xl text-center font-semibold">Paris Tradition </h3>
             <p class="font-serif mb-6 text-2xl text-center">Day 1</p>
             <div class="space-y-4 ">
-                <p>We will start the day at 12:30 at the Hotel.</p>
+                <p>We will start the day at 12:00 at the Hotel.</p>
                 <p>From there we walk towards the quartiere <strong>Garibaldi</strong> where today lies the food zone of
                     Milano.</p>
 
@@ -367,7 +402,7 @@
 
         <button onclick="scrollToElement('offer')"
             class="w-full p-4 mx-auto my-8 text-4xl font-semibold text-white border-2 border-green-800 rounded-lg shadow-lg from-green-600 to-green-900 text-serif bg-linear-to-b ">
-            I’d like to reserve my spot for Milano! <x-heroicon-o-arrow-right class="inline w-8 h-8 mb-1" />
+            I’d like to reserve my spot for Paris! <x-heroicon-o-arrow-right class="inline w-8 h-8 mb-1" />
         </button>
 
         <hr>
@@ -378,13 +413,12 @@
                 from
                 the locations to the menus, and I consider this work my personal “intellectual property.”</p>
             <p><strong> If you join me in Milan</strong>, you’ll receive the full list of locations before we depart,
-                don’t
-                worry, all the links, the specific menus and so on.</p>
+                don’t worry, all the links, the specific menus and so on.</p>
             <p><strong>If you do not come</strong>, I am sorry, but I prefer to keep the itinerary private—it’s part of
                 what
                 makes this adventure so special.
             <p>That said, you already have the menus, so you know exactly what we’ll be enjoying. </p>
-            <p>The food won’t be a surprise, the menus are in these pages. But the settings, the ambiance, and the
+            <p>The food won’t be a surprise, the menus and photos are in these pages. But the settings, the ambiance, and the
                 stories
                 behind these hidden gems will add a whole new layer to the experience.</p>
             <p>Rest assured, I’ve poured my heart, soul, and organizational expertise into crafting this adventure. </p>
@@ -396,19 +430,15 @@
 
         </div>
         <hr>
-        <div class="px-2 py-2 my-8 rounded-lg bg-amber-100">
-            <h3 class="my-6 font-serif text-3xl text-center">Luxury Life (Day 2)</h3>
+        <div class="px-2 py-2 my-8">
+            <h3 class=" font-serif text-3xl text-center text-cyan-800 font-bold">Modern Marvels </h3>
+            <p class="font-serif mb-6 text-2xl text-center">Saturday</p>
+
             <div class="space-y-4 ">
                 <p>We will start the day around 11 a.m.</p>
                 <p>So you are night owl you can sleep through, or if you are an early bird, you can wake up early and
                     visit the city by yourself!</p>
-                <p>We walk through <strong>Brera</strong> and <strong>Castello Sforzesco</strong>. Located on the west
-                    side of the city center, this is the most “<em>bohemienne</em>” zone of Milano.</p>
-                <p>During the spring days, Milano has fresh winds blowing between the buildings, and sun naturally
-                    lightens up the streets of this marvelous city.</p>
 
-                <img src="https://www.maart.mi.it/wp-content/uploads/2021/05/BRERA.jpg"
-                    class="mx-auto rounded-lg shadow-xl">
 
                 <h4 class="font-serif text-xl">Saturday Lunch</h4>
                 <p>You know how much I am a Pizza Lover. In Milan we have one of the most famous Pizzerie in Italy.</p>
@@ -480,77 +510,33 @@
                 <p><strong>This is no simple pasta with shrimps</strong>. There is no fish or shellfish that matches the
                     complexity of flavors and aroma found in this dish.</p>
 
-                <div class="p-2 mx-auto bg-white rounded-lg lg:p-4">
-                    <p class="my-4 font-serif text-2xl font-semibold text-center"> Sea Dinner</p>
-                    <p class="my-4 font-serif text-2xl font-semibold text-center">Menu</p>
-                    <div class="max-w-lg pl-4 mx-auto my-1 space-y-3">
-                        <p class="font-serif text-lg font-semibold">Antipasti</p>
-                        <p>Carpaccio <br> <i>Fish Carpaccio</i> </p>
-                        <p>Rossi di Mazara <br> <i>Mazara's red shrimp </i> </p>
-                        <p>Polpo alla Luciana <br> <i>Octupus salad</i> </p>
-                        <p>Capesante grigliate <br> <i>Grilled scallops </i> </p>
-                    </div>
-                    <div class="max-w-lg pl-4 mx-auto my-8 text-lg space-y-3">
-                        <p class="mt-2 font-serif text-xl font-semibold">Piatto Principale</p>
-                        <p>Tagliolini all'astice <em>Pasta with European Lobster</em></p>
-                    </div>
-                    <p>This menu is <strong>completely unconfirmed</strong>. The chef and the restaurant work only with
-                        seasonal ingredients. This draft menu will give you an idea of what we will taste, but the
-                        dishes may change due to availability. Some items are still missing from the menu, as the spring
-                        menu is not yet ready. The carbonara will be there for sure.</p>
-                </div>
+
 
             </div>
         </div>
 
-        <div class="px-4 mb-4 space-y-3">
-
-            <h3 class="my-2 text-3xl font-semibold text-center">Drinks are not included</h3>
-
-            <p>All the menus you see here, or any possible variation will be included in the package. </p>
-            <p> As a general indication, if I order it, I pay for it, if you order it, you pay for it.</p>
-            <p> I will pay for the water and the coperto. In Italy, each restaurant has a “service fee” called coperto.
-            </p>
-            <p> All drinks, desserts and additions to the menu, will be on your side, if you want them.</p>
-            <h4 class="text-2xl font-semibold">Is it possible to make changes in the menu?</h4>
-            <p>Yes and no. Most of these menu are agreed or are being agreed with the restaurant, and they are making a
-                special package for us.</p>
-            <p>If you any allergies or strong dislikes, let me know in advance, we can sort something out together.</p>
-            <p>E.g. you don’t eat shrimps and don’t want pasta with astice, let me know and we can change that dish.
-            </p>
-            <p>Most of antipasti will be shared among the group, therefore those cannot be changed. </p>
-            <p>The primo piatto, a pasta or rice main dish, will not be shared. If you tell me in advance, we can get
-                you
-                something different. </p>
-        </div>
-
         <button onclick="scrollToElement('offer')"
-            class="w-full p-4 mx-auto my-8 text-4xl font-semibold text-white border-2 border-green-800 rounded-lg shadow-lg from-green-600 to-green-900 text-serif bg-linear-to-b ">
+            class="w-full p-4 cursor-pointer mx-auto my-8 text-4xl font-semibold text-white border-2 border-green-800 rounded-lg shadow-lg from-green-600 to-green-900 text-serif bg-linear-to-b ">
             I want to book it! <x-heroicon-o-arrow-right class="inline w-8 h-8 mb-1" />
         </button>
 
-        <div class="px-2 py-2 bg-green-100 rounded-lg">
-            <h3 class="my-6 font-serif text-3xl text-center">Grand Finale (Day 3)</h3>
-            <div class="space-y-4">
+        <div class="px-2 py-2 rounded-lg">
+            <h3 class=" font-serif text-3xl text-center text-pink-700">Hidden Gem</h3>
+            <p class="font-serif mb-6 text-2xl text-center">Sunday</p>
+                <div class="space-y-4">
                 <p>We’ll begin the day around 11:00 am, taking it easy after the eventful experiences of the past two
                     days. With the hotel's checkout conveniently set for 11:00 am.</p>
-                <p>Today is designed to be a <strong> more relaxed day</strong>, offering us the chance to savor Milan’s
+                <p>Today is designed to be a <strong> more relaxed day</strong>, offering us the chance to savor Paris's
                     charm one last time. </p>
                 <p>We can head out of the Hotel for a last stroll through the streets of Milano, and maybe enjoy a last
-                    espresso at a café.</p>
+                    croissant at a Boulangerie.</p>
                 <p>Or if we want to stop to some shop or boutique for some last shopping before departure.</p>
-                <p>We will pass through <em>Corso Como</em>, the foodie center of Milano, where all the famous
-                    restaurants are. </p>
-                <img src="https://www.in-lombardia.it/sites/default/files/focus/images/771/955/id388_corso-como_milano_01_flickr_angelocesare.jpg"
-                    alt="Corso Como" class="mx-auto rounded-lg shadow-lg">
 
                 <p>Our walk will gradually lead us toward our <strong> final culinary stop</strong>.</p>
                 <p>Now, it's time to unveil the <em>pièce de résistance</em>: the grand finale for Sunday lunch.</p>
                 <p>The restaurant we'll visit is not just a venue; it's a restaurant yes, but the real gem of this place
                     is not simply the food, it is the whole experience that the chef and his team tailor for you.</p>
-                <p> This won't be just "another Italian restaurant."</p>
-                <p>It opened last year and, even before they opened the doors, they had already gathered 9000
-                    reservations.</p>
+
 
                 <h4 class="font-serif text-2xl font-semibold">The Chef: A Culinary Innovator</h4>
                 <p>This chef is not simply another chef or culinary artist, there are many.</p>
@@ -598,64 +584,158 @@
                 </p>
 
 
-                <div class="p-2 mx-auto bg-white rounded-lg lg:p-4">
-                    <p class="my-4 font-serif text-2xl font-semibold text-center"> Grand Finale</p>
-                    <p class="my-4 font-serif text-2xl font-semibold text-center">Menu</p>
-                    <div class="max-w-lg pl-4 mx-auto my-1 space-y-3">
-                        <p class="font-serif text-lg font-semibold">Antipasti</p>
-                        <p>Pizza Croccante con Puntarelle <br> <i>Chrunchy Pizza with Chicory</i> </p>
-                        <p>Carciofi alla Giudia <br> <i>Chrunchy Artichokes </i> </p>
-                        <p class="select-none blur-sm">Slinzega valtellinese <br> <i>Valtellina Cold cuts </i> </p>
-                        <p class="select-none blur-sm">Parmigiana di melanzane <br> <i>Eggplant Parmigiana </i> </p>
-                    </div>
-                    <div class="max-w-lg pl-4 mx-auto my-8 text-lg space-y-3">
-                        <p class="mt-2 font-serif text-xl font-semibold">Piatto Principale</p>
-                        <p class="select-none blur-sm">Risotto alla Milanese</p>
-                        <p>Carbonara <em>The Real One</em></p>
-                    </div>
-                    <p>This menu is <strong>completely unconfirmed</strong>. The chef and the restaurant work only with
-                        seasonal ingredients. This draft menu will give you an idea of what we will taste, but the
-                        dishes may change due to availability. Some items are still missing from the menu, as the spring
-                        menu is not yet ready. The carbonara will be there for sure.</p>
-                </div>
-
-
-                <h4 class="text-2xl font-semibold">Goodbye Italia</h4>
-                <p>After our final lunch together, we’ll wrap up around 15:30, bringing our Milan adventure to an end.
+                <h4 class="text-2xl font-semibold">Au Revoir</h4>
+                <p>After our final lunch together, we’ll wrap up around 16:30, bringing our Paris Adventure to an end.
                 </p>
                 <p>We will say goodbye and maybe shot one last picture together.</p>
                 <p>Whether you choose to linger a bit longer in the city — perhaps with one last espresso or a stroll
                     through the streets — or head straight back to Zurich…</p>
-                <p class="font-semibold">I hope Milan stays with you, not just as a place you visited, but as an
+                <p class="font-semibold">I hope Paris stays with you, not just as a place you visited, but as an
                     unforgettable foodie adventure.</p>
 
+                </div>
             </div>
-        </div>
+ --}}
 
-        <div class="px-4 mt-6 space-y-3" id="offer">
-            <h2 class="mt-6 mb-4 font-serif text-2xl font-semibold">Here is my offer for you</h2>
+
+        <div class="mt-8" id="daniel">
+            <h2 class="text-center font-serif text-3xl">The words of someone who was with me in Paris...</h2>
+
+            <div class="mt-4 bg-amber-100 rounded-lg p-4 space-y-3">
+                <p>Ehm, what is that?</p>
+                <p> When I first heard about this so-called "<em>Bistrot Tour</em>" in Paris, I was skeptical, to say the
+                    least.</p>
+                <p>Why would I spend a whole weekend hopping from one tiny, noisy restaurant to another?</p>
+                <p>French bistros aren’t they just overpriced tourist traps serving the same old croque-monsieur? </p>
+
+                <p>The first day, we started with a more traditional restaurant theme.</p>
+                <p> Imagine this, small restaurant, tiny old wooden tables, people speaking only French…</p>
+                <p>I expected nothing special, but then came the first bite: a perfectly cooked lamb with a sauce so rich
+                    and complex. </p>
+                <p>The place was packed, the waiters attentive and efficient, the atmosphere full with real Parisians, not a
+                    single turist in sight.</p>
+                <p>And the waiters and their service was top-notch.</p>
+                <p>But what really blew my mind was the desert. </p>
+                <p>You know how you always get this tiramisu or some industrial style cake with some ice cream on the side.
+                </p>
+                <p class="font-bold">Well, what I got was incredible. </p>
+                <p>It was pistachio cream, crème fresh with a sauce of roses and all this topped with crunchy nuts. I can
+                    tell you, my senses were amazed for the rest of the day. </p>
+                <p> </p>
+                <p>Day two: "Neo-Bistrot."</p>
+                <p>As a lover of traditional cuisine, I didn’t know what to expect, and I was not really understanding the
+                    difference between Bistrots, but when you taste it, you completely understand the difference between the
+                    styles. </p>
+                <p class="font-bold">This was not pretentious; this was innovation.</p>
+                <p>A beef steak paired with a beetroot purée and Korean kimchi that somehow made perfect sense.</p>
+                <p> And the bread! </p>
+                <p>The kind of crust that makes a grown man reconsider his entire approach to breakfast. Can you imagine
+                    falling in love with a simple slice of bread?</p>
+                <p></p>
+                <p>By the third day, we visited the “Hidden Gem”. I had already accepted my fate. </p>
+                <p>Bring it on, I thought. And they did. A hidden gem in an alley I would have never dared enter on my own.
+                </p>
+                <p>An old factory reconverted to a luxury fine dining restaurant.</p>
+                <p>We tasted 7 dishes in a perfectly paced lunch, from fresh asparagus smoked in the wood-fired oven of the
+                    restaurant, to a “crepe” with sea-hurchins and roasted pidgeon.</p>
+                <p>I would have never thought that a street rat could taste so good.</p>
+                <p></p>
+                <p>I could talk for hours how amazing Paris is.</p>
+                <p> I will definitely come back and see what they offer in the autumn.</p>
+                <p class="font-bold">This tour? Absolutely worth it. </p>
+                <p> If you, like me, think you have seen it all, trust me, you haven’t.</p>
+                <p>Book the trip. Eat the food. And prepare to be amazed.</p>
+                <div class="flex flex-row">
+                    <img src="@image('danielw.webp')" alt="Daniel Picture" class="w-1/3 lg:w-16">
+                    <p class="font-black text-amber-900 text-2xl">Daniel Wehrwein</p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <hr class="my-8">
+        <div class="px-4 mt-16 space-y-3" id="offer">
+            <h2 class="mt-6 mb-4 font-serif text-3xl lg:text-4xl text-center font-semibold">Milano to Paris</h2>
+            <p>This October, we’re heading to the most famous food capital in Europe… Paris!</p>
+            <p class="font-semibold">Three Days. Endless Flavors. One Unforgettable Experience.</p>
+            <p>Each day, we’ll explore a different side of Parisian gastronomy. </p>
+
+            <h3 class="font-serif text-2xl lg:text-3xl font-semibold">What is included?</h3>
+
+            <p class="rounded-lg p-2 text-xl font-semibold text-center bg-amber-900/10">One weekend in a 4 Star Hotel in
+                Paris</p>
+            <p>For the nights from Friday to Sunday, one room per person in a
+                4 Star Hotel in Paris. City Tax included.</p>
+
+            <p class="rounded-lg p-2 text-xl font-semibold text-center bg-cyan-900/10">Entrée + Plat + Dessert for 3
+                Bistrots</p>
+            <p>You will get the 3 dishes composing the menu of each Bistrot. Dishes
+                will be yours to choose from the Menu.</p>
+
+            <p class="rounded-lg p-2 text-xl font-semibold text-center bg-pink-900/10">Bar à Vin - Tasting Boards</p>
+            <p>On the Friday evening, the food trays and bites at the Bar à Vin will be
+                covered.</p>
+
+            <p class="rounded-lg p-2 text-xl font-semibold text-center bg-red-900/10">Tasting Menu of Sunday Restaurant</p>
+            <p>The full course menu for the Sunday restaurant is inlcuded.
+
+            <p>But the most important thing is...</p>
+            <p class="p-4 bg-purple-800/20 text-center rounded-lg font-semibold text-2xl">Flawless Foodie Experience</p>
+
+            <p>You don’t have to worry about anything, except arriving in Paris on
+                time on Friday.</p>
+            <p>
+                I will take care of booking all the restaurants, telling you where to go
+                and helping you choose the dishes that best fit your experience.
+            </p>
+
+            <p>You’ll have the chance to fully immerse yourself in the beauty and
+                charm of the city, while I handle all the organization details.</p>
+
+
+            <h3 class="my-2 text-3xl font-semibold text-center">Drinks are not included</h3>
+
+            <p>All the menus you see here, or any possible variation will be included in the package. </p>
+            <p> The bistrots menu and the food ordered by me in the other locations will be included.</p>
+            <p> I will pay for the water, coffee and any service fee, if there are any.
+            </p>
+            <p> All drinks, and additions to the menu, will be on your side, if you want them.</p>
+
+
+            <h3 class="font-serif text-2xl lg:text-3xl font-semibold">Also not included</h3>
+            <p>The transportation from and to Zurich is your responsibility.</p>
+            <p>The transportation inside Paris is not covered, you may decide to move
+                by bus, metro, taxi or Uber.</p>
+            <p>The breakfast in the hotel is not included, but you are free to buy it
+                directly in the hotel.</p>
+
+
             <p>Everything we've discussed so far will be yours for...</p>
             <p class="text-center">
-                <span class="font-serif text-6xl text-green-900">CHF 987.-</span>
+                <span class="font-serif text-5xl lg:text-6xl text-green-900"><small>CHF</small> 1392.-</span>
             </p>
-            <p>At this price you have:</p>
-            <ul class="list-disc list-inside space-y-3">
-
-                <li>
-                    One weekend in a ⭐⭐⭐⭐ Hotel in Milano City Center
-                </li>
-                <li>
-                    You will savor 3 exquisite dining experiences at handpicked restaurants to give you a true taste of
-                    Milan's finest cuisine
-                </li>
-                <li>
-                    Hidden culinary gems and local favorites that will make your foodie heart sing, and leave you
-                    savoring every moment of this unforgettable weekend…
-                </li>
-            </ul>
-            <p class="font-serif text-2xl font-semibold">But the most important thing is… </p>
-            <p><strong>You don’t have to worry about anything</strong>, except arriving in Milan on time on Friday.</p>
-            <p>All of this for barely 330 CHF per day. </p>
+            <p>The lunches and the dinners and a 4-Star Hotel Room just for you to enjoy Paris. For this price is basically
+                a gift. </p>
+            <p>I am extremely grateful for you having joined me and other food explorers in our first adventure to Milano.
+                ❤️</p>
+            <p>If you decide to come with Paris you will keep your Inner Circle status.</p>
+            <p>For all the events: no waiting lists, no competition for spots.</p>
+            <p class="font-semibold">You’re in first.</p>
+            <p class="text-xl p-2 text-center">Also just for you, on top of this exclusive rate I would like to add another
+                bonus! 🎁</p>
+            <p>For any of the future pre-organized dinners (like Yu-An Omakase, A Fatt, Dapur...) you will have:</p>
+            <p class="text-center">
+                <span class="font-serif font-bold text-3xl lg:text-4xl text-cyan-900"><small>CHF</small> 70.-</span>
+            </p>
+            <p>dining credit.</p>
+            <p>Consider it my treat for your next dinners! You can use this credit toward any of our upcoming dinners in
+                Zurich, making your next food event even more enjoyable.</p>
+            <p class="font-semibold text-xl">⌛But there’s a catch... This offer will expire on:</p>
+            <p class="text-center text-3xl font-serif">Monday 21. April</p>
+            <p>After that date the price will increase and you will lose the additional bonuses.</p>
+            <p>Don’t waste this opportunity! </p>
 
         </div>
         <div class="p-4 mx-auto my-4 space-y-4 rounded-sm space-y w-fit">
@@ -669,9 +749,9 @@
         <div class="px-10 py-8 border-2 border-blue-600 rounded-lg space-y-3 bg-blue-50">
             <h2 class="pb-4 text-3xl font-semibold text-center font-head">How to Book</h2>
             <p class="text-2xl font-semibold">Contact me via Whatsapp: <span class="text-xl italic">"Hey, I would like
-                    to join Milano!"</span></p>
+                    to join Paris!"</span></p>
 
-            <a href="https://wa.me/41787131882?text=Hi%2C%20I%20would%20like%20to%20join%20the%20trip%20to%20Milano!"
+            <a href="https://wa.me/41787131882?text=Hi%2C%20I%20would%20like%20to%20join%20the%20adventure%20to%20Paris!"
                 class="block px-10 py-5 mx-auto text-2xl text-center text-white bg-green-500 rounded-full hover:bg-green-600"
                 target="_blank">
                 <img src="https://www.svgrepo.com/show/106976/whatsapp.svg" alt="Whatsapp logo"
@@ -685,9 +765,8 @@
         </div>
 
 
-
         <div class="space-y-3">
-            <p class="mt-4 font-semibold">Bookings close on 31/01/2025, or earlier if all rooms are taken. </p>
+            <p class="mt-4 font-semibold">After that date, I will open the bookings to the whole group.</p>
             <p>You have seen how fast my meetups get booked out.</p>
             <p>Delaying your decision means risking missing out on this exclusive experience.</p>
             <h2 class="h2">What if I cannot come?</h2>

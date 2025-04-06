@@ -35,7 +35,7 @@ class MilanoNews extends SequenceAutomation
     public function day2()
     {
         $this->email(Milano\MilanoDay2::class);
-        return Wait::until('05.04.2025 8:30')
+        return Wait::until('06.04.2025 8:30')
             ->then('day3')
             ->precise();
     }

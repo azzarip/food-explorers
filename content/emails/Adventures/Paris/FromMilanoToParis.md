@@ -34,7 +34,7 @@ Along the way, we’ll also step into some of the city’s most intriguing secre
 
 Imagine strolling through charming cobblestone streets, the scent of freshly baked croissants in the air, and the warm glow of vintage street lamps guiding your way. 
 
-I called this trip **Petit Paris**, because it’s not about aristocratic, ultra-formal _Haute Cuisine_.
+I called this trip **Petit Paris**, because it will not revolve around aristocratic, ultra-formal _Haute Cuisine_.
 
 Instead, I want to take you into the heart of the city's most lively and authentic bistrots—where locals gather, where history meets innovation, and where the true essence of Parisian dining comes to life.
 
@@ -58,17 +58,19 @@ Paris is so imbued in the culture of Bistrot, that a french food critic named th
 
 ## A Bistrot Menu is not a endless book
 
+Contrary to our Milano Adventure, where we had many starts that lead to a final main dishes, in Paris will be different.
+
+Simply three dishes: one entrée, one plat, one dessert. (The Dessert is included!)
+
 A bistrot menu is not a book with endless pages of choices, often it does not even exist in printed version. 
 
 You may get a chalkboard with the items written on it, or simply a freshly printed paper with the selection of the day.
-
-Simply three dishes: one entrée, one plat, one dessert.
 
 Each bite tells a story of the season, of the market’s freshest finds, of a chef’s inspiration in that very moment.
 
 **You choose the menu** depending on what the kitchen and the market offers that day. 
 
-Here is some pictures of what may be waiting for you in Paris:
+You usually have 1-2 Meat dishes, 1 Fish dish, and 1 Vegetarian option (usually with cheese).
 
 
 
