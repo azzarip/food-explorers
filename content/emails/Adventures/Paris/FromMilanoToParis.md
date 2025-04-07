@@ -1,32 +1,28 @@
 ---
-subject: From Milano To Paris - Our Next Culinary Adventure!
+subject: From Milano To Paris - Our Next Food Adventure!
 ---
 
 Dear Food Explorer, 
 
 Our unforgettable trip to Milano has come to an end, and I hope you **had an amazing time** during this first weekend together!
 
-Right now, you’re on the train back to Zürich, and soon, your daily routine will take over again. 
+I hope Monday meetings, email, and zoom calls treated you well.
 
-Monday meetings, email, zoom calls... The same office, the same tasks, the same routine. 
-
-But as you sitting on the train and scrolling through your inbox, let your mind drift for a moment—back to the lively streets of Milano, the flavors of our shared meals, the laughter, the discoveries.
+But as you are reading this email, let your mind drift for a moment—back to the lively streets of Milano, the flavors of our shared meals, the laughter, the discoveries.
 
 Because who says adventure has to end just because the weekend is over?
 
-**What if, instead of settling back into the everyday job, you had something extraordinary to look forward to?**
-
- A new destination, a new experience, a chance to dive into another adventure of flavors and stories?
+ A new destination, a new experience, a chance to dive into another adventure of flavors and stories is coming!
 
 # Our next stop: Paris 🇫🇷
 
-Our next stop is the City of Lights, where we will embark on a **carefully curated three-day culinary journey** through Paris’s vibrant bistrot scene.
+Our next stop is the City of Lights, where we will embark on a **carefully curated three-day culinary journey** through Paris’s romantic bistrot scene.
 
-Organizing this trip took me even longer than Milano: 
+**Paris is a vast and ever-evolving gastronomic capital**, shaped by the different culinary movements that gre over the years.
 
-Simply because **Paris is a vast and ever-evolving gastronomic capital**, shaped by different culinary movements over the years.
+It was really difficult finding 3 restaurant that could match the level of Milano. 
 
-It was really difficult finding 3 restaurant that could match the level. There are so many, that it was really difficult to choose.
+Not because of the quality, but because there are so many, that it was really difficult to choose.
 
 Each day, we’ll explore a new side of Parisian cuisine, savoring incredible dishes in three exceptional bistrots, uncovering hidden food treasures, and savoring unforgettable dining experiences. 
 
@@ -36,60 +32,36 @@ Imagine strolling through charming cobblestone streets, the scent of freshly bak
 
 I called this trip **Petit Paris**, because it will not revolve around aristocratic, ultra-formal _Haute Cuisine_.
 
-Instead, I want to take you into the heart of the city's most lively and authentic bistrots—where locals gather, where history meets innovation, and where the true essence of Parisian dining comes to life.
+Instead, I want to take you into the heart of the city's most lively and authentic bistrots, where locals gather, where chef innovate their cuisine, and where the true essence of Parisian dining comes to life.
 
 ## What is a Bistrot Exactly?
 
 The word Bistrot is used all over Europe to **indicate a small restaurant with a few seats**, in a cozy setting.
 
-Is it the same in Paris? Yes but is also something more.
+Is it the same in Paris? Yes, but is also something more.
 
-It’s **not about fine dining or extravagant dishes**; it’s about simplicity, quality, and atmosphere. A true bistrot is warm, unpretentious, and deeply rooted in daily life.
+It’s **not about fancy dining or extravagant dishes**; it’s about simplicity, quality, and atmosphere. A true bistrot is warm, unpretentious, and deeply rooted in daily life.
 
 The menu is often handwritten on a chalkboard, changing daily based on what’s fresh and in season.
 
 What matters most is that the food is flavorful, and deeply satisfying.
 
-That is also why I called this trip **Petit Paris**, I will bring you into the **heart of the city**, not just as a tourist, but to experience the more daily life and daily food of Paris like the Parisians do.
+That is also why I called this trip **Petit Paris**, I will bring you into the **life of Paris**, not just as a tourist, but to experience the more daily life and daily food of Paris like the Parisians do.
 
-I want to help you discover the “_smaller_” cuisine, less aristocratic, but no less delicious or important.
+I want to help you discover the “_smaller_” cuisine, less formal, but no less delicious or important.
 
 Paris is so imbued in the culture of Bistrot, that a french food critic named this new cuisine wave: "**_Bistronomie_**".
 
-## A Bistrot Menu is not a endless book
+### To dive deep into the program of this weekend 
 
-Contrary to our Milano Adventure, where we had many starts that lead to a final main dishes, in Paris will be different.
+In the coming days, you’ll receive a few emails with more details about our plans for these days in October. 
 
-Simply three dishes: one entrée, one plat, one dessert. (The Dessert is included!)
+This time I scheduled them correctly! :P (hope) 
 
-A bistrot menu is not a book with endless pages of choices, often it does not even exist in printed version. 
-
-You may get a chalkboard with the items written on it, or simply a freshly printed paper with the selection of the day.
-
-Each bite tells a story of the season, of the market’s freshest finds, of a chef’s inspiration in that very moment.
-
-**You choose the menu** depending on what the kitchen and the market offers that day. 
-
-You usually have 1-2 Meat dishes, 1 Fish dish, and 1 Vegetarian option (usually with cheese).
-
-
-
-# Paris is waiting for you
-
-For you joining the trip of Milano I have a special offer that will only last for these two coming weeks! 
-
-Click here below to see the program and invite for this next adventure together:
-
-{% include 'button' with { 'text': 'To the Petit Paris Adventure', 'action': 'click', 'style': 'primary' } %}
-
-Paris is calling! 
-
-Don't let this adventure wait.
-
-Have a nice trip home,
+Have a nice start of the week,
 
 Marco
 
 --- 
 
-If you are not interested at all, you can just [click here](/cancel) to stop receiveing future emails about Paris.
+If you are not interested at all, you can just [click here](/cancel) to stop receiving future emails about Paris.
