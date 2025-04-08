@@ -17,7 +17,7 @@ class Milano2Paris extends SequenceAutomation
 
     public function day0()
     {
-        //Sunday
+        //Monday
         $this->tag('Interested Petit Paris');
         $this->email(Paris\FromMilanoToParis::class);
         return Wait::for("24 hours")->then('day1');
@@ -25,14 +25,14 @@ class Milano2Paris extends SequenceAutomation
 
     public function day1()
     {
-        //Monday
+        //Tuesday
         $this->email(Paris\PetitParis::class);
-        return Wait::carbon("08.04.2025 17:30")->then('day2');
+        return Wait::until("09.04.2025 17:30")->then('day2');
     }
 
     public function day2()
     {
-        //Tuesday
+        //Wednesday
         $this->email(Paris\ParisZurich::class);
         return Wait::carbon("09.04.2025 18:00")->then('day3');
     }
