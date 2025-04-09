@@ -1,5 +1,5 @@
 ---
-subject: "[3/10] Somebody came with me to Paris already"
+subject: "[3/10] Somebody was already with me in Paris"
 ---
 
 Hi!
