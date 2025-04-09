@@ -33,14 +33,14 @@ class Milano2Paris extends SequenceAutomation
     public function day2()
     {
         //Wednesday
-        $this->email(Paris\ParisZurich::class);
-        return Wait::carbon("09.04.2025 18:00")->then('day3');
+        $this->email(Paris\Bistronomie::class);
+        return Wait::for("24 hours")->then('day3');
     }
 
     public function day3()
     {
-        //Wednesday
-        $this->email(Paris\Bistronomie::class);
-        return Wait::carbon("09.04.2025 18:00")->then('day4');
+        //Thursday
+        $this->email(Paris\Testimonial::class);
+        return Wait::for("24 hours")->then('day4');
     }
 }

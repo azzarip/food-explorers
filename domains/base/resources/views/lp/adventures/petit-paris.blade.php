@@ -606,7 +606,7 @@
                 <p> When I first heard about this so-called "<em>Bistrot Tour</em>" in Paris, I was skeptical, to say the
                     least.</p>
                 <p>Why would I spend a whole weekend hopping from one tiny, noisy restaurant to another?</p>
-                <p>French bistros aren’t they just overpriced tourist traps serving the same old croque-monsieur? </p>
+                <p>French bistros aren’t they just overpriced tourist traps serving the same old french toast? </p>
 
                 <p>The first day, we started with a more traditional restaurant theme.</p>
                 <p> Imagine this, small restaurant, tiny old wooden tables, people speaking only French…</p>
@@ -615,7 +615,7 @@
                 <p>The place was packed, the waiters attentive and efficient, the atmosphere full with real Parisians, not a
                     single turist in sight.</p>
                 <p>And the waiters and their service was top-notch.</p>
-                <p>But what really blew my mind was the desert. </p>
+                <p>But what really blew my mind was the dessert. </p>
                 <p>You know how you always get this tiramisu or some industrial style cake with some ice cream on the side.
                 </p>
                 <p class="font-bold">Well, what I got was incredible. </p>
@@ -629,13 +629,12 @@
                 <p class="font-bold">This was not pretentious; this was innovation.</p>
                 <p>A beef steak paired with a beetroot purée and Korean kimchi that somehow made perfect sense.</p>
                 <p> And the bread! </p>
-                <p>The kind of crust that makes a grown man reconsider his entire approach to breakfast. Can you imagine
-                    falling in love with a simple slice of bread?</p>
+                <p> Can you imagine falling in love with a simple slice of bread?</p>
                 <p></p>
                 <p>By the third day, we visited the “Hidden Gem”. I had already accepted my fate. </p>
-                <p>Bring it on, I thought. And they did. A hidden gem in an alley I would have never dared enter on my own.
+                <p>Bring it on, I thought. And they did. A hidden gem in an alley I would have never found on my own.
                 </p>
-                <p>An old factory reconverted to a luxury fine dining restaurant.</p>
+                <p>An old factory reconverted to a fine dining restaurant.</p>
                 <p>We tasted 7 dishes in a perfectly paced lunch, from fresh asparagus smoked in the wood-fired oven of the
                     restaurant, to a “crepe” with sea-hurchins and roasted pidgeon.</p>
                 <p>I would have never thought that a street rat could taste so good.</p>
@@ -644,7 +643,9 @@
                 <p> I will definitely come back and see what they offer in the autumn.</p>
                 <p class="font-bold">This tour? Absolutely worth it. </p>
                 <p> If you, like me, think you have seen it all, trust me, you haven’t.</p>
-                <p>Book the trip. Eat the food. And prepare to be amazed.</p>
+                <p>Book the trip.</p>
+                <p>Eat the food.</p>
+                <p>Eat the food. And prepare to be amazed.</p>
                 <div class="flex flex-row">
                     <img src="@image('danielw.webp')" alt="Daniel Picture" class="w-1/3 lg:w-16">
                     <p class="font-black text-amber-900 text-2xl">Daniel Wehrwein</p>
