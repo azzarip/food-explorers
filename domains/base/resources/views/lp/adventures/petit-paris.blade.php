@@ -254,22 +254,93 @@
             <p>I’ve chosen to organize our three days around three distinct themes, which are:</p>
             <ul class="text-2xl font-semibold list-disc list-inside font-head">
                 <li>Day 1: <span class="text-red-700">Paris Tradition</span><br>
-                    <p class="font-normal text-lg">Step back in time as we take you to one of most iconic bistrot, where
+                    <p class="font-normal text-lg my-2">Step back in time as we take you to one of most iconic bistrot, where
                         classic French flavors reign supreme.</p>
                 </li>
                 <li>Day 2: <span class="text-cyan-800">Modern Marvels</span> <br>
-                    <p class="font-normal text-lg">Experience the new wave of Parisian cuisine, where bold chefs
+                    <p class="font-normal text-lg my-2">Experience the new wave of Parisian cuisine, where bold chefs
                         reinvent tradition with a touch of modernity</p>
 
                 </li>
                 <li>Day 3: <span class="text-pink-700">Hidden Gem</span><br>
-                    <p class="font-normal text-lg">On Sunday something special awaits for you: a Bistrot? Maybe… I will
+                    <p class="font-normal text-lg my-2">On Sunday something special awaits for you: a Bistrot? Maybe… I will
                         bring you to a restaurant known only to locals, where the chef, a oneof-a-kind person, will lead us
                         through unmarked territory…</p>
                 </li>
             </ul>
         </div>
 
+        <section>
+            <h2 class="text-red-700 text-2xl font-semibold font-head text-center">Paris Tradition</h2>
+            <p class="text-center text-2xl font-semibold">Friday</p>
+            <div class="space-y-3">
+                <p>From the moment we step off the train, we’re surrounded by the
+                    magical mood of the city, the perfect backdrop for what’s to come.</p>
+                
+                <p class="font-semibold">Welcome to the First Bistrot: a Time Capsule of Parisian Charm</p>
+
+                <p>Close your eyes for a second. Picture this:</p>
+                <p>Wooden tables slightly worn by time, soft yellow lighting, the subtle clinking of glasses, the aroma of sizzling butter and the people talking and cheering in front of a glass of wine.</p>
+                <p>The door creaks open under a hand-painted sign reading &quot;<em>Bistrot à vin</em>&quot; barely visible, a sort of Chamber of Secrets for only to those who truly know.</p>
+                <p>Though the current bistrot was founded in the late &#39;90s, the walls have seen decades of joy, conversation, and culinary devotion. </p>
+                <p>It&#39;s not just a place to eat—it’s a <strong>Parisian story told through flavors</strong>.</p>
+                <p>One of the <strong>pioneers of the Bistronomie movement</strong> I’ve told you about, this place is pure, honest, and refreshingly unpretentious.</p>
+                <p>No fancy flourishes. No showy presentations.</p>
+                <p>Just <strong>classic French cuisine made with heart</strong>, crafted daily from what the chef finds fresh at the market.</p>
+                <p>With its <strong>vintage decor and intimate setting</strong>, making it a favorite among locals seeking an authentic Parisian dining experience, not contaminated by the touristic traps.</p>
+                <p>A simple chalkboard leans against the bar, its handwritten menu revealing only what the chef has chosen for today. </p>
+                <p>No long lists, no unnecessary flourishes, just a few carefully curated dishes, crafted from the freshest ingredients of the day.</p>
+
+                <p><strong>Expect dishes that will suprise you,</strong> not for their novelty, not for their overly artistic presentation, but for their essence, and simpleness.</p>
+                <p>Describing a place and its culinary style is no easy task, but this bistrot
+                    captures the essence of the Bistrot movement like no other.</p>
+                <p>No unnecessary embellishments, no overcomplicated presentations. </p>
+                <p>This is exactly why I chose this place. It <strong>embodies the very spirit</strong>  of the Paris I want to show you. To give you a taste of what awaits, here’s a selection of the menu.</p>
+                <p>The bistrot has its own, almost never changing, clientele. They also not have a strong "social" presence, so it was really difficult to find high definition pictures of their dishes.   </p>
+                <p>Here is one of their musts: <strong>bavette d&#39;aloyau au poivre</strong> (steak in pepper sauce).</p>
+                <p><img src="@image('peppersteak.jpg')" alt="Main Dish" class="lg:w-1/2 mx-auto rounded-lg shadow-md"></p>
+                <p>The restaurant offers always meat or fish selection, and each of them is amazing. It may be worth to go twice or thrice just to savor all their dishes.</p>
+                <p>They always source their fish and seafood fresh:</p>
+                <p><img src="@image('petit-paris-fish.jpg')" alt="Fish Dish" class="lg:w-1/2 mx-auto rounded-lg shadow-md"></p>
+                <h3 id="and-here-is-the-dessert-" class="font-semibold">And here is one of the most delicious dessert:</h3>
+                <p><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/06/a5/38/photo8jpg.jpg?w=1000&amp;h=-1&amp;s=1" alt="Dessert" class="lg:w-1/2 mx-auto rounded-lg shadow-md"></p>
+                <p>Not just the sweet end to the meal, but a celebration of everything French cuisine stands for.</p>
+                <p>The <strong>desserts</strong> are included in the trip and you cannot miss on them!</p>
+                <p>That’s the beauty of this place: it’s all about surprise, spontaneity, and the freshest ingredients of the day. </p>
+                <p>We will enjoy a meal crafted with the very essence of France.</p>
+            
+
+                <h3 class="text-center text-2xl font-semibold">Strolling through Paris...</h3>
+                    <p>As the day rolls by, the <strong> whole city of Paris</strong> is ours to explore.</p>
+                    <p> With                         our senses still lingering on the flavors of lunch, we step outside and
+                        let the rhythm of the streets guide us.</p>
+                    <p>
+                        A walk along the Seine sets the tone. The riverbanks are alive with
+                        bookstalls, street musicians, and the everyday rhythm of the city.</p>
+
+                    <p>
+                        Notre-Dame greets us from the Île de la Cité, standing as a timeless
+                        icon, while the surrounding streets invite us to wander, discovering
+                        hidden corners and lively cafés.</p>
+                    <img src="https://img.nh-hotels.net/8yYbq/zyBwAG/original/AdobeStock_100053376.jpg" alt="Notre Dame Photo" class="lg:w-2/3 mx-auto rounded-lg shadow-md">
+                    <p>
+                        <strong>They recently reopened</strong>, so you may enter again this beautiful church,
+                        and admire the reconstruction works that have been going for years.</p>
+
+                    <p>
+                        Whether you choose to visit a museum, sip coffee at a café, or discover
+                        charming boutiques, <strong>the afternoon is yours to enjoy</strong>.</p>
+
+                    <p>For those who love to shop, <strong>le Marais</strong> is a treasure trove of
+                        independent boutiques, artisanal chocolatiers, and vintage finds,
+                        while Rue Cler offers a feast for the senses with its colorful market
+                        stalls brimming with fresh produce, cheeses, and pastries. </p>
+                    <p>We’ll meet again in the evening for dinner, where we’ll dive
+                        deeper into the heart of traditional Parisian food and drink culture.</p>
+                        
+            </div>
+
+        </section>
         {{-- <div class="p-2 mt-12 rounded-lg">
             <h3 class=" font-serif text-3xl text-center font-semibold">Paris Tradition </h3>
             <p class="font-serif mb-6 text-2xl text-center">Day 1</p>
