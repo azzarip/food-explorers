@@ -175,29 +175,30 @@
 
             <p>A traditional French bistrot meal follows a simple structure: Entrée, Plat, and Dessert.</p>
 
-            <h3 class="font-serif font-semibold text-center p-4 bg-amber-300/20">Entrée</h3>
+            <h3 class="font-serif text-3xl font-semibold text-center p-4 bg-red-300 w-fit mx-auto rounded-lg border border-black">Entrée</h3>
             <p>The entrée is the starter, usually something light but full of character.</p>
             <p>Not to be confused with the American "Entrée" which means main course.</p>
             <p></p>
 
-            <h3 class="font-serif font-semibold text-center p-4 bg-red-300/20">Plat</h3>
+            <h3 class="font-serif text-3xl font-semibold text-center p-4 border border-black w-fit mx-auto rounded-lg">Plat</h3>
             <p>Then comes the plat, the main course, where the heart of the bistrot’s
                 cooking shines.</p>
             <p> Here you get your meat, your fish or whatever else you ordered.</p>
 
 
-            <h3 class="font-serif font-semibold text-center p-4 bg-cyan-500/20">Dessert</h3>
+            <h3 class="font-serif text-3xl font-semibold text-center p-4 bg-sky-200 w-fit mx-auto rounded-lg border border-black">Dessert</h3>
             <p>Finally, the dessert, which the French treat with just as much respect
                 as the rest of the meal. .</p>
             <p> Usually bistrot won’t serve extravagant, modern creations—desserts here are classics, perfected over
                 generations.</p>
 
-            <p class="font-serif font-semibold text-2xl text-center p-4 border-2 border-red-800 rounded-lg">
+                <div class="p-4 border-2 border-red-800 rounded-lg">
+            <p class="font-serif font-semibold text-2xl text-center ">
                 Desserts are included!
             </p>
 
             <p>Not only they are included, but they are mandatory. If you don’t
-                have dessert in Paris, I am ashamed of you.</p>
+                have dessert in Paris, I am ashamed of you.</p></div>
 
             <p>So in each of the restaurant you will get these three dishes, you will
                 choose your own preferred dish from the menu that the restaurant will
@@ -271,7 +272,7 @@
         </div>
 
         <section>
-            <h2 class="text-red-700 text-2xl font-semibold font-head text-center">Paris Tradition</h2>
+            <h2 class="text-red-700 lg:text-4xl font-serif text-3xl font-semibold font-head text-center mt-4">Paris Tradition</h2>
             <p class="text-center text-2xl font-semibold">Friday</p>
             <div class="space-y-3">
                 <p>From the moment we step off the train, we’re surrounded by the
