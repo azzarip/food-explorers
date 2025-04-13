@@ -278,7 +278,7 @@
                 <p>From the moment we step off the train, we’re surrounded by the
                     magical mood of the city, the perfect backdrop for what’s to come.</p>
                 
-                <p class="font-semibold">Welcome to the First Bistrot: a Time Capsule of Parisian Charm</p>
+                <p class="font-semibold">Welcome to the First Bistrot: a step into Parisian Charm</p>
 
                 <p>Close your eyes for a second. Picture this:</p>
                 <p>Wooden tables slightly worn by time, soft yellow lighting, the subtle clinking of glasses, the aroma of sizzling butter and the people talking and cheering in front of a glass of wine.</p>
@@ -339,7 +339,46 @@
                     <p>We’ll meet again in the evening for dinner, where we’ll dive
                         deeper into the heart of traditional Parisian food and drink culture.</p>
                         
-            </div>
+
+                        <h3 class="text-center text-2xl font-semibold">Bar à Vin</h3>
+                        <p class="text center text-2xl">Friday Evening</p>
+
+                        <p>On the first day, I want to make you experience Paris in the most traditional way.</p>
+<p>Let me take you <strong>somewhere special</strong>, but still typical. Not just for what’s in the glass, but for what it feels like to be there.</p>
+<p>This evening, we dive into one of Paris’ most beloved rituals: <strong>Bar à Vin</strong>.</p>
+<p>It simply means <em>Wine Bar</em>. </p>
+<p>You might have seen the name before, but this isn’t just a wine bar, as people in other countries mean it.</p>
+<p>At least in Paris, compared to other wines shop. It’s something different.
+Something beautifully, <strong>unforgettably Parisian</strong>.</p>
+<p>It’s where locals go after work, before dinner, or long into the night.</p>
+<p>It’s not a noisy bar.</p>
+<p>It’s not a restaurant.</p>
+<p>It’s a warm, glowing corner of the city where people go to chat, enjoy their evening, without stress.</p>
+<p>Walls lined with dusty bottles, wooden stools and marble counters, laughter echoing gently under dim lights.</p>
+<p><img src="https://relaisduvin.com/bar-a-vin0.jpg?v=8tyhscaj8hg2v" alt="Bar à Vin" class="rounded-md shadow-md"></p>
+<p>A lot of wines, that you can select directly from the walls. </p>
+<p>The real experience is just talking to the host, and choosing together the wine you may like the most.</p>
+<p>All of them accompanied by wooden cutting boards full of cheeses, charcuterie and other typical bites.</p>
+<p class="border-2 rounded-lg border-amber-700 p-4 text-center text-xl"> A bar à vin is where you fall in love with the wine, the moment, and the people you’re sharing it with.</p>
+<p>It is actually quite difficult to choose one.</p>
+<p>Every street has a couple of them, and the most famous ones are stormed by tourists that want to live the real Paris, but end up in another trap.</p>
+<p>The Place We&#39;re Going? <strong>It’s a small treasure.</strong></p>
+<p>Not flashy. No signs trying to grab your attention.</p>
+<p>Just a heavy wooden door, a quiet hum inside, and the feeling that you’ve stepped into a locals-only secret.</p>
+<p>Bottles from every corner of France. Wines full of character—bold, delicate, earthy, surprising.</p>
+<p>Each glass tells the story of a vineyard, a region, a way of life.</p>
+<p>And alongside the wine, there are small plates that delight your palate.</p>
+<p><img src="https://scontent-zrh1-1.xx.fbcdn.net/v/t39.30808-6/464817638_8611002505660665_2980272783909710714_n.jpg?_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=cc71e4&amp;_nc_ohc=5DfhveW7usMQ7kNvwGzQ_DU&amp;_nc_oc=Adn4JyvgpGbkE9Kx6W-nuhZjFvpnYvA3rwd2GtciaCAy7aUU4YueZ820-ELVh4roO3gQ2tgTI7l5JlpDhmXzzmBf&amp;_nc_zt=23&amp;_nc_ht=scontent-zrh1-1.xx&amp;_nc_gid=fL2dq753SFUQoPKRLTXZlg&amp;oh=00_AfEzPncF56k2nfssZHKlENWrkzUCaWRTRhU6nk2sIIFxnQ&amp;oe=68017280" alt="Food boards" class="rounded-md shadow-md"></p>
+<p>Some of the bar à vin today evolved into &quot;<em>Bar à Fromage</em>&quot;, where not only wine is served, but the focus is shifted more on the food and the cheese.</p>
+<p>In France, <strong>cheese isn’t just a food</strong>. It’s a ritual, a heritage, almost a form of poetry.</p>
+<p>Each region tells its story through its cheeses.</p>
+<p>Cheese is never an afterthought, it’s a centerpiece, meant to be savored slowly, paired with the perfect glass, and shared.</p>
+<h4 class="font-semibold">If you do not drink</h4>
+<p>If you do not drink, a Bar à Vin still offers an <strong>incredible experience</strong>.</p>
+<p>It’s not just about wine, it’s about the atmosphere, the food, and the way Parisians embrace the art of living, <em>la joie de vivre</em>.</p>
+
+</div>
+<hr class="my-4">
 
         </section>
         {{-- <div class="p-2 mt-12 rounded-lg">
