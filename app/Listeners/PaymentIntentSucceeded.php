@@ -21,7 +21,7 @@ class PaymentIntentSucceeded implements ShouldQueue
      */
     public function __construct()
     {
-        //
+
     }
 
     /**
