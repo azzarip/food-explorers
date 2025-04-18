@@ -71,5 +71,12 @@ class Milano2Paris extends SequenceAutomation
         $this->email(Paris\Desserts::class);
         return Wait::for("44 hours")->precise()->then('day8');
     }
+
+    public function day8()
+    {
+        //Friday
+        $this->email(Paris\ThirdBistrot::class);
+        return Wait::until("21.04.2025 20:00")->then('day9');
+    }
 }
 
