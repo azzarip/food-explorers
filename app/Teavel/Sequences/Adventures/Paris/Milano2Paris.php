@@ -85,5 +85,11 @@ class Milano2Paris extends SequenceAutomation
         $this->email(Paris\MaisonSota::class);
         return Wait::for("48 hours")->then('day9');
     }
+
+    public function day10()
+    {
+        //Saturday
+        $this->email(Paris\LastEmail::class);
+    }
 }
 
