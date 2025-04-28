@@ -9,7 +9,7 @@
         @if($flag)
         <p class="text-center text-slate-500">Please report to me any bug of this website.</p>
         @endif
-        {{-- <div class="text-center text-white"> &copy; 2022-{{ date('Y') }} Pizza Azzari | Knüslistrasse 8, 8004 Zürich <span class="hidden md:inline">|</span><br class="md:hidden"> <a href="/privacy-policy" class="text-blue-500 underline">Privacy Policy</a> | <a href="/cookie-policy" class="text-blue-500 underline">Cookie Policy</a> --}}
+        <div class="text-center text-white"> &copy; 2022-{{ date('Y') }} Prem Inh Azzari | Knüslistrasse 8, 8004 Zürich <span class="hidden md:inline">|</span><br class="md:hidden"> <a href="/privacy-policy" class="text-blue-500 underline">Privacy Policy</a> | <a href="/cookie-policy" class="text-blue-500 underline">Cookie Policy</a>
         </div>
     </div>
 </footer>

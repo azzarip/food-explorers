@@ -9,8 +9,6 @@ html {
 .h2 {
     @apply font-head;
     font-weight: 600;
-    padding-top: 32px;
-    marginb-bottom: 8px;
     font-size: 30px;
     line-height: 1.2;
 }

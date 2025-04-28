@@ -2,6 +2,7 @@
 
 use Domains\Base\Http\Controllers\EventPageController;
 use Domains\Base\Http\Controllers\MilanoController;
+use Domains\Base\Http\Controllers\PetitParisInterest;
 use Domains\Base\Http\Controllers\ReviewController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,13 +20,10 @@ Route::group([
     Route::view('/petit-paris', 'base::lp.adventures.petit-paris');
     Route::post('/milano', MilanoController::class);
     Route::view('/ty/milano', 'base::milano-ty');
-    Route::view('/yu-an-omakase', 'closed');
-    Route::view('/rum-expedition', 'events.rumtasting');
 
-    Route::view('/explore-malaysia', 'events.explore-malaysia');
-    Route::view('/goodbye-dapur', 'events.goodbye-dapur');
-
-    Route::view('/explore-malaysia/m', 'events.explore-malaysia-meetup');
+    Route::view('/paris', 'base::lp.adventures.paris');
+    Route::post('/paris', PetitParisInterest::class);
+    Route::view('/ty/paris', 'base::lp.adventures.ty_paris');
 
 
     Route::get('/review/{event}/{contact:uuid}', [ReviewController::class, 'start'])->name('review.start');
