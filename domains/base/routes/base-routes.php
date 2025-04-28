@@ -24,6 +24,8 @@ Route::group([
     Route::view('/paris', 'base::lp.adventures.paris');
     Route::post('/paris', PetitParisInterest::class);
     Route::view('/ty/paris', 'base::lp.adventures.ty_paris');
+    Route::view('/ty/paris/final', 'base::lp.adventures.ty_final');
+    Route::view('/address/paris', 'base::lp.adventures.address');
 
 
     Route::get('/review/{event}/{contact:uuid}', [ReviewController::class, 'start'])->name('review.start');
