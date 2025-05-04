@@ -24,6 +24,10 @@ class PetitParisInterest
         
         Session::put('contact', $contact->id);
         
+        if($contact->hasAddress) {
+            return redirect('/ty/paris/final');
+        }
+
         return redirect('/ty/paris');
     }
 }
