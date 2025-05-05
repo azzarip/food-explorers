@@ -1,5 +1,5 @@
 ---
-subject: "[7/10] Three Desserts You’ll Taste in Paris (and Never Forget)"
+subject: "Three Desserts You Can Taste in Paris (and Never Forget)"
 ---
 
 Dear Food Explorer, 
@@ -8,7 +8,7 @@ If there’s one thing that brings a perfect Parisian meal to its rightful close
 
 And in our upcoming adventure, **you won’t just try one, you’ll taste many**. 
 
-Each bistrot has its own way of saying “au revoir” to the meal, and every time, it’s unforgettable.
+Each bistrot has its own way of saying _“au revoir”_ to the meal, and every time, it’s unforgettable.
 
 The usual suspects are there: **croissants, pain au chocolat** and **macarons**.
 
@@ -88,11 +88,8 @@ These ones are just the most typical and what I go for every time I go to Paris.
 
 ## If you like desserts you cannot miss this trip to Paris!
 
-Many people have already reserved their spot!
-
-Do you really want to miss this opportunity?
-
-Just write me a whatsapp to reserve your place,
-
 Marco
 
+---
+
+If you are not interested anymore in receiving email, just click [here](/cancel)

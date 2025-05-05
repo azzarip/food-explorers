@@ -1,5 +1,5 @@
 ---
-subject: "[4/10] Step Into Paris: Our First Bistrot Stop"
+subject: "[Paris] Our First Traditional Bistrot"
 ---
 
 Dear Food Explorer, 
@@ -10,7 +10,7 @@ Of all the places on our Paris journey, **this is the one closest to my heart**.
 
 A dear friend of mine, once living in Paris, brought me here in 2018. 
 
-Since then, every trip back to Paris starts with this bistrot. It’s become a ritual, a return to something timeless and deeply delicious.
+Since then, every trip back to Paris **starts with this bistrot**. It’s become a ritual, a return to something timeless and deeply delicious.
 
 ## Welcome to the First Bistrot: a Time Capsule of Parisian Charm
 
@@ -18,9 +18,9 @@ Close your eyes for a second. Picture this:
 
 Wooden tables slightly worn by time, soft yellow lighting, the subtle clinking of glasses, the aroma of sizzling butter and the people talking and cheering in front of a glass of wine.
 
-The door creaks open under a hand-painted sign reading "_Bistrot à vin_" barely visible, a sort of Chamber of Secrets for only to those who truly know.
+The door creaks open under a hand-painted sign reading "_Bistrot à vin_" barely visible, a sort of **Chamber of Secrets** for only to those who truly know.
 
-Though the current bistrot was founded in the late '90s, the walls have seen decades of joy, conversation, and culinary devotion. 
+Though the current bistrot was founded in the late '90s, the walls have seen decades of joy, conversation, and culinary devotion, since they belonged to a previous restaurant before.
 
 It's not just a place to eat—it’s a **Parisian story told through flavors**.
 
@@ -34,7 +34,7 @@ With its **vintage decor and intimate setting**, making it a favorite among loca
 
 A simple chalkboard leans against the bar, its handwritten menu revealing only what the chef has chosen for today. 
 
-No long lists, no unnecessary flourishes, just a few carefully curated dishes, crafted from the freshest ingredients of the day.
+**No long lists**, no unnecessary flourishes, just a few carefully curated dishes, crafted from the freshest ingredients of the day.
 
 ## Expect Dishes that will suprise you
 
@@ -44,21 +44,19 @@ I did not find picture of what I ate there last time, since the menu changes so 
 
 The bistrot has its own clientele, and does not have a strong "social" presence, so it was really difficult to find high definition pictures of their dishes...
 
-Here is one of their musts: **bavette d'aloyau au poivre** (steak in pepper sauce).
+One of their musts: **bavette d'aloyau au poivre** (steak in pepper sauce).
 
-![Main Dish](https://www.foodexplorers.ch/images/peppersteak.jpg)
+But here you can see a selection of their dishes:
+
+![Dishes](https://www.foodexplorers.ch/images/pbert.webp)
 
 The restaurant offers always meat or fish selection, and each of them is amazing. They always source their fish and seafood fresh:
 
 ![Fish Dish](https://www.foodexplorers.ch/images/petit-paris-fish.jpg)
 
-### And here is the dessert! 
-
-![Dessert](https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/06/a5/38/photo8jpg.jpg?w=1000&h=-1&s=1)
-
 Not just the sweet end to the meal, but a celebration of everything French cuisine stands for.
 
-The **desserts** are included in the trip and you cannot miss on them!
+The **desserts** will be included in the trip and you cannot miss on them!
 
 That’s the beauty of this place: it’s all about surprise, spontaneity, and the freshest ingredients of the day. 
 
@@ -72,8 +70,12 @@ To taste something new and at the same time, deeply familiar.
 
 To share a table, a laugh, a story, and to remember why we fell in love with Paris in the first place.
 
-And I can’t wait to share it with you.
+And I can’t wait to share this trip with you.
 
 À très bientôt,
 
 Marco
+
+---
+
+If you are not interested anymore in receiving email, just click [here](/cancel)

@@ -71,11 +71,19 @@ It’s about entering the **secret spaces of a city** that knows how to feed you
 
 Tomorrow, I’ll tell you more about the bistrots and why they are so important.
 
+---
+
+### How is the booking going to work?
+
+As I prepare everything for Paris over the next few days, you’ll receive a few emails each focusing on a specific part of our trip.
+
+These emails will include all the important details about what we’ll be doing together.
+
+If you provided your house address, you’ll also get a printed version of the program sent straight to your letterbox.
+
+**If you are not interested** in receiving emails just click [here](/cancel).
+
 I hope you’ll join us.
-
-When you return home, you won’t just be full, you’ll be changed.
-
-You’ll carry the flavors, the warmth, and the stories that most visitors never get close to.
 
 Warmly,
 
