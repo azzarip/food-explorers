@@ -14,77 +14,69 @@ You’ve likely savored the grandeur of its iconic sights and famous restaurants
 
 A side of the city where the food is **not only delicious but authentic, hidden, and uniquely Parisian**.
 
-Welcome to a food adventure unlike any other.
-
-Before I continue, I want to make it clear:
+Before I go any further, let me make this clear:
 
 ## This is not 'another' food tour
 
-Let’s make one thing clear: this is not your average walking tour with pit stops at street food stalls or the usual touristy things.
+This isn’t a stroll past street food stalls or a checklist of tourist stops.
 
-This is not a "first-time-in-Paris" visit to Paris.
+And it’s definitely not a _“first time in Paris”_ experience.
 
-## This is a deep dive into the heart of Parisian gastronomy
+This is something deeper.
+
+An invitation to uncover the **beating heart of Parisian gastronomy**: the places locals treasure, where food means connection, and every dish carries a piece of the city’s soul.
+
+# The Most Underrated Cuisine in Paris
+
+Everyone’s heard of **haute cuisine** and nouvelle cuisine.
+
+But few know that the true soul of Parisian dining today is found somewhere much more intimate, in the bistrots.
+
+Now, I know what you’re thinking: the **word bistrot** gets thrown around a lot.
+
+And yes, along the Seine or near Montmartre, you’ll find plenty of places using the name as window dressing with the usual steak-frites and laminated english menus.
+
+**But real bistrots?**
+
+They’re something else entirely.
+
+Since the early ‘90s, a quiet revolution called **bistronomie** has redefined these small, cozy spaces. Blending refined technique with the soul of home-cooked comfort.
+
+No frills. No fuss. Just honest, imaginative food served in places that feel like old friends.
+
+
+## That’s Where We’re Going
+
+In three unforgettable days, I’ll take you inside the places Parisians whisper about.
+
+The tucked-away bistrots with **handwritten chalkboard menus** and chefs who source ingredients like artists.
+
+These aren’t the restaurants everyone’s Instagramming.
+
+**They’re the ones you’ll still be dreaming about next year.**
+
+This is why I say: **Parisian bistrots are underrated**.
+
+They don’t scream for attention: they simply serve unforgettable meals.
 
 A journey for the true connoisseur, crafted to amaze even the most discerning of food lovers.
 
-Over three days, you’ll discover the **hidden gems** and **legendary chefs** that truly define Paris. 
+## I Call This Journey Petit Paris
 
-We're talking about places off the beaten path, where the **locals dine**, where authentic Parisian food tells stories of centuries of culinary history.
+Because it’s not about size.
 
-Three days of discovering the best and most delicious restaurants. 
+It’s about intimacy.
 
-# The Most Underrated Cuisine of Paris
+It’s about entering the **secret spaces of a city** that knows how to feed your senses and your soul.
 
-Paris has many many many food styles and cuisines that have been developing over the last decades.
+Tomorrow, I’ll tell you more about the bistrots and why they are so important.
 
-You’ve probably heard of _haute cuisine_, _nouvelle cuisine_ and other famous French concepts.
+I hope you’ll join us.
 
-But there’s one style that quietly stole the heart of Parisians: and it’s now the true soul of the city’s food scene.
+When you return home, you won’t just be full, you’ll be changed.
 
-## The Bistrots
+You’ll carry the flavors, the warmth, and the stories that most visitors never get close to.
 
-For most of the people, Bistrots are simply _small and cozy restaurant_, maybe with wooden decor and wine bottles on the walls.
-
-
-I know that many people connect the word with tourist traps: if you walk along the Seine, it is easy to step into many restaurants also called "Bistrot", but just used as a buzz word.
-
-Since the early '90s, bistrots have become the **beating heart of Parisian gastronomy**.
-
-There is a **whole culinary movement** called Bistronomie. About which I will talk more in future emails I will send you.
-
-Bistros are more than just _small, cozy restaurants_, they are where the **soul of Parisian** food lives.
-
-But don’t expect the usual, overcrowded touristy spots. 
-
-I’m taking you to the bistros that true Parisians swear by. These are places where simple, fresh ingredients come together to create dishes that feel like a warm embrace. 
-
-**This is why I say**: 
-
-## Parisian Bistrots are underrated
-
-Most of Bistrots are just tourist traps, but there are some, hidden from the usual landmarks and tourist locations that are jewels you cannot miss.
-
-Here, food is not just sustenance, it’s a **celebration of French gastronomy**.
-
-In just three days, you’ll uncover a **hidden Paris** that most visitors miss.
-
-This isn’t about following a map or ticking off the usual **“must-dos**”. 
-
-It’s about **feeling Paris**, about engaging with the city through its food, and experiencing something extraordinary.
-
-I’ve named this journey **Petit Paris** because it’s not just a visit, it’s a personal invitation to discover the city’s intimate culinary corners.
-
-Tomorrow, we’ll dive deeper into the **world of bistros** and explore how they are reshaping the **future of French cuisine**.
-
-And I will start presenting the first restaurants that we will visit in this french adventure.
-
-## I hope you’ll join us on this exclusive adventure
-
-When you return home, it won’t just be the delicious meals you’ll carry with you. **You’ll take home memories**: memories that can’t be found in any guidebook or on a popular blog.
-
-You’ll **leave Paris with stories**, connections, and an experience that feels authentic. These aren’t just meals, they are a journey into the heart of Parisian culture.
-
-Have a nice day,
+Warmly,
 
 Marco

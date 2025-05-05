@@ -6,7 +6,7 @@ use App\Teavel\Sequences;
 use Azzarip\Teavel\Automations\FormAutomation;
 use App\Teavel\Sequences\Adventures\Paris\ParisInterest;
 
-class PetitParisInterest extends FormAutomation
+class ParisInterestForm extends FormAutomation
 {
     protected array $start = [
         ParisInterest::class,

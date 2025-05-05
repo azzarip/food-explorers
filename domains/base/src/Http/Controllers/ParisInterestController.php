@@ -5,10 +5,10 @@ namespace Domains\Base\Http\Controllers;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use App\Teavel\Goals\Forms\ParisInterestForm;
 use Azzarip\Teavel\Http\Requests\FullContactRequest;
-use App\Teavel\Goals\Forms\PetitParisInterest as FormsPetitParisInterest;
 
-class PetitParisInterest
+class ParisInterestController
 {
     /**
      * Handle the incoming request.
@@ -20,7 +20,7 @@ class PetitParisInterest
         $contact = Contact::fromData($data);
         $contact->allowMarketing();
 
-        $contact->completeForm(FormsPetitParisInterest::class);
+        $contact->completeForm(ParisInterestForm::class);
         
         Session::put('contact', $contact->id);
         

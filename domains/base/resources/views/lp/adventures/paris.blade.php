@@ -234,7 +234,7 @@
             <p class="text-center text-xl">Be the first to have the opportunity to join this experience!</p>
             <p class="text-center text-xl mt-2">And enjoy a <span class="text-orange-900">dream foodie weekend</span> in Paris.</p>
 
-            <div class="max-w-sm mx-auto mt-2">
+            <div class="max-w-sm mx-auto my-2">
                 @guest
                     <x-forms::base action="/paris" button="Join the waitlist for Paris!">
                         <x-forms::field.first_name />
@@ -244,8 +244,8 @@
                         <x-forms::field.privacy_policy />
                     </x-forms::base>
                 @else
-                    <div class="rounded border-2 border-green-800 p-2">
-                        <x-forms::base action="/paris" button="Join the waitlist for Paris!" class="bg-none">
+                    <div class="rounded border-2 border-green-800 p-2 mb-2">
+                        <x-forms::base action="/paris" button="I want to join the waitlist for Paris!" class="bg-none">
                             <p class="text-2xl pl-2">Hi <span class="font-semibold">{{ auth()->user()->first_name }}</span>,
                                 (<span class="underline" x-data="" @click="$dispatch('logout')">not you?</span> )
                             </p>
@@ -256,7 +256,7 @@
                             <input type="hidden" name="privacy_policy" value="on">
                         </x-forms::base>
                     </div>
-                    @endif
+                @endif
 
                 </div>
             </section>
@@ -290,14 +290,14 @@
             <div class="mt-6">
                 <h3 class="mt-6 mb-4 font-serif text-2xl font-semiboldl">I have allergies or intollerances...</h3>
                 <p>Before booking, I will ask any participant for allergies or intollerances.</p>
-                <p>This information will be kept private and only shared with the restaurant.</p>
+                <p>This information will be kept private and only shared with the restaurant staff.</p>
             </div>
 
             <div class="mt-6">
                 <h3 class="mt-6 mb-4 font-serif text-2xl font-semiboldl">Are there vegetarian options?</h3>
                 <p>As I complete the organization I can tell you better.</p>
-                <p>Most of the restaurants I am in contact with, offer vegetarian dishes.</p>
-                <p>Complete the form and let me know and I will be back to you as soon as everything is ready.</p>
+                <p>Most of the restaurants I am in contact with offer vegetarian dishes.</p>
+                <p>If you join the waitlist, you can maybe tell me by message or email, so I know for sure.</p>
                 <p>Anyhow I will ask during booking what are your dietary restrictions.</p>
             </div>
 
