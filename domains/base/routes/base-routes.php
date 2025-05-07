@@ -22,7 +22,7 @@ Route::group([
     Route::post('/milano', MilanoController::class);
     Route::view('/ty/milano', 'base::milano-ty');
 
-    Route::view('/paris', 'base::lp.adventures.paris');
+    Route::view('/paris', 'closed');
     Route::post('/paris', ParisInterestController::class);
     Route::view('/ty/paris', 'base::lp.adventures.ty_paris');
     Route::view('/ty/paris/final', 'base::lp.adventures.ty_final');

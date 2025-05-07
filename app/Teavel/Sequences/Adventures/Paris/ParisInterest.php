@@ -50,7 +50,7 @@ class ParisInterest extends SequenceAutomation
     public function day4() {
         //Thursday
         $this->email(MaisonSota::class);
-        return Wait::for('48 hours')->then('day5');
+        return Wait::for('27 hours')->then('day5');
     }
 
     public function day5() {

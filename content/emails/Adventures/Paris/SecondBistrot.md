@@ -1,5 +1,5 @@
 ---
-subject: "Bistrots are not only for traditional french food"
+subject: "Bistrots Are the New Fine Dining in Paris"
 ---
 
 Dear Food Explorer, 
