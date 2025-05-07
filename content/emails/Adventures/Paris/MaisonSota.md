@@ -1,72 +1,102 @@
 ---
-subject: "[9/10] Hidden Gem of Paris"
+subject: "A Hidden Gem of Paris"
 ---
 
-Hi {{ contact.first_name }}, 
+Hi {{ contact.first_name }},  
 
-We’ve explored the world of Bistrots together, and if you’ve been following our journey, you know: they’re more than restaurants.
+As we continue to explore the world of Bistrots together, and if you’ve been following the journey, you know they’re more than restaurants.  
 
-After two unforgettable days of culinary adventures, **Sunday is meant to slow down**. 
+They’re living rooms of a city that speaks in flavors.  
 
 For the last lunch together I want to bring you **somewhere different**.
 
 **Not another Bistrot.**
 
-But still has many elements in common with Parisian Bistronomie.
+But it won’t feel like an ending.  
 
-Maybe one more flaky croissant at a favorite boulangerie, or a quiet stroll through a hidden street. Perhaps a little boutique catch your eye. 
+It will feel like **something different**.  
 
-Our path will take us toward the **Saint-Ambroise quarter**, in the **11th arrondissement**, known for its cozy cafés, local bistros, and creative shops.
+---
 
-## The Hidden Gem of Paris
+## A Place That Isn’t Listed in the Guidebooks  
 
-The kind that food critics whisper about.  
+Tucked away in a quiet street of the **11th arrondissement**, where the rhythm of Paris slows and the crowds thin, there’s a door you could easily walk past.  
 
-The kind that’s **about to earn a Michelin star**, but hasn’t quite yet.  
+And yet… behind it lies one of the **most soulful kitchens in all of Paris**.  
+
+You don't find this restaurant if you don't know where it is.
+
+No flashy signs. No hype. Just **quiet excellence**.  
+
+The kind that’s **just one step away from a Michelin star**.  
 
 So we’re catching it right before the rest of the world does.
 
-### The chef isn’t trying to impress anyone.  
 
-He’s simply doing what he loves: **crafting unforgettable dishes from seasonal treasures**, guided by instinct, precision, and years of experience in both Japan and France.
+---
 
-He spent years in the French haute cuisine world before creating a space that reflects **his own language of cooking**.
+## The Chef  
 
-The setting is warm, intimate, and elegant. 
+He doesn’t chase trends.  
 
-An **open kitchen** replaces stiff formality with a sense of calm choreography.
+He doesn’t crave fame.  
 
-His team doesn’t serve you, but they host you.  
+He simply **cooks from the soul**.  
 
-**There’s no menu published.** Not even on the website.
+He has background from decades of **French haute cuisine** and blends in the influences from its family past. 
 
-What you’ll taste depends on what’s in season, and what inspired the chef that very morning.
+There’s no printed menu. Almost no marketing.  
 
-Each dish is a story of the season, local and fresh.
+What’s served is decided by instinct and ingredients—**that week**.
 
-**We’ll be among the few to experience it while it’s still a hidden treasure,** before the waiting list gets months long and the prices reach haute-cuisine heights.
+I have been already there, and each time is different. 
 
-Here you can find many of the dishes they presented through-out the last year:
+And what comes to the table… is quiet magic.  
 
-![Neobistrots](https://www.foodexplorers.ch/images/sota.webp)
+One week truffle, one week game birds, one week sea urchins...
 
-Of course the menu changes even daily sometimes, don’t get too attached—these dishes may already be gone. 
+---
 
-The menu changes often, like the seasons.
+## The Experience  
 
-Let’s keep this journey going!
+The space is minimal, warm, and honest.  
 
-## Do you want to join us for the trip to Paris?
+There’s an **open kitchen**, but no separation.  
 
-**Just write me a whatsapp message**.
+Amazing waiters.
 
-I will put on the list!
+You’re not eating _at_ the restaurant.  
 
-The **deadline** is Monday 28th, afterwards I will opene the remaining spots to other people of the group who could not join the Milano trip.
+You’re **part of it**.  
 
-**Just a few people have not confirmed yet...**
+Each dish feels like a whisper:  “_This is what the season tastes like, right now.”_  
 
-Do you really want to miss this next trip together?
+It’s one of the most **emotionally moving** meals I’ve had in years.  And I want to share it with you.  
+
+---
+
+## But I won’t tell you the name—yet.  
+
+Some things are best revealed only when the moment is right.  
+
+This is one of them.  
+
+Just know: it’s the kind of place that in a few months will have **a waiting list**, and prices to match.  
+
+Especially if they are going to win the Michelin Star, the prices will double instantly, and the waitlist will explode. 
+
+We’ll be there **before that happens**.  
+
+We’ll say, _“I remember when...”_  
+
+---
+
+Here’s a glimpse from one of their recent menus:  
+
+![Sota](https://www.foodexplorers.ch/images/sota.webp)
+
+Don’t get too attached.  
+**By the time we go, it will have changed again.**  
 
 Marco
 

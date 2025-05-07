@@ -8,6 +8,8 @@ use App\Teavel\Emails\Adventures\Paris\FirstBistrot;
 use Carbon\Carbon;
 use Azzarip\Teavel\Automations\Wait;
 use App\Teavel\Emails\Adventures\Paris\FirstEmail;
+use App\Teavel\Emails\Adventures\Paris\MaisonSota;
+use App\Teavel\Emails\Adventures\Paris\SecondBistrot;
 use Azzarip\Teavel\Automations\SequenceAutomation;
 use Azzarip\Teavel\Notifications\TelegramNotification;
 
@@ -41,12 +43,24 @@ class ParisInterest extends SequenceAutomation
     public function day3() {
         //Thursday
         $this->email(Desserts::class);
-        return Wait::for('24 hours')->then('day4');
+        return Wait::for('46 hours')->then('day4');
+    }
+
+
+    public function day4() {
+        //Thursday
+        $this->email(MaisonSota::class);
+        return Wait::for('48 hours')->then('day5');
+    }
+
+    public function day5() {
+        //Thursday
+        $this->email(SecondBistrot::class);
+        return Wait::for('50 hours')->then('day6');
     }
 
     // Bistrot Menus
 
-    // 2nd Bistrot
 
     // 3rd Bistrot
 
