@@ -3,7 +3,7 @@
 @php
     $seo = new SEO(
         title: 'Pizza Tasting - Food Explorers',
-        description: 'Explore Italian food',
+        description: 'Explore Modern Neapolitan Pizza at A Taverna de Pullicinella, a pizza tasting tour to discover all the flavors of Italian Neapolitan Pizzas.',
         image: image('pizza-tasting.webp'),
     );
 @endphp
