@@ -4,16 +4,18 @@ namespace App\Teavel\Goals\Forms;
 
 use App\Teavel\Sequences;
 use App\Teavel\Sequences\ExploreMalaysia;
+use App\Teavel\Sequences\GeneralGoingSequence;
+use App\Teavel\Sequences\GeneralInterestSequence;
 use Azzarip\Teavel\Automations\FormAutomation;
 use App\Teavel\Sequences\InterestedExploreMalaysia;
 
-class GoingExploreMalaysia extends FormAutomation
+class GeneralGoingGoal extends FormAutomation
 {
     protected array $start = [
-        ExploreMalaysia::class,
+        GeneralGoingSequence::class,
     ];
 
     protected array $stop = [
-        InterestedExploreMalaysia::class,
+        GeneralInterestSequence::class,
     ];
 }

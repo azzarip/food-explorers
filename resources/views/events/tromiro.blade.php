@@ -66,7 +66,7 @@
             <p>Now, let’s take a closer look at what awaits you...</p>
         </div>
 
-        <h2 class="my-6 font-serif text-2xl font-semibold text-center lg:text-3xl">Menu</h2>
+        <h2 class="my-6 font-serif font-semibold text-center lg:text-4xl text-3xl">Menu</h2>
 
         <ul class="pl-4 space-y-4">
             <li><strong class="lg:text-2xl">Margherita D.O.P. 👑</strong>
@@ -98,10 +98,9 @@
             </li>
         </ul>
 
-
-        <h3 class="my-6 font-serif text-2xl">Dessert</h3>
-        <p class="pl-4 mb-4">Dessert is not included, but the staff is available if you would like to order something sweet
-            to finish your meal.</p>
+        <div class="max-w-lg mx-auto mb-4">
+            <x-button :link="durl('/pizza-tasting', 'book')"> Reserve now your seat! </x-button>
+        </div>
 
         <div class="px-4 pb-4 mb-6 bg-blue-100 border-4 rounded-lg border-sky-700">
             <h3 class="my-6 font-serif text-xl text-center">Drinks are not included.</h3>
@@ -110,10 +109,8 @@
                     checkout</strong>.</p>
         </div>
 
-        <div class="max-w-lg mx-auto">
-            <x-button :link="durl('/pizza-tasting', 'book')"> Reserve now your seat! </x-button>
-        </div>
-        <p class="text-2xl font-semibold text-center">🔥 Limited Seats. One Night Only. 🔥</p>
+
+        <p class="text-2xl font-semibold text-center">🔥 Limited Seats 🔥<br> One Night Only </p>
         <p class="mt-4">Our last special dinner event sold out in less than 48 hours. This is your only chance to enjoy
             this exclusive menu at this special price. </p>
 
@@ -203,7 +200,7 @@
 
         <h3 class="block mt-4 text-xl font-semibold">What if I cannot come?</h3>
         <p>The <strong>deadline</strong> for cancellations and reimbursement is:</p>
-        <p class="text-xl font-semibold text-center">Thursday 22 May 2025 at 13:00, Zurich Time</p>
+        <p class="text-xl font-semibold text-center">Wednesday 21 May 2025 at 13:00, Zurich Time</p>
         <p>To cancel, write me message via Whatsapp or at my email. I will twint you back the total amount or cancel the
             credit cart payment.</p>
         <p class="font-semibold">Changing the RSVP on Meetup will not be considered, since I do not get notified. Please

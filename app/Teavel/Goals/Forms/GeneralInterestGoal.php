@@ -4,12 +4,12 @@ namespace App\Teavel\Goals\Forms;
 
 use Azzarip\Teavel\Automations\FormAutomation;
 use App\Teavel\Sequences;
-use App\Teavel\Sequences\InterestedExploreMalaysia as InterestSequence;
+use App\Teavel\Sequences\GeneralInterestSequence;
 
-class InterestedExploreMalaysia extends FormAutomation
+class GeneralInterestGoal extends FormAutomation
 {
     protected array $start = [
-        InterestSequence::class,
+        GeneralInterestSequence::class,
     ];
 
     protected array $stop = [

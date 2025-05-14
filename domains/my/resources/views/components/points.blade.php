@@ -8,12 +8,10 @@
                 <p class="my-2 text-3xl space-y-3ellow-700 font-trajan">
                     @if ($points == 0)
                         ROOKIE
-                    @elseif($points < 4)
+                    @elseif($points < 20)
                         EXPLORER
-                    @elseif($points < 10)
-                        MASTER EXPLORER
                     @else
-                        GRAND EXPLORER
+                        MASTER EXPLORER
                     @endif
                 </p>
             </div>
