@@ -22,8 +22,8 @@
     </div>
     <article class="max-w-2xl mx-auto">
         <h1 class="my-4 font-serif text-4xl font-bold text-center lg:text-5xl">Pizza Tasting</h1>
-        <p class="mt-2 mb-4 text-2xl text-center font-trajan">A Taverna E Pullicinella</p>
-        <p class="italic text-center">Bäckerstrasse 36, 8004 Zürich</p>
+        <p class="mt-2  text-2xl text-center font-trajan">A Taverna E Pullicinella</p>
+        <p class="italic text-center mb-4">Bäckerstrasse 36, 8004 Zürich</p>
 
         <img src="@image('pizza-tasting.webp')" alt="A Taverna" class="rounded-lg shadow-md">
         <p class="max-w-xl mx-auto mt-4 font-serif text-2xl font-semibold text-center lg:text-3xl">A <span
