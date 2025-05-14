@@ -2,15 +2,16 @@
 
 namespace App\Teavel\Sequences\Adventures\Paris;
 
-use App\Teavel\Emails\Adventures\Paris\Bistronomie;
-use App\Teavel\Emails\Adventures\Paris\Desserts;
-use App\Teavel\Emails\Adventures\Paris\FirstBistrot;
 use Carbon\Carbon;
 use Azzarip\Teavel\Automations\Wait;
+use App\Teavel\Emails\Adventures\Paris\Desserts;
 use App\Teavel\Emails\Adventures\Paris\FirstEmail;
 use App\Teavel\Emails\Adventures\Paris\MaisonSota;
-use App\Teavel\Emails\Adventures\Paris\SecondBistrot;
 use Azzarip\Teavel\Automations\SequenceAutomation;
+use App\Teavel\Emails\Adventures\Paris\Bistronomie;
+use App\Teavel\Emails\Adventures\Paris\FirstBistrot;
+use App\Teavel\Emails\Adventures\Paris\Annunciazione;
+use App\Teavel\Emails\Adventures\Paris\SecondBistrot;
 use Azzarip\Teavel\Notifications\TelegramNotification;
 
 class ParisInterest extends SequenceAutomation
@@ -57,6 +58,11 @@ class ParisInterest extends SequenceAutomation
         //Thursday
         $this->email(SecondBistrot::class);
         return Wait::for('50 hours')->then('day6');
+    }
+
+    public function day6() {
+        $this->email(Annunciazione::class);
+        return Wait::for('22 hours')->then('day7');
     }
 
     // Bistrot Menus
