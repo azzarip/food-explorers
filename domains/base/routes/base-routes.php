@@ -16,17 +16,15 @@ Route::group([
 
     Route::get('/event/{eventPage}', EventPageController::class)->name('eventPage');
 
-    Route::view('/milano', 'base::milano');
-    Route::view('/milano-final', 'base::milano-final');
     Route::view('/petit-paris', 'base::lp.adventures.petit-paris');
-    Route::post('/milano', MilanoController::class);
-    Route::view('/ty/milano', 'base::milano-ty');
 
     Route::view('/paris', 'closed');
     Route::post('/paris', ParisInterestController::class);
     Route::view('/ty/paris', 'base::lp.adventures.ty_paris');
     Route::view('/ty/paris/final', 'base::lp.adventures.ty_final');
     Route::view('/address/paris', 'base::lp.adventures.address');
+
+    Route::view('/pizza-tasting', 'events.tromiro');
 
 
     Route::get('/review/{event}/{contact:uuid}', [ReviewController::class, 'start'])->name('review.start');
