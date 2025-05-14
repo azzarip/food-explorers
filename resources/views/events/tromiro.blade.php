@@ -3,7 +3,7 @@
 @php
     $seo = new SEO(
         title: 'Pizza Tasting - Food Explorers',
-        description: 'Exploring Malaysia is a Malay Tasting Dinner at the Restaurant A Fatt in on the 5. March 2025. Places are limited, book now.',
+        description: 'Explore Italian food',
         image: image('pizza-tasting.webp'),
     );
 @endphp
@@ -142,7 +142,7 @@
             <p>Ingredients like mozzarella and tomatoes are <strong>personally selected</strong> from his native Naples.</p>
             <p>His philosophy equates pizza-making to poetry, requiring "<em>passionate hands and absolute dedication</em>"
                 to create the perfect pie.</p>
-            <p>After his adventure in Meilen, he decided to open <strong>A Taverna e Pullicinella</strong> near Langstrasse.
+            <p>After his adventure in Meilen, he decided to open <strong>A Taverna e Pullicinella</strong> near Helvetiaplatz.
             </p>
             <p>Contrary to Napulé, that has more classical pizza, here Raffaele can express his creativity with new and
                 modern pizzas.</p>
