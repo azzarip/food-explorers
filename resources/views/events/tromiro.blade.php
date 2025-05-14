@@ -84,9 +84,8 @@
             <li><strong class="lg:text-2xl">Blu di Bufala</strong>
                 <br>Creamy, tangy blue cheese made from buffalo milk, paired with smoky alpine Speck and toasted walnuts.
             </li>
-            <li><strong class="lg:text-2xl">🎀 Il Segreto</strong>
-                <br>A creation still taking shape — one that we’re crafting with Raffaele just for this event. Revealed only
-                on the night. Most probably vegetarian.
+            <li><strong class="lg:text-2xl">Ortolana Moderna</strong>
+                <br>A modern twist on the garden classic, grilled seasonal vegetables with a delicate shower of aged dried ricotta.
             </li>
             <li><strong class="lg:text-2xl">Mortadella e Pistacchi</strong>
                 <br>Thee classical crowd pleaser: everybody loves it. The savory freshly cut Mortadella accompanied by the
