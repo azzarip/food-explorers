@@ -70,3 +70,11 @@ Of course the menu changes weekly, don’t get too attached to these dishes, the
 It’s a chance to taste newly created flavors, creative dishes, and the relaxed yet refined atmosphere that defines this new wave of Parisian gastronomy.
 
 ### I almost finished telling the story of the Paris I love
+
+Next week I will finish setting out the last details.
+
+And open the bookings!
+
+Have a good weekend,
+
+Marco
