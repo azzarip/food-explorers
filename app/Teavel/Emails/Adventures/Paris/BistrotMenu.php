@@ -5,8 +5,8 @@ namespace App\Teavel\Emails\Adventures\Paris;
 use Azzarip\Teavel\Automations\EmailAutomation;
 use App\Teavel\Sequences;
 
-class ThirdBistrot extends ParisEmail
+class BistrotMenu extends ParisEmail
 {
-    protected $utm_content = 'third_bistrot';
+    protected $utm_content = 'bistrot_menu';
 
 }

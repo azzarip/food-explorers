@@ -1,12 +1,14 @@
 ---
-subject: "[8/10] The Third Bistrot: Neo-Bistrots"
+subject: "A New Type of Bistrots: Neo-Bistrots"
 ---
 
 Hi {{ contact.first_name }}, 
 
-We’ve talked a lot about Bistrots, and if you’ve been following along, you’ve probably started to feel how deep their roots run in Paris. 
+We’ve talked a lot about Bistrots, and if you’ve been following along, you’ve probably started to feel how deep their **roots run in Paris**. 
 
-They’re not just “places to eat.” They’re part of the city’s rhythm, like the smell of warm baguettes or the image of Notre Dame.
+They’re not just "_places to eat_”. 
+
+For a foodie, they’re part of the city’s rhythm, like the smell of warm baguettes or the image of Notre Dame.
 
 In the last years **a new movement emerged from the ideas and philosophy of the Bistronomie**.
 
@@ -16,9 +18,12 @@ But some young chefs decided to bring it forward.
 
 ## A new Language of Bistrot: Neo-Bistrots
 
-These places don’t shout. They whisper something different.
+These places don’t shout loud.
 
-A few **young chefs**, often just back from stints abroad or from years behind Michelin-star kitchens, **take small spaces—bare walls, open kitchens**, a few well-loved chairs, and start cooking the way they want.
+It is a word that not even Parisians use that much, only the **serious foodies** and **gastronomy** people.
+
+
+A few **young chefs**, often just back from travels abroad or from years behind Michelin-star kitchens, start cooking the way they want.
 
 No uniforms. No grand prix-fixe menus.
 
@@ -30,61 +35,38 @@ Their ideas are simple, bringing all from different cuisines and different exper
 
 Some incorporate **global influences**, while others strip dishes down to their purest essence. 
 
-The only constant is an obsession with taste and a **commitment to delivering an exceptional dining experience**.
+Still pure France cuisine, France style and Bistrot setting, but with the idea to look at something new.
+
+ The only constant is an obsession with taste and a **commitment to delivering an exceptional dining experience**.
 
 ## Our Last Bistrot
 
-On Saturday night, we’ll walk through the narrow streets of **Le Marais**, just before dinner hour. Windows will glow. The city will slow down. 
+On Saturday night, we’ll walk through the narrow streets of **Le Marais**, just before dinner hour. 
 
-And we’ll step into the **last bistrot** of our Paris journey, but not our last restaurant.
+Windows will glow. The city will slow down. 
 
-This spot is run by a young, tight-knit crew, and you can feel the energy the moment you arrive. 
+And we’ll step into the **last bistrot** and almost unique Bistrot of our Paris journey.
 
-They move fast but with care, plating each dish like it matters. They’re not following a playbook—they’re writing their own.
+This spot is run by a young, tight-knit crew, and you can **feel the energy** the moment you arrive. 
 
-**You might taste something familiar**: a slow-cooked jus, a delicate French sauce. But then it might be paired with something you didn’t expect—miso, seaweed, a hint of citrus.
+They move fast but with care, plating each dish like it matters. They’re not following a playbook, they’re writing their own.
+
+**You might taste something familiar**: a slow-cooked jus, a delicate French sauce. But then it might be paired with something you didn’t expect: miso, seaweed, a hint of citrus.
 
 That’s the heart of neo-bistronomie: honoring where it all came from, while **exploring what it can become**.
 
-Here’s a glimpse at what they’ve served recently:
-
-
-
-Located in the trendy "_Le Marais_", a group of really young guys have opened a restaurant which embraces fully the neo-bistrot spirit.
-
-### Rooted in French tradition and updated with bold, modern creativity.
+### Rooted in French tradition and updated with bold, modern freshness
 
 The neo-bistrot experience is about savoring food at its finest, without the barriers of traditions.
 
+Tradition for this new generation is a starting point, **not the end-point**.
 
 Here is a selection of the dishes:
 
 ![Neobistrots](https://www.foodexplorers.ch/images/neob.webp)
 
-Of course the menu changes weekly, don’t get too attached—these dishes may already be gone. The menu changes often, like the seasons.
+Of course the menu changes weekly, don’t get too attached to these dishes, they may already be gone. The menu changes often, like the seasons.
 
 It’s a chance to taste newly created flavors, creative dishes, and the relaxed yet refined atmosphere that defines this new wave of Parisian gastronomy.
 
-## A neo-bistrot here in Zurich
-
-A few of us already tasted this spirit last Tuesday, at Montmartre. 
-
-But just across town, a new neo-bistrot has quietly opened here in Zürich too.
-
-
-**If you decide to join us**, I am bringing all the people who signed up there for a taste of this Zurich-Paris connection.
-
-## How to sign up?
-
-**Just write me a whatsapp message**.
-
-I will put on the list!
-
-The **deadline** is Monday 28th, afterwards I will opene the remaining spots to other people of the group who could not join the Milano trip.
-
-**Just a few people have not confirmed yet...**
-
-Do you really want to miss this next trip together?
-
-Marco
-
+### I almost finished telling the story of the Paris I love

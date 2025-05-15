@@ -15,14 +15,14 @@
 
         <hr class="max-w-sm mx-auto mt-4 max-lg:hidden lg:my-4">
 
-        <div class="mt-2 space-y-3 max-lg:px-2" x-show="open" x-cloak>
+        <div class="mt-2 space-y-3 max-lg:px-2 text-xs" x-show="open" x-cloak>
             <h3 class="font-semibold">Terms and Conditions</h3>
             <p>
                 You can cancel your participation and receive a 100% reimbursement until
                 {{ $offer->getReimbursementTimestamp()->format('j/m/Y \a\t H:i') }}. No refunds will be granted afterwards.
             </p>
             <p>Tickets are not nominal and can be transferred to someone else.</p>
-            <p>After that date, access to the Waitling costs 5.- CHF if available.</p>
+            <p>After that date, access to the waiting list costs 5.- CHF if available.</p>
             <p>If you need tickets for other people send me a message.</p>
         </div>
         <hr class="max-w-sm mx-auto mt-4 lg:hidden lg:my-4">

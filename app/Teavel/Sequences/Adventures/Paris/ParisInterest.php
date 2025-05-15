@@ -12,6 +12,7 @@ use App\Teavel\Emails\Adventures\Paris\Bistronomie;
 use App\Teavel\Emails\Adventures\Paris\FirstBistrot;
 use App\Teavel\Emails\Adventures\Paris\Annunciazione;
 use App\Teavel\Emails\Adventures\Paris\SecondBistrot;
+use App\Teavel\Emails\Adventures\Paris;
 use Azzarip\Teavel\Notifications\TelegramNotification;
 
 class ParisInterest extends SequenceAutomation
@@ -65,13 +66,15 @@ class ParisInterest extends SequenceAutomation
         return Wait::for('22 hours')->then('day7');
     }
 
-    // Bistrot Menus
+    public function day7() {
+        $this->email(Paris\BistrotMenu::class);
+        return Wait::for('24 hours')->then('day7');
+    }
 
+    public function day8() {
+        $this->email(Paris\ThirdBistrot::class);
+        return Wait::for('72 hours')->then('day7');
+    }
 
-    // 3rd Bistrot
-
-    //Hidden Gem
-
-    // 
 
 }
