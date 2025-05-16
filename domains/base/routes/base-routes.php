@@ -16,7 +16,7 @@ Route::group([
 
     Route::get('/event/{eventPage}', EventPageController::class)->name('eventPage');
 
-    Route::view('/petit-paris', 'base::lp.adventures.petit-paris');
+    Route::view('/petit-paris', 'base::lp.adventures.waiting');
 
     Route::view('/paris', 'closed');
     Route::post('/paris', ParisInterestController::class);
@@ -31,5 +31,4 @@ Route::group([
     Route::view('/review/ty', 'base::review.ty')->name('review.ty');
     Route::post('/review/{event}/{contact:uuid}', [ReviewController::class, 'create']);
     Route::post('/review/{event}/{contact:uuid}/finish', [ReviewController::class, 'finish']);
-
 });
