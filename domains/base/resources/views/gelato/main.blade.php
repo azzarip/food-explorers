@@ -3,7 +3,7 @@
 @php
     $seo = new SEO(
         title: 'I tried ALL the Gelaterias of Zurich: Here is what I found',
-        description: 'After trying more than 30 gelaterias in the city center of Zurich, I choose the top 3 and bottom 3 of my list. Here are the winners.',
+        description: 'After trying more than 30 gelaterias in the city center of Zurich, I choose the top 3 and bottom 3 of my list. Here are the best ice cream shops in town.',
     );
 @endphp
 
