@@ -1,5 +1,5 @@
 ---
-subject: "A New Type of Bistrots: Neo-Bistrots"
+subject: "A New Type of Parisian Bistrots: Neo-Bistrots"
 ---
 
 Hi {{ contact.first_name }}, 
@@ -71,10 +71,10 @@ It’s a chance to taste newly created flavors, creative dishes, and the relaxed
 
 ### I almost finished telling the story of the Paris I love
 
-Next week I will finish setting out the last details.
+I will soon finish setting out the last details.
 
 And open the bookings!
 
-Have a good weekend,
+Have a good week,
 
 Marco
