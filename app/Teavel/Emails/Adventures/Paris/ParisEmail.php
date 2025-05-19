@@ -12,6 +12,8 @@ class ParisEmail extends EmailAutomation
     protected $utm_campaign = 'interest';
 
     public function lp() {
+        $this->stopParentSequence();
+        $this->contact->tag('Paris Read Program');
         return durl('/petit-paris', 'base', $this->getUtms());
     }
 

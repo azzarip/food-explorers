@@ -17,6 +17,7 @@ Route::group([
     Route::get('/event/{eventPage}', EventPageController::class)->name('eventPage');
 
     Route::view('/petit-paris', 'base::lp.adventures.waiting');
+    Route::view('/petit-paris/program', 'base::lp.adventures.petit-paris');
 
     Route::view('/paris', 'closed');
     Route::post('/paris', ParisInterestController::class);

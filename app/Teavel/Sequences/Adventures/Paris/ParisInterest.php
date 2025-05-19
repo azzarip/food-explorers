@@ -73,13 +73,13 @@ class ParisInterest extends SequenceAutomation
 
     public function day8() {
         $this->email(Paris\ThirdBistrot::class);
-        return Wait::for('48 hours')->then('fullProgram');
+        return Wait::until('21.05.2025 21:00')->then('fullProgram');
     }
 
 
     public function fullProgram() {
-        //$this->email(Paris\ThirdBistrot::class);
-        return Wait::for('48 hours')->then('bookings');
+        $this->email(Paris\Launch::class);
+        return Wait::for('94 hours')->then('bookings');
     }
 
 
