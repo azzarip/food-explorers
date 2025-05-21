@@ -1,9 +1,11 @@
 <?php
 
-use App\Teavel\Sequences\MilanoAnnouncement;
+use App\Models\Contact;
 use Azzarip\Teavel\Models\Sequence;
 use Illuminate\Foundation\Inspiring;
+use App\Teavel\Sequences\PizzaTasting;
 use Illuminate\Support\Facades\Artisan;
+use App\Teavel\Sequences\MilanoAnnouncement;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +19,6 @@ use Illuminate\Support\Facades\Artisan;
 */
 
 Artisan::command('test:sequence', function () {
-    $contacts = Azzarip\Teavel\Models\Tag::name('Interested Milano Meraviglia')->contacts;
-    foreach ($contacts as $contact) {
-        Sequence::name(MilanoAnnouncement::class)->start($contact);
-    }
+    Sequence::name(PizzaTasting::class)->start(Contact::first());
+
 })->purpose('Test milano sequence');
