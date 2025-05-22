@@ -742,7 +742,7 @@ ever do.
                 charm of the city, while I handle all the organization details.</p>
 
 
-            <h3 class="my-2 text-3xl font-semibold text-center">Drinks are not included</h3>
+            <h3 class="my-2 text-2xl lg:text-3xl font-semibold text-center">Drinks are not included</h3>
 
             <p>All the menus you see here, or any possible variation will be included in the package. </p>
             <p> The bistrots menu and the food ordered by me in the other locations will be included.</p>
@@ -750,8 +750,7 @@ ever do.
             </p>
             <p> All drinks, and additions to the menu, will be on your side, if you want them.</p>
 
-
-            <h3 class="font-serif text-2xl lg:text-3xl font-semibold">Also not included</h3>
+            <h3 class="my-2 text-2xl lg:text-3xl font-semibold text-center">Also not included</h3>
             <p>The transportation from and to Zurich is your responsibility.</p>
             <p>The transportation inside Paris is not covered, you may decide to move
                 by bus, metro, taxi or Uber.</p>
@@ -759,42 +758,34 @@ ever do.
                 directly in the hotel.</p>
 
 
-            <p>Everything we've discussed so far will be yours for...</p>
+            <h2 class="pb-4 text-3xl lg:text-4xl font-semibold text-center font-head">How much does it cost?</h2>
+            <p>I checked the prices of other tour operators offering the same level of quality in Paris.</p>
+            <p>A weekend like this — including hotel, restaurants, and full organization — would normally cost you around:</p>
+            <div class="relative w-fit mx-auto">
+            <p class="pl-4 font-serif text-4xl lg:text-5xl text-center text-cyan-900 "><small>CHF</small> 3000.-</p>
+            <span class="absolute left-0 top-1/2 w-full h-[5px] bg-red-800/80 transform -translate-y-1/2"></span>
+            </div>
+            <p>But for you — and only for you, as part of the Food Explorers — this incredible weekend is available for:</p>
             <p class="text-center">
                 <span class="font-serif text-5xl lg:text-6xl text-green-900"><small>CHF</small> 1392.-</span>
             </p>
+            <p>Yes, everything we talked about: the lunches, the dinners, and a 4-star hotel room just for you to enjoy Paris</p>
             <p>The lunches and the dinners and a 4-Star Hotel Room just for you to enjoy Paris. For this price is basically
                 a gift. </p>
-            <p>I am extremely grateful for you having joined me and other food explorers in our first adventure to Milano.
-                ❤️</p>
-            <p>If you decide to come with Paris you will keep your Inner Circle status.</p>
+            <p>And there’s more:</p>
+                <p>If you decide to come with Paris you will have your <strong>Inner Circle status</strong>.</p>
             <p>For all the events: no waiting lists, no competition for spots.</p>
             <p class="font-semibold">You’re in first.</p>
-            <p class="text-xl p-2 text-center">Also just for you, on top of this exclusive rate I would like to add another
-                bonus! 🎁</p>
-            <p>For any of the future pre-organized dinners (like Yu-An Omakase, A Fatt, Dapur...) you will have:</p>
-            <p class="text-center">
-                <span class="font-serif font-bold text-3xl lg:text-4xl text-cyan-900"><small>CHF</small> 70.-</span>
-            </p>
-            <p>dining credit.</p>
-            <p>Consider it my treat for your next dinners! You can use this credit toward any of our upcoming dinners in
-                Zurich, making your next food event even more enjoyable.</p>
+
             <p class="font-semibold text-xl">⌛But there’s a catch... This offer will expire on:</p>
-            <p class="text-center text-3xl font-serif">Monday 21. April</p>
-            <p>After that date the price will increase and you will lose the additional bonuses.</p>
+            <p class="text-center text-3xl font-serif">Friday 13. June</p>
+            <p>After that date the price will increase.</p>
             <p>Don’t waste this opportunity! </p>
 
         </div>
-        <div class="p-4 mx-auto my-4 space-y-4 rounded-sm space-y w-fit">
-            <p class="font-serif text-4xl text-center">ATTENTION!</p>
-            <p class="text-3xl text-center">Limited spots available.</p>
-            <p class="font-semibold text-center">I don’t have enough rooms for everyone who signed up. </p>
-            <p class="font-serif text-2xl font-semibold text-center lg:text-3xl">First Come, First Serve</p>
-            <p>The first to contact me will be the first to be able to reserve their seats. </p>
-        </div>
 
         <div class="px-10 py-8 border-2 border-blue-600 rounded-lg space-y-3 bg-blue-50">
-            <h2 class="pb-4 text-3xl font-semibold text-center font-head">How to Book</h2>
+            <h2 class="pb-4 text-3xl lg:text-4xl font-semibold text-center font-head">How to Book</h2>
             <p class="text-2xl font-semibold">Contact me via Whatsapp: <span class="text-xl italic">"Hey, I would like
                     to join Paris!"</span></p>
 
@@ -811,10 +802,15 @@ ever do.
             <p>The first to contact me, will be the first to be recontacted.</p>
         </div>
 
+        <div class="p-4 mx-auto my-4 space-y-4 rounded-sm space-y w-fit">
+            <p class="font-serif text-4xl text-center">ATTENTION!</p>
+            <p class="text-3xl text-center">Limited spots available.</p>
+            <p class="font-semibold text-center">I don’t have enough rooms for everyone who signed up. </p>
+            <p class="font-serif text-2xl font-semibold text-center lg:text-3xl">First Come, First Serve</p>
+            <p>The first to contact me will be the first to be able to reserve their seats. </p>
+        </div>
 
         <div class="space-y-3">
-            <p class="mt-4 font-semibold">After that date, I will open the bookings to the whole group.</p>
-            <p>You have seen how fast my meetups get booked out.</p>
             <p>Delaying your decision means risking missing out on this exclusive experience.</p>
             <h2 class="h2">What if I cannot come?</h2>
             <p>From the day of the booking you have 14 days to think about it.</p>

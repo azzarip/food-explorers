@@ -19,6 +19,5 @@ use App\Teavel\Sequences\MilanoAnnouncement;
 */
 
 Artisan::command('test:sequence', function () {
-    Sequence::name(PizzaTasting::class)->start(Contact::first());
 
 })->purpose('Test milano sequence');

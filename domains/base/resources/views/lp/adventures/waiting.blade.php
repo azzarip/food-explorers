@@ -21,47 +21,13 @@
                 October 2025</p>
         </div>
 
-        <div class="space-y-4 mt-4">
-            <x-button link="https://drive.google.com/file/d/1Cy43KUDvt3DFsfQ0HrE0pJmTl1w7E-k9/view?usp=drive_link" >Download Program as PDF</x-button>
-            {{-- <x-button link="/petit-paris/program" >View Full Program Online</x-button> --}}
+        <div class="gap-12 mt-4">
+            <x-button link="https://drive.google.com/file/d/1Wxjbw6baEZl9-6C8CeZ_f8HFqqXfTRNy" >Download Program as PDF</x-button>
+
+            <x-button link="/petit-paris/program" >View Full Program Online</x-button>
         </div>
-        <p class="text-center font-bold text-4xl lg:text-5xl py-4">BOOKINGS OPEN IN</p>
-  <div id="countdown" class="text-4xl lg:text-5xl mt-4 font-bold text-center mb-12"> Loading...</div>
 
 
 
     </article>
 @endsection 
-
-@push('scripts')
-    <script>
-    const targetDate = new Date("2025-05-24T10:00:00Z");
-
-  function pad(n) {
-      return n < 10 ? '0' + n : n;
-    }
-
-    function updateCountdown() {
-      const now = new Date();
-      let secondsRemaining = Math.floor((targetDate - now) / 1000);
-
-      const countdownElement = document.getElementById("countdown");
-
-      if (secondsRemaining <= 0) {
-        countdownElement.textContent = "00:00:00";
-        clearInterval(timer);
-        return;
-      }
-
-      const hours = Math.floor(secondsRemaining / 3600);
-      secondsRemaining %= 3600;
-      const minutes = Math.floor(secondsRemaining / 60);
-      const seconds = secondsRemaining % 60;
-
-      countdownElement.textContent = `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
-    }
-
-    updateCountdown(); // Initial call
-    const timer = setInterval(updateCountdown, 1000); // Update every second
-  </script>
-@endpush

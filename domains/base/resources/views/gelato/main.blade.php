@@ -25,9 +25,29 @@
                 <p><span class="font-semibold">Structure:</span> 3/3 Luxuriously smooth and velvety, it melts effortlessly in your mouth. Soft, airy, yet keeps it shape while you eat itt.</p>
                 <p><span class="font-semibold">Presentation:</span> 3/3 Beautifully served with a spatula instead of scooping, giving it an artisanal touch I'm looking for. Comes with a crisp, golden waffle.</p>
                 <p><span class="font-semibold">Experience:</span> 3/3 Cozy and welcoming shop where you can select your preferred taste. Nice variety, including fruit options. The ice cream is freshly served straight from the barrel of the Machine. </p>            </div>
+
+            <h2 class="font-bold text-2xl lg:text-3xl">Worse 3 Gelaterias</h2>
+
+                <h3 class="font-serif text-2xl lg:text-3xl">Gelateria Adea</h3>
+                <p><span class="font-semibold">Address:</span> Theaterstrasse 10, Bellevue, 8001 Zurich </p>
+                <p class="pb-4"><span class="font-semibold">Price:</span>4.- Per Scoop.</p>
+
+                <p><span class="font-semibold">Taste:</span> 0/3 Full of Artificial Aromas, you cannot distinguish the
+                    flavors if not for the colors.</p>
+                <p><span class="font-semibold">Texture:</span> 3/3 Nice and smooth ice cream, served at the right
+                    temperature. Melts in the mouth, without freezing your brain.</p>
+                <p><span class="font-semibold">Presentation:</span> 2/3 The ice cream is scooped and not
+                    "<em>spatulated</em>", still the cone is nice and big, but not so large that you need a spoon to eat it.
+                </p>
+                <p><span class="font-semibold">Experience:</span> 2/3 Ok. You just buy from the window, but at least you can
+                    see the different Gelato flavors. </p>
+            </div>
+
         </div>
         </div>
         <div class="space-y-3">
+
+
         <h2 class="font-bold text-2xl lg:text-3xl">Here is all the gelaterias I tried:</h2>
         <p>You can find in this map all the gelaterias in </p>
         <iframe src="https://www.google.com/maps/d/embed?mid=1ac4pxfb-Kn2sgMpqreyQIn13R37uA4o&hl=en&ehbc=2E312F" width="640" height="480" class="mx-auto my-4"></iframe> 
