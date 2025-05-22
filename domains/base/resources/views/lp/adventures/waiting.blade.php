@@ -21,10 +21,10 @@
                 October 2025</p>
         </div>
 
-        <div class="gap-12 mt-4">
+        <div class="space-y-[24px] my-8">
             <x-button link="https://drive.google.com/file/d/1Wxjbw6baEZl9-6C8CeZ_f8HFqqXfTRNy" >Download Program as PDF</x-button>
 
-            <x-button link="/petit-paris/program" >View Full Program Online</x-button>
+            <x-button link="/petit-paris/program" class="my-4">View Full Program Online</x-button>
         </div>
 
 
