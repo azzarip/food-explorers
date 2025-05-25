@@ -67,7 +67,7 @@
                 <h3 class="font-serif text-2xl lg:text-3xl">L’Artisan Glacier</h3>
                 <p><span class="font-semibold">Address:</span> Limmatquai 36, 8001 Zurich </p>
                 <p class="pb-4"><span class="font-semibold">Price:</span> 4.- per Scoop</p>
-                <img src="https://www.gelati1998.ch/wp-content/uploads/2022/08/dsk03312-1120x630.jpg" alt="Gelati Tellhof"
+                <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4noOdRHLMuBEzzCKXjLfhikgXKKF04TfGdM2lSChedSlHuL4xvTDHeoFFmABIxAWDlixAoiNAEbjlfvLZWZmYpQb9IQSKmLtqexz2oNQTQNBJh1BDUVfFUgyDlAT8GI9_ZSz1K-sdg=s1360-w1360-h1020-rw" alt="L'Artisan Glacier"
                     class="w-full rounded shadow">
 
                 <p><span class="font-semibold">Taste:</span> 3/3 Nice and well done ice cream, each flavor has distinct
@@ -90,16 +90,40 @@
                 <p><span class="font-semibold">Experience:</span> 3/3 Cozy and welcoming shop where you can select your preferred taste. Nice variety, including fruit options. The ice cream is freshly served straight from the barrel of the Machine. </p>            </div>
         </div>
 
-        <div class="space-y-2 border-b-2 pb-2">
-                <h3 class="font-serif text-2xl lg:text-3xl">Raffael's</h3>
-                <p><span class="font-semibold">Address:</span> Hohlstrasse 221, 8004 Zürich ( <a href="https://maps.app.goo.gl/adTmiAkLw5dwcvy5A" class="inline-link">Maps</a> ) </p>
-                <p class="pb-4"><span class="font-semibold">Price:</span> 3.50 per Scoop</p>
-                <p><span class="font-semibold">Taste:</span> 3/3 Incredible flavor, each single one shines through clearly. Not overly sweet, with distinct balanced aromas. Rich, powerful, and perfectly balanced on the palate.</p>
-                <p><span class="font-semibold">Texture:</span> 2/3 A bit too cold and compact. After a while it melts a bit and becomes easier to eat.</p>
-                <p><span class="font-semibold">Presentation:</span> 2/3 Standard service of Zurich ice cream, ice cream scooped into the waffle.</p>
-                <p><span class="font-semibold">Experience:</span> 3/3 Cozy and welcoming shop. Nice variety, including fruit options. </p>
+        <div class="space-y-2 border-b-2 py-2">
+            <h3 class="font-serif text-2xl lg:text-3xl">aMA Pasticceria Gelateria Italiana</h3>
+            <img src="https://static.wixstatic.com/media/f50c73_f55ed1ef98da463db650d97054e38de8~mv2.jpg/v1/fit/w_625,h_414,q_90,enc_avif,quality_auto/f50c73_f55ed1ef98da463db650d97054e38de8~mv2.jpg" class="rounded shadow" alt="aMA Gelateria">
+                <p><span class="font-semibold">Address:</span> <a href="https://maps.app.goo.gl/89RPQ7gFtTzE8FEeA" rel="nofollow noreferrer">Albisriederstrasse 253, 8047 Zürich  <span class="whitespace-no-wrap">(<span class="font-semibold">Maps</span>)</span> </a> </p>
+                <p class="pb-4"><span class="font-semibold">Price:</span> 4.- one flavor, 5.50 two flavors</p>
+                <p><span class="font-semibold">Taste:</span> 3/3 Really nice flavors and taste, not overly sweet, with distinct balanced tastes.</p>
+                <p><span class="font-semibold">Texture:</span> 2/3 Smooth and creamy ice cream, delicate on the mouth but still consistent and refreshing.</p>
+                <p><span class="font-semibold">Presentation:</span> 2/3 Standard service of Zurich ice cream, ice cream scooped into the waffle cone.</p>
+                <p><span class="font-semibold">Experience:</span> 3/3 Cozy and welcoming bar and shop. Nice variety of ice creams and even other desserts. Loved the inside decor. </p>
     
-            </div>
+        </div>
+
+                <div class="space-y-2 border-b-2 py-2">
+            <h3 class="font-serif text-2xl lg:text-3xl">Giro D'italia</h3>
+            <img src="@image('gelato/giro-ditalia.webp')" class="rounded shadow" alt="Giro D'Italia">
+                <p><span class="font-semibold">Address:</span> <a href="https://maps.app.goo.gl/64f1LoMQGUqKsNBQA" rel="nofollow noreferrer">Hohlstrasse 221, 8004 Zürich  <span class="whitespace-no-wrap">(<span class="font-semibold">Maps</span>)</span> </a> </p>
+                <p class="pb-4"><span class="font-semibold">Price:</span> 3.5 per scoop</p>
+                <p><span class="font-semibold">Taste:</span> 3/3 Really nice flavors and taste, balanced acidity, really new and not easy-to-find tastes.</p>
+                <p><span class="font-semibold">Texture:</span> 3/3 Smooth and easy, delicate on the mouth but still consistent and with a nice texture.</p>
+                <p><span class="font-semibold">Presentation:</span> 2/3 Standard Zurich ice cream, ice cream scooped into the waffle cone. If they would use a spatula, would be 3/3.</p>
+                <p><span class="font-semibold">Experience:</span> 3/3 Cozy bar and gelateria. Weird location on the corner of Hardstrasse with all the traffic. Nice variety of tastes and other desserts. </p>
+ 
+        </div>
+
+                        <div class="space-y-2 border-b-2 py-2">
+            <h3 class="font-serif text-2xl lg:text-3xl">Albanesi pregiata Forneria</h3>
+                <p><span class="font-semibold">Address:</span> <a href="https://maps.app.goo.gl/iQyjdBN7qDTVLYJu8" rel="nofollow noreferrer">Bahnhofplatz 12, 8001 Zürich  <span class="whitespace-no-wrap">(<span class="font-semibold">Maps</span>)</span> </a> </p>
+                <p class="pb-4"><span class="font-semibold">Price:</span> </p>
+                <p><span class="font-semibold">Taste:</span> 3/3 Really nice flavors and taste, easy flavors, but well done.</p>
+                <p><span class="font-semibold">Texture:</span> 1/3 Really really difficult to eat, probably to much thikener, the ice cream was rubbery .</p>
+                <p><span class="font-semibold">Presentation:</span> 1/3 Standard Zurich ice cream, scoops into the ice cream. The cone is a really cheap waffle.</p>
+                <p><span class="font-semibold">Experience:</span> 2/3 Cozy bar in the corner of Zurich HB. Only fault, they do "a bit of everything". It feels more like a market with different shops inside than a single shop. </p>
+ 
+        </div>
         </div>
     </article>
 @endsection

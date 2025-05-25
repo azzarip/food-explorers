@@ -31,7 +31,7 @@
     <script>
         async function returnSoldOutState() {
             try {
-                const response = await fetch('{{ durl("/offer/{$offer->slug}/soldout", 'api') }}');
+                const response = await fetch('{{ durl("/v1/offer/{$offer->slug}/soldout", 'api') }}');
                 if (response.ok) {
                     const data = await response.json();
                     return data.sold_out;

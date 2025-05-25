@@ -40,4 +40,12 @@ return [
     'telegram-bot-api' => [
         'token' => env('TELEGRAM_BOT_TOKEN'),
     ],
+    
+    'azzari-api' => [
+        'username' => 'food-explorers',
+        'call_password' => env('AZZARI_CALL_PASSWORD'),
+        'server_name' => 'prem',
+        'response_password' => env('AZZARI_RESPONSE_PASSWORD'),
+        'call_url' => rtrim(env('AZZARI_CALL_URL'), '/'),
+    ],
 ];
