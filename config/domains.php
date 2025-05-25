@@ -23,7 +23,7 @@ return [
     ],
         
     'api' => [
-        'url' => 'api.' . env('DOMAIN_BASE'),
+        'url' => 'api.foodexplorers.' . env('DOMAIN_TLD'),
         'name' => 'Api - Food Explorers',
     ],
 ];
