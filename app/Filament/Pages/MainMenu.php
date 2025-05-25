@@ -26,8 +26,8 @@ class MainMenu extends Page
                 'icon' => 'heroicon-o-calendar-days',
             ]),
             AdminButton::make([
-                'path' => '/offer',
-                'name' => 'Offers',
+                'path' => '/store',
+                'name' => 'Store',
                 'primary' => '#166534',
                 'icon' => 'heroicon-o-currency-dollar',
             ]),
