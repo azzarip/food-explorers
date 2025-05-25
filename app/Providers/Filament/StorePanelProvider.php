@@ -20,21 +20,21 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 
-class OfferPanelProvider extends PanelProvider
+class StorePanelProvider extends PanelProvider
 {
     public function panel(Panel $panel): Panel
     {
         return $panel
-            ->id('offer')
-            ->path('offer')
+            ->id('store')
+            ->path('store')
             ->domain(config('domains.admin.url'))
             ->authGuard('admin')
             ->login()
             ->colors([
                 'primary' => Color::Amber,
             ])
-            ->discoverResources(in: app_path('Filament/Offer/Resources'), for: 'App\\Filament\\Offer\\Resources')
-            ->discoverPages(in: app_path('Filament/Offer/Pages'), for: 'App\\Filament\\Offer\\Pages')
+            ->discoverResources(in: app_path('Filament/Store/Resources'), for: 'App\\Filament\\Store\\Resources')
+            ->discoverPages(in: app_path('Filament/Store/Pages'), for: 'App\\Filament\\Store\\Pages')
             ->pages([
                 Pages\Dashboard::class,
             ])

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Offer\Resources;
+namespace App\Filament\Store\Resources;
 
 use Filament\Forms;
 use Filament\Tables;
@@ -14,8 +14,8 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Offer\Resources\OfferResource\Pages;
-use App\Filament\Offer\Resources\OfferResource\RelationManagers;
+use App\Filament\Store\Resources\OfferResource\Pages;
+use App\Filament\Store\Resources\OfferResource\RelationManagers;
 
 class OfferResource extends Resource
 {
