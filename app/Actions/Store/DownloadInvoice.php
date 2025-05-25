@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Actions\Offer;
+namespace App\Actions\Store;
 
 use App\AzzariApi;
 use Azzarip\Teavel\Models\Order;
