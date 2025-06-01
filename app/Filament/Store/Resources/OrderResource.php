@@ -124,7 +124,9 @@ class OrderResource extends Resource
             ->columns([
                 TextColumn::make('title'),
                 TextColumn::make('contact.name_email'),
-                TextColumn::make('order_date'),
+                TextColumn::make('order_date')
+                    ->sortable()
+                    ->defaultSort('desc'),
                 TextColumn::make('total'),
                 ])
             ->filters([

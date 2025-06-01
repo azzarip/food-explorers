@@ -18,6 +18,25 @@
         <div class="space-y-3">
             <h2 class="font-bold text-2xl lg:text-3xl">Top 3 Gelaterias</h2>
 
+            <div class="space-y-2 border-b-2 py-2">
+                <h3 class="font-serif text-2xl lg:text-3xl">Vittorio Vanini</h3>
+                <p><span class="font-semibold">Address:</span> <a href="https://maps.app.goo.gl/CRZJ2ksTwuUJ7HH9A"
+                        rel="nofollow noreferrer">Limmatquai 74, 8001 Zürich <span class="whitespace-no-wrap">(<span
+                                class="font-semibold">Maps</span>)</span> </a> </p>
+                <p class="pb-4"><span class="font-semibold">Price:</span> 4.- per scoop, Gourmet Gelato 12.-</p>
+
+                <img src="@image('gelato/vittorio_vanini.webp')" alt="Gelato Vittorio Vanini"  class="mx-auto rounded shadow lg:w-full">
+                <p><span class="font-semibold">Taste:</span> 3/3 Really nice flavors, rich and intense.</p>
+                <p><span class="font-semibold">Texture:</span> 3/3 Super creamy and smooth, amazing texture.</p>
+                <p><span class="font-semibold">Presentation:</span> 3+/3 The most beautiful gelato of Zurich, especially if
+                    you try the Gourmet one. The waitress correctly prepared the ice cream with a spatula and not by
+                    scooping it. Really crispy waffles for the cone.</p>
+                <p><span class="font-semibold">Experience:</span>3/3 Beautiful shop on the Limmatquai, the various flavors
+                    are not exposed by you have a really clear menu on the wall and some premade combinations that make it
+                    easier to choose.</p>
+            </div>
+
+
             <h3 class="font-serif text-2xl lg:text-3xl">Raffael's</h3>
             <p><span class="font-semibold">Address:</span> Torgasse 3, 8001 Zürich ( <a
                     href="https://maps.app.goo.gl/gYHi9fZ5joEMdHHy6" class="inlie-link">Maps</a> ) </p>
