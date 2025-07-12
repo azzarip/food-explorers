@@ -2,7 +2,7 @@
 
 @php
     $seo = new SEO(
-        title: 'The Gelaterias of Zurich [RANKED]',
+        title: 'All Gelaterias of Zurich [RANKED]',
         description: 'After trying more than 50 gelaterias in the city center of Zurich, I ranked them all in this list. Here are the winners and losers, divided into three categories: the must try, the nice to try and the forgettable.',
     );
 @endphp
@@ -10,18 +10,20 @@
 @section('main')
     <article class="max-w-2xl mx-auto px-2 mb-12 mt-2 lg:mt-4">
         <h1 class="font-head text-4xl lg:text-5xl text-center font-bold">
-            The review of all gelaterias of Zurich
+            All Gelaterias of Zurich [RANKED]
         </h1>
         <p class="text-xl lg:text-2xl text-center text-stone-700"></p>
         
-        
-        <div class="w-fit flex gap-2 py-1 mt-4 text-lg items-center">
-            <div>
-                <p class="font-serif font-semibold"> <span class="font-normal">by</span> Marco Azzari
-                    <x-heroicon-s-check-badge class="inline w-4 h-4 mb-1 text-cyan-600" />
-                </p>
-                <p class="italic -mt-1">Zurich Food Explorer</p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 mb-4 mt-2">
+            <div class="w-fit flex gap-2 py-1 text-lg items-center">
+                <div>
+                    <p class="font-serif font-semibold"> <span class="font-normal">by</span> Marco Azzari
+                        <x-heroicon-s-check-badge class="inline w-4 h-4 mb-1 text-cyan-600" />
+                    </p>
+                    <p class="italic -mt-1">Zurich Food Explorer </p>
+                </div>
             </div>
+            <p class="italic text-right">published on: <time datetime="2025-07-12">July 12, 2025</time></p>
         </div>
         <hr class="mt-4 mb-8 ">
         <div class="space-y-3">
@@ -336,6 +338,7 @@
                         rel="nofollow noreferrer">Bellerivestrasse 2, 8008 Zürich <span
                             class="whitespace-no-wrap">(<span class="font-semibold">Maps</span>)</span> </a> </p>
                 <p class="pb-4"><span class="font-semibold">Price:</span> 3.50 peer scoop.</p>
+                
                 <p><span class="font-semibold">Taste:</span> 3/3 Really nice combinations and flavors. Some are really really great, like the berry ones.</p>
                 <p><span class="font-semibold">Texture:</span> 3/3 Creamy and smooth gelato, good portions.</p>
                 <p><span class="font-semibold">Presentation:</span> 2/3 Nice cone, good portions. Ice cream is scooped.</p>

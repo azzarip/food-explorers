@@ -28,7 +28,7 @@ Route::group([
 
     Route::view('/pizza-tasting', 'events.tromiro');
 
-    Route::view('/food-news', 'base::food-news');
+    Route::view('/foodie-news', 'base::foodie-news');
     Route::view('/top-3-gelaterias-zurich', 'base::gelato.main');
     Route::view( '/gelaterias-zurich-review', 'base::gelato.list');
 
