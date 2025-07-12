@@ -29,6 +29,7 @@
                     class="p-2 font-medium rounded-full hover:bg-amber-500/30">{{ $label }}</a>
             </li>
         @endforeach
+            
         @guest
             <li>
                 <a href="/register" class="px-4 py-2 std-button">Become a Food Explorer</a>
@@ -48,15 +49,18 @@
 
 @section('small-menu')
 <ul class="text-black">
-   @foreach ($items as $label => $path)
         <li class="p-3 text-xl border-y group hover:bg-slate-200">
-            <a href="{{ $path }}"
-                class="block w-full h-full {{ request()->path() === $path ? 'font-semibold' : '' }}">{{ $label }}
+            <a href="/"
+                class="block w-full h-full {{ request()->path() === '/' ? 'font-semibold' : '' }}">Homepage
             </a>
         </li>
-    @endforeach
+        <li class="p-3 text-xl border-y group hover:bg-slate-200">
+            <a href="/food-news"
+                class="block w-full h-full {{ request()->path() === '/food-news' ? 'font-semibold' : '' }}">Food News
+            </a>
+        </li>
+
     @guest
-        
     <li class="p-3 text-xl border-b group hover:bg-slate-200">
         <a href="/login"
         class="block w-full h-full {{ request()->path() === '/login' ? 'font-semibold' : '' }}">Login

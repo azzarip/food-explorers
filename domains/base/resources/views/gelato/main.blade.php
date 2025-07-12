@@ -173,7 +173,7 @@
                 <iframe src="https://www.google.com/maps/d/embed?mid=1ac4pxfb-Kn2sgMpqreyQIn13R37uA4o&hl=en&ehbc=2E312F"
                     class="mx-auto min-h-[480px] w-full"></iframe>
                 <p>In the map there are 50 ice cream shops, I tried them all, and you can read a specific review for each of
-                    them (<a href="/zurich-gelaterias-review" class="inline-link">read it here</a>).</p>
+                    them (<a href="/gelaterias-zurich-review" class="inline-link">read it here</a>).</p>
                 <p>At the top of this page you found my top 3, but there are many more worth trying.</p>
                 <p>There I classified all of them in three groups: must try, nice to try, forgettable.</p>
 

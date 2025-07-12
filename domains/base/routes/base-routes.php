@@ -16,17 +16,19 @@ Route::group([
 
     Route::get('/event/{eventPage}', EventPageController::class)->name('eventPage');
 
-    Route::view('/petit-paris', 'base::lp.adventures.waiting');
-    Route::view('/petit-paris/program', 'base::lp.adventures.petit-paris');
-
+    Route::view('/petit-paris', 'closed');
+    Route::view('/petit-paris/program', 'closed');
     Route::view('/paris', 'closed');
     Route::post('/paris', ParisInterestController::class);
     Route::view('/ty/paris', 'base::lp.adventures.ty_paris');
     Route::view('/ty/paris/final', 'base::lp.adventures.ty_final');
     Route::view('/address/paris', 'base::lp.adventures.address');
 
+
+
     Route::view('/pizza-tasting', 'events.tromiro');
 
+    Route::view('/food-news', 'base::food-news');
     Route::view('/top-3-gelaterias-zurich', 'base::gelato.main');
     Route::view( '/gelaterias-zurich-review', 'base::gelato.list');
 

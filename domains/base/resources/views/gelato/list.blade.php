@@ -190,7 +190,6 @@
                                 class="font-semibold">Maps</span>)</span> </a> </p>
                 <p class="pb-4"><span class="font-semibold">Price:</span> 4.- per scoop, Gourmet Gelato 12.-</p>
 
-                <img src="@image('gelato/vittorio_vanini.webp')" alt="Gelato Vittorio Vanini" class="mx-auto rounded shadow lg:w-full">
                 <p><span class="font-semibold">Taste:</span> 3/3 Really amazing choice of gelati, different flavors, different fruits, new and unique flavors. Really worth a stop by.</p>
                 <p><span class="font-semibold">Texture:</span> 3/3 Super creamy and smooth, while the fruit flavors are more fresh, crispy, well, well done.</p>
                 <p><span class="font-semibold">Presentation:</span> 2/3 Standard zurich cone, scooped into the cone. For each cone or cup, they offer a tasting sample of one other taste. A bit small portions compared to other places.</p>
@@ -302,26 +301,6 @@
 
             </div>
 
-            <div class="space-y-2 border-b-2 py-2">
-                <h3 class="font-serif text-2xl lg:text-3xl">aMA Pasticceria Gelateria Italiana</h3>
-                <img src="https://static.wixstatic.com/media/f50c73_f55ed1ef98da463db650d97054e38de8~mv2.jpg/v1/fit/w_625,h_414,q_90,enc_avif,quality_auto/f50c73_f55ed1ef98da463db650d97054e38de8~mv2.jpg"
-                    class="rounded shadow lg:w-1/2 mx-auto" alt="aMA Gelateria">
-                <p><span class="font-semibold">Address:</span> <a href="https://maps.app.goo.gl/89RPQ7gFtTzE8FEeA"
-                        rel="nofollow noreferrer">Albisriederstrasse 253, 8047 Zürich <span
-                            class="whitespace-no-wrap">(<span class="font-semibold">Maps</span>)</span> </a> </p>
-                <p class="pb-4"><span class="font-semibold">Price:</span> 4.- one flavor, 5.50 two flavors</p>
-                <p><span class="font-semibold">Taste:</span> 3/3 Really nice flavors and taste, not overly sweet, with
-                    distinct
-                    balanced tastes.</p>
-                <p><span class="font-semibold">Texture:</span> 2/3 Smooth and creamy ice cream, delicate on the mouth but
-                    still
-                    consistent and refreshing.</p>
-                <p><span class="font-semibold">Presentation:</span> 2/3 Standard service of Zurich ice cream, ice cream
-                    scooped
-                    into the waffle cone.</p>
-                <p><span class="font-semibold">Experience:</span> 3/3 Cozy and welcoming bar and shop. Nice variety of ice
-                    creams and even other desserts. Loved the inside decor. </p>
-            </div>
 
             <div class="space-y-2 border-b-2 py-2">
                 <h3 class="font-serif text-2xl lg:text-3xl">Gelati Bongusto</h3>
@@ -357,7 +336,6 @@
                         rel="nofollow noreferrer">Bellerivestrasse 2, 8008 Zürich <span
                             class="whitespace-no-wrap">(<span class="font-semibold">Maps</span>)</span> </a> </p>
                 <p class="pb-4"><span class="font-semibold">Price:</span> 3.50 peer scoop.</p>
-                <img src="@image('gelato/eisladen.webp')" alt="Gelato Eisladen" class="mx-auto rounded shadow lg:w-1/2">
                 <p><span class="font-semibold">Taste:</span> 3/3 Really nice combinations and flavors. Some are really really great, like the berry ones.</p>
                 <p><span class="font-semibold">Texture:</span> 3/3 Creamy and smooth gelato, good portions.</p>
                 <p><span class="font-semibold">Presentation:</span> 2/3 Nice cone, good portions. Ice cream is scooped.</p>
