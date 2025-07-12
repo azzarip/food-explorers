@@ -2,22 +2,23 @@
 
 @php
     $seo = new SEO(
-        title: 'Top 3 Gelaterias of Zurich',
-        description: 'After trying more than 30 gelaterias in the city center of Zurich, I choose the top 3 and bottom 3 of my list. Here are the best ice cream shops in town.',
+        title: 'Top 3 Gelaterias of Zurich - Food Explorers',
+        description: 'After trying more than 50 gelaterias in the city of Zurich, I choose the top 3 and bottom 3 of my list. Here are the best ice cream shops in town, you cannot miss in this warm summer 2025.',
+        image: image('gelato/girl.webp')
     );
 @endphp
 
 @section('main')
     <article class="max-w-2xl mx-auto mt-4 px-2 mb-12">
         <h1 class="font-serif text-4xl lg:text-5xl text-center font-bold leading-relaxed lg:leading-relaxed">
-            I tried ALL the Gelaterias of Zurich: Here is my top 3!
+            I tried ALL the Gelaterias of Zurich: Here are my top 3!
         </h1>
-        <p class="font-head text-2xl lg:text-3xl mt-2 mb-12 text-slate-700 leading-relaxed lg:leading-relaxed">
+        <p class="font-head text-2xl lg:text-3xl mt-2 mb-4 text-slate-700 leading-relaxed lg:leading-relaxed">
             I went on a mission to try every gelato spot in Zurich: I discovered some hidden gems, others were really nice,
             others completely disappointing.
             Here’s the "full scoop" for all the Zurich ice cream lovers.</p>
-        <div class="grid grid-cols-1 lg:grid-cols-2 max-lg:mb-4">
-            <div class="w-fit flex gap-2 py-1 mt-4 text-lg items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 mb-4">
+            <div class="w-fit flex gap-2 py-1 text-lg items-center">
                 <div>
                     <p class="font-serif font-semibold"> <span class="font-normal">by</span> Marco Azzari
                         <x-heroicon-s-check-badge class="inline w-4 h-4 mb-1 text-cyan-600" />
@@ -26,11 +27,10 @@
                 </div>
             </div>
             <p class="italic text-right">published on: <time datetime="2025-07-12">July 12, 2025</time></p>
-
         </div>
 
         <div class="space-y-3">
-            <h2 class="font-bold text-2xl lg:text-3xl text-center">The Top 3 Gelaterias</h2>
+            <h2 class="font-bold text-3xl lg:text-4xl text-center">The Top 3 Gelaterias</h2>
             <p>Let's start with the <strong>Top 3 Gelaterias of Zurich</strong>, not in any particular order.</p>
 
 
