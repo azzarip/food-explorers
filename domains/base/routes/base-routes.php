@@ -27,8 +27,8 @@ Route::group([
 
     Route::view('/pizza-tasting', 'events.tromiro');
 
-    Route::view('/i-tried-all-gelaterias-of-zurich', 'base::gelato.main');
-    Route::view('/gelaterias-of-zurich', 'base::gelato.list');
+    Route::view('/top-3-gelaterias-zurich', 'base::gelato.main');
+    Route::view( '/gelaterias-zurich-review', 'base::gelato.list');
 
     Route::get('/review/{event}/{contact:uuid}', [ReviewController::class, 'start'])->name('review.start');
     Route::view('/review/ty', 'base::review.ty')->name('review.ty');
