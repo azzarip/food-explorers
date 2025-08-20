@@ -2,9 +2,12 @@
 
 namespace App\Filament\Resources;
 
+use Filament\Schemas\Schema;
+use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteBulkAction;
+use App\Filament\Resources\SuggestResource\Pages\ListSuggests;
 use Filament\Forms;
 use Filament\Tables;
-use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Domains\My\Models\Suggest;
 use Filament\Resources\Resource;
@@ -18,14 +21,14 @@ class SuggestResource extends Resource
 {
     protected static ?string $model = Suggest::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-light-bulb';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-light-bulb';
 
     protected static ?int $navigationSort = 90;
 
-    public static function form(Form $form): Form
+    public static function form(Schema $schema): Schema
     {
-        return $form
-            ->schema([
+        return $schema
+            ->components([
                 //
             ]);
     }
@@ -43,9 +46,9 @@ class SuggestResource extends Resource
             ->filters([
                 //
             ])
-            ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+            ->toolbarActions([
+                BulkActionGroup::make([
+                    DeleteBulkAction::make(),
                 ]),
             ]);
     }
@@ -64,7 +67,7 @@ class SuggestResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListSuggests::route('/'),
+            'index' => ListSuggests::route('/'),
         ];
     }
 }

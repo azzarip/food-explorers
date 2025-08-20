@@ -2,11 +2,18 @@
 
 namespace App\Filament\Store\Resources;
 
+use Filament\Schemas\Schema;
+use Filament\Actions\EditAction;
+use Filament\Actions\Action;
+use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteBulkAction;
+use App\Filament\Store\Resources\OfferResource\Pages\ListOffers;
+use App\Filament\Store\Resources\OfferResource\Pages\CreateOffer;
+use App\Filament\Store\Resources\OfferResource\Pages\EditOffer;
 use Filament\Forms;
 use Filament\Tables;
 use App\Models\Event;
 use App\Models\Offer;
-use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
 use Filament\Forms\Components\Select;
@@ -21,12 +28,12 @@ class OfferResource extends Resource
 {
     protected static ?string $model = Offer::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-bookmark-square';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-bookmark-square';
 
-    public static function form(Form $form): Form
+    public static function form(Schema $schema): Schema
     {
-        return $form
-            ->schema([
+        return $schema
+            ->components([
                 TextInput::make('class')
                     ->required()
                     ->columnSpanFull(),
@@ -50,18 +57,18 @@ class OfferResource extends Resource
             ->filters([
                 //
             ])
-            ->actions([
-                Tables\Actions\EditAction::make(),
-                Tables\Actions\Action::make('view')    
+            ->recordActions([
+                EditAction::make(),
+                Action::make('view')    
                 ->label('View Booking')
                 ->color('primary')
                 ->icon('heroicon-o-eye')
                 ->url(fn ($record) => durl($record->slug, 'book')->__toString())
                 ->openUrlInNewTab(),
             ])
-            ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+            ->toolbarActions([
+                BulkActionGroup::make([
+                    DeleteBulkAction::make(),
                 ]),
             ]);
     }
@@ -76,9 +83,9 @@ class OfferResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListOffers::route('/'),
-            'create' => Pages\CreateOffer::route('/create'),
-            'edit' => Pages\EditOffer::route('/{record}/edit'),
+            'index' => ListOffers::route('/'),
+            'create' => CreateOffer::route('/create'),
+            'edit' => EditOffer::route('/{record}/edit'),
         ];
     }
 }

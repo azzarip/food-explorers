@@ -2,9 +2,14 @@
 
 namespace App\Filament\Resources;
 
+use Filament\Schemas\Schema;
+use Filament\Forms\Components\MarkdownEditor;
+use App\Filament\Resources\SequenceResource\Pages\ListSequences;
+use App\Filament\Resources\SequenceResource\Pages\CreateSequence;
+use App\Filament\Resources\SequenceResource\Pages\ViewSequence;
+use App\Filament\Resources\SequenceResource\Pages\EditSequence;
 use Filament\Forms;
 use Filament\Tables;
-use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
 use Azzarip\Teavel\Models\Sequence;
@@ -20,16 +25,16 @@ class SequenceResource extends Resource
 {
     protected static ?string $model = Sequence::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    public static function form(Form $form): Form
+    public static function form(Schema $schema): Schema
     {
-        return $form
-            ->schema([
+        return $schema
+            ->components([
                 TextInput::make('name')
                     ->required()
                     ->columnSpan(2),
-                Forms\Components\MarkdownEditor::make('description')
+                MarkdownEditor::make('description')
                     ->toolbarButtons([
                         'blockquote',
                         'bold',
@@ -63,10 +68,10 @@ class SequenceResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListSequences::route('/'),
-            'create' => Pages\CreateSequence::route('/create'),
-            'view' => Pages\ViewSequence::route('/{record}'),
-            'edit' => Pages\EditSequence::route('/{record}/edit'),
+            'index' => ListSequences::route('/'),
+            'create' => CreateSequence::route('/create'),
+            'view' => ViewSequence::route('/{record}'),
+            'edit' => EditSequence::route('/{record}/edit'),
         ];
     }
 }

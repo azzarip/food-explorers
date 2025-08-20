@@ -2,17 +2,20 @@
 
 namespace App\Filament\Resources\Events\ContactResource\RelationManagers;
 
+use Filament\Schemas\Schema;
+use Filament\Forms\Components\TextInput;
+use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
+use Filament\Actions\DetachAction;
 use Filament\Forms;
 use Filament\Tables;
 use App\Models\Event;
 use App\Models\Location;
-use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Infolists\Infolist;
 use Filament\Forms\Components\Select;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Model;
-use Filament\Tables\Actions\ActionGroup;
 use Illuminate\Database\Eloquent\Builder;
 use Filament\Infolists\Components\IconEntry;
 use Filament\Infolists\Components\TextEntry;
@@ -23,11 +26,11 @@ class EventsRelationManager extends RelationManager
 {
     protected static string $relationship = 'events';
 
-    public function form(Form $form): Form
+    public function form(Schema $schema): Schema
     {
-        return $form
-            ->schema([
-                Forms\Components\TextInput::make('title')
+        return $schema
+            ->components([
+                TextInput::make('title')
                     ->required()
                     ->maxLength(255),
             ]);
@@ -48,7 +51,7 @@ class EventsRelationManager extends RelationManager
                 //
             ])
             ->headerActions([
-                Tables\Actions\Action::make('addEvent')
+                Action::make('addEvent')
                 ->label('Add Event')
                 ->modalHeading('Find Event')
 
@@ -69,13 +72,13 @@ class EventsRelationManager extends RelationManager
             //     // }),
 
             ])
-            ->actions([
+            ->recordActions([
                 ActionGroup::make([
-                    Tables\Actions\DetachAction::make()
+                    DetachAction::make()
                     ->label('Remove'),
                 ]),
             ])
-            ->bulkActions([
+            ->toolbarActions([
 
             ]);
     }

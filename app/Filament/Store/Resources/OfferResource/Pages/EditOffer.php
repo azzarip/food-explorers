@@ -2,6 +2,7 @@
 
 namespace App\Filament\Store\Resources\OfferResource\Pages;
 
+use Filament\Actions\DeleteAction;
 use App\Filament\Store\Resources\OfferResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
@@ -13,7 +14,7 @@ class EditOffer extends EditRecord
     protected function getHeaderActions(): array
     {
         return [
-            Actions\DeleteAction::make(),
+            DeleteAction::make(),
         ];
     }
 }

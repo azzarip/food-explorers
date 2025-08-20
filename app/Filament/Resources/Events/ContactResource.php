@@ -2,12 +2,18 @@
 
 namespace App\Filament\Resources\Events;
 
+use Filament\Schemas\Schema;
+use Filament\Actions\ViewAction;
+use Filament\Actions\EditAction;
+use App\Filament\Resources\Events\ContactResource\RelationManagers\EventsRelationManager;
+use App\Filament\Resources\Events\ContactResource\Pages\ListContacts;
+use App\Filament\Resources\Events\ContactResource\Pages\CreateContact;
+use App\Filament\Resources\Events\ContactResource\Pages\ViewContact;
+use App\Filament\Resources\Events\ContactResource\Pages\EditContact;
 use Filament\Forms;
 use Filament\Tables;
 use App\Models\Contact;
-use Filament\Forms\Form;
 use Filament\Tables\Table;
-use Filament\Infolists\Infolist;
 use Filament\Resources\Resource;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
@@ -22,13 +28,13 @@ class ContactResource extends Resource
 {
     protected static ?string $model = Contact::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-user-group';
-    protected static ?string $navigationGroup = 'Events';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-user-group';
+    protected static string | \UnitEnum | null $navigationGroup = 'Events';
     protected static ?string $navigationLabel = 'Participants';
-    public static function form(Form $form): Form
+    public static function form(Schema $schema): Schema
     {
-        return $form
-            ->schema([
+        return $schema
+            ->components([
                 TextInput::make('first_name')->required(),
                 TextInput::make('last_name'),
                 TextInput::make('email'),
@@ -37,9 +43,9 @@ class ContactResource extends Resource
             ]);
     }
 
-    public static function infolist(Infolist $infolist): Infolist
+    public static function infolist(Schema $schema): Schema
     {
-        return $infolist->schema([
+        return $schema->components([
             TextEntry::make('first_name'),
             TextEntry::make('last_name'),
             TextEntry::make('email'),
@@ -66,11 +72,11 @@ class ContactResource extends Resource
             ->filters([
                 //
             ])
-            ->actions([
-                Tables\Actions\ViewAction::make(),
-                Tables\Actions\EditAction::make(),
+            ->recordActions([
+                ViewAction::make(),
+                EditAction::make(),
             ])
-            ->bulkActions([
+            ->toolbarActions([
 
             ]);
     }
@@ -78,17 +84,17 @@ class ContactResource extends Resource
     public static function getRelations(): array
     {
         return [
-            RelationManagers\EventsRelationManager::class,
+            EventsRelationManager::class,
         ];
     }
 
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListContacts::route('/'),
-            'create' => Pages\CreateContact::route('/create'),
-            'view' => Pages\ViewContact::route('/{record}'),
-            'edit' => Pages\EditContact::route('/{record}/edit'),
+            'index' => ListContacts::route('/'),
+            'create' => CreateContact::route('/create'),
+            'view' => ViewContact::route('/{record}'),
+            'edit' => EditContact::route('/{record}/edit'),
         ];
     }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\EventPublic;
 use App\EventType;
 use App\Models\Offer;
 use App\Models\Review;
@@ -71,8 +72,8 @@ class Event extends Model
         return [
             'scheduled_at' => 'datetime',
             'ended_at' => 'datetime',
-            'event_type' => \App\EventType::class,
-            'public_type' => \App\EventPublic::class,
+            'event_type' => EventType::class,
+            'public_type' => EventPublic::class,
         ];
     }
 

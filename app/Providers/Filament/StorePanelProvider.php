@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use Filament\Pages\Dashboard;
 use Azzarip\Utilities\Filament\Items\BackMain;
 use Azzarip\Utilities\Http\Middleware\AdminConfig;
 use Filament\Http\Middleware\Authenticate;
@@ -36,7 +37,7 @@ class StorePanelProvider extends PanelProvider
             ->discoverResources(in: app_path('Filament/Store/Resources'), for: 'App\\Filament\\Store\\Resources')
             ->discoverPages(in: app_path('Filament/Store/Pages'), for: 'App\\Filament\\Store\\Pages')
             ->pages([
-                Pages\Dashboard::class,
+                Dashboard::class,
             ])
             ->navigationItems([
                 BackMain::make(),

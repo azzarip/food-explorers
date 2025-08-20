@@ -2,9 +2,17 @@
 
 namespace App\Filament\Resources;
 
+use Filament\Forms\Components\Select;
+use Filament\Actions\EditAction;
+use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteBulkAction;
+use App\Filament\Resources\EventPageResource\Pages\ListEventPages;
+use App\Filament\Resources\EventPageResource\Pages\CreateEventPage;
+use App\Filament\Resources\EventPageResource\Pages\EditEventPage;
 use Filament\Forms;
 use Filament\Tables;
 use App\Models\Event;
+use Filament\Schemas\Schema;
 use Filament\Forms\Form;
 use App\Models\EventPage;
 use Filament\Tables\Table;
@@ -21,17 +29,17 @@ class EventPageResource extends Resource
 {
     protected static ?string $model = EventPage::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-document-text';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-document-text';
 
-    protected static ?string $navigationGroup = 'Events';
+    protected static string | \UnitEnum | null $navigationGroup = 'Events';
     protected static ?string $navigationLabel = 'Pages';
 
 
-    public static function form(Form $form): Form
+    public static function form(Schema $schema): Schema
     {
-        return $form
-            ->schema([
-                \Filament\Forms\Components\Select::make('event_id')
+        return $schema
+            ->components([
+                Select::make('event_id')
                 ->required()
                 ->options(Event::next()->get()
                 ->mapWithKeys(function ($event) {
@@ -61,12 +69,12 @@ class EventPageResource extends Resource
             ->filters([
                 //
             ])
-            ->actions([
-                Tables\Actions\EditAction::make(),
+            ->recordActions([
+                EditAction::make(),
             ])
-            ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+            ->toolbarActions([
+                BulkActionGroup::make([
+                    DeleteBulkAction::make(),
                 ]),
             ]);
     }
@@ -81,9 +89,9 @@ class EventPageResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListEventPages::route('/'),
-            'create' => Pages\CreateEventPage::route('/create'),
-            'edit' => Pages\EditEventPage::route('/{record}/edit'),
+            'index' => ListEventPages::route('/'),
+            'create' => CreateEventPage::route('/create'),
+            'edit' => EditEventPage::route('/{record}/edit'),
         ];
     }
 }

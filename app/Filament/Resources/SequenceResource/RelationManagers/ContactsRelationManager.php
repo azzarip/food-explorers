@@ -2,6 +2,8 @@
 
 namespace App\Filament\Resources\SequenceResource\RelationManagers;
 
+use Filament\Tables\Columns\TextColumn;
+use Filament\Actions\AttachAction;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\RelationManagers\RelationManager;
@@ -22,14 +24,14 @@ class ContactsRelationManager extends RelationManager
         return $table
             ->recordTitleAttribute('email')
             ->columns([
-                Tables\Columns\TextColumn::make('name_email')
+                TextColumn::make('name_email')
                     ->label('Contact'),
-                Tables\Columns\TextColumn::make('execute_at')->since(),
-                Tables\Columns\TextColumn::make('step'),
-                Tables\Columns\TextColumn::make('stopped_at'),
+                TextColumn::make('execute_at')->since(),
+                TextColumn::make('step'),
+                TextColumn::make('stopped_at'),
             ])
             ->headerActions([
-                Tables\Actions\AttachAction::make('add_contact')
+                AttachAction::make('add_contact')
                 ->label('Add Contact')
                 ->modalHeading('Add Contact')
                 ->recordSelectSearchColumns(['first_name', 'last_name', 'email'])

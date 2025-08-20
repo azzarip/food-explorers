@@ -2,6 +2,7 @@
 
 namespace App\Actions\Stripe;
 
+use Stripe\StripeClient;
 use App\Models\Offer;
 use App\Models\Payment;
 use Illuminate\Support\Facades\Auth;
@@ -27,7 +28,7 @@ class OfferPayment {
             return $payment;
         }
 
-        $stripe = new \Stripe\StripeClient(config('services.stripe.secret'));
+        $stripe = new StripeClient(config('services.stripe.secret'));
 
         $response = $stripe->paymentIntents->create([
             'amount' => $offer->price->int,

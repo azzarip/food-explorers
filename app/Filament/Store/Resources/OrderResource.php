@@ -2,21 +2,23 @@
 
 namespace App\Filament\Store\Resources;
 
+use Filament\Schemas\Schema;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Components\Grid;
+use Filament\Schemas\Components\Utilities\Get;
+use Filament\Schemas\Components\Utilities\Set;
+use Filament\Actions\ActionGroup;
+use Filament\Actions\Action;
+use Exception;
 use Filament\Forms;
 use Filament\Tables;
 use App\Models\Contact;
-use Filament\Forms\Get;
-use Filament\Forms\Set;
-use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Azzarip\Teavel\Models\Order;
 use Filament\Actions\EditAction;
 use Filament\Resources\Resource;
-use Filament\Forms\Components\Grid;
-use Filament\Tables\Actions\Action;
 use Filament\Forms\Components\Select;
 use App\Actions\Store\DownloadInvoice;
-use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Textarea;
 use Filament\Tables\Columns\IconColumn;
@@ -24,7 +26,6 @@ use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
-use Filament\Tables\Actions\ActionGroup;
 use Filament\Forms\Components\DatePicker;
 use Illuminate\Database\Eloquent\Builder;
 use Filament\Forms\Components\Placeholder;
@@ -38,11 +39,11 @@ class OrderResource extends Resource
 {
     protected static ?string $model = Order::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-shopping-cart';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-shopping-cart';
 
-    public static function form(Form $form): Form
+    public static function form(Schema $schema): Schema
     {
-        return $form->schema([
+        return $schema->components([
             Section::make('Order Data')->schema([
             TextInput::make('title')->required(),
             Grid::make(3)->schema([
@@ -132,7 +133,7 @@ class OrderResource extends Resource
             ->filters([
                 //
             ])
-            ->actions([
+            ->recordActions([
             ActionGroup::make([
                 Action::make('Download Invoice')
                     ->icon(icon: 'heroicon-m-arrow-down-tray')
@@ -140,7 +141,7 @@ class OrderResource extends Resource
                     ->action(function (Model $record) {
                 try {
                     return DownloadInvoice::download($record);
-                } catch (\Exception $e) {
+                } catch (Exception $e) {
                     Notification::make()
                         ->title('Invoice cannot be found.')
                         ->danger()
@@ -161,8 +162,8 @@ class OrderResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListOrders::route('/'),
-            'create' => Pages\CreateOrder::route('/create'),
+            'index' => ListOrders::route('/'),
+            'create' => CreateOrder::route('/create'),
         ];
     }
 

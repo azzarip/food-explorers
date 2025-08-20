@@ -2,15 +2,21 @@
 
 namespace App\Filament\Resources\Events;
 
+use Filament\Schemas\Schema;
+use Filament\Actions\ViewAction;
+use Filament\Actions\EditAction;
+use App\Filament\Resources\Events\EventResource\RelationManagers\ContactsRelationManager;
+use App\Filament\Resources\Events\EventResource\Pages\ListEvents;
+use App\Filament\Resources\Events\EventResource\Pages\CreateEvent;
+use App\Filament\Resources\Events\EventResource\Pages\EditEvent;
+use App\Filament\Resources\Events\EventResource\Pages\ViewEvent;
 use App\EventType;
 use Filament\Forms;
 use App\EventPublic;
 use Filament\Tables;
 use App\Models\Event;
 use App\Models\Location;
-use Filament\Forms\Form;
 use Filament\Tables\Table;
-use Filament\Infolists\Infolist;
 use Filament\Resources\Resource;
 use Filament\Forms\Components\Select;
 use Filament\Tables\Columns\TextColumn;
@@ -26,14 +32,14 @@ class EventResource extends Resource
 {
     protected static ?string $model = Event::class;
     protected static ?int $navigationSort = -99;
-    protected static ?string $navigationIcon = 'heroicon-o-calendar-days';
-    protected static ?string $navigationGroup = 'Events';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-calendar-days';
+    protected static string | \UnitEnum | null $navigationGroup = 'Events';
     protected static ?string $navigationLabel = 'Events';
 
-    public static function form(Form $form): Form
+    public static function form(Schema $schema): Schema
     {
-        return $form
-            ->schema([
+        return $schema
+            ->components([
                 TextInput::make('title')
                     ->required()
                     ->maxLength(255),
@@ -69,10 +75,10 @@ class EventResource extends Resource
             ]);
     }
 
-    public static function infolist(Infolist $infolist): Infolist
+    public static function infolist(Schema $schema): Schema
     {
-        return $infolist
-        ->schema([
+        return $schema
+        ->components([
             TextEntry::make('title'),
             TextEntry::make('location.name_address'),
             TextEntry::make('type'),
@@ -102,11 +108,11 @@ class EventResource extends Resource
             ->filters([
                 //
             ])
-            ->actions([
-                Tables\Actions\ViewAction::make(),
-                Tables\Actions\EditAction::make(),
+            ->recordActions([
+                ViewAction::make(),
+                EditAction::make(),
             ])
-            ->bulkActions([
+            ->toolbarActions([
 
             ]);
     }
@@ -114,17 +120,17 @@ class EventResource extends Resource
     public static function getRelations(): array
     {
         return [
-            RelationManagers\ContactsRelationManager::class,
+            ContactsRelationManager::class,
         ];
     }
 
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListEvents::route('/'),
-            'create' => Pages\CreateEvent::route('/create'),
-            'edit' => Pages\EditEvent::route('/{record}/edit'),
-            'view' => Pages\ViewEvent::route('/{record}'),
+            'index' => ListEvents::route('/'),
+            'create' => CreateEvent::route('/create'),
+            'edit' => EditEvent::route('/{record}/edit'),
+            'view' => ViewEvent::route('/{record}'),
         ];
     }
 }

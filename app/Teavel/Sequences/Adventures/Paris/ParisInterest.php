@@ -2,6 +2,9 @@
 
 namespace App\Teavel\Sequences\Adventures\Paris;
 
+use App\Teavel\Emails\Adventures\Paris\BistrotMenu;
+use App\Teavel\Emails\Adventures\Paris\ThirdBistrot;
+use App\Teavel\Emails\Adventures\Paris\Launch;
 use Carbon\Carbon;
 use Azzarip\Teavel\Automations\Wait;
 use App\Teavel\Emails\Adventures\Paris\Desserts;
@@ -67,18 +70,18 @@ class ParisInterest extends SequenceAutomation
     }
 
     public function day7() {
-        $this->email(Paris\BistrotMenu::class);
+        $this->email(BistrotMenu::class);
         return Wait::for('24 hours')->then('day8');
     }
 
     public function day8() {
-        $this->email(Paris\ThirdBistrot::class);
+        $this->email(ThirdBistrot::class);
         return Wait::until('21.05.2025 21:00')->then('fullProgram');
     }
 
 
     public function fullProgram() {
-        $this->email(Paris\Launch::class);
+        $this->email(Launch::class);
         return Wait::for('94 hours')->then('bookings');
     }
 

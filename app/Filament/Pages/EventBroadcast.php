@@ -2,10 +2,10 @@
 
 namespace App\Filament\Pages;
 
+use Filament\Schemas\Schema;
 use App\Models\Event;
 use App\Models\Contact;
 use Filament\Forms\Get;
-use Filament\Forms\Form;
 use Filament\Pages\Page;
 use Filament\Actions\Action;
 use Illuminate\Http\Request;
@@ -35,21 +35,21 @@ class EventBroadcast extends Page
 
     public $preselected_event = null;
 
-    protected static ?string $navigationIcon = 'heroicon-o-envelope';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-envelope';
 
-    protected static string $view = 'teavel::filament.pages.email-broadcast';
+    protected string $view = 'teavel::filament.pages.email-broadcast';
 
     protected static ?string $navigationLabel = 'Broadcast';
 
-    protected static ?string $navigationGroup = 'Events';
+    protected static string | \UnitEnum | null $navigationGroup = 'Events';
 
 
-    public function form(Form $form): Form
+    public function form(Schema $schema): Schema
     {
         $options = Event::where('scheduled_at', '>=', now()->subMonth())->orderByDesc('scheduled_at')->get()
             ->mapWithKeys(fn (Model $record): array => [$record->id => $record->title . ' @ ' . $record->location->name . ' ('  . $record->scheduled_at->format('d M Y') . ')'])->toArray();
         
-        return $form
+        return $schema
             ->operation('send')
             ->columns(2)
             ->schema([

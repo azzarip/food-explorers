@@ -2,31 +2,40 @@
 
 namespace App\Filament\Resources\Events;
 
+use Filament\Schemas\Schema;
+use Filament\Tables\Filters\TrashedFilter;
+use Filament\Actions\ViewAction;
+use Filament\Actions\ActionGroup;
+use Filament\Actions\EditAction;
+use Filament\Actions\RestoreAction;
+use Filament\Actions\Action;
+use Filament\Actions\DeleteAction;
+use App\Filament\Resources\Events\LocationResource\Pages\ListLocations;
+use App\Filament\Resources\Events\LocationResource\Pages\CreateLocation;
+use App\Filament\Resources\Events\LocationResource\Pages\EditLocation;
+use App\Filament\Resources\Events\LocationResource\Pages\ViewLocation;
 use Filament\Tables;
 use App\Models\Location;
-use Filament\Forms\Form;
 use Filament\Tables\Table;
-use Filament\Infolists\Infolist;
 use Filament\Resources\Resource;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Filament\Infolists\Components\TextEntry;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\Events\LocationResource\Pages;
-use Filament\Tables\Actions\ActionGroup;
 
 class LocationResource extends Resource
 {
     protected static ?string $model = Location::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-map-pin';
-    protected static ?string $navigationGroup = 'Events';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-map-pin';
+    protected static string | \UnitEnum | null $navigationGroup = 'Events';
 
 
-    public static function form(Form $form): Form
+    public static function form(Schema $schema): Schema
     {
-        return $form
-            ->schema([
+        return $schema
+            ->components([
                 TextInput::make('name')->required(),
                 TextInput::make('google_maps_url')->required()->label('Google Maps URL'),
                 TextInput::make('address')->required()->columnSpan(2),
@@ -34,10 +43,10 @@ class LocationResource extends Resource
     }
 
 
-    public static function infolist(Infolist $infolist): Infolist
+    public static function infolist(Schema $schema): Schema
     {
-        return $infolist
-            ->schema([
+        return $schema
+            ->components([
                 TextEntry::make('name'),
                 TextEntry::make('google_maps_url')
                 ->url(fn ($state): string => $state)
@@ -60,23 +69,23 @@ class LocationResource extends Resource
                     ->sortable(),
                 ])->defaultSort('lastEvent.scheduled_at', 'desc')
             ->filters([
-                Tables\Filters\TrashedFilter::make(), 
+                TrashedFilter::make(), 
             ])
-            ->actions([
-                Tables\Actions\ViewAction::make(),
+            ->recordActions([
+                ViewAction::make(),
                 ActionGroup::make([
-                    Tables\Actions\EditAction::make(),
-                    Tables\Actions\RestoreAction::make(),
-                    Tables\Actions\Action::make('gmap')
+                    EditAction::make(),
+                    RestoreAction::make(),
+                    Action::make('gmap')
                     ->label('Google Maps')
                     ->color('gray')
                     ->icon('heroicon-o-map-pin')
                     ->url(fn (Location $record): string => $record->google_maps_url)
                     ->openUrlInNewTab(),
-                    Tables\Actions\DeleteAction::make(),
+                    DeleteAction::make(),
                 ])
             ])
-            ->bulkActions([
+            ->toolbarActions([
             //
             ]);
     }
@@ -91,10 +100,10 @@ class LocationResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListLocations::route('/'),
-            'create' => Pages\CreateLocation::route('/create'),
-            'edit' => Pages\EditLocation::route('/{record}/edit'),
-            'view' => Pages\ViewLocation::route('/{record}'),
+            'index' => ListLocations::route('/'),
+            'create' => CreateLocation::route('/create'),
+            'edit' => EditLocation::route('/{record}/edit'),
+            'view' => ViewLocation::route('/{record}'),
         ];
     }
 }

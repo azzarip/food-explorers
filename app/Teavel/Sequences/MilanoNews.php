@@ -2,6 +2,11 @@
 
 namespace App\Teavel\Sequences;
 
+use App\Teavel\Emails\Milano\MilanoDay0;
+use App\Teavel\Emails\Milano\MilanoDay1;
+use App\Teavel\Emails\Milano\MilanoDay2;
+use App\Teavel\Emails\Milano\MilanoDay3;
+use App\Teavel\Emails\Milano\Review;
 use App\Teavel\Emails\Milano;
 use Azzarip\Teavel\Automations\Wait;
 use Azzarip\Teavel\Automations\SequenceAutomation;
@@ -18,7 +23,7 @@ class MilanoNews extends SequenceAutomation
 
     public function day0()
     {
-        $this->email(Milano\MilanoDay0::class);
+        $this->email(MilanoDay0::class);
         return Wait::until('04.04.2025 8:30')
             ->then('day1')
             ->precise();
@@ -26,7 +31,7 @@ class MilanoNews extends SequenceAutomation
 
     public function day1()
     {
-        $this->email(Milano\MilanoDay1::class);
+        $this->email(MilanoDay1::class);
         return Wait::until('05.04.2025 8:30')
             ->then('day2')
             ->precise();
@@ -34,7 +39,7 @@ class MilanoNews extends SequenceAutomation
 
     public function day2()
     {
-        $this->email(Milano\MilanoDay2::class);
+        $this->email(MilanoDay2::class);
         return Wait::until('06.04.2025 8:30')
             ->then('day3')
             ->precise();
@@ -42,7 +47,7 @@ class MilanoNews extends SequenceAutomation
     
     public function day3()
     {
-        $this->email(Milano\MilanoDay3::class);
+        $this->email(MilanoDay3::class);
         return Wait::until('06.04.2025 17:30')
             ->then('review')
             ->precise();
@@ -50,7 +55,7 @@ class MilanoNews extends SequenceAutomation
 
     public function review()
     {
-        $this->email(Milano\Review::class);
+        $this->email(Review::class);
         $this->startSequence(Milano2Paris::class);
 
     }
