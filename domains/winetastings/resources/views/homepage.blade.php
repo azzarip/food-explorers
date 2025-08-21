@@ -28,7 +28,7 @@
         </div>
 
         <div class="mx-auto mt-6 lg:mt-12 max-w-2xl rounded-2xl bg-white p-4 shadow-lg ring-1 ring-gray-100 sm:p-4">
-          <x-forms::base class="">
+          <x-forms::base class="mx-auto max-w-lg">
             <x-forms::field.email />
             <x-forms::field.privacy_policy />
         
