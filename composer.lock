@@ -307,12 +307,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/azzarip/domains.git",
-                "reference": "80dba7be016d20930220ae02443e0d8ed54bbd9a"
+                "reference": "0d0216c17ba2114c3123bda15500741dde711874"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/azzarip/domains/zipball/80dba7be016d20930220ae02443e0d8ed54bbd9a",
-                "reference": "80dba7be016d20930220ae02443e0d8ed54bbd9a",
+                "url": "https://api.github.com/repos/azzarip/domains/zipball/0d0216c17ba2114c3123bda15500741dde711874",
+                "reference": "0d0216c17ba2114c3123bda15500741dde711874",
                 "shasum": ""
             },
             "require": {
@@ -325,10 +325,10 @@
             "require-dev": {
                 "ext-json": "*",
                 "friendsofphp/php-cs-fixer": "^3.14",
-                "livewire/livewire": "^2.5|^3.0",
+                "livewire/livewire": "^3.5",
                 "mockery/mockery": "^1.5",
-                "orchestra/testbench": "^7.52|^8.33|^9.11|^10.0|dev-master|dev-main",
-                "phpunit/phpunit": "^9.5|^10.5|^11.5"
+                "orchestra/testbench": "^9.11|^10.0|dev-master|dev-main",
+                "phpunit/phpunit": "^12|^11.5"
             },
             "default-branch": true,
             "type": "library",
@@ -371,7 +371,7 @@
                 "issues": "https://github.com/azzarip/domains/issues",
                 "source": "https://github.com/azzarip/domains/tree/main"
             },
-            "time": "2025-07-12T19:55:09+00:00"
+            "time": "2025-08-20T17:02:09+00:00"
         },
         {
             "name": "azzarip/teavel",

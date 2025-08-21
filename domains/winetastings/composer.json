@@ -1,0 +1,22 @@
+{
+	"name": "domains/winetastings",
+	"description": "",
+	"type": "library",
+	"version": "1.0",
+	"license": "proprietary",
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"Domains\\Winetastings\\": "src/",
+			"Domains\\Winetastings\\Tests\\": "tests/"
+		}
+	},
+	"minimum-stability": "stable",
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Domains\\Winetastings\\Providers\\WinetastingsServiceProvider"
+			]
+		}
+	}
+}

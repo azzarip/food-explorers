@@ -23,7 +23,12 @@ return [
     ],
         
     'api' => [
-        'url' => 'api.foodexplorers.' . env('DOMAIN_TLD'),
+        'url' => 'api.foodexplorers.' . env('TLD'),
         'name' => 'Api - Food Explorers',
     ],
+
+    'winetastings' => [
+        'url' => 'winetastingszurich.' . env('TLD'),
+        'name' => 'Wine Tastings Zurich'
+    ]
 ];
