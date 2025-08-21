@@ -1,10 +1,11 @@
-@props(['flag' => false])
+@props(['flag' => false, 'email' => true])
 <footer>
     <div class="px-2 py-2 bg-black font-lato">
+        @if($email)
         <div class="flex flex-col mb-3 text-center text-white gap-y-3 md:flex-row justify-evenly">
             <a href="mailto:marco.azzari@foodexplorers.ch"> <x-heroicon-s-envelope class="inline w-5 h-5"/> marco.azzari@foodexplorers.ch</a>
-
         </div>
+        @endif
 
         @if($flag)
         <p class="text-center text-slate-500">Please report to me any bug of this website.</p>

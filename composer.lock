@@ -229,12 +229,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/azzarip/client.git",
-                "reference": "259675d11493a47102cfbe666be49e89f500f6c0"
+                "reference": "d3d10f96153c83ea03d15a40416f0004ef1d17a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/azzarip/client/zipball/259675d11493a47102cfbe666be49e89f500f6c0",
-                "reference": "259675d11493a47102cfbe666be49e89f500f6c0",
+                "url": "https://api.github.com/repos/azzarip/client/zipball/d3d10f96153c83ea03d15a40416f0004ef1d17a1",
+                "reference": "d3d10f96153c83ea03d15a40416f0004ef1d17a1",
                 "shasum": ""
             },
             "require": {
@@ -299,7 +299,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-20T16:14:34+00:00"
+            "time": "2025-08-21T20:20:34+00:00"
         },
         {
             "name": "azzarip/domains",
@@ -379,12 +379,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/azzarip/teavel.git",
-                "reference": "3229584a1cad6842fb6aaf86acc90e028e23c994"
+                "reference": "cbdc98d1b439961ee036eeb6c722ac6ead70debb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/azzarip/teavel/zipball/3229584a1cad6842fb6aaf86acc90e028e23c994",
-                "reference": "3229584a1cad6842fb6aaf86acc90e028e23c994",
+                "url": "https://api.github.com/repos/azzarip/teavel/zipball/cbdc98d1b439961ee036eeb6c722ac6ead70debb",
+                "reference": "cbdc98d1b439961ee036eeb6c722ac6ead70debb",
                 "shasum": ""
             },
             "require": {
@@ -457,7 +457,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-13T09:30:08+00:00"
+            "time": "2025-08-21T20:08:39+00:00"
         },
         {
             "name": "azzarip/utilities",

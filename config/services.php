@@ -46,6 +46,6 @@ return [
         'call_password' => env('AZZARI_CALL_PASSWORD'),
         'server_name' => 'prem',
         'response_password' => env('AZZARI_RESPONSE_PASSWORD'),
-        'call_url' => rtrim(env('AZZARI_CALL_URL'), '/'),
+        'call_url' => env('AZZARI_CALL_URL'),
     ],
 ];

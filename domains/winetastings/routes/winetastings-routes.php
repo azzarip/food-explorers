@@ -6,5 +6,5 @@ Route::group([
     'middleware' => 'web',
     'domain' => config('domains.winetastings.url'),
 ], function () {
-    Route::view('/', 'Winetastings::homepage');
+    Route::view('/', 'winetastings::homepage');
 });
