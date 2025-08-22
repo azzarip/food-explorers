@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7ab1192e17fd18149d132089f48716e6",
+    "content-hash": "e7b8f6d68759ca5576583d71effe866c",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -307,12 +307,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/azzarip/domains.git",
-                "reference": "0d0216c17ba2114c3123bda15500741dde711874"
+                "reference": "50529a10819c399207660c497863832ef93d0011"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/azzarip/domains/zipball/0d0216c17ba2114c3123bda15500741dde711874",
-                "reference": "0d0216c17ba2114c3123bda15500741dde711874",
+                "url": "https://api.github.com/repos/azzarip/domains/zipball/50529a10819c399207660c497863832ef93d0011",
+                "reference": "50529a10819c399207660c497863832ef93d0011",
                 "shasum": ""
             },
             "require": {
@@ -371,7 +371,7 @@
                 "issues": "https://github.com/azzarip/domains/issues",
                 "source": "https://github.com/azzarip/domains/tree/main"
             },
-            "time": "2025-08-20T17:02:09+00:00"
+            "time": "2025-08-21T21:00:20+00:00"
         },
         {
             "name": "azzarip/teavel",
@@ -379,12 +379,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/azzarip/teavel.git",
-                "reference": "cbdc98d1b439961ee036eeb6c722ac6ead70debb"
+                "reference": "2a5b3852bfdc23304c65b866097d678e1044ac66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/azzarip/teavel/zipball/cbdc98d1b439961ee036eeb6c722ac6ead70debb",
-                "reference": "cbdc98d1b439961ee036eeb6c722ac6ead70debb",
+                "url": "https://api.github.com/repos/azzarip/teavel/zipball/2a5b3852bfdc23304c65b866097d678e1044ac66",
+                "reference": "2a5b3852bfdc23304c65b866097d678e1044ac66",
                 "shasum": ""
             },
             "require": {
@@ -457,7 +457,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-21T20:08:39+00:00"
+            "time": "2025-08-21T21:43:24+00:00"
         },
         {
             "name": "azzarip/utilities",
@@ -2046,6 +2046,29 @@
                     "Domains\\My\\Tests\\": "tests/",
                     "Domains\\My\\Database\\Factories\\": "database/factories/",
                     "Domains\\My\\Database\\Seeders\\": "database/seeders/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "domains/winetastings",
+            "version": "1.0",
+            "dist": {
+                "type": "path",
+                "url": "domains/winetastings",
+                "reference": "291eae51bdac4ca4bbeffb05b6f8ba9daa933d48"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Domains\\Winetastings\\": "src/",
+                    "Domains\\Winetastings\\Tests\\": "tests/"
                 }
             },
             "license": [

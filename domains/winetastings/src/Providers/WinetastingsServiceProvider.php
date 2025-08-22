@@ -1,6 +1,6 @@
 <?php
 
-namespace StubModuleNamespace\Winetastings\Providers;
+namespace Domains\Winetastings\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -11,12 +11,5 @@
 			"Domains\\Winetastings\\Tests\\": "tests/"
 		}
 	},
-	"minimum-stability": "stable",
-	"extra": {
-		"laravel": {
-			"providers": [
-				"Domains\\Winetastings\\Providers\\WinetastingsServiceProvider"
-			]
-		}
-	}
+	"minimum-stability": "stable"
 }

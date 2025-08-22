@@ -1,5 +1,6 @@
 <?php
 
+use Domains\Winetastings\Http\Controllers\NewsletterController;
 use Illuminate\Support\Facades\Route;
 
 Route::group([
@@ -7,4 +8,7 @@ Route::group([
     'domain' => config('domains.winetastings.url'),
 ], function () {
     Route::view('/', 'winetastings::homepage');
+    Route::view('/ty', 'winetastings::ty');
+    
+    Route::post('/', NewsletterController::class);
 });
