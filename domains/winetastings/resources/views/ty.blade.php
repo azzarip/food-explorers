@@ -41,12 +41,10 @@
             class="group inline-flex items-center justify-center gap-3 rounded-2xl bg-emerald-600 px-6 py-4 text-white shadow-lg ring-1 ring-emerald-500/20 transition hover:bg-emerald-700 focus:outline-none focus:ring-4 focus:ring-emerald-200"
             aria-label="Join WhatsApp Channel"
           >
-            <!-- WhatsApp-ish icon (chat bubble + phone) -->
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png?20220228223904" alt="Whatsapp Icon" class="w-24 aspect-auto">
             <span class="text-base font-semibold">Join WhatsApp Channel</span>
           </a>
 
-          <!-- Telegram -->
           <a
             href="t.me/winetastingszurich"
             target="_blank" rel="noopener noreferrer"
@@ -58,7 +56,6 @@
           </a>
         </div>
 
-        <!-- What to expect -->
         <div class="mx-auto mt-10 max-w-2xl rounded-2xl bg-white p-5 shadow-sm ring-1 ring-gray-100">
           <h2 class="text-lg font-semibold text-gray-900">What happens next</h2>
           <ul class="mt-3 space-y-2 text-sm text-gray-700">
@@ -68,9 +65,8 @@
           </ul>
         </div>
 
-        <!-- Footer links -->
         <p class="mx-auto mt-8 max-w-2xl text-center text-xs text-gray-500">
-          Prefer email only? <a href="/" class="underline hover:text-gray-700">Return to the homepage</a>.
+         <a href="/" class="underline hover:text-gray-700">Return to the homepage</a>.
         </p>
       </div>
     </section>
