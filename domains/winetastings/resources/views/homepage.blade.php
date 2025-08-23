@@ -84,7 +84,7 @@
         <p>...you know, no? the one on the boats...</p>
         <p>By the time people hear of a certain event, the spots are gone or the date has passed. </p>
         <p>The corks are pulled. The magic is over.</p>
-        <h2 class="mt-8 font-bold text-xl md:text-2xl  lg:text-2xl text-center">The Zurich Wine Compass</h2>
+        <h2 class="mt-8 font-bold text-2xl md:text-3xl  lg:text-4xl text-center">The Zurich Wine Compass</h2>
         <p>Zurich Wine Compass is your <strong>weekly email</strong> that informs you about all the upcoming events in the city.</p>
         <p>No Bern. No Basel. No random city 2 hours of train away.</p>
         <p>Only Zurich and its close surroundings.</p>
@@ -105,9 +105,9 @@
         <p>I am building this tool for my wine lover friends.</p>
         <p>It is gratis now, but I may change idea in the future.</p>
         <p>If you wait, you risk missing the next tasting.</p>
-        <p>And missing this tool for ever.</p>
+        <p>And missing this tool forever.</p>
         <p>If you act now, you’ll be in.</p>
-        <p>We also have a Whatsapp and Telegram Channel if you prefer these over emails.</p>
+        <p>We also have a Whatsapp and Telegram Channel if you prefer these ways over emails, after you join we will welcome you into those groups!</p>
 
                 <h2 class="mt-8 font-bold text-xl md:text-2xl  lg:text-2xl">Who is behind the Zurich Wine Compass?</h2>
                 <p>Hi, nice to meet you if you read so far down!</p>
