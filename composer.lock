@@ -304,12 +304,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/azzarip/domains.git",
-                "reference": "c9fa9ef2822d7eac40f86cf11eb149655390f436"
+                "reference": "665552082f2df9b75444498465805ee2245e6897"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/azzarip/domains/zipball/c9fa9ef2822d7eac40f86cf11eb149655390f436",
-                "reference": "c9fa9ef2822d7eac40f86cf11eb149655390f436",
+                "url": "https://api.github.com/repos/azzarip/domains/zipball/665552082f2df9b75444498465805ee2245e6897",
+                "reference": "665552082f2df9b75444498465805ee2245e6897",
                 "shasum": ""
             },
             "require": {
@@ -336,7 +336,7 @@
                     },
                     "providers": [
                         "Azzarip\\Domains\\Support\\DomainsServiceProvider",
-                        "Azzarip\\Domains\\Support\\ModularizedCommandsServiceProvider",
+                        "Azzarip\\Domains\\Support\\DomainsCommandsServiceProvider",
                         "Azzarip\\Domains\\Support\\ModularEventServiceProvider"
                     ]
                 }
@@ -371,7 +371,7 @@
                 "issues": "https://github.com/azzarip/domains/issues",
                 "source": "https://github.com/azzarip/domains/tree/main"
             },
-            "time": "2025-08-23T09:48:03+00:00"
+            "time": "2025-08-23T10:24:41+00:00"
         },
         {
             "name": "azzarip/teavel",
