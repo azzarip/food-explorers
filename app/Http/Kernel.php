@@ -14,7 +14,7 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use App\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Routing\Middleware\SubstituteBindings;
-use Azzarip\Client\Http\Middleware\DomainKey;
+use Azzarip\Domains\Http\Middleware\DomainKey;
 use Label84\TagManager\Http\Middleware\TagManagerMiddleware;
 use Azzarip\Teavel\Http\Middleware\HandleUTM;
 use Illuminate\Routing\Middleware\ThrottleRequests;
