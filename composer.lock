@@ -229,12 +229,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/azzarip/client.git",
-                "reference": "00d8eb6b766565435e85743b28905f1c30e30cae"
+                "reference": "3723cb0317bcaf8dcd07521f0ed8d944e5444f5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/azzarip/client/zipball/00d8eb6b766565435e85743b28905f1c30e30cae",
-                "reference": "00d8eb6b766565435e85743b28905f1c30e30cae",
+                "url": "https://api.github.com/repos/azzarip/client/zipball/3723cb0317bcaf8dcd07521f0ed8d944e5444f5f",
+                "reference": "3723cb0317bcaf8dcd07521f0ed8d944e5444f5f",
                 "shasum": ""
             },
             "require": {
@@ -243,8 +243,7 @@
                 "livewire/livewire": "^3.5",
                 "php": "^8.2",
                 "spatie/laravel-google-fonts": "^1.4",
-                "spatie/laravel-package-tools": "^1.16",
-                "spatie/laravel-sitemap": "^7.2"
+                "spatie/laravel-package-tools": "^1.16"
             },
             "require-dev": {
                 "laravel/pint": "^1.14",
@@ -296,7 +295,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-23T09:48:34+00:00"
+            "time": "2025-08-24T08:19:02+00:00"
         },
         {
             "name": "azzarip/domains",
@@ -304,12 +303,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/azzarip/domains.git",
-                "reference": "665552082f2df9b75444498465805ee2245e6897"
+                "reference": "dc28e85c55d678a8764330712b8a5eaa01cdce9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/azzarip/domains/zipball/665552082f2df9b75444498465805ee2245e6897",
-                "reference": "665552082f2df9b75444498465805ee2245e6897",
+                "url": "https://api.github.com/repos/azzarip/domains/zipball/dc28e85c55d678a8764330712b8a5eaa01cdce9a",
+                "reference": "dc28e85c55d678a8764330712b8a5eaa01cdce9a",
                 "shasum": ""
             },
             "require": {
@@ -317,7 +316,8 @@
                 "ext-dom": "*",
                 "ext-simplexml": "*",
                 "illuminate/support": "^9|^10|^11|^12|13.x-dev|dev-master|dev-main",
-                "php": ">=8.0"
+                "php": ">=8.0",
+                "spatie/laravel-sitemap": "^7.3"
             },
             "require-dev": {
                 "ext-json": "*",
@@ -371,7 +371,7 @@
                 "issues": "https://github.com/azzarip/domains/issues",
                 "source": "https://github.com/azzarip/domains/tree/main"
             },
-            "time": "2025-08-23T10:24:41+00:00"
+            "time": "2025-08-24T08:34:05+00:00"
         },
         {
             "name": "azzarip/teavel",
@@ -2848,22 +2848,22 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.9.3",
+            "version": "7.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "7b2f29fe81dc4da0ca0ea7d42107a0845946ea77"
+                "reference": "b51ac707cfa420b7bfd4e4d5e510ba8008e822b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/7b2f29fe81dc4da0ca0ea7d42107a0845946ea77",
-                "reference": "7b2f29fe81dc4da0ca0ea7d42107a0845946ea77",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/b51ac707cfa420b7bfd4e4d5e510ba8008e822b4",
+                "reference": "b51ac707cfa420b7bfd4e4d5e510ba8008e822b4",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "guzzlehttp/promises": "^1.5.3 || ^2.0.3",
-                "guzzlehttp/psr7": "^2.7.0",
+                "guzzlehttp/promises": "^2.3",
+                "guzzlehttp/psr7": "^2.8",
                 "php": "^7.2.5 || ^8.0",
                 "psr/http-client": "^1.0",
                 "symfony/deprecation-contracts": "^2.2 || ^3.0"
@@ -2954,7 +2954,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.9.3"
+                "source": "https://github.com/guzzle/guzzle/tree/7.10.0"
             },
             "funding": [
                 {
@@ -2970,7 +2970,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-03-27T13:37:11+00:00"
+            "time": "2025-08-23T22:36:01+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -3057,16 +3057,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.7.1",
+            "version": "2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "c2270caaabe631b3b44c85f99e5a04bbb8060d16"
+                "reference": "21dc724a0583619cd1652f673303492272778051"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/c2270caaabe631b3b44c85f99e5a04bbb8060d16",
-                "reference": "c2270caaabe631b3b44c85f99e5a04bbb8060d16",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/21dc724a0583619cd1652f673303492272778051",
+                "reference": "21dc724a0583619cd1652f673303492272778051",
                 "shasum": ""
             },
             "require": {
@@ -3082,7 +3082,7 @@
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.8.2",
                 "http-interop/http-factory-tests": "0.9.0",
-                "phpunit/phpunit": "^8.5.39 || ^9.6.20"
+                "phpunit/phpunit": "^8.5.44 || ^9.6.25"
             },
             "suggest": {
                 "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
@@ -3153,7 +3153,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.7.1"
+                "source": "https://github.com/guzzle/psr7/tree/2.8.0"
             },
             "funding": [
                 {
@@ -3169,7 +3169,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-03-27T12:30:47+00:00"
+            "time": "2025-08-23T21:21:41+00:00"
         },
         {
             "name": "guzzlehttp/uri-template",
