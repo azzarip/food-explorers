@@ -18,7 +18,7 @@ class TastingController
 
         $today = Carbon::today()->toDateString();
         $tomorrow = Carbon::tomorrow()->toDateString();
-        $dates = collect();
+        
         $tastingDates = $dates->keys()->unique()->values()->toArray();
 
         return view('winetastings::upcoming', [

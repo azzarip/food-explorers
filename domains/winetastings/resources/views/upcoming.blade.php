@@ -3,7 +3,7 @@
 @php
     $seo = new SEO(
         title: 'Upcoming Wine Tastings',
-        description: 'Stay updated on every wine tasting in Zurich. One simple newsletter with all the best events, dates & insider tips. Free to join today. Stay informed of all wine things in Zurich and surroundings.',
+        description: 'Explore all upcoming wine tastings in Zürich with our easy-to-use calendar. Stay up to date with the city\'s best wine events and never miss a glass again.',
         image: '',
     );
 @endphp
@@ -111,7 +111,7 @@
 
 @push('head')
     @verbatim
-        <script type="application/ld+json">
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -128,57 +128,48 @@
       "founder": { "@id": "https://www.foodexplorers.ch/#marco" }
     },
     {
-      "@type": "Person",
-      "@id": "https://www.foodexplorers.ch/#marco",
-      "name": "Marco Azzari",
-      "jobTitle": "Curator & Editor",
-      "worksFor": { "@id": "https://www.foodexplorers.ch/#org" }
-    },
-    {
       "@type": "WebSite",
       "@id": "https://winetastingszurich.ch/#website",
       "url": "https://winetastingszurich.ch/",
-      "name": "Wine Tastings Zürich Newsletter",
-      "publisher": { "@id": "https://www.foodexplorers.ch/#org" }
+      "name": "Wine Tastings Zürich",
+      "publisher": { "@id": "https://www.foodexplorers.ch/#org" },
+      "inLanguage": ["de-CH","en"]
     },
     {
       "@type": "WebPage",
-      "@id": "https://winetastingszurich.ch/#webpage",
-      "url": "https://winetastingszurich.ch/",
-      "name": "Subscribe to Zürich Wine Tastings Newsletter",
+      "@id": "https://winetastingszurich.ch/upcoming#webpage",
+      "url": "https://winetastingszurich.ch/upcoming",
+      "name": "Upcoming Wine Tastings in Zürich",
       "isPartOf": { "@id": "https://winetastingszurich.ch/#website" },
       "publisher": { "@id": "https://www.foodexplorers.ch/#org" },
-      "about": { "@id": "https://winetastingszurich.ch/#newsletter" },
-      "potentialAction": {
-        "@type": "SubscribeAction",
-        "name": "Subscribe to Zürich Wine Tastings Newsletter",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://winetastingszurich.ch/",
-          "httpMethod": ["POST"],
-          "encodingType": "application/x-www-form-urlencoded"
-        },
-        "actionPlatform": [
-          "https://schema.org/DesktopWebPlatform",
-          "https://schema.org/MobileWebPlatform"
-        ]
+      "description": "Discover all upcoming wine tastings in Zürich in one simple calendar. Updated regularly with the best events in the city.",
+      "about": {
+        "@type": "Thing",
+        "name": "Wine Tastings Calendar Zürich",
+        "description": "An overview of all wine tastings happening in Zürich, organized in an easy-to-use calendar format."
       }
     },
     {
-      "@type": ["Service", "CreativeWork"],
-      "@id": "https://winetastingszurich.ch/#newsletter",
-      "name": "Zürich Wine Tastings Newsletter",
-      "description": "A curated weekly email with every wine tasting in Zürich. No spam. Cancel anytime.",
-      "isAccessibleForFree": true,
-      "provider": { "@id": "https://www.foodexplorers.ch/#org" },
-      "creator": { "@id": "https://www.foodexplorers.ch/#org" },
-      "inLanguage": ["de-CH", "en"],
-      "offers": {
-        "@type": "Offer",
-        "price": "0.00",
-        "priceCurrency": "CHF",
-        "availability": "https://schema.org/InStock"
-      }
+      "@type": "BreadcrumbList",
+      "@id": "https://winetastingszurich.ch/upcoming#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://winetastingszurich.ch/",
+            "name": "Home"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://winetastingszurich.ch/upcoming",
+            "name": "Upcoming Tastings"
+          }
+        }
+      ]
     }
   ]
 }
