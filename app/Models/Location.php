@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\Event;
+use App\Enums\LocationType;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -27,5 +28,20 @@ class Location extends Model
     public function getNameAddressAttribute(): string 
     {
         return $this->name . ', ' . $this->address;
+    }
+
+    public function getTypeAttribute(): ?LocationType
+    {
+        return $this->type_id
+            ? LocationType::from($this->type_id)
+            : null;
+    }
+
+    // mutator: $location->type = LocationType::WineBar
+    public function setTypeAttribute(LocationType|string|int|null $value): void
+    {
+        $this->attributes['type_id'] = $value instanceof LocationType
+            ? $value->value
+            : $value;
     }
 }

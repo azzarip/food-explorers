@@ -29,6 +29,7 @@ class WinePanelProvider extends PanelProvider
             ->path('wine')
             ->domain(config('domains.admin.url'))
             ->authGuard('admin')
+            ->brandName('Zurich Wine Compass')
             ->login()
             ->colors([
                 'primary' => Color::Red,

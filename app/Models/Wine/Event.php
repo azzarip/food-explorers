@@ -9,6 +9,25 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Event extends Model
 {
+    protected $table = "wine_events";
+
+    protected $with = ['dates', 'organizer'];
+
+    public function getEarliestDate(): ?Date
+    {
+        return $this->dates()
+            ->orderBy('date')
+            ->orderBy('start_time')
+            ->first();
+    }
+
+    protected $appends = ['start_at'];
+
+    public function getStartAtAttribute(): ?Date
+    {
+        return $this->getEarliestDate();
+    }
+
     public function location(): BelongsTo
     {
         return $this->belongsTo(Location::class);

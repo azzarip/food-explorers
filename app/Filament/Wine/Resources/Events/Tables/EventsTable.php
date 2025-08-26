@@ -6,6 +6,7 @@ use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\ViewAction;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 
 class EventsTable
@@ -14,7 +15,10 @@ class EventsTable
     {
         return $table
             ->columns([
-                //
+                TextColumn::make('title'),
+                TextColumn::make('organizer.name'),
+                TextColumn::make('start_at.formatted'),
+                TextColumn::make('location.name'),
             ])
             ->filters([
                 //

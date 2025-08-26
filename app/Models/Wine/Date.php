@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Date extends Model
 {
+    protected $table = 'wine_dates';
     protected $casts = [
         'date' => 'date', 
     ];
@@ -31,5 +32,17 @@ class Date extends Model
             if (!$this->date || !$this->end_time) return null;
             return Carbon::parse($this->date->format('Y-m-d') . ' ' . $this->end_time);
         });
+    }
+
+    public function getFormattedAttribute(): string|null     
+    {
+    if (! $this->date || ! $this->start_time) {
+        return null;
+    }
+
+    $date = Carbon::parse($this->date);
+    $time = Carbon::parse($this->start_time);
+
+    return $date->format('d-m-Y') . ' ' . $time->format('H:i');
     }
 }
