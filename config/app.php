@@ -169,6 +169,7 @@ return [
     
         App\Providers\Filament\AdminPanelProvider::class,
         App\Providers\Filament\StorePanelProvider::class,
+        App\Providers\Filament\WinePanelProvider::class,
         App\Providers\RouteServiceProvider::class,
     ])->toArray(),
 

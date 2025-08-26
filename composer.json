@@ -28,6 +28,7 @@
         "laravel/tinker": "^2.8",
         "league/flysystem-aws-s3-v3": "*",
         "livewire/livewire": "^3.5",
+        "owenvoke/blade-fontawesome": "*",
         "ralphjsmit/laravel-seo": "^1.4",
         "spatie/laravel-backup": "^9",
         "spatie/laravel-google-fonts": "*",
