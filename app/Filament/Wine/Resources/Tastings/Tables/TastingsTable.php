@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Wine\Resources\Events\Tables;
+namespace App\Filament\Wine\Resources\Tastings\Tables;
 
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
@@ -9,16 +9,19 @@ use Filament\Actions\ViewAction;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 
-class EventsTable
+class TastingsTable
 {
     public static function configure(Table $table): Table
     {
         return $table
             ->columns([
-                TextColumn::make('title'),
-                TextColumn::make('organizer.name'),
+                TextColumn::make('title')
+                    ->searchable(),
+                TextColumn::make('location.name')
+                    ->searchable(),
+                TextColumn::make('organizer.name')
+                    ->searchable(),
                 TextColumn::make('start_at.formatted'),
-                TextColumn::make('location.name'),
             ])
             ->filters([
                 //

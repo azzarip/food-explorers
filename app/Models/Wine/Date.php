@@ -44,13 +44,9 @@ class Date extends Model
 
     public function getFormattedAttribute(): string|null     
     {
-    if (! $this->date || ! $this->start_time) {
-        return null;
-    }
+    $time = Carbon::parse($this->start_time)->format('H:i');
+    $time2 = Carbon::parse($this->end_time)->format('H:i');
 
-    $date = Carbon::parse($this->date);
-    $time = Carbon::parse($this->start_time);
-
-    return $date->format('d-m-Y') . ' ' . $time->format('H:i');
+    return $this->date->format('d-m-Y') . ' ' . $time . ' - ' . $time2;
     }
 }

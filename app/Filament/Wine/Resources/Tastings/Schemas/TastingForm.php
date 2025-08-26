@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Wine\Resources\Events\Schemas;
+namespace App\Filament\Wine\Resources\Tastings\Schemas;
 
 use App\Models\Location;
 use App\Enums\LocationType;
@@ -13,9 +13,9 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\TimePicker;
 
-class EventForm
+class TastingForm
 {
-    public static function configure(Schema $schema): Schema
+  public static function configure(Schema $schema): Schema
     {
         return $schema
             ->components([

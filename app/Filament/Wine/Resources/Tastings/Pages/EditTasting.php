@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Filament\Wine\Resources\Events\Pages;
+namespace App\Filament\Wine\Resources\Tastings\Pages;
 
-use App\Filament\Wine\Resources\Events\EventResource;
+use App\Filament\Wine\Resources\Tastings\TastingResource;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\ViewAction;
 use Filament\Resources\Pages\EditRecord;
 
-class EditEvent extends EditRecord
+class EditTasting extends EditRecord
 {
-    protected static string $resource = EventResource::class;
+    protected static string $resource = TastingResource::class;
 
     protected function getHeaderActions(): array
     {
