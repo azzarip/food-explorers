@@ -18,7 +18,7 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        Schema::create('wine_events', function (Blueprint $table) {
+        Schema::create('wine_tastings', function (Blueprint $table) {
             $table->id();
             $table->foreignId('location_id')
                   ->constrained('locations')
@@ -42,7 +42,7 @@ return new class extends Migration
             $table->id();
 
             $table->foreignId('event_id')
-                  ->constrained('wine_events')
+                  ->constrained('wine_tastings')
                   ->cascadeOnUpdate()
                   ->cascadeOnDelete();
 

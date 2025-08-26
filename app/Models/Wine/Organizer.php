@@ -9,8 +9,8 @@ class Organizer extends Model
 {
     protected $table = 'wine_organizers';
 
-    public function events(): HasMany
+    public function tastings(): HasMany
     {
-        return $this->hasMany(Event::class, 'organizer_id');
+        return $this->hasMany( Tasting::class, 'organizer_id');
     }
 }

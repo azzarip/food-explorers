@@ -6,6 +6,7 @@ use Illuminate\Support\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Builder;
 
 class Date extends Model
 {
@@ -14,9 +15,9 @@ class Date extends Model
         'date' => 'date', 
     ];
 
-       public function event(): BelongsTo
+       public function tasting(): BelongsTo
     {
-        return $this->belongsTo(Event::class, 'event_id');
+        return $this->belongsTo(Tasting::class, 'event_id');
     }
        public function startAt(): Attribute
     {
@@ -33,6 +34,16 @@ class Date extends Model
             return Carbon::parse($this->date->format('Y-m-d') . ' ' . $this->end_time);
         });
     }
+
+    public function scopeUpcomingNextDays(Builder $query, int $days = 30): Builder
+{
+    $start = Carbon::today('Europe/Zurich')->toDateString();
+    $end   = Carbon::today('Europe/Zurich')->addDays($days)->toDateString();
+
+    return $query->whereBetween('date', [$start, $end])
+                 ->orderBy('date')
+                 ->orderBy('start_time');
+}
 
     public function getFormattedAttribute(): string|null     
     {

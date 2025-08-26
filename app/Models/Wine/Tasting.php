@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class Event extends Model
+class Tasting extends Model
 {
-    protected $table = "wine_events";
+    protected $table = "wine_tastings";
 
     protected $with = ['dates', 'organizer'];
 

@@ -1,4 +1,4 @@
-@extends('azzarip::layouts.base', ['nav' => false])
+@extends('azzarip::layouts.base', ['nav' => true])
 
 @php
     $seo = new SEO(
