@@ -1,4 +1,4 @@
-@extends('azzarip::layouts.base', ['nav' => true])
+@extends('azzarip::layouts.base', ['nav' => true, 'bg' => 'bg-gradient-to-b from-rose-50 to-white antialiased'])
 
 @php
     $seo = new SEO(
@@ -9,8 +9,8 @@
 @endphp
 
 @section('body')
-<main class="mb-12">
-    <section class="w-full min-h-screen flex items-center bg-gradient-to-b from-rose-50 to-white antialiased">
+<main class="mb-12 ">
+    <section class="w-full min-h-screen flex items-start mt-4">
       <div class="mx-auto max-w-3xl px-6">
         <div class="text-center mt-2">
             <p class="text-xl lg:text-3xl px-12">A Message for Serious Wine Lovers Only! </p>
@@ -31,7 +31,6 @@
 
         <div class="mx-auto mt-6 lg:mt-12 max-w-2xl rounded-2xl bg-white p-4 shadow-lg ring-1 ring-gray-100 sm:p-4" id="form">
             <p class="text-xl lg:text-3xl font-bold mb-2 text-center">Join the Zurich Wine Compass!</p>
-
           <x-forms::base class="mx-auto max-w-lg" name="newsletter-form" id="newsletter-form">
             <x-forms::field.email />
             <div class="space-y-4 ml-2">
@@ -56,7 +55,6 @@
             🍷 Curated weekly · Cancel anytime
           </p>
         </div>
-        </ul>
       </div>
     </section>
     <article class="mx-auto max-w-3xl px-2 mt-8 space-y-3 lg:text-xl">

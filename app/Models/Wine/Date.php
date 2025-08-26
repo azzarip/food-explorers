@@ -2,11 +2,11 @@
 
 namespace App\Models\Wine;
 
-use Illuminate\Support\Carbon;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Builder;
 
 class Date extends Model
 {
@@ -19,20 +19,17 @@ class Date extends Model
     {
         return $this->belongsTo(Tasting::class, 'event_id');
     }
-       public function startAt(): Attribute
+       public function startAt(): Carbon
     {
-        return Attribute::get(function () {
             if (!$this->date || !$this->start_time) return null;
             return Carbon::parse($this->date->format('Y-m-d') . ' ' . $this->start_time);
-        });
+     
     }
 
-    public function endAt(): Attribute
+    public function endAt(): Carbon
     {
-        return Attribute::get(function () {
-            if (!$this->date || !$this->end_time) return null;
-            return Carbon::parse($this->date->format('Y-m-d') . ' ' . $this->end_time);
-        });
+        if (!$this->date || !$this->end_time) return null;
+        return Carbon::parse($this->date->format('Y-m-d') . ' ' . $this->end_time);
     }
 
     public function scopeUpcomingNextDays(Builder $query, int $days = 30): Builder
