@@ -648,7 +648,7 @@
         </div>
         <div class="mt-4">
             <h2 class="font-serif text-xl lg:text-xl">Want to know more on how I evaluated and ranked all the ice cream shops?</h2>
-            <p>Follow <a href="/top-3-gelaterias-zurich" class="inline-link">this link</a>, to learn more about the gelaterias of Zurich.</p>
+            <p>Follow <a href="/gelato" class="inline-link">this link</a>, to learn more about the gelaterias of Zurich.</p>
             <p class="text-right">Marco</p>
         </div>
     </article>

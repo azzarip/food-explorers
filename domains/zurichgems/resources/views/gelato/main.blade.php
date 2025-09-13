@@ -2,9 +2,9 @@
 
 @php
     $seo = new SEO(
-        title: 'Top 3 Gelaterias of Zurich - Food Explorers',
+        title: 'Top 3 Gelaterias of Zurich',
         description: 'After trying more than 50 gelaterias in the city of Zurich, I choose the top 3 and bottom 3 of my list. Here are the best ice cream shops in town, you cannot miss in this warm summer 2025.',
-        image: image('gelato/girl.webp')
+        image: '' //image('gelato/girl.webp')
     );
 @endphp
 
@@ -173,7 +173,7 @@
                 <iframe src="https://www.google.com/maps/d/embed?mid=1ac4pxfb-Kn2sgMpqreyQIn13R37uA4o&hl=en&ehbc=2E312F"
                     class="mx-auto min-h-[480px] w-full"></iframe>
                 <p>In the map there are 50 ice cream shops, I tried them all, and you can read a specific review for each of
-                    them (<a href="/gelaterias-zurich-review" class="inline-link">read it here</a>).</p>
+                    them (<a href="/gelato/list" class="inline-link">read it here</a>).</p>
                 <p>At the top of this page you found my top 3, but there are many more worth trying.</p>
                 <p>There I classified all of them in three groups: must try, nice to try, forgettable.</p>
 
@@ -188,7 +188,7 @@
                 <p>Should belong to this top? Probably. But I preferred giving space to less known gelaterias.</p>
                 <p>There are many more gelaterias in Zurich. <strong>Some are good, some are not.</strong></p>
                 <p>If your favorite is missing, I understand. The list is ranked based on my personal evaluation.
-                <p> <strong>You can find all my ratings <a href="/gelaterias-zurich-review" class="inline-link">by
+                <p> <strong>You can find all my ratings <a href="/gelato/list" class="inline-link">by
                             clicking this link</a>.</strong></p>
                 <p>Did I miss one? Possibly. Feel free to write me an email, and I’ll try to check it out.</p>
 
@@ -232,7 +232,7 @@
                             is, and how easy it is to order.</strong></p>
                     <p>That’s the fourth pillar: <strong>Experience</strong>.</p>
                     <p>Each pillar receives a score from <strong>0 to 3</strong>.</p>
-                    <p>You can view all scores <a href="/gelaterias-zurich-review" class="inline-link">here</a>.</p>
+                    <p>You can view all scores <a href="/gelato/list" class="inline-link">here</a>.</p>
                     <p><strong>Each pillar is judged independently.</strong> A gelato can have great texture but poor
                         flavor. Or a great product served by a soulless staff through a window.</p>
                     <p>That’s why I chose not to sum up all scores into one total. <strong>It wouldn't reflect the reality

@@ -26,11 +26,7 @@
         <li>
             <a href="/"
                 class="p-2 font-medium rounded-full hover:bg-amber-500/30">Home</a>
-        </li>
-        <li>
-            <a href="/"
-                class="p-2 font-medium rounded-full hover:bg-amber-500/30">Foodie News</a>
-        </li>  
+        </li> 
         @guest
             <li>
                 <a href="/register" class="px-4 py-2 std-button">Become a Food Explorer</a>
@@ -55,12 +51,6 @@
                 class="block w-full h-full {{ request()->path() === '/' ? 'font-semibold' : '' }}">Homepage
             </a>
         </li>
-        <li class="p-3 text-xl border-y group hover:bg-slate-200">
-            <a href="/food-news"
-                class="block w-full h-full {{ request()->path() === '/food-news' ? 'font-semibold' : '' }}">Food News
-            </a>
-        </li>
-
     @guest
     <li class="p-3 text-xl border-b group hover:bg-slate-200">
         <a href="/login"

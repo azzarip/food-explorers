@@ -3,17 +3,17 @@
 return [
 
     'base' => [
-        'url' => 'www.' . env('DOMAIN_BASE'),
+        'url' => 'www.foodexplorers.' . env('TLD'),
         'name' => 'Food Explorers',
     ],
 
     'admin' => [
-        'url' => 'admin.' . env('DOMAIN_BASE'),
+        'url' => 'admin.foodexplorers.' . env('TLD'),
         'name' => 'Admin - Food Explorers',
     ],
 
     'my' => [
-        'url' => 'my.' . env('DOMAIN_BASE'),
+        'url' => 'my.foodexplorers.' . env('TLD'),
         'name' => 'My - Food Explorers',
     ],
     
@@ -30,5 +30,10 @@ return [
     'winetastings' => [
         'url' => 'winetastingszurich.' . env('TLD'),
         'name' => 'Wine Tastings Zurich'
+    ],
+    
+    'zurichgems' => [
+        'url' => 'www.zurichgems.' . env('TLD'),
+        'name' => 'Zurich Foodie Gems'
     ]
 ];

@@ -18,6 +18,7 @@
         "domains/book": "*",
         "domains/my": "*",
         "domains/winetastings": "^1.0",
+        "domains/zurichgems": "*",
         "filament/filament": "~4.0",
         "guzzlehttp/guzzle": "^7.2",
         "jenssegers/agent": "^2.6",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "53c4705145fac727c9171939194b7092",
+    "content-hash": "eaf3c257fc5f2562ed0fd6f7cbe85249",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -2053,6 +2053,36 @@
                 "psr-4": {
                     "Domains\\Winetastings\\": "src/",
                     "Domains\\Winetastings\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "domains/zurichgems",
+            "version": "1.0",
+            "dist": {
+                "type": "path",
+                "url": "domains/zurichgems",
+                "reference": "78436c391677951d69583e1a4e7904e8314a72f8"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Domains\\Zurichgems\\Providers\\ZurichgemsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Domains\\Zurichgems\\": "src/",
+                    "Domains\\Zurichgems\\Tests\\": "tests/"
                 }
             },
             "license": [
