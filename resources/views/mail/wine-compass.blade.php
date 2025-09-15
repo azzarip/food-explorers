@@ -88,13 +88,13 @@
               <td align="center" style="padding:10px 28px 6px 28px;">
                 <table role="presentation" cellpadding="0" cellspacing="0">
                   <tr>
-                    <td align="center" style="border-radius:999px; background-color: #EC003F;">
+                    <td align="center" style="border-radius:999px;">
                       <a href="{{ $calendarUrl }}" target="_blank"
-         style="display:inline-block; padding:12px 18px;
-                font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:700;
-                line-height:14px; color:#111111; text-decoration:none;">
-                        See Full Calendar
-                      </a>
+   style="display:inline-block;background:#EC003F;border-radius:9999px;
+          padding:12px 18px;font-family:Arial,Helvetica,sans-serif;
+          font-size:14px;font-weight:700;line-height:14px;color:#ffffff;text-decoration:none;">
+  See Full Calendar
+</a>
                     </td>
                   </tr>
                 </table>
