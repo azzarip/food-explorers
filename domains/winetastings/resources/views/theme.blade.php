@@ -9,7 +9,7 @@
         </li>
         <li>
             <a href="/upcoming"
-                class="py-2 font-medium rounded-full hover:bg-rose-500/30 px-4">Upcoming Tastings</a>
+                class="py-2 font-medium rounded-full hover:bg-rose-500/30 px-4">Calendar</a>
         </li>  
 
     </ul>
@@ -24,7 +24,7 @@
         </li>
         <li class="p-3 text-xl border-y group hover:bg-slate-200">
             <a href="/upcoming"
-                class="block w-full h-full {{ request()->path() === '/upcoming' ? 'font-semibold' : '' }}">Upcoming Tastings
+                class="block w-full h-full {{ request()->path() === '/calendar' ? 'font-semibold' : '' }}">Calendar
             </a>
         </li>
 
