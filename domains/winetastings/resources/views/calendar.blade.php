@@ -47,7 +47,7 @@
                                 <h2 @click="open = !open" :aria-expanded="open.toString()"
                                     class="flex items-center justify-between gap-3 rounded-xl px-4 py-2 cursor-pointer select-none
              bg-white/80 text-black border border-slate-200
-             shadow-sm hover:shadow transition bg-linear-to-b from-white to-amber-100 via-white">
+             shadow-sm hover:shadow transition bg-linear-to-b from-white to-amber-100/50 via-white">
                                     <span class="font-semibold">
                                         {{ \Carbon\Carbon::parse($ymd)->format('j F Y, l') }}
                                     </span>
@@ -106,7 +106,9 @@
     </div>
 
 
-<div x-data="{ sheet:false }" class="lg:hidden">
+<div x-data="{ sheet:false }"      
+    x-on:close-calendar.window="sheet = false"
+ class="lg:hidden">
   <button
     x-show="!sheet" x-transition
     @click="sheet = true" type="button"
@@ -153,7 +155,7 @@
         </button>
       </div>
 
-      <div class="mt-2 px-4 pb-6 h-fit" @click="sheet=false">
+      <div class="mt-2 px-4 pb-6 h-fit" >
         <x-winetastings::tasting_small_calendar :$tastingDates />
       </div>
     </div>

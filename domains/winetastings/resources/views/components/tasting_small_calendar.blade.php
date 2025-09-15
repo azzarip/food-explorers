@@ -111,6 +111,8 @@
         if (!el) return;
         el.scrollIntoView({ behavior: 'smooth', block: 'start' });
         el.dispatchEvent(new CustomEvent('force-open', { bubbles: true }));
+        window.dispatchEvent(new CustomEvent('close-calendar'));
+
       },
     };
     return state;

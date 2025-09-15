@@ -17,9 +17,9 @@ class NewsletterController
         $contact->tag('Wine Newsletter');
         $contact->tag('Likes Wine');
 
-        \App\Models\User::first()->notify(new \Azzarip\Teavel\Notifications\TelegramNotification('🍷 New Wine Subscriber', $contact));
-
         NewsletterForm::dispatchAfterResponse($contact);
+        
+        $contact->storeInSession();
         
         return redirect('/ty');
     }
