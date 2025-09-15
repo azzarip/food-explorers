@@ -1,8 +1,10 @@
 <?php
 
+use App\Mail\WineCompass;
 use Illuminate\Support\Facades\Route;
 use Domains\Winetastings\Http\Controllers\TastingController;
 use Domains\Winetastings\Http\Controllers\NewsletterController;
+use Domains\Winetastings\Http\Controllers\ShowEmailController;
 use Domains\Winetastings\Http\Controllers\UnsubscribeController;
 
 Route::group([
@@ -19,6 +21,8 @@ Route::group([
     Route::view('/unsubscribe/ty', 'winetastings::ty.unsubscribe');
     Route::post('/unsubscribe', UnsubscribeController::class);
 
+    Route::get('/email', ShowEmailController::class);
 
     Route::permanentRedirect('/vv', '/?utm_source=vivino&utm_medium=profile');
+    Route::permanentRedirect('/upcoming', '/calendar');
 });
