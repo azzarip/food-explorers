@@ -2,8 +2,9 @@
 
 namespace App\Console\Commands;
 
-use App\Mail\WineCompass;
 use App\Models\User;
+use App\Wine\Loader;
+use App\Mail\WineCompass;
 use App\Models\Wine\Date;
 use Azzarip\Teavel\Models\Tag;
 use Illuminate\Support\Carbon;
@@ -33,32 +34,18 @@ class SendWineCompass extends Command
      */
     public function handle()
     {
-        $start = Carbon::now()->copy()->startOfDay();    
-        $end   = $start->copy()->addWeek();
-
-        $dates = Date::query()
-            ->where('date', '>=', $start->toDateString())
-            ->where('date', '<=', $end->toDateString())
-            ->orderBy('date')
-            ->get();
-
-        if ($dates->isEmpty()) {
-            User::first()->notify(new TelegramNotification('No upcoming wine events found'));
-            return self::SUCCESS;
-        }
+        $loader = Loader::nextWeek();
 
         $tag = Tag::name('Wine Newsletter');
         $contactsQuery = $tag->contacts()->whereNotNull('email');
-        
+
         $dry = (bool) $this->option('dry-run');
         
-        $contactsQuery->chunk(200, function ($contacts) use ($dates, $start, $end, $dry) {
+        $contactsQuery->chunk(200, function ($contacts) use ($loader, $dry) {
             foreach ($contacts as $contact) {
                 $mailable = new WineCompass(
-                    events: $dates,                 
-                    windowStart: $start,
-                    windowEnd:   $end,
-                    contact:     $contact
+                    loader: $loader,
+                    contact: $contact
                 );
 
                 if ($dry) {

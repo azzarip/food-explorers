@@ -3,9 +3,9 @@
 namespace App\Mail;
 
 use App\Wine\Loader;
-use App\Models\Contact;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
+use Azzarip\Teavel\Models\Contact;
 use Illuminate\Support\Collection;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Queue\SerializesModels;
