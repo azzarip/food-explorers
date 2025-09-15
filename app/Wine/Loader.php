@@ -73,17 +73,26 @@ class Loader
             ->map(function (Collection $items, string $dateStr) use ($today, $tomorrow) {
                 $d = Carbon::parse($dateStr, $this->tz)->startOfDay();
 
-                $label = $d->isSameDay($today)
-                    ? "{$this->todayWord}, " . $d->format('j F')
-                    : ($d->isSameDay($tomorrow)
-                        ? "{$this->tomorrowWord}, " . $d->format('j F')
-                        : ($this->locale ? $d->translatedFormat('j F Y, l') : $d->format('j F Y, l')));
+                $label = $d->translatedFormat('j F Y, l');
 
-                return new Day(
+                $day = new Day(
                     date: $d,
                     label: $label,
                     items: $items->values()
                 );
+
+
+                if($d->isSameDay($today)) {
+                    $day->setToday();
+                    $day->setLabel("{$this->todayWord}, " . $d->format('j F'));                    
+                }
+
+                if($d->isSameDay($tomorrow)) {
+                    $day->setTomorrow();
+                    $day->setLabel("{$this->tomorrowWord}, " . $d->format('j F'));                    
+                }
+                
+                return $day;
             })
             ->values();
     }

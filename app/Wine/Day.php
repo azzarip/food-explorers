@@ -9,6 +9,10 @@ use JsonSerializable;
 
 final class Day implements Arrayable, JsonSerializable
 {
+    protected bool $isToday = false;
+    
+    protected bool $isTomorrow = false;
+
     public function __construct(
         public readonly CarbonInterface $date,
         public readonly string $label,
@@ -25,6 +29,29 @@ final class Day implements Arrayable, JsonSerializable
         ];
     }
 
+    public function isToday(): bool
+    {
+        return $this->date->is_today;
+    }
+
+        public function isTomorrow(): bool
+    {
+        return $this->date->is_tomorrow;
+    }
+
+    public function setToday(): void
+    {
+        $this->isToday = true;
+    }
+    public function setTomorrow(): void
+    {
+        $this->isTomorrow = true;
+    }
+
+    public function setLabel(string $label): void
+    {
+        $this->label = $label;
+    }
     public function jsonSerialize(): array
     {
         return $this->toArray();
