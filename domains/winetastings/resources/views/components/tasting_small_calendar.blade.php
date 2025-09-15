@@ -2,7 +2,7 @@
 <div
   x-data="simpleCalendar({ eventDates: @js($tastingDates) })"
   x-init="build()"
-  class="sticky top-6 w-full rounded-2xl max-w-xs mx-auto mt-24  "
+  class="sticky top-6 w-full rounded-2xl max-w-xs mx-auto "
 >
   <!-- Header -->
   <div class="flex items-center justify-between mb-2">

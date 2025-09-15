@@ -12,7 +12,7 @@
     <div class="flex w-full">
         <div class="flex-1 max-lg:hidden"></div>
         <main class="mb-12 max-w-2xl mx-auto w-full px-2 flex-shrink-0">
-            <h1 class="mt-4 text-3xl font-semibold text-center leading-tight text-gray-900 md:text-4xl space-y-3">Tasting Calendar</h1>
+            <h1 class="mt-4 text-3xl font-semibold text-center leading-tight text-gray-900 md:text-4xl space-y-3">Wine Tastings Calendar</h1>
 
             <section>
                 @if ($dates->isEmpty())
@@ -46,8 +46,8 @@
                             @else
                                 <h2 @click="open = !open" :aria-expanded="open.toString()"
                                     class="flex items-center justify-between gap-3 rounded-xl px-4 py-2 cursor-pointer select-none
-             bg-white/80 text-slate-800 border border-slate-200
-             shadow-sm hover:shadow transition">
+             bg-white/80 text-black border border-slate-200
+             shadow-sm hover:shadow transition bg-linear-to-b from-white to-amber-100 via-white">
                                     <span class="font-semibold">
                                         {{ \Carbon\Carbon::parse($ymd)->format('j F Y, l') }}
                                     </span>
@@ -100,10 +100,66 @@
             </section>
         </main>
 
-        <aside class="flex-1 hidden lg:block lg:w-80">
+        <aside class="flex-1 hidden lg:block lg:w-80 pt-24">
             <x-winetastings::tasting_small_calendar :$tastingDates />
         </aside>
     </div>
+
+
+<div x-data="{ sheet:false }" class="lg:hidden">
+  <button
+    x-show="!sheet" x-transition
+    @click="sheet = true" type="button"
+    class="fixed bottom-4 left-1/2 -translate-x-1/2 z-40
+           rounded-full bg-rose-600 px-5 py-3 text-white font-semibold shadow-lg
+           ring-1 ring-rose-300">
+    <span class="inline-flex items-center gap-2">
+      
+      <x-heroicon-o-calendar class="w-5 h-5" />
+      Calendar
+    </span>
+  </button>
+
+  <!-- Overlay -->
+  <div x-cloak x-show="sheet" x-transition.opacity
+       
+        x-trap.noscroll="sheet"
+       class="fixed inset-0 z-40 bg-black/40"
+       @click="sheet=false" @keydown.escape.window="sheet=false"></div>
+
+  <section
+
+    x-trap.noscroll="sheet"
+    x-cloak x-show="sheet"
+    role="dialog" aria-modal="true" aria-labelledby="calendarSheetTitle"
+    class="fixed inset-x-0 bottom-0 z-50 max-h-[85vh]
+           rounded-t-2xl bg-white shadow-2xl ring-1 ring-slate-200
+           pb-[env(safe-area-inset-bottom)]"
+    x-transition:enter="transform ease-out duration-300"
+    x-transition:enter-start="translate-y-full"
+    x-transition:enter-end="translate-y-0"
+    x-transition:leave="transform ease-in duration-200"
+    x-transition:leave-start="translate-y-0"
+    x-transition:leave-end="translate-y-full">
+
+    <div class="mx-auto max-w-2xl">
+      <div class="flex justify-center pt-3">
+        <div class="h-1.5 w-12 rounded-full bg-slate-300"></div>
+      </div>
+      <div class="text-right mr-4">
+        <button class="p-2 rounded-full hover:bg-slate-100"
+                @click="sheet=false" type="button" aria-label="Close calendar">
+          <x-heroicon-o-x-mark class="w-6 h-6" />
+        </button>
+      </div>
+
+      <div class="mt-2 px-4 pb-6 h-fit" @click="sheet=false">
+        <x-winetastings::tasting_small_calendar :$tastingDates />
+      </div>
+    </div>
+  </section>
+</div>
+
 @endsection
 
 
