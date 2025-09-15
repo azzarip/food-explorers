@@ -17,17 +17,11 @@ class Loader
     protected Collection $days;
 
     public function __construct(
-        public CarbonInterface $start = now(),
+        public CarbonInterface $start,
         public CarbonInterface $end,
     ) {
 
     }
-
-    /**
-     * Load and group events by day for a window starting at $windowStart (inclusive).
-     *
-     * @return \Illuminate\Support\Collection<int, array{date:CarbonInterface,label:string,items:\Illuminate\Support\Collection}>
-     */
     public function load()
     {
         $rows = WineDate::query()
