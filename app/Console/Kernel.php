@@ -14,7 +14,10 @@ class Kernel extends ConsoleKernel
     {
         $schedule->command('backup:run')->daily()->at('03:30');
         $schedule->command('backup:clear')->daily()->at('04:30');
-        $schedule->command('teavel:run')->everyMinute();
+        $schedule->command('teavel:run')->everyMinute()
+            ->withoutOverlapping()
+            ->onOneServer()
+            ->appendOutputTo(storage_path('logs/teavel-run.log'));
 
         $schedule->command('winecompass:send')
             ->weeklyOn(3, '12:00')

@@ -21,14 +21,14 @@
             <tr>
               <td style="padding:28px 28px 8px 28px; text-align:center;">
                 <h1 style="margin:0 0 8px 0; font-size:28px; line-height:1.2; color:#111111; font-weight:800;">
-                  Zurich Wine Compass
+                  Zurich Wine Tastings
                 </h1>
                 <p style="margin:0; font-size:15px; line-height:1.6; color:#111111;">
                   Wine Tastings in Zurich from <strong style="color:#111111;">{{ $loader->start->format('j F') }}</strong>
                   to <strong style="color:#111111;">{{ $loader->end->format('j F') }}</strong>. 🍷
                 </p>
-                <p style="margin:10px 0 0 0; font-size:15px; line-height:1.6;">
-                  <a href="{{ $calendarUrl }}" style="color:#1d4ed8; text-decoration:underline;">See the full calendar</a>
+                <p style="margin:8px 0 4px 0; font-size:15px; line-height:1.6;">
+                  <a href="{{ $calendarUrl }}" style="color:#1d4ed8; text-decoration:underline;">Click here for the full calendar</a>
                 </p>
               </td>
             </tr>
@@ -46,12 +46,12 @@
               @foreach($day->items as $date)
 
                 <!-- Card -->
-                <tr style="margin-top: 8px;">
+                <tr style="margin-top: 24px;">
                   <td style="padding:8px 28px;">
                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%; border:1px solid #e5e7eb; background:#fafafa; border-radius: 8px;">
                       <tr>
                         <td style="padding:14px 16px;">
-                          <h3 style="margin:0 0 6px 0; font-size:17px; line-height:1.35; color:#111111; font-weight:700;">
+                          <h3 style="margin:6px 0 6px 0; font-size:17px; line-height:1.35; color:#111111; font-weight:700;">
                             {{ $date->tasting->title }}
                           </h3>
                           <p style="margin:0 0 4px 0; font-size:14px; line-height:1.6; color:#374151;">
