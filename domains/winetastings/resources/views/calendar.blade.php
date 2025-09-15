@@ -2,7 +2,7 @@
 
 @php
     $seo = new SEO(
-        title: 'Upcoming Wine Tastings',
+        title: 'Wine Tasting Calendar',
         description: 'Explore all upcoming wine tastings in Zürich with our easy-to-use calendar. Stay up to date with the city\'s best wine events and never miss a glass again.',
         image: '',
     );
@@ -12,8 +12,7 @@
     <div class="flex w-full">
         <div class="flex-1 max-lg:hidden"></div>
         <main class="mb-12 max-w-2xl mx-auto w-full px-2 flex-shrink-0">
-            <h1 class="mt-4 text-3xl font-semibold text-center leading-tight text-gray-900 md:text-4xl space-y-3">Upcoming
-                Tastings</h1>
+            <h1 class="mt-4 text-3xl font-semibold text-center leading-tight text-gray-900 md:text-4xl space-y-3">Tasting Calendar</h1>
 
             <section>
                 @if ($dates->isEmpty())

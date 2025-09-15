@@ -21,7 +21,7 @@ class TastingController
         
         $tastingDates = $dates->keys()->unique()->values()->toArray();
 
-        return view('winetastings::upcoming', [
+        return view('winetastings::calendar', [
             'dates' => $dates,
             'today' => $today,
             'tomorrow' => $tomorrow,

@@ -12,7 +12,7 @@ Route::group([
     'domain' => config('domains.winetastings.url'),
 ], function () {
     Route::view('/', 'winetastings::homepage');
-    Route::get('/upcoming', [TastingController::class, 'index']);
+    Route::get('/calendar', [TastingController::class, 'index']);
     Route::view('/ty', 'winetastings::ty');
 
     Route::post('/', NewsletterController::class);
