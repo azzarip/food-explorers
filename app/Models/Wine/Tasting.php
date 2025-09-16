@@ -3,9 +3,10 @@
 namespace App\Models\Wine;
 
 use App\Models\Location;
+use App\Models\Wine\EventDescription;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Tasting extends Model
 {
@@ -42,4 +43,9 @@ class Tasting extends Model
     {
         return $this->hasMany(Date::class, 'event_id')->orderBy('date')->orderBy('start_time');
     }
+
+    public function description()
+{
+    return $this->hasOne(EventDescription::class, 'event_id');
+}
 }

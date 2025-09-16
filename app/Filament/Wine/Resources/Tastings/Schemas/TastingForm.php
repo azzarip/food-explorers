@@ -2,16 +2,18 @@
 
 namespace App\Filament\Wine\Resources\Tastings\Schemas;
 
-use App\Enums\LocationType;
 use App\Models\Location;
-use App\Models\Wine\Organizer;
-use Filament\Forms\Components\DatePicker;
-use Filament\Forms\Components\Repeater;
-use Filament\Forms\Components\Select;
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\TimePicker;
-use Filament\Schemas\Components\Grid;
+use App\Enums\LocationType;
 use Filament\Schemas\Schema;
+use App\Models\Wine\Organizer;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Toggle;
+use Filament\Schemas\Components\Grid;
+use Filament\Forms\Components\Repeater;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Components\TimePicker;
+use Filament\Forms\Components\MarkdownEditor;
 
 class TastingForm
 {
@@ -42,6 +44,9 @@ class TastingForm
                         TextInput::make('address')->required(),
                     ])
                     ->createOptionUsing(fn (array $data) => Location::create($data + ['type_id' => LocationType::Wine->value])),
+                Toggle::make('is_dinner')->label('Is Dinner Event'),
+
+
                 Repeater::make('dates')
                     ->relationship('dates')
                     ->schema([
@@ -59,6 +64,10 @@ class TastingForm
                     ->columnSpanFull()
                     ->minItems(1)
                     ->addActionLabel('Add Date'),
+
+                MarkdownEditor::make('description')
+                    ->label('Event Description (EN)')->columnSpanFull(),
+
 
             ]);
     }
