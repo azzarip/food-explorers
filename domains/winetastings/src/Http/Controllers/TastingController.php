@@ -11,7 +11,7 @@ class TastingController
     public function index(Request $request)
     {
         $dates = Date::with('tasting')
-            ->upcomingNextDays(30)
+            ->upcomingNextDays(365)
             ->limit(100)
             ->get()
             ->groupBy(fn ($wineDate) => $wineDate->date->toDateString());
