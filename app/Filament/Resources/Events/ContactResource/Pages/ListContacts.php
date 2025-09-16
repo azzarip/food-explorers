@@ -2,9 +2,8 @@
 
 namespace App\Filament\Resources\Events\ContactResource\Pages;
 
-use Filament\Actions\CreateAction;
 use App\Filament\Resources\Events\ContactResource;
-use Filament\Actions;
+use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
 
 class ListContacts extends ListRecords

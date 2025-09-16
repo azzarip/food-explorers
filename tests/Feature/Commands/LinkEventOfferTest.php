@@ -2,19 +2,18 @@
 
 use App\Models\Event;
 use App\Models\Offer;
-use Illuminate\Support\Facades\Cache;
 
-it('asks and store value in db', function() {
+it('asks and store value in db', function () {
     Event::factory()->create([
-        'scheduled_at' => now()->addYear()
+        'scheduled_at' => now()->addYear(),
     ]);
-    
+
     Offer::create([
         'class' => 'test',
         'type_id' => 1,
-        'slug' => 'test'
+        'slug' => 'test',
     ]);
-    
+
     $this->artisan('link:event')
         ->expectsQuestion('Please provide the offer slug', 'test')
         ->expectsQuestion('Please provide the Event Id', '1')
@@ -23,11 +22,11 @@ it('asks and store value in db', function() {
     expect(Offer::first()->event_id)->toBe(1);
 });
 
-it('asks for correct slug', function() {
+it('asks for correct slug', function () {
     Offer::create([
         'class' => 'test',
         'type_id' => 1,
-        'slug' => 'test'
+        'slug' => 'test',
     ]);
 
     $this->artisan('link:event')
@@ -36,23 +35,23 @@ it('asks for correct slug', function() {
         ->assertFailed();
 });
 
-it('asks for numeric event id', function() {
+it('asks for numeric event id', function () {
     $this->artisan('link:event')
         ->expectsQuestion('Please provide the offer slug', 'test')
         ->expectsQuestion('Please provide the Event Id', 'test')
         ->assertFailed();
 });
 
-it('rejects not existing event id', function() {
+it('rejects not existing event id', function () {
     $this->artisan('link:event')
         ->expectsQuestion('Please provide the offer slug', 'test')
         ->expectsQuestion('Please provide the Event Id', '1')
         ->assertFailed();
 });
 
-it('rejects past event ids', function() {
+it('rejects past event ids', function () {
     $event = Event::factory()->create([
-        'scheduled_at' => now()->subDay()
+        'scheduled_at' => now()->subDay(),
     ]);
     $this->artisan('link:event')
         ->expectsQuestion('Please provide the offer slug', 'test')

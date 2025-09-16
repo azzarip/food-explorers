@@ -2,35 +2,32 @@
 
 namespace App\Filament\Resources\Events;
 
-use Filament\Schemas\Schema;
-use Filament\Tables\Filters\TrashedFilter;
-use Filament\Actions\ViewAction;
-use Filament\Actions\ActionGroup;
-use Filament\Actions\EditAction;
-use Filament\Actions\RestoreAction;
-use Filament\Actions\Action;
-use Filament\Actions\DeleteAction;
-use App\Filament\Resources\Events\LocationResource\Pages\ListLocations;
 use App\Filament\Resources\Events\LocationResource\Pages\CreateLocation;
 use App\Filament\Resources\Events\LocationResource\Pages\EditLocation;
+use App\Filament\Resources\Events\LocationResource\Pages\ListLocations;
 use App\Filament\Resources\Events\LocationResource\Pages\ViewLocation;
-use Filament\Tables;
 use App\Models\Location;
-use Filament\Tables\Table;
-use Filament\Resources\Resource;
-use Filament\Tables\Columns\TextColumn;
+use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
+use Filament\Actions\DeleteAction;
+use Filament\Actions\EditAction;
+use Filament\Actions\RestoreAction;
+use Filament\Actions\ViewAction;
 use Filament\Forms\Components\TextInput;
 use Filament\Infolists\Components\TextEntry;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\Events\LocationResource\Pages;
+use Filament\Resources\Resource;
+use Filament\Schemas\Schema;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\TrashedFilter;
+use Filament\Tables\Table;
 
 class LocationResource extends Resource
 {
     protected static ?string $model = Location::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-map-pin';
-    protected static string | \UnitEnum | null $navigationGroup = 'Events';
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-map-pin';
 
+    protected static string|\UnitEnum|null $navigationGroup = 'Events';
 
     public static function form(Schema $schema): Schema
     {
@@ -42,15 +39,14 @@ class LocationResource extends Resource
             ]);
     }
 
-
     public static function infolist(Schema $schema): Schema
     {
         return $schema
             ->components([
                 TextEntry::make('name'),
                 TextEntry::make('google_maps_url')
-                ->url(fn ($state): string => $state)
-                ->openUrlInNewTab(),
+                    ->url(fn ($state): string => $state)
+                    ->openUrlInNewTab(),
                 TextEntry::make('address'),
             ]);
     }
@@ -67,9 +63,9 @@ class LocationResource extends Resource
                     ->label('Last Event')
                     ->since()
                     ->sortable(),
-                ])->defaultSort('lastEvent.scheduled_at', 'desc')
+            ])->defaultSort('lastEvent.scheduled_at', 'desc')
             ->filters([
-                TrashedFilter::make(), 
+                TrashedFilter::make(),
             ])
             ->recordActions([
                 ViewAction::make(),
@@ -77,23 +73,23 @@ class LocationResource extends Resource
                     EditAction::make(),
                     RestoreAction::make(),
                     Action::make('gmap')
-                    ->label('Google Maps')
-                    ->color('gray')
-                    ->icon('heroicon-o-map-pin')
-                    ->url(fn (Location $record): string => $record->google_maps_url)
-                    ->openUrlInNewTab(),
+                        ->label('Google Maps')
+                        ->color('gray')
+                        ->icon('heroicon-o-map-pin')
+                        ->url(fn (Location $record): string => $record->google_maps_url)
+                        ->openUrlInNewTab(),
                     DeleteAction::make(),
-                ])
+                ]),
             ])
             ->toolbarActions([
-            //
+                //
             ]);
     }
 
     public static function getRelations(): array
     {
         return [
-            //RelationManagers\EventsRelationManager::class,
+            // RelationManagers\EventsRelationManager::class,
         ];
     }
 

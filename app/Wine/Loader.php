@@ -2,38 +2,41 @@
 
 namespace App\Wine;
 
+use App\Models\Wine\Date as WineDate;
 use Carbon\CarbonInterface;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
-use App\Models\Wine\Date as WineDate;
 
 class Loader
 {
     protected string $tz = 'Europe/Zurich';
+
     protected ?string $locale = 'en';
+
     protected string $todayWord = 'Today';
-    protected string $tomorrowWord = 'Tomorrow'; 
+
+    protected string $tomorrowWord = 'Tomorrow';
 
     protected Collection $days;
 
     public function __construct(
         public CarbonInterface $start,
         public CarbonInterface $end,
-    ) {
+    ) {}
 
-    }
     public function load()
     {
         $rows = WineDate::query()
-            ->with(['tasting'])                 
+            ->with(['tasting'])
             ->where('date', '>=', $this->start->toDateString())
-            ->where('date', '<=',  $this->end->toDateString())
+            ->where('date', '<=', $this->end->toDateString())
             ->orderBy('date')
             ->orderBy('start_time')
             ->limit(100)
             ->get();
 
         $this->days = $this->toDays($rows);
+
         return $this;
     }
 
@@ -47,7 +50,7 @@ class Loader
 
     public static function nextWeek()
     {
-        return self::nextDays(7);    
+        return self::nextDays(7);
     }
 
     public static function nextDays(int $days)
@@ -55,6 +58,7 @@ class Loader
         $start = now();
         $end = now()->addDays($days);
         $loader = new self($start, $end);
+
         return $loader->load();
     }
 
@@ -62,9 +66,10 @@ class Loader
     {
         return $this->days;
     }
+
     protected function toDays(Collection $dates): Collection
     {
-        $today    = now($this->tz)->startOfDay();
+        $today = now($this->tz)->startOfDay();
         $tomorrow = $today->copy()->addDay();
 
         return $dates
@@ -81,17 +86,16 @@ class Loader
                     items: $items->values()
                 );
 
-
-                if($d->isSameDay($today)) {
+                if ($d->isSameDay($today)) {
                     $day->setToday();
-                    $day->setLabel("{$this->todayWord}, " . $d->format('j F'));                    
+                    $day->setLabel("{$this->todayWord}, ".$d->format('j F'));
                 }
 
-                if($d->isSameDay($tomorrow)) {
+                if ($d->isSameDay($tomorrow)) {
                     $day->setTomorrow();
-                    $day->setLabel("{$this->tomorrowWord}, " . $d->format('j F'));                    
+                    $day->setLabel("{$this->tomorrowWord}, ".$d->format('j F'));
                 }
-                
+
                 return $day;
             })
             ->values();

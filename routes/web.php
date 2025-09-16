@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
 Route::middleware('guest')->group(function () {
     Route::view('/register', 'auth.register')->name('register');
     Route::view('/profile/complete', 'auth.simple-register')->name('simple-register');
@@ -25,6 +24,7 @@ Route::middleware('guest')->group(function () {
 
 Route::get('telegram-test', function () {
     App\Models\User::first()->notify(new TelegramNotification('Test'));
+
     return 'Message Queued, if not working check the queue.';
 });
 

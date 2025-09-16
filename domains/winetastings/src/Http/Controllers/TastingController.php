@@ -2,8 +2,8 @@
 
 namespace Domains\Winetastings\Http\Controllers;
 
-use Carbon\Carbon;
 use App\Models\Wine\Date;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class TastingController
@@ -18,7 +18,7 @@ class TastingController
 
         $today = Carbon::today()->toDateString();
         $tomorrow = Carbon::tomorrow()->toDateString();
-        
+
         $tastingDates = $dates->keys()->unique()->values()->toArray();
 
         return view('winetastings::calendar', [

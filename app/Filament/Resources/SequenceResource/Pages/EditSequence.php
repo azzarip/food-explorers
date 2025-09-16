@@ -2,9 +2,8 @@
 
 namespace App\Filament\Resources\SequenceResource\Pages;
 
-use Filament\Actions\DeleteAction;
 use App\Filament\Resources\SequenceResource;
-use Filament\Actions;
+use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
 
 class EditSequence extends EditRecord

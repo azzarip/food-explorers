@@ -2,13 +2,13 @@
 
 namespace App\Filament\Store\Resources\OrderResource\Pages;
 
-use Filament\Actions\Action;
-use Azzarip\Utilities\CHF\CHF;
-use Azzarip\Teavel\Models\Order;
 use App\Actions\Store\CreateInvoice;
-use Illuminate\Database\Eloquent\Model;
-use Filament\Resources\Pages\CreateRecord;
 use App\Filament\Store\Resources\OrderResource;
+use Azzarip\Teavel\Models\Order;
+use Azzarip\Utilities\CHF\CHF;
+use Filament\Actions\Action;
+use Filament\Resources\Pages\CreateRecord;
+use Illuminate\Database\Eloquent\Model;
 
 class CreateOrder extends CreateRecord
 {

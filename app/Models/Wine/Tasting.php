@@ -4,12 +4,12 @@ namespace App\Models\Wine;
 
 use App\Models\Location;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Tasting extends Model
 {
-    protected $table = "wine_tastings";
+    protected $table = 'wine_tastings';
 
     protected $with = ['dates', 'organizer'];
 

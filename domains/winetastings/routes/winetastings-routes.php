@@ -1,11 +1,10 @@
 <?php
 
-use App\Mail\WineCompass;
-use Illuminate\Support\Facades\Route;
-use Domains\Winetastings\Http\Controllers\TastingController;
 use Domains\Winetastings\Http\Controllers\NewsletterController;
 use Domains\Winetastings\Http\Controllers\ShowEmailController;
+use Domains\Winetastings\Http\Controllers\TastingController;
 use Domains\Winetastings\Http\Controllers\UnsubscribeController;
+use Illuminate\Support\Facades\Route;
 
 Route::group([
     'middleware' => 'web',

@@ -3,7 +3,6 @@
 namespace App\Teavel\Sequences;
 
 use App\Notifications\TelegramNotification;
-use Azzarip\Teavel\Automations\Wait;
 use Azzarip\Teavel\Automations\SequenceAutomation;
 
 class GeneralGoingSequence extends SequenceAutomation

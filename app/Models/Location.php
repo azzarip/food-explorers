@@ -2,11 +2,10 @@
 
 namespace App\Models;
 
-use App\Models\Event;
 use App\Enums\LocationType;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Location extends Model
 {
@@ -25,9 +24,9 @@ class Location extends Model
         return $this->hasOne(Event::class)->latestOfMany('scheduled_at');
     }
 
-    public function getNameAddressAttribute(): string 
+    public function getNameAddressAttribute(): string
     {
-        return $this->name . ', ' . $this->address;
+        return $this->name.', '.$this->address;
     }
 
     public function getTypeAttribute(): ?LocationType

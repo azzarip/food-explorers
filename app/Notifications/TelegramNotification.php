@@ -2,10 +2,10 @@
 
 namespace App\Notifications;
 
-use Illuminate\Bus\Queueable;
 use Azzarip\Teavel\Models\Contact;
-use Illuminate\Notifications\Notification;
+use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Notifications\Notification;
 use NotificationChannels\Telegram\TelegramMessage;
 
 class TelegramNotification extends Notification implements ShouldQueue
@@ -35,6 +35,6 @@ class TelegramNotification extends Notification implements ShouldQueue
         return (new TelegramMessage)
             ->to($notifiable->telegram_id)
             ->line($this->message)
-            ->lineif( (bool) $this->contact, 'Name: ' . $this->contact?->full_name);
+            ->lineif((bool) $this->contact, 'Name: '.$this->contact?->full_name);
     }
 }

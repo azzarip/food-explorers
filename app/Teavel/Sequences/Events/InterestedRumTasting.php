@@ -2,7 +2,6 @@
 
 namespace App\Teavel\Sequences\Events;
 
-use Azzarip\Teavel\Automations\Wait;
 use Azzarip\Teavel\Automations\SequenceAutomation;
 
 class InterestedRumTasting extends SequenceAutomation

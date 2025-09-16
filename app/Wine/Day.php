@@ -10,7 +10,7 @@ use JsonSerializable;
 final class Day implements Arrayable, JsonSerializable
 {
     protected bool $isToday = false;
-    
+
     protected bool $isTomorrow = false;
 
     public function __construct(
@@ -23,7 +23,7 @@ final class Day implements Arrayable, JsonSerializable
     public function toArray(): array
     {
         return [
-            'date'  => $this->date->toDateString(),
+            'date' => $this->date->toDateString(),
             'label' => $this->label,
             'items' => $this->items->values()->all(),
         ];
@@ -34,7 +34,7 @@ final class Day implements Arrayable, JsonSerializable
         return $this->date->is_today;
     }
 
-        public function isTomorrow(): bool
+    public function isTomorrow(): bool
     {
         return $this->date->is_tomorrow;
     }
@@ -43,6 +43,7 @@ final class Day implements Arrayable, JsonSerializable
     {
         $this->isToday = true;
     }
+
     public function setTomorrow(): void
     {
         $this->isTomorrow = true;
@@ -52,6 +53,7 @@ final class Day implements Arrayable, JsonSerializable
     {
         $this->label = $label;
     }
+
     public function jsonSerialize(): array
     {
         return $this->toArray();

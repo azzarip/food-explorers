@@ -2,9 +2,8 @@
 
 namespace App\Filament\Resources\Events\ContactResource\Pages;
 
-use Filament\Actions\EditAction;
 use App\Filament\Resources\Events\ContactResource;
-use Filament\Actions;
+use Filament\Actions\EditAction;
 use Filament\Resources\Pages\ViewRecord;
 
 class ViewContact extends ViewRecord

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::table('contact_event', function (Blueprint $table) {
             $table->unsignedTinyInteger('queue')->nullable(); // Integer from 0 to 255
-            $table->softDeletes(); 
+            $table->softDeletes();
         });
     }
 

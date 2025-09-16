@@ -10,7 +10,7 @@ use Illuminate\Http\Client\RequestException;
 
 class Settings extends Page
 {
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-wrench-screwdriver';
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-wrench-screwdriver';
 
     protected string $view = 'filament.pages.settings';
 
@@ -22,7 +22,7 @@ class Settings extends Page
             ->label('Test')
             ->color('success')
             ->action(function () {
-                try{
+                try {
                     $response = AzzariApi::test();
                     Notification::make()
                         ->title('Connected.')

@@ -4,7 +4,6 @@ namespace Domains\My\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Validation\ValidationException;
 
 class QuestionController
 {
@@ -14,11 +13,11 @@ class QuestionController
     public function __invoke(Request $request)
     {
         $contact = Auth::user();
-      
-        $options = array_map(fn($value) => (bool) $value, $request->only('Food', 'Drinks', 'Adventures'));
-        
-        foreach($options as $tag => $flag) {
-            if($flag) {
+
+        $options = array_map(fn ($value) => (bool) $value, $request->only('Food', 'Drinks', 'Adventures'));
+
+        foreach ($options as $tag => $flag) {
+            if ($flag) {
                 $contact->tag($tag);
             } else {
                 $contact->detag($tag);

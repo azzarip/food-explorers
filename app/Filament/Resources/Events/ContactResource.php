@@ -2,35 +2,32 @@
 
 namespace App\Filament\Resources\Events;
 
-use Filament\Schemas\Schema;
-use Filament\Actions\ViewAction;
-use Filament\Actions\EditAction;
-use App\Filament\Resources\Events\ContactResource\RelationManagers\EventsRelationManager;
-use App\Filament\Resources\Events\ContactResource\Pages\ListContacts;
 use App\Filament\Resources\Events\ContactResource\Pages\CreateContact;
-use App\Filament\Resources\Events\ContactResource\Pages\ViewContact;
 use App\Filament\Resources\Events\ContactResource\Pages\EditContact;
-use Filament\Forms;
-use Filament\Tables;
+use App\Filament\Resources\Events\ContactResource\Pages\ListContacts;
+use App\Filament\Resources\Events\ContactResource\Pages\ViewContact;
+use App\Filament\Resources\Events\ContactResource\RelationManagers\EventsRelationManager;
 use App\Models\Contact;
-use Filament\Tables\Table;
-use Filament\Resources\Resource;
-use Filament\Tables\Columns\TextColumn;
+use Filament\Actions\EditAction;
+use Filament\Actions\ViewAction;
 use Filament\Forms\Components\TextInput;
-use Illuminate\Database\Eloquent\Builder;
 use Filament\Infolists\Components\IconEntry;
 use Filament\Infolists\Components\TextEntry;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\Events\ContactResource\Pages;
-use App\Filament\Resources\Events\ContactResource\RelationManagers;
+use Filament\Resources\Resource;
+use Filament\Schemas\Schema;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
 
 class ContactResource extends Resource
 {
     protected static ?string $model = Contact::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-user-group';
-    protected static string | \UnitEnum | null $navigationGroup = 'Events';
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-user-group';
+
+    protected static string|\UnitEnum|null $navigationGroup = 'Events';
+
     protected static ?string $navigationLabel = 'Participants';
+
     public static function form(Schema $schema): Schema
     {
         return $schema
@@ -55,7 +52,7 @@ class ContactResource extends Resource
 
         ]);
     }
-    
+
     public static function table(Table $table): Table
     {
         return $table
@@ -65,10 +62,10 @@ class ContactResource extends Resource
                 TextColumn::make('events_count')->counts('events')
                     ->sortable(),
                 TextColumn::make('lastEvent.scheduled_at')
-                ->label('Last Event')
-                ->since()
-                ->sortable(),
-         ])->defaultSort('events_count', 'desc')
+                    ->label('Last Event')
+                    ->since()
+                    ->sortable(),
+            ])->defaultSort('events_count', 'desc')
             ->filters([
                 //
             ])

@@ -17,5 +17,4 @@ return new class extends Migration
 
         \App\Models\User::first()->update(['telegram_id' => '54642872']);
     }
-
 };

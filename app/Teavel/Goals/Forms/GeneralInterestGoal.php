@@ -2,9 +2,9 @@
 
 namespace App\Teavel\Goals\Forms;
 
-use Azzarip\Teavel\Automations\FormAutomation;
 use App\Teavel\Sequences;
 use App\Teavel\Sequences\GeneralInterestSequence;
+use Azzarip\Teavel\Automations\FormAutomation;
 
 class GeneralInterestGoal extends FormAutomation
 {

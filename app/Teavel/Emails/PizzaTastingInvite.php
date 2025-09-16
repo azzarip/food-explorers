@@ -3,7 +3,6 @@
 namespace App\Teavel\Emails;
 
 use Azzarip\Teavel\Automations\EmailAutomation;
-use App\Teavel\Sequences;
 
 class PizzaTastingInvite extends EmailAutomation
 {
@@ -11,7 +10,8 @@ class PizzaTastingInvite extends EmailAutomation
 
     protected $utm_content = '1mail';
 
-    public function click() {
+    public function click()
+    {
         return durl('/pizza-tasting', 'base', $this->getUtms());
     }
 }

@@ -11,6 +11,6 @@ class Organizer extends Model
 
     public function tastings(): HasMany
     {
-        return $this->hasMany( Tasting::class, 'organizer_id');
+        return $this->hasMany(Tasting::class, 'organizer_id');
     }
 }

@@ -2,8 +2,8 @@
 
 namespace Domains\My\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Domains\My\Models\Suggest;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 
 class SuggestController
@@ -14,7 +14,7 @@ class SuggestController
     public function __invoke(Request $request)
     {
         $request->validate([
-            'name' => 'required|string'
+            'name' => 'required|string',
         ]);
         $data = $request->only(['event_type', 'name', 'url', 'text']);
         $authId = auth()->user()->id;
@@ -24,7 +24,7 @@ class SuggestController
             'contact_id' => $authId,
         ]);
 
-        Cache::put('suggest.' . $authId, true, now()->endOfDay());
+        Cache::put('suggest.'.$authId, true, now()->endOfDay());
 
         return redirect('/suggest');
     }

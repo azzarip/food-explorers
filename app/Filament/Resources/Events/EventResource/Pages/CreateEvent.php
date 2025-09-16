@@ -3,7 +3,6 @@
 namespace App\Filament\Resources\Events\EventResource\Pages;
 
 use App\Filament\Resources\Events\EventResource;
-use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
 
 class CreateEvent extends CreateRecord
@@ -11,6 +10,4 @@ class CreateEvent extends CreateRecord
     protected static string $resource = EventResource::class;
 
     protected static bool $canCreateAnother = false;
-
-
 }

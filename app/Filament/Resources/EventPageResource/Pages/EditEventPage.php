@@ -2,9 +2,8 @@
 
 namespace App\Filament\Resources\EventPageResource\Pages;
 
-use Filament\Actions\DeleteAction;
 use App\Filament\Resources\EventPageResource;
-use Filament\Actions;
+use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
 
 class EditEventPage extends EditRecord
@@ -19,7 +18,7 @@ class EditEventPage extends EditRecord
     }
 
     protected function getRedirectUrl(): string
-{
-    return static::getResource()::getUrl('index');
-}
+    {
+        return static::getResource()::getUrl('index');
+    }
 }

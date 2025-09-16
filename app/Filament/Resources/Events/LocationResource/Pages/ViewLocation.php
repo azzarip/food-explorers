@@ -2,9 +2,8 @@
 
 namespace App\Filament\Resources\Events\LocationResource\Pages;
 
-use Filament\Actions\EditAction;
 use App\Filament\Resources\Events\LocationResource;
-use Filament\Actions;
+use Filament\Actions\EditAction;
 use Filament\Resources\Pages\ViewRecord;
 
 class ViewLocation extends ViewRecord
@@ -17,5 +16,4 @@ class ViewLocation extends ViewRecord
             EditAction::make(),
         ];
     }
-
 }

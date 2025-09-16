@@ -10,7 +10,7 @@ class RumTasting
     const TITLE = 'Rum Tasting';
 
     const INTERESTED_GOAL = InterestedRumTasting::class;
-    
+
     public function getPrice()
     {
         return CHF::chf(49);

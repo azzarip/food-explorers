@@ -2,7 +2,6 @@
 
 namespace App\Teavel\Sequences;
 
-use Azzarip\Teavel\Automations\Wait;
 use Azzarip\Teavel\Automations\SequenceAutomation;
 
 class GeneralInterestSequence extends SequenceAutomation

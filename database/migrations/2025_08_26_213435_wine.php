@@ -21,14 +21,14 @@ return new class extends Migration
         Schema::create('wine_tastings', function (Blueprint $table) {
             $table->id();
             $table->foreignId('location_id')
-                  ->constrained('locations')
-                  ->cascadeOnUpdate()
-                  ->restrictOnDelete();
+                ->constrained('locations')
+                ->cascadeOnUpdate()
+                ->restrictOnDelete();
 
             $table->foreignId('organizer_id')
-                  ->constrained('wine_organizers')
-                  ->cascadeOnUpdate()
-                  ->restrictOnDelete();
+                ->constrained('wine_organizers')
+                ->cascadeOnUpdate()
+                ->restrictOnDelete();
 
             $table->string('title');
             $table->text('description')->nullable();
@@ -42,19 +42,18 @@ return new class extends Migration
             $table->id();
 
             $table->foreignId('event_id')
-                  ->constrained('wine_tastings')
-                  ->cascadeOnUpdate()
-                  ->cascadeOnDelete();
+                ->constrained('wine_tastings')
+                ->cascadeOnUpdate()
+                ->cascadeOnDelete();
 
-            $table->date('date');            
-            $table->time('start_time');      
-            $table->time('end_time')->nullable(); 
+            $table->date('date');
+            $table->time('start_time');
+            $table->time('end_time')->nullable();
 
             $table->timestamps();
 
             $table->index(['date']);
         });
-
 
     }
 

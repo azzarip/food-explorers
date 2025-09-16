@@ -2,20 +2,19 @@
 
 namespace App\Teavel\Sequences\Adventures\Paris;
 
-use App\Teavel\Emails\Adventures\Paris\FromMilanoToParis;
-use App\Teavel\Emails\Adventures\Paris\PetitParis;
-use App\Teavel\Emails\Adventures\Paris\Bistronomie;
-use App\Teavel\Emails\Adventures\Paris\Testimonial;
-use App\Teavel\Emails\Adventures\Paris\FirstBistrot;
 use App\Teavel\Emails\Adventures\Paris\BarAVin;
-use App\Teavel\Emails\Adventures\Paris\SecondBistrot;
+use App\Teavel\Emails\Adventures\Paris\Bistronomie;
 use App\Teavel\Emails\Adventures\Paris\Desserts;
-use App\Teavel\Emails\Adventures\Paris\ThirdBistrot;
-use App\Teavel\Emails\Adventures\Paris\MaisonSota;
+use App\Teavel\Emails\Adventures\Paris\FirstBistrot;
+use App\Teavel\Emails\Adventures\Paris\FromMilanoToParis;
 use App\Teavel\Emails\Adventures\Paris\LastEmail;
-use Azzarip\Teavel\Automations\Wait;
+use App\Teavel\Emails\Adventures\Paris\MaisonSota;
+use App\Teavel\Emails\Adventures\Paris\PetitParis;
+use App\Teavel\Emails\Adventures\Paris\SecondBistrot;
+use App\Teavel\Emails\Adventures\Paris\Testimonial;
+use App\Teavel\Emails\Adventures\Paris\ThirdBistrot;
 use Azzarip\Teavel\Automations\SequenceAutomation;
-use App\Teavel\Emails\Adventures\Paris;
+use Azzarip\Teavel\Automations\Wait;
 
 class Milano2Paris extends SequenceAutomation
 {
@@ -28,79 +27,88 @@ class Milano2Paris extends SequenceAutomation
 
     public function day0()
     {
-        //Monday
+        // Monday
         $this->tag('Interested Petit Paris');
         $this->email(FromMilanoToParis::class);
-        return Wait::for("24 hours")->then('day1');
+
+        return Wait::for('24 hours')->then('day1');
     }
 
     public function day1()
     {
-        //Tuesday
+        // Tuesday
         $this->email(PetitParis::class);
-        return Wait::until("09.04.2025 17:30")->then('day2');
+
+        return Wait::until('09.04.2025 17:30')->then('day2');
     }
 
     public function day2()
     {
-        //Wednesday
+        // Wednesday
         $this->email(Bistronomie::class);
-        return Wait::for("24 hours")->then('day3');
+
+        return Wait::for('24 hours')->then('day3');
     }
 
     public function day3()
     {
-        //Thursday
+        // Thursday
         $this->email(Testimonial::class);
-        return Wait::for("24 hours")->then('day4');
+
+        return Wait::for('24 hours')->then('day4');
     }
 
     public function day4()
     {
-        //Friday
+        // Friday
         $this->email(FirstBistrot::class);
-        return Wait::until("12.04.2025 16:30")->precise()->then(step: 'day5');
+
+        return Wait::until('12.04.2025 16:30')->precise()->then(step: 'day5');
     }
 
     public function day5()
     {
-        //Sunday
+        // Sunday
         $this->email(BarAVin::class);
-        return Wait::for("27 hours")->precise()->then( 'day6');
+
+        return Wait::for('27 hours')->precise()->then('day6');
     }
 
     public function day6()
     {
-        //Monday
+        // Monday
         $this->email(SecondBistrot::class);
-        return Wait::for("24 hours")->precise()->then('day7');
+
+        return Wait::for('24 hours')->precise()->then('day7');
     }
 
     public function day7()
     {
-        //Tuesday
+        // Tuesday
         $this->email(Desserts::class);
-        return Wait::for("44 hours")->precise()->then('day8');
+
+        return Wait::for('44 hours')->precise()->then('day8');
     }
 
     public function day8()
     {
-        //Friday
+        // Friday
         $this->email(ThirdBistrot::class);
-        return Wait::until("21.04.2025 20:00")->then('day9');
+
+        return Wait::until('21.04.2025 20:00')->then('day9');
     }
-    
+
     public function day9()
     {
-        //Tuesday
+        // Tuesday
         $this->email(MaisonSota::class);
-        return Wait::for("48 hours")->then('day9');
+
+        return Wait::for('48 hours')->then('day9');
     }
 
     public function day10()
     {
-        //Saturday
+        // Saturday
         $this->email(LastEmail::class);
     }
 }
-

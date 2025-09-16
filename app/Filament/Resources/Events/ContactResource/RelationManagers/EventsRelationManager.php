@@ -2,25 +2,17 @@
 
 namespace App\Filament\Resources\Events\ContactResource\RelationManagers;
 
-use Filament\Schemas\Schema;
-use Filament\Forms\Components\TextInput;
+use App\Models\Event;
+use App\Models\Location;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\DetachAction;
-use Filament\Forms;
-use Filament\Tables;
-use App\Models\Event;
-use App\Models\Location;
-use Filament\Tables\Table;
-use Filament\Infolists\Infolist;
 use Filament\Forms\Components\Select;
-use Filament\Tables\Columns\TextColumn;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Builder;
-use Filament\Infolists\Components\IconEntry;
-use Filament\Infolists\Components\TextEntry;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Forms\Components\TextInput;
 use Filament\Resources\RelationManagers\RelationManager;
+use Filament\Schemas\Schema;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
 
 class EventsRelationManager extends RelationManager
 {
@@ -35,7 +27,6 @@ class EventsRelationManager extends RelationManager
                     ->maxLength(255),
             ]);
     }
-
 
     public function table(Table $table): Table
     {
@@ -52,30 +43,30 @@ class EventsRelationManager extends RelationManager
             ])
             ->headerActions([
                 Action::make('addEvent')
-                ->label('Add Event')
-                ->modalHeading('Find Event')
+                    ->label('Add Event')
+                    ->modalHeading('Find Event'),
 
-            //     ->form([
-            //     //     Select::make('location')
-            //     //     ->required()
-            //     //     ->options(Location::all()->pluck('name', 'id'))
-            //     //     ->live(),
-            //     //     Select::make('event')
-            //     //     ->required()
-            //     //     ->options(fn (\Filament\Forms\Get $get) => Event::query()
-            //     //         ->where('location_id', $get('location'))
-            //     //         ->whereDoesntHave('contacts', function ($query) {
-            //     //             $query->where('contact_id', $this->ownerRecord->id);
-            //     //         })->get()->pluck('title_date', 'id'))
-            //     // ])->action(function (array $data) {
-            //     //     Event::find($data['event'])->contacts()->attach($this->ownerRecord);
-            //     // }),
+                //     ->form([
+                //     //     Select::make('location')
+                //     //     ->required()
+                //     //     ->options(Location::all()->pluck('name', 'id'))
+                //     //     ->live(),
+                //     //     Select::make('event')
+                //     //     ->required()
+                //     //     ->options(fn (\Filament\Forms\Get $get) => Event::query()
+                //     //         ->where('location_id', $get('location'))
+                //     //         ->whereDoesntHave('contacts', function ($query) {
+                //     //             $query->where('contact_id', $this->ownerRecord->id);
+                //     //         })->get()->pluck('title_date', 'id'))
+                //     // ])->action(function (array $data) {
+                //     //     Event::find($data['event'])->contacts()->attach($this->ownerRecord);
+                //     // }),
 
             ])
             ->recordActions([
                 ActionGroup::make([
                     DetachAction::make()
-                    ->label('Remove'),
+                        ->label('Remove'),
                 ]),
             ])
             ->toolbarActions([
@@ -87,7 +78,4 @@ class EventsRelationManager extends RelationManager
     {
         return false;
     }
-
-
 }
-

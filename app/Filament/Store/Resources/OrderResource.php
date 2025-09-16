@@ -2,94 +2,84 @@
 
 namespace App\Filament\Store\Resources;
 
-use Filament\Schemas\Schema;
-use Filament\Schemas\Components\Section;
-use Filament\Schemas\Components\Grid;
-use Filament\Schemas\Components\Utilities\Get;
-use Filament\Schemas\Components\Utilities\Set;
-use Filament\Actions\ActionGroup;
-use Filament\Actions\Action;
-use Exception;
-use Filament\Forms;
-use Filament\Tables;
-use App\Models\Contact;
-use Filament\Tables\Table;
-use Azzarip\Teavel\Models\Order;
-use Filament\Actions\EditAction;
-use Filament\Resources\Resource;
-use Filament\Forms\Components\Select;
 use App\Actions\Store\DownloadInvoice;
+use App\Filament\Store\Resources\OrderResource\Pages\CreateOrder;
+use App\Filament\Store\Resources\OrderResource\Pages\ListOrders;
+use App\Models\Contact;
+use Azzarip\Teavel\Filament\Items\ContactSelect;
+use Azzarip\Teavel\Models\Order;
+use Exception;
+use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
+use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\Repeater;
-use Filament\Forms\Components\Textarea;
-use Filament\Tables\Columns\IconColumn;
-use Filament\Tables\Columns\TextColumn;
-use Illuminate\Database\Eloquent\Model;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
-use Filament\Forms\Components\DatePicker;
-use Illuminate\Database\Eloquent\Builder;
-use Filament\Forms\Components\Placeholder;
-use Azzarip\Teavel\Filament\Items\ContactSelect;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Store\Resources\OrderResource\Pages;
-use App\Filament\Store\Resources\OrderResource\Pages\ListOrders;
-use App\Filament\Store\Resources\OrderResource\Pages\CreateOrder;
+use Filament\Resources\Resource;
+use Filament\Schemas\Components\Grid;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Components\Utilities\Get;
+use Filament\Schemas\Components\Utilities\Set;
+use Filament\Schemas\Schema;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Model;
 
 class OrderResource extends Resource
 {
     protected static ?string $model = Order::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-shopping-cart';
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-shopping-cart';
 
     public static function form(Schema $schema): Schema
     {
         return $schema->components([
             Section::make('Order Data')->schema([
-            TextInput::make('title')->required(),
-            Grid::make(3)->schema([
-                ContactSelect::make()
-                    ->live()
-                    ->afterStateUpdated(fn ($state, callable $set) => 
-                        $set('contact_has_address', Contact::find($state)?->hasAddress)
-                    )->columnSpan(2),
-                Placeholder::make('has_address')
-                    ->label('Contact Has Address')
-                    ->content(function ($get) {
-                    $hasAddress = $get('contact_has_address');
+                TextInput::make('title')->required(),
+                Grid::make(3)->schema([
+                    ContactSelect::make()
+                        ->live()
+                        ->afterStateUpdated(fn ($state, callable $set) => $set('contact_has_address', Contact::find($state)?->hasAddress)
+                        )->columnSpan(2),
+                    Placeholder::make('has_address')
+                        ->label('Contact Has Address')
+                        ->content(function ($get) {
+                            $hasAddress = $get('contact_has_address');
 
-                    if ($hasAddress === null) {
-                        return '---';
-                    }
+                            if ($hasAddress === null) {
+                                return '---';
+                            }
 
-                    return $hasAddress 
-                        ? '✅ Has Address' 
-                        : '❌ No Address';
-                    })->columnSpan(1),
+                            return $hasAddress
+                                ? '✅ Has Address'
+                                : '❌ No Address';
+                        })->columnSpan(1),
+                ]),
+
+                Grid::make(3)->schema([
+                    DatePicker::make('order_date')
+                        ->label('Order Date')
+                        ->weekStartsOnMonday()
+                        ->required()
+                        ->native(false)
+                        ->default(now())
+                        ->displayFormat('j F Y')
+                        ->closeOnDateSelection(),
+                    TextInput::make('margin')
+                        ->required()
+                        ->default(0)
+                        ->numeric()
+                        ->prefix('CHF')
+                        ->step(0.01),
+                    TextInput::make('total')
+                        ->numeric()
+                        ->required()
+                        ->prefix('CHF')
+                        ->readOnly(),
+                ]),
             ]),
 
-            Grid::make(3)->schema([
-                DatePicker::make('order_date')
-                    ->label('Order Date')
-                    ->weekStartsOnMonday()
-                    ->required()
-                    ->native(false)
-                    ->default(now())
-                    ->displayFormat('j F Y')
-                    ->closeOnDateSelection(),
-                TextInput::make('margin')
-                    ->required()
-                    ->default(0)
-                    ->numeric()
-                    ->prefix('CHF')
-                    ->step(0.01),
-                TextInput::make('total')
-                    ->numeric()
-                    ->required()
-                    ->prefix('CHF')
-                    ->readOnly(),
-            ])
-        ]),
-    
             Repeater::make('items')
                 ->columnSpan(2)
                 ->schema([
@@ -112,13 +102,14 @@ class OrderResource extends Resource
                         ->live(debounce: 400)
                         ->afterStateUpdated(function (Get $get, Set $set) {
                             self::updateTotals($get, $set);
-                    }),
+                        }),
                     TextInput::make('total')
                         ->readonly()
                         ->prefix('CHF'),
-                ])->columns(5)
-            ]);
+                ])->columns(5),
+        ]);
     }
+
     public static function table(Table $table): Table
     {
         return $table
@@ -129,26 +120,26 @@ class OrderResource extends Resource
                     ->sortable()
                     ->defaultSort('desc'),
                 TextColumn::make('total'),
-                ])
+            ])
             ->filters([
                 //
             ])
             ->recordActions([
-            ActionGroup::make([
-                Action::make('Download Invoice')
-                    ->icon(icon: 'heroicon-m-arrow-down-tray')
-                    ->color('info')
-                    ->action(function (Model $record) {
-                try {
-                    return DownloadInvoice::download($record);
-                } catch (Exception $e) {
-                    Notification::make()
-                        ->title('Invoice cannot be found.')
-                        ->danger()
-                        ->send();
-                    }
-                })
-            ])->iconButton(),
+                ActionGroup::make([
+                    Action::make('Download Invoice')
+                        ->icon(icon: 'heroicon-m-arrow-down-tray')
+                        ->color('info')
+                        ->action(function (Model $record) {
+                            try {
+                                return DownloadInvoice::download($record);
+                            } catch (Exception $e) {
+                                Notification::make()
+                                    ->title('Invoice cannot be found.')
+                                    ->danger()
+                                    ->send();
+                            }
+                        }),
+                ])->iconButton(),
             ]);
     }
 
@@ -167,10 +158,11 @@ class OrderResource extends Resource
         ];
     }
 
-
     public static function updateTotals($get, $set): void
     {
-        if( ! is_numeric($get('price'))) return;
+        if (! is_numeric($get('price'))) {
+            return;
+        }
         $set('total', $get('price') * $get('quantity'));
         $total = 0;
         foreach ($get('data.items', true) as $item) {

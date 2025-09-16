@@ -2,25 +2,20 @@
 
 namespace App\Filament\Resources\Events\EventResource\RelationManagers;
 
+use Filament\Actions\ActionGroup;
+use Filament\Actions\AttachAction;
+use Filament\Actions\DetachAction;
+use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Actions\AttachAction;
-use Filament\Actions\ActionGroup;
-use Filament\Actions\DetachAction;
-use Filament\Forms;
-use Filament\Tables;
-use App\Models\Contact;
 use Filament\Tables\Table;
-use Filament\Forms\Components\Select;
-use Illuminate\Database\Eloquent\Builder;
-use Azzarip\Teavel\Filament\Items\ContactSelect;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Filament\Resources\RelationManagers\RelationManager;
 
 class ContactsRelationManager extends RelationManager
 {
     protected static ?string $label = 'Participants';
+
     protected static ?string $title = 'Participants';
+
     protected static string $relationship = 'contacts';
 
     public function form(Schema $schema): Schema
@@ -50,13 +45,13 @@ class ContactsRelationManager extends RelationManager
                     ->button()->color('primary')
                     ->recordTitle(function ($record) {
                         return $record->name_email;
-                    })
+                    }),
             ])
             ->recordActions([
                 ActionGroup::make([
                     DetachAction::make()
-                    ->label('Remove'),
-                ]),            
+                        ->label('Remove'),
+                ]),
             ])
             ->toolbarActions([
 

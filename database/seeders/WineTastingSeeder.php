@@ -2,20 +2,19 @@
 
 namespace Database\Seeders;
 
-use Carbon\Carbon;
 use App\Models\Wine\Date;
 use App\Models\Wine\Event;
 use App\Models\Wine\Tasting;
-use Illuminate\Database\Seeder;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Carbon\Carbon;
 use Faker\Factory as Faker;
+use Illuminate\Database\Seeder;
 
 class WineTastingSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
- public function run(): void
+    public function run(): void
     {
         $faker = Faker::create();
 
@@ -27,7 +26,7 @@ class WineTastingSeeder extends Seeder
 
         // Hard-set to 1 as requested (ensure those records exist)
         $organizerId = 1;
-        $locationId  = 1;
+        $locationId = 1;
 
         $startDay = Carbon::today('Europe/Zurich');
 
@@ -37,9 +36,9 @@ class WineTastingSeeder extends Seeder
         for ($i = 1; $i <= 50; $i++) {
             $event = Tasting::create([
                 'organizer_id' => $organizerId,
-                'location_id'  => $locationId,
-                'title'        => $faker->sentence(3), // e.g. "Barolo Vertical Night"
-                'description'  => $faker->paragraph(),
+                'location_id' => $locationId,
+                'title' => $faker->sentence(3), // e.g. "Barolo Vertical Night"
+                'description' => $faker->paragraph(),
             ]);
 
             // 1–3 dates for each event
@@ -52,7 +51,7 @@ class WineTastingSeeder extends Seeder
                     $offsetDays = random_int(0, 30);
                     $date = $startDay->copy()->addDays($offsetDays)->toDateString();
                     $startTime = $possibleStarts[array_rand($possibleStarts)];
-                    $key = $date . ' ' . $startTime;
+                    $key = $date.' '.$startTime;
                 } while (isset($usedKeys[$key]));
 
                 $usedKeys[$key] = true;
@@ -63,10 +62,10 @@ class WineTastingSeeder extends Seeder
                     ->format('H:i:s');
 
                 Date::create([
-                    'event_id'   => $event->id,
-                    'date'       => $date,
+                    'event_id' => $event->id,
+                    'date' => $date,
                     'start_time' => $startTime,
-                    'end_time'   => $endTime,
+                    'end_time' => $endTime,
                 ]);
             }
         }

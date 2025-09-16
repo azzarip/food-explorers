@@ -3,9 +3,7 @@
 use App\Models\Contact;
 use Illuminate\Support\Facades\Auth;
 
-use function Pest\Laravel\post;
-
-beforeEach(function() {
+beforeEach(function () {
     $this->data = [
         'email' => 'email@example.com',
         'password' => '::password::',

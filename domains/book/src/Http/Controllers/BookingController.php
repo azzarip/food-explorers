@@ -23,23 +23,23 @@ class BookingController
             'offer' => $offer,
         ]);
 
-        if($event->scheduled_at->isPast()) {
+        if ($event->scheduled_at->isPast()) {
             return view('book::pages.expired');
         }
 
-        if(Auth::guest()) {
+        if (Auth::guest()) {
             return view('book::pages.auth');
         }
 
         $contact = Auth::user();
 
-        if($contact->isGoingTo($event)) {
-            return redirect($offer->url . '/success');
+        if ($contact->isGoingTo($event)) {
+            return redirect($offer->url.'/success');
         }
 
         InterestForm::achieve($offer->getInterestedGoal(), $offer->slug);
 
-        if($event->isSoldOut) {
+        if ($event->isSoldOut) {
             return view('book::pages.sold-out');
         }
 
@@ -47,7 +47,7 @@ class BookingController
 
         return view('book::pages.payment', [
             'clientSecret' => $payment->payment_secret,
-            'return_url' => $request->url() . '/return',
+            'return_url' => $request->url().'/return',
         ]);
 
     }

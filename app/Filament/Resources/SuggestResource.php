@@ -2,26 +2,20 @@
 
 namespace App\Filament\Resources;
 
-use Filament\Schemas\Schema;
+use App\Filament\Resources\SuggestResource\Pages\ListSuggests;
+use Domains\My\Models\Suggest;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
-use App\Filament\Resources\SuggestResource\Pages\ListSuggests;
-use Filament\Forms;
-use Filament\Tables;
-use Filament\Tables\Table;
-use Domains\My\Models\Suggest;
 use Filament\Resources\Resource;
-use Illuminate\Database\Eloquent\Builder;
-use App\Filament\Resources\SuggestResource\Pages;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\SuggestResource\RelationManagers;
+use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
 
 class SuggestResource extends Resource
 {
     protected static ?string $model = Suggest::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-light-bulb';
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-light-bulb';
 
     protected static ?int $navigationSort = 90;
 
@@ -41,7 +35,7 @@ class SuggestResource extends Resource
                 TextColumn::make('contact.full_name'),
                 TextColumn::make('created_at')
                     ->sortable()
-                    ->dateTime('d.m.Y')
+                    ->dateTime('d.m.Y'),
             ])
             ->filters([
                 //
@@ -62,7 +56,6 @@ class SuggestResource extends Resource
     {
         return (string) static::$model::count();
     }
-
 
     public static function getPages(): array
     {

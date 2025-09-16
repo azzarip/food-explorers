@@ -15,20 +15,20 @@ class SetLanguageController
     {
         $contact = Auth::user();
 
-        $languages = array_map(function($value) {
+        $languages = array_map(function ($value) {
             return (bool) (int) $value;
         }, $request->only('de', 'en'));
-        
+
         $selected = array_filter($languages);
-        if ( ! $selected) {
+        if (! $selected) {
             throw ValidationException::withMessages(['invalid_language' => trans('Please select a language')]);
         }
 
         $locale = (count($selected) == 1) ? array_key_first($selected) : app()->getLocale();
         $contact->setPreferredLocale($locale);
 
-        foreach($languages as $lang => $value) {
-            if($value) {
+        foreach ($languages as $lang => $value) {
+            if ($value) {
                 $contact->addLanguage($lang);
             } else {
                 $contact->removeLanguage($lang);

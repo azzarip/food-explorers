@@ -7,7 +7,8 @@ use Filament\Pages\Dashboard as Page;
 
 class MainMenu extends Page
 {
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-home';
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-home';
+
     protected static ?string $navigationLabel = 'Main Menu';
 
     public function getHeaderWidgets(): array

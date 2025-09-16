@@ -2,12 +2,10 @@
 
 namespace Domains\Winetastings\Http\Controllers;
 
-use App\Wine\Loader;
-use App\Models\Contact;
 use App\Mail\WineCompass;
-use App\Models\Wine\Date;
+use App\Models\Contact;
+use App\Wine\Loader;
 use Illuminate\Http\Request;
-use Illuminate\Support\Carbon;
 
 class ShowEmailController
 {

@@ -2,9 +2,8 @@
 
 namespace App\Filament\Resources\SuggestResource\Pages;
 
-use Filament\Actions\CreateAction;
 use App\Filament\Resources\SuggestResource;
-use Filament\Actions;
+use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
 
 class ListSuggests extends ListRecords

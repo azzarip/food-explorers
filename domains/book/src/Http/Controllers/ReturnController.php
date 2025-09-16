@@ -15,18 +15,18 @@ class ReturnController
     {
         $redirect_status = $request->query('redirect_status');
 
-        if(Auth::guest()) {
+        if (Auth::guest()) {
             return redirect($offer->url);
         }
 
-        if($redirect_status == 'failed') {
+        if ($redirect_status == 'failed') {
             return redirect($offer->url)->withErrors([
                 'payment' => 'Payment failed. Please try again, or change payment method.',
             ])->withInput(['agb' => true]);
         }
-        
-        if($redirect_status == 'succeeded') {
-            return redirect($offer->url . '/success');
+
+        if ($redirect_status == 'succeeded') {
+            return redirect($offer->url.'/success');
         }
 
         return redirect($offer->url);

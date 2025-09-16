@@ -19,7 +19,7 @@ class DownloadInvoice
             return response()->streamDownload(function () use ($response) {
                 echo $response->body();
             }, "Rechung_{$order->order_date}.pdf");
-      }
-    
+        }
+
     }
 }

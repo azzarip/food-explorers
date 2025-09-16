@@ -3,32 +3,32 @@
 namespace App\Mail;
 
 use App\Wine\Loader;
+use Azzarip\Teavel\Models\Contact;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
-use Azzarip\Teavel\Models\Contact;
-use Illuminate\Support\Collection;
 use Illuminate\Mail\Mailables\Content;
-use Illuminate\Queue\SerializesModels;
 use Illuminate\Mail\Mailables\Envelope;
-
+use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Collection;
 
 class WineCompass extends Mailable
 {
     use Queueable, SerializesModels;
 
     public string $unsubscribeUrl;
-public string $calendarUrl;
-    public Collection $days;
 
+    public string $calendarUrl;
+
+    public Collection $days;
 
     /**
      * Create a new message instance.
      */
     public function __construct(
-        public Loader $loader,      
+        public Loader $loader,
         public Contact $contact,
-    ){
-        $this->unsubscribeUrl = durl('/unsubscribe', 'winetastings') . '?key=' . $this->contact->uuid;
+    ) {
+        $this->unsubscribeUrl = durl('/unsubscribe', 'winetastings').'?key='.$this->contact->uuid;
         $this->calendarUrl = durl('/calendar', 'winetastings');
         $this->days = $loader->getDays();
     }

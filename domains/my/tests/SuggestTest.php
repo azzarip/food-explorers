@@ -17,11 +17,11 @@ it('creates suggests in db and cache value', function () {
     $this->dpost('/suggest', 'my', [
         'name' => 'Name',
         'url' => 'url',
-        'text' => 'text'
+        'text' => 'text',
     ])->assertRedirect();
     $this->assertDatabaseHas('suggests', [
         'contact_id' => $this->contact->id,
-        'text' => "Name\nurl\ntext"
+        'text' => "Name\nurl\ntext",
     ]);
-    expect(cache('suggest.' . $this->contact->id))->toBeTrue();
+    expect(cache('suggest.'.$this->contact->id))->toBeTrue();
 });

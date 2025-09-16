@@ -2,9 +2,8 @@
 
 namespace App\Filament\Resources\Events\LocationResource\Pages;
 
-use Filament\Actions\CreateAction;
 use App\Filament\Resources\Events\LocationResource;
-use Filament\Actions;
+use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
 
 class ListLocations extends ListRecords

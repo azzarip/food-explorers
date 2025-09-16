@@ -3,7 +3,6 @@
 namespace App\Teavel\Emails\Adventures\Paris;
 
 use Azzarip\Teavel\Automations\EmailAutomation;
-use App\Teavel\Sequences;
 
 class PetitParis extends EmailAutomation
 {
@@ -11,7 +10,8 @@ class PetitParis extends EmailAutomation
 
     protected $utm_content = 'petit_paris';
 
-    public function click() {
+    public function click()
+    {
         return durl('/petit-paris', 'base', $this->getUtms());
     }
 }

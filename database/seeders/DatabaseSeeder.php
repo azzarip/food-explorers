@@ -4,8 +4,8 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use App\Models\Event;
 use App\Models\Contact;
+use App\Models\Event;
 use App\Models\Location;
 use Illuminate\Database\Seeder;
 
@@ -26,7 +26,7 @@ class DatabaseSeeder extends Seeder
         Contact::factory(5)->create();
         Event::factory(10)->create();
         foreach (Event::all() as $event) {
-           $event->contacts()->sync([$c->id]);
-       }
+            $event->contacts()->sync([$c->id]);
+        }
     }
 }

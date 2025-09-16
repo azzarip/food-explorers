@@ -4,20 +4,17 @@ namespace App\Models;
 
 use App\EventPublic;
 use App\EventType;
-use App\Models\Offer;
-use App\Models\Review;
-use App\Models\Location;
-use Illuminate\Support\Str;
-use Illuminate\Support\Carbon;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Support\Str;
 
 class Event extends Model
 {
     use HasFactory;
 
     public int $going;
+
     public int $available;
 
     public function location()
@@ -30,31 +27,35 @@ class Event extends Model
         return $this->belongsToMany(Contact::class)->withTimestamps();
     }
 
-    public function participants() {
+    public function participants()
+    {
         return $this->belongsToMany(Contact::class)
             ->wherePivotNull('deleted_at')
             ->wherePivotNull('queue');
     }
 
-    public function getParticipantsCount(): int 
+    public function getParticipantsCount(): int
     {
         return $this->participants()->count();
     }
 
-    public function getAvailableCount(): int 
+    public function getAvailableCount(): int
     {
         $value = $this->capacity - $this->participants()->count();
+
         return $value >= 0 ? $value : 0;
     }
 
-    public function getIsSoldOutAttribute(): bool 
+    public function getIsSoldOutAttribute(): bool
     {
         return $this->available == 0;
     }
 
-    public function loadData(){
+    public function loadData()
+    {
         $this->going = $this->getParticipantsCount();
         $this->available = $this->getAvailableCount();
+
         return $this;
     }
 
@@ -77,7 +78,6 @@ class Event extends Model
         ];
     }
 
-
     public function eventPage(): HasOne
     {
         return $this->hasOne(EventPage::class);
@@ -88,13 +88,14 @@ class Event extends Model
         return $query->where('scheduled_at', '>', now()->startOfDay());
     }
 
-    
     public function getFinishedAtAttribute()
     {
-        if(empty($this->ended_at)) {
+        if (empty($this->ended_at)) {
             $hours = $this->event_type->hoursToEnd();
+
             return $this->scheduled_at->addHours($hours);
-        } 
+        }
+
         return $this->ended_at;
     }
 
@@ -110,11 +111,12 @@ class Event extends Model
 
     public function getSlugAttribute(): ?string
     {
-        return match($this->event_type) {
+        return match ($this->event_type) {
             EventType::Menu => $this->offer?->slug,
             default => null,
         };
     }
+
     public function offer()
     {
         return $this->hasOne(Offer::class);
@@ -123,8 +125,8 @@ class Event extends Model
     public function reviewers()
     {
         return $this->belongsToMany(Contact::class, 'reviews')
-                    ->using(Review::class) 
-                    ->with(['rating', 'data'])
-                    ->withTimestamps();
+            ->using(Review::class)
+            ->with(['rating', 'data'])
+            ->withTimestamps();
     }
 }

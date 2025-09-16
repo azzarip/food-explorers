@@ -2,16 +2,12 @@
 
 namespace App\Console\Commands;
 
-use App\Models\User;
-use App\Wine\Loader;
 use App\Mail\WineCompass;
-use App\Models\Wine\Date;
+use App\Wine\Loader;
 use Azzarip\Teavel\Models\Tag;
-use Illuminate\Support\Carbon;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
-use Azzarip\Teavel\Notifications\TelegramNotification;
 
 class SendWineCompass extends Command
 {
@@ -40,7 +36,7 @@ class SendWineCompass extends Command
         $contactsQuery = $tag->contacts()->whereNotNull('email');
 
         $dry = (bool) $this->option('dry-run');
-        
+
         $contactsQuery->chunk(200, function ($contacts) use ($loader, $dry) {
             foreach ($contacts as $contact) {
                 $mailable = new WineCompass(

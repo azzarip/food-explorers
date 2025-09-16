@@ -3,12 +3,10 @@
 namespace App\Models;
 
 use App\HasLocale;
-use App\Models\Event;
-use Azzarip\Teavel\Models\Tag;
-use Illuminate\Support\Facades\Cache;
-use Azzarip\Teavel\Models\TagCategory;
 use Azzarip\Teavel\Models\Contact as BaseContact;
+use Azzarip\Teavel\Models\TagCategory;
 use Illuminate\Contracts\Translation\HasLocalePreference;
+use Illuminate\Support\Facades\Cache;
 
 class Contact extends BaseContact implements HasLocalePreference
 {
@@ -34,26 +32,27 @@ class Contact extends BaseContact implements HasLocalePreference
     public function isGoingTo(Event $event): bool
     {
         return $this->events()
-                ->where('event_id', $event->id)
-                ->whereNull('deleted_at')
-                ->exists();
+            ->where('event_id', $event->id)
+            ->whereNull('deleted_at')
+            ->exists();
     }
+
     public function lastEvent()
     {
         return $this->belongsToMany(Event::class)
-        ->where('scheduled_at', '<=', now()->startOfDay())
-        ->wherePivotNull('deleted_at')
-        ->orderBy('scheduled_at', 'desc')
-        ->limit(1);
+            ->where('scheduled_at', '<=', now()->startOfDay())
+            ->wherePivotNull('deleted_at')
+            ->orderBy('scheduled_at', 'desc')
+            ->limit(1);
     }
 
     public function getNextEvent()
     {
         return $this->belongsToMany(Event::class)
-        ->where('scheduled_at', '>=', now()->startOfDay())
-        ->wherePivotNull('deleted_at')
-        ->orderBy('scheduled_at', 'asc')
-        ->first();
+            ->where('scheduled_at', '>=', now()->startOfDay())
+            ->wherePivotNull('deleted_at')
+            ->orderBy('scheduled_at', 'asc')
+            ->first();
     }
 
     public function getPoints()
@@ -70,19 +69,20 @@ class Contact extends BaseContact implements HasLocalePreference
             ->where('category_id', $cat->id)
             ->pluck('name')
             ->toArray();
+
         return $tags;
     }
 
-    public function getDisplayNameAttribute() {
+    public function getDisplayNameAttribute()
+    {
         return $this->first_name;
     }
 
     public function reviewed()
     {
         return $this->belongsToMany(Event::class, 'reviews')
-                    ->using(Review::class) 
-                    ->with(['rating', 'data'])
-                    ->withTimestamps();
+            ->using(Review::class)
+            ->with(['rating', 'data'])
+            ->withTimestamps();
     }
-
 }

@@ -2,7 +2,7 @@
 
 use App\Models\Contact;
 
-beforeEach(function() {
+beforeEach(function () {
     Contact::factory()->create();
     $this->contact = Contact::first();
 });
@@ -27,15 +27,15 @@ test('locale returns en,de,null', function () {
     expect($this->contact->locale)->toBe('de');
 });
 
-it('can set preferred locale', function() {
+it('can set preferred locale', function () {
     $this->contact->setPreferredLocale('en');
     expect($this->contact->locale)->toBe('en');
-    
+
     $this->contact->setPreferredLocale('de');
     expect($this->contact->locale)->toBe('de');
 });
 
-test('set preferred locale throws exception', function() {
+test('set preferred locale throws exception', function () {
     $this->contact->setPreferredLocale('wrong');
 })->throws(InvalidArgumentException::class);
 

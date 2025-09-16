@@ -1,11 +1,6 @@
 <?php
 
-use App\Models\Contact;
-use Azzarip\Teavel\Models\Sequence;
-use Illuminate\Foundation\Inspiring;
-use App\Teavel\Sequences\PizzaTasting;
 use Illuminate\Support\Facades\Artisan;
-use App\Teavel\Sequences\MilanoAnnouncement;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +13,4 @@ use App\Teavel\Sequences\MilanoAnnouncement;
 |
 */
 
-Artisan::command('test:sequence', function () {
-
-})->purpose('Test milano sequence');
+Artisan::command('test:sequence', function () {})->purpose('Test milano sequence');

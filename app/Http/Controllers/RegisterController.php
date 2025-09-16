@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
-use Illuminate\Support\Facades\Auth;
-use Azzarip\Teavel\Jobs\CompleteForm;
-use Illuminate\Support\Facades\Session;
 use App\Teavel\Goals\Forms\Registration;
 use Azzarip\Teavel\Exceptions\RegistrationException;
 use Azzarip\Teavel\Http\Requests\FullRegistrationRequest;
+use Azzarip\Teavel\Jobs\CompleteForm;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class RegisterController extends Controller
 {
@@ -21,9 +21,8 @@ class RegisterController extends Controller
         $data['marketing'] = true;
 
         try {
-        $contact = Contact::register($data);
-        } catch (RegistrationException $e)
-        {
+            $contact = Contact::register($data);
+        } catch (RegistrationException $e) {
             return redirect(route('login'))
                 ->withInput($request->only('email'))
                 ->withErrors(['user' => 'already_registered']);
@@ -32,11 +31,11 @@ class RegisterController extends Controller
         CompleteForm::dispatchAfterResponse($contact, Registration::class);
 
         Auth::login($contact, true);
-        
-        if(Session::has('url.intended')) {
+
+        if (Session::has('url.intended')) {
             return redirect(Session::get('url.intended'));
         }
-        
+
         return redirect(route('my'));
     }
 }

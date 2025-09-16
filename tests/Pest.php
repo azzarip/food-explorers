@@ -42,8 +42,9 @@ expect()->extend('toBeOne', function () {
 |
 */
 
-function hasPage($page) {
-    it('has ' . $page . ' page')
+function hasPage($page)
+{
+    it('has '.$page.' page')
         ->get($page)
         ->assertOk()
         ->assertSee('<h1', false);

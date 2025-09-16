@@ -3,8 +3,8 @@
 namespace App\Teavel\Sequences;
 
 use App\Teavel\Emails\MilanoAnnouncement as EmailsMilanoAnnouncement;
-use Azzarip\Teavel\Automations\Wait;
 use Azzarip\Teavel\Automations\SequenceAutomation;
+use Azzarip\Teavel\Automations\Wait;
 
 class MilanoAnnouncement extends SequenceAutomation
 {
@@ -15,7 +15,8 @@ class MilanoAnnouncement extends SequenceAutomation
             ->precise();
     }
 
-    public function sendAnnouncement() {
+    public function sendAnnouncement()
+    {
         $this->email(EmailsMilanoAnnouncement::class);
     }
 }

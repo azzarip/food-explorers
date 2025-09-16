@@ -15,5 +15,4 @@ return new class extends Migration
             $table->tinyInteger('public_type')->nullable()->unsigned()->after('event_type');
         });
     }
-
 };

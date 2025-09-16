@@ -3,8 +3,8 @@
 namespace App\Teavel\Goals\Forms;
 
 use App\Teavel\Sequences;
-use Azzarip\Teavel\Automations\FormAutomation;
 use App\Teavel\Sequences\Adventures\Paris\ParisInterest;
+use Azzarip\Teavel\Automations\FormAutomation;
 
 class ParisInterestForm extends FormAutomation
 {

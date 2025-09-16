@@ -2,10 +2,10 @@
 
 namespace Domains\Winetastings\Http\Controllers;
 
-use App\Models\User;
 use App\Models\Contact;
-use Illuminate\Http\Request;
+use App\Models\User;
 use Azzarip\Teavel\Notifications\TelegramNotification;
+use Illuminate\Http\Request;
 
 class UnsubscribeController
 {
@@ -15,10 +15,10 @@ class UnsubscribeController
     public function __invoke(Request $request)
     {
         $uuid = $request->query('key');
-        
+
         if ($uuid) {
             $contact = Contact::findUuid($uuid);
-            
+
             if (empty($contact)) {
                 return redirect('/unsubscribe/ty');
             }

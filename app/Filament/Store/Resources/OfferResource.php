@@ -2,33 +2,27 @@
 
 namespace App\Filament\Store\Resources;
 
-use Filament\Schemas\Schema;
-use Filament\Actions\EditAction;
+use App\Filament\Store\Resources\OfferResource\Pages\CreateOffer;
+use App\Filament\Store\Resources\OfferResource\Pages\EditOffer;
+use App\Filament\Store\Resources\OfferResource\Pages\ListOffers;
+use App\Models\Event;
+use App\Models\Offer;
 use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
-use App\Filament\Store\Resources\OfferResource\Pages\ListOffers;
-use App\Filament\Store\Resources\OfferResource\Pages\CreateOffer;
-use App\Filament\Store\Resources\OfferResource\Pages\EditOffer;
-use Filament\Forms;
-use Filament\Tables;
-use App\Models\Event;
-use App\Models\Offer;
-use Filament\Tables\Table;
-use Filament\Resources\Resource;
+use Filament\Actions\EditAction;
 use Filament\Forms\Components\Select;
-use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Store\Resources\OfferResource\Pages;
-use App\Filament\Store\Resources\OfferResource\RelationManagers;
+use Filament\Resources\Resource;
+use Filament\Schemas\Schema;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
 
 class OfferResource extends Resource
 {
     protected static ?string $model = Offer::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-bookmark-square';
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-bookmark-square';
 
     public static function form(Schema $schema): Schema
     {
@@ -59,12 +53,12 @@ class OfferResource extends Resource
             ])
             ->recordActions([
                 EditAction::make(),
-                Action::make('view')    
-                ->label('View Booking')
-                ->color('primary')
-                ->icon('heroicon-o-eye')
-                ->url(fn ($record) => durl($record->slug, 'book')->__toString())
-                ->openUrlInNewTab(),
+                Action::make('view')
+                    ->label('View Booking')
+                    ->color('primary')
+                    ->icon('heroicon-o-eye')
+                    ->url(fn ($record) => durl($record->slug, 'book')->__toString())
+                    ->openUrlInNewTab(),
             ])
             ->toolbarActions([
                 BulkActionGroup::make([

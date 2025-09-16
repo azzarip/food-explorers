@@ -2,49 +2,42 @@
 
 namespace App\Filament\Resources;
 
-use Filament\Forms\Components\Select;
-use Filament\Actions\EditAction;
-use Filament\Actions\BulkActionGroup;
-use Filament\Actions\DeleteBulkAction;
-use App\Filament\Resources\EventPageResource\Pages\ListEventPages;
 use App\Filament\Resources\EventPageResource\Pages\CreateEventPage;
 use App\Filament\Resources\EventPageResource\Pages\EditEventPage;
-use Filament\Forms;
-use Filament\Tables;
+use App\Filament\Resources\EventPageResource\Pages\ListEventPages;
 use App\Models\Event;
-use Filament\Schemas\Schema;
-use Filament\Forms\Form;
 use App\Models\EventPage;
-use Filament\Tables\Table;
-use Filament\Resources\Resource;
-use Illuminate\Database\Eloquent\Builder;
-use App\Filament\Resources\EventPageResource\Pages;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\EventPageResource\RelationManagers;
+use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteBulkAction;
+use Filament\Actions\EditAction;
 use Filament\Forms\Components\MarkdownEditor;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
+use Filament\Resources\Resource;
+use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
 
 class EventPageResource extends Resource
 {
     protected static ?string $model = EventPage::class;
 
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-document-text';
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-document-text';
 
-    protected static string | \UnitEnum | null $navigationGroup = 'Events';
+    protected static string|\UnitEnum|null $navigationGroup = 'Events';
+
     protected static ?string $navigationLabel = 'Pages';
-
 
     public static function form(Schema $schema): Schema
     {
         return $schema
             ->components([
                 Select::make('event_id')
-                ->required()
-                ->options(Event::next()->get()
-                ->mapWithKeys(function ($event) {
-                    return [$event->id => "{$event->title} ({$event->scheduled_at->format('d/m/Y')})"];
-                })),
+                    ->required()
+                    ->options(Event::next()->get()
+                        ->mapWithKeys(function ($event) {
+                            return [$event->id => "{$event->title} ({$event->scheduled_at->format('d/m/Y')})"];
+                        })),
                 TextInput::make('image')
                     ->required()
                     ->maxLength(255),

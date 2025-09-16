@@ -12,12 +12,11 @@ class ExploreMalaysia extends EventOffer
     const TITLE = 'Explore Malaysia';
 
     const INTERESTED_GOAL = InterestedExploreMalaysia::class;
+
     const COMPLETED_GOAL = GoingExploreMalaysia::class;
-    
+
     public function getPrice()
     {
         return CHF::chf(62);
     }
-
-    
 }

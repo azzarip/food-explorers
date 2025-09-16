@@ -3,8 +3,8 @@
 namespace Domains\Base\Http\Controllers;
 
 use App\Models\Contact;
-use Illuminate\Http\Request;
 use Azzarip\Teavel\Http\Requests\FullContactRequest;
+use Illuminate\Http\Request;
 
 class MilanoController
 {
@@ -19,7 +19,7 @@ class MilanoController
 
         $contact->tag('Interested Milano Meraviglia');
         $contact->allowMarketing();
-        
+
         return redirect('/ty/milano');
     }
 }

@@ -19,17 +19,15 @@ class EventPageController
         $participants = $event->participants;
         $currentParticipants = $participants->count();
 
-        if(auth()->check()) {
+        if (auth()->check()) {
             $pivot = DB::table('contact_event')
-            ->where('event_id', $event->id)
-            ->where('contact_id', auth()->user()->id)
-            ->whereNull('deleted_at')
-            ->first();
+                ->where('event_id', $event->id)
+                ->where('contact_id', auth()->user()->id)
+                ->whereNull('deleted_at')
+                ->first();
         } else {
             Session::put('url.intended', $request->fullUrl());
         }
-
-
 
         return view('base::eventPage', [
             'eventPage' => $eventPage,
