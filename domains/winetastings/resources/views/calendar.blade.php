@@ -12,54 +12,34 @@
     <div class="flex w-full">
         <div class="flex-1 max-lg:hidden"></div>
         <main class="mb-12 max-w-2xl mx-auto w-full px-2 flex-shrink-0">
-            <h1 class="mt-4 text-3xl font-semibold text-center leading-tight text-gray-900 md:text-4xl space-y-3">Wine Tastings Calendar</h1>
+            <h1 class="mt-4 text-3xl font-semibold text-center leading-tight text-gray-900 md:text-4xl space-y-3">Wine
+                Tastings Calendar</h1>
 
             <section>
                 @if ($dates->isEmpty())
                     <p class="text-2xl lg:text-3xl text-center mt-8">No tastings in the next days...</p>
                 @else
-                    @foreach ($dates as $ymd => $dailyDates)
-                        <div id="{{ $ymd }}" x-data="{ open: true }" class="w-full mt-4 mb-2 pt-2">
+                    @foreach ($dates as $day)
+                        <div id="{{ $day->date }}" x-data="{ open: true }" class="w-full mt-4 mb-2 pt-2">
 
-                            @if ($ymd == $today && !$dailyDates->isEmpty())
-                                <div @click="open = !open" :aria-expanded="open.toString()"
-                                    class="flex items-center justify-between gap-3 rounded-2xl px-4 py-3 cursor-pointer select-none
-             bg-sky-600/80 text-white shadow-xl border border-sky-700
-             ring-2 ring-offset-2 ring-sky-400/70">
-                                    <h2 class="font-semibold text-2xl">Today, {{ now()->format('j F') }}</h2>
-                                    <span class="transition-transform duration-200" x-bind:class="open ? 'rotate-180' : ''">
-                                        <x-heroicon-o-chevron-down class="w-6 h-6" />
-                                    </span>
+                            <div @click="open = !open" :aria-expanded="open.toString()"
+                                class="flex items-center justify-between gap-3 rounded-2xl px-4 py-3 cursor-pointer select-none border
+                          @if ($day->isToday()) bg-sky-600/80 text-white shadow-xl  border-sky-700 ring-2 ring-offset-2 ring-sky-400/70
+                          @elseif($day->isTomorrow())
+                          bg-amber-100 text-amber-900 border border-amber-300 shadow-md ring-1 ring-offset-1 ring-amber-300/60
+                          @else
+                          bg-white/80 text-black border border-slate-200 shadow-sm hover:shadow transition bg-linear-to-b from-white to-rose-50 via-white  @endif
+                          ">
+                                <h2 class="font-semibold lg:text-xl text-lg">{{ $day->getLabel() }}</h2>
+                                <span class="transition-transform duration-200" x-bind:class="open ? 'rotate-180' : ''">
+                                    <x-heroicon-o-chevron-down class="w-6 h-6" />
+                                </span>
 
-                                </div>
-                            @elseif($ymd == $tomorrow && !$dailyDates->isEmpty())
-                                <h2 @click="open = !open" :aria-expanded="open.toString()"
-                                    class="flex items-center justify-between gap-3 rounded-2xl px-4 py-3 cursor-pointer select-none
-             bg-amber-100 text-amber-900 border border-amber-300
-             shadow-md ring-1 ring-offset-1 ring-amber-300/60">
-                                    <span class="font-semibold text-xl">Tomorrow,
-                                        {{ now()->addDay()->format('j F') }}</span>
-                                    <span class="transition-transform duration-200" x-bind:class="open ? 'rotate-180' : ''">
-                                        <x-heroicon-o-chevron-down class="w-6 h-6" />
-                                    </span>
-                                </h2>
-                            @else
-                                <h2 @click="open = !open" :aria-expanded="open.toString()"
-                                    class="flex items-center justify-between gap-3 rounded-xl px-4 py-2 cursor-pointer select-none
-             bg-white/80 text-black border border-slate-200
-             shadow-sm hover:shadow transition bg-linear-to-b from-white to-amber-100/50 via-white">
-                                    <span class="font-semibold">
-                                        {{ \Carbon\Carbon::parse($ymd)->format('j F Y, l') }}
-                                    </span>
-                                    <span class="transition-transform duration-200" x-bind:class="open ? 'rotate-180' : ''">
-                                        <x-heroicon-o-chevron-down class="w-6 h-6" />
-                                    </span>
-                                </h2>
-                            @endif
+                            </div>
 
                             <div x-cloak x-show="open" x-transition.opacity x-transition.duration.200ms
                                 class="space-y-3 w-full mt-4">
-                                @foreach ($dailyDates as $date)
+                                @foreach ($day->items as $date)
                                     <x-winetastings::tasting_card :$date />
                                 @endforeach
                             </div>
@@ -106,69 +86,55 @@
     </div>
 
 
-<div x-data="{ sheet:false }"      
-    x-on:close-calendar.window="sheet = false"
- class="lg:hidden">
-  <button
-    x-show="!sheet" x-transition
-    @click="sheet = true" type="button"
-    class="fixed bottom-4 left-1/2 -translate-x-1/2 z-40
+    <div x-data="{ sheet: false }" x-on:close-calendar.window="sheet = false" class="lg:hidden">
+        <button x-show="!sheet" x-transition @click="sheet = true" type="button"
+            class="fixed bottom-4 left-1/2 -translate-x-1/2 z-40
            rounded-full bg-rose-600 px-5 py-3 text-white font-semibold shadow-lg
            ring-1 ring-rose-300">
-    <span class="inline-flex items-center gap-2">
-      
-      <x-heroicon-o-calendar class="w-5 h-5" />
-      Calendar
-    </span>
-  </button>
+            <span class="inline-flex items-center gap-2">
 
-  <!-- Overlay -->
-  <div x-cloak x-show="sheet" x-transition.opacity
-       
-        x-trap.noscroll="sheet"
-       class="fixed inset-0 z-40 bg-black/40"
-       @click="sheet=false" @keydown.escape.window="sheet=false"></div>
+                <x-heroicon-o-calendar class="w-5 h-5" />
+                Calendar
+            </span>
+        </button>
 
-  <section
+        <!-- Overlay -->
+        <div x-cloak x-show="sheet" x-transition.opacity x-trap.noscroll="sheet" class="fixed inset-0 z-40 bg-black/40"
+            @click="sheet=false" @keydown.escape.window="sheet=false"></div>
 
-    x-trap.noscroll="sheet"
-    x-cloak x-show="sheet"
-    role="dialog" aria-modal="true" aria-labelledby="calendarSheetTitle"
-    class="fixed inset-x-0 bottom-0 z-50 max-h-[85vh]
+        <section x-trap.noscroll="sheet" x-cloak x-show="sheet" role="dialog" aria-modal="true"
+            aria-labelledby="calendarSheetTitle"
+            class="fixed inset-x-0 bottom-0 z-50 max-h-[85vh]
            rounded-t-2xl bg-white shadow-2xl ring-1 ring-slate-200
            pb-[env(safe-area-inset-bottom)]"
-    x-transition:enter="transform ease-out duration-300"
-    x-transition:enter-start="translate-y-full"
-    x-transition:enter-end="translate-y-0"
-    x-transition:leave="transform ease-in duration-200"
-    x-transition:leave-start="translate-y-0"
-    x-transition:leave-end="translate-y-full">
+            x-transition:enter="transform ease-out duration-300" x-transition:enter-start="translate-y-full"
+            x-transition:enter-end="translate-y-0" x-transition:leave="transform ease-in duration-200"
+            x-transition:leave-start="translate-y-0" x-transition:leave-end="translate-y-full">
 
-    <div class="mx-auto max-w-2xl">
-      <div class="flex justify-center pt-3">
-        <div class="h-1.5 w-12 rounded-full bg-slate-300"></div>
-      </div>
-      <div class="text-right mr-4">
-        <button class="p-2 rounded-full hover:bg-slate-100"
-                @click="sheet=false" type="button" aria-label="Close calendar">
-          <x-heroicon-o-x-mark class="w-6 h-6" />
-        </button>
-      </div>
+            <div class="mx-auto max-w-2xl">
+                <div class="flex justify-center pt-3">
+                    <div class="h-1.5 w-12 rounded-full bg-slate-300"></div>
+                </div>
+                <div class="text-right mr-4">
+                    <button class="p-2 rounded-full hover:bg-slate-100" @click="sheet=false" type="button"
+                        aria-label="Close calendar">
+                        <x-heroicon-o-x-mark class="w-6 h-6" />
+                    </button>
+                </div>
 
-      <div class="mt-2 px-4 pb-6 h-fit" >
-        <x-winetastings::tasting_small_calendar :$tastingDates />
-      </div>
+                <div class="mt-2 px-4 pb-6 h-fit">
+                    <x-winetastings::tasting_small_calendar :$tastingDates />
+                </div>
+            </div>
+        </section>
     </div>
-  </section>
-</div>
-
 @endsection
 
 
 
 @push('head')
     @verbatim
-    <script type="application/ld+json">
+        <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [

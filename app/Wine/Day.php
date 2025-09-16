@@ -15,7 +15,7 @@ final class Day implements Arrayable, JsonSerializable
 
     public function __construct(
         public readonly CarbonInterface $date,
-        public readonly string $label,
+        public string $label,
         /** @var \Illuminate\Support\Collection<int,\App\Models\Wine\Date> */
         public readonly Collection $items,
     ) {}
@@ -31,12 +31,12 @@ final class Day implements Arrayable, JsonSerializable
 
     public function isToday(): bool
     {
-        return $this->date->is_today;
+        return $this->isToday;
     }
 
     public function isTomorrow(): bool
     {
-        return $this->date->is_tomorrow;
+        return $this->isTomorrow;
     }
 
     public function setToday(): void
@@ -52,6 +52,11 @@ final class Day implements Arrayable, JsonSerializable
     public function setLabel(string $label): void
     {
         $this->label = $label;
+    }
+
+        public function getLabel(): string
+    {
+        return $this->label;
     }
 
     public function jsonSerialize(): array

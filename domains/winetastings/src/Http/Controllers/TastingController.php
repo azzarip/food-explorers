@@ -2,29 +2,26 @@
 
 namespace Domains\Winetastings\Http\Controllers;
 
-use App\Models\Wine\Date;
-use Carbon\Carbon;
+use App\Wine\Loader;
 use Illuminate\Http\Request;
 
 class TastingController
 {
     public function index(Request $request)
     {
-        $dates = Date::with('tasting')
-            ->upcomingNextDays(365)
-            ->limit(100)
-            ->get()
-            ->groupBy(fn ($wineDate) => $wineDate->date->toDateString());
+        $loader = Loader::nextYear();
 
-        $today = Carbon::today()->toDateString();
-        $tomorrow = Carbon::tomorrow()->toDateString();
-
-        $tastingDates = $dates->keys()->unique()->values()->toArray();
-
+        $dates = $loader->getDays();
+    
+        $tastingDates = $dates
+            ->pluck('date')
+            ->map(fn ($d) => $d->toDateString())
+            ->unique()
+            ->values()
+            ->all();
+        
         return view('winetastings::calendar', [
             'dates' => $dates,
-            'today' => $today,
-            'tomorrow' => $tomorrow,
             'tastingDates' => $tastingDates,
         ]);
     }

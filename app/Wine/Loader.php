@@ -48,6 +48,11 @@ class Loader
         return self::nextDays(30);
     }
 
+    public static function nextYear()
+    {
+        return self::nextDays(365);
+    }
+
     public static function nextWeek()
     {
         return self::nextDays(7);
