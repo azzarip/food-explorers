@@ -12,6 +12,8 @@ Route::group([
 ], function () {
     Route::view('/', 'winetastings::homepage');
     Route::get('/calendar', [TastingController::class, 'index']);
+    Route::get('/tasting/{tasting}', [TastingController::class, 'show']);
+    
     Route::view('/ty', 'winetastings::ty');
 
     Route::post('/', NewsletterController::class);

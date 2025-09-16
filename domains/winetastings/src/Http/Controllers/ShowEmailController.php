@@ -14,7 +14,7 @@ class ShowEmailController
      */
     public function __invoke(Request $request)
     {
-        $loader = Loader::nextWeek();
+        $loader = Loader::nextMonth();
 
         $contact = Contact::make([
             'first_name' => 'Marco',

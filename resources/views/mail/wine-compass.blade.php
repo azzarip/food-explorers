@@ -36,7 +36,7 @@
 
             @forelse($days as $day)
               <tr>
-                <td style="padding:6px 28px 0 28px;">
+                <td style="padding:20px 28px 0 28px;">
                   <h2 style="margin:0 0 10px 0; font-size:20px; line-height:1.35; color:#111111; font-weight:700;">
                     {{ $day->label }}
                   </h2>
@@ -50,19 +50,24 @@
                   <td style="padding:8px 28px;">
                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%; border:1px solid #e5e7eb; background:#fafafa; border-radius: 8px;">
                       <tr>
-                        <td style="padding:14px 16px;">
+                        <td style="padding: 14px 16px 14px 16px;">
+                          <a href="{{ durl('/tasting/' . $date->tasting->id, 'winetastings') }}" style="text-decoration: none;">
                           <h3 style="margin:6px 0 6px 0; font-size:17px; line-height:1.35; color:#111111; font-weight:700;">
                             {{ $date->tasting->title }}
                           </h3>
                           <p style="margin:0 0 4px 0; font-size:14px; line-height:1.6; color:#374151;">
                             <strong style="color:#111111;">🕒 When:</strong> {{ $date->formatted_time }}
                           </p>
+                          <p style="margin:0; float: right;">🡢</p>
                           <p style="margin:0; font-size:14px; line-height:1.6; color:#374151;">
                             <strong style="color:#111111;">📍 Where:</strong> {{ $date->tasting->location->name_address }}
-                            
                             - <a href="{{ $date->tasting->location->google_maps_url }}" target="_blank" rel="noopener noreferrer nofollow" style="color:#1d4ed8; text-decoration:underline;">Maps</a>
-                            
                           </p>
+                          @if($date->tasting->is_dinner)
+                            <p style="margin:0; margin-top: 4px; font-size:0.875rem; color:#ca8a04; font-weight:600;">
+                            ⭐ Dinner Experience </p>
+                          @endif
+                        </a>
                         </td>
                       </tr>
                     </table>

@@ -3,6 +3,7 @@
 namespace Domains\Winetastings\Http\Controllers;
 
 use App\Wine\Loader;
+use App\Models\Wine\Tasting;
 use Illuminate\Http\Request;
 
 class TastingController
@@ -23,6 +24,16 @@ class TastingController
         return view('winetastings::calendar', [
             'dates' => $dates,
             'tastingDates' => $tastingDates,
+        ]);
+    }
+
+    public function show(Request $request, Tasting $tasting)
+    {
+        $text = $tasting->description?->text;
+        $description = $text ? \Illuminate\Support\Str::markdown($text) : null;
+        return view('winetastings::tasting', [
+            'tasting' => $tasting,
+            'description' => $description,
         ]);
     }
 }
