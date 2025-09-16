@@ -3,13 +3,14 @@
 namespace App\Mail;
 
 use App\Wine\Loader;
-use Azzarip\Teavel\Models\Contact;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
-use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
-use Illuminate\Queue\SerializesModels;
+use Azzarip\Teavel\Models\Contact;
 use Illuminate\Support\Collection;
+use Illuminate\Mail\Mailables\Address;
+use Illuminate\Mail\Mailables\Content;
+use Illuminate\Queue\SerializesModels;
+use Illuminate\Mail\Mailables\Envelope;
 
 class WineCompass extends Mailable
 {
@@ -43,6 +44,7 @@ class WineCompass extends Mailable
 
         return new Envelope(
             subject: $subject,
+            from: new Address(config('mail.from.address'), 'Wine Compass'),
         );
     }
 

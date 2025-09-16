@@ -17,12 +17,12 @@
                     ⭐ Dinner Experience</p>
             @endif
             <div class="py-4 mt-4 w-full text-slate-700 space-y-4">
-                <p class="pl-4"><strong class="text-rose-600 mb-2">Organizer:</strong> {{ $tasting->organizer->name }}</p>
-                <div class="flex items-center pl-4">
+                <p class="pl-2 lg:pl-4"><strong class="text-rose-600 mb-2">Organizer:</strong> {{ $tasting->organizer->name }}</p>
+                <div class="flex items-center pl-2 lg:pl-4">
                     <x-heroicon-s-map-pin class="inline w-6 h-6 mr-2 text-rose-500" />
                     <p>{{ $tasting->location->name }}, {{ $tasting->location->address }}</p>
                     <a href="{{ $tasting->location->google_maps_url }}" rel="noopener noreferrer nofollow" target="_blank"
-                        class="ml-2 text-rose-600 font-medium hover:underline">
+                        class="ml-2 text-rose-600 font-medium hover:underline max-md:mr-2">
                         Maps
                     </a>
                 </div>
@@ -46,11 +46,10 @@
                             <x-heroicon-o-clock class="inline w-6 h-6 mr-2 text-rose-500" />
                             <span>{{ $date->startAt()->format('H:i') }} – {{ $date->endAt()->format('H:i') }}</span>
                         </div>
-                        <a class="flex items-center gap-1 cursor-pointer text-blue-600 hover:text-blue-800 p-1 border rounded-xl" href="{{ $googleCalendarUrl }}" target="_blank">
+                        <a class="flex items-center w-fit self-end md:self-auto ml-auto md:ml-0  gap-1 cursor-pointer text-blue-600 hover:text-blue-800 p-1 border rounded-xl" href="{{ $googleCalendarUrl }}" target="_blank">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg" alt="Google Calendar" class="w-6 h-6">
+                            <span class="md:hidden"> Google Calendar </span>
                         </a>
-
-
                     </div>
                 @endforeach
             </div>
