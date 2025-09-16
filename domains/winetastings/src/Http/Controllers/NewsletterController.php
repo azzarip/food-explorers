@@ -13,10 +13,10 @@ class NewsletterController
 
         $contact = Contact::fromData($data);
 
-        $contact->tag('Started Wine Newsletter');
-        $contact->tag('Wine Newsletter');
-        $contact->tag('Likes Wine');
-
+        if( $request->has('spirits') ) {
+            $contact->tag('Likes Spirits');
+       }
+        
         NewsletterForm::dispatchAfterResponse($contact);
         
         $contact->storeInSession();
