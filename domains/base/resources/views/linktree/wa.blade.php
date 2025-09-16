@@ -34,7 +34,7 @@
                 </button>
             </div>
 
-            <div class="flex flex-col gap-5 w-full mx-auto mt-8 text-lg font-semibold" x-show="choice === 'drinks'"
+            <div class="flex flex-col gap-5 w-full mx-auto mt-8 text-lg font-semibold px-2" x-show="choice === 'drinks'"
                 id="drink-part" x-cloak x-data="{
                     open: false,
                     link: 'https://chat.whatsapp.com/EuInN7yATNLIdFItBmGDdX',
@@ -125,7 +125,7 @@
             </div>
 
 
-            <div class="flex flex-col gap-5 w-full mx-auto mt-8 text-lg font-semibold" x-show="choice === 'food'"
+            <div class="flex flex-col gap-5 w-full mx-auto mt-8 text-lg font-semibold px-2" x-show="choice === 'food'"
                 id="drink-part" x-cloak x-data="{
                     open: false,
                     link: 'https://chat.whatsapp.com/EuInN7yATNLIdFItBmGDdX',
@@ -193,6 +193,13 @@
                         Link copied!
                     </div>
                 </div>
+
+                <a href="{{ durl('/restaurants', 'zurichgems') }}"
+                    class="flex rounded-full p-2 bg-[#dda407] items-center gap-2 w-full cursor-pointer justify-between lg:text-lg text-sm">
+                    <span class="mx-2">💎</span>
+                    <p>Zurich Best Restaurants</p>
+                    <x-heroicon-o-arrow-right class="w-6 h-6 mr-2" />
+                </a>
 
 
             </div>
