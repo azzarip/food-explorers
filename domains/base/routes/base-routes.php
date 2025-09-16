@@ -11,8 +11,8 @@ Route::group([
     Route::view('/en', 'base::homepage');
     Route::view('/', 'base::homepage');
 
-    Route::permanentRedirect('/secrets/ebe', '/linktree/wa?choice=drinks&utm_source=whatsapp&utm_medium=group&utm_campaign=description&utm_content=ebe');
-    Route::permanentRedirect('/secrets/fex', '/linktree/wa?utm_source=whatsapp&utm_medium=group&utm_campaign=description&utm_content=fex');
+    Route::permanentRedirect('/world/bar', '/linktree/wa?choice=drinks&utm_source=whatsapp&utm_medium=group&utm_campaign=description&utm_content=ebe');
+    Route::permanentRedirect('/world', '/linktree/wa?utm_source=whatsapp&utm_medium=group&utm_campaign=description&utm_content=fex');
     Route::view('/linktree/wa', 'base::linktree.wa');
 
     Route::get('/event/{eventPage}', EventPageController::class)->name('eventPage');

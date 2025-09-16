@@ -18,7 +18,7 @@ class NewsletterController
             $contact->tag('Likes Spirits');
         }
 
-        NewsletterForm::dispatchAfterResponse($contact);
+        NewsletterForm::complete($contact);
 
         $contact->storeInSession();
 
