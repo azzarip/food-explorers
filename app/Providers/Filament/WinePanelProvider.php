@@ -39,7 +39,7 @@ class WinePanelProvider extends PanelProvider
             ])
             ->discoverWidgets(in: app_path('Filament/Wine/Widgets'), for: 'App\Filament\Wine\Widgets')
             ->widgets([
-
+                \App\Filament\Wine\Widgets\CountCompass::class,
             ])
             ->middleware([
                 EncryptCookies::class,
