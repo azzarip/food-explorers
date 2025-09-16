@@ -20,7 +20,7 @@
                     <p class="text-2xl lg:text-3xl text-center mt-8">No tastings in the next days...</p>
                 @else
                     @foreach ($dates as $day)
-                        <div id="{{ $day->date }}" x-data="{ open: true }" class="w-full mt-4 mb-2 pt-2">
+                        <div id="{{ $day->date->format('Y-m-d') }}" x-data="{ open: true }" class="w-full mt-4 mb-2 pt-2">
 
                             <div @click="open = !open" :aria-expanded="open.toString()"
                                 class="flex items-center justify-between gap-3 rounded-2xl px-4 py-3 cursor-pointer select-none border
@@ -49,35 +49,7 @@
                 @endif
             </section>
 
-            <section>
-                <div class="mx-auto mt-6 lg:mt-12 max-w-2xl rounded-2xl bg-white p-4 shadow-lg ring-1 ring-gray-100 sm:p-4"
-                    id="form">
-                    <p class="text-xl lg:text-3xl font-bold mb-2 text-center">Join the Zurich Wine Compass!</p>
-                    <p class="text-center lg:text-xl">Never miss a Wine Tasting in Zurich again.</p>
-                    <x-forms::base class="mx-auto max-w-lg" action="/" name="newsletter-form" id="newsletter-form">
-                        <x-forms::field.email />
-                        <div class="space-y-4 ml-2">
-                            <x-forms::field.privacy_policy />
-                            <div style="padding-top: 4px;">
-                                <div class="inline-flex items-start">
-                                    <input type="checkbox" name="age" id="age" class="w-4 h-4 mt-1" required>
-                                    <label for="age" class="ml-2">I am 18 years old or older.</label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button type="submit"
-                            class="w-full rounded-xl bg-rose-600 px-6 py-3 text-base cursor-pointer font-semibold text-white shadow-md transition hover:bg-rose-700 focus:outline-none focus:ring-4 focus:ring-rose-200">
-                            Yes, I want to be informed about wine tastings in Zurich!
-                        </button>
-                    </x-forms::base>
-
-                    <p
-                        class="mt-4 w-fit mx-auto items-center gap-2 rounded-full border border-rose-200 bg-white/70 px-3 py-1 text-xs font-medium text-rose-700 shadow-sm backdrop-blur">
-                        🍷 Curated weekly · Cancel anytime
-                    </p>
-                </div>
-            </section>
+            <x-winetastings::newsletter-form />
         </main>
 
         <aside class="flex-1 hidden lg:block lg:w-80 pt-24">
