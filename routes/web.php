@@ -27,7 +27,3 @@ Route::get('telegram-test', function () {
 
     return 'Message Queued, if not working check the queue.';
 });
-
-Route::get('/gb/petit-paris', function () {
-    return 'You successfully unsubscribed from future updates on Petit Paris.';
-});
