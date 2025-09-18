@@ -34,6 +34,6 @@ return [
 
     'zurichgems' => [
         'url' => 'www.zurichgems.'.env('TLD'),
-        'name' => 'Zurich Foodie Gems',
+        'name' => 'Zurich Gems',
     ],
 ];

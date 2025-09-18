@@ -1,8 +1,8 @@
-@extends('azzarip::layouts.1col', ['bg' => 'bg-slate-50/50', 'nav' => false])
+@extends('azzarip::layouts.1col', ['bg' => 'bg-slate-50/20', 'nav' => false])
 
 @php
     $seo = new SEO(
-        title: 'Top 3 Gelaterias of Zurich',
+        title: 'The Best Gelato of Zurich - Zurich Gems',
         description: 'After trying more than 50 gelaterias in the city of Zurich, I choose the top 3 and bottom 3 of my list. Here are the best ice cream shops in town, you cannot miss in this warm summer 2025.',
         image: '' //image('gelato/girl.webp')
     );
@@ -10,8 +10,8 @@
 
 @section('main')
     <article class="max-w-2xl mx-auto mt-4 px-2 mb-12">
-        <h1 class="font-serif text-4xl lg:text-5xl text-center font-bold leading-relaxed lg:leading-relaxed">
-            I tried ALL the Gelaterias of Zurich: Here are my top 3!
+        <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl text-center font-bold leading-relaxed lg:leading-relaxed">
+            The Best Gelato of Zurich
         </h1>
         <p class="font-head text-2xl lg:text-3xl mt-2 mb-4 text-slate-700 leading-relaxed lg:leading-relaxed">
             I went on a mission to try every gelato spot in Zurich: I discovered some hidden gems, others were really nice,
@@ -30,7 +30,7 @@
         </div>
 
         <div class="space-y-3">
-            <h2 class="font-bold text-3xl lg:text-4xl text-center">The Top 3 Gelaterias</h2>
+            <h2 class="font-bold text-3xl lg:text-4xl text-center"> I Tried All Gelaterias of Zurich: Here are my top 3!</h2>
             <p>Let's start with the <strong>Top 3 Gelaterias of Zurich</strong>, not in any particular order.</p>
 
 
@@ -173,7 +173,7 @@
                 <iframe src="https://www.google.com/maps/d/embed?mid=1ac4pxfb-Kn2sgMpqreyQIn13R37uA4o&hl=en&ehbc=2E312F"
                     class="mx-auto min-h-[480px] w-full"></iframe>
                 <p>In the map there are 50 ice cream shops, I tried them all, and you can read a specific review for each of
-                    them (<a href="/gelato/list" class="inline-link">read it here</a>).</p>
+                    them (<a href="/gelato/reviews" class="inline-link">read it here</a>).</p>
                 <p>At the top of this page you found my top 3, but there are many more worth trying.</p>
                 <p>There I classified all of them in three groups: must try, nice to try, forgettable.</p>
 
@@ -188,7 +188,7 @@
                 <p>Should belong to this top? Probably. But I preferred giving space to less known gelaterias.</p>
                 <p>There are many more gelaterias in Zurich. <strong>Some are good, some are not.</strong></p>
                 <p>If your favorite is missing, I understand. The list is ranked based on my personal evaluation.
-                <p> <strong>You can find all my ratings <a href="/gelato/list" class="inline-link">by
+                <p> <strong>You can find all my ratings <a href="/gelato/reviews" class="inline-link">by
                             clicking this link</a>.</strong></p>
                 <p>Did I miss one? Possibly. Feel free to write me an email, and I’ll try to check it out.</p>
 
@@ -232,7 +232,7 @@
                             is, and how easy it is to order.</strong></p>
                     <p>That’s the fourth pillar: <strong>Experience</strong>.</p>
                     <p>Each pillar receives a score from <strong>0 to 3</strong>.</p>
-                    <p>You can view all scores <a href="/gelato/list" class="inline-link">here</a>.</p>
+                    <p>You can view all scores <a href="/gelato/reviews" class="inline-link">here</a>.</p>
                     <p><strong>Each pillar is judged independently.</strong> A gelato can have great texture but poor
                         flavor. Or a great product served by a soulless staff through a window.</p>
                     <p>That’s why I chose not to sum up all scores into one total. <strong>It wouldn't reflect the reality
@@ -314,3 +314,59 @@
             </div>
     </article>
 @endsection
+
+@push('head')
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.zurichgems.test/gelato#webpage",
+      "url": "https://www.zurichgems.test/gelato",
+      "name": "The Best Gelato of Zurich - Zurich Gems",
+      "isPartOf": {
+        "@id": "https://www.zurichgems.test/#website"
+      },
+      "about": {
+        "@id": "https://www.zurichgems.test/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "@id": "https://www.zurichgems.test/gelato#primaryimage",
+        "url": "https://www.zurichgems.test/images/gelato-og.jpg"
+      },
+      "description": "After trying more than 50 gelaterias in the city of Zurich, I choose the top 3 and bottom 3 of my list. Here are the best ice cream shops in town, you cannot miss in this warm summer 2025.",
+      "datePublished": "2025-06-01",
+      "dateModified": "2025-09-18",
+      "inLanguage": "en-CH",
+      "publisher": {
+        "@id": "https://www.zurichgems.test/#organization"
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.zurichgems.test/gelato#article",
+      "headline": "The Best Gelato of Zurich",
+      "alternativeHeadline": "Top 3 and Bottom 3 Gelaterias After Visiting 50+ Shops",
+      "description": "After trying more than 50 gelaterias in Zurich, Marco Azzari reveals the top 3 and bottom 3 ice cream shops you must know for summer 2025.",
+      "image": {
+        "@id": "https://www.zurichgems.test/gelato#primaryimage"
+      },
+      "author": {
+        "@id": "https://www.zurichgems.test/#person"
+      },
+      "publisher": {
+        "@id": "https://www.zurichgems.test/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://www.zurichgems.test/gelato#webpage"
+      },
+      "datePublished": "2025-06-01",
+      "dateModified": "2025-09-18",
+      "inLanguage": "en-CH"
+    }
+  ]
+}
+</script>
+@endpush

@@ -653,3 +653,45 @@
         </div>
     </article>
 @endsection
+
+@push('head')
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.zurichgems.test/gelato/reviews#webpage",
+      "url": "https://www.zurichgems.test/gelato/reviews",
+      "name": "All Gelaterias of Zurich [RANKED]",
+      "isPartOf": { "@id": "https://www.zurichgems.test/#website" },
+      "about": { "@id": "https://www.zurichgems.test/#organization" },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "@id": "https://www.zurichgems.test/gelato/reviews#primaryimage",
+        "url": "https://www.zurichgems.test/images/gelato-reviews-og.jpg"
+      },
+      "description": "After trying more than 50 gelaterias in the city center of Zurich, I ranked them all in this list. Here are the winners and losers, divided into three categories: the must try, the nice to try and the forgettable.",
+      "inLanguage": "en-CH",
+      "datePublished": "2025-06-01",
+      "dateModified": "2025-09-18",
+      "publisher": { "@id": "https://www.zurichgems.test/#organization" }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.zurichgems.test/gelato/reviews#article",
+      "headline": "All Gelaterias of Zurich [RANKED]",
+      "description": "Complete ranking of 50+ Zurich gelaterias, grouped into must-try, nice-to-try, and forgettable.",
+      "image": { "@id": "https://www.zurichgems.test/gelato/reviews#primaryimage" },
+      "author": { "@id": "https://www.zurichgems.test/#person" },
+      "publisher": { "@id": "https://www.zurichgems.test/#organization" },
+      "mainEntityOfPage": { "@id": "https://www.zurichgems.test/gelato/reviews#webpage" },
+      "inLanguage": "en-CH",
+      "datePublished": "2025-06-01",
+      "dateModified": "2025-09-18"
+    }
+  ]
+}
+</script>
+
+@endpush
