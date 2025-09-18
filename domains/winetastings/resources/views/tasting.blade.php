@@ -17,7 +17,7 @@
                     ⭐ Dinner Experience</p>
             @endif
             <p class="text-slate-700 italic text-center">organized by {{ $tasting->organizer->name }}</p>
-            <div class="py-4 mt-4 w-full text-slate-700 space-y-4">
+            <div class="py-4 mt-4 w-full text-slate-700 space-y-4" x-data="{ expanded: false }" x-cloak>
                 <div class="flex items-center pl-2 lg:pl-4">
                     <x-heroicon-s-map-pin class="inline w-6 h-6 mr-2 text-rose-500" />
                     <p>{{ $tasting->location->name }}, {{ $tasting->location->address }}</p>
@@ -36,7 +36,7 @@
                     $googleCalendarUrl = "https://www.google.com/calendar/render?action=TEMPLATE&text={$title}&dates={$startDateTime}/{$endDateTime}&details={$details}&location={$location}&sf=true&output=xml";
                 @endphp
 
-                    <div
+                    <div  @if ($loop->index >= 3) x-show="expanded" style="display: none;" @endif
                         class="flex flex-col md:flex-row md:justify-between md:items-center gap-2 md:gap-4 text-sm md:text-base p-4 bg-white rounded-lg shadow">
                         <div class="flex gap-1 md:w-1/2">
                             <x-heroicon-s-calendar-days class="inline w-6 h-6 mr-2 text-rose-500" />
@@ -52,6 +52,25 @@
                         </a>
                     </div>
                 @endforeach
+
+                    @if ($totalDates > 3)
+        <div class="mt-2 flex justify-end">
+            <button
+                type="button"
+                class="flex items-center gap-1 cursor-pointer text-blue-600 hover:text-blue-800 p-1 border rounded-xl"
+                @click="expanded = !expanded"
+                :aria-expanded="expanded.toString()"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform"
+                     :class="expanded ? 'rotate-180' : ''" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 10.17l3.71-2.94a.75.75 0 111.04 1.08l-4.24 3.36a.75.75 0 01-.94 0L5.21 8.31a.75.75 0 01.02-1.1z"
+                          clip-rule="evenodd" />
+                </svg>
+                <span x-text="expanded ? 'Show less' : 'Show more'"></span>
+            </button>
+        </div>
+    @endif
             </div>
 
 
