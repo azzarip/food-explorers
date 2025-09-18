@@ -53,7 +53,7 @@
                     </div>
                 @endforeach
 
-                    @if ($totalDates > 3)
+                    @if ($tasting->dates()->count() > 3)
         <div class="mt-2 flex justify-end">
             <button
                 type="button"
@@ -75,8 +75,8 @@
 
 
 
-            <section class="mt-2 lg:mt-6" id="event-description">
-                <p><strong class="text-rose-600 mb-2 pl-4">Event Description:</strong></p>
+            <section class="mt-2 lg:mt-6 space-y-3" id="event-description">
+                <p><strong class="text-rose-600 mb-2 text-xl">Event Description:</strong></p>
                 @if ($description)
                     {!! $description !!}
                 @else
