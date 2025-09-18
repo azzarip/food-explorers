@@ -13,16 +13,16 @@
         
     <div class="absolute inset-0 -z-10 bg-gradient-to-b from-amber-50 via-white to-white max-lg:opacity-50"></div>
   <div class="absolute -top-24 -right-32 h-80 w-80 rounded-full bg-amber-200/40 blur-3xl max-lg:opacity-50"></div>
-  <div class="absolute -bottom-24 -left-32 h-80 w-80 rounded-full bg-amber-300/30 blur-3xl max-lg:opacity-50"></div>
+  <div class="absolute -bottom-24 -left-32 h-80 w-80 rounded-full bg-amber-300/30 blur-3xl max-lg:opacity-50 max-lg:hidden"></div>
 
 <section class="">
 
 
   <div class="">
-      <div class="max-w-3xl mx-auto px-2 max-lg:mt-12">
+      <div class="max-w-3xl mx-auto px-2 max-lg:mt-16">
         <h2 class="text-center text-2xl lg:text-4xl font-bold mt-4 lg:mt-12">For Serious Foodies Only</h2>
-        <h1 class="mt-4 text-4xl text-center font-extrabold tracking-tight leading-snug text-gray-900 sm:text-5xl lg:text-6xl">
-          Not Every Place in Zurich Is Worth Your Time <br>  <span class="bg-gradient-to-r from-amber-600 to-amber-400 bg-clip-text text-transparent">Here’s Where You Find The Real Gems 
+        <h1 class="mt-4 text-3xl md:text-4xl text-center font-extrabold tracking-tight leading-snug text-gray-900 sm:text-5xl lg:text-6xl">
+          Not Every Place in Zurich Is Worth Your Time <br>  <span class="bg-gradient-to-l from-amber-600 to-amber-400 bg-clip-text text-transparent">Here’s Where You Find The Real Gems 
 </span> <span aria-hidden="true">💎</span>
         </h1>
 
@@ -47,21 +47,46 @@
 
 </section>
 
-<section class="mt-12">
-    <div class="max-w-2xl mx-auto px-2">
-        <a href="/gelato">
-        <div class="bg-emerald-600 w-full rounded-md py-4 text-white text-center font-semibold text-2xl lg:text-3xl shadow-2xl backdrop-blur-lg">
+<section class="mt-12 pb-8">
+    <div class="max-w-2xl mx-auto px-2 space-y-6">
+        <a href="/gelato" class=" block bg-sky-600 w-full rounded-md py-4 text-white text-center font-semibold text-2xl lg:text-3xl shadow-2xl backdrop-blur-lg">
             🍧 Best Gelato
-        </div>
         </a>
+
+        <a href="/bars" class="block bg-sky-600 w-full rounded-md py-4 text-white text-center font-semibold text-2xl lg:text-3xl shadow-2xl backdrop-blur-lg">
+            🍸 Best Bars
+        </a>
+
+        <div class="bg-gray-600 w-full rounded-md py-4 text-white text-center font-semibold text-2xl lg:text-3xl shadow-2xl backdrop-blur-lg">
+            🍕 Best Pizza (Soon)
+        </div>
     </div>
+</section>
+
+<section aria-labelledby="join-explorers" class="mt-16 sm:mt-24 pb-8 mb-12 px-1">
+  <div class="max-w-3xl mx-auto pt-2 px-4 text-center text-black border-emerald-900 rounded-md border-2">
+    <h2 id="join-explorers" class="text-2xl sm:text-3xl font-extrabold tracking-tight">
+      Want to be part of the Explorers?
+    </h2>
+    <p class="mt-2">
+      Start scouting the next Zurich Gems 💎 with us, get early access to new restaurants and help shape the map.
+    </p>
+
+    <div class="my-6 flex flex-col sm:flex-row gap-3 justify-center">
+      <a href="{{ durl('/', 'base')->withAll() }}"
+         class="std-button inline-flex items-center justify-center rounded-md px-5 py-3 text-base font-semibold border border-emerald-300 text-emerald-900 hover:bg-emerald-50">
+        Join the Food Explorers Community
+      </a>
+      
+    </div>
+  </div>
 </section>
 
 
 </main>
 @endsection
-
 @push('head')
+@verbatim
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -131,4 +156,5 @@
   ]
 }
 </script>
+@endverbatim
 @endpush

@@ -79,22 +79,22 @@
                     <img src="@image('ebe_whatsapp_qr.webp')" alt="ebe whatsapp qr code" class="w-32 h-32 mx-auto bg-white" />
 
                     <p class="mt-3 text-sm break-all text-center text-white">
-                        <a :href="link" target="_blank" rel="noopener noreferrer"
-                            class="underline hover:no-underline">
-                            <span x-text="link"></span>
+                       <a :href="link" target="_blank" rel="noopener noreferrer"
+                            class="w-fit px-4 py-2 rounded-full bg-amber-600 hover:bg-yellow-400">
+                            Join
                         </a>
                     </p>
 
                     <!-- Actions -->
                     <div class="mt-1 flex justify-center gap-3">
                         <button @click="copy"
-                            class="cursor-pointer px-4 py-2 rounded-full bg-black text-white text-sm font-medium hover:opacity-90 active:opacity-80"
+                            class="cursor-pointer hover:bg-slate-800 px-4 py-2 rounded-full bg-black text-white text-sm font-medium hover:opacity-90 active:opacity-80"
                             type="button">
                             Copy link
                         </button>
 
                         <button @click="share"
-                            class="cursor-pointer px-4 py-2 rounded-full bg-black text-white text-sm font-medium hover:opacity-90 active:opacity-80"
+                            class="cursor-pointer hover:bg-slate-800 px-4 py-2 rounded-full bg-black text-white text-sm font-medium hover:opacity-90 active:opacity-80"
                             type="button">
                             Share
                         </button>
@@ -106,7 +106,7 @@
                 </div>
 
 
-                <a href="{{ durl('/bars', 'zurichgems') }}"
+                <a href="{{ durl('/bars', 'zurichgems')->withAll() }}"
                     class="flex rounded-full p-2 bg-[#dda407] items-center gap-2 w-full cursor-pointer justify-between lg:text-lg text-sm">
                     <span class="mx-2">🍸</span>
                     <p>Zurich Best Bars</p>
@@ -114,7 +114,7 @@
                 </a>
 
 
-                <a href="{{ durl('/', 'winetastings') }}"
+                <a href="{{ durl('/', 'winetastings')->withAll() }}"
                     class="flex rounded-full p-2 bg-[#dda407] items-center gap-2 w-full cursor-pointer justify-between lg:text-lg text-sm">
                     <span class="mx-2">🍷</span>
                     <p>Zurich Wine Compass</p>
@@ -170,20 +170,20 @@
                     <img src="@image('fex_whatsapp_qr.webp')" alt="ebe whatsapp qr code" class="w-32 h-32 mx-auto bg-white">
                     <p class="mt-3 text-sm break-all text-center text-white">
                         <a :href="link" target="_blank" rel="noopener noreferrer"
-                            class="underline hover:no-underline">
-                            <span x-text="link"></span>
+                            class="w-fit px-4 py-2 rounded-full bg-amber-600 hover:bg-yellow-400">
+                            Join
                         </a>
                     </p>
 
                     <div class="mt-1 flex justify-center gap-3">
                         <button @click="copy"
-                            class="cursor-pointer px-4 py-2 rounded-full bg-black text-white text-sm font-medium hover:opacity-90 active:opacity-80"
+                            class="cursor-pointer hover:bg-slate-800 px-4 py-2 rounded-full bg-black text-white text-sm font-medium hover:opacity-90 active:opacity-80"
                             type="button">
                             Copy link
                         </button>
 
                         <button @click="share"
-                            class="cursor-pointer px-4 py-2 rounded-full bg-black text-white text-sm font-medium hover:opacity-90 active:opacity-80"
+                            class="cursor-pointer hover:bg-slate-800 px-4 py-2 rounded-full bg-black text-white text-sm font-medium hover:opacity-90 active:opacity-80"
                             type="button">
                             Share
                         </button>
@@ -194,10 +194,10 @@
                     </div>
                 </div>
 
-                <a href="{{ durl('/restaurants', 'zurichgems') }}"
+                <a href="{{ durl('/', 'zurichgems')->withAll() }}"
                     class="flex rounded-full p-2 bg-[#dda407] items-center gap-2 w-full cursor-pointer justify-between lg:text-lg text-sm">
                     <span class="mx-2">💎</span>
-                    <p>Zurich Best Restaurants</p>
+                    <p>Zurich Gems</p>
                     <x-heroicon-o-arrow-right class="w-6 h-6 mr-2" />
                 </a>
 

@@ -9,5 +9,6 @@ Route::group([
     Route::view('/', 'zurichgems::homepage');
     Route::view('/gelato', 'zurichgems::gelato.main')->name('gelato.main');
     Route::view('/gelato/reviews', 'zurichgems::gelato.list')->name('gelato.list');
+    Route::view('/bars', 'zurichgems::bars');
 
 });
