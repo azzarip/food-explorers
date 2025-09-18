@@ -2,9 +2,9 @@
 
 @php
     $seo = new SEO(
-        title: 'Wine Tastings in Zürich',
-        description: 'Stay updated on every wine tasting in Zurich. One simple newsletter with all the best events, dates & insider tips. Free to join today. Stay informed of all wine things in Zurich and surroundings.',
-        image: '',
+        title: 'Discover Wine Tastings in Zürich',
+        description: 'Discover upcoming wine tastings and exclusive events in Zürich. Serious wine lovers only — join the Zurich Wine Compass and never miss a glass.',
+        site_name: 'Wine Tastings Zürich',
     );
 @endphp
 
@@ -168,7 +168,8 @@
       "@type": "WebSite",
       "@id": "https://winetastingszurich.ch/#website",
       "url": "https://winetastingszurich.ch/",
-      "name": "Wine Tastings Zürich Newsletter",
+      "name": "Wine Tastings Zürich",
+      "alternateName": "Zürich Wine Compass",
       "publisher": { "@id": "https://www.foodexplorers.ch/#org" }
     },
     {

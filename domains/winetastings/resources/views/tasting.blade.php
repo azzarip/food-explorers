@@ -16,8 +16,8 @@
                     class="mt-2 p-1 border-2 border-yellow-600 rounded-lg text-center text-yellow-600 font-semibold w-fit mx-auto">
                     ⭐ Dinner Experience</p>
             @endif
+            <p class="text-slate-700 italic text-center">organized by {{ $tasting->organizer->name }}</p>
             <div class="py-4 mt-4 w-full text-slate-700 space-y-4">
-                <p class="pl-2 lg:pl-4"><strong class="text-rose-600 mb-2">Organizer:</strong> {{ $tasting->organizer->name }}</p>
                 <div class="flex items-center pl-2 lg:pl-4">
                     <x-heroicon-s-map-pin class="inline w-6 h-6 mr-2 text-rose-500" />
                     <p>{{ $tasting->location->name }}, {{ $tasting->location->address }}</p>
@@ -42,9 +42,9 @@
                             <x-heroicon-s-calendar-days class="inline w-6 h-6 mr-2 text-rose-500" />
                             <span>{{ $date->date->format('j F Y, l') }}</span>
                         </div>
-                        <div class="flex gap-1 w-1/3">
-                            <x-heroicon-o-clock class="inline w-6 h-6 mr-2 text-rose-500" />
-                            <span>{{ $date->startAt()->format('H:i') }} – {{ $date->endAt()->format('H:i') }}</span>
+                        <div class="flex gap-1 md:w-1/3">
+                            <x-heroicon-o-clock class="w-6 h-6 mr-2 text-rose-500 shrink-0" />
+                            <span class="whitespace-nowrap">{{ $date->startAt()->format('H:i') }} – {{ $date->endAt()->format('H:i') }}</span>
                         </div>
                         <a class="flex items-center w-fit self-end md:self-auto ml-auto md:ml-0  gap-1 cursor-pointer text-blue-600 hover:text-blue-800 p-1 border rounded-xl" href="{{ $googleCalendarUrl }}" target="_blank">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg" alt="Google Calendar" class="w-6 h-6">
