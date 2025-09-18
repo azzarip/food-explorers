@@ -30,7 +30,7 @@ class TastingController
     public function show(Request $request, Tasting $tasting)
     {
         $text = $tasting->description?->text;
-        $description = $text ? \Illuminate\Support\Str::markdown($text) : null;
+        $description = $text ? \Illuminate\Support\Str::markdown(preg_replace("/\r?\n/", "  \n", $text)) : null;
         return view('winetastings::tasting', [
             'tasting' => $tasting,
             'description' => $description,

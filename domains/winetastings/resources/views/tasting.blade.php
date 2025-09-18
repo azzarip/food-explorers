@@ -1,7 +1,7 @@
 @extends('azzarip::layouts.base', ['nav' => true, 'bg' => 'bg-gradient-to-b from-rose-50 to-white antialiased'])
 
 @php
-    $seo = new SEO(title: $tasting->title, description: '', image: '', robots: 'noindex, nofollow');
+    $seo = new SEO(title: $tasting->title, description: '', image: '', site_name: 'Wine Tastings Zürich');
 @endphp
 
 @section('body')
@@ -69,3 +69,16 @@
         </main>
     </div>
 @endsection
+
+@push('head')
+    <style>
+    #event-description a {
+        color: #e11d48;               
+        font-weight: 500;         
+        text-decoration: none;    
+    }
+    #event-description a:hover {
+    text-decoration: underline;   
+}
+</style>
+@endpush
