@@ -21,4 +21,9 @@ Route::group([
     Route::view('/review/ty', 'base::review.ty')->name('review.ty');
     Route::post('/review/{event}/{contact:uuid}', [ReviewController::class, 'create']);
     Route::post('/review/{event}/{contact:uuid}/finish', [ReviewController::class, 'finish']);
+
+
+    Route::view('/emilia', 'base::emilia');
+    Route::view('/ty/emilia', 'base::emilia_ty');
+    Route::view('/emilia/ty', 'base::emilia_ty');
 });
