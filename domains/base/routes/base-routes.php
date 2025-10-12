@@ -26,4 +26,6 @@ Route::group([
     Route::view('/emilia', 'base::emilia');
     Route::view('/ty/emilia', 'base::emilia_ty');
     Route::view('/emilia/ty', 'base::emilia_ty');
+
+    Route::view('/settle/petit-paris', 'base::settle');
 });
