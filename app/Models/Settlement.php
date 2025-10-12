@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Settlement extends Model
 {
+        public $timestamps = false;
+
     public function contact()
 {
     return $this->belongsTo(Contact::class);

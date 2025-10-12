@@ -465,15 +465,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/azzarip/utilities.git",
-                "reference": "74e297072e9b7db024c58a6559c496331276db9f"
+                "reference": "34f17189ce27fa455cfbfbd64d8815c2731c07f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/azzarip/utilities/zipball/74e297072e9b7db024c58a6559c496331276db9f",
-                "reference": "74e297072e9b7db024c58a6559c496331276db9f",
+                "url": "https://api.github.com/repos/azzarip/utilities/zipball/34f17189ce27fa455cfbfbd64d8815c2731c07f5",
+                "reference": "34f17189ce27fa455cfbfbd64d8815c2731c07f5",
                 "shasum": ""
             },
             "require": {
+                "filament/filament": "~4.0",
                 "illuminate/contracts": "^12.0||^11.0",
                 "livewire/livewire": "^3.5",
                 "php": "^8.2",
@@ -523,7 +524,7 @@
                 "issues": "https://github.com/azzarip/utilities/issues",
                 "source": "https://github.com/azzarip/utilities/tree/main"
             },
-            "time": "2025-08-26T19:50:33+00:00"
+            "time": "2025-10-12T19:31:25+00:00"
         },
         {
             "name": "blade-ui-kit/blade-heroicons",

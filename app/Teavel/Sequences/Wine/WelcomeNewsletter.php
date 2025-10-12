@@ -2,8 +2,9 @@
 
 namespace App\Teavel\Sequences\Wine;
 
-use App\Notifications\TelegramNotification;
+
 use Azzarip\Teavel\Automations\SequenceAutomation;
+use Azzarip\Teavel\Notifications\TelegramNotification;
 
 class WelcomeNewsletter extends SequenceAutomation
 {
