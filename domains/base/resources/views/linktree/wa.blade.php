@@ -128,7 +128,7 @@
             <div class="flex flex-col gap-5 w-full mx-auto mt-8 text-lg font-semibold px-2" x-show="choice === 'food'"
                 id="drink-part" x-cloak x-data="{
                     open: false,
-                    link: 'https://chat.whatsapp.com/EuInN7yATNLIdFItBmGDdX',
+                    link: 'https://chat.whatsapp.com/JWeUkRcy9ZS9PvQeuwY6gt',
                     copied: false,
                     async copy() {
                         try {
@@ -207,7 +207,3 @@
 
     </main>
 @endsection
-
-@push('scripts')
-    <script></script>
-@endpush
