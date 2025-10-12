@@ -6,7 +6,7 @@
         robots: 'noindex, nofollow',
     );
 
-    $contacts = \App\Models\Settlement::with('contact')->get();
+    $settlements = \App\Models\Settlement::with('contact')->get();
 @endphp
 
 @section('body')

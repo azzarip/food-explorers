@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->foreignId('contact_id')->constrained()->cascadeOnDelete();
 
-            $table->decimal('conversion_factor', 10, 4)->nullable();
             $table->decimal('amount', 10, 2)->nullable();
 
             $table->json('details')->nullable();

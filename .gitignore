@@ -2,6 +2,8 @@
 /node_modules
 /public/hot
 /public/*
+!/public/download
+!/public/download/*
 !/public/.well-known/
 !/public/.well-known/*
 /storage/*.key

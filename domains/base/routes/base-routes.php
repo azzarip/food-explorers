@@ -27,5 +27,6 @@ Route::group([
     Route::view('/ty/emilia', 'base::emilia_ty');
     Route::view('/emilia/ty', 'base::emilia_ty');
 
-    Route::view('/settle/petit-paris', 'base::settle');
+    Route::view('/settle/petit-paris', 'base::settle.index');
+    Route::get('/settle/petit-paris/{settlement}', fn (\App\Models\Settlement $settlement) => view('base::settle.show', ['settlement' => $settlement]));
 });
