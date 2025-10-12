@@ -19,7 +19,7 @@
         "domains/my": "*",
         "domains/winetastings": "^1.0",
         "domains/zurichgems": "*",
-        "filament/filament": "4.0",
+        "filament/filament": "~4.0",
         "guzzlehttp/guzzle": "^7.2",
         "jenssegers/agent": "^2.6",
         "label84/laravel-tagmanager": "^1.4",
@@ -41,7 +41,6 @@
     "require-dev": {
         "deployer/deployer": "^7.4",
         "fakerphp/faker": "^1.9.1",
-        "filament/upgrade": "4.0",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",

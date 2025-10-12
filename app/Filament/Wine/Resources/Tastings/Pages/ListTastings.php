@@ -2,7 +2,7 @@
 
 namespace App\Filament\Wine\Resources\Tastings\Pages;
 
-use App\Filament\Wine\Resources\Tastings\TastingResource;
+use App\Filament\Wine\Resources\Tastings\Tastings\TastingResource;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
 

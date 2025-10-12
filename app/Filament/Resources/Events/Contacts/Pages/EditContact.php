@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Filament\Wine\Resources\Tastings\Pages;
+namespace App\Filament\Resources\Events\Contacts\Pages;
 
-use App\Filament\Wine\Resources\Tastings\Tastings\TastingResource;
+use App\Filament\Resources\Events\Contacts\ContactResource;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\ViewAction;
 use Filament\Resources\Pages\EditRecord;
 
-class EditTasting extends EditRecord
+class EditContact extends EditRecord
 {
-    protected static string $resource = TastingResource::class;
+    protected static string $resource = ContactResource::class;
 
     protected function getHeaderActions(): array
     {

@@ -10,7 +10,7 @@ use Illuminate\Http\Client\RequestException;
 
 class Settings extends Page
 {
-    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-wrench-screwdriver';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-wrench-screwdriver';
 
     protected string $view = 'filament.pages.settings';
 

@@ -2,6 +2,7 @@
 
 namespace App\Wine;
 
+use App\Models\Wine\Date;
 use Carbon\CarbonInterface;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Collection;
@@ -16,7 +17,7 @@ final class Day implements Arrayable, JsonSerializable
     public function __construct(
         public readonly CarbonInterface $date,
         public string $label,
-        /** @var \Illuminate\Support\Collection<int,\App\Models\Wine\Date> */
+        /** @var Collection<int, Date> */
         public readonly Collection $items,
     ) {}
 

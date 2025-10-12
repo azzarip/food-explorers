@@ -32,13 +32,13 @@ class EventBroadcast extends Page
 
     public $preselected_event = null;
 
-    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-envelope';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-envelope';
 
     protected string $view = 'teavel::filament.pages.email-broadcast';
 
     protected static ?string $navigationLabel = 'Broadcast';
 
-    protected static string|\UnitEnum|null $navigationGroup = 'Events';
+    protected static string | \UnitEnum | null $navigationGroup = 'Events';
 
     public function form(Schema $schema): Schema
     {
@@ -48,7 +48,7 @@ class EventBroadcast extends Page
         return $schema
             ->operation('send')
             ->columns(2)
-            ->schema([
+            ->components([
                 Select::make('group')
                     ->label('Group')
                     ->options([

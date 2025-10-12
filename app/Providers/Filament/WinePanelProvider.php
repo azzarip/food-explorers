@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use App\Filament\Wine\Widgets\CountCompass;
 use Azzarip\Utilities\Http\Middleware\AdminConfig;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
@@ -39,7 +40,7 @@ class WinePanelProvider extends PanelProvider
             ])
             ->discoverWidgets(in: app_path('Filament/Wine/Widgets'), for: 'App\Filament\Wine\Widgets')
             ->widgets([
-                \App\Filament\Wine\Widgets\CountCompass::class,
+                CountCompass::class,
             ])
             ->middleware([
                 EncryptCookies::class,

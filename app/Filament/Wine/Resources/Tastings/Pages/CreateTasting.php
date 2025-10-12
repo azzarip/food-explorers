@@ -5,7 +5,7 @@ namespace App\Filament\Wine\Resources\Tastings\Pages;
 use App\Models\Wine\Tasting;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Resources\Pages\CreateRecord;
-use App\Filament\Wine\Resources\Tastings\TastingResource;
+use App\Filament\Wine\Resources\Tastings\Tastings\TastingResource;
 
 class CreateTasting extends CreateRecord
 {
