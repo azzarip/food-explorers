@@ -6,7 +6,7 @@
         robots: 'noindex, nofollow',
     );
 
-    $contacts = \Azzarip\Teavel\Models\Tag::name('Petit Paris 2025')->contacts;
+    $contacts = \App\Models\Settlement::with('contact')->get();
 @endphp
 
 @section('body')
@@ -18,8 +18,7 @@
 
 <div 
     x-data="{
-        selectedUuid: '',
-        baseUrl: '/settle/petit-paris'
+        settlementId: '',
     }" 
     class="space-y-3 max-w-md"
 >
@@ -28,22 +27,22 @@
     </label>
 
     <select 
-        x-model="selectedUuid"
+        x-model="settlementId"
         class="w-full rounded-lg border-gray-300 focus:ring-2 ring-1 focus:ring-green-500 focus:border-green-500"
     >
         <option value="" selected disabled>— Choose your name —</option>
-        @foreach ($contacts as $contact)
-            <option value="{{ $contact->uuid }}">{{ $contact->first_name }}</option>
+        @foreach ($settlements as $settlement)
+            <option value="{{ $settlement->id }}">{{ $settlement->contact->first_name }}</option>
         @endforeach
     </select>
 
 
     <button
         type="button"
-        @click="if (selectedUuid) window.location = `${baseUrl}/${selectedUuid}`"
-        :disabled="!selectedUuid"
+        @click="if (settlementId) window.location = `/settle/petit-paris/${settlementId}`"
+        :disabled="!settlementId"
         class="inline-flex items-center justify-center rounded-lg px-4 py-2 text-white transition"
-        :class="selectedUuid ? 'bg-green-600 hover:bg-green-700' : 'bg-gray-300 cursor-not-allowed text-gray-600'"
+        :class="settlementId ? 'bg-green-600 hover:bg-green-700' : 'bg-gray-300 cursor-not-allowed text-gray-600'"
     >
         Go
     </button>
