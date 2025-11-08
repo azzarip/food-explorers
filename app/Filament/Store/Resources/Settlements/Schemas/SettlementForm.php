@@ -14,8 +14,6 @@ class SettlementForm
         return $schema
             ->components([
                 ContactSelect::make(),
-                TextInput::make('conversion_factor')
-                    ->numeric(),
             Repeater::make('details')
     ->schema([
         TextInput::make('description')->required(),
