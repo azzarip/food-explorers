@@ -3,13 +3,28 @@
 @php
     $seo = new SEO(
         title: 'Food Explorers - Omakase Menu',
-        description: 'Omakase Menu at Yu-An on the 15. October 2024. Places are limited, book now.',
+        description: 'Omakase Menu at Yu-An on the 25. November 2025. Places are limited, book now.',
         robots: 'noindex, nofollow',
     );
 @endphp
 
 @section('main')
-<div class="flex flex-row items-center justify-between lg:items-start">
+<div class="relative h-screen w-full bg-cover bg-center" style="background-image: url('/images/omakasebg.webp');">
+  {{-- <div class="absolute inset-0 bg-black/30"></div> --}}
+
+  <!-- Your content -->
+  <div class="relative z-10 flex items-center flex-col justify-center h-full text-white">
+    <p class="text-3xl lg:text-4xl font-trajan text-amber-400">Food Explorers</p>
+    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold">OMAKASE</h1>
+    <p class="text-2xl lg:text-3xl">Yu An</p>
+    <p class="text-2xl lg:text-3xl text-amber-200 pt-8">Tuesday 25. November 2025</p>
+    <div class="max-w-sm px-4">
+        <x-button link="#article" >Read more</x-button>
+    </div>
+  </div>
+</div>
+
+<div class="flex flex-row items-center justify-between lg:items-start" id="article">
 <div class="flex flex-row items-center justify-start w-fit">
     <div class="w-24 p-1 mx-auto mt-4 mb-2 rounded-full lg:w-32">
         <img src="{{ image('logo_sm.webp') }}" alt="Logo Food Explorers" class="mx-auto">
@@ -22,14 +37,12 @@
 </div>
 <article class="max-w-3xl mx-auto">
     <h1 class="font-serif text-4xl font-semibold text-center">Omakase at Yu-An</h1>
-    <p class="mt-2 text-xl text-center">Tuesday 15. October 2024, 19:00</p>
+    <p class="mt-2 text-xl text-center">Tuesday 25. October 2025, 19:15</p>
 
-    <h2 class="my-6 font-serif text-2xl font-semibold">What is this dinner?</h2>
-
-    <div class="space-y-4">
+    <div class="space-y-4 mt-8">
         <p><strong> Omakase お任せ</strong> is a Japanese term that means "<em>I leave it up to you</em>".</p>
         <p>It is a commonly used expression for a menu organized by the chefs of very famous restaurants.</p>
-        <p>On <strong>Tuesday 15 October</strong>, the team of the restaurant of Yu An will welcome us on a splendid journey through the Nippon food.
+        <p>On <strong>Tuesday 25 October</strong>, the team of the restaurant of Yu An will welcome us on a splendid journey through the Nippon food.
             Sushi, hot and cold dishes, grilled japanese meat and sake for the bravest!</p>
         <p> <strong>Yu-An</strong>, near Stauffacher, is one of the best Japanese restaurant of Zurich with <strong>4.8 stars on Google Maps</strong> </p>
         <p>The restaurant style is called <strong>Izakaya</strong>, where various dishes are served together on the table to share with other people.</p>
@@ -67,19 +80,24 @@
     </ul>
     <h3 class="my-6 font-serif text-2xl">The Mains - 4. Round</h3>
     <ul class="pl-4 space-y-4">
-        <li><strong>Grilled Yakiniku</strong>  
-            <br>Succulent grilled beef (Ribeye CH) slices, marinated in a savory soy-based sauce, served with vegetables</li>
         <li><strong>Miso-Glazed Nasu Dengaku (Vegi)</strong>  
             <br>Grilled eggplant with a rich miso glaze, a perfect blend of sweet and savory.</li>
         <li><strong>Buta no Kakuni</strong>  
             <br>Tender, slow-braised pork belly, served in a flavorful soy garnish.</li>
-        <li><strong>Steamed Rice (if requested)</strong>  
-            <br>Light and fluffy, served to accompany your meal just the way you like it.</li>
+        <li class="mt-4">
+            <p class="italic">Steamed Rice <span>(can be ordered separately but it is <strong>not included</strong> )</span></p>
+        </li>
     </ul>
     <h3 class="my-6 font-serif text-2xl">Dessert - 5. Round</h3>
     <p class="pl-4 mb-4">Dessert is not included, but the staff is available if you would like to order something sweet to finish your meal.</p>
 
 
+    
+    <div class="px-4 max-w-md mx-auto my-8">
+        <x-button link="https://wa.me/41787131882?text=Hey%2C%20I%20would%20like%20to%20join%20the%20Omakase" target="_blank">
+        Click here to book!
+        </x-button> 
+    </div>
     
     <div class="px-4 pb-4 bg-blue-100 border-4 rounded-lg border-sky-700">
         <h3 class="my-6 font-serif text-xl text-center">Drinks are not included.</h3>
@@ -94,82 +112,34 @@
         <p>You will have this menu, only for that night at:</p>
         <p class="text-center">
             <span class="font-serif text-4xl text-red-900 line-through">97.</span>
-            <span class="font-serif text-6xl text-green-900">74.-</span>
+            <span class="font-serif text-6xl text-green-900">76.-</span>
         </p>
-        <p>74.- Francs per person, for all that magic you have seen above!</p>
-        <p>The offer is valid until:</p>
-        <p class="my-6 font-serif text-2xl text-center">Friday, 04 October 2024, 12:00pm (noon).</p>
-
-        <p class="my-6 font-serif text-xl text-center">or until all seats are reserved!</p>
+        <p>76.- Francs per person, for all that magic you have seen above!</p>
+        <p>The offer is valid until places are sold out.</p>
         <p>P.S. We are going to be <strong>sold out</strong> pretty fast!</p>
     </div>
  <hr class="my-2">
 
- <div class="p-4 mb-5 text-xl text-center bg-red-100 border-2 border-red-800 rounded-lg">
-    <p>Only less than 10 seats are available! </p>
- </div>
-    <p class="text-xl font-semibold text-center underline underline-offset-4 decoration-4 decoration-green-600">Now you have two choices:</p>
-
-    <div class="space-y-4">
-        <a href="#booking" class="block mt-4 text-xl font-semibold text-center underline"> > Book now your seat! < </a>
-        <p>Join the greatest group of foodies and share one of the <strong>most amazing Japanese dinners</strong> in Zurich.</p>
-        <p><span class="">Enjoy a delightful night, as a <strong>real food explorer</strong></span>, and taste different Japanese dishes in a pure Izakaya style.</p>
-        <p>Meet other foodies, meet new people, laugh, drink, eat, smile!</p>
-        <p></p>
-    </div>
-
-    <div class="mt-8 space-y-4">
-        <p class="font-semibold text-center text-red-900">Or you can wait and say:</p>
-        <p class="font-serif text-2xl italic text-center">...I'll do it later...</p>
-        <p>This is what is going to happen:</p>
-        <p> 1. You "think I'm going to do that later..."</p>
-        <p> 2. Places run out.</p>
-        <p> 3. You want to join but you can't.</p>
-        <p> 4. We will all go together except you.</p>
-        <p> 5. You will end up alone, with a cold pizza from the delivery.</p>
-        <p class="font-semibold">This is what you really want?</p>
-        <p>A cold pizza at home alone, while all of us are at the restaurant to taste a japanese omakase in the best restaurant of Zurich?</p>
-        <p class="font-serif text-2xl italic">... see?</p>
-        <a href="#booking" class="block px-2 py-2 text-2xl font-semibold text-center"> Book now, or you get cold pizza! </a>
-    </div>
-
-
-    <p></p>
-    
-    {{-- <div class="w-full px-4 py-4 space-y-4 border-2 rounded-lg">
-        <p><x-heroicon-o-clock class="inline w-6 mb-1 mr-2" /><span class="font-semibold">Time:</span>
-            19:00 - ...
-        </p>
-        <p><x-heroicon-o-map-pin class="inline w-6 mb-1 mr-2" /><span class="font-semibold">Where:</span>
-            Yu An,  Werdstrasse 66, 8004 Zürich (<a class="inline-link"
-                href="https://g.co/kgs/2ePeDkt" target="__blank" rel="noopener nofollow">Maps</a>)</p>
-
-        <p><x-heroicon-o-banknotes class="inline w-6 mb-1 mr-2" /><span class="font-semibold">Price:</span>
-            74.-</p>
-    </div> --}}
-
 
     <h2 class="pt-6 mb-4 font-serif text-2xl font-semibold" id="booking">How to book?</h2>
-    <p class="mb-6">Follow the instructions in one of these two methods.</p>
-    <div class="flex flex-col items-start justify-around w-full mt-4 lg:flex-row">
-        <a href="/twint" class="block p-4 mx-auto text-xl std-button">Book with Twint</a>
-        <p class="mx-auto my-6 font-semibold">or</p>
-        <div class="mx-auto">
-            <a href="https://book.stripe.com/8wM7ttfIT37r6BicMM" rel="nofollow noopener" target="_blank" class="block p-4 text-xl std-button">Book with Credit Cart</a>
-            <p class="text-center">(+2.70 fee)</p>
-        </div>
-    </div>
 
+    <div class="px-4 max-w-md mx-auto">
+        <x-button link="https://wa.me/41787131882?text=Hey%2C%20I%20would%20like%20to%20join%20the%20Omakase" target="_blank">
+        Click here to book!
+        </x-button> 
+    </div>
     <h3 class="block mt-12 text-xl font-semibold">The Fine Print Just to Be Totally Clear</h3>
     <ul class="pt-2 mb-4 space-y-4 list-inside">
         <li>All prices are in Swiss Francs and include the MwSt.</li>
+        <li>The menu is not changable nor modifiable, you can order additional dishes at your own expense.</li>
         <li>Spots are assigned on a first-come, first-served basis. They may terminate before the deadline.</li>
-        <li>The <strong>deadline</strong> for the booking, cancellations and reimbursement is:</li>
-        <li class="text-xl font-semibold text-center">Friday 04 October 2024 12:00pm (noon), Zurich Time</li>
-        <li>To cancel, write a message via Whatsapp (preferably), or Event, the timestamp of the message is the reference. I will twint you back the total amount or cancel the credit cart payment.</li>
-        <li class="font-semibold">Changing the RSVP on Event will not be considered, since I do not get notified. Please write me.</li>
+        <li>The ticket is fully (100%) reimbursable until:  </li>
+        <li class="font-semibold text-center">Tuesday 18 October 2025 12:00pm (noon), Zurich Time</li>
         <li>Any later from that date, no reimbursement will be issued, and the transaction will be considered final.</li>
+        <li>If a waitlist is available your place will be given to the waitlist with a fee of CHF 5.-</li>
         <li>The participation is not nominative, in case you cannot join, you can give your place to someone else. (You have to find that person.)</li>
+        <li>To cancel, write a message at <a href="tel:+41787131882">+41787131882</a> or email at <a href="mailto:marco.azzari@foodexplorers.ch" class="font-semibold">marco.azzari@foodexplorers.ch</a> , or Event, the timestamp of the message is the reference.</li>
+        <li class="font-semibold">Changing the RSVP on Meetup will not be considered, since I do not get notified. Please write me.</li>      
         <li>In case of cancellation of the dinner from my side, a full 100% reimbursement will be issued.</li>
     </ul>
 </article>

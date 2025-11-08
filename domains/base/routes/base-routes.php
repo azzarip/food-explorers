@@ -24,6 +24,7 @@ Route::group([
 
 
     Route::view('/emilia', 'closed');
+    Route::view('/yu-an-omakase', 'events.omakase');
     
 
     Route::view('/settle/petit-paris', 'base::settle.index');
