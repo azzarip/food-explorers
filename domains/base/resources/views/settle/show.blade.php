@@ -16,7 +16,7 @@
             <p class="font-serif text-lg">Ciao {{ $contact->first_name }}!</p>
 
 
-            @if ($details && $settlement->amount > 0)
+            @if ($details)
                 <p class="mt-2">
                     Here you can find the list of the additional expenses for our trip together:
                 </p>
@@ -196,6 +196,7 @@
                     Everything is ok! 🎉 No additional expenses.
                 </div>
             @endif
+        </section>
     </main>
 
 @endsection
