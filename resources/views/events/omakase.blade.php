@@ -38,12 +38,12 @@
 </div>
 <article class="max-w-3xl mx-auto">
     <h1 class="font-serif text-4xl font-semibold text-center">Omakase at Yu-An</h1>
-    <p class="mt-2 text-xl text-center">Tuesday 25. October 2025, 19:15</p>
+    <p class="mt-2 text-xl text-center">Tuesday 25. November 2025, 19:15</p>
 
     <div class="space-y-4 mt-8">
         <p><strong> Omakase お任せ</strong> is a Japanese term that means "<em>I leave it up to you</em>".</p>
         <p>It is a commonly used expression for a menu organized by the chefs of very famous restaurants.</p>
-        <p>On <strong>Tuesday 25 October</strong>, the team of the restaurant of Yu An will welcome us on a splendid journey through the Nippon food.
+        <p>On <strong>Tuesday 25 November</strong>, the team of the restaurant of Yu An will welcome us on a splendid journey through the Nippon food.
             Sushi, hot and cold dishes, grilled japanese meat and sake for the bravest!</p>
         <p> <strong>Yu-An</strong>, near Stauffacher, is one of the best Japanese restaurant of Zurich with <strong>4.8 stars on Google Maps</strong> </p>
         <p>The restaurant style is called <strong>Izakaya</strong>, where various dishes are served together on the table to share with other people.</p>
@@ -136,7 +136,7 @@
   <li>The menu cannot be changed or modified. You may order additional dishes at your own expense.</li>
   <li>Seats are assigned on a first-come, first-served basis and may sell out before the deadline.</li>
   <li>The ticket is fully refundable until:</li>
-  <li class="font-semibold text-center">Tuesday, 18 October 2025 — 13:00 (Zurich time)</li>
+  <li class="font-semibold text-center">Tuesday, 18 November 2025 — 13:00 (Zurich time)</li>
   <li>After this deadline, no refunds will be issued. All sales are final.</li>
   <li>If a waitlist is available, your spot may be reassigned with a CHF 5.– processing fee.</li>
   <li>Participation is not personal. If you cannot attend, you may transfer your ticket to another person (you are responsible for finding the replacement).</li>
