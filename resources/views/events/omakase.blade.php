@@ -3,6 +3,7 @@
 @php
     $seo = new SEO(
         title: 'Food Explorers - Omakase Menu',
+        image: image('omakasebg.webp'),
         description: 'Omakase Menu at Yu-An on the 25. November 2025. Places are limited, book now.',
         robots: 'noindex, nofollow',
     );
