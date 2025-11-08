@@ -130,17 +130,28 @@
     </div>
     <h3 class="block mt-12 text-xl font-semibold">The Fine Print Just to Be Totally Clear</h3>
     <ul class="pt-2 mb-4 space-y-4 list-inside">
-        <li>All prices are in Swiss Francs and include the MwSt.</li>
-        <li>The menu is not changable nor modifiable, you can order additional dishes at your own expense.</li>
-        <li>Spots are assigned on a first-come, first-served basis. They may terminate before the deadline.</li>
-        <li>The ticket is fully (100%) reimbursable until:  </li>
-        <li class="font-semibold text-center">Tuesday 18 October 2025 12:00pm (noon), Zurich Time</li>
-        <li>Any later from that date, no reimbursement will be issued, and the transaction will be considered final.</li>
-        <li>If a waitlist is available your place will be given to the waitlist with a fee of CHF 5.-</li>
-        <li>The participation is not nominative, in case you cannot join, you can give your place to someone else. (You have to find that person.)</li>
-        <li>To cancel, write a message at <a href="tel:+41787131882">+41787131882</a> or email at <a href="mailto:marco.azzari@foodexplorers.ch" class="font-semibold">marco.azzari@foodexplorers.ch</a> , or Event, the timestamp of the message is the reference.</li>
-        <li class="font-semibold">Changing the RSVP on Meetup will not be considered, since I do not get notified. Please write me.</li>      
-        <li>In case of cancellation of the dinner from my side, a full 100% reimbursement will be issued.</li>
+<ul class="space-y-2 text-sm leading-relaxed">
+  <li>All prices are in Swiss Francs (CHF) and include VAT (MwSt.).</li>
+  <li>The menu cannot be changed or modified. You may order additional dishes at your own expense.</li>
+  <li>Seats are assigned on a first-come, first-served basis and may sell out before the deadline.</li>
+  <li>The ticket is fully refundable until:</li>
+  <li class="font-semibold text-center">Tuesday, 18 October 2025 — 13:00 (Zurich time)</li>
+  <li>After this deadline, no refunds will be issued. All sales are final.</li>
+  <li>If a waitlist is available, your spot may be reassigned with a CHF 5.– processing fee.</li>
+  <li>Participation is not personal. If you cannot attend, you may transfer your ticket to another person (you are responsible for finding the replacement).</li>
+  <li>
+    To cancel, contact me by phone at 
+    <a href="tel:+41787131882" class="font-semibold underline ">+41 78 713 1882</a> 
+    or by email at 
+    <a href="mailto:marco.azzari@foodexplorers.ch" class="font-semibold underline hover:text-blue-700">marco.azzari@foodexplorers.ch</a>.
+    The timestamp of your message will be used as the reference time.
+  </li>
+  <li class="font-semibold text-red-600">
+    Changing your RSVP on Meetup will <u>not</u> be considered, as I don’t receive notifications. Please contact me directly.
+  </li>
+  <li>In case the dinner is canceled from my side, a full (100%) refund will be issued.</li>
+</ul>
+
     </ul>
 </article>
 
