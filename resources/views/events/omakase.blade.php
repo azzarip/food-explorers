@@ -1,4 +1,4 @@
-@extends('azzarip::layouts.1col', ['bg' => 'bg-slate-50', 'nav' => false])
+@extends('azzarip::layouts.base', ['bg' => 'bg-slate-50', 'nav' => false])
 
 @php
     $seo = new SEO(
