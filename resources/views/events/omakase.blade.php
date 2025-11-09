@@ -9,7 +9,8 @@
     );
 @endphp
 
-@section('main')
+@section('body')
+<main>
 <div class="relative h-screen w-full bg-cover bg-center" style="background-image: url('/images/omakasebg.webp');">
   {{-- <div class="absolute inset-0 bg-black/30"></div> --}}
 
@@ -36,7 +37,7 @@
     <img src="https://static.wixstatic.com/media/82d2d6_4800dfcab3c74a20a267d944aeff8122~mv2.jpg/v1/fill/w_517,h_515,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/82d2d6_4800dfcab3c74a20a267d944aeff8122~mv2.jpg" alt="Yu An Logo" class="">
 </div>
 </div>
-<article class="max-w-3xl mx-auto">
+<article class="max-w-3xl mx-auto px-2">
     <h1 class="font-serif text-4xl font-semibold text-center">Omakase at Yu-An</h1>
     <p class="mt-2 text-xl text-center">Tuesday 25. November 2025, 19:15</p>
 
@@ -45,7 +46,7 @@
         <p>It is a commonly used expression for a menu organized by the chefs of very famous restaurants.</p>
         <p>On <strong>Tuesday 25 November</strong>, the team of the restaurant of Yu An will welcome us on a splendid journey through the Nippon food.
             Sushi, hot and cold dishes, grilled japanese meat and sake for the bravest!</p>
-        <p> <strong>Yu-An</strong>, near Stauffacher, is one of the best Japanese restaurant of Zurich with <strong>4.8 stars on Google Maps</strong> </p>
+        <p> <strong>Yu-An</strong>, near Stauffacher, is one of the best Japanese restaurant of Zurich with <strong>4.8 ⭐ stars on Google Maps</strong> </p>
         <p>The restaurant style is called <strong>Izakaya</strong>, where various dishes are served together on the table to share with other people.</p>
         <p>This is the most popular form of gastronomy in Japan. <strong>It is a very social way to eat and you will have the chance to enjoy a great variety of dishes.</strong></p>
         <p>But let's explore the menu piece by piece:</p>
@@ -107,6 +108,39 @@
     </div>
     <hr>
 
+    <h2 class="my-6 font-serif text-2xl font-semibold text-center">The Restaurant</h2>
+<div class="mt-8 space-y-5 text-lg leading-relaxed">
+  <p>
+    Hidden just a few steps from Stauffacher, behind a discreet wooden façadelies <strong>Yu-An</strong>.
+  </p>
+  <p>
+    Yu-An is not just a restaurant, an <em>Izakaya</em> in spirit, where dishes arrive like small gifts from the kitchen: all crafted to be shared, discovered, and remembered.
+  </p>
+
+  <div class="max-w-sm border-amber-500 border rounded px-4 py-2 shadow-md mx-auto flex">
+        <a href=https://maps.app.goo.gl/xmCFg6jS4FHWVEUD6">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPGdJvTOaGtrQVvmwxXRfSfZ9PRC1msOHeXyL3U=w408-h612-k-no" alt="Yu An Interior" class="w-32 h-32 mr-4">
+        </a>
+        <div>
+            <h3 class="font-bold text-serif text-2xl lg:text-3xl">Yu-An</h3>
+            <p class="italic">Werdstrasse 66, 8004 Zürich</p>
+            <p>4.8 <small>⭐⭐⭐⭐⭐</small> (778)</p>
+        </div>
+
+  </div>
+
+  <p>
+    Highly rated on Google and Tripadvisor, Yu-An has earned a loyal following among Zurich’s Japanese-food enthusiasts. 
+    Many guests describe it as one of the most consistent and Japanese restaurants in Zurich.
+  </p>
+
+  <p>
+    Getting a table can be a challenge, with evenings often booked out days in advance.   </p>
+
+  <p>
+    On this evening, Yu-An becomes ours.
+  </p>
+</div>
     <div class="mt-6 space-y-4">
         <h2 class="mt-6 mb-4 font-serif text-2xl font-semibold">How much does it costs?</h2>
         <p>If you go to the restaurant with 4 people to taste all of the previously shown menu you will pay almost 400.- Francs in Total.</p>
@@ -155,7 +189,7 @@
 
     </ul>
 </article>
-
+</main>
 
 
 @endsection
