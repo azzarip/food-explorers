@@ -22,7 +22,7 @@
         @if($event->isSoldOut)
             <h2 class="text-xl font-bold text-center lg:text-2xl font-trajan">Join the waitlist</h2>
         @else
-            <h2 class="text-xl font-bold text-center lg:text-2xl font-trajan">Fill the form</h2>
+            <h2 class="text-xl font-bold text-center lg:text-2xl font-trajan">Reserve your seat</h2>
         @endif
 
         <x-book::auth.contact />

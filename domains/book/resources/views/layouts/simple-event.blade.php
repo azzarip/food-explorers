@@ -9,7 +9,7 @@
 @endphp
 
 @section('first_column')
-    <div x-data="{ 'open': {{ var_export(!auth()->check() && !request()->query('v')) }} || (window.innerWidth >= 1024) }">
+    <div x-data="{ 'open': {{ var_export(!auth()->check() && !auth('soft')->check() && !request()->query('v')) }} || (window.innerWidth >= 1024) }">
 
         <x-book::event-card :$event :$offer />
 

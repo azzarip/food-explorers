@@ -35,8 +35,11 @@ $event = $offer->eventWithData;
 <x-button :link="$myUrl">Visit your Private Area</x-button>
 @else
 @php($contact = Auth::guard('soft')->user())
+@if($contact->isRegistered)
+<x-button :link="durl('/login', 'base')->withAll()">Login to access your Private Area</x-button>
+@else
 <h1 class="mb-2 text-3xl leading-normal text-center text-black">Finish your account!</span></h1>
-
+<p>Create your password to save your spot and access your account anytime.</p>
 <x-forms::base :action="route('password')" button="Complete the account!">
     @csrf
     <div class="space-y-4">
@@ -52,5 +55,6 @@ $event = $offer->eventWithData;
 
 </x-forms::base >
 </div>
+@endif
 @endauth
 @endsection
