@@ -27,24 +27,28 @@ class BookingController
             return view('book::pages.expired');
         }
 
-        if (Auth::guest()) {
+        if (Auth::guest() && Auth::guard('soft')->guest()) {
             return view('book::pages.auth');
         }
 
-        $contact = Auth::user();
+        $contact = Auth::user() ?? Auth::guard('soft')->user();
+        
+
 
         if ($contact->isGoingTo($event)) {
             return redirect($offer->url.'/success');
         }
+        
 
         InterestForm::achieve($offer->getInterestedGoal(), $offer->slug);
 
         if ($event->isSoldOut) {
             return view('book::pages.sold-out');
         }
+        
 
         $payment = OfferPayment::get($offer);
-
+    
         return view('book::pages.payment', [
             'clientSecret' => $payment->payment_secret,
             'return_url' => $request->url().'/return',

@@ -31,6 +31,26 @@ $event = $offer->eventWithData;
 </div>
 <hr class="w-4/5 mx-auto my-4">
 <div class="mt-4">
+@auth
 <x-button :link="$myUrl">Visit your Private Area</x-button>
+@else
+@php($contact = Auth::guard('soft')->user())
+<h1 class="mb-2 text-3xl leading-normal text-center text-black">Finish your account!</span></h1>
+
+<x-forms::base :action="route('password')" button="Complete the account!">
+    @csrf
+    <div class="space-y-4">
+        @error('user')
+        <p class="px-2 py-1 text-black rounded-xl" style="background-color: #fca5a5;"><x-heroicon-o-exclamation-triangle
+            style="display: inline; width: 24px; height: 24px;" />
+            @lang("teavel::auth.$message")</p>
+        @enderror
+
+        <x-forms::field.email :email="$contact->email" />
+
+        <x-forms::field.password new=true />
+
+</x-forms::base >
 </div>
+@endauth
 @endsection

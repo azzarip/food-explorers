@@ -56,10 +56,10 @@ class OfferPayment
 
     protected static function getContact()
     {
-        if (Auth::guest()) {
+        if (Auth::guest() && Auth::guard('soft')->guest()) {
             throw new AuthenticationException;
         }
 
-        return Auth::user();
+        return Auth::user() ?? Auth::guard('soft')->user();
     }
 }

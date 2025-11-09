@@ -15,7 +15,7 @@ class ReturnController
     {
         $redirect_status = $request->query('redirect_status');
 
-        if (Auth::guest()) {
+        if (Auth::guest() && Auth::guard('soft')->guest()) {
             return redirect($offer->url);
         }
 

@@ -11,7 +11,7 @@
 
 @section('body')
 <main>
-<div class="relative h-screen w-full bg-cover bg-center" style="background-image: url('/images/omakasebg.webp');">
+<div class="relative h-screen w-full bg-cover bg-center" style="background-image: url('/images/omakase.webp');">
   {{-- <div class="absolute inset-0 bg-black/30"></div> --}}
 
   <!-- Your content -->

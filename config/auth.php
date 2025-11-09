@@ -40,6 +40,10 @@ return [
             'driver' => 'session',
             'provider' => 'contacts',
         ],
+        'soft' => [
+            'driver' => 'session',
+            'provider' => 'contacts',
+        ],
         'admin' => [
             'driver' => 'session',
             'provider' => 'users',

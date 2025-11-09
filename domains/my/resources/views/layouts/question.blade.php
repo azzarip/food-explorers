@@ -1,4 +1,4 @@
-@extends('azzarip::base', ['bg' => 'bg-gray-900', 'nav' => false ])
+@extends('azzarip::layouts.base', ['bg' => 'bg-gray-900', 'nav' => false ])
 
 @section('body')
 @yield('question')
