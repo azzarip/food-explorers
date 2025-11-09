@@ -14,12 +14,6 @@ class MyController
     {
         $contact = Auth::user();
 
-        if ($contact->hasNotTag('Question - Event Types')) {
-            $types = $contact->hasTags(['Food', 'Drinks', 'Adventures']);
-
-            return view('my::questions.event-types', $types);
-        }
-
         return view('my::homepage');
     }
 }
