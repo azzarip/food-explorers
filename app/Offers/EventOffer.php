@@ -9,7 +9,7 @@ class EventOffer extends BaseOffer
 {
     const IS_SHIPPABLE = false;
 
-    const DAYS_TO_REIMBURSE = 8;
+    const DAYS_TO_REIMBURSE = 7;
 
     public function getPrice()
     {

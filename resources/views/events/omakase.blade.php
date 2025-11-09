@@ -96,7 +96,7 @@
 
     
     <div class="px-4 max-w-md mx-auto my-8">
-        <x-button link="https://wa.me/41787131882?text=Hey%2C%20I%20would%20like%20to%20join%20the%20Omakase" target="_blank">
+        <x-button link="{{ durl('/omakase', 'book') }}" target="_blank">
         Click here to book!
         </x-button> 
     </div>
@@ -159,7 +159,7 @@
     <h2 class="pt-6 mb-4 font-serif text-2xl font-semibold" id="booking">How to book?</h2>
 
     <div class="px-4 max-w-md mx-auto">
-        <x-button link="https://wa.me/41787131882?text=Hey%2C%20I%20would%20like%20to%20join%20the%20Omakase" target="_blank">
+        <x-button link="{{ durl('/omakase', 'book') }}" target="_blank">
         Click here to book!
         </x-button> 
     </div>
