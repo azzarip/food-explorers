@@ -13,6 +13,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule): void
     {
         $schedule->command('backup:run')->daily()->at('03:30');
+        $schedule->command('wine-events:prune')->daily()->at('04:00');
         $schedule->command('backup:clean')->daily()->at('04:30');
         $schedule->command('teavel:run')->everyMinute()
             ->withoutOverlapping()
