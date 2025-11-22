@@ -9,6 +9,7 @@ use Illuminate\Support\Collection;
 
 class Loader
 {
+    protected bool $hasEvents = false;
     protected string $tz = 'Europe/Zurich';
 
     protected ?string $locale = 'en';
@@ -35,7 +36,14 @@ class Loader
             ->limit(100)
             ->get();
 
+        if ($rows->isEmpty()) {
+            $this->days = collect();
+            $this->hasEvents = false;
+            return $this;
+        }
+
         $this->days = $this->toDays($rows);
+        $this->hasEvents = true;
 
         return $this;
     }
@@ -72,6 +80,17 @@ class Loader
         return $this->days;
     }
 
+    public function hasEvents(): bool
+    {
+        return $this->hasEvents;
+    }
+
+        public function hasNoEvents(): bool
+    {
+        return ! $this->hasEvents;
+    }
+
+    
     protected function toDays(Collection $dates): Collection
     {
         $today = now($this->tz)->startOfDay();

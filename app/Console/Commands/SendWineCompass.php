@@ -30,12 +30,21 @@ class SendWineCompass extends Command
      */
     public function handle()
     {
+        $dry = (bool) $this->option('dry-run');
+        
         $loader = Loader::nextWeek();
+
+        if($loader->hasNoEvents()) {
+            if ($dry) {
+                Log::info('[Wine Compass] (dry-run) No Events found');
+            } 
+            return self::SUCCESS;
+        }
 
         $tag = Tag::name('Wine Newsletter');
         $contactsQuery = $tag->contacts()->whereNotNull('email');
 
-        $dry = (bool) $this->option('dry-run');
+
 
         $contactsQuery->chunk(200, function ($contacts) use ($loader, $dry) {
             foreach ($contacts as $contact) {
