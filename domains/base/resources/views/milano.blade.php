@@ -1,4 +1,4 @@
-@extends('azzarip::layouts.1col', ['bg' => 'bg-slate-50', 'nav' => false])
+@extends('azzarip::layouts.base', ['bg' => 'bg-slate-50/50', 'nav' => false])
 
 @php
     $seo = new SEO(
@@ -7,33 +7,122 @@
         robots: 'noindex, nofollow',
     );
 @endphp
+@push('head')
+    <script src="https://player.vimeo.com/api/player.js"></script>
+@endpush
 
-@section('main')
-<div class="flex flex-row items-center justify-between lg:items-start">
-<div class="flex flex-row items-center justify-start w-fit">
-    <div class="w-24 p-1 mx-auto mt-4 mb-2 rounded-full lg:w-32">
-        <img src="{{ image('logo_sm.webp') }}" alt="Logo Food Explorers" class="mx-auto">
+@section('body')
+<main x-data>
+<div class="bg-black w-full min-h-screen pb-4 pt-4 flex flex-col justify-around">
+    <div>
+        <p class="text-2xl lg:text-3xl text-center font-trajan text-white">Marvelous Milano</p>
+        <h1 class="text-3xl lg:text-4xl text-center font-trajan text-amber-200">Watch the Trailer Now</h1>
     </div>
-    <p class="font-serif text-2xl font-semibold lg:text-4xl">Food Explorers</p>
-</div>
+    <div class="max-w-2xl mx-auto">
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1140435831?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Milano Trailer"></iframe></div>
+    </div>
+    <a class="block mx-auto max-w-lg" href="#form">
+        <x-button >Join the Priority List and claim your cashback</x-button>
+    </a>
 </div>
 <article class="max-w-3xl mx-auto">
-    <h1 class="font-serif text-4xl font-semibold text-center">Milano Meraviglia</h1>
-    <p class="px-4 py-2 mx-auto mt-4 text-3xl font-semibold text-center text-amber-700 w-fit">Friday 4 - Sunday 6 April 2025 </p>
-    <p class="mt-2 text-xl font-semibold text-center font-head">This is my <span class="text-red-800">SPECIAL INVITE</span> to come with me and other Food Explorers to Milan, for a weekend of incredible Food, amazing drinks and unforgettable memories</p>
-    <img src="https://media.istockphoto.com/id/1059724614/photo/milan-cathedral-on-sunrise-italy.jpg?s=612x612&w=0&k=20&c=w7dD72xvRNz8SF1bwxNFkgBLzy6QNqXFzgry5WCWsXY=" alt="Milano Picture" class="mx-auto mt-4 rounded-lg shadow-lg">
     
-    <div class="mt-24 space-y-4">
+    <div class="mt-12 space-y-4 px-2">
         <p class="font-serif text-3xl font-semibold">Dear Food Explorer,</p>
         <p>If you are reading these words, it means you care and like the events I have been organizing in the past years.</p>
         <p>If you are new or you have been here for many years, you know I take great care in giving the best experiences to my guests.</p>
         <p>And I have been cooking up this project for many months.</p>
         <p>Therefore let me get straight to point...</p>
-        <p class="font-semibold">I am organizing a special weekend from Friday 17 to Sunday 19 April in Milano.</p>
+        <p class="font-semibold text-xl font-serif">I am organizing a special weekend from Friday 17 to Sunday 19 April in Milano.</p>
         <p>During this weekend I will pick the best and most interesting food experiences of Milano.</p>
-        
     </div>
-    <div class="max-w-md mx-auto">
+     <section class="mt-10 space-y-4 leading-relaxed text-slate-100 bg-black py-4 px-8 rounded-xl">
+                <h2 class="font-serif text-2xl font-semibold sm:text-3xl">Milano Is at the Heart of Italy’s Culinary Innovation</h2>
+                <p>Most people think of Milano as a fast, cold, “business only” city. Fashion. Fairs. Design. Deadlines.</p>
+                <p>But beneath this surface, there is a completely different Milano.</p>
+                <p>
+                    A city that isn’t just defined by its traditions —
+                    <span class="font-semibold text-slate-50">it is defined by what it creates.</span>
+                </p>
+                <p>Milano does not seduce you with ancient monuments or perfect postcard pictures. It seduces you with something more contemporary, more alive, more delicious.</p>
+                <p>Here, food is not simply prepared — it is designed, refined, and pushed forward. Chefs experiment, elevate ingredients, and shape where taste in Italy is going next.</p>
+                <p class="border-l-2 border-yellow-500/60 pl-4 text-slate-200/90">
+                    This is the Milano I want to show you: not the postcard, but the counter. Not the crowd, but the table. Not the usual, but the unforgettable.
+                </p>
+            </section>
+
+            <!-- The weekend + Omakase -->
+            <section class="mt-10 grid gap-8 lg:gap-10 px-2">
+                <div class="space-y-4 leading-relaxed">
+                    <h2 class="font-serif text-2xl font-semibold sm:text-3xl">A Small Group, a Big Discovery</h2>
+                    <p>This is not a big tour. This is not a public event. This adventure is intentionally intimate.</p>
+                    <p>For this edition of <span class="font-semibold">Marvelous Milano</span>, I am taking a very small group of Food Explorers with me.</p>
+                    <ul class="mt-2 space-y-2 ">
+                        <li class="flex gap-2">
+                            <span>⭐</span>
+                            <span>3 days in Milano, from Friday evening to Sunday.</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span>⭐</span>
+                            <span>A curated selection of restaurants and experiences that show how Milano is changing the culinary landscape of Italy.</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span>⭐</span>
+                            <span>An extremely intimate Omakase on the 16 of April, that many consider among the best in Europe.</span>
+                        </li>
+                    </ul>
+                    <p>
+                        Last year we went to Milano for the classics. This time, the line-up and the storyline are completely different. We’ll explore how the brightest chefs are rewriting what dining in Italy can be.
+                    </p>
+                    <p class="font-medium">
+                        If you enjoyed the Omakase in Zürich, this is the “next level” — a counter with only a handful of seats, and six Food Explorers around it.
+                    </p>
+                </div>
+                </section>
+                    <!-- Priority list + cashback -->
+            <section class="mt-12 space-y-6 rounded-3xl border bg-slate-900 p-6 sm:p-8 px-2">
+                <div class="space-y-3">
+                    <h2 class="font-serif text-2xl font-semibold sm:text-3xl text-white">This Page Is Not for Booking. It’s Only to Raise Your Hand.</h2>
+                    <p class="text-slate-200">
+                        The full program is still being refined. The final details will be shared first and exclusively with the people on this priority list.
+                    </p>
+                    <p class="text-slate-200">
+                        By joining below, you are <span class="font-semibold text-slate-50">not</span> committing to anything. You are simply telling me:
+                    </p>
+                    <p class="rounded-xl border border-slate-700 bg-slate-250 px-4 py-3 italic text-slate-200">
+                        “Marco, I’m interested. I want to see the complete program and have the first chance to secure one of the six seats.”
+                    </p>
+                </div>
+
+                <div class="grid gap-8 max-w-xl mx-auto">
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-yellow-300 text-center">Your CHF 76.– Cashback</h3>
+                        <p class="text-slate-200">
+                            As a thank you for being part of the Omakase in Zürich and raising your hand early, you unlock a
+                            <span class="font-semibold text-slate-50">CHF 76.– Cashback</span> on the Marvelous Milano 4-day adventure.
+                        </p>
+                        <ul class="mt-3 space-y-2 text-slate-200">
+                            <li class="flex gap-2">
+                                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400"></span>
+                                <span>Valid only for the Marvelous Milano adventure.</span>
+                            </li>
+                            <li class="flex gap-2">
+                                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400"></span>
+                                <span>Automatically applied to your seat if you decide to join.</span>
+                            </li>
+                            <li class="flex gap-2">
+                                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400"></span>
+                                <span>
+                                    The cashback is valid for <span class="font-semibold text-slate-50">10 days</span> after bookings officially open.
+                                </span>
+                            </li>
+                        </ul>
+                        <p class="mt-3 text-xs text-slate-400">
+                            If you don’t book within those 10 days or decide not to join, nothing happens. No charges, no penalties, no hard feelings — the bonus simply expires.
+                        </p>
+                    </div>
+                </section>
+    <div class="max-w-md mx-auto pt-4 px-2 mt-8" id="form" >
         <h3 class="font-bold text-center text-2xl lg:text-3xl">Join the Priority List and claim your cashback</h3>
         <p class="my-1">To unlock it just fill the form down here:</p>
         <x-forms::base button="Join the Priority List and claim your cashback">
@@ -44,8 +133,8 @@
                 <x-forms::field.privacy_policy />
         </x-forms::base>
     </div>
-    <div class="space-y-4 max-w-xl mx-auto mt-8">
-        <h3 class="font-bold">No Stress · No Pressure · No Commitment</h3>
+    <div class="space-y-4 max-w-xl px-2 mx-auto mt-8">
+        <h3 class="font-bold text-center">No Stress · No Pressure · No Commitment</h3>
         <p>If you complete the form you’ll be the first to receive the program.</p>
         <p>You will simply receive the program before anyone else.</p>
         <p>Then, you can decide if you want to come or not.</p>
@@ -57,7 +146,7 @@
     </div>
     <div class="mt-12"></div>
 </article>
-
+</main>
 
 
 @endsection

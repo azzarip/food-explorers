@@ -23,8 +23,7 @@ This cashback will automatically apply to your seat if you join the 4-day advent
 
 Your CHF 76.– Cashback is valid for 10 days only, starting from the moment bookings open.
 
-You will receive a dedicated email titled “_Marvelous Milano — Bookings Now Open_”
-and from that moment, the countdown begins.
+You will receive a dedicated email and a Whatsapp Message and from that moment, the countdown begins.
 
 After the 10th day, the bonus expires.
 

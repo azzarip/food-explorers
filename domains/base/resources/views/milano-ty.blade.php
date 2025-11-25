@@ -1,4 +1,4 @@
-@extends('azzarip::layouts.1col', ['bg' => 'bg-slate-50', 'nav' => false])
+@extends('azzarip::layouts.base', ['bg' => 'bg-slate-50', 'nav' => false])
 
 @php
     $seo = new SEO(
@@ -11,7 +11,7 @@
 @push('head')
     <script src="https://player.vimeo.com/api/player.js"></script>
 @endpush
-@section('main')
+@section('body')
 <div class="bg-black w-full max-lg:min-h-screen text-white text-center">
     <p class="text-center text-3xl lg:text-4xl">Thank you!</p>
     <p class="text-amber-400 text-center text-2xl lg:text-3xl">You are in the Priority List and you unlocked the cashback.</p>
@@ -27,7 +27,7 @@
     <p>Thank you for joining the Priority List for the Milano Adventure from 16 to 19 April 2026.</p>
     <p>As promised, by filling the form you have officially unlocked your CHF 76.– Cashback, which will automatically apply to your seat if you decide to join the 4-day adventure in Milano.</p>
     <p>Places are limited, so I will send you the program as soon as possible.</p>
-    <p>Remember: you will receive a dedicated email titled “_Marvelous Milano — Bookings Now Open_” and a Whatsapp Message and from that moment, the countdown of 10 days for using your cashback begins.</p>
+    <p>Remember: you will receive a dedicated email and a Whatsapp Message and from that moment, the countdown of 10 days for using your cashback begins.</p>
     <p>Don't worry, I will keep you updated with everything I am doing, you may receive an email or two with a bit of background, as I finish organizing everything.</p>
     <p>In case of any doubts or something is not clear, feel free to write me!</p>
     <p class="font-semibold text-right">Marco</p>
