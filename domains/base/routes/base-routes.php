@@ -1,6 +1,7 @@
 <?php
 
 use Domains\Base\Http\Controllers\EventPageController;
+use Domains\Base\Http\Controllers\InterestedMilanoController;
 use Domains\Base\Http\Controllers\ReviewController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,6 +27,9 @@ Route::group([
     Route::view('/emilia', 'closed');
     Route::view('/yu-an-omakase', 'events.omakase');
     
+    Route::view('/milano', 'base::milano');
+    Route::view('/milano/ty', 'base::milano-ty');
+    Route::post('/milano', InterestedMilanoController::class);
 
     Route::view('/settle/petit-paris', 'base::settle.index');
     Route::get('/settle/petit-paris/{settlement}', fn (\App\Models\Settlement $settlement) => view('base::settle.show', ['settlement' => $settlement]));

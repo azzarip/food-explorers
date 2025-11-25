@@ -13,4 +13,6 @@ use Illuminate\Support\Facades\Artisan;
 |
 */
 
-Artisan::command('test:sequence', function () {})->purpose('Test milano sequence');
+Artisan::command('test:sequence', function (
+    
+) {})->purpose('Test milano sequence');
