@@ -12,6 +12,6 @@ class InterestedMilano extends FormAutomation
     ];
 
     protected array $stop = [
-        // Add sequences to stop
+        Sequences\OmakaseFollowup::class,
     ];
 }

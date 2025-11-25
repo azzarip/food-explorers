@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Contact;
+use Azzarip\Teavel\Models\Sequence;
 use Illuminate\Support\Facades\Artisan;
 
 /*
@@ -13,6 +15,12 @@ use Illuminate\Support\Facades\Artisan;
 |
 */
 
-Artisan::command('test:sequence', function (
+Artisan::command('test:sequence', function () {
+    $contacts = Contact::limit(1)->get();
+    //$contacts = Tag::name('Omakase Completed')->contacts;
+    $s = Sequence::name('App\Teavel\Sequences\OmakaseFollowup');
+    foreach ($contacts as $contact) {
+        $s->start($contact);
+    }
     
-) {})->purpose('Test milano sequence');
+})->purpose('Test milano sequence');

@@ -28,6 +28,7 @@ Route::group([
     Route::view('/yu-an-omakase', 'events.omakase');
     
     Route::view('/milano', 'base::milano');
+    Route::redirect('/milan', '/milano');
     Route::view('/milano/ty', 'base::milano-ty');
     Route::post('/milano', InterestedMilanoController::class);
 
