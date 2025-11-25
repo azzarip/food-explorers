@@ -18,7 +18,7 @@
         <p class="text-2xl lg:text-3xl text-center font-trajan text-white">Marvelous Milano</p>
         <h1 class="text-3xl lg:text-4xl text-center font-trajan text-amber-200">Watch the Trailer Now</h1>
     </div>
-    <div class="max-w-2xl mx-auto">
+    <div class="mx-auto min-h-[50vh]">
         <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1140435831?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Milano Trailer"></iframe></div>
     </div>
     <a class="block mx-auto max-w-lg" href="#form">
