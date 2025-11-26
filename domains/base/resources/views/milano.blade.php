@@ -29,7 +29,7 @@
         ></iframe>
     </div>
     <a class="block mx-auto max-w-lg" href="#form">
-        <x-button >Join the Priority List and claim your cashback</x-button>
+        <x-button >Join the Priority List</x-button>
     </a>
 </div>
 <article class="max-w-3xl mx-auto">
@@ -101,33 +101,6 @@
                     </p>
                 </div>
 
-                <div class="grid gap-8 max-w-xl mx-auto">
-                    <div class="space-y-4">
-                        <h3 class="text-xl font-semibold text-yellow-300 text-center">Your CHF 76.– Cashback</h3>
-                        <p class="text-slate-200">
-                            As a thank you for being part of the Omakase in Zürich and raising your hand early, you unlock a
-                            <span class="font-semibold text-slate-50">CHF 76.– Cashback</span> on the Marvelous Milano 4-day adventure.
-                        </p>
-                        <ul class="mt-3 space-y-2 text-slate-200">
-                            <li class="flex gap-2">
-                                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400"></span>
-                                <span>Valid only for the Marvelous Milano adventure.</span>
-                            </li>
-                            <li class="flex gap-2">
-                                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400"></span>
-                                <span>Automatically applied to your seat if you decide to join.</span>
-                            </li>
-                            <li class="flex gap-2">
-                                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400"></span>
-                                <span>
-                                    The cashback is valid for <span class="font-semibold text-slate-50">10 days</span> after bookings officially open.
-                                </span>
-                            </li>
-                        </ul>
-                        <p class="mt-3 text-xs text-slate-400">
-                            If you don’t book within those 10 days or decide not to join, nothing happens. No charges, no penalties, no hard feelings — the bonus simply expires.
-                        </p>
-                    </div>
                 </section>
     <div class="max-w-md mx-auto pt-4 px-2 mt-8" id="form" >
         <h3 class="font-bold text-center text-2xl lg:text-3xl">Join the Priority List and claim your cashback</h3>

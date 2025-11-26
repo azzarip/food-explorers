@@ -12,13 +12,7 @@ class InterestedMilano extends SequenceAutomation
     public function start()
     {
         $this->tag('Interested Milano');
-
-        if (Carbon::now()->lt(Carbon::create(2025, 11, 27))) {
-            $this->tag('Cashback Omakase');
-            $this->email(\App\Teavel\Emails\InterestedMilano::class);
-        } else {
-            $this->email(\App\Teavel\Emails\PriorityMilano::class);
-        }
+        $this->email(\App\Teavel\Emails\PriorityMilano::class);
         $this->owner()->notify(new TelegramNotification('Interested Milano', $this->contact));
 
     }

@@ -14,7 +14,7 @@
 @section('body')
 <div class="bg-black w-full max-lg:min-h-screen text-white text-center">
     <p class="text-center text-3xl lg:text-4xl mt-2">Thank you!</p>
-    <p class="text-amber-400 text-center text-2xl my-1 lg:my-4 lg:text-3xl">You are in the Priority List and you unlocked the cashback.</p>
+    <p class="text-amber-400 text-center text-2xl my-1 lg:my-4 lg:text-3xl">You are in the Priority List.</p>
     <p>You can watch this video for more details:</p>
     <div class="max-w-xl my-auto mx-auto">
         <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1140405262?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Marvelous Milano 2026"></iframe></div>
