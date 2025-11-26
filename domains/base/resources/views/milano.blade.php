@@ -105,7 +105,7 @@
     <div class="max-w-md mx-auto pt-4 px-2 mt-8" id="form" >
         <h3 class="font-bold text-center text-2xl lg:text-3xl">Join the Priority List and claim your cashback</h3>
         <p class="my-1">To unlock it just fill the form down here:</p>
-        <x-forms::base button="Join the Priority List and claim your cashback">
+        <x-forms::base button="Join the Priority List">
                 <x-forms::field.first_name />
                 <x-forms::field.last_name />
                 <x-forms::field.email />
