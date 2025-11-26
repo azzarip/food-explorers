@@ -118,10 +118,7 @@
         <p>If you complete the form you’ll be the first to receive the program.</p>
         <p>You will simply receive the program before anyone else.</p>
         <p>Then, you can decide if you want to come or not.</p>
-        <p>If you join the adventure with the omakase, the cashback will automatically apply.</p>
         <p>Otherwise, if you will not, nothing happens, no obligations.</p>
-        <p>You can claim the cashback until 26. November 2025 at 23:59.</p>
-        <p>The cashback can be used only for the 4 day adventure, and expires after 10 days of the opening of the bookings.</p>
         <p><strong>Remember:</strong>we usually are sold out after a couple of days... I will send a whatsapp and a email, but if you want to come, don't wait too long.</p>
     </div>
     <div class="mt-12"></div>
