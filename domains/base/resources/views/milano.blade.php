@@ -81,9 +81,6 @@
                     <p>
                         Last year we went to Milano for the classics. This time, the line-up and the storyline are completely different. We’ll explore how the brightest chefs are rewriting what dining in Italy can be.
                     </p>
-                    <p class="font-medium">
-                        If you enjoyed the Omakase in Zürich, this is the “next level” — a counter with only a handful of seats, and six Food Explorers around it.
-                    </p>
                 </div>
                 </section>
                     <!-- Priority list + cashback -->
@@ -97,13 +94,13 @@
                         By joining below, you are <span class="font-semibold text-slate-50">not</span> committing to anything. You are simply telling me:
                     </p>
                     <p class="rounded-xl border border-slate-700 bg-slate-250 px-4 py-3 italic text-slate-200">
-                        “Marco, I’m interested. I want to see the complete program and have the first chance to secure one of the six seats.”
+                        “Marco, I’m interested. I want to see the complete program and have the first chance to secure one of the seats.”
                     </p>
                 </div>
 
                 </section>
     <div class="max-w-md mx-auto pt-4 px-2 mt-8" id="form" >
-        <h3 class="font-bold text-center text-2xl lg:text-3xl">Join the Priority List and claim your cashback</h3>
+        <h3 class="font-bold text-center text-2xl lg:text-3xl">Join the Priority List</h3>
         <p class="my-1">To unlock it just fill the form down here:</p>
         <x-forms::base button="Join the Priority List">
                 <x-forms::field.first_name />
