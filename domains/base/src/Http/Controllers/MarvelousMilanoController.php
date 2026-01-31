@@ -16,6 +16,7 @@ class MarvelousMilanoController
 
         $contact = Contact::fromData($data);
 
+        $contact->tag('MM26 Interested');
         User::first()->notify(new TelegramNotification('Marvelous Milano', $contact));
 
         return redirect('/marvelous-milano/ty');
