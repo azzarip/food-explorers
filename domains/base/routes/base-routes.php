@@ -1,9 +1,10 @@
 <?php
 
-use Domains\Base\Http\Controllers\EventPageController;
-use Domains\Base\Http\Controllers\InterestedMilanoController;
-use Domains\Base\Http\Controllers\ReviewController;
 use Illuminate\Support\Facades\Route;
+use Domains\Base\Http\Controllers\ReviewController;
+use Domains\Base\Http\Controllers\EventPageController;
+use Domains\Base\Http\Controllers\MarvelousMilanoController;
+use Domains\Base\Http\Controllers\InterestedMilanoController;
 
 Route::group([
     'domain' => config('domains.base.url'),
@@ -26,12 +27,17 @@ Route::group([
 
     Route::view('/emilia', 'closed');
     Route::view('/yu-an-omakase', 'events.omakase');
-    
+
     Route::view('/milano', 'base::milano');
+
+
     Route::redirect('/milan', '/milano');
     Route::view('/milano/ty', 'base::milano-ty');
     Route::post('/milano', InterestedMilanoController::class);
 
-    Route::view('/settle/petit-paris', 'base::settle.index');
-    Route::get('/settle/petit-paris/{settlement}', fn (\App\Models\Settlement $settlement) => view('base::settle.show', ['settlement' => $settlement]));
+    Route::view('/marvelous-milano', 'base::milano.sales');
+    Route::view('/marvelous-milano/ty', 'base::milano.ty');
+    Route::post('/marvelous-milano', MarvelousMilanoController::class);
+    // Route::view('/settle/petit-paris', 'base::settle.index');
+    // Route::get('/settle/petit-paris/{settlement}', fn (\App\Models\Settlement $settlement) => view('base::settle.show', ['settlement' => $settlement]));
 });
