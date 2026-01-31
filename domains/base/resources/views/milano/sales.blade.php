@@ -21,10 +21,11 @@
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            style="aspect-ratio: 16 / 9; height: auto;"
             allowfullscreen>
         </iframe>
         </div>
-        <p class="text-center">Watch the video!</p>
+        <p class="text-center text-slate-200">Watch the video!</p>
 
         @if(false)
         <div class="max-w-lg mx-auto my-4">
