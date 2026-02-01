@@ -38,6 +38,8 @@ Route::group([
     Route::view('/marvelous-milano', 'base::milano.sales');
     Route::view('/marvelous-milano/ty', 'base::milano.ty');
     Route::post('/marvelous-milano', MarvelousMilanoController::class);
+
+    Route::redirect('/marvelous-milano/omakase', 'https://buy.stripe.com/5kQ5kE3Ctczb7WXexH9ws07');
     // Route::view('/settle/petit-paris', 'base::settle.index');
     // Route::get('/settle/petit-paris/{settlement}', fn (\App\Models\Settlement $settlement) => view('base::settle.show', ['settlement' => $settlement]));
 });

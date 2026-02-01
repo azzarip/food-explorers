@@ -66,7 +66,7 @@
                 Just visit this page when the timer ends to secure your spot.
             </p>
         </div>
-        {{-- This is the html you are looking for: :) --}}
+        <!-- This is the html you are looking for: :) -->
            <div x-show="isExpired" class="mb-10">
                <p class="text-2xl font-bold text-green-600">Bookings are now OPEN!</p>
 
@@ -79,7 +79,6 @@
                <x-forms::field.privacy_policy />
                </x-forms::base>
                <p class="text-center text-slate-600 pt-2">Filling this form will not commit you to anything.</p>
-               {{-- Hi there! --}}
            </div>
 
 
@@ -87,7 +86,6 @@
 
        </div>
 
-      <!-- White / editorial card (Tailwind only). Schematic + compressed. -->
 <section class="bg-transparent text-zinc-900">
     <h2 class="text-2xl font-bold text-center font-trajan">Marvelous Milano</h2>
     <div class="mx-auto max-w-3xl px-6 py-14">
