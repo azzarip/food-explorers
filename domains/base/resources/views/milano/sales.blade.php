@@ -34,7 +34,7 @@
         @endif
     </div>
     <article class="mb-8">
-        <div class="max-w-2xl mx-auto space-y-3 pt-4 max-lg:px-2">
+        <div class="max-w-2xl mx-auto space-y-3 pt-4 max-lg:px-2" id="form">
 
             <div class="max-w-2xl mx-auto my-12 p-8 bg-white border border-gray-100 shadow-xl rounded-2xl text-center"
             x-data="countdownTimer('2026-02-01T18:00:00Z')"
@@ -47,8 +47,8 @@
                <p class="text-lg text-gray-600">
                    Bookings open on <span class="font-bold text-gray-900">01/02/2026 at 19:00</span>
                </p>
-               <div class="inline-block px-4 py-1 rounded-full bg-red-50 text-red-700 text-sm font-medium uppercase tracking-tight">
-                   First-come, first-served
+               <div x-show="isExpired" class="inline-block px-4 py-1 rounded-full bg-red-50 text-red-700 text-sm font-medium tracking-tight">
+                   The form will appear here when the timer ends
                </div>
            </div>
 
@@ -67,7 +67,7 @@
             </p>
         </div>
         {{-- This is the html you are looking for: :) --}}
-           <div x-show="isExpired" class="mb-10" id="form">
+           <div x-show="isExpired" class="mb-10">
                <p class="text-2xl font-bold text-green-600">Bookings are now OPEN!</p>
 
                <x-forms::base button="Unlock this weekend in Milano" class="text-left">
