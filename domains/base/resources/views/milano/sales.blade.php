@@ -35,226 +35,6 @@
     </div>
     <article class="mb-8">
         <div class="max-w-2xl mx-auto space-y-3 pt-4 max-lg:px-2">
-            @if(false)
-            <p class="font-serif  text-xl lg:text-2xl font-semibold">Dear Food Explorer,</p>
-            <h2 class="font-serif text-2xl lg:text-3xl font-semibold text-center">We are going to MILANO!</h2>
-            <p>I said for end of January, but here I am...</p>
-            <p>If you are reading this, it means you have been waiting patiently for it.</p>
-            <p>And now it is finally here...</p>
-            <p>We are going to Milano for a weekend of incredible food, amazing drinks and unforgettable memories.</p>
-            <p>So let's do it properly...</p>
-            <p>Because this page contains <strong>everything you need</strong> if you’re thinking about joining me in Milano.</p>
-            <p>Please read it carefully, especially if it is the first time joining one of my trips.</p>
-            <p>If you prefer you can watch the video, wording may differ a bit, but the content is the same.</p>
-            <p>But before I show you what I'm planning, I need to explain what Milano really is...</p>
-
-            <h2 class="font-serif text-2xl lg:text-3xl font-semibold">Milano is not a city for Foodies</h2>
-            <p class="italic text-xl">Wait... let me explain...</p>
-            <p>Milano is often described as a city where you “eat well.”</p>
-            <p>            That description is accurate  and <strong>but completely misleading</strong>.            </p>
-            <p>Yes, you can dine nicely here.</p>
-            <p>Yes, you can leave satisfied.</p>
-            <p>But most visitors spend years coming to Milano and never experience what actually makes it special.</p>
-            <p>They collect pleasant meals, not <span class="bg-amber-100 text-amber-900 rounded px-1 font-medium">defining</span> ones.</p>
-            <p>Because Milano is not built to impress you.</p>
-            <p>It is built to <span class="bg-amber-100 text-amber-900 rounded px-1 font-medium">filter you out</span>.</p>
-            <p>In most cities, curiosity is enough to have amazing dinners.</p>
-            <p>Look for traditional places, follow Google Maps or Tripadvisor.</p>
-            <p>In Milano, that logic quietly fails.</p>
-            <p>The doors that matter do not open because you searched harder.</p>
-            <p>This is why Milano feels cold to so many people.</p>
-            <p>Not because it lacks warmth, but because it refuses to show for you.</p>
-
-            <h2 class="font-serif text-2xl lg:text-3xl font-semibold text-center py-4">Most food lovers visit Milano and still never touch what actually makes it special</h2>
-
-            <p>They eat well.</p>
-            <p>They take pictures.</p>
-            <p>They tell their friends they love Italian food.</p>
-            <p>And yet—the experience never quite lands.</p>
-            <p>This is not because Milano lacks great food.</p>
-            <p class="font-semibold">This is because Milano does not reward curiosity.</p>
-            <p>It’s because Milano rewards <strong>belonging</strong>.</p>
-            <p>From the outside, Milano looks like fashion, finance, and shows.</p>
-            <p>From the inside, it reveals some of the most focused and uncompromising chefs in Italy.</p>
-            <p>Places you don’t find easily on the internet.</p>
-            <p>Places you are <span class="bg-amber-100 text-amber-900 rounded px-1 font-medium">invited into</span>.</p>
-            <p>And this weekend,</p>
-            <h2 class="font-serif text-2xl lg:text-3xl font-semibold pt-2">I will be the one opening the door.</h2>
-<p>In most cities, choosing well is enough.</p>
-<p>In Milano, it isn’t.</p>
-<p>What separates an ordinary meal from a defining one here is rarely the menu.</p>
-<p>It’s the way they receive you.</p>
-<p>The <strong class="text-blue-900">suggestions</strong> that appear without being requested.</p>
-<p>The <strong class="text-cyan-800">dishes</strong> dishes that never make it onto the printed menu.</p>
-<p>The <strong class="text-red-900">wine</strong> that is perfectly paired knowing where the meal is going.</p>
-<p>These things do not happen because you chose wisely, but because someone decided to <strong>take care of you</strong>.</p>
-<p>Milano changes the moment you stop entering it as a tourist trying to prove something.</p>
-<p>And that is the shift this weekend creates.</p>
-<p>When you arrive as part of a <strong>circle</strong>, everyone relaxes.</p>
-<p>Not because you asked, but because you were expected.</p>
-<p>That single difference changes everything. </p>
-<p>It changes how chefs receive you.</p>
-<p>It changes what is suggested instead of explained.</p>
-<p>It changes the pace, the tone, the confidence at the table.</p>
-<p>You are no longer treated as another visitor passing through, just looking for Pizza and Pasta.</p>
-<p>You are received as someone who <span class="bg-amber-100 text-amber-900 rounded px-1 font-medium">belongs there</span>.</p>
-                <h2 class="font-serif text-2xl lg:text-3xl font-semibold pt-4">What I Actually Bring You Into</h2>
-<p class="font-semibold">For one weekend, you borrow my access.</p>
-<p>Not my recommendations. Not my “favorite spots.”</p>
-<p>My way of moving through this city.</p>
-<p>Because in Milano, trust is everything.</p>
-<p>Restaurants show different sides for people who know better.</p>
-<p>If you just go there by yourself, you will always get the <span class="bg-amber-100 text-amber-900 rounded px-1 font-medium">daily tourist treatment</span>.</p>
-
-<p>And when that happens, Milano <span class="bg-amber-100 text-amber-900 rounded px-1 font-medium">doesn’t perform</span>.</p>
-
-<p>This is not something you can reproduce later.</p>
-
-<p>You can come back to Milano a hundred times and still never experience another version of it.</p>
-
-<p>Because it only exists under very specific conditions.</p>
-
-<p>It requires the right people at the table.</p>
-
-<p>And it requires someone willing to <span class="bg-amber-100 text-amber-900 rounded px-1 font-medium">put their name behind you</span>.</p>
-
-<p class="font-semibold">It requires me.</p>
-
-
-<h2 class="font-serif text-2xl lg:text-3xl font-semibold pt-4">What Changes in a Weekend Like This</h2>
-            <p>Something subtle happens when you move through Milano this way.</p>
-
-<p>The mental noise disappears.</p>
-            <p>You stop spending the whole day looking on Google for where to dine.</p>
-
-            <p>You stop second-guessing your choices. Oh, no is this the best restaurant?</p>
-
-            <p>You stop wondering whether something better is happening somewhere else.</p>
-
-            <p>You’re not optimizing anymore.</p>
-
-            <p>You’re <span class="bg-amber-100 text-amber-900 rounded px-1 font-medium">experiencing</span>.</p>
-
-            <p>You taste things you wouldn’t have ordered alone.</p>
-
-            <p>Dishes make sense without explanation.</p>
-
-            <p>Wine feels clearer because it’s right and perfectly paired.</p>
-
-            <p>You share tables with people who notice the same details you do.</p>
-
-            <p>And without realizing it, your standards shift.</p>
-
-            <p>After that, scrolling through other people’s trips feels distant.</p>
-
-            <p>And there is when you realize that this wasn’t just a weekend away.</p>
-
-            <p>It became a <span class="bg-amber-100 text-amber-900 rounded px-1 font-medium">reference point</span> for the next table, the next bottle, the next trip you choose.</p>
-
-            <h2 class="font-serif text-2xl lg:text-3xl font-semibold pt-4">The Milano Food Myth</h2>
-            <p>There is a quiet assumption most people arrive with.</p>
-
-            <p>Because Milano is in Italy, they expect Pizza and Pasta.</p>
-
-            <p>Because it sits near the Alps, they expect heavy food.</p>
-
-            <p>Because it is a fashion city, they expect small and extremely expensive portions.</p>
-
-            <p>Milano does have traditions:</p>
-            <p>Risotto. Cotoletta. Polenta. Braised dishes built for colder climates.</p>
-
-            <p class="font-semibold">But tradition is not what defines Milano’s food scene today.</p>
-
-            <h2 class="font-serif text-2xl lg:text-3xl text-center font-semibold pt-4">Milano is not where Italian food comes from, </h2>
-            <h2 class="font-serif text-2xl lg:text-3xl text-center font-semibold pt-4">It is where it comes together.</h2>
-
-            <p>What shapes this city is not nostalgia for the past times.</p>
-
-            <p>Chefs come here because this is where standards are the highest.</p>
-
-            <p>Where consistency matters more than storytelling.</p>
-
-            <p>Where diners eat well every week, not once a year.</p>
-
-            <h2 class="font-serif text-2xl lg:text-3xl font-semibold pt-4">The Real Secret of Milano</h2>
-            <p>The real heartbeat of Milano’s food culture doesn’t begin at dinner.</p>
-
-            <p>This is the part that surprises almost everyone.</p>
-
-            <p>It begins early in the morning.</p>
-
-            <p>Long before menus are printed or tables are set.</p>
-
-            <p>That’s when the <strong>fish</strong> arrives.</p>
-
-            <p class="italic">Not symbolically. Physically.</p>
-
-            <p>It's not some poetic methapor. I mean it.</p>
-
-            <p>Just outside the city, Milano hosts the <strong>largest fish market in Italy</strong>.</p>
-
-            <p>Seafood flows through Milano before it is judged, sorted, and distributed across the country.</p>
-
-            <p>And over time, that shapes taste.</p>
-
-            <p>Milano is where fish is evaluated under the highest standards.</p>
-
-            <p>There is no tradition to live up to.</p>
-
-            <p>Only contemporary food culture to create.</p>
-
-            <p>That’s why seafood in Milano feels different.</p>
-
-            <p>Not louder. Not more emotional.</p>
-
-            <p><span class="bg-amber-100 text-amber-900 rounded px-1 font-medium">Sharper. Cleaner. Exact.</span></p>
-
-            <p>When I say this, even Italians look at me in disbelief.</p>
-
-            <p class="italic">“Fish? In Milano?”</p>
-
-            <p>Yes. Fish in Milano.</p>
-
-            <p>And once you understand this, an entire side of the city suddenly makes sense.</p>
-
-            <h2 class="font-serif text-2xl lg:text-3xl font-semibold pt-4">Why Tourists Never See This Side of Milano</h2>
-            <p>The restaurants that handle fish seriously here do not announce themselves.</p>
-
-            <p>They are not framed as experiences.</p>
-
-            <p>They cook for people who already know why they came.</p>
-
-            <p>Visitors mistake this understatement for absence.</p>
-
-            <p>They don’t realize they’re sitting in one of Italy’s most demanding seafood cities — because nothing points them toward it.</p>
-
-            <p>These are not restaurants you “find.”</p>
-
-            <p>They are restaurants you are <span class="bg-amber-100 text-amber-900 rounded px-1 font-medium">brought into</span>.</p>
-
-
-            <h2 class="font-serif text-2xl lg:text-3xl font-semibold pt-4">The Real Secret of Marvelous Milano</h2>
-
-            <p>You can come to Milano anytime.</p>
-
-            <p>You can book trains.</p>
-            <p>Reserve tables.</p>
-            <p>Walk the same streets.</p>
-
-            <p>You can eat well.</p>
-
-            <p>Most people do.</p>
-
-            <p>But if y ou want to experience this city in all its shades....</p>
-
-            <p>It requires the right people at the table.</p>
-            <p>And it requires someone willing to <span class="bg-amber-100 text-amber-900 rounded px-1 font-medium">put their name behind you</span>.</p>
-
-            <p class="font-semibold">It requires me.</p>
-
-            <p class="font-semibold text-xl lg:text-2xl text-center">This is why Marvelous Milano exists.</p>
-
-            @endif
 
             <div class="max-w-2xl mx-auto my-12 p-8 bg-white border border-gray-100 shadow-xl rounded-2xl text-center"
             x-data="countdownTimer('2026-02-01T18:00:00Z')"
@@ -286,7 +66,8 @@
                 Just visit this page when the timer ends to secure your spot.
             </p>
         </div>
-           <div x-show="isExpired" class="mb-10">
+        {{-- This is the html you are looking for: :) --}}
+           <div x-show="isExpired" class="mb-10" id="form">
                <p class="text-2xl font-bold text-green-600">Bookings are now OPEN!</p>
 
                <x-forms::base button="Unlock this weekend in Milano" class="text-left">
@@ -297,7 +78,7 @@
                <x-forms::field.phone />
                <x-forms::field.privacy_policy />
                </x-forms::base>
-
+               <p class="text-center text-slate-600 pt-2">Filling this form will not commit you to anything.</p>
                {{-- Hi there! --}}
            </div>
 
@@ -305,16 +86,247 @@
 
 
        </div>
-       <h2 class="font-serif text-2xl lg:text-3xl font-semibold">What will happen here?</h2>
-       <p>At the end of the countdown, a form will appear.</p>
-       <p>The first to fill the form, will be the first to be contacted by me.</p>
-       <p>We will need <strong>10 minutes together</strong> and I will tailor the Marvelous Milano offer to your needs and preferences.</p>
-       <p>In case you are not available, we can schedule a call at a later time.</p>
-       <p>Your queue position will not be affected.</p>
-       <p class="font-semibold">Filling this form will not commit you to anything.</p>
-       <p class="font-semibold text-xl text-right">Marco</p>
+
+      <!-- White / editorial card (Tailwind only). Schematic + compressed. -->
+<section class="bg-transparent text-zinc-900">
+    <h2 class="text-2xl font-bold text-center font-trajan">Marvelous Milano</h2>
+    <div class="mx-auto max-w-3xl px-6 py-14">
+
+      <div class="rounded-3xl border border-zinc-200 bg-white/70 p-8 shadow-sm backdrop-blur">
+        <!-- Header -->
+        <div class="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+          <div>
+            <p class="text-xs uppercase tracking-[0.3em] text-zinc-500">Marvelous Milano</p>
+            <h2 class="mt-3 text-2xl font-medium leading-tight">
+              April (16)-17–18-19
+            </h2>
+          </div>
+
+        </div>
+
+        <hr class="my-8 border-zinc-200" />
+
+        <!-- Offer / Benefits -->
+        <div class="grid gap-8 sm:grid-cols-2">
+          <div>
+            <p class="text-xs uppercase tracking-[0.3em] text-zinc-500">What you get</p>
+            <ul class="mt-4 space-y-3 text-sm leading-relaxed text-zinc-800">
+              <li class="flex gap-3">
+                <span class="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full border border-zinc-300 text-[11px] text-zinc-600">✓</span>
+                <span><span class="font-medium">Restaurants</span> handled: reservations + coordination + protection</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full border border-zinc-300 text-[11px] text-zinc-600">✓</span>
+                <span><span class="font-medium">Hotel</span> included: 1 private room per guest (one person per room)</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full border border-zinc-300 text-[11px] text-zinc-600">✓</span>
+                <span><span class="font-medium">Menus designed for us</span> with the chefs (no ordering stress)</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full border border-zinc-300 text-[11px] text-zinc-600">✓</span>
+                <span><span class="font-medium">Mornings & afternoons free</span> (shopping, museums, explore the city)</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="mt-5">            <strong>Your only job</strong>: arrive in Milano on time.
+            </p>
+            <p>There are direct trains every hour and with a change in Lugano, every half an hour!</p>
+
+          </div>
+          <div>
+            <p class="text-xs uppercase tracking-[0.3em] text-zinc-500">How the experience feels</p>
+
+            <div class="mt-4 space-y-4">
+              <div class="rounded-2xl border border-zinc-200 bg-white/60 p-4">
+                <p class="text-sm font-medium">The tables</p>
+                <p class="mt-1 text-sm text-zinc-700">
+                  Private tables — sometimes rooms — sometimes the whole place. Just for us!
+                </p>
+              </div>
 
 
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-8 border-zinc-200" />
+
+        <!-- Bonuses -->
+        <div class="grid gap-8 sm:grid-cols-2">
+          <div>
+            <p class="text-xs uppercase tracking-[0.3em] text-red-800">Bonus option</p>
+            <div class="mt-4 rounded-2xl border border-zinc-200 bg-white/60 p-5">
+              <div class="flex flex-wrap items-center gap-2">
+                <p class="text-sm font-medium">April 16 — IYO Omakase</p>
+                <span class="rounded-full border border-zinc-300 px-2.5 py-1 text-[11px] text-zinc-600">Only 6 people</span>
+              </div>
+              <p class="mt-2 text-sm text-zinc-700">
+                Arrive one day earlier. Sit directly in front of the chef.
+                Everything prepared right in front of you.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <p class="text-xs uppercase tracking-[0.3em] text-amber-900">Bonus (for everyone)</p>
+            <div class="mt-4 rounded-2xl border border-zinc-200 bg-white/60 p-5">
+              <p class="text-sm font-medium">Inner Circle access (starts immediately)</p>
+              <p class="mt-2 text-sm text-zinc-700">
+                Early meetup invites before anyone else.
+                The weekend starts the moment you book.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-8 border-zinc-200" />
+
+        <!-- Risk reversal + Fit -->
+        <div class="grid gap-8 sm:grid-cols-2">
+          <div>
+            <div class="mt-4 rounded-2xl border border-zinc-200 bg-white/60 p-5">
+              <p class="font-medium text-amber-900">27-hour warranty</p>
+              <p class="mt-2 text-sm text-zinc-700">
+                Come. Sit. Experience it.
+                If within 27 hours it’s not for you (and you mean it),
+                you walk away with your money — even for the food you ate.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <p class="text-xs uppercase tracking-[0.3em] text-zinc-500">This is for you if</p>
+            <ul class="mt-4 space-y-2 text-sm text-zinc-800">
+              <li class="flex gap-3">
+                <span class="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full border border-zinc-300 text-[11px] text-zinc-600">1</span>
+                <span>You love food (and you’re okay with fish being a meaningful part).</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full border border-zinc-300 text-[11px] text-zinc-600">2</span>
+                <span>You enjoy sharing a table with people like you.</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full border border-zinc-300 text-[11px] text-zinc-600">3</span>
+                <span>You want modern Italian cuisine — not tourist checklists.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="my-8 border-zinc-200" />
+
+        <!-- CTA -->
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p class="text-sm font-medium">How to book</p>
+            <p class="mt-1 text-sm text-zinc-700">
+              Use <a href="#form" class="underline text-blue-900">this form</a>. The form decides the order.<br class="hidden sm:block">
+              I’ll call you back to tailor (3 or 4 days, with/without wine).
+            </p>
+            <p class="mt-2 text-xs text-zinc-500">Please don’t write me via WhatsApp.</p>
+          </div>
+
+        </div>
+
+        <p class="mt-6 text-xs text-zinc-500">
+          <strong>Note</strong>: Once booked, it’s booked. Capacity tends to move fast after official release.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+      <section class="py-16 px-4 max-w-5xl mx-auto">
+        <div class="mb-12 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-black uppercase tracking-widest mb-4">FAQ</h2>
+          <p class="text-black/60 italic text-lg">Details for the Marvelous Milano Experience.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+
+          <div>
+            <h3 class="font-bold text-black mb-3 text-lg uppercase tracking-tight">What’s included in this trip?</h3>
+            <p class="text-black leading-relaxed">
+              The basic offer includes your stay in a curated <strong>4-star hotel</strong>. At our restaurant stops, water and coffee are included. To give you full control over your experience, wine and premium beverages are billed separately.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-bold text-black mb-3 text-lg uppercase tracking-tight">How much does it cost?</h3>
+            <p class="text-black leading-relaxed">
+              Precision matters. The price reflects your duration, booking window, and specific preferences. <span class="font-semibold underline">Complete the form</span>, and we will find the configuration that fits your needs.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-bold text-black mb-3 text-lg uppercase tracking-tight">Guided tour or food tour?</h3>
+            <p class="text-black leading-relaxed">
+              Neither. This is not a scripted walk with lectures. I handle the logistics—hotel and restaurant reservations—while you enjoy the company. Between meals, the city is yours to explore as you wish.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-bold text-black mb-3 text-lg uppercase tracking-tight">I’ve been to Milano before. Is this new?</h3>
+            <p class="text-black leading-relaxed">
+              The city is the same; the access is not. The atmosphere, the specific menus designed with chefs, and the community of high-level peers make this an entirely different reality from a standard visit.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-bold text-black mb-3 text-lg uppercase tracking-tight">Why not plan this on my own?</h3>
+            <p class="text-black leading-relaxed italic">
+              "Planning gives you logistics. This weekend gives you access."
+            </p>
+            <p class="text-black mt-2 leading-relaxed">
+              The difference is not just what you eat, but how you are received. You are sitting down as a guest of someone the house knows, not as a tourist with a reservation.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-bold text-black mb-3 text-lg uppercase tracking-tight">Are the restaurants high-end?</h3>
+            <p class="text-black leading-relaxed">
+              We focus on <strong>serious</strong> restaurants. This isn't about collecting Michelin stars for the sake of it; it’s about quality, intention, and "right" choices over expensive ones. No excess, just precision.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-bold text-black mb-3 text-lg uppercase tracking-tight">Can I have the restaurant list?</h3>
+            <p class="text-black leading-relaxed">
+              No. The experience is revealed day by day. This protects my intellectual property and prevents the journey from being reduced to a Google search. Rest assured, my guarantee ensures a premium standard.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-bold text-black mb-3 text-lg uppercase tracking-tight">What if I don't drink alcohol?</h3>
+            <p class="text-black leading-relaxed">
+              You will feel perfectly at home. Wine is a cultural element of the trip, but never a requirement. Every table is curated to ensure everyone feels included and comfortable.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-bold text-black mb-3 text-lg uppercase tracking-tight">How do I know if this is for me?</h3>
+            <p class="text-black leading-relaxed">
+              Marvelous Milano isn’t designed to convince you. It’s designed to feel obvious to the right person. If this resonates, we should talk and evaluate the fit together.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-bold text-black mb-3 text-lg uppercase tracking-tight">How long do I have to decide?</h3>
+            <p class="text-black leading-relaxed">
+              Typically, 10–14 days. My meetups fill up quickly, and these curated spots are limited to maintain the quality of the group.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="mt-16 pt-8 border-t border-black/10 text-center">
+          <p class="text-black font-bold mb-4">Any other questions?</p>
+          <x-button link="#form">Use this form and I will call you back</x-button>
+        </div>
+      </section>
         </div>
 
 
