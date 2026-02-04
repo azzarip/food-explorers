@@ -40,6 +40,8 @@ Route::group([
     Route::post('/marvelous-milano', MarvelousMilanoController::class);
 
     Route::redirect('/marvelous-milano/omakase', 'https://buy.stripe.com/5kQ5kE3Ctczb7WXexH9ws07');
+
+    Route::view('/emilia/program', 'base::emilia.program');
     // Route::view('/settle/petit-paris', 'base::settle.index');
     // Route::get('/settle/petit-paris/{settlement}', fn (\App\Models\Settlement $settlement) => view('base::settle.show', ['settlement' => $settlement]));
 });
