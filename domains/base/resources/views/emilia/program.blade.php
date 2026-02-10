@@ -35,7 +35,7 @@
 
                     <p class="italic">Arrival at the Hotel</p>
 
-                    <a href="https://maps.app.goo.gl/peYMfGTP1ZJKq9Ty5" class="group block">
+                    <a href="https://maps.app.goo.gl/peYMfGTP1ZJKq9Ty5" target="_blank" rel="noopener noreferrer" class="group block">
                         <div class="w-full py-2 px-4 border rounded-lg group flex gap-1 items-center justify-around">
                             <img src="https://ik.imgkit.net/3vlqs5axxjf/external/https://media.iceportal.com/39419/photos/7296286_XL.jpg?tr=w-1200%2Cfo-auto"
                                 alt="Zanhotel Europa"
@@ -64,7 +64,7 @@
 
                     <p class="italic">Arrival at the Hotel</p>
 
-                    <a href="https://maps.app.goo.gl/peYMfGTP1ZJKq9Ty5" class="group block">
+                    <a href="https://maps.app.goo.gl/peYMfGTP1ZJKq9Ty5" target="_blank" rel="noopener noreferrer" class="group block">
                         <div class="w-full py-2 px-4 border rounded-lg group flex gap-1 items-center justify-around">
                             <img src="https://ik.imgkit.net/3vlqs5axxjf/external/https://media.iceportal.com/39419/photos/7296286_XL.jpg?tr=w-1200%2Cfo-auto"
                                 alt="Zanhotel Europa"
@@ -103,7 +103,7 @@
                     <hr class="mx-4 border-slate-300">
 
                     <p class="font-semibold">Check-in: 15:00</p>
-                    <a href="https://maps.app.goo.gl/PnoMQtAUhXbf85q66" class="block group">
+                    <a href="https://maps.app.goo.gl/PnoMQtAUhXbf85q66" target="_blank" rel="noopener noreferrer" class="block group">
                         <div class="w-full py-2 px-4 border rounded-lg group flex gap-1 items-center justify-around">
                             <img src="https://lh3.googleusercontent.com/gps-proxy/ALd4DhHopx1K2IhJjbMwKudjDxQBWD-h-SV9wZMrQVfyYNk3y5Jt19LCqhVjF2VtMphiP_e8bYC0mlb9EF-E75FVUo7RLCAGyF9F3AXKu8CfIwxoksIFXNwjz11uhkuHjZkPi7dMBazwr_oepTRFpfYTuLXczwnpfieeay-Y7LvkXrk3ZpvBsemU0wjb=w203-h135-k-no"
                                 alt="Hotel Central Park"
@@ -119,7 +119,7 @@
 
                     <p class="font-semibold">Dinner start: 20:00</p>
 
-                    <a href="https://maps.app.goo.gl/22iVbww9fC5zVi5z5" class="group block">
+                    <a href="https://maps.app.goo.gl/22iVbww9fC5zVi5z5" target="_blank" rel="noopener noreferrer" class="group block">
                         <div class="w-full py-2 px-4 border rounded-lg group flex gap-1 items-center justify-around">
                             <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwerIvQGtAwwtYfKVuL8DjlzUpmMllR2LEMruhqT_0SAd_yXzIvoRSMv-DBuczfMPFI_AdZ_Aow651N3xtWSaLnpr_cdkZ42dqXN6cTdASDxL-WTffrp-jeM9OltZkDedq-NM6ZTQBUbC9jQx=w203-h270-k-no"
                                 alt="Osteria Francescana"
