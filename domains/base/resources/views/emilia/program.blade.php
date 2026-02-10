@@ -105,7 +105,7 @@
                     <p class="font-semibold">Check-in: 15:00</p>
                     <a href="https://maps.app.goo.gl/PnoMQtAUhXbf85q66" target="_blank" rel="noopener noreferrer" class="block group">
                         <div class="w-full py-2 px-4 border rounded-lg group flex gap-1 items-center justify-around">
-                            <img src="https://lh3.googleusercontent.com/gps-proxy/ALd4DhHopx1K2IhJjbMwKudjDxQBWD-h-SV9wZMrQVfyYNk3y5Jt19LCqhVjF2VtMphiP_e8bYC0mlb9EF-E75FVUo7RLCAGyF9F3AXKu8CfIwxoksIFXNwjz11uhkuHjZkPi7dMBazwr_oepTRFpfYTuLXczwnpfieeay-Y7LvkXrk3ZpvBsemU0wjb=w203-h135-k-no"
+                            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/130428388.jpg?k=28cf51d090e8d796b1ebe0604ffa5b041bd173a26a57e472d60b49c73c14c7f4&o="
                                 alt="Hotel Central Park"
                                 class="h-16 w-16 object-cover rounded-2xl shadow-xl border border-gray-100">
                             <div>
