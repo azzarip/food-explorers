@@ -10,7 +10,7 @@
 @endphp
 
 @section('body')
-    <div class="bg-black w-full max-lg:min-h-screen text-white text-center py-4">
+    <div class="bg-black w-full pb-4 text-white text-center py-4">
 
         <h1 class="text-center text-3xl lg:text-4xl font-trajan text-amber-200 opacity-80">Marvelous Milano</h1>
         <p class="text-center text-xl lg:text-2xl my-1 lg:my-4 font-serif">The One Weekend in <span class="text-amber-200">Milano</span> that most <span class="text-red-200">food lovers</span> will never experience.</p>
