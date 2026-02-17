@@ -5,6 +5,7 @@ use Domains\Base\Http\Controllers\ReviewController;
 use Domains\Base\Http\Controllers\EventPageController;
 use Domains\Base\Http\Controllers\MarvelousMilanoController;
 use Domains\Base\Http\Controllers\InterestedMilanoController;
+use Domains\Base\Http\Controllers\KobenController;
 
 Route::group([
     'domain' => config('domains.base.url'),
@@ -42,6 +43,16 @@ Route::group([
     Route::redirect('/marvelous-milano/omakase', 'https://buy.stripe.com/5kQ5kE3Ctczb7WXexH9ws07');
 
     Route::view('/itinerary/emilia', 'base::emilia.program');
+
+    Route::get('/koben', function () {
+        if (now()->isAfter('2026-01-23')) {
+            return view('base::koben.sales');
+        }
+        return redirect('https://buy.stripe.com/fZu7sM2ypar3gtt4X79ws08');
+    });
+
+    Route::post('/koben', KobenController::class);
+    Route::view('/koben/ty', 'base::koben.ty');
     // Route::view('/settle/petit-paris', 'base::settle.index');
     // Route::get('/settle/petit-paris/{settlement}', fn (\App\Models\Settlement $settlement) => view('base::settle.show', ['settlement' => $settlement]));
 });

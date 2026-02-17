@@ -2,8 +2,8 @@
 
 @php
     $seo = new SEO(
-        title: 'Food Explorers - Emilia Adventure',
-        description: 'Emilia 19-22 February 2026. Places are limited.',
+        title: 'Emilia Adventure',
+        description: 'Emilia 19-22 February 2026. Full Itinerary by Food Explorers.',
         robots: 'noindex, nofollow',
     );
 
@@ -52,8 +52,19 @@
                     <p class="font-semibold">Check-in: 15:00</p>
 
                     <p class="font-semibold">Official start: 20:00</p>
+                    <a href="https://maps.app.goo.gl/Pb1tF3F9Pkhu5Dn18" target="_blank" rel="noopener noreferrer" class="group block">
+                        <div class="w-full py-2 px-4 border rounded-lg group flex gap-1 items-center justify-around">
+                            <img src="https://www.ahime.it/assets/images/slide-3-light.jpg"
+                                alt="Ahime restaurant"
+                                class="h-16 w-16 object-cover rounded-2xl shadow-xl border border-gray-100">
+                            <div>
 
-                    <p class="italic">Restaurant coming soon</p>
+                                <p class="font-semibold group-hover:underline text-lg">Ahimè</p>
+                                <p class="text-slate-700">Via S. Gervasio, 6e</p>
+                            </div>
+                            <x-heroicon-o-arrow-right class="w-6 h-6 mb-1 text-slate-700" />
+                        </div>
+                    </a>
 
                 </div>
 
@@ -81,8 +92,24 @@
                     <p class="font-semibold">Check-in: 15:00</p>
 
                     <p class="font-semibold">Official start: 13:00</p>
+                    <x-program-card
+                        url="https://maps.app.goo.gl/8koJfU9WR9sNmzri8"
+                        image="https://www.bestogoo.com/bestogoo/downloaded/ChIJxWcOK5jUf0cRVF7bIwnEEdI.jpeg"
+                        name="L'Arcimboldo"
+                        address="Via Galliera, 34/E"
+                    />
 
-                    <p class="italic">Restaurant coming soon</p>
+
+                    <p class="font-semibold">Afternoon: visit of the city</p>
+
+                    <p class="font-semibold">Wine Tasting & Dinner: 19:00</p>
+                    <x-program-card
+                    url="https://maps.app.goo.gl/Fpyq17VoQd3kVmHd6"
+                    image="https://www.arte.it/foto/600x450/82/4226-CIMG8670.jpg"
+                    name="Enoteca Italiana"
+                    address="Via Marsala, 2/b"
+                />
+
                 </div>
 
 
@@ -144,8 +171,12 @@
                     <p>Visit of Modena</p>
 
                     <p class="font-semibold">Lunch at 12:30</p>
-
-                    <p class="italic">Coming soon</p>
+                    <x-program-card
+                    url="https://maps.app.goo.gl/mC8Ek3Bxc3nHFg8k8"
+                    image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDxKWEbHexnUJp4PByGCYvQEJKrit5r8N9Gw&s"
+                    name="Uva D'Oro"
+                    address="Piazza Giuseppe Mazzini, 37-38"
+                />
                 </div>
 
             </div>
