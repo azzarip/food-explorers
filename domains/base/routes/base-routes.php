@@ -45,7 +45,7 @@ Route::group([
     Route::view('/itinerary/emilia', 'base::emilia.program');
 
     Route::get('/koben', function () {
-        if (now()->isAfter('2026-01-23')) {
+        if (now()->isAfter('2026-02-23')) {
             return view('base::koben.sales');
         }
         return redirect('https://buy.stripe.com/fZu7sM2ypar3gtt4X79ws08');
