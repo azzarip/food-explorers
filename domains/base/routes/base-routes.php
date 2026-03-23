@@ -27,7 +27,7 @@ Route::group([
 
 
     Route::view('/emilia', 'closed');
-    Route::view('/yu-an-omakase', 'events.omakase');
+    Route::view('/yu-an-omakase', 'closed');
 
     Route::view('/milano', 'base::milano');
 
@@ -40,12 +40,11 @@ Route::group([
     Route::view('/marvelous-milano/ty', 'base::milano.ty');
     Route::post('/marvelous-milano', MarvelousMilanoController::class);
 
-    Route::redirect('/marvelous-milano/omakase', 'https://buy.stripe.com/5kQ5kE3Ctczb7WXexH9ws07');
-
-    Route::view('/itinerary/emilia', 'base::emilia.program');
+    Route::view('/itinerary/emilia', 'closed');
+    Route::view('/itinerary/milano', 'base::milano.program');
 
     Route::get('/koben', function () {
-        if (now()->isAfter('2026-02-23')) {
+        if (now()->isAfter('2026-03-01')) {
             return view('base::koben.sales');
         }
         return redirect('https://buy.stripe.com/fZu7sM2ypar3gtt4X79ws08');
