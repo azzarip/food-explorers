@@ -27,7 +27,8 @@ Route::group([
 
 
     Route::view('/emilia', 'closed');
-    Route::view('/yu-an-omakase', 'closed');
+    Route::view('/alba', 'events.alba');
+
 
     Route::view('/milano', 'base::milano');
 
