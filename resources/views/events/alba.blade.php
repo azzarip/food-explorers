@@ -273,7 +273,7 @@ $seo = new SEO(
         </p>
     </div>
 
-    <p class="text-center text-sm text-neutral-600 mt-6">Valid until places are sold out. We tend to <strong>sell out</strong> quickly.</p>
+    <p class="text-center text-sm text-neutral-600 mt-6">Valid until Sunday evening 29th of March at 20:00.</p>
 </div>
 
 <hr>
@@ -329,14 +329,6 @@ $seo = new SEO(
 </div>
 <hr class="my-2">
 
-
-<h2 class="pt-6 mb-4 font-serif text-2xl font-semibold" id="booking">How to book?</h2>
-
-<div class="px-4 max-w-md mx-auto">
-    <x-button link="{{ durl('/omakase', 'book') }}" target="_blank">
-    Click here to book!
-    </x-button>
-</div>
 <h3 class="block mt-12 text-xl font-semibold">The Fine Print Just to Be Totally Clear</h3>
 <ul class="pt-2 mb-4 space-y-4 list-inside">
 <ul class="space-y-2 text-sm leading-relaxed">
