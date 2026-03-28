@@ -39,10 +39,6 @@ $seo = new SEO(
             </a>
         </span>
     </p>
-
-
-
-    <x-button link='#event'>To the event</x-button>
 </div>
 
     <div class="space-y-6 mt-8 text-gray-800 leading-relaxed">
@@ -174,8 +170,8 @@ $seo = new SEO(
 
 
 <div class="px-4 max-w-md mx-auto my-8">
-    <x-button link="{{ durl('/omakase', 'book') }}" target="_blank">
-    Click here to book!
+    <x-button link="#booking">
+    Click here to reserve your seat!
     </x-button>
 </div>
 
@@ -251,7 +247,7 @@ $seo = new SEO(
     </div>
 </section>
 
-<div class="my-12 max-w-2xl mx-auto rounded-2xl border-2 border-amber-300 bg-gradient-to-br from-amber-50 via-white to-lime-50/40 shadow-lg px-6 py-8 sm:px-8 text-gray-800">
+<div class="my-12 max-w-2xl mx-auto rounded-2xl border-2 border-amber-300 bg-gradient-to-br from-amber-50 via-white to-lime-50/40 shadow-lg px-6 py-8 sm:px-8 text-gray-800" id="booking">
     <h2 class="font-serif text-2xl sm:text-3xl font-semibold text-center text-neutral-900 mb-4">How much does it cost?</h2>
     <p class="text-center text-neutral-700 max-w-lg mx-auto mb-6 leading-relaxed">
         This price is <strong>only</strong> for you joining me on this next trip. To <strong>reserve your seat</strong>, send me the money via <strong>Twint</strong>—once I’ve received it, your place is confirmed.
@@ -263,7 +259,7 @@ $seo = new SEO(
         <span class="block text-sm text-neutral-500 mt-1">CHF</span>
     </p>
 
-    <div class="mt-8 pt-6 border-t border-amber-200/90 space-y-4 text-center max-w-lg mx-auto">
+    <div class="mt-8 pt-6 border-t border-amber-200/90 space-y-4 text-center max-w-lg mx-auto" >
         <h3 class="font-serif text-xl font-semibold text-neutral-900">How to book</h3>
         <p class="text-neutral-700 leading-relaxed">
             Send me the money via <strong>Twint</strong>.
