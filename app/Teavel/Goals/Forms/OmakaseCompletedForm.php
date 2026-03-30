@@ -2,9 +2,8 @@
 
 namespace App\Teavel\Goals\Forms;
 
-use Azzarip\Teavel\Automations\FormAutomation;
-use App\Teavel\Sequences;
 use App\Teavel\Sequences\OmakaseCompletedSequence;
+use Azzarip\Teavel\Automations\FormAutomation;
 
 class OmakaseCompletedForm extends FormAutomation
 {

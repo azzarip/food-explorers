@@ -3,17 +3,17 @@
 namespace App\Offers\Events;
 
 use App\Offers\EventOffer;
-use App\Teavel\Goals\Forms\GeneralGoingGoal;
-use App\Teavel\Goals\Forms\GeneralInterestGoal;
+use App\Teavel\Goals\Forms\AlbaCompletedForm;
+use App\Teavel\Goals\Forms\AlbaInterested;
 use Azzarip\Utilities\CHF\CHF;
 
 class Alba extends EventOffer
 {
     const TITLE = 'Alba Tasting';
 
-    const INTERESTED_GOAL = GeneralInterestGoal::class;
+    const INTERESTED_GOAL = AlbaInterested::class;
 
-    const COMPLETED_GOAL = GeneralGoingGoal::class;
+    const COMPLETED_GOAL = AlbaCompletedForm::class;
 
     public function getPrice()
     {

@@ -2,13 +2,13 @@
 
 namespace App\Teavel\Goals\Forms;
 
-use App\Teavel\Sequences\GeneralGoingSequence;
+use App\Teavel\Sequences\AlbaInterestedSequence;
 use Azzarip\Teavel\Automations\FormAutomation;
 
-class GeneralGoingGoal extends FormAutomation
+class AlbaInterested extends FormAutomation
 {
     protected array $start = [
-        GeneralGoingSequence::class,
+        AlbaInterestedSequence::class,
     ];
 
     protected array $stop = [

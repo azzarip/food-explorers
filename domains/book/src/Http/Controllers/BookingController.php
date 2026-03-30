@@ -4,7 +4,9 @@ namespace Domains\Book\Http\Controllers;
 
 use App\Actions\Stripe\OfferPayment;
 use App\Models\Offer;
+use App\Models\User;
 use Azzarip\Teavel\Actions\Forms\InterestForm;
+use Azzarip\Teavel\Notifications\TelegramNotification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\View;
@@ -32,23 +34,21 @@ class BookingController
         }
 
         $contact = Auth::user() ?? Auth::guard('soft')->user();
-        
-
 
         if ($contact->isGoingTo($event)) {
             return redirect($offer->url.'/success');
         }
-        
 
-        InterestForm::achieve($offer->getInterestedGoal(), $offer->slug);
+
+        $contact->tag('Interested Alba Tasting');
+        User::first()->notify(new TelegramNotification('Interested Alba Tasting', $contact));
 
         if ($event->isSoldOut) {
             return view('book::pages.sold-out');
         }
-        
 
         $payment = OfferPayment::get($offer);
-    
+
         return view('book::pages.payment', [
             'clientSecret' => $payment->payment_secret,
             'return_url' => $request->url().'/return',
