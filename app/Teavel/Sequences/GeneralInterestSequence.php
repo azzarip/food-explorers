@@ -8,6 +8,6 @@ class GeneralInterestSequence extends SequenceAutomation
 {
     public function start()
     {
-        $this->tag('Interested Pizza Tasting');
+        $this->tag('Interested Alba Tasting');
     }
 }

@@ -19,7 +19,7 @@
             <h3 class="font-semibold">Terms and Conditions</h3>
             <p>
                 You can cancel your participation and receive a 100% reimbursement until
-                {{ $offer->getReimbursementTimestamp()->format('j/m/Y \a\t H:i') }}. No refunds will be granted afterwards.
+                2nd April 2026 at 13:00. No refunds will be granted afterwards.
             </p>
             <p>Tickets are not nominal and can be transferred to someone else.</p>
             <p>After that date, access to the waiting list costs 5.- CHF if available.</p>

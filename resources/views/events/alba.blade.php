@@ -11,23 +11,20 @@ $seo = new SEO(
 @section('main')
 
 <article class="max-w-2xl mx-auto px-4 pt-8">
-<div class="bg-white/70 rounded-xl shadow-lg border border-amber-100 py-12 px-6 mb-8">
-    <h1 class="font-serif text-5xl lg:text-7xl xl:text-8xl font-extrabold text-neutral-900 leading-[0.95] tracking-tight text-center mb-6">
+<div class="bg-white/70 rounded-xl shadow-lg pt-4 lg:pt-8 pb-12 px-4 mb-8">
+    <h1 class="font-serif text-5xl lg:text-6xl xl:text-7xl font-extrabold text-neutral-900 leading-[0.95] tracking-tight text-center mb-6">
         The pizza <span class="text-amber-700 underline decoration-amber-400 decoration-4 underline-offset-8">tasting</span> you won’t find on any menu
     </h1>
 
+    <iframe class="aspect-video w-full" src="https://www.youtube.com/embed/pZWw3LcowJI?si=1I4fuxOKN1dQucg-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <p class="mt-10 max-w-2xl mx-auto text-center text-2xl lg:text-3xl font-medium text-amber-900 italic tracking-wide leading-relaxed">
-        A private sourdough tour through Alba, featuring
+        A private pizza tasting at Alba, with
         <span class="bg-amber-50 border-b-[3px] border-amber-400 px-2 italic rounded-md shadow-sm">unexpected cocktail pairings</span>
-        that redefine the palate.
     </p>
 
-    <div class="rounded-lg overflow-hidden shadow-md border border-neutral-200 mt-8">
-        <img src="{{ image('alba_pizza.png') }}" alt="Alba Tasting" class="w-full h-auto object-cover transition-transform duration-200 hover:scale-[1.02]">
-    </div>
 
     <p class="text-center text-lg lg:text-xl font-semibold text-neutral-700 mt-10 mb-2 uppercase tracking-widest">
-        <span class="inline-block px-3 py-1 ">
+        <span class="inline-block px-3 py-1">
             Thursday 9 April at 19:00
         </span>
         <br>
@@ -136,12 +133,6 @@ $seo = new SEO(
                 </p>
             </article>
             <article class="rounded-xl border border-amber-100 bg-white/80 shadow-sm px-4 py-4 sm:px-5 sm:py-5 hover:border-amber-300/80 transition-colors">
-                <h3 class="font-serif text-xl font-bold text-neutral-900">Inferno 2.0</h3>
-                <p class="mt-2 text-sm text-neutral-600 leading-relaxed">
-                    Brigade passata · Alba mozzarella · Swiss ’Nduja · Hot honey · Pimientos de Padrón
-                </p>
-            </article>
-            <article class="rounded-xl border border-amber-100 bg-white/80 shadow-sm px-4 py-4 sm:px-5 sm:py-5 hover:border-amber-300/80 transition-colors">
                 <h3 class="font-serif text-xl font-bold text-neutral-900 flex flex-wrap items-baseline gap-2">
                     Ricotta be kidding
                     <span class="text-xs font-sans font-semibold uppercase tracking-wider text-amber-700 bg-amber-100 px-2 py-0.5 rounded">v</span>
@@ -171,7 +162,7 @@ $seo = new SEO(
 
 <div class="px-4 max-w-md mx-auto my-8">
     <x-button link="#booking">
-    Click here to reserve your seat!
+    To the event details
     </x-button>
 </div>
 
@@ -207,72 +198,6 @@ $seo = new SEO(
         </ul>
     </div>
 </div>
-
-<section class="my-12 -mx-4 sm:mx-0 max-w-2xl sm:max-w-none mx-auto rounded-2xl overflow-hidden border-2 border-rose-200 shadow-xl bg-gradient-to-b from-rose-50/95 via-white to-fuchsia-50/40 text-gray-800 leading-relaxed">
-    <div class="relative">
-        <div class="aspect-[21/9] sm:aspect-[2.4/1] max-h-52 sm:max-h-64 w-full overflow-hidden">
-            <img src="{{ image('cocktails-color.png') }}" alt="Alba Bar cocktails" class="w-full h-full object-cover object-center scale-105 sm:scale-100" width="1200" height="514" decoding="async">
-            <div class="absolute inset-0 bg-gradient-to-t from-rose-950/85 via-rose-900/35 to-fuchsia-900/20"></div>
-            <div class="absolute inset-0 bg-gradient-to-r from-rose-950/40 via-transparent to-fuchsia-950/30"></div>
-        </div>
-        <div class="absolute bottom-0 left-0 right-0 px-4 pb-5 pt-14 text-center">
-            <p class="text-rose-200/95 text-xs font-semibold uppercase tracking-[0.35em] mb-1">Alba Bar</p>
-            <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow-md tracking-tight">
-                What about the cocktails?
-            </h2>
-        </div>
-    </div>
-
-    <div class="px-4 sm:px-6 py-8 space-y-6">
-        <div class="text-center text-neutral-700 max-w-xl mx-auto space-y-3">
-            <span class="inline-block rounded-lg bg-rose-100 text-rose-950 px-3 py-1.5 text-sm font-semibold">Not included in the tasting price</span>
-            <p class="text-base sm:text-lg">You’ll get a <strong>cocktail menu</strong> on the night and order what you’d like to try.</p>
-        </div>
-
-        <div class="rounded-xl border border-rose-100 bg-white/90 shadow-sm px-5 py-5 space-y-4">
-            <p class="text-neutral-800 text-center sm:text-left">
-                This evening is a <strong>tasting experience</strong>, not a night for heavy drinking. Drinks are meant to <strong>harmonize with the pizza</strong>: light, balanced, and uplifting without stealing the show.
-            </p>
-            <div class="grid sm:grid-cols-2 gap-3 pt-2 border-t border-rose-100">
-                <div class="rounded-lg bg-gradient-to-br from-rose-50 to-white border border-rose-100/80 px-4 py-3">
-                    <p class="text-sm font-semibold text-rose-900 mb-1">Taster-sized</p>
-                    <p class="text-sm text-neutral-600">Pick what appeals, try new flavours, and skip full pours until you know your favourites.</p>
-                </div>
-                <div class="rounded-lg bg-gradient-to-br from-fuchsia-50/80 to-white border border-fuchsia-100/80 px-4 py-3">
-                    <p class="text-sm font-semibold text-fuchsia-950 mb-1">At your table</p>
-                    <p class="text-sm text-neutral-600">Order with the team and settle drinks at checkout.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<div class="my-12 max-w-2xl mx-auto rounded-2xl border-2 border-amber-300 bg-gradient-to-br from-amber-50 via-white to-lime-50/40 shadow-lg px-6 py-8 sm:px-8 text-gray-800" id="booking">
-    <h2 class="font-serif text-2xl sm:text-3xl font-semibold text-center text-neutral-900 mb-4">How much does it cost?</h2>
-    <p class="text-center text-neutral-700 max-w-lg mx-auto mb-6 leading-relaxed">
-        This price is <strong>only</strong> for you joining me on this next trip. To <strong>reserve your seat</strong>, send me the money via <strong>Twint</strong>—once I’ve received it, your place is confirmed.
-    </p>
-    <p class="text-center text-neutral-600 mb-2">That covers your tasting, water, and the booking bonuses for this night:</p>
-    <p class="text-center mb-4">
-        <span class="font-serif text-4xl text-red-900/80 line-through">59.</span>
-        <span class="font-serif text-5xl sm:text-6xl text-green-800 font-bold">50.-</span>
-        <span class="block text-sm text-neutral-500 mt-1">CHF</span>
-    </p>
-
-    <div class="mt-8 pt-6 border-t border-amber-200/90 space-y-4 text-center max-w-lg mx-auto" >
-        <h3 class="font-serif text-xl font-semibold text-neutral-900">How to book</h3>
-        <p class="text-neutral-700 leading-relaxed">
-            Send me the money via <strong>Twint</strong>.
-        </p>
-        <p class="text-neutral-700">
-            Then send me a WhatsApp—<a href="https://api.whatsapp.com/send?phone=41787131882&text=Hi!%0AI%20would%20like%20to%20join%20the%20Alba%20Tasting" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full bg-[#25D366] text-white px-5 py-2.5 text-sm font-semibold shadow-md hover:bg-[#20bd5a] transition" aria-label="Open WhatsApp to message about joining Alba">click here</a>
-        </p>
-    </div>
-
-    <p class="text-center text-sm text-neutral-600 mt-6">Valid until Sunday evening 29th of March at 20:00.</p>
-</div>
-
-<hr>
 
 <h2 class="my-6 font-serif text-2xl font-semibold text-center">The Restaurant</h2>
 <div class="mt-8 space-y-5 text-lg leading-relaxed">
@@ -323,6 +248,66 @@ $seo = new SEO(
 
 
 </div>
+<section class="my-12  sm:mx-0 max-w-2xl sm:max-w-none mx-auto rounded-2xl overflow-hidden border-2 border-rose-200 shadow-xl bg-gradient-to-b from-rose-50/95 via-white to-fuchsia-50/40 text-gray-800 leading-relaxed">
+    <div class="relative">
+        <div class="aspect-[21/9] sm:aspect-[2.4/1] max-h-52 sm:max-h-64 w-full overflow-hidden">
+            <img src="{{ image('cocktails-color.png') }}" alt="Alba Bar cocktails" class="w-full h-full object-cover object-center scale-105 sm:scale-100" width="1200" height="514" decoding="async">
+            <div class="absolute inset-0 bg-gradient-to-t from-rose-950/85 via-rose-900/35 to-fuchsia-900/20"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-rose-950/40 via-transparent to-fuchsia-950/30"></div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 px-4 pb-5 pt-14 text-center">
+            <p class="text-rose-200/95 text-xs font-semibold uppercase tracking-[0.35em] mb-1">Alba Bar</p>
+            <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow-md tracking-tight">
+                What about the cocktails?
+            </h2>
+        </div>
+    </div>
+
+    <div class="px-4 sm:px-6 py-8 space-y-6">
+        <div class="text-center text-neutral-700 max-w-xl mx-auto space-y-3">
+            <span class="inline-block rounded-lg bg-rose-100 text-rose-950 px-3 py-1.5 text-sm font-semibold">Not included in the tasting price</span>
+            <p class="text-base sm:text-lg">You’ll get a <strong>cocktail menu</strong> on the night and order what you’d like to try.</p>
+        </div>
+
+        <div class="rounded-xl border border-rose-100 bg-white/90 shadow-sm px-5 py-5 space-y-4">
+            <p class="text-neutral-800 text-center sm:text-left">
+                This evening is a <strong>tasting experience</strong>, not a night for heavy drinking. Drinks are meant to <strong>harmonize with the pizza</strong>: light, balanced, and uplifting without stealing the show.
+            </p>
+            <div class="grid sm:grid-cols-2 gap-3 pt-2 border-t border-rose-100">
+                <div class="rounded-lg bg-gradient-to-br from-rose-50 to-white border border-rose-100/80 px-4 py-3">
+                    <p class="text-sm font-semibold text-rose-900 mb-1">Taster-sized</p>
+                    <p class="text-sm text-neutral-600">Pick what appeals, try new flavours, and skip full pours until you know your favourites.</p>
+                </div>
+                <div class="rounded-lg bg-gradient-to-br from-fuchsia-50/80 to-white border border-fuchsia-100/80 px-4 py-3">
+                    <p class="text-sm font-semibold text-fuchsia-950 mb-1">At your table</p>
+                    <p class="text-sm text-neutral-600">Order with the team and settle drinks at checkout.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="my-12 max-w-2xl mx-auto rounded-2xl border-2 border-amber-300 bg-gradient-to-br from-amber-50 via-white to-lime-50/40 shadow-lg px-6 py-8 sm:px-8 text-gray-800" id="booking">
+    <h2 class="font-serif text-2xl sm:text-3xl font-semibold text-center text-neutral-900 mb-4">How much does it cost?</h2>
+    <p class="text-center text-neutral-700 max-w-lg mx-auto mb-6 leading-relaxed">
+        This price is <strong>only</strong> for you joining me on this next trip. To <strong>reserve your seat</strong>, send me the money via <strong>Twint</strong>—once I’ve received it, your place is confirmed.
+    </p>
+    <p class="text-center text-neutral-600 mb-2">That covers your tasting, water, and the booking bonuses for this night:</p>
+    <p class="text-center mb-4">
+        <span class="font-serif text-4xl text-red-900/80 line-through">62.</span>
+        <span class="font-serif text-5xl sm:text-6xl text-green-800 font-bold">57.-</span>
+        <span class="block text-sm text-neutral-500 mt-1">CHF</span>
+    </p>
+
+    <div class="mt-8 pt-6 border-t border-amber-200/90 space-y-4 text-center max-w-lg mx-auto" >
+        <h3 class="font-serif text-xl font-semibold text-neutral-900">How to book</h3>
+        <x-button link="{{ durl('/alba', 'book') }}">
+            Click here to reserve your seat!
+        </x-button>
+    </div>
+
+</div>
+
 <hr class="my-2">
 
 <h3 class="block mt-12 text-xl font-semibold">The Fine Print Just to Be Totally Clear</h3>
@@ -332,7 +317,7 @@ $seo = new SEO(
 <li>The menu cannot be changed or modified. You may order additional dishes at your own expense.</li>
 <li>Seats are assigned on a first-come, first-served basis and may sell out before the deadline.</li>
 <li>The ticket is fully refundable until:</li>
-<li class="font-semibold text-center">Tuesday, 2 April 2026 — 13:00 (Zurich time)</li>
+<li class="font-semibold text-center">Thursday, 2 April 2026 — 13:00 (Zurich time)</li>
 <li>After this deadline, no refunds will be issued. All sales are final.</li>
 <li>If a waitlist is available, your spot may be reassigned with a CHF 5.– processing fee.</li>
 <li>Participation is not personal. If you cannot attend, you may transfer your ticket to another person (you are responsible for finding the replacement).</li>
@@ -350,6 +335,10 @@ Changing your RSVP on Meetup will <u>not</u> be considered, as I don’t receive
 </ul>
 
 </ul>
+
+<x-button link="{{ durl('/alba', 'book') }}">
+    Click here to reserve your seat!
+</x-button>
 </article>
 
 @endsection
