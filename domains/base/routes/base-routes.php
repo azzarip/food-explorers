@@ -27,29 +27,29 @@ Route::group([
 
 
     Route::view('/emilia', 'closed');
-    Route::view('/alba', 'events.alba');
+    // Route::view('/alba', 'events.alba');
 
 
     Route::view('/milano', 'base::milano');
 
 
-    Route::redirect('/milan', '/milano');
-    Route::view('/milano/ty', 'base::milano-ty');
-    Route::post('/milano', InterestedMilanoController::class);
+    // Route::redirect('/milan', '/milano');
+    // Route::view('/milano/ty', 'base::milano-ty');
+    // Route::post('/milano', InterestedMilanoController::class);
 
-    Route::view('/marvelous-milano', 'base::milano.sales');
-    Route::view('/marvelous-milano/ty', 'base::milano.ty');
-    Route::post('/marvelous-milano', MarvelousMilanoController::class);
+    // Route::view('/marvelous-milano', 'base::milano.sales');
+    // Route::view('/marvelous-milano/ty', 'base::milano.ty');
+    // Route::post('/marvelous-milano', MarvelousMilanoController::class);
 
     Route::view('/itinerary/emilia', 'closed');
     Route::view('/itinerary/milano', 'base::milano.program');
 
-    Route::get('/koben', function () {
-        if (now()->isAfter('2026-03-01')) {
-            return view('base::koben.sales');
-        }
-        return redirect('https://buy.stripe.com/fZu7sM2ypar3gtt4X79ws08');
-    });
+    // Route::get('/koben', function () {
+    //     if (now()->isAfter('2026-03-01')) {
+    //         return view('base::koben.sales');
+    //     }
+    //     return redirect('https://buy.stripe.com/fZu7sM2ypar3gtt4X79ws08');
+    // });
 
     Route::post('/koben', KobenController::class);
     Route::view('/koben/ty', 'base::koben.ty');
