@@ -30,7 +30,7 @@ $seo = new SEO(
         <br>
         <span class="inline-block mt-2">
             Alba Wiedikon&nbsp;|&nbsp;
-            <a href="https://maps.app.goo.gl/xmCFg6jS4FHWVEUD6" target="_blank" rel="noopener noreferrer" class="text-amber-700 underline decoration-amber-400 decoration-2 underline-offset-2 hover:text-amber-900 transition">
+            <a href="https://maps.app.goo.gl/jDFoLWvHjqWkEd3f8" target="_blank" rel="noopener noreferrer" class="text-amber-700 underline decoration-amber-400 decoration-2 underline-offset-2 hover:text-amber-900 transition">
                 Maps
                 <x-heroicon-o-arrow-top-right-on-square class="inline w-4 h-4 mb-1 ml-1" />
             </a>
