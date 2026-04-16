@@ -108,8 +108,8 @@
                     <x-program-card
                     url="https://maps.app.goo.gl/8ywbgWrfM7qBjf2V6"
                     image="https://lh3.googleusercontent.com/p/AF1QipMZUDdgxw47OkETP9g5-xkJdEbB6BGypdXr6WzK=s805-k-no"
-                    name="Pirncipe Bar"
-                    address="Piazza della Repubblica 17, Inside the Hotel Principe"
+                    name="Principe Bar"
+                    address="Piazza della Repubblica 17"
                     />
                 </div>
 
